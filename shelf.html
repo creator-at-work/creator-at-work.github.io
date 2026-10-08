@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-mode="stillness">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The shelf · Jatin Bhatt</title>
+<meta name="description" content="Eighteen books Jatin Bhatt has read, from Siddhartha to Scarcity. In the order he remembered them.">
+<meta name="author" content="Jatin Bhatt">
+<meta name="theme-color" content="#F3EDE2">
+<meta property="og:title" content="The shelf · Jatin Bhatt">
+<meta property="og:description" content="Eighteen books Jatin Bhatt has read, from Siddhartha to Scarcity. In the order he remembered them.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Set the saved mode before paint so there is no flash, on every page.
+  try { var m = localStorage.getItem('jb-mode'); if (m === 'signal' || m === 'stillness') document.documentElement.dataset.mode = m; } catch (e) {}
+  document.documentElement.classList.add('js');
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) document.documentElement.classList.add('touch');
+  // Preload the main face over http(s) only; a CORS preload fails when opened from file://.
+  if (location.protocol !== 'file:') { var l = document.createElement('link'); l.rel = 'preload'; l.as = 'font'; l.type = 'font/woff2'; l.crossOrigin = ''; l.href = 'fonts/fraunces-roman.woff2'; document.head.appendChild(l); }
+</script>
+</head>
+<body data-page="shelf">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <a class="wordmark" href="index.html" aria-label="Jatin Bhatt, home"><span class="wm-j">Jatin</span> Bhatt</a>
+  <nav class="toc" aria-label="Site">
+    <ol>
+      <li><a href="work.html"><span class="num">i</span>Work</a></li>
+      <li><a href="practice.html"><span class="num">ii</span>Practice</a></li>
+      <li><a href="principles.html"><span class="num">iii</span>Principles</a></li>
+      <li><a href="contact.html"><span class="num">iv</span>Contact</a></li>
+    </ol>
+  </nav>
+  <button class="mode" id="modeToggle" type="button" aria-pressed="false" aria-describedby="modeHint">
+    <span class="mode-dot" aria-hidden="true"></span>
+    <span class="mode-opt mode-still">Stillness</span>
+    <span class="mode-sep" aria-hidden="true">/</span>
+    <span class="mode-opt mode-sig">Signal</span>
+    <kbd aria-hidden="true">S</kbd>
+  </button>
+  <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
+</header>
+
+<main id="main">
+
+<section class="page-head" aria-labelledby="sh-title">
+  <p class="crumbs"><a href="index.html">Jatin Bhatt</a> <span aria-hidden="true">/</span> <span aria-current="page">Shelf</span></p>
+  <h1 id="sh-title" class="page-title">The shelf.</h1>
+  <p class="sec-lede">A few from the hundreds. Remembered off the top of my head, which is its own kind of ranking.</p>
+  <p class="sig page-sig"><span>Signal mode sorts the same books into threads. Stillness keeps them in the order I remembered them.</span></p>
+</section>
+
+<section class="shelf-wrap" aria-label="Bookshelf">
+  <ul class="shelf shelf-full" data-shelf><li class="bookend" style="--o:0" aria-hidden="true"><span class="be-n">4</span><span class="be-t">Mind and behaviour</span></li><li class="bookend" style="--o:100" aria-hidden="true"><span class="be-n">4</span><span class="be-t">Seekers</span></li><li class="bookend" style="--o:200" aria-hidden="true"><span class="be-n">4</span><span class="be-t">Myth and the sacred</span></li><li class="bookend" style="--o:300" aria-hidden="true"><span class="be-n">3</span><span class="be-t">Power and the individual</span></li><li class="bookend" style="--o:400" aria-hidden="true"><span class="be-n">2</span><span class="be-t">Murakami</span></li><li class="bookend" style="--o:500" aria-hidden="true"><span class="be-n">1</span><span class="be-t">Science</span></li><li class="book" style="--o:1;--h:244px"><button type="button" class="spine s-ink" data-title="Scarcity" data-author="Sendhil Mullainathan &amp; Eldar Shafir" data-thread="Mind and behaviour" aria-label="Scarcity, Sendhil Mullainathan &amp; Eldar Shafir"><span class="sp-t">Scarcity</span></button></li><li class="book" style="--o:301;--h:264px"><button type="button" class="spine s-tint" data-title="The Fountainhead" data-author="Ayn Rand" data-thread="Power and the individual" aria-label="The Fountainhead, Ayn Rand"><span class="sp-t">The Fountainhead</span></button></li><li class="book" style="--o:101;--h:224px"><button type="button" class="spine s-ink recent" data-title="Siddhartha" data-author="Hermann Hesse" data-thread="Seekers" aria-label="Siddhartha, Hermann Hesse. Most recent read."><span class="sp-t">Siddhartha</span></button></li><li class="book" style="--o:201;--h:275px"><button type="button" class="spine s-paper" data-title="The Legend of the Goddess" data-author="" data-thread="Myth and the sacred" aria-label="The Legend of the Goddess"><span class="sp-t">The Legend of the Goddess</span></button></li><li class="book" style="--o:302;--h:213px"><button type="button" class="spine s-card" data-title="The Prince" data-author="Niccolò Machiavelli" data-thread="Power and the individual" aria-label="The Prince, Niccolò Machiavelli"><span class="sp-t">The Prince</span></button></li><li class="book" style="--o:2;--h:256px"><button type="button" class="spine s-acc" data-title="Thinking, Fast and Slow" data-author="Daniel Kahneman" data-thread="Mind and behaviour" aria-label="Thinking, Fast and Slow, Daniel Kahneman"><span class="sp-t">Thinking, Fast and Slow</span></button></li><li class="book" style="--o:102;--h:233px"><button type="button" class="spine s-muted" data-title="Messiah&#x27;s Handbook" data-author="Richard Bach" data-thread="Seekers" aria-label="Messiah&#x27;s Handbook, Richard Bach"><span class="sp-t">Messiah&#x27;s Handbook</span></button></li><li class="book" style="--o:103;--h:281px"><button type="button" class="spine s-ink" data-title="Jonathan Livingston Seagull" data-author="Richard Bach" data-thread="Seekers" aria-label="Jonathan Livingston Seagull, Richard Bach"><span class="sp-t">Jonathan Livingston Seagull</span></button></li><li class="book" style="--o:202;--h:219px"><button type="button" class="spine s-tint" data-title="Urvashi" data-author="" data-thread="Myth and the sacred" aria-label="Urvashi"><span class="sp-t">Urvashi</span></button></li><li class="book" style="--o:401;--h:258px"><button type="button" class="spine s-ink2" data-title="Kafka on the Shore" data-author="Haruki Murakami" data-thread="Murakami" aria-label="Kafka on the Shore, Haruki Murakami"><span class="sp-t">Kafka on the Shore</span></button></li><li class="book" style="--o:402;--h:239px"><button type="button" class="spine s-paper" data-title="Norwegian Wood" data-author="Haruki Murakami" data-thread="Murakami" aria-label="Norwegian Wood, Haruki Murakami"><span class="sp-t">Norwegian Wood</span></button></li><li class="book" style="--o:203;--h:270px"><button type="button" class="spine s-card" data-title="Srimad Devi Bhagavatam" data-author="Vyasa (trad.)" data-thread="Myth and the sacred" aria-label="Srimad Devi Bhagavatam, Vyasa (trad.)"><span class="sp-t">Srimad Devi Bhagavatam</span></button></li><li class="book" style="--o:501;--h:222px"><button type="button" class="spine s-acc" data-title="Cosmos" data-author="Carl Sagan" data-thread="Science" aria-label="Cosmos, Carl Sagan"><span class="sp-t">Cosmos</span></button></li><li class="book" style="--o:104;--h:250px"><button type="button" class="spine s-muted" data-title="The Alchemist" data-author="Paulo Coelho" data-thread="Seekers" aria-label="The Alchemist, Paulo Coelho"><span class="sp-t">The Alchemist</span></button></li><li class="book" style="--o:3;--h:278px"><button type="button" class="spine s-ink" data-title="The Courage to Be Disliked" data-author="Ichiro Kishimi &amp; Fumitake Koga" data-thread="Mind and behaviour" aria-label="The Courage to Be Disliked, Ichiro Kishimi &amp; Fumitake Koga"><span class="sp-t">The Courage to Be Disliked</span></button></li><li class="book" style="--o:303;--h:227px"><button type="button" class="spine s-tint" data-title="1984" data-author="George Orwell" data-thread="Power and the individual" aria-label="1984, George Orwell"><span class="sp-t">1984</span></button></li><li class="book" style="--o:4;--h:241px"><button type="button" class="spine s-ink2" data-title="As a Man Thinketh" data-author="James Allen" data-thread="Mind and behaviour" aria-label="As a Man Thinketh, James Allen"><span class="sp-t">As a Man Thinketh</span></button></li><li class="book lean" style="--o:204;--h:261px"><button type="button" class="spine s-paper" data-title="Rashmirathi" data-author="Ramdhari Singh Dinkar" data-thread="Myth and the sacred" aria-label="Rashmirathi, Ramdhari Singh Dinkar"><span class="sp-t">Rashmirathi</span></button></li></ul>
+  <p class="shelf-cap shelf-cap-big" aria-live="polite" data-default="Most recent: &lt;cite&gt;Siddhartha&lt;/cite&gt; &lt;span class=&quot;cap-a&quot;&gt;&lt;span class=&quot;cap-dot&quot; aria-hidden=&quot;true&quot;&gt;·&lt;/span&gt; Hermann Hesse&lt;/span&gt;">Most recent: <cite>Siddhartha</cite> <span class="cap-a"><span class="cap-dot" aria-hidden="true">·</span> Hermann Hesse</span></p>
+  <p class="shelf-hint"><span class="hint-key">Hover a spine for the author.</span><span class="hint-touch">Tap a spine for the author.</span> <span class="hint-still">Press <kbd>S</kbd> to sort them into threads.</span><span class="hint-sig">Press <kbd>S</kbd> to put them back in remembered order.</span></p>
+</section>
+
+<section class="shelf-threads sig" aria-label="Threads">
+  <div>
+    <p class="kicker">Threads</p>
+    <ol class="threads-chart"><li><span class="tc-t">Mind and behaviour</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span></span><span class="tc-n">4</span><span class="tc-list">Scarcity, Thinking, Fast and Slow, The Courage to Be Disliked, As a Man Thinketh</span></li><li><span class="tc-t">Seekers</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span></span><span class="tc-n">4</span><span class="tc-list">Siddhartha, Messiah&#x27;s Handbook, Jonathan Livingston Seagull, The Alchemist</span></li><li><span class="tc-t">Myth and the sacred</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span></span><span class="tc-n">4</span><span class="tc-list">The Legend of the Goddess, Urvashi, Srimad Devi Bhagavatam, Rashmirathi</span></li><li><span class="tc-t">Power and the individual</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span><span class="tc-dot"></span><span class="tc-dot"></span></span><span class="tc-n">3</span><span class="tc-list">The Fountainhead, The Prince, 1984</span></li><li><span class="tc-t">Murakami</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span><span class="tc-dot"></span></span><span class="tc-n">2</span><span class="tc-list">Kafka on the Shore, Norwegian Wood</span></li><li><span class="tc-t">Science</span><span class="tc-dots" aria-hidden="true"><span class="tc-dot"></span></span><span class="tc-n">1</span><span class="tc-list">Cosmos</span></li></ol>
+  </div>
+</section>
+
+<section class="shelf-list" aria-labelledby="list-title">
+  <header class="sec-head sec-head-small">
+    <p class="kicker">As a list</p>
+    <h2 id="list-title">All eighteen.</h2>
+  </header>
+  <ol class="ledger-books"><li><span class="lg-n">01</span><span class="lg-t"><cite>Scarcity</cite></span><span class="lg-a">Sendhil Mullainathan &amp; Eldar Shafir</span><span class="lg-th sig"><span>Mind and behaviour</span></span></li><li><span class="lg-n">02</span><span class="lg-t"><cite>The Fountainhead</cite></span><span class="lg-a">Ayn Rand</span><span class="lg-th sig"><span>Power and the individual</span></span></li><li><span class="lg-n">03</span><span class="lg-t"><cite>Siddhartha</cite> <span class="lg-recent">most recent</span></span><span class="lg-a">Hermann Hesse</span><span class="lg-th sig"><span>Seekers</span></span></li><li><span class="lg-n">04</span><span class="lg-t"><cite>The Legend of the Goddess</cite></span><span class="lg-a"></span><span class="lg-th sig"><span>Myth and the sacred</span></span></li><li><span class="lg-n">05</span><span class="lg-t"><cite>The Prince</cite></span><span class="lg-a">Niccolò Machiavelli</span><span class="lg-th sig"><span>Power and the individual</span></span></li><li><span class="lg-n">06</span><span class="lg-t"><cite>Thinking, Fast and Slow</cite></span><span class="lg-a">Daniel Kahneman</span><span class="lg-th sig"><span>Mind and behaviour</span></span></li><li><span class="lg-n">07</span><span class="lg-t"><cite>Messiah&#x27;s Handbook</cite></span><span class="lg-a">Richard Bach</span><span class="lg-th sig"><span>Seekers</span></span></li><li><span class="lg-n">08</span><span class="lg-t"><cite>Jonathan Livingston Seagull</cite></span><span class="lg-a">Richard Bach</span><span class="lg-th sig"><span>Seekers</span></span></li><li><span class="lg-n">09</span><span class="lg-t"><cite>Urvashi</cite></span><span class="lg-a"></span><span class="lg-th sig"><span>Myth and the sacred</span></span></li><li><span class="lg-n">10</span><span class="lg-t"><cite>Kafka on the Shore</cite></span><span class="lg-a">Haruki Murakami</span><span class="lg-th sig"><span>Murakami</span></span></li><li><span class="lg-n">11</span><span class="lg-t"><cite>Norwegian Wood</cite></span><span class="lg-a">Haruki Murakami</span><span class="lg-th sig"><span>Murakami</span></span></li><li><span class="lg-n">12</span><span class="lg-t"><cite>Srimad Devi Bhagavatam</cite></span><span class="lg-a">Vyasa (trad.)</span><span class="lg-th sig"><span>Myth and the sacred</span></span></li><li><span class="lg-n">13</span><span class="lg-t"><cite>Cosmos</cite></span><span class="lg-a">Carl Sagan</span><span class="lg-th sig"><span>Science</span></span></li><li><span class="lg-n">14</span><span class="lg-t"><cite>The Alchemist</cite></span><span class="lg-a">Paulo Coelho</span><span class="lg-th sig"><span>Seekers</span></span></li><li><span class="lg-n">15</span><span class="lg-t"><cite>The Courage to Be Disliked</cite></span><span class="lg-a">Ichiro Kishimi &amp; Fumitake Koga</span><span class="lg-th sig"><span>Mind and behaviour</span></span></li><li><span class="lg-n">16</span><span class="lg-t"><cite>1984</cite></span><span class="lg-a">George Orwell</span><span class="lg-th sig"><span>Power and the individual</span></span></li><li><span class="lg-n">17</span><span class="lg-t"><cite>As a Man Thinketh</cite></span><span class="lg-a">James Allen</span><span class="lg-th sig"><span>Mind and behaviour</span></span></li><li><span class="lg-n">18</span><span class="lg-t"><cite>Rashmirathi</cite></span><span class="lg-a">Ramdhari Singh Dinkar</span><span class="lg-th sig"><span>Myth and the sacred</span></span></li></ol>
+</section>
+
+<section class="next-links" aria-label="Elsewhere">
+  <a class="next" href="index.html"><span class="next-k">Back</span><span class="next-t">Home <span aria-hidden="true">→</span></span></a>
+  <a class="next" href="practice.html"><span class="next-k">Or</span><span class="next-t">The other half <span aria-hidden="true">→</span></span></a>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-quote">Thanks for staying past day one.</p>
+  <nav class="foot-nav" aria-label="Footer"><a href="index.html">Home</a><a href="work.html">Work</a><a href="practice.html">Practice</a><a href="principles.html">Principles</a><a href="shelf.html">Shelf</a><a href="contact.html">Contact</a></nav>
+  <div class="foot-meta">
+    <p><span id="istTime">India</span></p>
+    <p id="session">You have been here for <span id="breaths">0</span> breaths.</p>
+    <p class="keys"><kbd>B</kbd> breathe <kbd>S</kbd> signal</p>
+    <p><a href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a> <span aria-hidden="true">·</span> <a href="https://www.linkedin.com/in/jatiinbhatt" rel="me noopener" target="_blank">LinkedIn</a> <span aria-hidden="true">·</span> <a href="Jatin_Bhatt_CV.pdf" download="Jatin_Bhatt_CV.pdf">CV</a></p>
+    <p>© 2026 Jatin Bhatt</p>
+  </div>
+  <p class="foot-sig sig"><span>Breaths are counted from when you opened this site, in your browser, and never leave it. No analytics.</span></p>
+</footer>
+
+<dialog class="breathe" id="breathe" aria-labelledby="breatheTitle">
+  <h2 id="breatheTitle" class="sr-only" tabindex="-1" autofocus>Three breaths</h2>
+  <div class="bz-orb" aria-hidden="true"></div>
+  <p class="bz-word" aria-live="polite">Breathe in</p>
+  <p class="bz-count"><span id="bzN">1</span> of 3</p>
+  <p class="bz-done">Three breaths. That was the whole onboarding.</p>
+  <button class="bz-close" type="button">Close</button>
+</dialog>
+
+<div class="adbox" id="adbox" role="status" hidden>
+  <div class="ad-fake" aria-hidden="true">
+    <span class="ad-tag">Sponsored</span>
+    <span class="ad-shout">LAST CHANCE!!! 50% OFF EVERYTHING. TODAY ONLY.</span>
+    <span class="ad-btn">BUY NOW</span>
+  </div>
+  <div class="ad-real">
+    <p>I am an advertiser and I hate seeing most ads. If you don't like to see it, why would they?</p>
+    <button type="button" class="ad-x" aria-label="Dismiss">Close</button>
+  </div>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
