@@ -1045,3 +1045,11 @@ html[data-mode="signal"] .hero-person .breath-scale::before { opacity: .45; }
 @media (max-width: 860px) {
   .ct-links a, .foot-nav a, .all-work a, .crumbs a, .ms-link a { gap: .35em; }
 }
+
+/* v9: wordmark on the content grid. The header inner edges follow main's centred column
+   (max 1240 + pad) instead of the viewport, so the name lines up with the page text.
+   Quieter optical settings, italic J nudged so its ink sits on the grid edge. */
+.top { padding-left: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad))); padding-right: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad))); }
+.wordmark { font-size: 20px; letter-spacing: -.005em; font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 24; }
+.wm-j { font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 24; margin-right: -.03em; padding-left: .06em; }
+@media (max-width: 560px) { .wordmark { font-size: 18px; } }
