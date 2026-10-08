@@ -285,7 +285,7 @@
 
   /* ---------- for the curious ---------- */
   try {
-    console.log('%cHello. You opened the console, so you are the kind of person I like working with.\n%cPress S for signal, B to breathe, or type "ads".\nbhattjatiin@gmail.com',
+    console.log('%cHello. You opened the console, so you are the kind of person I like working with.\n%cPress S for signal, B to breathe, or type "ads".\nhello@jatinbhatt.me',
       'font: italic 16px Georgia, serif; color: #A93E19', 'font: 12px monospace; color: #6B6358');
   } catch (e) {}
 })();
