@@ -41,14 +41,46 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="index.html"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html" aria-current="page"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
 <section class="page-head contact-page" aria-labelledby="ct-title">
   <p class="crumbs"><a href="index.html">Jatin Bhatt</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span></p>
-  <p class="now">Open to conversations about product, product-growth and founder's office roles. India or remote.</p>
+  <p class="now">Open to product, product-growth and founder's office roles. India or remote.</p>
   <h1 id="ct-title" class="page-title ct-title">If the seat is about specifying what to build and getting it shipped, I would like to talk.</h1>
   <div class="ct-actions">
     <a class="ct-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>

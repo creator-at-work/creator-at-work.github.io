@@ -41,8 +41,40 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="index.html"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html" aria-current="page"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
@@ -51,23 +83,23 @@
     <p class="crumbs"><a href="index.html">Jatin Bhatt</a> <span aria-hidden="true">/</span> <a href="work.html">Work</a> <span aria-hidden="true">/</span> <span aria-current="page">Miracle of Mind</span></p>
     <p class="eyebrow">Case study <span class="dotsep" aria-hidden="true"></span> Head of Growth, 2025 to 2026</p>
     <h1 id="case-title" class="claim claim-case">The habit was already in <em>the data.</em></h1>
-    <p class="lede">Miracle of Mind is Isha Foundation's meditation app. My work there was less about getting installs and more about what a new user does in their first three days.</p>
+    <p class="lede">Isha Foundation's meditation app. The work: a new user's first three days.</p>
 
     <dl class="vitals" aria-label="Results">
       <div class="vital">
         <dt>Activation</dt>
         <dd><span class="fig">69%</span><span class="arrow" aria-hidden="true">→</span><span class="sr-only"> to </span><span class="fig fig-strong">80%</span></dd>
-        <dd class="sig"><span>+11 pts against the previous 90-day average. Cohort ≈135K users.</span></dd>
+        <dd class="sig"><span>+11 pts vs the previous 90 days. ≈135K users.</span></dd>
       </div>
       <div class="vital">
         <dt>90-day churn</dt>
         <dd><span class="fig fig-strong">−17%</span></dd>
-        <dd class="sig"><span>Share of new users lost within 90 days.</span></dd>
+        <dd class="sig"><span>New users lost within 90 days.</span></dd>
       </div>
       <div class="vital">
         <dt>DAU/MAU</dt>
         <dd><span class="fig fig-strong">+11%</span></dd>
-        <dd class="sig"><span>Stickiness moved from ≈20% to 22.2%.</span></dd>
+        <dd class="sig"><span>≈20% to 22.2%.</span></dd>
       </div>
     </dl>
   </div>
@@ -100,7 +132,7 @@
     </div>
     </button>
     <figcaption class="breath-cap">
-      <span class="cap-still"><span class="cap-key">This page breathes at six breaths a minute. Press <kbd>B</kbd> to join it.</span><span class="cap-touch">This page breathes at six breaths a minute. Tap the circle to join it.</span></span>
+      <span class="cap-still"><span class="cap-key">Six breaths a minute. Press <kbd>B</kbd> to breathe with it.</span><span class="cap-touch">Six breaths a minute. Tap the circle to breathe with it.</span></span>
       <span class="cap-sig">Same circle, second reading. Activation, 69% to 80%.</span>
     </figcaption>
   </figure>
@@ -112,17 +144,16 @@
   <h2 id="method-title" class="sr-only">How it happened</h2>
   <div class="problem">
     <p class="pav-k">Problem</p>
-    <p class="problem-t">Activation sat at 69%. We did not have a clear picture of which early behaviours made people stay.</p>
+    <p class="problem-t">Activation sat at 69%. Nobody knew which early habits made people stay.</p>
   </div>
   <ol class="method">
     <li class="step">
       <p class="step-n">01</p>
       <div class="step-body">
         <h3>Read the data.</h3>
-        <p>Two patterns stood out.</p>
         <ul class="findings">
-          <li><span class="finding-k">24 hours</span> People who did their first meditation within a day of signing up had much higher 60 and 90-day retention.</li>
-          <li><span class="finding-k">3 in a row</span> People who completed three consecutive meditations churned much less and sent more app invites.</li>
+          <li><span class="finding-k">24 hours</span> A first meditation within a day of signing up meant much higher 60 and 90-day retention.</li>
+          <li><span class="finding-k">3 in a row</span> Three meditations in a row meant far less churn and more invites.</li>
         </ul>
       </div>
     </li>
@@ -130,14 +161,13 @@
       <p class="step-n">02</p>
       <div class="step-body">
         <h3>Talk to users.</h3>
-        <p>Then I spoke with users one on one. The people who stayed had some accountability, and some healthy competition with friends and family. The data said where. The conversations said why.</p>
+        <p>The people who stayed had accountability and healthy competition with friends and family. The data said where. Users said why.</p>
       </div>
     </li>
     <li class="step step-wide">
       <p class="step-n">03</p>
       <div class="step-body">
         <h3>Change the first 72 hours.</h3>
-        <p>Four changes, each placed where the data said people were lost.</p>
 
         <div class="timeline" role="group" aria-label="A new user's first days, and where each change sits">
           <div class="tl-track" aria-hidden="true">
@@ -148,49 +178,35 @@
           <ol class="tl-stops">
             <li class="tl-stop" style="--x:4%">
               <p class="tl-when">First open</p>
-              <p class="tl-what"><b>01</b> The first meditation moved into registration. Everything else came off the first screen.</p>
+              <p class="tl-what"><b>01</b> First meditation moved into registration. Nothing else on first open.</p>
               <p class="sig"><span>Aimed at the 24-hour window.</span></p>
             </li>
             <li class="tl-stop" style="--x:30%">
               <p class="tl-when">After session one</p>
-              <p class="tl-what"><b>02</b> A commitment: a 7, 14 or 21-day streak, a daily practice time, and permission to remind.</p>
+              <p class="tl-what"><b>02</b> Commit to a 7, 14 or 21-day streak, a daily time and reminders.</p>
               <p class="sig"><span>Aimed at three in a row.</span></p>
             </li>
             <li class="tl-stop" style="--x:58%">
               <p class="tl-when">Day three onward</p>
-              <p class="tl-what"><b>03</b> The streak became a primary feature, and a shareable stats card. Bragging rights. It created a flywheel.</p>
-              <p class="sig"><span>Healthy competition, from the 1:1 calls. Sharing +21%.</span></p>
+              <p class="tl-what"><b>03</b> The streak became a shareable stats card. Bragging rights, and a flywheel.</p>
+              <p class="sig"><span>Healthy competition. Sharing +21%.</span></p>
             </li>
             <li class="tl-stop" style="--x:84%">
               <p class="tl-when">Every open</p>
-              <p class="tl-what"><b>04</b> A list of your contacts who meditated today.</p>
-              <p class="sig"><span>Accountability, from the 1:1 calls. Social proof on app open.</span></p>
+              <p class="tl-what"><b>04</b> Contacts who meditated today.</p>
+              <p class="sig"><span>Accountability, as social proof.</span></p>
             </li>
           </ol>
         </div>
-        <p class="also">Around these: recurring challenges, incentives, leaderboards, and a database of 11,000+ user testimonials that we used to make product decisions.</p>
+        <p class="also">Around these: challenges, leaderboards, and thousands of user testimonials feeding product decisions.</p>
       </div>
     </li>
     <li class="step step-wide">
       <p class="step-n">04</p>
       <div class="step-body">
         <h3>Measure.</h3>
+        <p>Beyond the three up top:</p>
         <dl class="results">
-          <div class="res">
-            <dt>Activation</dt>
-            <dd class="res-fig">69% <span class="arrow" aria-hidden="true">→</span><span class="sr-only"> to </span> 80%</dd>
-            <dd class="sig"><span>+11 percentage points, against the previous 90-day average. Cohort ≈135K users.</span></dd>
-          </div>
-          <div class="res">
-            <dt>90-day churn</dt>
-            <dd class="res-fig">−17%</dd>
-            <dd class="sig"><span>Product and growth work with the team, not one change alone.</span></dd>
-          </div>
-          <div class="res">
-            <dt>DAU/MAU</dt>
-            <dd class="res-fig">+11%</dd>
-            <dd class="sig"><span>≈20% to 22.2%.</span></dd>
-          </div>
           <div class="res">
             <dt>Sessions per user</dt>
             <dd class="res-fig">3.2 <span class="arrow" aria-hidden="true">→</span><span class="sr-only"> to </span> 3.6</dd>
@@ -199,7 +215,7 @@
           <div class="res">
             <dt>In-app sharing</dt>
             <dd class="res-fig">+21%</dd>
-            <dd class="sig"><span>Shareable streak cards, with A/B tests run inside product launches.</span></dd>
+            <dd class="sig"><span>Shareable streak cards, A/B tested.</span></dd>
           </div>
         </dl>
       </div>
@@ -222,7 +238,6 @@
     <li><a href="work.html#n02"><span class="e-no">N° 02</span><span class="mini-t">Streak cards people wanted to share</span><span class="mini-r">+21% in-app sharing</span></a></li>
     <li><a href="work.html#n03"><span class="e-no">N° 03</span><span class="mini-t">Meditation inside ChatGPT</span><span class="mini-r">Shipped</span></a></li>
     <li><a href="work.html#n04"><span class="e-no">N° 04</span><span class="mini-t">A Rewards Store for meditation</span><span class="mini-r">Shipped</span></a></li>
-    <li><a href="work.html#n05"><span class="e-no">N° 05</span><span class="mini-t">11,000 voices, filed</span><span class="mini-r">11,000+ testimonials</span></a></li>
   </ul>
   <p class="all-work"><a href="work.html"><span aria-hidden="true">←</span> All work</a></p>
 </section>

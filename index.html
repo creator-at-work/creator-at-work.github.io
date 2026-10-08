@@ -41,8 +41,40 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="#top"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="#top" aria-current="page">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
@@ -51,10 +83,8 @@
   <div class="hero-copy">
     <p class="eyebrow">Product builder <span class="dotsep" aria-hidden="true"></span> Marketer <span class="dotsep" aria-hidden="true"></span> Classical Hatha Yoga teacher</p>
     <h1 id="hero-title" class="claim claim-person">I'm Jatin. I've never been good at <em>prescribed answers.</em></h1>
-    <p class="lede">So I go and find my own. These days that means building products people come back to, the kind that become part of their day.</p>
-    <p class="sig hero-sig"><span>Receipt: at Miracle of Mind I led the meditation experience inside ChatGPT and reworked onboarding and streaks with the product team. Activation went from 69% to 80%.</span></p>
-    <p class="lede lede-2">I come from advertising: campaigns, budgets, performance numbers. I am an advertiser and I hate seeing most ads. Product is where I am now and where I want to keep building: with product and engineering, on the experience, not only the campaigns.</p>
-    <p class="sig hero-sig"><span>Receipt: Isha Foundation, Feb 2021 to Jul 2023, Junior Marketer to Head of Meta Advertising. Campaigns in 14+ countries.</span></p>
+    <p class="lede">So I go and find my own. These days that means building products people come back to and creating marketing campaigns people just can't forget.</p>
+    <p class="sig hero-sig"><span>Receipt: at Miracle of Mind, meditation inside ChatGPT, plus onboarding and streaks with the product team. Activation 69% to 80%.</span></p>
     <p class="hero-punch">A remarkable product with remarkable marketing on it. That's the whole game.</p>
   </div>
 
@@ -87,8 +117,8 @@
     </div>
     </button>
     <figcaption class="breath-cap">
-      <span class="cap-still"><span class="cap-key">This page breathes at six breaths a minute. Press <kbd>B</kbd> to join it.</span><span class="cap-touch">This page breathes at six breaths a minute. Tap the circle to join it.</span></span>
-      <span class="cap-sig">Same circle, second reading. Five years in two rings. Outside: Isha Foundation, Business of Marketing, Miracle of Mind. Inside: Hatha Yoga teacher training, iResetLife.</span>
+      <span class="cap-still"><span class="cap-key">Six breaths a minute. Press <kbd>B</kbd> to breathe with it.</span><span class="cap-touch">Six breaths a minute. Tap the circle to breathe with it.</span></span>
+      <span class="cap-sig">Five years, two rings. Outside: Isha Foundation, my agency, Miracle of Mind. Inside: yoga teacher training, iResetLife.</span>
     </figcaption>
   </figure>
 </section>
@@ -108,9 +138,9 @@
       <li><span class="p-l">Rigorous data</span><span class="p-x" aria-hidden="true"></span><span class="p-r">Design</span></li>
     </ul>
     <div class="wired-copy">
-      <p>I am as comfortable briefing developers on the product specifics as arguing a headline with designers or a cohort with data scientists. I like being the bridge: seeing how the moving parts make one thing.</p>
-      <p class="wired-punch">Get the small parts playing in the right symphony and the whole gets much larger than the parts.</p>
-      <p class="sig"><span>Receipt: at Miracle of Mind I set growth priorities and coordinated product, marketing, analytics and engineering.</span></p>
+      <p>I'm as comfortable briefing developers on product specifics as arguing a headline with designers. I like being the bridge.</p>
+      <p class="wired-punch">Get the parts playing one symphony and the whole gets larger.</p>
+      <p class="sig"><span>Receipt: at Miracle of Mind I coordinated product, marketing, analytics and engineering.</span></p>
     </div>
   </div>
 </section>
@@ -122,9 +152,9 @@
     <h2 id="pp-title">Three of my seven rules.</h2>
   </header>
   <ol class="rules">
-    <li value="1" style="--n:1"><p class="rule">Look at the system from first principles, without biases.</p><p class="rule-note">Most progress starts there, not with a new idea.</p></li>
-    <li value="3" style="--n:3"><p class="rule">The data says where. Users say why.</p><p class="rule-note">Read the numbers first, then talk to people one on one.</p></li>
-    <li value="7" style="--n:7"><p class="rule">Perfection is predictable. Predictable is boring.</p><p class="rule-note">The ring at the top of this page is not quite round. On purpose.</p></li>
+    <li value="1" style="--n:1"><p class="rule">Look at the system from first principles, without biases.</p><p class="rule-note">Progress starts there.</p></li>
+    <li value="3" style="--n:3"><p class="rule">The data says where. Users say why.</p><p class="rule-note">Numbers first, then one-on-ones.</p></li>
+    <li value="7" style="--n:7"><p class="rule">Perfection is predictable. Predictable is boring.</p><p class="rule-note">The ring up top isn't quite round. On purpose.</p></li>
   </ol>
   <p class="all-work"><a href="principles.html">All seven rules <span aria-hidden="true">→</span></a></p>
 </section>
@@ -148,7 +178,7 @@
     <li class="cl">
       <p class="cl-k">Obsessed with</p>
       <p class="cl-big">Why people do what they do.</p>
-      <p class="cl-note">Psychology and human behaviour, Eastern and Western philosophy. It is the thread through the products, the ads and the yoga.</p>
+      <p class="cl-note">Psychology, and Eastern and Western philosophy.</p>
     </li>
     <li class="cl">
       <p class="cl-k">Watching</p>
@@ -157,7 +187,7 @@
     <li class="cl">
       <p class="cl-k">Practising</p>
       <p class="cl-big">Classical Hatha Yoga.</p>
-      <p class="cl-note">Trained as a teacher, 1,750 hours. I co-founded iResetLife to bring it together with behavioural psychology. <a href="practice.html">More on that <span aria-hidden="true">→</span></a></p>
+      <p class="cl-note">1,750 hours of teacher training. <a href="practice.html">More <span aria-hidden="true">→</span></a></p>
     </li>
   </ul>
 </section>
@@ -165,7 +195,7 @@
 <!-- ============ WORK, LIGHTLY ============ -->
 <section class="lightly" aria-labelledby="light-title">
   <p class="kicker" id="light-title">Work, lightly</p>
-  <p class="light-line">Most recently, building product at Miracle of Mind, Isha Foundation's meditation app, as Head of Growth: onboarding, streaks, the Rewards Store and a meditation experience inside ChatGPT. Before that, my own performance marketing agency, and Isha Foundation's advertising. The case studies live on their own page.</p>
+  <p class="light-line">Most recently, building product at Miracle of Mind, Isha Foundation's meditation app: onboarding, streaks, the Rewards Store, meditation inside ChatGPT. Before that, my own agency and Isha Foundation's advertising.</p>
   <p class="sig"><span>Activation 69% to 80%. DAU/MAU up 11%. Ninety-day churn down 17%.</span></p>
   <p class="all-work"><a href="work.html">See the work <span aria-hidden="true">→</span></a></p>
 </section>
@@ -173,7 +203,7 @@
 <!-- ============ NOW ============ -->
 <section class="home-now" aria-labelledby="now-title">
   <p class="kicker" id="now-title">Now</p>
-  <p class="now">Open to conversations about product, product-growth and founder's office roles. India or remote.</p>
+  <p class="now">Open to product, product-growth and founder's office roles. India or remote.</p>
   <div class="ct-actions">
     <a class="ct-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
     <button class="ct-copy" type="button" data-copy="bhattjatiin@gmail.com" aria-live="polite">Copy</button>

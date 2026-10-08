@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How I work · Jatin Bhatt</title>
+<title>Principles · Jatin Bhatt</title>
 <meta name="description" content="Seven rules Jatin Bhatt keeps coming back to. First principles, data then users, honest ownership.">
 <meta name="author" content="Jatin Bhatt">
 <meta name="theme-color" content="#F3EDE2">
-<meta property="og:title" content="How I work · Jatin Bhatt">
+<meta property="og:title" content="Principles · Jatin Bhatt">
 <meta property="og:description" content="Seven rules Jatin Bhatt keeps coming back to. First principles, data then users, honest ownership.">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -41,8 +41,40 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="index.html"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html" aria-current="page"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
@@ -54,15 +86,15 @@
 
 <section class="principles principles-page" aria-label="The rules">
   <ol class="rules">
-    <li><p class="rule">Look at the system from first principles, without biases.</p><p class="rule-note">Most progress starts there, not with a new idea.</p></li>
-    <li><p class="rule">I would not start any new initiative in week one.</p><p class="rule-note">Listen, read the numbers, then move.</p></li>
-    <li><p class="rule">The data says where. Users say why.</p><p class="rule-note">Read the numbers first, then talk to people one on one.</p></li>
+    <li><p class="rule">Look at the system from first principles, without biases.</p><p class="rule-note">Progress starts there.</p></li>
+    <li><p class="rule">I would not start any new initiative in week one.</p><p class="rule-note">Listen first. Then move.</p></li>
+    <li><p class="rule">The data says where. Users say why.</p><p class="rule-note">Numbers first, then one-on-ones.</p></li>
     <li><p class="rule">A path dies when the data disproves the hypothesis without ambiguity.</p><p class="rule-note">Not before. Not because it is uncomfortable.</p></li>
     <li><p class="rule"><em>I</em> for the calls. <em>We</em> for the execution.</p><p class="rule-note">Ownership, stated accurately.</p></li>
-    <li><p class="rule">Long-term perception over short-term revenue.</p><p class="rule-note">A brand is what people remember after the offer ends.</p></li>
-    <li><p class="rule">Perfection is predictable. Predictable is boring.</p><p class="rule-note">The ring on the home page is not quite round. On purpose.</p></li>
+    <li><p class="rule">Long-term perception over short-term revenue.</p><p class="rule-note">A brand outlives the offer.</p></li>
+    <li><p class="rule">Perfection is predictable. Predictable is boring.</p><p class="rule-note">The ring on the home page isn't quite round. On purpose.</p></li>
   </ol>
-  <p class="sig principles-sig"><span>Where they show up in practice: rule 3 is the Miracle of Mind case, data first, then one-on-one calls. Rule 5 is how that case credits the team.</span></p>
+  <p class="sig principles-sig"><span>Rules 3 and 5, in use: the Miracle of Mind case.</span></p>
 </section>
 
 <section class="next-links" aria-label="Elsewhere">

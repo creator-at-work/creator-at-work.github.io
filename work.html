@@ -41,16 +41,48 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="index.html"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html" aria-current="page"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
 <section class="page-head" aria-labelledby="work-title">
   <p class="crumbs"><a href="index.html">Jatin Bhatt</a> <span aria-hidden="true">/</span> <span aria-current="page">Work</span></p>
   <h1 id="work-title" class="page-title">From the building side.</h1>
-  <p class="sec-lede">One case study in full, and entries from the notebook. Each one: the problem, what changed, and the result. Where I contributed rather than led, it says that too.</p>
-  <p class="sig page-sig"><span>Signal mode adds the method notes: bases, definitions and who owned what.</span></p>
+  <p class="sec-lede">One case in full. A few entries from the notebook.</p>
+  <p class="sig page-sig"><span>Signal adds the method notes.</span></p>
 </section>
 
 <section class="case-feature" aria-labelledby="cf-title">
@@ -58,17 +90,14 @@
     <span class="feature-k">Case study <span class="dotsep" aria-hidden="true"></span> N° 01 <span class="dotsep" aria-hidden="true"></span> Miracle of Mind, Isha Foundation <span class="dotsep" aria-hidden="true"></span> Head of Growth, 2025 to 2026</span>
     <span class="feature-t" id="cf-title">The habit was already in the data.</span>
     <span class="pav">
-      <span class="pav-row"><span class="pav-k">Problem</span><span>Activation sat at 69%, with no clear picture of which early behaviours made people stay.</span></span>
-      <span class="pav-row"><span class="pav-k">Approach</span><span>Read the data for patterns, then talk to users one on one.</span></span>
-      <span class="pav-row"><span class="pav-k">What changed</span><span>Four changes to a new user's first 72 hours: first meditation inside registration, a streak commitment with a daily time, shareable streak cards, and friends who meditated today.</span></span>
+      <span class="pav-row"><span class="pav-k">Problem</span><span>Activation stuck at 69%.</span></span>
+      <span class="pav-row"><span class="pav-k">What changed</span><span>Four changes to a new user's first 72 hours.</span></span>
     </span>
     <span class="pav-k pav-k-res">Result</span>
-    <span class="feature-figs feature-figs-5">
+    <span class="feature-figs">
       <span><b>69% <span aria-hidden="true">→</span><span class="sr-only"> to </span> 80%</b> activation</span>
       <span><b>−17%</b> 90-day churn</span>
       <span><b>+11%</b> DAU/MAU</span>
-      <span><b>3.2 <span aria-hidden="true">→</span><span class="sr-only"> to </span> 3.6</b> sessions per user</span>
-      <span><b>+21%</b> in-app sharing</span>
     </span>
     <span class="feature-go">Read the case <span aria-hidden="true">→</span></span>
   </a>
@@ -83,89 +112,41 @@
     <li class="entry" id="n02">
       <header><span class="e-no">N° 02</span><span class="e-org">Miracle of Mind</span></header>
       <h3>Streak cards people wanted to share</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>The users who stayed had healthy competition with friends and family. The product gave them no way to show it.</dd></div>
-        <div><dt>What changed</dt><dd>Streak cards became shareable. A/B tests ran inside product launches.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">+21%</span> in-app sharing</dd></div>
-      </dl>
-      <p class="sig"><span>The "healthy competition" finding came from one-on-one calls with users.</span></p>
+      <p class="e-line">The users who stayed competed with friends. We let them show it.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig">+21%</span> in-app sharing</dd></div></dl>
+      <p class="sig"><span>Found in one-on-one user calls.</span></p>
     </li>
     <li class="entry" id="n03">
       <header><span class="e-no">N° 03</span><span class="e-org">Miracle of Mind</span></header>
       <h3>Meditation inside ChatGPT</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>Guided meditation only reached people who opened the app.</dd></div>
-        <div><dt>What changed</dt><dd>I led development of a guided meditation experience inside ChatGPT. A new interface, and a new distribution channel.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">Shipped</span></dd></div>
-      </dl>
+      <p class="e-line">I led development of a guided meditation experience inside ChatGPT. A new channel.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig">Shipped</span></dd></div></dl>
     </li>
     <li class="entry" id="n04">
       <header><span class="e-no">N° 04</span><span class="e-org">Miracle of Mind</span></header>
       <h3>A Rewards Store for meditation</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>Practice is its own reward, eventually. Before that, people need a reason.</dd></div>
-        <div><dt>What changed</dt><dd>A Rewards Store with tangible rewards for meditation. I led growth and business-side execution with the product team.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">Shipped</span></dd></div>
-      </dl>
+      <p class="e-line">Tangible rewards for practice. I led growth and business-side execution.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig">Shipped</span></dd></div></dl>
     </li>
     <li class="entry" id="n05">
-      <header><span class="e-no">N° 05</span><span class="e-org">Miracle of Mind</span></header>
-      <h3>11,000 voices, filed</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>Product decisions needed users' own words, at scale.</dd></div>
-        <div><dt>What changed</dt><dd>Built a database of user testimonials to inform product decisions.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">11,000+</span> testimonials, used in product decisions</dd></div>
-      </dl>
+      <header><span class="e-no">N° 05</span><span class="e-org">Isha Foundation</span></header>
+      <h3>Insight Leadership Program</h3>
+      <p class="e-line">More registrations, each one cheaper. A mix of CBO and ABO campaigns.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig">2×</span> registrations, <span class="e-fig">−60%</span> CPA</dd></div></dl>
+      <p class="sig"><span>CBO: budget per campaign. ABO: budget per ad set.</span></p>
     </li>
     <li class="entry" id="n06">
       <header><span class="e-no">N° 06</span><span class="e-org">Isha Foundation</span></header>
-      <h3>Insight Leadership Program</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>More registrations, without paying more for each one.</dd></div>
-        <div><dt>Approach</dt><dd>A mix of CBO and ABO campaign structures.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">2×</span> registrations, <span class="e-fig">−60%</span> CPA</dd></div>
-      </dl>
-      <p class="sig"><span>CBO: budget set at campaign level. ABO: budget set per ad set. CPA: cost per acquisition.</span></p>
+      <h3>Save Soil</h3>
+      <p class="e-line">Performance marketing across 3 continents, optimised for cost per view.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig">−25%</span> CPV, <span class="e-fig">1B+</span> impressions</dd></div></dl>
     </li>
     <li class="entry" id="n07">
       <header><span class="e-no">N° 07</span><span class="e-org">Isha Foundation</span></header>
-      <h3>Save Soil</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>A global campaign that needed attention at scale, across 3 continents.</dd></div>
-        <div><dt>What changed</dt><dd>Performance marketing, optimised for cost per view.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig">−25%</span> CPV, <span class="e-fig">1B+</span> impressions</dd></div>
-      </dl>
-      <p class="sig"><span>CPV: cost per view.</span></p>
-    </li>
-    <li class="entry" id="n08">
-      <header><span class="e-no">N° 08</span><span class="e-org">Isha Foundation</span></header>
       <h3><cite>Karma: A Yogi's Guide to Crafting Your Destiny</cite></h3>
-      <dl>
-        <div><dt>Problem</dt><dd>Launch Sadhguru's book to a global audience.</dd></div>
-        <div><dt>What changed</dt><dd>I led the advertising end to end.</dd></div>
-        <div class="e-result"><dt>Result</dt><dd><span class="e-fig e-fig-text">New York Times Bestseller</span></dd></div>
-      </dl>
-      <p class="sig"><span>Ownership: the advertising. A bestseller has many authors.</span></p>
-    </li>
-    <li class="entry" id="n09">
-      <header><span class="e-no">N° 09</span><span class="e-org">Isha Foundation</span></header>
-      <h3>Building the in-house team's craft</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>The organisation needed its own performance-marketing capability.</dd></div>
-        <div><dt>What changed</dt><dd>Built that capability, and the pedagogy to teach it. Promoted from Junior Marketer to Head of Meta Advertising.</dd></div>
-        <div class="e-result"><dt>Reach</dt><dd><span class="e-fig">14+</span> countries, <span class="e-fig">3</span> continents</dd></div>
-      </dl>
-      <p class="sig"><span>OTT, online courses, book launches, e-commerce, offline events, social campaigns. Contributed to a Mahashivratri livestream with 20.3M views.</span></p>
-    </li>
-    <li class="entry" id="n10">
-      <header><span class="e-no">N° 10</span><span class="e-org">Business of Marketing</span></header>
-      <h3>An agency of my own</h3>
-      <dl>
-        <div><dt>Problem</dt><dd>Clients in EdTech, hospitality and digital products needed acquisition they could measure.</dd></div>
-        <div><dt>What changed</dt><dd>Founded an independent performance marketing agency and built the measurement and optimisation systems behind the spend.</dd></div>
-        <div class="e-result"><dt>Clients</dt><dd>India, the US and Northern Europe</dd></div>
-      </dl>
-      <p class="sig"><span>Dec 2023 to Oct 2025.</span></p>
+      <p class="e-line">I led the advertising for Sadhguru's book launch.</p>
+      <dl><div class="e-result"><dt>Result</dt><dd><span class="e-fig e-fig-text">New York Times Bestseller</span></dd></div></dl>
+      <p class="sig"><span>A bestseller has many authors.</span></p>
     </li>
   </ol>
 

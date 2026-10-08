@@ -41,8 +41,40 @@
     <span class="mode-opt mode-sig">Signal</span>
     <kbd aria-hidden="true">S</kbd>
   </button>
+  <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="mnav" aria-expanded="false">
+    <span class="mb-lines" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Open menu</span>
+  </button>
   <span id="modeHint" class="sr-only">Signal mode shows the data layer behind the page: receipts, timelines, bases and method notes.</span>
 </header>
+<dialog class="mnav" id="mnav" aria-label="Menu">
+  <div class="mnav-top">
+    <a class="wordmark" href="index.html"><span class="wm-j">Jatin</span> Bhatt</a>
+    <button class="mnav-close" type="button" data-close-menu><span>Close</span> <span class="mnav-x" aria-hidden="true">×</span></button>
+  </div>
+  <nav class="mnav-nav" aria-label="Site">
+    <ol class="mnav-list">
+      <li style="--i:0"><a href="work.html"><span class="num">i</span><span class="mn-t">Work</span></a></li>
+      <li style="--i:1"><a href="practice.html" aria-current="page"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
+      <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
+      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+    </ol>
+    <ul class="mnav-more">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shelf.html">Shelf</a></li>
+      <li><a href="Jatin_Bhatt_CV.pdf" download>CV <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </nav>
+  <div class="mnav-foot">
+    <button class="mode mode-big" type="button" data-mode-toggle aria-pressed="false" aria-describedby="modeHint">
+      <span class="mode-dot" aria-hidden="true"></span>
+      <span class="mode-opt mode-still">Stillness</span>
+      <span class="mode-sep" aria-hidden="true">/</span>
+      <span class="mode-opt mode-sig">Signal</span>
+    </button>
+    <p class="mnav-note">Signal shows the receipts behind the page.</p>
+    <a class="mnav-mail" href="mailto:bhattjatiin@gmail.com">bhattjatiin@gmail.com</a>
+  </div>
+</dialog>
 
 <main id="main">
 
@@ -57,20 +89,19 @@
     <div class="practice-grid">
       <div class="practice-copy">
         <p class="pr-k">The training</p>
-        <p>Between Isha Foundation's marketing team and starting my own agency, I spent July to November 2023 in a residential Classical Hatha Yoga teacher training at Isha Foundation. 1,750 hours. I am a trained Classical Hatha Yoga teacher.</p>
+        <p>Five months, residential, at Isha Foundation in 2023. 1,750 hours. I came out a Classical Hatha Yoga teacher.</p>
         <p class="pr-k">iResetLife</p>
-        <p>In December 2024 I co-founded <strong>iResetLife</strong>, a mental-wellness venture that brings Classical Hatha Yoga together with behavioural psychology and modern wellbeing frameworks. We built it across India and Africa: product development, market creation, and commercial and nonprofit work.</p>
-        <p>I led a wellness initiative with young women in Maasai Mara, Kenya.</p>
-        <p class="pr-k">Why it is not a side note</p>
-        <p>I came to yoga and philosophy looking for my own answers, not prescribed ones. It turned out to be the same question I work on in products: what makes a person come back to something once the novelty is gone.</p>
+        <p>Co-founded in 2024: Classical Hatha Yoga meets behavioural psychology. Built across India and Africa, including a wellness initiative with young women in Maasai Mara, Kenya.</p>
+        <p class="pr-k">Why it matters</p>
+        <p>It is the question I work on in products too: what brings a person back once the novelty is gone.</p>
       </div>
 
       <figure class="hours">
         <canvas id="hoursField" width="700" height="250" aria-hidden="true"></canvas>
         <figcaption>
           <span class="hours-n">1,750</span>
-          <span class="hours-l">hours of residential training. One dot each.</span>
-          <span class="sig"><span>Jul to Nov 2023, Isha Foundation, residential. Every hundredth hour is marked, so you can count them.</span></span>
+          <span class="hours-l">hours. One dot each.</span>
+          <span class="sig"><span>Jul to Nov 2023. Every hundredth hour is marked.</span></span>
         </figcaption>
       </figure>
     </div>

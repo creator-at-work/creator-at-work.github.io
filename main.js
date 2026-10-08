@@ -17,7 +17,7 @@
     var flip = flipFirst();
     root.dataset.mode = m;
     flipPlay(flip);
-    toggle.setAttribute('aria-pressed', m === 'signal' ? 'true' : 'false');
+    toggles.forEach(function (t) { t.setAttribute('aria-pressed', m === 'signal' ? 'true' : 'false'); });
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = m === 'signal' ? '#121110' : '#F3EDE2';
     if (save) { try { localStorage.setItem('jb-mode', m); } catch (e) {} }
@@ -25,8 +25,27 @@
     if (m !== 'signal' && visible && !raf && !reduce.matches) raf = requestAnimationFrame(loop);
   }
   function flip() { setMode(root.dataset.mode === 'signal' ? 'stillness' : 'signal', true); }
-  toggle.addEventListener('click', flip);
-  toggle.setAttribute('aria-pressed', root.dataset.mode === 'signal' ? 'true' : 'false');
+  var toggles = [toggle].concat(Array.prototype.slice.call(document.querySelectorAll('[data-mode-toggle]')));
+  toggles.forEach(function (t) {
+    t.addEventListener('click', flip);
+    t.setAttribute('aria-pressed', root.dataset.mode === 'signal' ? 'true' : 'false');
+  });
+
+  /* ---------- mobile menu ---------- */
+  var menu = document.getElementById('mnav'), menuBtn = document.getElementById('menuBtn');
+  function closeMenu() { if (menu && menu.open) { menu.classList.remove('in'); menu.close(); } }
+  if (menu && menuBtn && menu.showModal) {
+    menuBtn.addEventListener('click', function () {
+      menu.showModal(); root.classList.add('menu-open'); menuBtn.setAttribute('aria-expanded', 'true');
+      requestAnimationFrame(function () { menu.classList.add('in'); });
+    });
+    menu.addEventListener('close', function () { root.classList.remove('menu-open'); menuBtn.setAttribute('aria-expanded', 'false'); menu.classList.remove('in'); menuBtn.focus(); });
+    menu.querySelector('[data-close-menu]').addEventListener('click', closeMenu);
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { var h = e.target.closest('a').getAttribute('href'); if (h && h.charAt(0) === '#') closeMenu(); }
+    });
+    window.addEventListener('resize', function () { if (window.innerWidth > 860) closeMenu(); });
+  }
 
   /* ---------- shelf: FLIP the books when they regroup ---------- */
   function flipFirst() {
@@ -257,6 +276,7 @@
     buf = (buf + k).slice(-3);
     if (buf === 'ads') { showAd(); buf = ''; return; }
     if (dlg.open) return;
+    if (menu && menu.open) { if (k === 's') flip(); return; }
     if (k === 's') flip();
     else if (k === 'b') openBreathe();
   });
