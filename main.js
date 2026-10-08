@@ -134,18 +134,18 @@
   }
 
   /* ---------- 1,750 dots ---------- */
-  var cv = document.getElementById('hoursField');
-  var ctx = cv && cv.getContext('2d');
+  var field = document.getElementById('hoursField');
+  var ctx = field && field.getContext('2d');
   var dots = [], cols, rows, W, H, visible = false, raf = 0;
   function layout() {
-    if (!cv) return;
-    var w = cv.clientWidth || 600;
+    if (!field) return;
+    var w = field.clientWidth || 600;
     cols = w < 420 ? 35 : 50; rows = Math.ceil(1750 / cols);
     var gap = w / cols;
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     W = w; H = Math.round(gap * rows);
-    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
-    cv.style.height = H + 'px';
+    field.width = Math.round(W * dpr); field.height = Math.round(H * dpr);
+    field.style.height = H + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     dots = [];
     for (var i = 0; i < 1750; i++) {
@@ -188,14 +188,14 @@
     drawHours(false, now);
     raf = visible && !reduce.matches && root.dataset.mode !== 'signal' ? requestAnimationFrame(loop) : 0;
   }
-  if (cv) {
+  if (field) {
     layout();
     window.addEventListener('resize', function () { clearTimeout(layout._t); layout._t = setTimeout(layout, 150); });
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (es) {
         visible = es[0].isIntersecting;
         if (visible && !raf && !reduce.matches) raf = requestAnimationFrame(loop);
-      }).observe(cv);
+      }).observe(field);
     }
   }
 

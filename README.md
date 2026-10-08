@@ -19,12 +19,13 @@ Static HTML, CSS and vanilla JS. No build step, no dependencies, no analytics, f
 
 ## Pages
 - `index.html`: who Jatin is. Product-first hero, how I'm wired, three of the seven rules, off the clock (a small bookshelf, watching, practising), work in one line, now.
-- `work.html`: the Miracle of Mind case (problem, what changed, result), six notebook entries (anchors like `work.html#n05`), the record and the CV.
+- `work.html`: the Miracle of Mind case (problem, what changed, result), six notebook entries (anchors like `work.html#n05`) and the record.
 - `miracle-of-mind.html`: the full case study.
 - `practice.html`: Hatha Yoga, iResetLife, 1,750 dots.
 - `principles.html`: all seven rules.
 - `shelf.html`: the full bookshelf. Stillness keeps the books in the order he remembered them; Signal sorts them into threads with counts and shows a threads chart. Linked from the footer, the mobile menu and the home shelf.
-- `contact.html`: now, email, LinkedIn, CV. Contact is also in every footer.
+- `contact.html`: now, email, LinkedIn. Contact is also in every footer.
+Nothing to download (the PDF and its links were removed 2026-10-08): the site is a quiet place that's his own. Keep it that way.
 All links are relative, so the site works from a zip, from `file://`, on GitHub Pages and on Vercel or Netlify.
 Header, footer, the breathing dialog and the "ads" joke are repeated in each page; edit all seven if you change them.
 Books are generated from the `BOOKS` list in `build/shelf.py` in the source project (title, author, thread). The spines, captions and threads chart are plain HTML in `index.html` and `shelf.html`, so a new book can also be added by copying one `<li class="book">` by hand.
