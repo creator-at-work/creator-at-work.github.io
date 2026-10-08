@@ -4,6 +4,11 @@
 @font-face { font-family: "Fraunces"; src: url(fonts/fraunces-roman.woff2) format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
 @font-face { font-family: "Fraunces"; src: url(fonts/fraunces-italic.woff2) format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
 @font-face { font-family: "Fraunces"; src: url(fonts/fraunces-sym.woff2) format("woff2"); font-weight: 300 700; font-style: normal italic; unicode-range: U+2190-2199, U+00D7, U+2248, U+2212; font-display: swap; }
+/* Display J: Fraunces' roman J ends in a hooked ball tail that reads like a typo next to I at headline sizes,
+   and the font has no alternate. At display sizes only, U+004A comes from a 1 KB Newsreader subset (OFL, opsz 72),
+   scaled to Fraunces' cap height. Italic J stays Fraunces. Body-size J is untouched. */
+@font-face { font-family: "Display J"; src: url(fonts/newsreader-J.woff2) format("woff2"); font-weight: 200 800; font-style: normal; unicode-range: U+004A; size-adjust: 97.9%; font-display: swap; }
+@font-face { font-family: "Display J"; src: url(fonts/fraunces-italic.woff2) format("woff2"); font-weight: 300 700; font-style: italic; unicode-range: U+004A; font-display: swap; }
 @font-face { font-family: "Plex Mono"; src: url(fonts/plexmono-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Plex Mono"; src: url(fonts/plexmono-500.woff2) format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Plex Mono"; src: url(fonts/plexmono-sym.woff2) format("woff2"); font-weight: 400 500; unicode-range: U+2190-2199, U+00D7, U+2248, U+2212; font-display: swap; }
@@ -67,6 +72,7 @@ img, svg, canvas { display: block; max-width: 100%; }
 a { color: inherit; }
 p { margin: 0 0 1em; text-wrap: pretty; }
 h1, h2, h3 { margin: 0; font-weight: 380; text-wrap: balance; }
+.claim, .page-title, h2, .feature-t, .ct-line, .strip-line, .mnav-list a { font-family: "Display J", var(--serif); }
 em { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; }
 kbd {
   font-family: var(--mono); font-size: .72em; line-height: 1;
