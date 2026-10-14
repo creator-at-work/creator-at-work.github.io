@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LearnTube: a certified course built around you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f0e4;--paper2:#efe6d4;--card:#fffaf0;--ink:#1e2a23;--forest:#2c4a3b;--mute:#5f655c;--line:#ddd3c0;--tomato:#d4532e;--mari:#e9b44c}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:80px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.serif{font-family:'Fraunces',Georgia,serif}.hand{font-family:'Caveat',cursive}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.015em;line-height:1.12}
+h1{font-size:40px}h2{font-size:31px;margin-bottom:12px}
+p.lead{color:var(--mute);font-size:17px;max-width:520px}
+.btn{display:inline-block;background:var(--tomato);color:#fff;border:0;border-radius:8px;padding:16px 24px;font-family:inherit;font-weight:600;font-size:16px;line-height:1;cursor:pointer;text-decoration:none;box-shadow:0 3px 0 #9e3a1d;transition:transform .1s}
+.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #9e3a1d}
+.btn.dark{background:var(--ink);box-shadow:0 3px 0 #000}
+nav{display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:22px}.logo i{color:var(--tomato);font-style:normal}
+nav a{color:var(--ink);font-size:15px;font-weight:500}
+/* hero */
+.hero{padding:40px 0 56px;position:relative}
+.ul{position:relative;white-space:nowrap}.ul svg{position:absolute;left:-2%;bottom:-10px;width:104%;height:14px}
+.hero p.lead{margin:22px 0 28px}
+.ctaRow{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.sticky-note{display:inline-block;background:var(--mari);font-family:'Caveat',cursive;font-size:22px;font-weight:700;line-height:1.1;padding:10px 14px 12px;transform:rotate(-3deg);box-shadow:2px 3px 0 rgba(30,42,35,.15);color:var(--ink)}
+.heroSide{margin-top:44px;position:relative}
+.outline{background:var(--card);border:1px solid var(--line);padding:22px 22px 10px;border-radius:4px;box-shadow:6px 6px 0 var(--paper2)}
+.outline .lbl{font-size:13px;color:var(--mute)}
+.outline h3{font-size:20px;margin:2px 0 12px}
+.outline ol{list-style:none;counter-reset:o}
+.outline li{counter-increment:o;display:flex;gap:12px;padding:11px 0;border-top:1px dashed var(--line);font-size:15px}
+.outline li:before{content:counter(o,decimal-leading-zero);font-family:'Fraunces',serif;color:var(--mute);font-size:14px;min-width:22px}
+.outline li.f span{flex:1}.outline li.f em{font-style:normal;font-family:'Caveat',cursive;font-size:19px;color:var(--tomato);line-height:1}
+.anno{position:absolute;font-family:'Caveat',cursive;font-size:21px;color:var(--forest);line-height:1.1}
+.anno svg{display:block}
+.heroSide .anno{right:6px;top:-38px;text-align:right}
+/* how */
+.how{background:var(--forest);color:#f3ecdc;padding:60px 0}
+.how h2{color:#fff}.how p.lead{color:#c8d1c4}
+.steps{list-style:none;margin-top:30px}
+.steps li{display:grid;grid-template-columns:56px 1fr;padding:20px 0;border-top:1px solid rgba(255,255,255,.18)}
+.steps li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
+.steps .n{font-family:'Fraunces',serif;font-size:36px;line-height:1;color:var(--mari)}
+.steps b{font-size:18px;display:block;margin-bottom:2px;color:#fff}.steps p{color:#c8d1c4;font-size:15px}
+/* cert */
+.certS{padding:64px 0}
+.field{margin-bottom:18px}label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+input,select{width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--ink);border-radius:6px;background:var(--card);color:var(--ink)}
+input:focus,select:focus{outline:3px solid var(--mari);outline-offset:1px}
+.cert{position:relative;aspect-ratio:1.414;background:#fbf6ea;padding:7%;color:#2a2a22;margin-top:34px;box-shadow:0 1px 1px rgba(0,0,0,.08),0 14px 28px -14px rgba(40,30,10,.35);transform:rotate(-.8deg);
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cert:before{content:"";position:absolute;inset:3.2%;border:1px solid #b9a77f;outline:3px double #cdbd98;outline-offset:-8px;pointer-events:none}
+.cIn{position:relative;height:100%;display:flex;flex-direction:column;justify-content:space-between;text-align:center}
+.cHead{font-family:'Fraunces',serif;font-size:clamp(10px,2.6vw,14px);letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.cSm{font-size:clamp(9px,2.3vw,13px);color:#6d6450;font-style:italic;font-family:'Fraunces',serif}
+.cName{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(22px,6.4vw,38px);line-height:1.15;border-bottom:1px solid #b9a77f;display:inline-block;padding:0 10px 2px;margin:3px 0 6px;max-width:100%;overflow-wrap:anywhere}
+.cCourse{font-weight:700;font-size:clamp(11px,3vw,17px)}
+.cFoot{display:flex;justify-content:space-between;align-items:flex-end;text-align:left;font-size:clamp(7px,1.9vw,11px);color:#6d6450}
+.sig{font-family:'Caveat',cursive;font-size:clamp(14px,3.8vw,22px);color:var(--ink);line-height:1;border-bottom:1px solid #b9a77f;padding-bottom:2px;margin-bottom:2px}
+.seal{width:clamp(44px,12vw,70px);aspect-ratio:1;flex:none}
+.certNote{position:relative;margin-top:22px;padding-left:34px;font-size:15px;color:var(--mute)}
+.certNote svg{position:absolute;left:0;top:-6px}
+/* outcomes */
+.outS{background:var(--paper2);padding:64px 0}
+.outList{margin-top:22px}
+.outList div{padding:22px 0;border-top:1.5px solid var(--ink);display:grid;gap:4px}
+.outList h3{font-size:23px}.outList p{color:var(--mute);max-width:460px}
+.outList .k{font-family:'Caveat',cursive;font-size:20px;color:var(--tomato)}
+/* price */
+.priceS{padding:64px 0}
+.priceGrid{display:grid;gap:22px;margin-top:26px}
+.freeBox{padding:6px 0 0}
+.freeBox .big{font-family:'Fraunces',serif;font-size:44px;font-weight:600;line-height:1}
+.freeBox p{color:var(--mute);margin-top:8px;max-width:340px}
+.plan{background:var(--ink);color:#efe8d8;padding:26px;border-radius:6px;position:relative}
+.plan .name{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--mari);font-weight:600}
+.plan .big{font-family:'Fraunces',serif;font-size:48px;font-weight:600;color:#fff;line-height:1.1;margin:6px 0 2px}.plan .big small{font-size:17px;font-family:'Instrument Sans';color:#b9c0b5;font-weight:400}
+.plan ul{list-style:none;margin:16px 0 22px}.plan li{padding:6px 0;border-top:1px solid rgba(255,255,255,.12);font-size:15px}
+.plan li:before{content:"✓";color:var(--mari);margin-right:10px;font-weight:700}
+.plan .btn{width:100%;text-align:center}
+.plan .sticky-note{position:absolute;right:-6px;top:-18px;font-size:19px;transform:rotate(4deg)}
+.fine{font-size:14px;color:var(--mute);margin-top:14px;max-width:460px;border-left:3px solid var(--mari);padding-left:12px}
+/* quotes */
+.qS{padding:20px 0 64px}
+.qMain{font-family:'Fraunces',serif;font-size:25px;line-height:1.35;font-weight:400;max-width:640px;margin-top:10px}
+.qMain:before{content:"\201C";color:var(--tomato)}
+.qSmall{display:grid;gap:18px;margin-top:28px}
+.qSmall p{font-size:16px;padding-left:14px;border-left:2px solid var(--line)}
+.who{font-size:13px;color:var(--mute);margin-top:6px}
+.ex{font-family:'Caveat',cursive;font-size:19px;color:var(--tomato);transform:rotate(-2deg);display:inline-block}
+/* faq */
+.faqS{padding:56px 0;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:'Fraunces',serif;font-size:24px;line-height:1;color:var(--tomato)}details[open] summary:after{content:"\2013"}
+details p{color:var(--mute);margin-top:8px;max-width:600px}
+.final{background:var(--forest);color:#fff;padding:56px 0}
+.final h2{color:#fff}.final p{color:#c8d1c4;margin-bottom:24px}
+footer{padding:26px 0;color:var(--mute);font-size:13px}
+/* fixed */
+.stickyBar{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--paper);border-top:1.5px solid var(--ink);display:flex;gap:14px;align-items:center;z-index:20}
+.stickyBar .btn{flex:1;text-align:center;padding:15px}.stickyBar span{font-family:'Caveat',cursive;font-size:19px;line-height:1.05;max-width:96px}
+.chatB{position:fixed;right:16px;bottom:88px;width:52px;height:52px;border-radius:50%;background:var(--ink);border:2px solid var(--paper);display:grid;place-items:center;cursor:pointer;z-index:21;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.chat{position:fixed;right:16px;bottom:150px;width:min(310px,calc(100vw - 32px));background:var(--card);border:1.5px solid var(--ink);border-radius:8px;z-index:21;display:none;box-shadow:5px 5px 0 rgba(30,42,35,.15)}
+.chat.on{display:block}.chat header{padding:14px 16px;border-bottom:1px solid var(--line);font-weight:700}
+.chat header small{display:block;font-weight:400;color:var(--mute);font-size:13px}
+.chat .body{padding:14px 16px 16px;font-size:14px}.bub{background:var(--paper2);border-radius:8px 8px 8px 2px;padding:10px 12px;margin-bottom:12px}
+.chips{display:flex;flex-direction:column;gap:6px}.chip{text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:8px 0;font-family:inherit;font-size:14px;font-weight:600;color:var(--forest);cursor:pointer}
+.chip:after{content:" \2192"}
+.modal{position:fixed;inset:0;background:rgba(30,42,35,.55);display:none;align-items:flex-end;justify-content:center;z-index:30}.modal.on{display:flex}
+.sheet{background:var(--paper);width:100%;max-width:470px;border-radius:14px 14px 0 0;padding:22px 22px 28px;max-height:92vh;overflow:auto}
+.prog{font-size:13px;color:var(--mute);display:flex;justify-content:space-between;margin-bottom:16px}
+.x{background:none;border:0;font-size:26px;cursor:pointer;color:var(--ink);line-height:1}
+.sheet h3{font-size:25px}.sheet .sub{color:var(--mute);font-size:15px;margin-top:4px}
+.opts{margin:18px 0 4px;border-top:1px solid var(--line)}
+.opt{display:flex;justify-content:space-between;width:100%;text-align:left;padding:16px 4px;border:0;border-bottom:1px solid var(--line);background:none;font-family:inherit;font-size:16px;font-weight:500;cursor:pointer;color:var(--ink)}
+.opt:after{content:"\2192";color:var(--tomato)}.opt:hover{background:var(--paper2)}
+@media(min-width:760px){
+ body{padding-bottom:0}.stickyBar{display:none}.chatB{bottom:24px}.chat{bottom:86px}
+ h1{font-size:64px}h2{font-size:42px}
+ .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;padding:72px 0 88px;align-items:end}.heroSide{margin-top:0}
+ .how .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:60px}.how{padding:88px 0}.steps{margin-top:0}
+ .certS{padding:96px 0}.certGrid{display:grid;grid-template-columns:1fr 1.35fr;gap:56px;align-items:center}.cert{margin-top:0}
+ .outS{padding:88px 0}.outS .wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:60px}.outList{margin-top:0}
+ .priceS{padding:96px 0}.priceGrid{grid-template-columns:1fr 1.1fr;gap:60px;align-items:start;max-width:860px}
+ .qMain{font-size:32px}.qSmall{grid-template-columns:1fr 1fr;max-width:760px;margin-left:auto}
+ .faqS .wrap{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+ .modal{align-items:center}.sheet{border-radius:14px}
+ .cHead{font-size:14px}.cSm{font-size:13px}.cName{font-size:38px}.cCourse{font-size:17px}.cFoot{font-size:11px}.sig{font-size:22px}.seal{width:70px}
+}
+</style></head><body>
+<div class="wrap"><nav><div class="logo">Learn<i>Tube</i></div><a href="#pricing">Pricing</a></nav></div>
+
+<header class="wrap hero"><div>
+<h1>A certified, job-ready course built <span class="ul">around you<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M3 9c40-6 95-8 194-3" stroke="#d4532e" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M20 12c50-3 100-4 150-2" stroke="#d4532e" stroke-width="2" fill="none" stroke-linecap="round" opacity=".6"/></svg></span>.</h1>
+<p class="lead">Under Rs 299. Start on your phone in 2 minutes. Tell us your goal, and we shape the lessons, the project and the certificate to fit it.</p>
+<div class="ctaRow"><button class="btn" data-open>Build my free course</button><span class="sticky-note">First 2 lectures free</span></div>
+</div>
+<div class="heroSide">
+<div class="anno">what you'll see<br>before paying<svg width="60" height="34" viewBox="0 0 60 34" style="margin-left:auto"><path d="M50 2c-4 14-16 24-38 28m0 0 8-8m-8 8 10 3" stroke="#2c4a3b" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+<div class="outline"><div class="lbl">Sample path</div><h3>Digital Marketing, for a first job</h3><ol>
+<li class="f"><span>How brands find customers online</span><em>free</em></li>
+<li class="f"><span>Writing ads that get clicks</span><em>free</em></li>
+<li>Running your first campaign</li><li>Project: a mini launch plan</li><li>Certificate and interview prep</li></ol></div></div>
+</header>
+
+<section class="how"><div class="wrap"><div><h2>How it works</h2><p class="lead">Three steps, no long forms.</p></div>
+<ol class="steps">
+<li><span class="n">1</span><div><b>Answer 3 quick questions</b><p>Your goal, the skill you want, and how much time you have each day.</p></div></li>
+<li><span class="n">2</span><div><b>See your course outline</b><p>Every lesson and the project, before you pay anything.</p></div></li>
+<li><span class="n">3</span><div><b>Start learning free</b><p>Watch the first 2 full lectures. Continue only if it is useful to you.</p></div></li>
+</ol></div></section>
+
+<section class="certS"><div class="wrap certGrid"><div>
+<h2>Put your name on it</h2><p class="lead" style="margin-bottom:24px">This is the certificate you earn when you finish. Try it.</p>
+<div class="field"><label for="nm">Your name</label><input id="nm" placeholder="e.g. Priya Sharma" maxlength="40" autocomplete="name"></div>
+<div class="field"><label for="cs">Course</label><select id="cs"><option>Digital Marketing Fundamentals</option><option>Data Analysis with Excel</option><option>Python for Beginners</option><option>UI/UX Design Basics</option><option>Spoken English for Interviews</option></select></div>
+</div>
+<div><div class="cert"><div class="cIn">
+<div class="cHead">Certificate of Completion</div>
+<div><div class="cSm">This is to certify that</div><div class="cName" id="cn">Your Name</div><div class="cSm">has successfully completed</div><div class="cCourse" id="cc">Digital Marketing Fundamentals</div></div>
+<div class="cFoot"><div><div class="sig">LearnTube</div>Issued 14 Oct 2026<br>ID LT-2026-48217</div>
+<svg class="seal" viewBox="0 0 100 100"><defs><path id="c" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"/></defs><path d="M50 2l6 7 9-3 3 9 9 1-1 9 8 5-5 8 5 8-8 5 1 9-9 1-3 9-9-3-6 7-6-7-9 3-3-9-9-1 1-9-8-5 5-8-5-8 8-5-1-9 9-1 3-9 9 3z" fill="#d4532e"/><circle cx="50" cy="50" r="30" fill="none" stroke="#f6e3c8" stroke-width="1"/><text font-size="8.5" fill="#f6e3c8" letter-spacing="1.6" font-family="Georgia"><textPath href="#c">VERIFIED · LEARNTUBE ·</textPath></text><text x="50" y="57" text-anchor="middle" font-family="Georgia" font-weight="700" font-size="20" fill="#fff">LT</text></svg>
+<div style="text-align:right">Verify at<br>learntube.ai/verify</div></div>
+</div></div>
+<p class="certNote"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M4 26C6 14 12 7 24 4m0 0-8 0m8 0-3 7" stroke="#d4532e" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Every certificate has its own ID and a public link, so a recruiter can check it in seconds.</p></div>
+</div></section>
+
+<section class="outS"><div class="wrap"><div><h2>What you walk away with</h2><p class="lead">Things you can show in your next application, not just hours of video.</p></div>
+<div class="outList">
+<div><span class="k">for your CV</span><h3>A certificate anyone can verify</h3><p>Unique ID and a public link. Add it to LinkedIn in one tap.</p></div>
+<div><span class="k">for the interview</span><h3>A real portfolio project</h3><p>One piece of work you build during the course and can talk through with confidence.</p></div>
+<div><span class="k">for the job</span><h3>Skills matched to your goal</h3><p>Lessons picked for the internships and roles you are applying to.</p></div>
+</div></div></section>
+
+<section class="priceS" id="pricing"><div class="wrap">
+<h2>Simple, honest pricing</h2><p class="lead">Try it first. Pay only if it helps.</p>
+<div class="priceGrid">
+<div class="freeBox"><div class="big">Free</div><p>The first 2 full lectures of your personalised course. No card needed.</p>
+<p class="fine">LearnTubeX Unlimited is a monthly recurring subscription. You are charged Rs 299 every month until you cancel. We remind you before each renewal.</p></div>
+<div class="plan"><span class="sticky-note">many certificates, one price</span><div class="name">LearnTubeX Unlimited</div><div class="big">Rs 299 <small>per month</small></div>
+<ul><li>Unlimited personalised courses</li><li>A certificate for every course you finish</li><li>Portfolio projects included</li><li>Cancel anytime in 2 taps</li></ul>
+<button class="btn" data-open>Build my free course</button></div>
+</div></div></section>
+
+<section class="qS"><div class="wrap">
+<span class="ex">example testimonial, replace with a real one</span>
+<p class="qMain">I liked that I could see the full outline before paying. It felt fair, and I finished it on my commute.</p><div class="who">Learner name, city</div>
+<div class="qSmall">
+<div><span class="ex">example</span><p>I used the project in my internship interview and they asked about it for ten minutes.</p><div class="who">Learner name, city</div></div>
+<div><span class="ex">example</span><p>One subscription, three certificates in a month. Good value for me.</p><div class="who">Learner name, city</div></div>
+</div></div></section>
+
+<section class="faqS"><div class="wrap"><h2>Questions</h2><div>
+<details open><summary>Is the certificate valid?</summary><p>Each certificate has a unique ID and a public verification link, so anyone, including a recruiter, can confirm it is real. It lists the skills you covered and the project you built.</p></details>
+<details><summary>Is it recurring?</summary><p>Yes. LearnTubeX Unlimited is Rs 299 per month, charged monthly until you cancel. We send a reminder before each renewal.</p></details>
+<details><summary>Can I cancel?</summary><p>Yes, anytime, from your account in 2 taps. You keep access until the end of the month you paid for.</p></details>
+<details><summary>What is free?</summary><p>The first 2 full lectures of your personalised course. No card needed to start.</p></details>
+<details><summary>What if I need help?</summary><p>Tap the chat button at any time. Our assistant answers common questions and connects you to a real person when you need one.</p></details>
+</div></div></section>
+
+<section class="final"><div class="wrap"><h2>Your course is 2 minutes away.</h2><p>Answer 3 questions and start your first lecture free.</p><button class="btn" data-open>Build my free course</button></div></section>
+<footer><div class="wrap">LearnTube. Concept redesign for a take-home assignment, not a live product page.</div></footer>
+
+<div class="stickyBar"><span>first 2 lectures free</span><button class="btn" data-open>Build my free course</button></div>
+<button class="chatB" id="chatB" aria-label="Open help chat"><svg width="22" height="22" fill="none" stroke="#f6f0e4" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></button>
+<div class="chat" id="chat"><header>Questions? Ask us.<small>Instant answers, or a real person</small></header><div class="body">
+<div class="bub" id="cb">Hi, I can help with courses, certificates and pricing. If you would rather talk to a person, I will hand you over to our team.</div>
+<div class="chips"><button class="chip" data-a="The first 2 full lectures are free. After that it is Rs 299 per month, cancel anytime.">What does it cost?</button><button class="chip" data-a="Every certificate has a unique ID and a public link recruiters can check.">Is the certificate real?</button><button class="chip" data-a="Connecting you to someone from our team. It usually takes a few minutes. (Demo)">Talk to a person</button></div></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="sheet" id="sheet"></div></div>
+<script>
+const $=s=>document.querySelector(s);const nm=$('#nm'),cs=$('#cs');
+function upd(){$('#cn').textContent=nm.value.trim()||'Your Name';$('#cc').textContent=cs.value}nm.oninput=upd;cs.onchange=upd;
+$('#chatB').onclick=()=>$('#chat').classList.toggle('on');
+document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{$('#cb').textContent=b.dataset.a});
+const Q=[{t:'What are you aiming for?',s:'We shape the course around it.',k:'goal',o:['A job','An internship','Growing in my current job','A certificate']},
+{t:'What do you want to learn?',s:'Pick one. You can add more later.',k:'topic',o:['Digital Marketing','Data Analysis with Excel','Python for Beginners','UI/UX Design Basics','Spoken English for Interviews']},
+{t:'How much time do you have each day?',s:'We will pace the lessons to fit.',k:'time',o:['15 minutes','30 minutes','1 hour or more']}];
+let st=0,ans={};const m=$('#modal'),sh=$('#sheet');
+function render(){const top=t=>`<div class="prog"><span>${t}</span><button class="x" aria-label="Close">&times;</button></div>`;
+ if(st<Q.length){const q=Q[st];sh.innerHTML=top(`Question ${st+1} of 3`)+`<h3>${q.t}</h3><p class="sub">${q.s}</p><div class="opts">${q.o.map(o=>`<button class="opt">${o}</button>`).join('')}</div>`;
+  sh.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{ans[q.k]=b.textContent;st++;render()})}
+ else{const L=['Foundations and key terms','Tools you will use','Hands-on practice','Project for your portfolio','Certificate and application tips'];
+  sh.innerHTML=top('Your course')+`<h3>Here is your ${ans.topic} course</h3><p class="sub">Paced for ${ans.time} a day. Goal: ${ans.goal.toLowerCase()}.</p><div class="outline" style="margin:18px 0 22px;box-shadow:none"><ol>${L.map((l,i)=>i<2?`<li class="f"><span>${l}</span><em>free</em></li>`:`<li>${l}</li>`).join('')}</ol></div><button class="btn" style="width:100%">Start lecture 1 free</button><p class="sub" style="text-align:center;margin-top:12px">No card needed.</p>`}
+ sh.querySelector('.x').onclick=close}
+function close(){m.classList.remove('on')}
+document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{st=0;ans={};render();m.classList.add('on')});
+m.onclick=e=>{if(e.target===m)close()};document.onkeydown=e=>{if(e.key==='Escape')close()};
+</script></body></html>

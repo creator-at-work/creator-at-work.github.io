@@ -1,0 +1,197 @@
+<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LearnTube: AI-led onboarding (mock)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f0e4;--paper2:#efe6d4;--card:#fffaf0;--ink:#1e2a23;--forest:#2c4a3b;--mute:#5f655c;--line:#ddd3c0;--tomato:#d4532e;--mari:#e9b44c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Instrument Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;min-height:100vh}
+.serif{font-family:'Fraunces',Georgia,serif}.hand{font-family:'Caveat',cursive}
+.top{max-width:1180px;margin:0 auto;padding:22px 28px 0;display:flex;justify-content:space-between;align-items:baseline}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:22px}.logo i{color:var(--tomato);font-style:normal}
+.top .t{color:var(--mute);font-size:14px}
+.stage{max-width:1180px;margin:0 auto;padding:18px 28px 40px;display:grid;grid-template-columns:1fr 390px 1fr;gap:44px;align-items:start}
+.intro h1{font-family:'Fraunces',serif;font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.015em}
+.intro p{color:var(--mute);margin:14px 0 20px;font-size:16px;line-height:1.55}
+.ctrl{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{background:var(--tomato);color:#fff;border:0;border-radius:8px;padding:13px 18px;font-family:inherit;font-weight:600;font-size:15px;cursor:pointer;box-shadow:0 3px 0 #9e3a1d}
+.btn.o{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);box-shadow:0 3px 0 var(--ink)}
+.hint{font-family:'Caveat',cursive;font-size:20px;color:var(--forest);margin-top:14px}
+.ex{font-family:'Caveat',cursive;font-size:19px;color:var(--tomato);display:inline-block;transform:rotate(-2deg)}
+/* annotations */
+.notes{list-style:none;position:relative;padding-top:6px}
+.notes li{position:relative;padding:12px 0 12px 46px;font-family:'Caveat',cursive;font-size:22px;line-height:1.1;color:var(--mute);opacity:.45;transition:opacity .3s,color .3s}
+.notes li b{font-family:'Fraunces',serif;font-weight:600;font-size:15px;position:absolute;left:0;top:13px;width:30px;height:30px;border:1.5px solid currentColor;border-radius:50%;display:grid;place-items:center}
+.notes li small{display:block;font-family:'Instrument Sans';font-size:13px;color:var(--mute);margin-top:2px}
+.notes li.on{opacity:1;color:var(--ink)}.notes li.on b{background:var(--mari);border-color:var(--ink)}
+.notes li.on:after{content:"";position:absolute;left:-38px;top:24px;width:30px;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 10'%3E%3Cpath d='M28 5C20 2 10 7 2 5m0 0 5-4M2 5l5 4' stroke='%23d4532e' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")}
+/* phone */
+.phone{width:390px;height:800px;background:var(--ink);border-radius:46px;padding:12px;box-shadow:0 30px 50px -30px rgba(30,42,35,.6);position:relative}
+.screen{width:100%;height:100%;background:var(--paper);border-radius:36px;overflow:hidden;display:flex;flex-direction:column;position:relative;cursor:pointer}
+.notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:100px;height:26px;background:var(--ink);border-radius:20px;z-index:5}
+.sbar{height:44px;flex:none;display:flex;justify-content:space-between;align-items:flex-end;padding:0 28px 4px;font-size:13px;font-weight:600}
+.chead{display:flex;align-items:center;gap:10px;padding:10px 16px 12px;border-bottom:1px solid var(--line);flex:none}
+.av{width:36px;height:36px;border-radius:50%;background:var(--forest);color:var(--paper);display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:700;flex:none}
+.chead .n{font-weight:700;font-size:15px;line-height:1.2}.chead .n small{display:block;font-weight:400;color:var(--mute);font-size:12px}
+.human{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--tomato);background:none;border:1.5px solid var(--tomato);border-radius:6px;padding:6px 8px;cursor:pointer;font-family:inherit;white-space:nowrap}
+.feed{flex:1;overflow-y:auto;padding:14px 14px 18px;display:flex;flex-direction:column;gap:9px;scroll-behavior:smooth}
+.feed::-webkit-scrollbar{display:none}
+.b{max-width:84%;padding:10px 13px;font-size:14.5px;line-height:1.45;border-radius:14px;animation:in .3s ease both}
+.ai{background:var(--card);border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.me{background:var(--forest);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.hu{background:#fbe6d9;border:1px solid #efc8b2;border-bottom-left-radius:4px;align-self:flex-start}
+.who{font-size:11px;color:var(--mute);margin:4px 0 -4px 4px;align-self:flex-start}
+.sys{align-self:center;font-size:12px;color:var(--mute);text-align:center;padding:2px 10px;animation:in .3s both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start;animation:in .3s both}
+.chip{border:1.5px solid var(--ink);background:var(--paper);border-radius:8px;padding:7px 11px;font-size:13.5px;font-weight:600}
+.chip.sel{background:var(--ink);color:var(--paper)}.chips.done .chip:not(.sel){opacity:.35}
+.typing{align-self:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;gap:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--mute);animation:bl 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,100%{opacity:.25}50%{opacity:1}}
+.card{align-self:stretch;background:var(--card);border:1.5px solid var(--ink);border-radius:10px;padding:14px;animation:in .3s both;font-size:14px}
+.card h4{font-family:'Fraunces',serif;font-weight:600;font-size:17px;margin-bottom:4px}
+.card .m{color:var(--mute);font-size:13px}
+.lgBtn{display:flex;align-items:center;gap:8px;justify-content:center;width:100%;margin-top:8px;padding:10px;border-radius:8px;border:1.5px solid var(--ink);background:var(--paper);font-weight:600;font-size:14px}
+.lgBtn.p{background:var(--ink);color:var(--paper)}
+.ph{display:flex;border:1.5px solid var(--line);border-radius:8px;overflow:hidden;margin-top:10px;font-size:14px}.ph span{padding:9px 10px;background:var(--paper2);border-right:1px solid var(--line)}.ph em{padding:9px 10px;color:var(--mute);font-style:normal}
+.skip{text-align:center;font-size:12.5px;color:var(--mute);margin-top:8px;text-decoration:underline}
+.opts{align-self:stretch;display:grid;gap:7px;animation:in .3s both}
+.co{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 13px;display:grid;grid-template-columns:1fr auto;gap:2px 10px}
+.co b{font-size:14.5px}.co span{font-size:12.5px;color:var(--mute);grid-column:1}.co i{font-style:normal;font-size:12px;font-weight:600;color:var(--forest);grid-row:1/3;grid-column:2;align-self:center}
+.co.sel{border:2px solid var(--tomato);background:#fff6ee}.opts.done .co:not(.sel){opacity:.4}
+.ol{list-style:none;margin-top:6px}.ol li{display:flex;gap:9px;padding:6px 0;border-top:1px dashed var(--line);font-size:13.5px}
+.ol li:before{content:attr(data-n);font-family:'Fraunces',serif;color:var(--mute);font-size:12.5px;min-width:16px}
+.ol li em{margin-left:auto;font-family:'Caveat',cursive;font-style:normal;color:var(--tomato);font-size:17px;line-height:1}
+.mcert{margin-top:4px;aspect-ratio:1.414;background:#fbf6ea;position:relative;padding:7%;text-align:center;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 16px -10px rgba(40,30,10,.45);transform:rotate(-1deg)}
+.mcert:before{content:"";position:absolute;inset:5px;border:1px solid #b9a77f;outline:2px double #cdbd98;outline-offset:-5px}
+.mcert .h{font-family:'Fraunces',serif;font-size:8.5px;letter-spacing:.2em;color:var(--forest)}
+.mcert .nm{font-family:'Fraunces',serif;font-weight:600;font-size:22px;border-bottom:1px solid #b9a77f;display:inline-block;padding:0 8px}
+.mcert .s{font-family:'Fraunces',serif;font-style:italic;font-size:8.5px;color:#6d6450}.mcert .c{font-weight:700;font-size:10.5px}
+.mcert .f{display:flex;justify-content:space-between;align-items:flex-end;font-size:7px;color:#6d6450;text-align:left}
+.mcert .f svg{width:30px;height:30px}
+.pay{align-self:stretch;background:var(--ink);color:#efe8d8;border-radius:10px;padding:16px;position:relative;animation:in .3s both}
+.pay .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mari);font-weight:600}
+.pay .big{font-family:'Fraunces',serif;font-size:32px;font-weight:600;color:#fff;line-height:1.1;margin:4px 0}.pay .big small{font-family:'Instrument Sans';font-size:14px;color:#b9c0b5;font-weight:400}
+.pay ul{list-style:none;font-size:13px;margin:8px 0 12px}.pay li{padding:4px 0;border-top:1px solid rgba(255,255,255,.12)}.pay li:before{content:"✓  ";color:var(--mari);font-weight:700}
+.pay .go{display:block;text-align:center;background:var(--tomato);color:#fff;border-radius:8px;padding:12px;font-weight:600;font-size:14.5px}
+.pay .fine{font-size:11.5px;color:#b9c0b5;margin-top:9px;line-height:1.4}
+.pay .note{position:absolute;right:-4px;top:-14px;background:var(--mari);color:var(--ink);font-family:'Caveat',cursive;font-weight:700;font-size:16px;padding:3px 9px;transform:rotate(4deg)}
+.inputbar{flex:none;border-top:1px solid var(--line);padding:10px 12px 18px;display:flex;gap:8px;align-items:center}
+.inputbar div{flex:1;border:1.5px solid var(--line);border-radius:20px;padding:9px 14px;font-size:14px;color:var(--mute);background:var(--card);min-height:38px}
+.inputbar div.typed{color:var(--ink)}
+.inputbar span{width:36px;height:36px;border-radius:50%;background:var(--forest);display:grid;place-items:center;flex:none}
+/* welcome */
+.welcome{position:absolute;inset:0;background:var(--paper);padding:70px 26px 30px;display:flex;flex-direction:column;z-index:3;transition:opacity .4s,transform .4s}
+.welcome.gone{opacity:0;transform:translateY(-20px);pointer-events:none}
+.welcome .lg{font-family:'Fraunces',serif;font-weight:700;font-size:20px}.welcome .lg i{color:var(--tomato);font-style:normal}
+.welcome h2{font-family:'Fraunces',serif;font-weight:600;font-size:32px;line-height:1.12;letter-spacing:-.015em;margin:34px 0 0}
+.u{position:relative;white-space:nowrap}.u svg{position:absolute;left:-2%;bottom:-8px;width:104%;height:12px}
+.welcome h5{font-size:13px;color:var(--mute);font-weight:600;margin:36px 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.welcome ol{list-style:none}.welcome ol li{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:15px}
+.welcome ol li b{font-family:'Fraunces',serif;color:var(--tomato);font-weight:600}
+.welcome .start{margin-top:auto;background:var(--tomato);color:#fff;text-align:center;border-radius:10px;padding:16px;font-weight:600;font-size:16px;box-shadow:0 3px 0 #9e3a1d}
+.welcome .nl{text-align:center;font-size:13px;color:var(--mute);margin-top:12px}
+.welcome .stk{position:absolute;right:22px;top:64px;background:var(--mari);font-family:'Caveat',cursive;font-weight:700;font-size:17px;padding:4px 10px;transform:rotate(5deg)}
+.welcome .start.press{transform:translateY(2px);box-shadow:0 1px 0 #9e3a1d}
+@media(max-width:1000px){.stage{grid-template-columns:1fr 390px}.notesWrap{display:none}}
+@media(max-width:600px){.top,.intro,.notesWrap{display:none}.stage{display:block;padding:0}.phone{width:100vw;height:100dvh;border-radius:0;padding:0;box-shadow:none}.screen{border-radius:0}.notch{display:none}.sbar{height:12px;font-size:0}}
+body.solo .top,body.solo .intro,body.solo .notesWrap{display:none}body.solo .stage{display:block;padding:10px;width:410px}
+</style></head><body>
+<div class="top"><div class="logo">Learn<i>Tube</i></div><div class="t">Concept mock: AI-led onboarding</div></div>
+<div class="stage">
+<div class="intro">
+<h1>Onboarding that feels like talking to a counsellor.</h1>
+<p>A scripted mock of the first 3 minutes. No login until there is something worth saving, a course outline before any price, and a real person one tap away.</p>
+<div class="ctrl"><button class="btn" id="replay">Replay</button><button class="btn o" id="next">Next step</button></div>
+<div class="hint">tip: tap the phone to skip ahead</div>
+<p style="margin-top:22px"><span class="ex">"Priya" is an example user</span></p>
+</div>
+<div class="phone"><div class="notch"></div><div class="screen" id="screen">
+<div class="welcome" id="welcome"><div class="lg">Learn<i>Tube</i></div>
+<span class="stk">no login needed</span>
+<h2>A certified, job-ready course <span class="u">built around you<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M3 8c40-6 95-7 194-3" stroke="#d4532e" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span>.</h2>
+<h5>What to expect</h5>
+<ol><li><b>1</b>A short chat about your goal</li><li><b>2</b>Your course outline, before any price</li><li><b>3</b>First 2 full lectures free</li></ol>
+<div class="start" id="startBtn">Start chatting</div><div class="nl">Takes about 2 minutes</div></div>
+<div class="sbar"><span>9:41</span><span>●●● ▮</span></div>
+<div class="chead"><div class="av">T</div><div class="n">Tara<small>Course counsellor (AI)</small></div><button class="human">Talk to a human</button></div>
+<div class="feed" id="feed"></div>
+<div class="inputbar"><div id="inp">Type a question…</div><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f6f0e4" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div>
+</div></div>
+<div class="notesWrap"><ol class="notes" id="notes">
+<li data-s="1"><b>1</b>Welcome, no login<small>One promise, what to expect, one button.</small></li>
+<li data-s="2"><b>2</b>Goal, topic, time<small>Tap-to-answer, like a chat with a counsellor.</small></li>
+<li data-s="3"><b>3</b>"Here's what I heard"<small>Login asked only to save the plan.</small></li>
+<li data-s="4"><b>4</b>3 courses, not 300<small>Outcome and duration on each card.</small></li>
+<li data-s="5"><b>5</b>See it with your name<small>Outline and certificate before paying.</small></li>
+<li data-s="6"><b>6</b>Free first, then honest price<small>Rs 299 a month, recurring, cancel anytime.</small></li>
+<li data-s="7"><b>7</b>Stuck? A human, fast<small>Answer, then a person or a 10-min call.</small></li>
+</ol></div>
+</div>
+<script>
+const seal='<svg viewBox="0 0 100 100"><path d="M50 2l6 7 9-3 3 9 9 1-1 9 8 5-5 8 5 8-8 5 1 9-9 1-3 9-9-3-6 7-6-7-9 3-3-9-9-1 1-9-8-5 5-8-5-8 8-5-1-9 9-1 3-9 9 3z" fill="#d4532e"/><text x="50" y="58" text-anchor="middle" font-family="Georgia" font-weight="700" font-size="24" fill="#fff">LT</text></svg>';
+const chips=(a,s)=>`<div class="chips done">${a.map((x,i)=>`<span class="chip${i===s?' sel':''}">${x}</span>`).join('')}</div>`;
+const S=[
+{s:1,k:'welcome'},
+{s:2,start:1},
+{s:2,ai:"Hi, I'm Tara. I'll help you build a course that fits you. First, what are you aiming for right now?"},
+{s:2,raw:chips(['A job','An internship','Upskill at work','A certificate'],1)},
+{s:2,me:'An internship'},
+{s:2,ai:"Good choice. Which skill do you want that internship in? Pick one or type your own."},
+{s:2,raw:chips(['Digital marketing','Data analysis','Python','UI/UX design'],0)},
+{s:2,me:'Digital marketing'},
+{s:2,ai:"And how much time can you give it on a normal day?"},
+{s:2,raw:chips(['15 minutes','30 minutes','1 hour or more'],1),k:'questions'},
+{s:2,me:'30 minutes'},
+{s:3,ai:"So you want a <b>digital marketing internship</b>, and you can give it about <b>30 minutes a day</b>. I'll keep lessons short and end with a project you can show."},
+{s:3,ai:"Want me to save this plan so you don't lose it?"},
+{s:3,raw:`<div class="card"><h4>Save your plan</h4><div class="m">So you can come back to it anytime. No payment needed.</div><div class="ph"><span>+91</span><em>Phone number</em></div><div class="lgBtn p">Send OTP</div><div class="lgBtn">Continue with Google</div><div class="skip">Skip for now</div></div>`,k:'login'},
+{s:3,sys:'Signed in with Google as Priya Sharma (example user)'},
+{s:4,ai:"Thanks, Priya. Here are 3 courses that fit your goal. Which one feels right?"},
+{s:4,raw:`<div class="opts done"><div class="co"><b>Digital Marketing Foundations</b><span>Understand channels well enough to interview.</span><i>3 weeks</i></div><div class="co sel"><b>Social Media Marketing</b><span>Plan and run a campaign for a real brand.</span><i>4 weeks</i></div><div class="co"><b>Performance Ads Basics</b><span>Set up and read your first ad campaign.</span><i>3 weeks</i></div></div>`,k:'courses'},
+{s:4,me:'Social Media Marketing'},
+{s:5,ai:"Here's your course. The project at the end is something you can put in your internship applications."},
+{s:5,raw:`<div class="card"><h4>Social Media Marketing</h4><div class="m">4 weeks · 30 min a day · for an internship</div><ul class="ol"><li data-n="1">How brands grow on social<em>free</em></li><li data-n="2">Finding your audience<em>free</em></li><li data-n="3">Content that gets saved and shared</li><li data-n="4">Running and measuring a campaign</li><li data-n="5">Project: a 2-week plan for a local brand</li></ul></div>`},
+{s:5,ai:"And this is the certificate you get when you finish:"},
+{s:5,raw:`<div class="card" style="padding:12px"><div class="mcert"><div class="h">CERTIFICATE OF COMPLETION</div><div><div class="s">This is to certify that</div><div class="nm">Priya Sharma</div><div class="s">has completed</div><div class="c">Social Media Marketing</div></div><div class="f"><span>ID LT-2026-48217<br>learntube.ai/verify</span>${seal}</div></div></div>`,k:'outline'},
+{s:6,ai:"Your first 2 full lectures are free. Start whenever you like."},
+{s:6,sys:'Lectures 1 and 2 completed'},
+{s:6,ai:"Nice work, Priya. To keep going with this course and any others:"},
+{s:6,raw:`<div class="pay"><span class="note">all courses, one price</span><div class="k">LearnTubeX Unlimited</div><div class="big">Rs 299 <small>per month</small></div><ul><li>Unlimited courses and certificates</li><li>Portfolio projects included</li><li>Cancel anytime in 2 taps</li></ul><span class="go">Continue for Rs 299/month</span><div class="fine">Monthly recurring. Charged every month until you cancel. We remind you before each renewal.</div></div>`,k:'paywall'},
+{s:7,typeme:'is the certificate valid?'},
+{s:7,ai:"Yes. Every certificate has its own ID and a public link, so a recruiter can check it is real in seconds. It also lists your project. Would you like to talk it through with someone?"},
+{s:7,raw:chips(['Talk to a human','Book a 10-min call'],0)},
+{s:7,me:'Talk to a human'},
+{s:7,sys:'Connecting you to the LearnTube team. Your chat so far is shared with them.'},
+{s:7,hu:"Hi Priya, Ananya from LearnTube here (example). I've read your chat. Happy to show you a verified certificate and answer anything before you decide.",k:'human'}
+];
+const feed=document.getElementById('feed'),wel=document.getElementById('welcome'),inp=document.getElementById('inp');
+let i=0,tm=null,auto=true;
+function mark(s){document.querySelectorAll('#notes li').forEach(l=>l.classList.toggle('on',+l.dataset.s===s))}
+function add(st,instant){
+ const d=document.createElement('div');
+ if(st.start){wel.classList.add('gone');return}
+ if(st.ai){d.className='b ai';d.innerHTML=st.ai}
+ else if(st.me||st.typeme){d.className='b me';d.textContent=st.me||st.typeme;inp.textContent='Type a question…';inp.classList.remove('typed')}
+ else if(st.hu){feed.insertAdjacentHTML('beforeend','<div class="who">Ananya, LearnTube team</div>');d.className='b hu';d.textContent=st.hu}
+ else if(st.sys){d.className='sys';d.textContent=st.sys}
+ else if(st.raw){feed.insertAdjacentHTML('beforeend',st.raw);return}
+ else return;
+ feed.appendChild(d)}
+function scroll(){feed.scrollTop=feed.scrollHeight}
+function step(){
+ clearTimeout(tm);if(i>=S.length)return;const st=S[i];mark(st.s);
+ const go=()=>{document.querySelectorAll('.typing').forEach(t=>t.remove());add(st);scroll();i++;if(auto&&i<S.length)tm=setTimeout(step,st.raw?2200:st.k==='welcome'?2400:1400)};
+ if(st.ai||st.hu){feed.insertAdjacentHTML('beforeend','<div class="typing"><i></i><i></i><i></i></div>');scroll();tm=setTimeout(go,700)}
+ else if(st.typeme){inp.textContent=st.typeme;inp.classList.add('typed');tm=setTimeout(go,900)}
+ else if(st.start){document.getElementById('startBtn').classList.add('press');tm=setTimeout(go,350)}
+ else go()}
+function reset(){clearTimeout(tm);i=0;feed.innerHTML='';wel.classList.remove('gone');document.getElementById('startBtn').classList.remove('press');inp.textContent='Type a question…';inp.classList.remove('typed')}
+document.getElementById('replay').onclick=()=>{auto=true;reset();step()};
+document.getElementById('next').onclick=()=>{auto=false;step()};
+document.getElementById('screen').onclick=()=>{auto=false;document.querySelectorAll('.typing').forEach(t=>t.remove());step()};
+const q=new URLSearchParams(location.search);if(q.has('solo'))document.body.classList.add('solo');
+const f=q.get('frame');
+if(f){feed.style.scrollBehavior='auto';const n=S.findIndex(x=>x.k===f);for(i=0;i<=n;i++){mark(S[i].s);add(S[i])}scroll();}
+else step();
+</script></body></html>
