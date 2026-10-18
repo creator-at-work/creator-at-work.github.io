@@ -85,7 +85,7 @@
     function show(b) {
       sh.querySelectorAll('.spine.on').forEach(function (o) { if (o !== b) o.classList.remove('on'); });
       var t = b.getAttribute('data-title'), a = b.getAttribute('data-author');
-      var recent = b.classList.contains('recent') ? 'Most recent: ' : '';
+      var recent = b.classList.contains('recent') ? 'Reading: ' : '';
       cap.innerHTML = recent + '<cite>' + esc(t) + '</cite>' + (a ? ' <span class="cap-a"><span class="cap-dot" aria-hidden="true">·</span> ' + esc(a) + '</span>' : '') +
         ' <span class="cap-th">' + esc(b.getAttribute('data-thread')) + '</span>';
     }
