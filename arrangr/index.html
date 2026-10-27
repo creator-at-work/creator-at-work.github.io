@@ -2,63 +2,272 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
-<meta name="description" content="An unofficial Arrangr redesign concept. Scheduling that books by importance, not just availability.">
-<title>Arrangr — Scheduling that books by importance</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<meta name="description" content="Arrangr redesign concept. Scheduling that books by importance, not just availability.">
+<meta name="theme-color" content="#f6f3ec">
+<title>Arrangr | Scheduling by importance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#172c2b;--muted:#526361;--paper:#f7f9f7;--accent:#a43620;--line:#cdd6d1;--green:#e4eee7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 'DM Sans',sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.wrap{width:min(1280px,calc(100% - 40px));margin:auto}.skip{position:absolute;top:-100px;background:white;padding:12px}.skip:focus{top:0;z-index:5}header{border-bottom:1px solid var(--line)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:12px}.wordmark{font-size:30px;letter-spacing:-1.8px;text-decoration:none;font-weight:500}.navlinks{display:flex;align-items:center;gap:14px}.navlinks>a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}.navlinks .desktop{display:none}.button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:11px 22px;border:1px solid var(--accent);background:var(--accent);color:#fff;text-decoration:none;font:600 16px/1.4 'DM Sans',sans-serif;cursor:pointer}.button:hover{background:#852b19}.navlinks .button{padding:10px 14px}.eyebrow{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700}.hero{padding:32px 0 38px;display:grid;gap:36px}.hero>*{min-width:0}.hero-label{margin:0;font-size:16px;max-width:none}h1,h2{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-1px;margin:16px 0 20px}h1{font-size:42px}h1 em{color:var(--accent);font-style:normal}h2{font-size:42px}p{margin:0 0 20px}.intro{color:var(--muted);font-size:16px;line-height:1.55}.fine{font-size:13px;color:var(--muted)}.free-note{font-size:14px;margin:9px 0 20px;color:var(--muted)}.hero-proof{border-top:1px solid var(--line);padding-top:15px}.hero-proof>strong{font-size:14px}.hero-proof p{font-family:'Libre Caslon Display',Georgia,serif;font-size:21px;line-height:1.25;margin:8px 0}.hero-proof cite{font-size:13px}.demo{margin:0;align-self:center}.steps{list-style:none;padding:0;margin:0;counter-reset:step}.steps li{position:relative;padding-left:32px;margin-bottom:19px;counter-increment:step}.steps li:before{content:counter(step);position:absolute;left:0;top:0;width:23px;height:23px;border:1px solid var(--line);border-radius:50%;text-align:center;font-size:13px;line-height:22px}.steps li:not(:last-child):after{content:'↓';position:absolute;left:7px;bottom:-21px;color:var(--muted);font-size:16px}.step-label{font-size:15px;font-weight:600;margin:0 0 8px}.booking,.day-demo,.moved{border:1px solid var(--line);background:white;padding:12px;font-size:13px}.booking-header{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:8px;color:var(--muted);flex-wrap:wrap}.booking p{margin:5px 0 8px}.chips{display:flex;gap:8px}.chips span{padding:2px 8px;border:1px solid var(--line);border-radius:20px}.chips span:last-child{background:#faeee9;color:var(--accent);border-color:#e6bcae}.day-title{color:var(--muted);margin-bottom:6px}.slot{display:grid;grid-template-columns:40px 1fr;gap:8px;align-items:center}.event{border-left:3px solid var(--accent);background:#faeee9;padding:8px;color:var(--ink)}.displaced{margin:6px 0 0 48px;padding:6px 8px;border:1px dashed #95aaa0;color:var(--muted);background:var(--paper);line-height:1.4}.displaced small{display:block;font-size:12px}.moved{background:var(--green);border-color:#adc4b5}.moved span{display:block;margin-left:20px}.caption{font-size:13px;color:var(--muted);margin:9px 0 0 32px}.proof{padding:25px 0 32px;border-top:1px solid var(--line)}.proof-heading{font-size:14px;color:var(--muted)}.names{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:21px;font-weight:600;letter-spacing:-.5px;margin:18px 0 12px}.section{padding:48px 0;border-top:1px solid var(--line)}.section-head .eyebrow,.comparison .eyebrow{color:var(--accent)}.capabilities{margin-top:28px}.capability{display:grid;grid-template-columns:30px 1fr;gap:8px;border-top:1px solid var(--line);padding:16px 0}.number{font-size:13px;color:var(--muted);padding-top:5px}.capability h3{font-size:20px;margin:0 0 3px}.capability p{color:var(--muted);margin:0}.privacy{margin-top:25px}.privacy p{color:var(--muted);margin:5px 0 0}.margin-quote{border-left:1px solid var(--line);padding-left:18px;margin:28px 0 0}.margin-quote p{font-family:'Libre Caslon Display',Georgia,serif;font-size:24px;line-height:1.3;margin:0 0 12px}cite{font-style:normal;font-size:13px;color:var(--muted)}cite strong{display:block;color:var(--ink);font-weight:500}.comparison-intro{color:var(--muted)}table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:13px;line-height:1.4}caption{text-align:left;font-size:14px;color:var(--muted);padding-bottom:12px}th,td{padding:12px 5px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:break-word;text-align:left}thead th{font-weight:600;border-top:1px solid var(--line)}th:first-child{width:27%}tbody th{font-weight:500}td:nth-child(2),thead th:nth-child(2){background:var(--green)}td small{display:block;font-size:13px;color:var(--muted);margin-top:4px}.table-note{margin:14px 0 0;font-size:13px;color:var(--muted)}.team{background:var(--ink);color:#fff}.team .section{border:0}.team .eyebrow{color:#e4aa97}.team-copy{color:#cbd8d2;max-width:420px}.team-details{padding:0;list-style:none;margin:25px 0 12px}.team-details li{border-top:1px solid #49605a;padding:11px 0}.team .button{background:#fff;color:var(--ink);border-color:#fff}.team .button:hover{background:var(--green)}.lookup{margin-top:32px;border:1px solid #637871;padding:22px}.proposed{display:inline-block;border:1px dashed #a7b9af;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px}.lookup h3{font-size:23px;line-height:1.3;font-weight:500;margin:18px 0}.lookup label{display:block;font-size:14px;margin-bottom:8px}.lookup input{width:100%;min-width:0;min-height:48px;border:1px solid #95aaa0;background:transparent;color:white;padding:12px;font:16px 'DM Sans',sans-serif}.lookup input::placeholder{color:#c5d2cc}.lookup button{margin-top:12px}.lookup p{color:#cbd8d2;font-size:13px;margin:14px 0 0}.lookup [hidden]{display:none}#lookup-result{overflow-wrap:anywhere;margin-top:24px;padding-top:20px;border-top:1px solid #637871}.initials{display:flex;gap:8px;margin-top:14px}.initials span{display:flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid #95aaa0;border-radius:50%;font-size:13px}.lookup a.button{margin-top:14px}.lookup #example-company{font-size:22px;line-height:1.3;color:white}.pilot-link{display:inline-flex;min-height:44px;align-items:center}.team .margin-quote{border-color:#637871}.team cite,.team cite strong{color:#cbd8d2}.plan{display:grid;gap:12px;border-top:1px solid var(--line);padding:24px 0}.plan h3{font-size:22px;margin:0}.price{font-size:24px;font-weight:500;letter-spacing:-.7px}.price small{font-size:14px;font-weight:400;letter-spacing:0}.price .fine{display:block}.plan p{margin:0;color:var(--muted)}.plan a,.pricing-link{min-height:44px;display:inline-flex;align-items:center}.plan a{font-weight:600}.pricing-link{margin:0 0 20px;font-size:14px}footer{border-top:1px solid var(--line);padding:30px 0 22px}.footer-main{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-links{display:flex;flex-wrap:wrap;gap:8px 24px}.footer-links a{display:inline-flex;min-height:44px;align-items:center;font-size:14px}.concept{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin:25px 0 0}
-/* Keep the semantic table, with each mobile feature label spanning its four cells. */
-.tool-label{display:none}.comparison td:nth-child(2) .yes{font-weight:600}
-@media(max-width:759px){
-  table{display:block;font-size:14px}
-  caption{display:block}
-  thead,tbody{display:block}
-  thead tr,tbody tr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-  thead th{width:auto;padding:10px 6px;font-size:13px}
-  thead th:first-child{position:absolute;width:1px;height:1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%)}
-  tbody tr{border-top:1px solid var(--line)}
-  tbody th{grid-column:1 / -1;width:auto!important;padding:12px 0 8px;border:0;font-size:15px;color:var(--ink)}
-  tbody td{min-width:0;padding:10px 6px 12px;border:0}
-  td small{font-size:12px;line-height:1.4;font-weight:400}
-  .team-price td{font-size:16px}
+:root{
+  --paper:#f6f3ec;--card:#fffdf8;--ink:#15302a;--muted:#4b5e57;--line:#ddd6c8;
+  --accent:#a83e1c;--accent-soft:#f6e3da;--sage:#e3ece6;--sage-ink:#2f5a4b;
+  --serif:"Libre Caslon Display",Georgia,serif;
+  --sans:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
 }
-@media(min-width:760px){table{display:table}caption{display:table-caption}thead{position:static;width:auto;height:auto;overflow:visible;clip-path:none;display:table-header-group}tbody{display:table-row-group}tbody tr{display:table-row;border:0}tbody th{width:27%!important;border-bottom:1px solid var(--line)}tbody td,tbody td:nth-child(2){display:table-cell;border-bottom:1px solid var(--line)}.tool-label,tbody td:nth-child(5) .tool-label{display:none}tbody th,tbody td{padding:18px 14px}.wrap{width:min(1280px,calc(100% - 64px))}.navlinks{gap:20px}.navlinks .desktop{display:inline-flex}.hero{grid-template-columns:1.2fr 1fr;gap:38px;padding:44px 0}.hero-label{max-width:none}h1{font-size:52px}.section{padding:64px 0}.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}.capabilities{margin:0}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;align-items:start}.team-heading{grid-column:1;grid-row:1}.team-facts{grid-column:1;grid-row:2}.team .lookup{grid-column:2;grid-row:1 / 3;align-self:start;margin:0}.plan{grid-template-columns:1fr 1fr 1.5fr .7fr;gap:24px;align-items:start}.plan a{justify-content:flex-end}.pricing-header{display:flex;justify-content:space-between;align-items:baseline}table{font-size:16px}th,td{padding:18px 14px}.comparison .margin-quote{max-width:850px}.names{justify-content:space-between}}
-@media(min-width:1100px){.hero{grid-template-columns:1.75fr 1fr;gap:55px;padding:48px 0 44px}h1{font-size:70px;max-width:750px}.hero .intro{font-size:16px;line-height:1.55;max-width:770px}.hero-proof p{font-size:21px;white-space:nowrap}.demo{padding-top:4px}.step-label{font-size:16px}h2{font-size:52px}.names{font-size:24px}.section-head h2{max-width:470px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media(min-width:760px){.team .lookup{grid-row:1 / 3}.team-facts{grid-row:2 / 4}.team-quote{grid-column:2;grid-row:3;margin-top:36px}}</style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0;text-wrap:pretty}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:12px 16px;border-radius:8px;z-index:9}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Nav */
+header{position:sticky;top:0;z-index:5;background:rgba(246,243,236,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.wordmark{font-family:var(--serif);font-size:26px;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.wordmark span{color:var(--accent)}
+.navr{display:flex;align-items:center;gap:8px}
+.navr .login{text-decoration:none;font-size:14px;font-weight:600;padding:12px;min-height:44px;display:inline-flex;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:16px;transition:transform .3s var(--ease),background-color .3s var(--ease)}
+.btn:hover{background:#922f10;transform:translateY(-1px)}
+.btn:active{transform:translateY(1px)}
+.btn.sm{min-height:44px;padding:8px 16px;font-size:14px}
+.btn svg{width:16px;height:16px}
+
+/* Hero */
+.hero{display:grid;gap:32px;padding-top:24px;padding-bottom:56px}
+.hero h1{font-size:44px;line-height:1.04}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.sub{font-size:18px;line-height:1.45;color:var(--muted);margin-top:16px;max-width:30ch}
+.cta{display:flex;align-items:center;flex-wrap:wrap;gap:12px 16px;margin-top:24px}
+.note{font-size:14px;color:var(--muted)}
+
+/* Product mock */
+.mock{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 24px 48px -32px rgba(21,48,42,.35)}
+.mock-top{display:flex;justify-content:space-between;align-items:baseline;padding:0 4px 12px;border-bottom:1px solid var(--line);font-size:14px}
+.mock-top b{font-size:16px}
+.mock-top span{color:var(--muted)}
+.cal{position:relative;margin-top:8px;--h:34px}
+.hr{display:flex;align-items:center;height:var(--h);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.hr::after{content:"";flex:1;height:1px;background:var(--line);margin-left:8px}
+.hr i{font-style:normal;width:36px}
+.ev{position:absolute;left:44px;right:0;border-radius:10px;padding:6px 12px;font-size:14px;line-height:1.3;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ev small{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.ev.low{top:calc(var(--h)*1 + 2px);height:calc(var(--h)*2 - 4px);background:var(--sage);color:var(--sage-ink)}
+.ev.low small{background:#fff;color:var(--sage-ink)}
+.ev.high{top:calc(var(--h)*1 + 2px);height:calc(var(--h)*2 - 4px);background:var(--accent);color:#fff}
+.ev.high small{background:#fff;color:var(--accent)}
+.ev.fixed{top:calc(var(--h)*3 + 2px);height:calc(var(--h) - 4px);background:#efebe2;color:var(--muted)}
+.req{position:absolute;right:-8px;top:8px;width:min(260px,78%);background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 16px 32px -16px rgba(21,48,42,.4);font-size:14px;line-height:1.35}
+.req .tag{display:block;font-size:12px;font-weight:600;color:var(--accent);margin-bottom:6px}
+.req .who{display:flex;align-items:center;gap:8px;font-weight:600}
+.av{width:28px;height:28px;border-radius:50%;display:inline-grid;place-items:center;background:var(--ink);color:#fff;font-size:12px;font-weight:600;flex:none}
+.req p{color:var(--muted);margin-top:4px}
+.toast{position:absolute;left:44px;right:0;top:calc(var(--h)*4 + var(--h)/2 - 18px);justify-content:center;background:var(--ink);color:#fff;border-radius:999px;padding:8px 16px;font-size:14px;display:flex;gap:8px;align-items:center}
+.toast svg{width:16px;height:16px}
+.cap{font-size:14px;color:var(--muted);margin-top:8px;text-align:right}
+
+/* Loop: request arrives, lands in the slot, low priority call moves to 15:00 */
+@media (prefers-reduced-motion:no-preference){
+  .req{animation:req 9s var(--ease) infinite}
+  .ev.high{animation:high 9s var(--ease) infinite}
+  .ev.low{animation:low 9s var(--ease) infinite}
+  .toast{animation:toast 9s var(--ease) infinite}
+}
+@media (prefers-reduced-motion:reduce){
+  .req{opacity:0}
+  .ev.low{transform:translateY(calc(var(--h)*5))}
+}
+@keyframes req{0%,6%{opacity:0;transform:translateY(-12px)}14%,34%{opacity:1;transform:none}44%,100%{opacity:0;transform:translate(-24px,48px) scale(.92)}}
+@keyframes high{0%,36%{opacity:0;transform:scale(.94)}46%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes low{0%,38%{transform:none;opacity:1}50%,92%{transform:translateY(calc(var(--h)*5));opacity:1}96%{opacity:0;transform:translateY(calc(var(--h)*5))}100%{opacity:1;transform:none}}
+@keyframes toast{0%,52%{opacity:0;transform:translateY(8px)}58%,88%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateY(8px)}}
+
+/* Proof strip */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-top:40px;padding-bottom:40px;display:grid;gap:24px}
+.quote{font-family:var(--serif);font-size:24px;line-height:1.25;max-width:24ch}
+.quote cite{display:block;font:14px/1.4 var(--sans);color:var(--muted);margin-top:12px;font-style:normal}
+.orgs .n{font-size:14px;color:var(--muted)}
+.orgs .n b{color:var(--ink);font-size:16px}
+.names{display:flex;flex-wrap:wrap;gap:8px 24px;margin:12px 0 8px;font-weight:600;font-size:18px;color:#3d4f49}
+.fine{font-size:14px;color:var(--muted)}
+
+/* Feature rows */
+.feat{display:grid;gap:24px;padding-top:64px;align-items:center}
+.feat h2{font-size:32px;line-height:1.1}
+.feat .txt p{font-size:18px;color:var(--muted);margin-top:8px;max-width:28ch}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Poll */
+.chips{display:flex;gap:8px;margin-bottom:16px}
+.chip{font-size:14px;padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.opt{display:grid;grid-template-columns:88px 1fr auto;align-items:center;gap:12px;padding:10px 0;font-size:14px;border-top:1px solid var(--line)}
+.opt b{font-variant-numeric:tabular-nums}
+.bar{height:8px;border-radius:999px;background:#ece7dc;overflow:hidden}
+.bar i{display:block;height:100%;width:var(--w);background:#9db3a8;border-radius:inherit;transform-origin:left;transform:scaleX(0);transition:transform 1s var(--ease) .2s}
+.in .bar i{transform:scaleX(1)}
+.opt.win .bar i{background:var(--accent)}
+.opt.win b,.opt.win .cnt{color:var(--accent)}
+.cnt{font-variant-numeric:tabular-nums;color:var(--muted);font-weight:600}
+.faces{display:flex;margin-top:16px;align-items:center;gap:12px;font-size:14px;color:var(--muted)}
+.faces .stack{display:flex}
+.faces .av{border:2px solid var(--card);margin-left:-4px;width:32px;height:32px}
+.faces .av:first-child{margin-left:0}
+
+/* Groups */
+.grp-top{display:flex;justify-content:space-between;font-size:14px;margin-bottom:12px}
+.grp-top span{color:var(--muted)}
+.row{display:grid;grid-template-columns:104px 1fr;gap:12px;align-items:center;font-size:14px;padding:6px 0}
+.row em{font-style:normal;color:var(--muted);font-size:12px;display:block}
+.track{position:relative;height:20px;border-radius:6px;background:repeating-linear-gradient(90deg,#ece7dc 0 calc(12.5% - 2px),transparent calc(12.5% - 2px) 12.5%)}
+.busy{position:absolute;top:0;bottom:0;border-radius:6px;background:#c9d6cf}
+.overlap{position:absolute;top:-4px;bottom:-4px;left:calc(104px + 12px + (100% - 116px)*.5);width:calc((100% - 116px)*.125);border:2px solid var(--accent);border-radius:8px;pointer-events:none}
+.grp-body{position:relative}
+.axis{display:flex;justify-content:space-between;margin:4px 0 0 116px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.found{margin-top:16px;font-size:14px;display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:600}
+.found svg{width:16px;height:16px}
+
+/* Ari */
+.chat{display:grid;gap:12px;font-size:15px;line-height:1.4}
+.b{max-width:85%;padding:10px 14px;border-radius:16px}
+.b.me{justify-self:end;background:var(--ink);color:#fff;border-bottom-right-radius:4px}
+.b.ari{background:#efebe2;border-bottom-left-radius:4px}
+.b.ari b{display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+.lock{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--sage-ink);margin-top:4px}
+.lock svg{width:16px;height:16px}
+
+/* Final */
+.final{text-align:center;padding-top:96px;padding-bottom:80px}
+.final h2{font-size:44px;line-height:1.05;max-width:14ch;margin:0 auto}
+.final h2 .w{color:rgba(21,48,42,.28);transition:color .6s var(--ease)}
+.final h2 .w.on{color:var(--ink)}
+.final h2 .w.acc.on{color:var(--accent)}
+.final .cta{justify-content:center;flex-direction:column;margin-top:32px}
+footer{border-top:1px solid var(--line);padding:24px 0 40px}
+.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px}
+.foot nav{height:auto;gap:4px 16px;flex-wrap:wrap;justify-content:flex-start}
+.foot nav a{font-size:14px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.foot nav a:hover,.navr .login:hover{text-decoration:underline}
+.foot p{font-size:14px;color:var(--muted);width:100%}
+
+@media (min-width:900px){
+  .wrap{padding:0 40px}
+  nav{height:72px}
+  .hero{grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-top:56px;padding-bottom:96px;min-height:calc(100vh - 160px)}
+  .hero h1{font-size:72px;line-height:1}
+  .sub{font-size:20px;margin-top:24px}
+  .cta{margin-top:32px}
+  .mock{padding:24px}
+  .cal{--h:44px}
+  .proof{grid-template-columns:5fr 7fr;gap:64px;align-items:center;padding-top:48px;padding-bottom:48px}
+  .quote{font-size:30px}
+  .feat{grid-template-columns:5fr 6fr;gap:80px;padding-top:96px}
+  .feat.flip .txt{order:2}
+  .feat h2{font-size:48px}
+  .feat .txt p{font-size:20px}
+  .panel{padding:32px}
+  .final{padding-top:144px;padding-bottom:112px}
+  .final h2{font-size:72px}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap" aria-label="Main navigation"><a class="wordmark" href="#" aria-label="Arrangr home">arrangr<span style="color:var(--accent)">.</span></a><div class="navlinks"><a class="desktop" href="#product">Product</a><a class="desktop" href="#compare">Compare</a><a class="desktop" href="#teams">Teams</a><a class="desktop" href="#pricing">Pricing</a><a href="https://arrangr.com/app/sign_in">Log in</a><a class="button" href="https://arrangr.com/app/sign_up?hero=A_01">Start free</a></div></nav></header>
-<main id="main">
-<section class="hero wrap" aria-labelledby="hero-title">
-<div class="hero-copy"><p class="hero-label">For professionals and small teams</p><h1 id="hero-title">Scheduling that books by <em>importance</em>, not just availability.</h1><p class="intro">Booking pages, meeting polls, and 1:1 invites for Google, Outlook, and iCal. When an important meeting needs a slot, Arrangr moves the less important one and tells everyone.</p><a class="button" href="https://arrangr.com/app/sign_up?hero=A_01">Start free</a><p class="free-note">Free forever, no credit card.</p><div class="hero-proof"><strong>130,000+ users</strong><p>…Arrangr has eliminated “Sorry, I’m double booked” from my vocabulary.</p><cite>Kelly McDaniel, Owner, DelisaGroup</cite></div></div>
-<figure class="demo"><ol class="steps"><li><p class="step-label">Someone books from your link</p><div class="booking"><div class="booking-header"><span>arrangr.com/your-name</span><span>Illustrative</span></div><strong>Jordan Lee · Acme Inc</strong><p>“Can we discuss the Q3 renewal?”</p><div class="chips"><span>45 min</span><span>High priority</span></div></div></li><li><p class="step-label">Arrangr gives it your best slot</p><div class="day-demo"><div class="day-title">Tue</div><div class="slot"><span>10:00</span><div class="event"><strong>Acme renewal</strong> · High priority<br>Booked</div></div><div class="displaced">Team call · Low priority<small>Moving to make room</small></div></div></li><li><p class="step-label">The less important meeting moves</p><div class="moved">✓ Team call → 15:00<span>Attendees notified</span></div></li></ol><figcaption class="caption">Illustration of Priority Mode (Patent Pending)</figcaption></figure>
-</section>
-<section class="proof wrap" aria-label="People who use Arrangr"><div class="proof-heading"><span>People at these organizations use Arrangr</span></div><div class="names"><span>Microsoft</span><span>Amazon</span><span>Deloitte</span><span>MIT</span><span>Salesforce</span><span>LinkedIn</span></div><p class="fine" style="margin:0">Individual users. No official endorsement implied.</p></section>
-<section class="section wrap product-grid" id="product" aria-labelledby="product-title"><div class="section-head"><span class="eyebrow">What you can do</span><h2 id="product-title">Everything you schedule,<br>in one place.</h2><blockquote class="margin-quote"><p>“Arrangr didn’t just help us schedule meetings—it helped us make decisions faster. That alone changed how our team operates.”</p><cite><strong>Jake Alexander</strong>COO, Northbridge Advisory Group</cite></blockquote><div class="privacy"><strong>Meet Ari. Keep your calendar private.</strong><p>Arrangr’s AI assistant schedules without exposing private calendar data to an external LLM.</p></div></div><div class="capabilities"><div class="capability"><span class="number">01</span><div><h3>Booking pages</h3><p>Share a link. Let people book a time.</p></div></div><div class="capability"><span class="number">02</span><div><h3>Custom 1:1 invites</h3><p>Send a personal invitation with times that work.</p></div></div><div class="capability"><span class="number">03</span><div><h3>Meeting polls</h3><p>Agree on a time, place, or call method.</p></div></div><div class="capability"><span class="number">04</span><div><h3>Group meetings</h3><p>Bring people together across calendars.</p></div></div></div></section>
-<section class="section wrap comparison" id="compare" aria-labelledby="compare-title"><span class="eyebrow">Compare</span><h2 id="compare-title">How Arrangr compares</h2><p class="comparison-intro">Most schedulers fill the first open slot. Here’s where Arrangr differs.</p>
-<table role="table" aria-describedby="comparison-note"><caption>Features and team prices · checked 20 Oct 2026</caption><thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Feature</th><th role="columnheader" scope="col">Arrangr</th><th role="columnheader" scope="col">Calendly</th><th role="columnheader" scope="col">Cal.com</th><th role="columnheader" scope="col">Reclaim</th></tr></thead><tbody role="rowgroup"><tr role="row"><th role="rowheader" scope="row">Books by meeting priority and moves less important meetings</th><td role="cell"><span class="tool-label" aria-hidden="true">Arrangr</span><span class="yes">Yes</span><small>Priority Mode</small></td><td role="cell"><span class="tool-label" aria-hidden="true">Calendly</span>—</td><td role="cell"><span class="tool-label" aria-hidden="true">Cal.com</span>—</td><td role="cell"><span class="tool-label" aria-hidden="true">Reclaim</span><span class="yes">Yes</span><small>Smart Meetings</small></td></tr><tr role="row"><th role="rowheader" scope="row">Meeting polls</th><td role="cell"><span class="tool-label" aria-hidden="true">Arrangr</span><span class="yes">Yes</span></td><td role="cell"><span class="tool-label" aria-hidden="true">Calendly</span><span class="yes">Yes</span></td><td role="cell"><span class="tool-label" aria-hidden="true">Cal.com</span>—</td><td role="cell"><span class="tool-label" aria-hidden="true">Reclaim</span>—</td></tr><tr role="row"><th role="rowheader" scope="row">Free plan</th><td role="cell"><span class="tool-label" aria-hidden="true">Arrangr</span>Free forever</td><td role="cell"><span class="tool-label" aria-hidden="true">Calendly</span>Always free</td><td role="cell"><span class="tool-label" aria-hidden="true">Cal.com</span>Free forever</td><td role="cell"><span class="tool-label" aria-hidden="true">Reclaim</span>Free (Lite)</td></tr><tr class="team-price" role="row"><th role="rowheader" scope="row">Team price</th><td role="cell"><span class="tool-label" aria-hidden="true">Arrangr</span>$2–$8<small>per active user/mo</small></td><td role="cell"><span class="tool-label" aria-hidden="true">Calendly</span>$16<small>per seat/mo<br>Teams, yearly</small></td><td role="cell"><span class="tool-label" aria-hidden="true">Cal.com</span>$12<small>per user/mo<br>Teams, annual</small></td><td role="cell"><span class="tool-label" aria-hidden="true">Reclaim</span>$10<small>per seat/mo<br>Starter, yearly</small></td></tr></tbody></table>
-<p class="table-note" id="comparison-note">— = not listed on that tool’s pricing or feature page when checked on 20 Oct 2026. Prices as shown on each tool’s pricing page.</p>
-<blockquote class="margin-quote"><p>“I used Calendly for a while but found Arrangr to be so much better and richer in functions. … Arrangr was the first product that actually synchronized my calendars across organizations and showed true availability.”</p><cite><strong>Joe Puglisi</strong>Board member, Growth Strategist, C-Level Advisor, Interim CIO</cite></blockquote></section>
-<section class="team" id="teams" aria-labelledby="team-title"><div class="wrap section team-grid"><div class="team-heading"><span class="eyebrow">For teams</span><h2 id="team-title">Already using it alone?<br>Bring your team.</h2><p class="team-copy">Keep individual flexibility. Add one bill and admin controls.</p></div>
-<!-- PROPOSAL: Company discovery is a suggestion. The real pilot program (get.arrangr.com/pilot-program) is an application with a "special introductory rate", not a free offer. The count and initials are static examples, not real memberships. No data is sent or stored. -->
-<form class="lookup" id="company-demo"><span class="proposed">Proposed</span><h3>See who at your company already uses Arrangr</h3><label for="work-email">Work email</label><input id="work-email" type="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="lookup-note"><button class="button" type="submit">Check my company</button><p id="lookup-note">Concept only. Nothing is sent or stored.</p><div id="lookup-result" role="status" aria-live="polite" aria-atomic="true" hidden><span class="proposed">Example result · Proposed</span><p id="example-company"></p><div class="initials" aria-hidden="true"><span>AB</span><span>CD</span><span>EF</span><span>GH</span></div><p>Illustrative count and initials.</p><a class="button" href="https://get.arrangr.com/pilot-program">Apply for a team pilot</a></div></form>
-<div class="team-facts"><ul class="team-details"><li><strong>$2–$8 per user/month.</strong> Pay only for active users.</li><li>Choose Basic or Pro for each member.</li><li>Centralized billing and admin account management.</li></ul><a class="pilot-link" href="https://get.arrangr.com/pilot-program">Or apply for the team pilot →</a></div><blockquote class="margin-quote team-quote"><p>“My colleagues and I have been using Arrangr for the past year. As a team, we all agree that this software is not only easy to use but seamless in its execution.”</p><cite><strong>Tim Struthers</strong>Chief Advancement Officer, The Loomis Chaffee School</cite></blockquote></div></section>
+<header><nav class="wrap" aria-label="Main"><a class="wordmark" href="#" aria-label="Arrangr home">arrangr<span>.</span></a><div class="navr"><a class="login" href="https://arrangr.com/app/sign_in">Log in</a><a class="btn sm" href="https://arrangr.com/app/sign_up?hero=A_01">Start free</a></div></nav></header>
 
-<section class="section wrap" id="pricing" aria-labelledby="pricing-title"><div class="pricing-header"><div><span class="eyebrow">Pricing</span><h2 id="pricing-title">Start free. Grow from there.</h2></div><a class="pricing-link" href="https://get.arrangr.com/pricing-and-plans">Full plan comparison ↗</a></div><div class="plan"><h3>Basic</h3><div class="price">Free<span class="fine">Forever</span></div><p>1 calendar · 1 booking page<br>Up to 15 participants. Add-ons available.</p><a href="https://arrangr.com/app/sign_up?hero=A_01">Start free ↗</a></div><div class="plan"><h3>Pro</h3><div class="price"><small>From </small>$5<small>/month</small><span class="fine">Billed annually</span></div><p>Up to 7 calendars · 100 booking pages<br>Up to 50 participants.</p><a href="https://get.arrangr.com/pricing-and-plans">View Pro ↗</a></div><div class="plan"><h3>Teams / SMBs</h3><div class="price">$2–$8<span class="fine">per active user/month</span></div><p>Basic or Pro per member.<br>One bill, admin controls, cross-org groups.</p><a href="https://get.arrangr.com/teams_smbs">View Teams ↗</a></div></section>
+<main id="main">
+<section class="hero wrap" aria-labelledby="h1">
+  <div>
+    <h1 id="h1">Scheduled by <em>importance.</em></h1>
+    <p class="sub">Important meetings get your best slots. The rest move automatically.</p>
+    <div class="cta"><a class="btn" href="https://arrangr.com/app/sign_up?hero=A_01">Start free</a><span class="note">Free forever. No credit card.</span></div>
+  </div>
+  <figure class="mock" aria-label="Example: a high priority booking takes 10:00 and the low priority team call moves to 15:00" style="margin:0">
+    <div class="mock-top"><b>Tuesday</b><span>Priority Mode</span></div>
+    <div class="cal" aria-hidden="true">
+      <div class="hr"><i>9:00</i></div><div class="hr"><i>10:00</i></div><div class="hr"><i>11:00</i></div><div class="hr"><i>12:00</i></div><div class="hr"><i>13:00</i></div><div class="hr"><i>14:00</i></div><div class="hr"><i>15:00</i></div><div class="hr"><i>16:00</i></div>
+      <div class="ev fixed">Lunch</div>
+      <div class="ev low">Team call<small>Low</small></div>
+      <div class="ev high"><span><b>Acme renewal</b><br>Jordan Lee</span><small>High</small></div>
+      <div class="req"><span class="tag">New booking</span><div class="who"><span class="av">JL</span>Jordan Lee, Acme</div><p>“Can we discuss the Q3 renewal?”</p></div>
+      <div class="toast"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg>Moved. Attendees notified.</div>
+    </div>
+  </figure>
+</section>
+
+<section class="proof wrap" aria-label="Who uses Arrangr">
+  <blockquote class="quote" style="margin:0"><p>“Arrangr has eliminated ‘Sorry, I’m double booked’ from my vocabulary.”</p><cite>Kelly McDaniel, Owner, DelisaGroup</cite></blockquote>
+  <div class="orgs"><p class="n"><b>130,000+</b> users, including people at</p><div class="names"><span>Microsoft</span><span>Amazon</span><span>Deloitte</span><span>MIT</span><span>Salesforce</span><span>LinkedIn</span></div><p class="fine">Individual users. No endorsement implied.</p></div>
+</section>
+
+<section class="feat wrap reveal" aria-labelledby="f1">
+  <div class="txt"><h2 id="f1">Group polls</h2><p>Everyone votes on the time, place or call method.</p></div>
+  <div class="panel" aria-hidden="true">
+    <div class="chips"><span class="chip on">Time</span><span class="chip">Place</span><span class="chip">Call</span></div>
+    <div class="opt"><b>Tue 10:00</b><span class="bar"><i style="--w:60%"></i></span><span class="cnt">3/5</span></div>
+    <div class="opt win"><b>Wed 14:00</b><span class="bar"><i style="--w:100%"></i></span><span class="cnt">5/5</span></div>
+    <div class="opt"><b>Thu 09:00</b><span class="bar"><i style="--w:40%"></i></span><span class="cnt">2/5</span></div>
+    <div class="faces"><span class="stack"><span class="av">JL</span><span class="av" style="background:#a83e1c">AK</span><span class="av" style="background:#2f5a4b">MR</span><span class="av" style="background:#6b5a3e">SO</span><span class="av" style="background:#4b5e57">TP</span></span></div>
+  </div>
+</section>
+
+<section class="feat flip wrap reveal" aria-labelledby="f2">
+  <div class="txt"><h2 id="f2">Across companies</h2><p>Inside or outside your org. Availability updates live.</p></div>
+  <div class="panel" aria-hidden="true">
+    <div class="grp-top"><b>Board prep</b><span>4 people, 3 orgs</span></div>
+    <div class="grp-body">
+      <div class="row"><span>You<em>yourco.com</em></span><span class="track"><span class="busy" style="left:0;width:25%"></span><span class="busy" style="left:75%;width:25%"></span></span></div>
+      <div class="row"><span>Jordan<em>acme.com</em></span><span class="track"><span class="busy" style="left:12.5%;width:25%"></span><span class="busy" style="left:62.5%;width:12.5%"></span></span></div>
+      <div class="row"><span>Mira<em>acme.com</em></span><span class="track"><span class="busy" style="left:25%;width:25%"></span></span></div>
+      <div class="row"><span>Sam<em>partner.org</em></span><span class="track"><span class="busy" style="left:0;width:12.5%"></span><span class="busy" style="left:75%;width:25%"></span></span></div>
+      <span class="overlap"></span>
+    </div>
+    <div class="axis"><span>9:00</span><span>13:00</span><span>17:00</span></div>
+    <p class="found"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg>All free at 13:00</p>
+  </div>
+</section>
+
+<section class="feat wrap reveal" aria-labelledby="f3">
+  <div class="txt"><h2 id="f3">Meet Ari</h2><p>AI scheduling that never exposes your private calendar.</p></div>
+  <div class="panel chat" aria-hidden="true">
+    <div class="b me">Find 30 minutes with Jordan next week.</div>
+    <div class="b ari"><b>Ari</b>Thursday 11:00 works for you both. Send it?</div>
+    <p class="lock"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="10" height="7" rx="2"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2"/></svg>Private data never reaches an external LLM</p>
+  </div>
+</section>
+
+<section class="final wrap" aria-labelledby="f4">
+  <h2 id="f4" class="words">Let the important meeting win.</h2>
+  <div class="cta"><a class="btn" href="https://arrangr.com/app/sign_up?hero=A_01">Start free</a><span class="note">Works with Google, Outlook and iCal.</span></div>
+</section>
 </main>
-<footer><div class="wrap"><div class="footer-main"><a class="wordmark" href="#">arrangr<span style="color:var(--accent)">.</span></a><div class="footer-links"><a href="https://get.arrangr.com/teams_smbs">Teams</a><a href="https://get.arrangr.com/pricing-and-plans">Pricing</a><a href="https://github.com/arrangrcom/arrangr-desktop/releases/download/v1.0.0/Arrangr-1.0.0-universal.dmg">Download for Mac ↗</a><a href="https://arrangr.com/app/sign_in">Log in</a></div></div><p class="concept">Unofficial redesign concept by Jatin Bhatt, Oct 2026. Copy and facts from get.arrangr.com; items marked Proposed are suggestions.</p></div></footer>
+
+<footer><div class="wrap foot"><a class="wordmark" href="#">arrangr<span>.</span></a><nav aria-label="Footer"><a href="https://get.arrangr.com/pricing-and-plans">Pricing</a><a href="https://get.arrangr.com/teams_smbs">Teams</a><a href="https://github.com/arrangrcom/arrangr-desktop/releases/download/v1.0.0/Arrangr-1.0.0-universal.dmg">Mac app</a><a href="https://arrangr.com/app/sign_in">Log in</a></nav><p>Unofficial concept by Jatin Bhatt, Oct 2026. Mocks use example data.</p></div></footer>
+
 <script>
-document.getElementById('company-demo').addEventListener('submit',function(event){
-  event.preventDefault();
-  const email=document.getElementById('work-email').value.trim();
-  const domain=email.slice(email.lastIndexOf('@')+1).toLowerCase()||'yourcompany.com';
-  document.getElementById('example-company').textContent='4 people at '+domain+' already use Arrangr.';
-  document.getElementById('lookup-result').hidden=false;
-});
+(function(){
+  var h=document.querySelector('.words');
+  h.innerHTML=h.textContent.trim().split(' ').map(function(w,i,a){return '<span class="w'+(i>=a.length-2?' acc':'')+'">'+w+'</span>'}).join(' ');
+  var words=h.querySelectorAll('.w');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window)||reduce){document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in')});words.forEach(function(w){w.classList.add('on')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
+  document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)});
+  var wo=new IntersectionObserver(function(es){if(es[0].isIntersecting){words.forEach(function(w,i){setTimeout(function(){w.classList.add('on')},i*140)});wo.disconnect()}},{threshold:.6});
+  wo.observe(h);
+})();
 </script>
 </body>
 </html>
