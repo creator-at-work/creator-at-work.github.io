@@ -66,7 +66,11 @@ async function shardNames(format,industry) {
   if(industry && industry!=='all')return (await searchIndex()).industries[industry];
   return format==='all' ? [...meta.files.Film,...meta.files.Series] : meta.files[format];
 }
-async function loadShard(name) {
+function quickShardNames(format,industry) {
+  if(industry && industry!=='all')return ['quick-'+industry+'.part'];
+  return format==='all'?['quick-film.part','quick-series.part']:['quick-'+format.toLowerCase()+'.part'];
+}
+function fetchShard(name) {
   if(!shardCache.has(name)){
     const load=appFetch('/catalog/'+name).then(response=>{
       if(!response.ok)throw new Error('The catalogue could not load. Try again.');
@@ -74,7 +78,10 @@ async function loadShard(name) {
     }).catch(error=>{shardCache.delete(name);throw error;});
     shardCache.set(name,load);
   }
-  const blob=await shardCache.get(name);
+  return shardCache.get(name);
+}
+async function loadShard(name) {
+  const blob=await fetchShard(name);
   return new Response(blob.stream().pipeThrough(new DecompressionStream('gzip'))).json();
 }
 async function save(item,mood,status,rating) {
@@ -254,22 +261,35 @@ async function findPick(options,previous) {
       queuedPicks=[];
     }
     let searches=0;
+    let quick=!previous;
     while(queuedPicks.length || searches<3){
       if(!queuedPicks.length){
         note('status',previous?'Finding your next pick…':'Finding a title…');
-        await refreshJournal();
-        const annotations=options.mood==='any'&&options.focus==='any'?null:await loadMoodIndex();
-        const {picks,counts}=await rankAvailable(data,state,{...options,annotations},loadShard,shardNames);
-        searches++;
-        if(!picks.length){
-          const reason=!counts.inFormat?'format or industry':!counts.mood?'mood':!counts.focus?'story focus':
-            !counts.genre?'genre':!counts.rating?'IMDb rating':'filters';
-          note('status',reason==='filters'?'No more fresh picks. Change a filter or try another mood.':
-            'No matches. Try changing the '+reason+'.');
-          return;
+        const [,annotations]=await Promise.all([
+          refreshJournal(),
+          options.mood==='any'&&options.focus==='any'?null:loadMoodIndex()
+        ]);
+        const settings={...options,annotations};
+        if(quick){
+          quick=false;
+          const candidates=await rankAvailable(data,state,settings,loadShard,quickShardNames).catch(()=>null);
+          if(candidates?.picks.length>=5){
+            queuedPicks=options.available?await checkAvailablePicks(candidates.picks,options):candidates.picks.slice(0,5);
+          }
         }
-        queuedPicks=options.available ? await checkAvailablePicks(picks,options) : picks.slice(0,5);
-        if(!queuedPicks.length)return;
+        if(!queuedPicks.length){
+          const {picks,counts}=await rankAvailable(data,state,settings,loadShard,shardNames);
+          searches++;
+          if(!picks.length){
+            const reason=!counts.inFormat?'format or industry':!counts.mood?'mood':!counts.focus?'story focus':
+              !counts.genre?'genre':!counts.rating?'IMDb rating':'filters';
+            note('status',reason==='filters'?'No more fresh picks. Change a filter or try another mood.':
+              'No matches. Try changing the '+reason+'.');
+            return;
+          }
+          queuedPicks=options.available ? await checkAvailablePicks(picks,options) : picks.slice(0,5);
+          if(!queuedPicks.length)return;
+        }
       }
       const {solution,availability}=queuedPicks[0];
       const saved=await save(solution.item,options.mood,'suggested');

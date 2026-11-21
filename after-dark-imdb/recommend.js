@@ -79,6 +79,13 @@ async function readJson(path) {
   return result.json();
 }
 
+async function* catalogueBatches(files,load) {
+  const concurrency=4;
+  for(let offset=0;offset<files.length;offset+=concurrency){
+    yield* await Promise.all(files.slice(offset,offset+concurrency).map(load));
+  }
+}
+
 async function rankAvailable(data,state,settings,load,filesFor) {
   const {mood,focus,format,genre,minRating,maxYear}=settings;
   const labels=data.indexGenres;
@@ -107,8 +114,8 @@ async function rankAvailable(data,state,settings,load,filesFor) {
   const limit=settings.available?32:12;
   const counts={inFormat:0,mood:0,focus:0,genre:0,rating:0};
 
-  for(const filename of await filesFor(format,settings.industry)){
-    for(const row of await load(filename)){
+  for await(const rows of catalogueBatches(await filesFor(format,settings.industry),load)){
+    for(const row of rows){
       const [number,title,kind,year,mask,score,votes,adult]=row;
       if(adult||year>maxYear||(format==='Film'&&kind>=2)||(format==='Series'&&kind<2))continue;
       counts.inFormat++;
