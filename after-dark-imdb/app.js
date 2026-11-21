@@ -12,6 +12,9 @@ let searchMeta;
 let moodIndex;
 let queuedPicks=[];
 const shardCache=new Map();
+const quickRows=new Map();
+let preparedPick;
+let prepareTimer;
 
 function element(tag,text,className) {
   const node=document.createElement(tag);
@@ -84,8 +87,20 @@ async function loadShard(name) {
   const blob=await fetchShard(name);
   return new Response(blob.stream().pipeThrough(new DecompressionStream('gzip'))).json();
 }
+function loadQuickRows(name) {
+  if(!quickRows.has(name)){
+    const rows=loadShard(name).catch(error=>{
+      quickRows.delete(name);
+      shardCache.delete(name);
+      throw error;
+    });
+    quickRows.set(name,rows);
+  }
+  return quickRows.get(name);
+}
 async function save(item,mood,status,rating) {
   if(travelMode){
+    preparedPick=null;
     const previous=state.journal.find(entry=>entry.item.imdbId===item.imdbId);
     state.journal=state.journal.filter(entry=>entry.item.imdbId!==item.imdbId);
     state.journal.unshift({item,mood,status:previous?.status==='watched'?'watched':status,
@@ -123,6 +138,32 @@ async function loadMoodIndex(){
     return index.titles;
   }).catch(error=>{moodIndex=null;shardCache.delete('moods.part');throw error;});
   return moodIndex;
+}
+function annotationsFor(options) {
+  return options.mood==='any'&&options.focus==='any'?null:loadMoodIndex();
+}
+function pickFilters() {
+  const mood=document.querySelector('input[name=mood]:checked')?.value;
+  const rating=get('min-rating').value;
+  return {mood,focus:get('story-focus').value,format:get('format').value,genre:get('genre').value,
+    available:get('available-in-india').checked,industry:get('industry').value,
+    minRating:rating==='under-6'?rating:Number(rating),maxYear:new Date().getFullYear()};
+}
+function preparePick() {
+  const options=pickFilters();
+  if(!options.mood)return;
+  const key=JSON.stringify(options);
+  if(preparedPick?.key===key)return;
+  const files=quickShardNames(options.format,options.industry);
+  const warmed=Promise.all([initialize(),annotationsFor(options),...files.map(loadQuickRows)]);
+  const candidates=warmed.then(([,annotations])=>travelMode
+    ?rankAvailable(data,state,{...options,annotations},loadQuickRows,quickShardNames)
+    :null).catch(()=>null);
+  preparedPick={key,candidates};
+}
+function schedulePickPreparation() {
+  clearTimeout(prepareTimer);
+  prepareTimer=setTimeout(preparePick,120);
 }
 async function saveTitleFeedback(item,mood,kind){
   if(travelMode){
@@ -247,6 +288,8 @@ async function findPick(options,previous) {
   const card=get('result');
   for(const control of card.querySelectorAll('button'))control.disabled=true;
   note('status','');
+  const key=JSON.stringify(options);
+  options={...options,availabilityChecked:previous?options.availabilityChecked:new Set()};
   try {
     await initialize();
     if(previous){
@@ -267,12 +310,13 @@ async function findPick(options,previous) {
         note('status',previous?'Finding your next pick…':'Finding a title…');
         const [,annotations]=await Promise.all([
           refreshJournal(),
-          options.mood==='any'&&options.focus==='any'?null:loadMoodIndex()
+          annotationsFor(options)
         ]);
         const settings={...options,annotations};
         if(quick){
           quick=false;
-          const candidates=await rankAvailable(data,state,settings,loadShard,quickShardNames).catch(()=>null);
+          const prepared=travelMode&&preparedPick?.key===key?await preparedPick.candidates:null;
+          const candidates=prepared??await rankAvailable(data,state,settings,loadQuickRows,quickShardNames).catch(()=>null);
           if(candidates?.picks.length>=5){
             queuedPicks=options.available?await checkAvailablePicks(candidates.picks,options):candidates.picks.slice(0,5);
           }
@@ -310,13 +354,8 @@ async function findPick(options,previous) {
 }
 get('pick-form').addEventListener('submit',event=>{
   event.preventDefault();
-  const mood=document.querySelector('input[name=mood]:checked')?.value;
-  if(!mood)return;
-  const rating=get('min-rating').value;
-  return findPick({mood,focus:get('story-focus').value,format:get('format').value,genre:get('genre').value,
-    available:get('available-in-india').checked,availabilityChecked:new Set(),
-    industry:get('industry').value,minRating:rating==='under-6'?rating:Number(rating),
-    maxYear:new Date().getFullYear()});
+  const options=pickFilters();
+  if(options.mood)return findPick(options);
 });
 get('industry').addEventListener('change',()=>{
   if(get('industry').value!=='all')get('format').value='Film';
@@ -328,6 +367,7 @@ get('format').addEventListener('change',()=>{
     note('status','The industry filter applies to films.');
   }
 });
+get('pick-form').addEventListener('change',schedulePickPreparation);
 function showJournal() {
   const rows=get('journal-rows');
   rows.replaceChildren();
@@ -449,9 +489,9 @@ get('search-form').addEventListener('submit',async event=>{
   finally{submit.disabled=false;}
 });
 if(websiteTravel){
-  afterdarkWebsite.open(initialize);
+  afterdarkWebsite.open(()=>initialize().then(preparePick));
 }else{
-  initialize().catch(error=>note('status',error.message));
+  initialize().then(preparePick).catch(error=>note('status',error.message));
 }
 
 get('sign-out').addEventListener('click',async()=>{
