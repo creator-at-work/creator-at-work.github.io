@@ -1,22 +1,21 @@
 <!doctype html>
-<html lang="en" data-mode="stillness">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Find a film or series by mood. A free suggestion tool by Jatin Bhatt.">
 <meta name="theme-color" content="#f3ede2">
-<title>After Dark · Jatin Bhatt</title>
+<title>After Dark</title>
 <link rel="canonical" href="https://jatinbhatt.me/after-dark/">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../styles.css">
-<script>try{if(localStorage.getItem('jb-mode')==='signal')document.documentElement.dataset.mode='signal';}catch{}</script>
-<link rel="stylesheet" href="style.css">
-<script defer src="public.js?v=2"></script>
+<link rel="stylesheet" href="style.css?v=2">
+<script defer src="cast-results.js?v=1"></script>
+<script defer src="public.js?v=3"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead top">
-  <a class="mark wordmark" href="../" aria-label="Jatin Bhatt, home"><span class="wm-j">Jatin</span> Bhatt</a>
+  <a class="mark" href="./">After Dark<span>.</span></a>
   <nav aria-label="After Dark">
     <button class="quiet" id="open-search" type="button">Search</button>
     <button class="quiet" id="open-journal" type="button">Journal</button>
@@ -28,7 +27,7 @@
     <form id="pick-form">
       <fieldset><legend class="sr-only">Choose a mood</legend><div id="moods" class="moods"></div></fieldset>
       <div class="controls">
-        <label>Format <select id="format"><option value="any">Either</option><option>Film</option><option>Series</option></select></label>
+        <label>Format <select id="format"><option>Film</option><option>Series</option><option value="any">Either</option></select></label>
         <label>Story focus <select id="focus"><option value="any">Any</option></select></label>
         <label>Genre <select id="genre"><option value="any">Any</option></select></label>
         <label>Film industry <select id="industry"><option value="any">Any</option><option value="hollywood">Hollywood</option><option value="bollywood">Bollywood</option></select></label>
@@ -41,15 +40,14 @@
   </section>
   <section id="result" class="result" aria-live="polite" aria-label="Recommendation" hidden>
     <h2 id="title"></h2>
-    <p id="details" class="small"></p>
-    <div id="watch" class="watch"></div>
+    <p id="details" class="meta"></p>
+    <div id="watch"></div>
     <div class="pick-actions">
       <button class="quiet" id="skip-pick" type="button">Skip</button>
       <button class="quiet" id="wrong-mood" type="button">Wrong mood</button>
       <button class="quiet" id="hide-title" type="button">Never suggest again</button>
-      <a id="title-info" href="#" target="_blank" rel="noopener noreferrer">Title details</a>
     </div>
-    <div id="feedback" class="rating"></div>
+    <div id="feedback"></div>
     <p id="result-status" class="status" role="status"></p>
   </section>
 </main>
@@ -57,7 +55,7 @@
   <form method="dialog" class="dialog-top"><h2 id="search-title">Search titles</h2><button class="quiet">Close</button></form>
   <form id="search-form" class="dialog-actions">
     <label>Search by <select id="search-by"><option value="title">Title or IMDb ID</option><option value="cast">Actor or actress</option></select></label>
-    <label>Search term <input name="query" id="query" type="search" minlength="2" maxlength="160" required></label>
+    <label for="query" class="sr-only">Search term</label><input id="query" type="search" placeholder="Title, IMDb ID or link" minlength="2" maxlength="250" required>
     <button type="submit" class="primary">Search</button>
   </form>
   <p id="search-status" class="status" role="status"></p>

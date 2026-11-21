@@ -39,8 +39,14 @@ function button(text,action){
 function titleKey(row){
   return (row[3]==='Film'?'movie/':'tv/')+row[0];
 }
-function titleDetails(row){
-  return [row[2],row[3],row[6].join(', '),'TMDB '+row[4].toFixed(1)].filter(Boolean).join(' · ');
+function ratingDetails(row,className){
+  const details=element('p',[row[2],row[3],...row[6]].filter(Boolean).join(' · '),className);
+  const rating=element('a',row[4]>0?'TMDB '+row[4].toFixed(1):'TMDB');
+  rating.href='https://www.themoviedb.org/'+titleKey(row);
+  rating.target='_blank';
+  rating.rel='noopener noreferrer';
+  details.append(' · ',rating);
+  return details;
 }
 function words(value){
   return value.normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
@@ -87,7 +93,7 @@ function eligible(row,options){
 }
 function shortlist(rows){
   const top=[];
-  const limit=filters.available?8:5;
+  const limit=filters.available?16:5;
   const taste=new Map();
   for(const entry of Object.values(journal)){
     if(!entry.rating||!entry.row)continue;
@@ -129,9 +135,10 @@ async function listings(ids){
   return ids.map(id=>offers.get(id)||{id,state:'unavailable'});
 }
 function showPlatforms(card,entry){
-  const label=entry?.state==='listed'&&entry.platforms?.length?entry.platforms.join(' · '):
+  const listed=entry?.state==='listed'&&entry.platforms?.length;
+  const label=listed?entry.platforms.join(' · '):
     ['none','unmatched'].includes(entry?.state)?'No platforms found.':'India listings unavailable.';
-  card.replaceChildren(element('h3','Where to watch in India'),element('p',label));
+  card.replaceChildren(element('h3','Where to watch in India'),element('p',label,listed?null:'small'));
 }
 async function watchOptions(row,card){
   card.replaceChildren(element('h3','Where to watch in India'),element('p','Checking India listings…','small'));
@@ -146,15 +153,22 @@ async function fillQueue(rows){
     return candidates.length?'':'No more matches. Try changing a filter.';
   }
   note('status','Checking streaming availability in India…');
-  const entries=await listings(candidates.map(titleKey));
-  const verified=new Map(entries.filter(entry=>entry.state==='listed').map(entry=>[entry.id,entry]));
-  for(const entry of entries){
-    if(['none','unmatched'].includes(entry.state))filters.checked.add(entry.id);
+  const verified=new Set();
+  let failed=false;
+  for(let offset=0;offset<candidates.length&&verified.size<5;offset+=8){
+    const batch=candidates.slice(offset,offset+8);
+    const entries=await listings(batch.map(titleKey));
+    for(const entry of entries){
+      if(entry.state==='listed')verified.add(entry.id);
+      else if(['none','unmatched'].includes(entry.state))filters.checked.add(entry.id);
+      else failed=true;
+    }
+    if(entries.every(entry=>entry.state==='unavailable'))break;
   }
   queue=candidates.filter(row=>verified.has(titleKey(row))).slice(0,5);
   if(queue.length)return '';
-  return entries.some(entry=>entry.state==='unavailable')?'Could not verify India listings. Try without this filter.':
-    'No verified India listings in this batch. Try again or change a filter.';
+  return failed?'Could not verify India listings. Try again or turn off the availability filter.':
+    'No verified India listings in the titles checked. Change the filters or turn off availability.';
 }
 
 function updateJournal(row,change,mood=filters?.mood||'any'){
@@ -192,15 +206,14 @@ async function nextPick(){
     try{sessionStorage.setItem('after-dark-public-seen',JSON.stringify([...seen]));}catch{}
     updateJournal(row,{suggested:true,skipped:false});
     note('title',row[1]);
-    note('details',titleDetails(row));
+    get('details').replaceWith(Object.assign(ratingDetails(row,'meta'),{id:'details'}));
     note('result-status','');
     note('status','');
-    get('title-info').href='https://www.themoviedb.org/'+titleKey(row);
     get('wrong-mood').hidden=filters.mood==='any';
     get('feedback').replaceChildren(feedback(row,'result-status',nextPick));
     get('result').hidden=false;
     get('result').scrollIntoView({block:'nearest'});
-    const card=element('div');
+    const card=element('div',null,'watch');
     get('watch').replaceChildren(card);
     void watchOptions(row,card);
   }catch{
@@ -252,6 +265,9 @@ get('open-journal').addEventListener('click',()=>{
   get('journal-dialog').showModal();
 });
 get('open-search').addEventListener('click',()=>get('search-dialog').showModal());
+get('search-by').addEventListener('change',()=>{
+  get('query').placeholder=get('search-by').value==='cast'?'Actor or actress name':'Title, IMDb ID or link';
+});
 function resultCard(row,source){
   const card=element('article',null,'search-row');
   const access=button('Where to watch in India',()=>{
@@ -259,7 +275,7 @@ function resultCard(row,source){
     access.replaceWith(watch);
     void watchOptions(row,watch);
   });
-  card.append(element('h3',row[1]),element('p',titleDetails(row),'small'),access,feedback(row,'search-status'));
+  card.append(element('h3',row[1]),ratingDetails(row,'small'),access,feedback(row,'search-status'));
   if(source?.startsWith('https://www.tvmaze.com/')){
     const credit=element('a','TVmaze','small');
     credit.href=source;
@@ -300,26 +316,46 @@ async function searchCast(query,rows,destination){
     entry.tv.push(person.id);
     people.set(key,entry);
   }
-  for(const {name,titles,tv} of [...people.values()].sort((a,b)=>
-    Number(words(b.name)===query)-Number(words(a.name)===query)).slice(0,12)){
-    destination.append(button(name,async ()=>{
-      note('search-status','Loading credits…');
-      const ids=new Set(titles);
-      const films=rows.filter(row=>row[3]==='Film'&&ids.has(row[0])).map(row=>[row,null]);
-      const results=await Promise.allSettled(tv.slice(0,3).map(id=>tvmaze('/people/'+id+'/castcredits?embed=show')));
-      const series=new Map();
-      for(const result of results){
-        for(const credit of result.value||[]){
-          const show=credit._embedded?.show;
-          const row=seriesMatch(show,rows);
-          if(row)series.set(row[0],[row,show.url]);
+  const matches=[...people.values()].sort((a,b)=>
+    Number(words(b.name)===query)-Number(words(a.name)===query)).slice(0,12);
+  function showNames(){
+    note('search-status',matches.length?'':'No actor or actress found. Try a full name.');
+    destination.replaceChildren(...matches.map(({name,titles,tv})=>{
+      const row=element('div',null,'search-row');
+      row.append(button(name,async event=>{
+        const control=event.currentTarget;
+        const submit=get('search-form').querySelector('button');
+        if(submit.disabled)return;
+        control.disabled=true;
+        submit.disabled=true;
+        note('search-status','Loading titles…');
+        try{
+          const ids=new Set(titles);
+          const films=rows.filter(row=>row[3]==='Film'&&ids.has(row[0])).map(row=>[row,null]);
+          const results=await Promise.allSettled(tv.slice(0,3).map(id=>tvmaze('/people/'+id+'/castcredits?embed=show')));
+          const series=new Map();
+          for(const result of results){
+            for(const credit of result.value||[]){
+              const show=credit._embedded?.show;
+              const row=seriesMatch(show,rows);
+              if(row)series.set(row[0],[row,show.url]);
+            }
+          }
+          const credits=[...films,...series.values()];
+          showCastCredits(destination,name,showNames,credits,([row,source])=>resultCard(row,source),
+            ([row])=>row[4],([row])=>row[5]);
+          note('search-status',credits.length?'':'No credits found in the catalogue.');
+        }catch{
+          note('search-status','Search is temporarily unavailable.');
+        }finally{
+          control.disabled=false;
+          submit.disabled=false;
         }
-      }
-      const credits=[...films,...series.values()].sort((a,b)=>b[0][5]-a[0][5]);
-      destination.replaceChildren(element('h3',name),...credits.slice(0,60).map(([row,source])=>resultCard(row,source)));
-      note('search-status',credits.length?'':'No credits found in the catalogue.');
+      }));
+      return row;
     }));
   }
+  showNames();
 }
 async function searchTitles(raw,rows,destination){
   const match=raw.match(/^(?:https?:\/\/(?:www\.|m\.)?imdb\.com\/title\/)?(tt\d{7,11})(?:[/?#].*)?$/i);
@@ -353,8 +389,10 @@ get('search-form').addEventListener('submit',async event=>{
     if(query.length<2){note('search-status','Enter at least two characters.');return;}
     const rows=await catalogue();
     if(get('search-by').value==='cast')await searchCast(query,rows,destination);
-    else await searchTitles(raw,rows,destination);
-    note('search-status',destination.children.length?'':'No matches found.');
+    else{
+      await searchTitles(raw,rows,destination);
+      note('search-status',destination.children.length?'':'No title found. Try the IMDb ID.');
+    }
   }catch{
     note('search-status','Search is temporarily unavailable.');
   }finally{control.disabled=false;}
