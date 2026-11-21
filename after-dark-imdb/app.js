@@ -38,6 +38,13 @@ function outbound(text,url) {
   return node;
 }
 function note(id,text) {get(id).textContent=text;}
+function pickAction(label,action) {
+  get('status').parentElement.querySelector('#pick-follow-up')?.remove();
+  if(!label)return;
+  const control=button(label,action);
+  control.id='pick-follow-up';
+  get('status').after(control);
+}
 async function refreshJournal() {
   if(travelMode)return;
   const body=await readJson('/api/journal');
@@ -276,31 +283,53 @@ function showPick(solution,options,availability) {
 async function checkAvailablePicks(picks,options){
   note('status','Checking streaming availability in India…');
   const available=[];
-  let checked=0;
   let failed=false;
-  const remaining=picks.filter(({solution:{item}})=>!options.availabilityChecked.has(item.imdbId));
-  for(let offset=0;offset<Math.min(remaining.length,16)&&available.length<5;offset+=8){
-    const batch=remaining.slice(offset,offset+8);
-    const entries=await lookupAvailability(batch.map(pick=>pick.solution.item));
+  for(let offset=0;offset<picks.length&&available.length<5;offset+=8){
+    const batch=picks.slice(offset,offset+8);
+    let entries;
+    try{
+      entries=await lookupAvailability(batch.map(pick=>pick.solution.item));
+    }catch{
+      failed=true;
+      break;
+    }
     const byId=new Map(entries.map(entry=>[entry.imdbId,entry]));
+    let verified=0;
     for(const pick of batch){
       const id=pick.solution.item.imdbId;
       const availability=byId.get(id);
-      if(!availability||availability.stale||['unavailable','unconfigured'].includes(availability.state)){
+      if(!availability||availability.stale||!['listed','none','unmatched'].includes(availability.state)){
         failed=true;
         continue;
       }
-      checked++;
+      verified++;
       if(availability.state==='listed')available.push({...pick,availability});
       else options.availabilityChecked.add(id);
     }
-    if(!checked&&failed)break;
+    if(!verified)break;
   }
-  if(!available.length)note('status',failed?'Could not verify India listings. Try again or turn off the availability filter.':
-    'No verified India listings in the titles checked. Change the filters or turn off availability.');
-  return available.slice(0,5);
+  return {available:available.slice(0,5),failed};
 }
-async function findPick(options,previous) {
+function offerBroaderPicks(options) {
+  if(options.focus!=='any'){
+    pickAction('Search with any story focus',()=>{
+      get('story-focus').value='any';
+      return findPick({...options,focus:'any'});
+    });
+  }else if(options.mood!=='any'){
+    pickAction('Search with any mood',()=>{
+      document.querySelector('input[name=mood][value=any]').checked=true;
+      return findPick({...options,mood:'any'});
+    });
+  }
+}
+function offerUnverifiedPicks(options) {
+  pickAction('Show picks without the India filter',()=>{
+    get('available-in-india').checked=false;
+    return findPick({...options,available:false});
+  });
+}
+async function findPick(options,previous,resume=false) {
   const submit=get('pick-button');
   if(submit.disabled || (previous && current!==previous.item))return;
 
@@ -308,8 +337,9 @@ async function findPick(options,previous) {
   const card=get('result');
   for(const control of card.querySelectorAll('button'))control.disabled=true;
   note('status','');
+  pickAction();
   const key=JSON.stringify(options);
-  options={...options,availabilityChecked:previous?options.availabilityChecked:new Set()};
+  options={...options,availabilityChecked:previous||resume?options.availabilityChecked:new Set()};
   try {
     await initialize();
     if(previous){
@@ -328,18 +358,37 @@ async function findPick(options,previous) {
       if(!queuedPicks.length){
         note('status',previous?'Finding your next pick…':'Finding a title…');
         await refreshJournal();
-        const prepared=!previous&&travelMode&&preparedPick?.key===key?await preparedPick.candidates:null;
+        const prepared=!previous&&!resume&&travelMode&&preparedPick?.key===key?await preparedPick.candidates:null;
         const {picks,counts}=prepared??await rankFullCatalogue(options);
         searches++;
         if(!picks.length){
           const reason=!counts.inFormat?'format or industry':!counts.mood?'mood':!counts.focus?'story focus':
             !counts.genre?'genre':!counts.rating?'IMDb rating':'filters';
-          note('status',reason==='filters'?'No more fresh picks. Change a filter or try another mood.':
+          note('status',reason==='filters'?(options.available&&options.availabilityChecked.size
+            ?'No more unseen picks with verified India listings.':'No more unseen picks match these filters.'):
             'No matches. Try changing the '+reason+'.');
+          if(options.available&&options.availabilityChecked.size&&reason==='filters')offerUnverifiedPicks(options);
+          else offerBroaderPicks(options);
           return;
         }
-        queuedPicks=options.available?await checkAvailablePicks(picks,options):picks.slice(0,5);
-        if(!queuedPicks.length)return;
+        if(options.available){
+          const batch=picks.slice(0,16);
+          const {available,failed}=await checkAvailablePicks(batch,options);
+          if(!available.length){
+            if(!failed&&picks.length>batch.length){
+              note('status','No India listings in this batch. More matching titles may be available.');
+              pickAction('Check more titles',()=>findPick(options,undefined,true));
+              return;
+            }
+            note('status',failed?'Could not verify more India listings.':
+              'No more matching titles with verified India listings.');
+            offerUnverifiedPicks(options);
+            return;
+          }
+          queuedPicks=available;
+        }else{
+          queuedPicks=picks.slice(0,5);
+        }
       }
       const {solution,availability}=queuedPicks[0];
       const saved=await save(solution.item,options.mood,'suggested');
@@ -373,7 +422,10 @@ get('format').addEventListener('change',()=>{
     note('status','The industry filter applies to films.');
   }
 });
-get('pick-form').addEventListener('change',schedulePickPreparation);
+get('pick-form').addEventListener('change',()=>{
+  pickAction();
+  schedulePickPreparation();
+});
 function showJournal() {
   const rows=get('journal-rows');
   rows.replaceChildren();
