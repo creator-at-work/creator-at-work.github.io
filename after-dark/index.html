@@ -3,73 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Find a film or series by mood. A free suggestion tool by Jatin Bhatt.">
-<meta name="theme-color" content="#f3ede2">
-<title>After Dark</title>
-<link rel="canonical" href="https://jatinbhatt.me/after-dark/">
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=2">
-<script defer src="cast-results.js?v=1"></script>
-<script defer src="public.js?v=3"></script>
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Afterdark · Jatin Bhatt</title>
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead top">
-  <a class="mark" href="./">After Dark<span>.</span></a>
-  <nav aria-label="After Dark">
-    <button class="quiet" id="open-search" type="button">Search</button>
-    <button class="quiet" id="open-journal" type="button">Journal</button>
-  </nav>
+  <a class="mark" href="../">Jatin Bhatt</a>
 </header>
-<main id="main">
-  <section class="prompt" aria-labelledby="heading">
-    <h1 id="heading">What are you in<br class="wide"> the mood for<span>?</span></h1>
-    <form id="pick-form">
-      <fieldset><legend class="sr-only">Choose a mood</legend><div id="moods" class="moods"></div></fieldset>
-      <div class="controls">
-        <label>Format <select id="format"><option>Film</option><option>Series</option><option value="any">Either</option></select></label>
-        <label>Story focus <select id="focus"><option value="any">Any</option></select></label>
-        <label>Genre <select id="genre"><option value="any">Any</option></select></label>
-        <label>Film industry <select id="industry"><option value="any">Any</option><option value="hollywood">Hollywood</option><option value="bollywood">Bollywood</option></select></label>
-        <label>TMDB rating <select id="rating"><option value="0">Any rating</option><option value="under-6">Under 6</option><option value="6">6+</option><option value="7">7+</option><option value="7.5">7.5+</option><option value="8">8+</option></select></label>
-        <label class="availability-filter"><input id="available" type="checkbox"> Available in India</label>
-        <button class="primary" id="submit" type="submit">Find my pick</button>
-      </div>
-    </form>
-    <p id="status" class="status" role="status"></p>
+<main><section class="prompt">
+<h1>Afterdark<span>.</span></h1>
+<div class="access-options">
+  <section>
+    <h2><a href="https://after-dark.jatinbhatt.workers.dev/">Afterdark Personal</a></h2>
+    <p>Passkey access to your saved journal and recommendations.</p>
   </section>
-  <section id="result" class="result" aria-live="polite" aria-label="Recommendation" hidden>
-    <h2 id="title"></h2>
-    <p id="details" class="meta"></p>
-    <div id="watch"></div>
-    <div class="pick-actions">
-      <button class="quiet" id="skip-pick" type="button">Skip</button>
-      <button class="quiet" id="wrong-mood" type="button">Wrong mood</button>
-      <button class="quiet" id="hide-title" type="button">Never suggest again</button>
-    </div>
-    <div id="feedback"></div>
-    <p id="result-status" class="status" role="status"></p>
+  <section>
+    <h2><a href="travel/">Afterdark</a></h2>
+    <p>Travel access with your private link. Starts with an empty journal.</p>
   </section>
-</main>
-<dialog id="search-dialog" aria-labelledby="search-title">
-  <form method="dialog" class="dialog-top"><h2 id="search-title">Search titles</h2><button class="quiet">Close</button></form>
-  <form id="search-form" class="dialog-actions">
-    <label>Search by <select id="search-by"><option value="title">Title or IMDb ID</option><option value="cast">Actor or actress</option></select></label>
-    <label for="query" class="sr-only">Search term</label><input id="query" type="search" placeholder="Title, IMDb ID or link" minlength="2" maxlength="250" required>
-    <button type="submit" class="primary">Search</button>
-  </form>
-  <p id="search-status" class="status" role="status"></p>
-  <div id="search-rows"></div>
-</dialog>
-<dialog id="journal-dialog" aria-labelledby="journal-title">
-  <form method="dialog" class="dialog-top"><h2 id="journal-title">Journal</h2><button class="quiet">Close</button></form>
-  <p class="small">Saved in this browser.</p>
-  <p id="journal-status" class="status" role="status"></p>
-  <div id="journal-rows"></div>
-</dialog>
-<footer>
-  <p>Catalogue adapted from Asaniczka’s <a href="https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies">film</a> and <a href="https://www.kaggle.com/datasets/asaniczka/full-tmdb-tv-shows-dataset-2023-150k-shows">series</a> datasets, under <a href="https://opendatacommons.org/licenses/by/1-0/">ODC-By</a>. Ratings are from <a href="https://www.themoviedb.org/">TMDB</a>.</p>
-  <p>Series credits from <a href="https://www.tvmaze.com/api">TVmaze</a> under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Film cast credits from <a href="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset">The Movies Dataset</a>. India listings from <a href="https://www.movieofthenight.com/about/api">Streaming Availability API by Movie of the Night</a>.</p>
-</footer>
+</div>
+</section></main>
 </body>
 </html>

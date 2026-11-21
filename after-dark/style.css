@@ -100,3 +100,7 @@ input[type=search]{min-height:44px;border:1px solid var(--rule);background:var(-
 
 .skip-link{position:fixed;top:8px;left:8px;z-index:1;padding:8px 14px;background:var(--card);transform:translateY(-150%)}
 .skip-link:focus{transform:none}
+.access-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:32px;max-width:900px}
+.access-options section{border-top:1px solid var(--rule);padding-top:16px}
+.access-options h2{font-size:clamp(1.5rem,3vw,2.15rem);letter-spacing:-.025em}
+.access-options p{margin-top:8px}
