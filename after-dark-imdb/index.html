@@ -7,14 +7,76 @@
 <meta name="referrer" content="no-referrer">
 <title>Afterdark</title>
 <link rel="stylesheet" href="../after-dark/style.css?v=2">
-<script defer src="../after-dark/travel/open.js"></script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://after-dark.jatinbhatt.workers.dev; base-uri 'none'; form-action 'self'">
+<script defer src="access.js?v=1"></script>
+<script defer src="recommend.js?v=7"></script>
+<script defer src="cast-results.js?v=1"></script>
+<script defer src="app.js?v=10"></script>
 </head>
 <body>
-<header class="masthead top"><a class="mark" href="./">Afterdark</a></header>
-<main><section class="prompt">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead top">
+  <a class="mark" id="brand" href="/"><span id="brand-name">Afterdark</span><span class="brand-dot">.</span></a>
+  <nav id="app-nav" aria-label="After Dark" hidden>
+    <button class="quiet" type="button" id="log">Search</button>
+    <button class="quiet" type="button" id="journal">Journal</button>
+  </nav>
+</header>
+<main id="access"><section class="prompt">
 <h1>Afterdark<span>.</span></h1>
-<p id="status" role="status">Open your saved private link to use Afterdark while travelling.</p>
+<p id="access-status" class="status" role="status">Opening Afterdark…</p>
 <p><a href="https://after-dark.jatinbhatt.workers.dev/">Afterdark Personal</a></p>
 </section></main>
+<main id="main" hidden>
+  <section class="prompt" aria-labelledby="heading">
+    <h1 id="heading">What are you in<br class="wide"> the mood for<span>?</span></h1>
+    <form id="pick-form">
+      <fieldset><legend class="sr-only">Choose a mood</legend><div id="moods" class="moods"></div></fieldset>
+      <div class="controls">
+        <label>Format <select id="format"><option value="Film">Film</option><option value="Series">Series</option><option value="all">Either</option></select></label>
+        <label>Story focus <select id="story-focus"></select></label>
+        <label>Genre <select id="genre"><option value="all">Any</option></select></label>
+        <label>Film industry <select id="industry"><option value="all">Any</option><option value="hollywood">Hollywood</option><option value="bollywood">Bollywood</option></select></label>
+        <label>IMDb rating <select id="min-rating"><option value="0">Any rating</option><option value="under-6">Under 6</option><option value="6">6+</option><option value="7">7+</option><option value="7.5">7.5+</option><option value="8">8+</option></select></label>
+        <label class="availability-filter"><input id="available-in-india" type="checkbox"> Available in India</label>
+        <button class="primary" id="pick-button" type="submit">Find my pick</button>
+      </div>
+    </form>
+    <p id="status" class="status" role="status"></p>
+  </section>
+  <section id="result" class="result" aria-live="polite" aria-label="Recommendation" hidden></section>
+</main>
+<dialog id="journal-dialog" aria-labelledby="journal-title">
+  <form method="dialog" class="dialog-top"><h2 id="journal-title">Journal</h2><button class="quiet">Close</button></form>
+  <p id="journal-status" class="status" role="status"></p>
+  <div id="journal-rows"></div>
+  <p id="travel-journal-note" class="small" hidden>Travel activity clears when you leave or reload this page.</p>
+  <div class="watch" id="travel-controls" hidden>
+    <h3>Afterdark travel access</h3>
+    <p class="small">Save this link before you travel. Anyone with the link can open Afterdark.</p>
+    <div class="dialog-actions">
+      <button class="quiet" type="button" id="create-travel-link">Create travel link</button>
+      <button class="quiet" type="button" id="revoke-travel-link" hidden>Revoke travel link</button>
+    </div>
+    <div id="travel-link-output" hidden>
+      <label for="travel-link-value" class="sr-only">Private travel link</label>
+      <input type="url" id="travel-link-value" readonly autocomplete="off">
+      <button class="quiet" type="button" id="copy-travel-link">Copy link</button>
+    </div>
+    <p class="status" role="status" id="travel-link-status"></p>
+  </div>
+  <button class="quiet" type="button" id="sign-out">Sign out</button>
+</dialog>
+<dialog id="log-dialog" aria-labelledby="log-title">
+  <form method="dialog" class="dialog-top"><h2 id="log-title">Search titles</h2><button class="quiet">Close</button></form>
+  <form id="search-form" class="dialog-actions">
+    <label>Search by <select id="search-by"><option value="title">Title or IMDb ID</option><option value="cast">Actor or actress</option></select></label>
+    <label for="query" class="sr-only">Search term</label><input id="query" type="search" placeholder="Title, IMDb ID or link" minlength="2" maxlength="250" required>
+    <button class="primary">Search</button>
+  </form>
+  <p id="search-status" class="status" role="status"></p>
+  <div id="search-rows"></div>
+</dialog>
+<footer><p>Information courtesy of <a href="https://www.imdb.com">IMDb</a>. Used with permission. Film and series classification uses Asaniczka’s TMDB datasets for <a href="https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies">films</a> and <a href="https://www.kaggle.com/datasets/asaniczka/full-tmdb-tv-shows-dataset-2023-150k-shows">series</a>.</p><p>India listings powered by the <a href="https://docs.movieofthenight.com/">Streaming Availability API</a>.</p></footer>
 </body>
 </html>
