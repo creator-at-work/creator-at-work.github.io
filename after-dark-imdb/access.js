@@ -33,7 +33,7 @@ const afterdarkWebsite=(()=>{
     const field=document.getElementById('website-travel-link-value');
     const message=document.getElementById('website-travel-link-status');
     const link=new URL(location.pathname,location.origin);
-    link.searchParams.set('v','3');
+    link.searchParams.set('open','1');
     link.hash=key;
     controls.hidden=false;
     copy.addEventListener('click',async ()=>{
