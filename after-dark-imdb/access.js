@@ -1,6 +1,7 @@
 const afterdarkWebsite=(()=>{
   const api='https://after-dark.jatinbhatt.workers.dev/after-dark-imdb';
   return {
+    catalogueURL:api+'/catalog/',
     request(path,options){
       return fetch(api+path,{...options,credentials:'omit'});
     },

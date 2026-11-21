@@ -12,7 +12,9 @@ let searchMeta;
 let moodIndex;
 let queuedPicks=[];
 const shardCache=new Map();
-const quickRows=new Map();
+let catalogueWorker;
+let workerRequestId=0;
+const pendingSearches=new Map();
 let preparedPick;
 let prepareTimer;
 
@@ -69,10 +71,6 @@ async function shardNames(format,industry) {
   if(industry && industry!=='all')return (await searchIndex()).industries[industry];
   return format==='all' ? [...meta.files.Film,...meta.files.Series] : meta.files[format];
 }
-function quickShardNames(format,industry) {
-  if(industry && industry!=='all')return ['quick-'+industry+'.part'];
-  return format==='all'?['quick-film.part','quick-series.part']:['quick-'+format.toLowerCase()+'.part'];
-}
 function fetchShard(name) {
   if(!shardCache.has(name)){
     const load=appFetch('/catalog/'+name).then(response=>{
@@ -86,17 +84,6 @@ function fetchShard(name) {
 async function loadShard(name) {
   const blob=await fetchShard(name);
   return new Response(blob.stream().pipeThrough(new DecompressionStream('gzip'))).json();
-}
-function loadQuickRows(name) {
-  if(!quickRows.has(name)){
-    const rows=loadShard(name).catch(error=>{
-      quickRows.delete(name);
-      shardCache.delete(name);
-      throw error;
-    });
-    quickRows.set(name,rows);
-  }
-  return quickRows.get(name);
 }
 async function save(item,mood,status,rating) {
   if(travelMode){
@@ -149,17 +136,50 @@ function pickFilters() {
     available:get('available-in-india').checked,industry:get('industry').value,
     minRating:rating==='under-6'?rating:Number(rating),maxYear:new Date().getFullYear()};
 }
+async function searchInWorker(options,warmOnly=false) {
+  const files=await shardNames(options.format,options.industry);
+  if(!catalogueWorker){
+    catalogueWorker=new Worker(new URL('catalogue-worker.js?v=1',location.href));
+    catalogueWorker.onmessage=({data:{id,result,error}})=>{
+      const pending=pendingSearches.get(id);
+      pendingSearches.delete(id);
+      if(error)pending?.reject(new Error(error));
+      else pending?.resolve(result);
+    };
+    catalogueWorker.onerror=()=>{
+      for(const pending of pendingSearches.values())pending.reject(new Error('Search worker unavailable.'));
+      pendingSearches.clear();
+      catalogueWorker.terminate();
+      catalogueWorker=null;
+    };
+  }
+  const base=websiteTravel?afterdarkWebsite.catalogueURL:
+    new URL(travelMode?'/travel/catalog/':'/catalog/',location.origin).href;
+  return new Promise((resolve,reject)=>{
+    const id=++workerRequestId;
+    catalogueWorker.postMessage({id,base,files,data,state,settings:options,warmOnly});
+    pendingSearches.set(id,{resolve,reject});
+  });
+}
+async function rankFullCatalogue(options) {
+  try{
+    return await searchInWorker(options);
+  }catch{
+    const annotations=await annotationsFor(options);
+    return rankAvailable(data,state,{...options,annotations},loadShard,shardNames);
+  }
+}
 function preparePick() {
   const options=pickFilters();
-  if(!options.mood)return;
+  if(!options.mood||navigator.connection?.saveData)return;
   const key=JSON.stringify(options);
   if(preparedPick?.key===key)return;
-  const files=quickShardNames(options.format,options.industry);
-  const warmed=Promise.all([initialize(),annotationsFor(options),...files.map(loadQuickRows)]);
-  const candidates=warmed.then(([,annotations])=>travelMode
-    ?rankAvailable(data,state,{...options,annotations},loadQuickRows,quickShardNames)
-    :null).catch(()=>null);
-  preparedPick={key,candidates};
+  const preparation={key};
+  preparation.candidates=initialize().then(()=>searchInWorker(options,!travelMode)).catch(()=>{
+    if(preparedPick===preparation)preparedPick=null;
+    return null;
+  });
+  preparedPick=preparation;
 }
 function schedulePickPreparation() {
   clearTimeout(prepareTimer);
@@ -304,36 +324,22 @@ async function findPick(options,previous) {
       queuedPicks=[];
     }
     let searches=0;
-    let quick=!previous;
     while(queuedPicks.length || searches<3){
       if(!queuedPicks.length){
         note('status',previous?'Finding your next pick…':'Finding a title…');
-        const [,annotations]=await Promise.all([
-          refreshJournal(),
-          annotationsFor(options)
-        ]);
-        const settings={...options,annotations};
-        if(quick){
-          quick=false;
-          const prepared=travelMode&&preparedPick?.key===key?await preparedPick.candidates:null;
-          const candidates=prepared??await rankAvailable(data,state,settings,loadQuickRows,quickShardNames).catch(()=>null);
-          if(candidates?.picks.length>=5){
-            queuedPicks=options.available?await checkAvailablePicks(candidates.picks,options):candidates.picks.slice(0,5);
-          }
+        await refreshJournal();
+        const prepared=!previous&&travelMode&&preparedPick?.key===key?await preparedPick.candidates:null;
+        const {picks,counts}=prepared??await rankFullCatalogue(options);
+        searches++;
+        if(!picks.length){
+          const reason=!counts.inFormat?'format or industry':!counts.mood?'mood':!counts.focus?'story focus':
+            !counts.genre?'genre':!counts.rating?'IMDb rating':'filters';
+          note('status',reason==='filters'?'No more fresh picks. Change a filter or try another mood.':
+            'No matches. Try changing the '+reason+'.');
+          return;
         }
-        if(!queuedPicks.length){
-          const {picks,counts}=await rankAvailable(data,state,settings,loadShard,shardNames);
-          searches++;
-          if(!picks.length){
-            const reason=!counts.inFormat?'format or industry':!counts.mood?'mood':!counts.focus?'story focus':
-              !counts.genre?'genre':!counts.rating?'IMDb rating':'filters';
-            note('status',reason==='filters'?'No more fresh picks. Change a filter or try another mood.':
-              'No matches. Try changing the '+reason+'.');
-            return;
-          }
-          queuedPicks=options.available ? await checkAvailablePicks(picks,options) : picks.slice(0,5);
-          if(!queuedPicks.length)return;
-        }
+        queuedPicks=options.available?await checkAvailablePicks(picks,options):picks.slice(0,5);
+        if(!queuedPicks.length)return;
       }
       const {solution,availability}=queuedPicks[0];
       const saved=await save(solution.item,options.mood,'suggested');
@@ -489,9 +495,9 @@ get('search-form').addEventListener('submit',async event=>{
   finally{submit.disabled=false;}
 });
 if(websiteTravel){
-  afterdarkWebsite.open(()=>initialize().then(preparePick));
+  afterdarkWebsite.open(()=>initialize().then(schedulePickPreparation));
 }else{
-  initialize().then(preparePick).catch(error=>note('status',error.message));
+  initialize().then(schedulePickPreparation).catch(error=>note('status',error.message));
 }
 
 get('sign-out').addEventListener('click',async()=>{
