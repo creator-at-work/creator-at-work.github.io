@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-mode="stillness">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#f3ede2">
+<title>After Dark · Jatin Bhatt</title>
+<link rel="canonical" href="https://jatinbhatt.me/after-dark/">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script>try{const m=localStorage.getItem("jb-mode");if(m==="signal")document.documentElement.dataset.mode=m;}catch{}</script>
+<link rel="stylesheet" href="style.css">
+<script defer src="recommend.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead top">
+  <a class="mark wordmark" href="../" aria-label="Jatin Bhatt, home"><span class="wm-j">Jatin</span> Bhatt</a>
+  <nav aria-label="After Dark">
+    <button class="quiet" type="button" id="open-ratings">Ratings</button>
+    <button class="quiet" type="button" id="open-settings">Settings</button>
+  </nav>
+</header>
+<main id="main">
+  <section class="prompt" aria-labelledby="heading">
+    <h1 id="heading">What are you in<br class="wide"> the mood for<span>?</span></h1>
+    <form id="pick-form">
+      <fieldset>
+        <legend class="sr-only">Choose a mood</legend>
+        <div id="moods" class="moods"></div>
+      </fieldset>
+      <div class="controls">
+        <label>Format <select id="format"><option value="Film">Film</option><option value="Series">Series</option><option value="all">Either</option></select></label>
+        <label>Genre <select id="genre"><option value="all">Any</option></select></label>
+        <label>IMDb <select id="min-rating"><option value="0">Any rating</option><option value="7">7.0+</option><option value="7.5">7.5+</option><option value="8">8.0+</option></select></label>
+        <button class="primary" id="pick-button" type="submit" disabled>Find my pick</button>
+      </div>
+    </form>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </section>
+  <section id="result" class="result" aria-label="Recommendation" hidden></section>
+</main>
+<dialog id="settings" aria-labelledby="settings-heading">
+  <form method="dialog" class="dialog-top"><h2 id="settings-heading">Settings</h2><button type="submit" class="quiet">Close</button></form>
+  <label class="private-profile">Personal catalog <input id="profile-file" type="file" accept=".bin,application/octet-stream"></label>
+  <p id="profile-status" class="status" role="status"></p>
+  <h3>Streaming in India</h3>
+  <p>Connect a TMDb read token to see current subscription, rental, and purchase options for each title.</p>
+  <form id="provider-form">
+    <label>TMDb API Read Access Token <input type="password" id="token" autocomplete="off" spellcheck="false"></label>
+    <div class="dialog-actions"><button type="submit" class="primary">Connect</button><button type="button" id="disconnect" class="quiet" hidden>Disconnect</button></div>
+  </form>
+  <p id="provider-status" class="status" role="status"></p>
+  <p class="small">The token lasts for this tab. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener noreferrer">Get a TMDb token</a></p>
+</dialog>
+<dialog id="ratings" aria-labelledby="ratings-heading">
+  <form method="dialog" class="dialog-top"><h2 id="ratings-heading">Ratings</h2><button type="submit" class="quiet">Close</button></form>
+  <div id="journal"></div>
+</dialog>
+<footer>
+  <p>Information courtesy of <a href="https://www.imdb.com">IMDb</a>. Used with permission.</p>
+  <p>This product uses the <a href="https://www.themoviedb.org">TMDB</a> API but is not endorsed or certified by TMDB. Streaming data by <a href="https://www.justwatch.com/in">JustWatch</a>.</p>
+</footer>
+</body>
+</html>
