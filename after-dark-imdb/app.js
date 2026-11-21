@@ -455,11 +455,11 @@ if(websiteTravel){
 }
 
 get('sign-out').addEventListener('click',async()=>{
+  if(websiteTravel){afterdarkWebsite.close();return;}
   try{
     const response=await appFetch('/auth/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
-    if(!response.ok&&!(websiteTravel&&response.status===401))throw new Error('Could not sign out. Try again.');
-    if(websiteTravel)afterdarkWebsite.close();
-    else location.replace(travelMode?'/travel':'/login');
+    if(!response.ok)throw new Error('Could not sign out. Try again.');
+    location.replace(travelMode?'/travel':'/login');
   }catch(error){note('status',error.message);}
 });
 
@@ -468,7 +468,7 @@ if(travelMode){
   document.title='Afterdark';
   get('brand-name').textContent='Afterdark';
   get('brand').href=websiteTravel?'./':'/travel/watch';
-  get('sign-out').textContent='Close travel session';
+  get('sign-out').textContent=websiteTravel?'Clear session':'Close travel session';
   get('travel-journal-note').hidden=false;
 }else{
   get('travel-controls').hidden=false;

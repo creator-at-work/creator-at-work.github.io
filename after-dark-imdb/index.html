@@ -8,26 +8,21 @@
 <title>Afterdark</title>
 <link rel="stylesheet" href="../after-dark/style.css?v=2">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://after-dark.jatinbhatt.workers.dev; base-uri 'none'; form-action 'self'">
-<script defer src="access.js?v=3"></script>
+<script defer src="access.js?v=4"></script>
 <script defer src="recommend.js?v=8"></script>
 <script defer src="cast-results.js?v=1"></script>
-<script defer src="app.js?v=11"></script>
+<script defer src="app.js?v=12"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead top">
   <a class="mark" id="brand" href="/"><span id="brand-name">Afterdark</span><span class="brand-dot">.</span></a>
-  <nav id="app-nav" aria-label="After Dark" hidden>
+  <nav id="app-nav" aria-label="After Dark">
     <button class="quiet" type="button" id="log">Search</button>
     <button class="quiet" type="button" id="journal">Journal</button>
   </nav>
 </header>
-<main id="access"><section class="prompt">
-<h1>Afterdark<span>.</span></h1>
-<p id="access-status" class="status" role="status">Opening Afterdark…</p>
-<p><a href="https://after-dark.jatinbhatt.workers.dev/">Afterdark Personal</a></p>
-</section></main>
-<main id="main" hidden>
+<main id="main">
   <section class="prompt" aria-labelledby="heading">
     <h1 id="heading">What are you in<br class="wide"> the mood for<span>?</span></h1>
     <form id="pick-form">
@@ -64,11 +59,6 @@
       <button class="quiet" type="button" id="copy-travel-link">Copy link</button>
     </div>
     <p class="status" role="status" id="travel-link-status"></p>
-  </div>
-  <div id="website-travel-link" hidden>
-    <button class="quiet" type="button" id="copy-website-travel-link">Copy travel link</button>
-    <input type="url" id="website-travel-link-value" aria-label="Private travel link" readonly autocomplete="off" hidden>
-    <p class="status" id="website-travel-link-status" role="status"></p>
   </div>
   <button class="quiet" type="button" id="sign-out">Sign out</button>
 </dialog>
