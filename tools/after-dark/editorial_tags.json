@@ -1,0 +1,112 @@
+{
+  "mood": {
+    "feel-good": {
+      "14849194": "companionship and growing trust",
+      "5462602": "warm romantic comedy",
+      "0340377": "friendship and community",
+      "4698684": "warm found-family comedy",
+      "0466460": "resourceful family comedy",
+      "3767372": "affectionate family comedy"
+    },
+    "funny": {
+      "0466460": "comic family scheme",
+      "4686844": "political satire",
+      "5462602": "romantic comedy",
+      "4698684": "offbeat comedy",
+      "8199790": "gentle observational comedy"
+    },
+    "tense": {
+      "1340800": "danger and suspicion inside an intelligence service",
+      "1972571": "mounting surveillance and pressure",
+      "3397884": "suspense during an escalating operation",
+      "1392214": "high-stakes search for missing children",
+      "2057392": "tense debate during a time-sensitive operation",
+      "11280740": "mounting unease about a workplace experiment",
+      "2149175": "escalating danger of discovery",
+      "4063800": "pressure of protecting covers during intelligence operations",
+      "4643084": "paranoia and mistrust across rival intelligence services",
+      "15565872": "shifting suspicion and secrets surrounding a defection"
+    },
+    "mind-bending": {
+      "2866360": "parallel realities intersect",
+      "0390384": "time travel paradoxes",
+      "0470752": "unstable perceptions of artificial intelligence",
+      "1182345": "identity and reality are called into question",
+      "0756683": "a conversation challenges accepted history and identity",
+      "8134186": "predetermination and simulated timelines",
+      "11280740": "partitioned memories and identity",
+      "4643084": "parallel worlds and alternate lives"
+    },
+    "high-energy": {
+      "24053860": "pursuit and action set pieces",
+      "0113277": "heists, pursuit and gun battles",
+      "5875444": "running pursuits and undercover action",
+      "3833480": "sustained combat sequences",
+      "0265086": "combat and pursuit",
+      "4172430": "sustained attacks and firefights",
+      "1091191": "sustained pursuit and combat",
+      "1413492": "repeated combat and action sequences",
+      "0277434": "sustained battlefield combat",
+      "3922798": "sustained siege combat",
+      "2713180": "tank battles and ground combat"
+    }
+  },
+  "focus": {
+    "espionage": {
+      "5875444": "intelligence operations",
+      "2149175": "undercover Soviet agents",
+      "4063800": "undercover intelligence officers",
+      "1340800": "search for a mole",
+      "1972571": "intelligence surveillance operation",
+      "0405094": "state surveillance",
+      "15565872": "espionage and betrayal",
+      "0073802": "CIA insider conspiracy",
+      "4643084": "espionage between parallel worlds"
+    },
+    "military": {
+      "1790885": "military raid and intelligence operation",
+      "2057392": "military drone operation",
+      "0995832": "Marine unit on deployment",
+      "3833480": "armed defense of a military outpost",
+      "0311113": "naval command and combat tactics",
+      "0265086": "military mission",
+      "4172430": "defense of a diplomatic compound",
+      "1091191": "reconnaissance mission",
+      "1413492": "Special Forces deployment",
+      "0277434": "military command",
+      "3922798": "UN infantry deployment",
+      "2713180": "a tank crew on a military operation"
+    },
+    "power": {
+      "0465538": "corporate leverage and cover-up",
+      "1615147": "executives protecting their positions",
+      "2937898": "business leverage and political pressure",
+      "4686844": "political succession and maneuvering",
+      "0306414": "institutional competition for authority",
+      "4244994": "feudal authority and contested testimony"
+    },
+    "investigation": {
+      "1305806": "revisiting an unsolved murder",
+      "0353969": "detectives investigating a series of murders",
+      "1392214": "investigation of missing children",
+      "0306414": "police surveillance investigation",
+      "0877057": "reconstructing a murder case"
+    },
+    "relationships": {
+      "13238346": "childhood connection and adult partnership",
+      "0112471": "connection developing through conversation",
+      "0381681": "revisiting a romantic connection",
+      "5247022": "daily life with a partner",
+      "5462602": "romantic and family relationships",
+      "1832382": "marital separation",
+      "5990474": "friendship and family obligations",
+      "0340377": "friendship formed in a new community"
+    },
+    "history": {
+      "0140352": "documented tobacco industry case",
+      "4244994": "historical case from medieval France",
+      "4686844": "Soviet succession after Stalin",
+      "0166896": "based on a documented journey"
+    }
+  }
+}

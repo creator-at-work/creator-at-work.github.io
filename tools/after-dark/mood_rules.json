@@ -1,0 +1,61 @@
+{
+  "mood": {
+    "slow-living": {
+      "keywords": ["slice of life", "slow cinema", "daily life", "iyashikei", "slow living"],
+      "phrases": ["daily routine", "everyday routines", "quiet rhythms", "unhurried pace", "quiet daily life", "simple pleasures", "ordinary moments", "quiet everyday life"],
+      "exclude": ["murder", "killer", "terrifying", "violent", "revenge", "horror", "hostage", "survival", "terrorist", "war"]
+    },
+    "feel-good": {
+      "keywords": ["feel good", "feel-good", "uplifting", "heartwarming", "wholesome"],
+      "phrases": ["heartwarming", "uplifting", "feel-good", "joyful celebration", "warm-hearted"]
+    },
+    "funny": {
+      "keywords": ["satire", "parody", "slapstick", "absurd humor", "stand-up comedy", "screwball comedy"],
+      "phrases": ["hilarious", "farce", "mockumentary", "comic misadventures", "satirical comedy", "absurd comedy", "stand-up comedy"]
+    },
+    "tense": {
+      "keywords": ["psychological thriller", "suspense", "hostage", "suspenseful", "race against time"],
+      "phrases": ["race against time", "tense standoff", "held hostage", "mounting tension", "deadly game of cat and mouse", "caught in a deadly", "nerve-wracking", "suspenseful"]
+    },
+    "mind-bending": {
+      "keywords": ["time loop", "alternate reality", "parallel universe", "simulated reality", "mind-bending", "nonlinear timeline", "time paradox", "multiple realities", "memory manipulation"],
+      "phrases": ["parallel universe", "parallel universes", "alternate realities", "alternate reality", "time loop", "relive the same day", "fabric of reality", "simulated reality", "time paradox", "reality begins to unravel", "mind-bending"]
+    },
+    "high-energy": {
+      "keywords": ["martial arts", "car chase", "street racing", "gunfight", "extreme sports", "action packed"],
+      "phrases": ["high-speed chase", "high-octane", "fast-paced action", "nonstop action", "frenetic action", "explosive action", "martial arts tournament", "street racing"]
+    },
+    "scary": {
+      "keywords": ["haunted house", "demonic possession", "body horror", "slasher", "supernatural horror", "folk horror", "psychological horror", "jump scare"],
+      "phrases": ["terrifying presence", "malevolent entity", "demonic possession", "haunted house", "supernatural horror", "sinister entity", "nightmarish creature", "gruesome murders"],
+      "genres": ["Horror"]
+    }
+  },
+  "focus": {
+    "espionage": {
+      "keywords": ["espionage", "spy", "double agent", "intelligence agency", "counterintelligence", "secret agent", "spy thriller"],
+      "phrases": ["secret agent", "double agent", "foreign intelligence", "intelligence officer", "counterintelligence", "espionage", "cia operative", "mi6 agent", "spy ring"]
+    },
+    "military": {
+      "keywords": ["military operation", "special forces", "navy seal", "military tactics", "military unit", "combat mission", "military training"],
+      "phrases": ["special forces", "navy seals", "combat mission", "military operation", "behind enemy lines", "rescue mission", "military unit", "military tactics", "soldiers must", "platoon"]
+    },
+    "power": {
+      "keywords": ["power struggle", "political corruption", "political intrigue", "succession", "political maneuvering", "corporate takeover", "power dynamics", "political thriller"],
+      "phrases": ["power struggle", "political intrigue", "political corruption", "corporate takeover", "battle for control", "fight for control", "family empire", "political maneuvering"]
+    },
+    "investigation": {
+      "keywords": ["criminal investigation", "murder investigation", "police procedural", "whodunit", "cold case", "crime investigation", "detective investigation"],
+      "phrases": ["investigate a murder", "investigates the murder", "murder investigation", "investigating a murder", "cold case", "investigate the disappearance", "solve the case", "solve a murder", "investigate a series of", "investigates a series of", "murder mystery", "police procedural", "whodunit"]
+    },
+    "relationships": {
+      "keywords": ["marriage", "divorce", "family relationships", "family drama", "falling in love", "romantic relationship", "friendship"],
+      "phrases": ["fall in love", "falls in love", "falling in love", "strained marriage", "their relationship", "reconnect with", "rekindle their", "family relationships", "unlikely friendship", "unexpected friendship"]
+    },
+    "history": {
+      "keywords": ["period drama", "historical drama", "historical event", "historical fiction"],
+      "phrases": ["historical drama", "historical events", "historical figure", "period drama", "historical epic"],
+      "genres": ["History"]
+    }
+  }
+}
