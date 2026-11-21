@@ -203,11 +203,11 @@ async function readJson(path) {
 }
 
 async function rankAvailable(data,state,settings,token,request,load,filesFor) {
-  const fresh = token ? await discoverImdbIds(settings.mood,settings.format,settings.genre,token,request).catch(()=>[]) : [];
+  const files=await filesFor(settings.format);
+  const fresh = token && files.length ? await discoverImdbIds(settings.mood,settings.format,settings.genre,token,request).catch(()=>[]) : [];
   const freshById=new Map(fresh.map(item=>[Number(item.imdbId.slice(2)),item]));
   const matched=[];
   let broad=[];
-  const files=await filesFor(settings.format);
   // Each shard is decoded and released before loading another. The browser only keeps the leading results.
   for (const filename of files) {
     const rows=await load(filename);

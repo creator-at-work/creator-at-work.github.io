@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="../styles.css">
 <script>try{const m=localStorage.getItem("jb-mode");if(m==="signal")document.documentElement.dataset.mode=m;}catch{}</script>
 <link rel="stylesheet" href="style.css">
-<script defer src="recommend.js"></script>
-<script defer src="app.js"></script>
+<script defer src="recommend.js?v=2"></script>
+<script defer src="app.js?v=2"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -35,9 +35,10 @@
         <label>Format <select id="format"><option value="Film">Film</option><option value="Series">Series</option><option value="all">Either</option></select></label>
         <label>Genre <select id="genre"><option value="all">Any</option></select></label>
         <label>IMDb <select id="min-rating"><option value="0">Any rating</option><option value="7">7.0+</option><option value="7.5">7.5+</option><option value="8">8.0+</option></select></label>
-        <button class="primary" id="pick-button" type="submit" disabled>Find my pick</button>
+        <button class="primary" id="pick-button" type="submit">Find my pick</button>
       </div>
     </form>
+    <p id="catalog-mode" class="small">Start with a shortlist. Load your personal catalogue in Settings for more titles and recommendations based on your viewing profile.</p>
     <p id="status" class="status" role="status" aria-live="polite"></p>
   </section>
   <section id="result" class="result" aria-label="Recommendation" hidden></section>

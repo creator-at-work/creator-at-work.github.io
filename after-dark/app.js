@@ -50,10 +50,6 @@ function chooseMood(value) {
   choice.name = 'mood';
   choice.value = value;
   choice.required = true;
-  choice.addEventListener('change',()=>{
-    q('pick-button').disabled = !data || !personalCatalog;
-    if (personalCatalog) q('status').textContent = '';
-  });
   const label = node('label',null,'mood');
   label.append(choice,node('span',formatMood[value]));
   return label;
@@ -160,24 +156,27 @@ function safeWatchLink(value) {
   } catch { return ''; }
 }
 function setBusy(busy) {
-  q('pick-button').disabled = busy || !data || !personalCatalog || !document.querySelector('input[name=mood]:checked');
+  q('pick-button').disabled = busy;
   for (const control of q('pick-form').querySelectorAll('input,select')) control.disabled = busy;
 }
 q('pick-form').addEventListener('submit',async event=>{
   event.preventDefault();
   const mood = document.querySelector('input[name=mood]:checked')?.value;
-  if (!data || !mood || !personalCatalog) return;
+  if (!mood || q('pick-button').disabled) return;
   setBusy(true);
   q('status').textContent = 'Checking titles…';
   try {
     const settings = {mood,format:q('format').value,genre:q('genre').value,minRating:Number(q('min-rating').value),
       maxYear:new Date().getFullYear()};
+    await loadCatalog();
+    const catalog = personalCatalog;
     const result = await rankAvailable(data,state,settings,accessToken,fetch,
-      async entry=>new Response(personalCatalog.file.slice(entry.begin,entry.begin+entry.length)
+      async entry=>new Response(catalog.file.slice(entry.begin,entry.begin+entry.length)
         .stream().pipeThrough(new DecompressionStream('gzip'))).json(),
-      format=>personalCatalog.entries.filter(entry=>format==='all'||entry.format===format));
+      format=>catalog ? catalog.entries.filter(entry=>format==='all'||entry.format===format) : []);
     if (!result.solution) {
-      q('status').textContent = 'No fresh match. Try another genre or rating filter.';
+      q('status').textContent = catalog ? 'No fresh match. Try another genre or rating filter.' :
+        'No match in the starter list. Try another filter or load your personal catalogue in Settings.';
       return;
     }
     const {item,match,anchors,traits} = result.solution;
@@ -186,7 +185,8 @@ q('pick-form').addEventListener('submit',async event=>{
     state.journal.push(current);
     save();
     drawPick();
-    q('status').textContent = result.error || '';
+    const mode = catalog ? '' : 'Starter pick. Load your personal catalogue in Settings for a wider, personalised search.';
+    q('status').textContent = [mode,result.error].filter(Boolean).join(' ');
     q('result').scrollIntoView({block:'nearest',behavior:'smooth'});
   } catch (error) {
     q('status').textContent = error.message || 'The search failed. Try again.';
@@ -269,12 +269,13 @@ function applyCatalog(catalog) {
   data.knownEnjoyment=catalog.profile.knownEnjoyment;
   state.history=Object.fromEntries(Object.keys(data.knownEnjoyment).map(id=>[id,'enjoyed']));
   q('status').textContent='';
-  setBusy(false);
+  q('catalog-mode').hidden = true;
 }
 q('profile-file').addEventListener('change',async event=>{
   const file=event.target.files?.[0];
-  if(!data||!file)return;
+  if(!file)return;
   try {
+    await loadCatalog();
     const catalog=await readPersonalCatalog(file);
     applyCatalog(catalog);
     try {
@@ -284,11 +285,18 @@ q('profile-file').addEventListener('change',async event=>{
   } catch(error){q('profile-status').textContent=error.message;}
   finally{event.target.value='';}
 });
-readJson('catalog-data.json').then(async publicData=>{
-  data=publicData;
-  try{
-    const file=await privateStore('readonly',store=>store.get('catalog'));
-    if(file) applyCatalog(await readPersonalCatalog(file));
-  } catch {}
-  if(!personalCatalog) q('status').replaceChildren(button('Load your personal catalog',()=>q('open-settings').click()));
-}).catch(error=>q('status').textContent=error.message);
+let catalogReady;
+function loadCatalog() {
+  catalogReady ??= readJson('catalog-data.json').then(async publicData=>{
+    data = {...publicData,history:[],signals:[],knownEnjoyment:{}};
+    try {
+      const file = await privateStore('readonly',store=>store.get('catalog'));
+      if (file) applyCatalog(await readPersonalCatalog(file));
+    } catch {}
+  }).catch(error=>{
+    catalogReady = undefined;
+    throw error;
+  });
+  return catalogReady;
+}
+loadCatalog().catch(error=>q('status').textContent=error.message);
