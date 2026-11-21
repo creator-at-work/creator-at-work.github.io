@@ -27,6 +27,28 @@ const afterdarkWebsite=(()=>{
     }
     return response;
   }
+  function showCopyLink(key){
+    const controls=document.getElementById('website-travel-link');
+    const copy=document.getElementById('copy-website-travel-link');
+    const field=document.getElementById('website-travel-link-value');
+    const message=document.getElementById('website-travel-link-status');
+    const link=new URL(location.pathname,location.origin);
+    link.searchParams.set('v','3');
+    link.hash=key;
+    controls.hidden=false;
+    copy.addEventListener('click',async ()=>{
+      try{
+        await navigator.clipboard.writeText(link.href);
+        message.textContent='Private link copied.';
+      }catch{
+        field.value=link.href;
+        field.hidden=false;
+        field.focus();
+        field.select();
+        message.textContent='Copy the selected link.';
+      }
+    });
+  }
   async function open(initialize){
     const key=location.hash.slice(1);
     try{
@@ -40,6 +62,7 @@ const afterdarkWebsite=(()=>{
         const grant=(await response.json()).token;
         if(!valid(grant))throw new Error();
         record(grant);
+        showCopyLink(key);
         history.replaceState(null,'',location.pathname);
       }
       if(!valid(token)){status(savedLink);return;}
