@@ -18,6 +18,8 @@ window.MehfilPlayer = (function () {
       this.apiReady = false;
       this.playerReady = false;
       this.pendingVideoId = null;
+      this.pendingStartSec = 0;
+      this.pendingAutoplay = true;
       this.currentVideoId = null;
 
       this.state = 'idle'; // 'idle' | 'loading' | 'playing' | 'paused' | 'stopped' | 'ended'
@@ -80,8 +82,15 @@ window.MehfilPlayer = (function () {
             this._applyVolume();
             if (this.pendingVideoId) {
               const vid = this.pendingVideoId;
+              const startSec = this.pendingStartSec || 0;
+              const auto = this.pendingAutoplay !== false;
               this.pendingVideoId = null;
-              this.loadAndPlay(vid);
+              this.pendingStartSec = 0;
+              if (auto) {
+                this.loadAndPlay(vid, this.duration, startSec);
+              } else {
+                this.cueAt(vid, startSec, this.duration);
+              }
             }
           },
           onStateChange: (evt) => this._handleYTState(evt.data),
@@ -164,27 +173,56 @@ window.MehfilPlayer = (function () {
       } catch (_) {}
     }
 
-    loadAndPlay(videoId, expectedDurationSec = 0) {
+    loadAndPlay(videoId, expectedDurationSec = 0, startSeconds = 0) {
       if (!videoId) return;
+      const start = Math.max(0, Number(startSeconds) || 0);
       this.currentVideoId = videoId;
       this._lastErrorForVid = null;
-      this.currentTime = 0;
+      this.currentTime = start;
       this.duration = expectedDurationSec || 0;
       this.state = 'loading';
-      this.onProgress(0, this.duration);
+      this.onProgress(start, this.duration);
       this.onStateChange(this.state);
 
       if (!this.playerReady || !this.player) {
         this.pendingVideoId = videoId;
+        this.pendingStartSec = start;
+        this.pendingAutoplay = true;
         return;
       }
 
       this._applyVolume();
       try {
-        this.player.loadVideoById({ videoId, startSeconds: 0 });
+        this.player.loadVideoById({ videoId, startSeconds: start });
       } catch (_) {
         this.pendingVideoId = videoId;
+        this.pendingStartSec = start;
+        this.pendingAutoplay = true;
       }
+    }
+
+    cueAt(videoId, startSeconds = 0, expectedDurationSec = 0) {
+      if (!videoId) return;
+      const start = Math.max(0, Number(startSeconds) || 0);
+      this.currentVideoId = videoId;
+      this._lastErrorForVid = null;
+      this.currentTime = start;
+      this.duration = expectedDurationSec || 0;
+      this.state = 'paused';
+      this.onProgress(start, this.duration);
+      this.onStateChange(this.state);
+
+      if (!this.playerReady || !this.player) {
+        this.pendingVideoId = videoId;
+        this.pendingStartSec = start;
+        this.pendingAutoplay = false;
+        return;
+      }
+
+      this._applyVolume();
+      try {
+        this.player.cueVideoById({ videoId, startSeconds: start });
+      } catch (_) {}
     }
 
     play() {
