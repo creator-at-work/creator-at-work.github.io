@@ -287,10 +287,11 @@ input:focus-visible {
   border: none;
   padding: 8px 6px;
   min-height: 44px;
+  min-width: 44px;
   color: var(--parchment);
   font-family: var(--font-folio);
-  font-size: 13px;
-  letter-spacing: 0.13em;
+  font-size: 14px;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -311,7 +312,7 @@ input:focus-visible {
 }
 
 .heard-count {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--amber);
   font-variant-numeric: tabular-nums;
 }
@@ -351,13 +352,18 @@ input:focus-visible {
 }
 
 .quiet-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
-  padding: 6px 2px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 6px;
   color: var(--dusk);
   font-family: var(--font-folio);
-  font-size: 12.5px;
-  letter-spacing: 0.12em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -456,8 +462,8 @@ input:focus-visible {
 
 .party-join-kicker {
   font-family: var(--font-folio);
-  font-size: 11.5px;
-  letter-spacing: 0.16em;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--amber);
 }
@@ -503,17 +509,17 @@ input:focus-visible {
   max-width: 100%;
   padding: 4px 0 10px;
   font-family: var(--font-folio);
-  font-size: 11.5px;
-  letter-spacing: 0.09em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--parchment);
   white-space: nowrap;
 }
 
 .party-status-line .quiet-link {
-  font-size: 11.5px;
-  letter-spacing: 0.09em;
-  padding: 6px 2px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  padding: 8px 4px;
 }
 
 .hearth-headline {
@@ -550,8 +556,8 @@ input:focus-visible {
   border: 1px solid var(--wine-border);
   color: var(--ivory);
   font-family: var(--font-folio);
-  font-size: 13.5px;
-  letter-spacing: 0.15em;
+  font-size: 14px;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 10px 28px rgba(124, 29, 40, 0.32);
@@ -584,8 +590,8 @@ input:focus-visible {
   border: 1px solid var(--hairline-gold);
   color: var(--amber-soft);
   font-family: var(--font-folio);
-  font-size: 13px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -610,8 +616,8 @@ input:focus-visible {
 
 .hearth-kicker {
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.18em;
+  font-size: 14px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--amber);
   margin-bottom: 10px;
@@ -627,7 +633,7 @@ input:focus-visible {
 }
 
 .hearth-translation {
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.55;
   color: var(--parchment);
   max-width: 52ch;
@@ -636,8 +642,8 @@ input:focus-visible {
 
 .hearth-track-credit {
   font-family: var(--font-folio);
-  font-size: 13.5px;
-  letter-spacing: 0.10em;
+  font-size: 14px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--dusk);
   margin-bottom: 14px;
@@ -743,13 +749,13 @@ body.is-searching .fanoos-crown {
 
 .mood-item {
   flex: 0 0 auto;
-  min-width: 84px;
+  min-width: 82px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  padding: 13px 10px 12px;
+  padding: 12px 8px 11px;
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
@@ -784,7 +790,7 @@ body.is-searching .fanoos-crown {
 
 .mood-item-sub {
   font-family: var(--font-folio);
-  font-size: 11.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--dusk);
 }
@@ -939,7 +945,7 @@ body.is-searching .fanoos-crown {
 }
 
 .ghazal-meta {
-  font-size: 13.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--dusk);
   white-space: nowrap;
@@ -951,7 +957,7 @@ body.is-searching .fanoos-crown {
 .ghazal-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -968,15 +974,15 @@ body.is-searching .fanoos-crown {
   justify-content: center;
   color: var(--amber);
   font-family: var(--font-folio);
-  font-size: 11.5px;
-  letter-spacing: 0.10em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .row-add-queue-btn {
-  font-size: 17px;
+  font-size: 18px;
   padding: 4px 8px;
   color: var(--parchment);
 }
@@ -988,10 +994,10 @@ body.is-searching .fanoos-crown {
 
 .ghazal-dur {
   font-family: var(--font-folio);
-  font-size: 13.5px;
+  font-size: 14px;
   color: var(--dusk);
   font-variant-numeric: tabular-nums;
-  min-width: 34px;
+  min-width: 38px;
   text-align: right;
 }
 
@@ -1082,8 +1088,8 @@ body.is-searching .fanoos-crown {
 .party-label {
   display: block;
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--dusk);
   margin-bottom: 6px;
@@ -1091,6 +1097,7 @@ body.is-searching .fanoos-crown {
 
 .party-input {
   width: 100%;
+  min-height: 44px;
   background: var(--night);
   border: 1px solid var(--hairline);
   color: var(--ivory);
@@ -1116,8 +1123,8 @@ body.is-searching .fanoos-crown {
 
 .party-section-title {
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.16em;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--amber);
   margin-bottom: 10px;
@@ -1136,8 +1143,8 @@ body.is-searching .fanoos-crown {
   margin: 18px 0 14px;
   color: var(--dusk);
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
 }
 
@@ -1169,8 +1176,8 @@ body.is-searching .fanoos-crown {
 
 .party-role-kicker {
   font-family: var(--font-folio);
-  font-size: 11.5px;
-  letter-spacing: 0.18em;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--amber);
 }
@@ -1192,11 +1199,11 @@ body.is-searching .fanoos-crown {
 .party-share-url {
   margin-top: 8px;
   font-family: var(--font-folio);
-  font-size: 13px;
+  font-size: 14px;
   color: var(--amber);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   word-break: break-all;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 .party-share-actions {
@@ -1233,8 +1240,8 @@ body.is-searching .fanoos-crown {
 
 .roster-role {
   font-family: var(--font-folio);
-  font-size: 11.5px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--amber);
 }
@@ -1249,8 +1256,8 @@ body.is-searching .fanoos-crown {
 
 .drawer-kicker {
   font-family: var(--font-folio);
-  font-size: 11px;
-  letter-spacing: 0.18em;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--amber);
 }
@@ -1270,14 +1277,18 @@ body.is-searching .fanoos-crown {
 }
 
 .drawer-tab {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
   background: none;
   border: none;
   border-bottom: 1.5px solid transparent;
-  padding: 12px 0 10px;
+  padding: 10px 2px;
   color: var(--dusk);
   font-family: var(--font-folio);
-  font-size: 13px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1323,20 +1334,20 @@ body.is-searching .fanoos-crown {
 
 .drawer-row-title {
   display: block;
-  font-size: 15.5px;
+  font-size: 16px;
   color: var(--ivory);
 }
 
 .drawer-row-sub {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-style: italic;
   color: var(--dusk);
 }
 
 .drawer-row-right {
   font-family: var(--font-folio);
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--amber);
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
@@ -1416,8 +1427,8 @@ body.is-searching .fanoos-crown {
 
 .sleep-live-label {
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--dusk);
 }
@@ -1492,10 +1503,11 @@ body.is-searching .fanoos-crown {
   border: 1px solid var(--hairline);
   color: var(--parchment);
   min-height: 44px;
+  min-width: 44px;
   padding: 8px 16px;
   font-family: var(--font-folio);
-  font-size: 12.5px;
-  letter-spacing: 0.12em;
+  font-size: 14px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1518,32 +1530,43 @@ body.is-searching .fanoos-crown {
   justify-content: space-between;
   flex-direction: row-reverse;
   gap: 12px;
-  min-height: 40px;
+  min-height: 44px;
   font-size: 14.5px;
   color: var(--parchment);
   cursor: pointer;
 }
 
-/* Bespoke antique-brass hairline toggle switch (zero native browser checkbox box) */
+/* Bespoke antique-brass hairline toggle switch (44x44 touch hit area, zero native checkbox box) */
 .mehfil-switch {
   -webkit-appearance: none;
   appearance: none;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.mehfil-switch::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 3px;
   width: 38px;
   height: 20px;
   border-radius: 10px;
   background: var(--night);
   border: 1px solid var(--hairline-gold);
-  position: relative;
-  cursor: pointer;
-  flex-shrink: 0;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .mehfil-switch::after {
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 15px;
+  left: 6px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1551,7 +1574,7 @@ body.is-searching .fanoos-crown {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.mehfil-switch:checked {
+.mehfil-switch:checked::before {
   background: rgba(141, 35, 48, 0.55);
   border-color: var(--amber);
 }
@@ -1584,17 +1607,17 @@ body.is-searching .fanoos-crown {
   gap: 4px 8px;
 }
 
-/* Flush razor-thin progress rail cleanly INSIDE the top edge of mobile player (zero overhang!) */
+/* Flush razor-thin progress rail with full 44px touch hit target */
 .scrubber {
   position: absolute;
-  top: 0;
+  top: -21px;
   left: 0;
   right: 0;
-  height: 16px;
-  padding-top: 1px;
+  height: 44px;
+  padding: 0;
   display: flex;
-  align-items: flex-start;
-  z-index: 42;
+  align-items: center;
+  z-index: 41;
 }
 
 .scrubber .time-text {
@@ -1605,7 +1628,17 @@ body.is-searching .fanoos-crown {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
+  height: 44px;
+  padding: 0 4px;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
+}
+
+.hairline-slider::-webkit-slider-runnable-track {
   height: 2.5px;
+  border-radius: 1px;
   background: linear-gradient(
     to right,
     var(--amber) 0%,
@@ -1613,16 +1646,26 @@ body.is-searching .fanoos-crown {
     rgba(235, 206, 162, 0.16) var(--progress, 0%),
     rgba(235, 206, 162, 0.16) 100%
   );
-  cursor: pointer;
-  margin: 0;
-  border-radius: 0;
+}
+
+.hairline-slider::-moz-range-track {
+  height: 2.5px;
+  border-radius: 1px;
+  background: linear-gradient(
+    to right,
+    var(--amber) 0%,
+    var(--amber) var(--progress, 0%),
+    rgba(235, 206, 162, 0.16) var(--progress, 0%),
+    rgba(235, 206, 162, 0.16) 100%
+  );
 }
 
 .hairline-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
+  margin-top: -2.25px;
   border-radius: 50%;
   background: var(--amber);
   border: none;
@@ -1631,8 +1674,8 @@ body.is-searching .fanoos-crown {
 }
 
 .hairline-slider::-moz-range-thumb {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--amber);
   border: none;
@@ -1655,12 +1698,17 @@ body.is-searching .fanoos-crown {
 .console-left {
   grid-area: track;
   min-width: 0;
+  position: relative;
+  z-index: 43;
 }
 
 .console-track-btn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
   background: none;
   border: none;
   padding: 2px 0;
@@ -1681,7 +1729,7 @@ body.is-searching .fanoos-crown {
 }
 
 .console-artist {
-  font-size: 12.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--dusk);
   max-width: 100%;
@@ -1695,6 +1743,8 @@ body.is-searching .fanoos-crown {
   display: flex;
   align-items: center;
   gap: 2px;
+  position: relative;
+  z-index: 43;
 }
 
 .ctrl-icon {
@@ -1738,9 +1788,11 @@ body.is-searching .fanoos-crown {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
+  gap: 12px;
   border-top: 1px solid var(--hairline-soft);
   padding-top: 2px;
+  position: relative;
+  z-index: 43;
 }
 
 .console-pill-link {
@@ -1750,11 +1802,12 @@ body.is-searching .fanoos-crown {
   background: none;
   border: none;
   padding: 6px 4px;
-  min-height: 40px;
+  min-height: 44px;
+  min-width: 44px;
   color: var(--parchment);
   font-family: var(--font-folio);
-  font-size: 12px;
-  letter-spacing: 0.12em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -1775,10 +1828,11 @@ body.is-searching .fanoos-crown {
 
 .mobile-time-compact {
   font-family: var(--font-folio);
-  font-size: 12px;
+  font-size: 14px;
   color: var(--dusk);
   font-variant-numeric: tabular-nums;
   margin-left: auto;
+  white-space: nowrap;
 }
 
 /* Compact landscape phones (short viewport height) */
@@ -1863,12 +1917,13 @@ body.is-searching .fanoos-crown {
   .search-field {
     flex: 1;
     min-width: 0;
+    min-height: 44px;
     background: none;
     border: none;
     color: var(--ivory);
     font-family: var(--font-prose);
-    font-size: 14.5px;
-    padding: 3px 0;
+    font-size: 16px;
+    padding: 8px 0;
   }
 
   .search-field::placeholder {
@@ -2016,21 +2071,23 @@ body.is-searching .fanoos-crown {
 
   /* Desktop 3-column horizontal console */
   .console {
-    padding: 0 32px;
+    min-height: 92px;
+    padding: 4px 32px;
     display: grid;
     grid-template-columns: 1fr 1.45fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       "track transport utils"
       "track scrubber utils";
-    gap: 2px 20px;
+    gap: 0 20px;
     align-content: center;
   }
 
   .scrubber {
     position: static;
     grid-area: scrubber;
-    height: auto;
+    height: 44px;
+    margin-top: -10px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -2042,20 +2099,29 @@ body.is-searching .fanoos-crown {
   .scrubber .time-text {
     display: inline-block;
     font-family: var(--font-folio);
-    font-size: 12.5px;
+    font-size: 14px;
     color: var(--dusk);
     font-variant-numeric: tabular-nums;
-    min-width: 34px;
+    min-width: 38px;
     text-align: center;
   }
 
   .hairline-slider {
+    height: 44px;
+  }
+
+  .hairline-slider::-webkit-slider-runnable-track {
+    height: 2px;
+  }
+
+  .hairline-slider::-moz-range-track {
     height: 2px;
   }
 
   .hairline-slider::-webkit-slider-thumb {
     width: 9px;
     height: 9px;
+    margin-top: -3.5px;
   }
 
   .transport {
@@ -2064,22 +2130,38 @@ body.is-searching .fanoos-crown {
   }
 
   .ctrl-play {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
   }
 
   .console-right {
     border-top: none;
     padding-top: 0;
     justify-content: flex-end;
-    gap: 18px;
+    gap: 14px;
   }
 
   .vol-group {
     display: flex !important;
     align-items: center;
-    gap: 6px;
-    width: 96px;
+    gap: 4px;
+    width: 112px;
+  }
+
+  .vol-group .ctrl-icon {
+    flex-shrink: 0;
+  }
+
+  .vol-group .hairline-slider {
+    min-width: 56px;
+  }
+
+  .vol-group .hairline-slider::-webkit-slider-runnable-track {
+    background: rgba(235, 206, 162, 0.26);
+  }
+
+  .vol-group .hairline-slider::-moz-range-track {
+    background: rgba(235, 206, 162, 0.26);
   }
 }
 

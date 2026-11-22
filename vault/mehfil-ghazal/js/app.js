@@ -2,7 +2,7 @@
  * Mehfil — Mobile-First Night Ghazal Sanctuary & Synced Listen Party
  *
  * Features:
- *  - 418+ verified original-singer ghazals + live original-only YouTube search
+ *  - Original-singer ghazals + live original-only YouTube search
  *  - Five moods (Bireh, Naraazgi, Izhaar, Tanhai, Maikada)
  *  - 24-hour zero-repetition Radio (single stream, pause/resume, stop/start)
  *  - Sleep Timer (countdown, fade-out, end of ghazal)
@@ -10,6 +10,7 @@
  */
 (function () {
   const INITIAL_VISIBLE = 14;
+  const SHOW_MORE_STEP = 14;
   const DRIFT_THRESHOLD_SEC = 2.8;
   const LEDGER_WINDOW_MS = 24 * 60 * 60 * 1000;
   const LOCAL_LEDGER_KEY = 'mehfil_local_ledger_v1';
@@ -123,7 +124,7 @@
 
     // Browsing
     selectedMood: null,
-    showAllTracks: false,
+    visibleCount: INITIAL_VISIBLE,
     searchQuery: '',
     searchLoading: false,
     searchRejected: false,
@@ -905,7 +906,7 @@
         const mid = btn.dataset.moodId;
         clearSearchSilently();
         state.selectedMood = state.selectedMood === mid ? null : mid;
-        state.showAllTracks = false;
+        state.visibleCount = INITIAL_VISIBLE;
         renderMoodRibbon();
         renderRepertoire();
       });
@@ -923,7 +924,7 @@
     }
   }
 
-  function getDisplayedTracks() {
+  function getAllTracksForCurrentView() {
     if (state.searchResults !== null) return state.searchResults;
     if (state.selectedMood) {
       const primary = state.tracks.filter((t) => t.mood === state.selectedMood);
@@ -932,28 +933,41 @@
       );
       return [...primary, ...secondary];
     }
-    if (!state.showAllTracks) {
-      const byMood = {};
-      for (const m of state.moods) {
-        byMood[m.id] = state.tracks.filter((t) => t.mood === m.id);
-      }
-      const woven = [];
-      let round = 0;
-      while (woven.length < INITIAL_VISIBLE && round < 10) {
-        for (const m of state.moods) {
-          const item = (byMood[m.id] || [])[round];
-          if (item) woven.push(item);
-          if (woven.length >= INITIAL_VISIBLE) break;
-        }
-        round++;
-      }
-      return woven;
+    const byMood = {};
+    let maxLen = 0;
+    for (const m of state.moods) {
+      byMood[m.id] = state.tracks.filter((t) => t.mood === m.id);
+      if (byMood[m.id].length > maxLen) maxLen = byMood[m.id].length;
     }
-    return state.tracks;
+    const woven = [];
+    const seenIds = new Set();
+    for (let round = 0; round < maxLen; round++) {
+      for (const m of state.moods) {
+        const item = (byMood[m.id] || [])[round];
+        if (item && !seenIds.has(item.video_id)) {
+          seenIds.add(item.video_id);
+          woven.push(item);
+        }
+      }
+    }
+    for (const t of state.tracks) {
+      if (!seenIds.has(t.video_id)) {
+        seenIds.add(t.video_id);
+        woven.push(t);
+      }
+    }
+    return woven;
+  }
+
+  function getDisplayedTracks() {
+    const all = getAllTracksForCurrentView();
+    if (state.searchResults !== null) return all;
+    return all.slice(0, state.visibleCount);
   }
 
   function renderRepertoire() {
-    const tracks = getDisplayedTracks();
+    const allTracks = getAllTracksForCurrentView();
+    const tracks = state.searchResults !== null ? allTracks : allTracks.slice(0, state.visibleCount);
 
     if (state.searchResults !== null) {
       dom.repertoireHead.classList.remove('hidden');
@@ -966,18 +980,16 @@
     } else if (state.selectedMood) {
       // Mood context bar above already displays mood title, script, description, and All moods
       dom.repertoireHead.classList.add('hidden');
-      dom.showMoreWrap.classList.add('hidden');
+      const hasMore = allTracks.length > tracks.length;
+      dom.showMoreWrap.classList.toggle('hidden', !hasMore);
+      if (hasMore) dom.showMoreBtn.textContent = 'Show more';
     } else {
       dom.repertoireHead.classList.remove('hidden');
-      dom.repertoireHeading.textContent = state.showAllTracks
-        ? `All ghazals (${state.tracks.length})`
-        : 'Start listening';
+      dom.repertoireHeading.textContent = 'Start listening';
       dom.clearFilterBtn.classList.add('hidden');
-      const hasMore = !state.showAllTracks && state.tracks.length > INITIAL_VISIBLE;
+      const hasMore = allTracks.length > tracks.length;
       dom.showMoreWrap.classList.toggle('hidden', !hasMore);
-      if (hasMore) {
-        dom.showMoreBtn.textContent = `Show all ${state.tracks.length} ghazals`;
-      }
+      if (hasMore) dom.showMoreBtn.textContent = 'Show more';
     }
 
     if (state.searchLoading) {
@@ -1836,7 +1848,7 @@
       clearSearchSilently();
       setMobileSearchOpen(false);
       state.selectedMood = null;
-      state.showAllTracks = false;
+      state.visibleCount = INITIAL_VISIBLE;
       hideWhisper();
       renderMoodRibbon();
       renderRepertoire();
@@ -1872,7 +1884,7 @@
       e.currentTarget.blur();
       clearSearchSilently();
       state.selectedMood = null;
-      state.showAllTracks = false;
+      state.visibleCount = INITIAL_VISIBLE;
       hideWhisper();
       renderMoodRibbon();
       renderRepertoire();
@@ -1881,7 +1893,7 @@
     dom.moodClearBtn.addEventListener('click', clearAllFilters);
     dom.showMoreBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
-      state.showAllTracks = true;
+      state.visibleCount += SHOW_MORE_STEP;
       renderRepertoire();
     });
     dom.dismissWhisperBtn.addEventListener('click', hideWhisper);
