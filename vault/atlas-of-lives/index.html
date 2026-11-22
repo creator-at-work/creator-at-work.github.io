@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#11100E" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Atlas of Lives — Historical Life Trajectories</title>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,6 +46,9 @@
       Stagira to Athens &amp; Chalcis
     </p>
   </header>
+
+  <!-- BACKDROP SCRIM FOR MOBILE INDEX DRAWER -->
+  <div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true"></div>
 
   <!-- LEFT-HAND DARK ARCHIVAL INDEX OF LIVES (OPENS ON CLICK) -->
   <aside id="indexDrawer" class="index-drawer" aria-label="Index of historical lives">
@@ -90,8 +96,9 @@
     <div id="sourceCredits" class="source-credits"></div>
   </footer>
 
-  <!-- RIGHT-HAND ARCHIVAL MONOGRAPH SHEET (OPENS ON CLICKING ANY NUMBER OR YEAR) -->
+  <!-- RIGHT-HAND ARCHIVAL MONOGRAPH SHEET (BOTTOM SHEET ON MOBILE) -->
   <aside id="chapterDrawer" class="monograph-sheet" aria-label="Stage narrative">
+    <div id="sheetGrabber" class="sheet-grabber" aria-hidden="true"><span></span></div>
     <div class="sheet-top">
       <div class="sheet-folio-meta">
         <span id="drawerChapter" class="sheet-chapter">Stage I</span>

@@ -177,13 +177,23 @@
     return `M ${p1[0].toFixed(2)} ${p1[1].toFixed(2)} Q ${cx.toFixed(2)} ${cy.toFixed(2)} ${p2[0].toFixed(2)} ${p2[1].toFixed(2)}`;
   }
 
+  function isTouchOnly() {
+    return Boolean(global.matchMedia && global.matchMedia('(hover: none), (pointer: coarse)').matches);
+  }
+
+  function isMobileLayout() {
+    return (global.innerWidth || mapWidth || 1024) <= 768;
+  }
+
   /* ========================================================================
      LEFT-HAND ARCHIVAL INDEX OF LIVES & HEADER
      ======================================================================== */
   function setIndexOpen(open) {
     state.indexOpen = open;
     const drawer = document.getElementById('indexDrawer');
+    const backdrop = document.getElementById('drawerBackdrop');
     if (drawer) drawer.classList.toggle('open', open);
+    if (backdrop) backdrop.classList.toggle('open', open);
   }
 
   function renderIndexDrawer() {
@@ -261,18 +271,54 @@
   function computeDefaultTransform(fig) {
     const vb = fig.viewBounds || { lon: [-14.5, 43.0], lat: [25.5, 59.5] };
     const lonSpan = vb.lon[1] - vb.lon[0];
+    const isPortraitMobile = mapWidth < 640;
+
     if (lonSpan >= 300) {
+      if (isPortraitMobile) {
+        // Fit full-globe trajectories (e.g. Darwin) cleanly inside mobile safe area
+        const padTop = 132;
+        const padBottom = 110;
+        const availH = Math.max(220, mapHeight - padTop - padBottom);
+        const targetY = padTop + availH / 2;
+        const globeCenterY = mapHeight / 2;
+        defaultK = 1.05;
+        return d3.zoomIdentity.translate(mapWidth * (1 - defaultK) / 2, targetY - globeCenterY * defaultK).scale(defaultK);
+      }
       defaultK = 1.0;
       return d3.zoomIdentity;
     }
 
+    let boundsLon = [vb.lon[0], vb.lon[1]];
+    let boundsLat = [vb.lat[0], vb.lat[1]];
+
+    // On portrait mobile, frame tightly around the actual stage pins (+ balanced margin)
+    // so vertical/regional trajectories fill the screen instead of sitting in a small strip.
+    if (isPortraitMobile && fig.stages && fig.stages.length) {
+      const insetNum = fig.inset ? fig.inset.stageNumber : null;
+      const pts = fig.stages
+        .filter((s) => !s.isInset && s.number !== insetNum && s.coords)
+        .map((s) => s.coords);
+      if (pts.length >= 2) {
+        const minLon = d3.min(pts, (c) => c[0]);
+        const maxLon = d3.max(pts, (c) => c[0]);
+        const minLat = d3.min(pts, (c) => c[1]);
+        const maxLat = d3.max(pts, (c) => c[1]);
+        const spanLon = Math.max(2.6, maxLon - minLon);
+        const spanLat = Math.max(2.2, maxLat - minLat);
+        const padLon = Math.max(1.2, spanLon * 0.22);
+        const padLat = Math.max(1.0, spanLat * 0.24);
+        boundsLon = [Math.max(vb.lon[0], minLon - padLon), Math.min(vb.lon[1], maxLon + padLon)];
+        boundsLat = [Math.max(vb.lat[0], minLat - padLat), Math.min(vb.lat[1], maxLat + padLat)];
+      }
+    }
+
     const samplePts = [
-      [vb.lon[0], vb.lat[0]],
-      [vb.lon[1], vb.lat[0]],
-      [vb.lon[0], vb.lat[1]],
-      [vb.lon[1], vb.lat[1]],
-      [(vb.lon[0] + vb.lon[1]) / 2, vb.lat[0]],
-      [(vb.lon[0] + vb.lon[1]) / 2, vb.lat[1]]
+      [boundsLon[0], boundsLat[0]],
+      [boundsLon[1], boundsLat[0]],
+      [boundsLon[0], boundsLat[1]],
+      [boundsLon[1], boundsLat[1]],
+      [(boundsLon[0] + boundsLon[1]) / 2, boundsLat[0]],
+      [(boundsLon[0] + boundsLon[1]) / 2, boundsLat[1]]
     ].map((c) => baseProjection(c)).filter(Boolean);
 
     const minX = d3.min(samplePts, (p) => p[0]);
@@ -280,10 +326,10 @@
     const minY = d3.min(samplePts, (p) => p[1]);
     const maxY = d3.max(samplePts, (p) => p[1]);
 
-    const padX = mapWidth >= 900 ? 74 : 24;
-    const padTop = mapWidth >= 640 ? 84 : 114;
-    const padBottom = 86;
-    const availW = Math.max(240, mapWidth - padX * 2);
+    const padX = mapWidth >= 900 ? 74 : isPortraitMobile ? 22 : 34;
+    const padTop = mapWidth >= 768 ? 84 : 134;
+    const padBottom = mapWidth >= 768 ? 86 : 112;
+    const availW = Math.max(220, mapWidth - padX * 2);
     const availH = Math.max(220, mapHeight - padTop - padBottom);
 
     const k = Math.max(1.0, Math.min(availW / Math.max(1, maxX - minX), availH / Math.max(1, maxY - minY)));
@@ -353,6 +399,7 @@
       .attr('d', basePath)
       .attr('stroke-width', 0.7 / defaultK)
       .on('mouseenter', function (event, d) {
+        if (isTouchOnly()) return;
         const name = d.properties && d.properties.name;
         if (!name) return;
         const exploringWorld = isExploringWorld(state.currentTransform || defaultTransform);
@@ -470,33 +517,39 @@
       if (pos) drawStageMarker(pinsLayer, st, idx, pos, false);
     });
 
-    // Optional lower-left inset (e.g. Saint Helena for Napoleon)
+    // Optional lower-left inset (e.g. Saint Helena for Napoleon, Princeton for Turing)
     insetBox = null;
     insetLayer = svg.append('g').attr('class', 'inset-layer');
     if (fig.inset) {
       const iw = fig.inset.w || 186;
       const ih = fig.inset.h || 174;
-      const ix = mapWidth >= 640 ? 36 : 16;
-      const iy = mapHeight - ih - 76;
-      insetBox = { x: ix, y: iy, w: iw, h: ih };
+      const isCompact = mapWidth < 640;
+      const iScale = isCompact ? 0.72 : 1;
+      const ix = isCompact ? 12 : 36;
+      const iy = isCompact ? mapHeight - Math.round(ih * iScale) - 104 : mapHeight - ih - 76;
+      insetBox = { x: ix, y: iy, w: iw * iScale, h: ih * iScale };
 
-      drawInsetCartouche(insetLayer, fig.inset, insetBox);
+      const insetHolder = insetLayer.append('g')
+        .attr('transform', isCompact ? `translate(${ix}, ${iy}) scale(${iScale})` : `translate(${ix}, ${iy})`);
+
+      drawInsetCartouche(insetHolder, fig.inset, { x: 0, y: 0, w: iw, h: ih });
       const stIdx = fig.stages.findIndex((s) => s.number === fig.inset.stageNumber);
       if (stIdx >= 0) {
         const insetPos = {
-          x: insetBox.x + fig.inset.markerOffset[0],
-          y: insetBox.y + fig.inset.markerOffset[1]
+          x: fig.inset.markerOffset[0],
+          y: fig.inset.markerOffset[1]
         };
-        drawStageMarker(insetLayer, fig.stages[stIdx], stIdx, insetPos, true);
+        drawStageMarker(insetHolder, fig.stages[stIdx], stIdx, insetPos, true);
       }
     }
 
-    // Minimal 0.7px archival compass rose
-    const compassY = insetBox ? insetBox.y - 34 : mapHeight - 96;
+    // Minimal 0.7px archival compass rose (hidden on narrow phones when an inset is shown)
+    const showCompass = !(mapWidth < 520 && insetBox);
+    const compassY = insetBox ? insetBox.y - 34 : (mapWidth < 768 ? mapHeight - 118 : mapHeight - 96);
     compassG = svg.append('g')
-      .attr('transform', `translate(52, ${compassY})`)
+      .attr('transform', `translate(${mapWidth < 640 ? 30 : 52}, ${compassY})`)
       .style('pointer-events', 'none')
-      .attr('opacity', 0.48);
+      .attr('opacity', showCompass ? 0.48 : 0);
     compassG.append('circle').attr('r', 13.5).attr('fill', 'none').attr('stroke', cssVar('--ink-3')).attr('stroke-width', 0.7);
     compassG.append('line').attr('x1', 0).attr('y1', -17).attr('x2', 0).attr('y2', 17).attr('stroke', cssVar('--ink-3')).attr('stroke-width', 0.7);
     compassG.append('line').attr('x1', -17).attr('y1', 0).attr('x2', 17).attr('y2', 0).attr('stroke', cssVar('--ink-3')).attr('stroke-width', 0.7);
@@ -613,7 +666,7 @@
         .attr('transform', `translate(${pt[0].toFixed(2)}, ${pt[1].toFixed(2)})`)
         .style('cursor', 'pointer')
         .on('mouseenter', (event) => {
-          if (!isExploringWorld(state.currentTransform)) return;
+          if (isTouchOnly() || !isExploringWorld(state.currentTransform)) return;
           showTooltip(`${pl.year} · Historical World`, pl.name, pl.detail, event.clientX, event.clientY);
         })
         .on('mousemove', (event) => moveTooltip(event.clientX, event.clientY))
@@ -689,13 +742,17 @@
         }
       })
       .on('mouseenter', (event) => {
+        if (isTouchOnly()) return;
         state.hoverIdx = idx;
         updateMapHighlights(false);
         const ageLabel = st.age ? ` · ${st.age}` : '';
         showTooltip(`${st.number} · ${st.date}${ageLabel}`, st.title, '', event.clientX, event.clientY);
       })
-      .on('mousemove', (event) => moveTooltip(event.clientX, event.clientY))
+      .on('mousemove', (event) => {
+        if (!isTouchOnly()) moveTooltip(event.clientX, event.clientY);
+      })
       .on('mouseleave', () => {
+        if (isTouchOnly()) return;
         state.hoverIdx = null;
         updateMapHighlights(false);
         hideTooltip();
@@ -703,7 +760,7 @@
 
     const inner = g.append('g').attr('class', isInset ? 'inset-pin-inner' : 'pin-inner');
 
-    inner.append('circle').attr('r', 19).attr('fill', 'transparent');
+    inner.append('circle').attr('r', mapWidth < 640 ? 25 : 19).attr('fill', 'transparent');
 
     inner.append('circle')
       .attr('class', 'pin-halo-ring')
@@ -746,24 +803,28 @@
     const useMid = !isInset && Boolean(st.alignMiddle);
     const anchor = useEnd ? 'end' : useMid ? 'middle' : 'start';
 
+    const isSmall = mapWidth < 640;
+    const placeFontPx = isSmall && !isInset ? 15 : 18;
+    const yearFontPx = isSmall && !isInset ? 10.5 : 11.5;
+
     inner.append('text')
       .attr('class', 'pin-label atlas-halo')
       .attr('x', posArr[0])
       .attr('y', posArr[1])
       .attr('text-anchor', anchor)
       .attr('font-family', 'Instrument Serif, Georgia, serif')
-      .attr('font-size', '18px')
+      .attr('font-size', `${placeFontPx}px`)
       .attr('fill', cssVar('--ink'))
       .text(st.shortPlace);
 
     inner.append('text')
       .attr('class', 'pin-years atlas-halo')
       .attr('x', posArr[0])
-      .attr('y', posArr[1] + 12)
+      .attr('y', posArr[1] + (isSmall && !isInset ? 11 : 12))
       .attr('text-anchor', anchor)
       .attr('font-family', 'Cormorant Garamond, Georgia, serif')
       .attr('font-style', 'italic')
-      .attr('font-size', '11.5px')
+      .attr('font-size', `${yearFontPx}px`)
       .attr('fill', cssVar('--ink-3'))
       .text(st.age ? `${st.year} · ${st.age}` : st.year);
   }
@@ -788,23 +849,77 @@
         .classed('is-explorable', exploring);
     }
 
-    // Relative counter-scaling: always 1.0x crisp at defaultK, gently smaller when zoomed far out
+    // Relative counter-scaling: crisp 1.0x on desktop, balanced 0.80x on compact phones
+    const isCompact = mapWidth < 640;
     const relK = k / Math.max(1, defaultK);
-    const sizeFactor = relK < 0.6
+    const baseSize = relK < 0.6
       ? 0.56 + 0.34 * Math.max(0, relK / 0.6)
       : Math.min(1.08, 0.9 + 0.1 * Math.min(1.8, relK));
+    const sizeFactor = isCompact ? baseSize * 0.82 : baseSize;
 
     if (pinsLayer) {
       pinsLayer.selectAll('.pin-inner').attr('transform', `scale(${sizeFactor / k})`);
 
-      // Always show ALL stage labels in the figure's default Life Frame; thin tight clusters only when zoomed far out!
+      // On compact mobile screens, resolve overlapping label boxes in screen space so no text collides;
+      // medallions (1, 2, 3...) always remain visible and tappable, and zooming/tapping reveals every label.
       const total = state.figure ? state.figure.stages.length : 10;
       const keepIdx = new Set([0, Math.floor(total / 2), total - 1]);
+      const placedBoxes = [];
+
+      const pinNodes = [];
       pinsLayer.selectAll('.pin-group').each(function () {
-        const g = d3.select(this);
-        const idx = Number(g.attr('data-stage-idx'));
+        const idx = Number(d3.select(this).attr('data-stage-idx'));
         const isSel = idx === state.selectedIdx || idx === state.hoverIdx;
-        const showLabel = relK >= 0.55 || keepIdx.has(idx) || isSel;
+        const priority = isSel ? 0 : (idx === 0 || idx === total - 1 ? 1 : 2);
+        pinNodes.push({ el: this, idx, isSel, priority });
+      });
+      pinNodes.sort((a, b) => a.priority - b.priority || a.idx - b.idx);
+
+      pinNodes.forEach(({ el, idx, isSel }) => {
+        const g = d3.select(el);
+        let showLabel = relK >= 0.55 || keepIdx.has(idx) || isSel;
+
+        if (showLabel && isCompact && state.figure && state.figure.stages[idx]) {
+          const st = state.figure.stages[idx];
+          const pos = stageGlobePos.get(st.number);
+          if (pos) {
+            const sx = pos.x * k + t.x;
+            const sy = pos.y * k + t.y;
+            const lp = st.labelPos || [15, 4];
+            const estW = Math.max(58, (st.shortPlace.length * 7.2 + 12)) * sizeFactor;
+            const estH = 26 * sizeFactor;
+
+            // Auto-flip horizontal anchor if a right/left edge pin label would clip off-screen on narrow phones
+            let effEnd = Boolean(st.alignEnd);
+            let effMid = Boolean(st.alignMiddle);
+            let effX = lp[0];
+            if (!effEnd && !effMid && sx + lp[0] * sizeFactor + estW > mapWidth - 8) {
+              effEnd = true;
+              effX = -Math.abs(lp[0] || 15);
+            } else if (effEnd && sx + lp[0] * sizeFactor - estW < 8) {
+              effEnd = false;
+              effX = Math.abs(lp[0] || 15);
+            }
+            const effAnchor = effEnd ? 'end' : effMid ? 'middle' : 'start';
+            g.select('.pin-label').attr('x', effX).attr('text-anchor', effAnchor);
+            g.select('.pin-years').attr('x', effX).attr('text-anchor', effAnchor);
+
+            const lx = sx + effX * sizeFactor;
+            const ly = sy + (lp[1] - 10) * sizeFactor;
+            const x1 = effEnd ? lx - estW : effMid ? lx - estW / 2 : lx;
+            const box = { x1, y1: ly, x2: x1 + estW, y2: ly + estH };
+
+            const collides = !isSel && placedBoxes.some(
+              (b) => !(box.x2 < b.x1 - 4 || box.x1 > b.x2 + 4 || box.y2 < b.y1 - 2 || box.y1 > b.y2 + 2)
+            );
+            if (collides) {
+              showLabel = false;
+            } else {
+              placedBoxes.push(box);
+            }
+          }
+        }
+
         g.select('.pin-label').attr('opacity', showLabel ? 1 : 0);
         g.select('.pin-years').attr('opacity', showLabel ? 1 : 0);
       });
@@ -951,9 +1066,10 @@
       g.select('.pin-num')
         .attr('fill', isSel ? '#FAF5EA' : isHi ? brass : isPast ? '#E5B8A8' : ink);
 
+      const isSmall = mapWidth < 640;
       g.select('.pin-label')
         .attr('fill', isSel ? brass : isHi ? '#F5EEE0' : ink)
-        .attr('font-size', isSel ? '19.5px' : '18px');
+        .attr('font-size', isSmall ? (isSel ? '16px' : '15px') : (isSel ? '19.5px' : '18px'));
 
       g.select('.pin-halo-ring')
         .attr('opacity', isSel ? 0.85 : isHi ? 0.45 : 0);
@@ -969,17 +1085,27 @@
     const pos = stageGlobePos.get(st.number);
     if (!pos) return;
 
-    const drawerW = mapWidth >= 1024 ? 486 : mapWidth >= 640 ? 440 : 0;
-    const visibleW = Math.max(260, mapWidth - drawerW);
-    const targetX = visibleW * 0.52;
-    const targetY = mapHeight * 0.47;
+    const mobileSheet = mapWidth <= 768;
+    let targetX;
+    let targetY;
+    if (mobileSheet) {
+      // Frame the active numbered pin squarely in the unobstructed top ~28% map peek above the bottom sheet
+      targetX = mapWidth * 0.5;
+      targetY = Math.max(76, Math.min(148, mapHeight * 0.145));
+    } else {
+      const drawerW = mapWidth >= 1024 ? 486 : 440;
+      const visibleW = Math.max(260, mapWidth - drawerW);
+      targetX = visibleW * 0.52;
+      targetY = mapHeight * 0.47;
+    }
 
-    const k = st.focusZoom ? st.focusZoom : Math.min(Math.max(12, defaultK * 2.5), defaultK * (st.focusMultiplier || 1.32));
+    const mult = mobileSheet ? Math.max(1.25, (st.focusMultiplier || 1.32) * 0.96) : (st.focusMultiplier || 1.32);
+    const k = st.focusZoom ? st.focusZoom : Math.min(Math.max(12, defaultK * 2.5), defaultK * mult);
     const tx = targetX - pos.x * k;
     const ty = targetY - pos.y * k;
 
     svg.transition()
-      .duration(780)
+      .duration(720)
       .ease(d3.easeCubicInOut)
       .call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
   }
@@ -1082,6 +1208,13 @@
         `
       )
       .join('');
+
+    if (state.selectedIdx !== null) {
+      const activeBtn = nav.querySelector('.scrubber-year.active');
+      if (activeBtn && activeBtn.scrollIntoView) {
+        activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
+    }
   }
 
   function renderDrawer() {
@@ -1089,6 +1222,7 @@
 
     if (state.selectedIdx === null || !state.figure) {
       sheet.classList.remove('open');
+      document.body.classList.remove('sheet-open');
       return;
     }
 
@@ -1097,6 +1231,7 @@
     const total = state.figure.stages.length;
 
     sheet.classList.add('open');
+    document.body.classList.add('sheet-open');
 
     const bodyEl = document.getElementById('drawerBody');
     bodyEl.classList.remove('sheet-swap');
@@ -1275,8 +1410,75 @@
     document.getElementById('closeDrawerBtn').addEventListener('click', () => closeChapter(false));
     document.getElementById('openIndexBtn').addEventListener('click', () => setIndexOpen(!state.indexOpen));
     document.getElementById('closeIndexBtn').addEventListener('click', () => setIndexOpen(false));
+    const backdropEl = document.getElementById('drawerBackdrop');
+    if (backdropEl) backdropEl.addEventListener('click', () => setIndexOpen(false));
     document.getElementById('prevFigureBtn').addEventListener('click', () => loadFigureByIndex(state.figureIdx - 1));
     document.getElementById('nextFigureBtn').addEventListener('click', () => loadFigureByIndex(state.figureIdx + 1));
+
+    // Native mobile touch gestures: swipe-down to dismiss sheet, swipe left/right to turn stages, swipe-left to close index
+    (function bindMobileGestures() {
+      const sheet = document.getElementById('chapterDrawer');
+      const sheetBody = document.getElementById('drawerBody');
+      if (sheet) {
+        let sx = 0;
+        let sy = 0;
+        let tracking = false;
+        let startedAtTop = false;
+        let startedOnHeader = false;
+
+        sheet.addEventListener('touchstart', (e) => {
+          if (!isMobileLayout() || !sheet.classList.contains('open') || e.touches.length !== 1) return;
+          const t = e.touches[0];
+          sx = t.clientX;
+          sy = t.clientY;
+          tracking = true;
+          startedAtTop = !sheetBody || sheetBody.scrollTop <= 2;
+          startedOnHeader = Boolean(e.target.closest('.sheet-grabber, .sheet-top'));
+        }, { passive: true });
+
+        sheet.addEventListener('touchend', (e) => {
+          if (!tracking || !e.changedTouches.length) return;
+          tracking = false;
+          const t = e.changedTouches[0];
+          const dx = t.clientX - sx;
+          const dy = t.clientY - sy;
+
+          // Swipe down to dismiss bottom sheet
+          if ((startedOnHeader || startedAtTop) && dy > 68 && Math.abs(dy) > Math.abs(dx) * 1.35) {
+            closeChapter(false);
+            return;
+          }
+
+          // Horizontal folio page turn between stages
+          if (Math.abs(dx) > 64 && Math.abs(dx) > Math.abs(dy) * 1.6 && state.figure && state.selectedIdx !== null) {
+            if (dx < 0 && state.selectedIdx < state.figure.stages.length - 1) {
+              openChapter(state.selectedIdx + 1, false);
+            } else if (dx > 0 && state.selectedIdx > 0) {
+              openChapter(state.selectedIdx - 1, false);
+            }
+          }
+        }, { passive: true });
+      }
+
+      const idxDrawer = document.getElementById('indexDrawer');
+      if (idxDrawer) {
+        let ix = 0;
+        let iy = 0;
+        idxDrawer.addEventListener('touchstart', (e) => {
+          if (e.touches.length !== 1) return;
+          ix = e.touches[0].clientX;
+          iy = e.touches[0].clientY;
+        }, { passive: true });
+        idxDrawer.addEventListener('touchend', (e) => {
+          if (!state.indexOpen || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - ix;
+          const dy = e.changedTouches[0].clientY - iy;
+          if (dx < -64 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+            setIndexOpen(false);
+          }
+        }, { passive: true });
+      }
+    })();
 
     document.getElementById('lifeViewBtn').addEventListener('click', () => {
       if (state.selectedIdx !== null) closeChapter(false);
@@ -1373,13 +1575,21 @@
     });
 
     let resizeTimer = null;
+    let lastWinW = global.innerWidth;
+    let lastWinH = global.innerHeight;
     window.addEventListener('resize', () => {
+      const w = global.innerWidth;
+      const h = global.innerHeight;
+      // Ignore small mobile browser URL-bar show/hide height shifts when width is unchanged
+      if (w === lastWinW && Math.abs(h - lastWinH) < 95) return;
+      lastWinW = w;
+      lastWinH = h;
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         if (!state.figure) return;
         buildBaseAtlas();
         if (state.selectedIdx !== null) flyCameraToChapter(state.selectedIdx);
-      }, 120);
+      }, 140);
     });
 
     const figures = global.ATLAS_REGISTRY || [];
