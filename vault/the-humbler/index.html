@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#11100E" />
-  <title>The Humbler — For Philosophical Epiphanies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Humbler — An Archive for Philosophical Epiphanies</title>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,39 +14,49 @@
   <link rel="stylesheet" href="css/humbler.css" />
 </head>
 <body class="is-landing">
-  <!-- QUIET ANCIENT-WORLD BACKDROP (LANDING ONLY) -->
+  <!-- QUIET ANCIENT-WORLD MERIDIAN BACKDROP (VISIBLE ON LANDING THRESHOLD) -->
   <div id="backdropLayer" class="backdrop-layer" aria-hidden="true">
     <svg id="backdropSvg" class="backdrop-svg"></svg>
     <div class="backdrop-vignette"></div>
   </div>
 
-  <!-- SINGLE SERENE TOP BAR (ADAPTS CLEANLY BETWEEN LANDING & RESULT) -->
-  <header class="topbar">
-    <div class="topbar-left">
-      <button id="brandHomeBtn" type="button" class="brand-link" aria-label="The Humbler home">
-        <span class="brand-name">The Humbler</span>
-      </button>
-      <button id="backToThresholdBtn" type="button" class="back-link hidden" aria-label="Submit another epiphany">
-        &larr; New
-      </button>
-    </div>
+  <!-- TOP ARCHIVAL MASTHEAD -->
+  <header class="masthead">
+    <button id="brandHomeBtn" type="button" class="brand-link" aria-label="Return to The Humbler threshold">
+      <span class="brand-name">The Humbler</span>
+      <span class="brand-dot" aria-hidden="true">&middot;</span>
+      <span class="brand-sub">For Philosophical Epiphanies</span>
+    </button>
 
-    <div class="topbar-right">
+    <nav class="masthead-nav" aria-label="Archive controls">
       <button id="openIndexBtn" type="button" class="nav-link">
-        <span>Index</span>
-        <span id="canonCount" class="nav-count">81</span>
+        <span>Index of Origins</span>
+        <span id="canonCount" class="nav-count">58</span>
       </button>
-    </div>
+      <span class="nav-sep" aria-hidden="true">/</span>
+      <button id="openScholarBtn" type="button" class="nav-link">
+        <span id="scholarDot" class="scholar-dot hidden" aria-hidden="true"></span>
+        <span>Live Scholar</span>
+      </button>
+    </nav>
   </header>
 
   <!-- ======================================================================
-       STATE A: MOBILE-FIRST CONFESSION THRESHOLD
+       STATE A: THE CONFESSION THRESHOLD (LANDING VIEW)
        ====================================================================== -->
   <main id="landingView" class="landing-view">
-    <section class="threshold-sheet" aria-label="Submit a philosophical epiphany">
-      <div class="threshold-kicker">For Philosophical Epiphanies</div>
+    <section class="threshold-sheet" aria-label="Submit an original insight">
+      <div class="threshold-kicker">
+        <span>For Philosophical Epiphanies</span>
+        <span class="kicker-dot" aria-hidden="true">&middot;</span>
+        <span>Ecclesiastes I : IX</span>
+      </div>
 
-      <h1 class="threshold-title font-monument">What have you just realized?</h1>
+      <h1 class="threshold-title font-monument">What philosophical epiphany have you just had?</h1>
+
+      <p class="threshold-deck">
+        Built strictly for philosophical epiphanies&mdash;on life, human nature, relationships, suffering, consciousness, and spirituality. Inscribe your original realization and meet the ancient mind who wrote it down millennia before you.
+      </p>
 
       <form id="ideaForm" class="inscription-form" autocomplete="off">
         <label for="ideaInput" class="sr-only">Your philosophical epiphany</label>
@@ -56,12 +65,15 @@
           class="inscription-input font-monument"
           rows="2"
           maxlength="1200"
-          placeholder="e.g. Suffering in relationships comes from expectation…"
+          placeholder="Inscribe a philosophical epiphany — e.g. The root cause of human suffering in relationships is expectation from the other…"
           spellcheck="true"
         ></textarea>
         <div class="inscription-rule" aria-hidden="true"></div>
 
         <div class="inscription-actions">
+          <span class="inscription-hint" id="modeIndicator">
+            Verified Archival Canon &middot; 2600 BCE &ndash; 397 CE
+          </span>
           <button id="humbleBtn" type="submit" class="humble-btn">
             <span class="humble-seal" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:-1px"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></span>
             <span>Humble Me</span>
@@ -71,86 +83,122 @@
         <div id="thresholdNotice" class="threshold-notice hidden" role="status" aria-live="polite"></div>
       </form>
 
-      <div class="specimens-block">
-        <div class="specimens-head">
-          <span class="specimens-label">Try an epiphany</span>
-          <button id="shuffleSpecimensBtn" type="button" class="text-action">
-            <span>More</span>
-            <svg width="11" height="11" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="display:inline-block;margin-left:5px"><path d="M13.5 8A5.5 5.5 0 1 1 11.8 4.1M13.5 2.5V5.5H10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-        <div id="specimensList" class="specimens-list"></div>
+      <div class="threshold-fleuron" aria-hidden="true">
+        <span class="fleuron-rule"></span>
+        <span class="fleuron-mark"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:-1px"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></span>
+        <span class="fleuron-rule"></span>
       </div>
 
-      <footer class="threshold-foot">
-        <span id="modeIndicator" class="foot-note">81 verified ancient roots &middot; 2600 BCE&ndash;397 CE</span>
-        <span class="foot-sep" aria-hidden="true">&middot;</span>
-        <button id="openScholarBtn" type="button" class="foot-link">
-          <span id="scholarDot" class="scholar-dot hidden" aria-hidden="true"></span>
-          <span>Live Scholar</span>
-        </button>
-      </footer>
+      <div class="specimens-block">
+        <div class="specimens-head">
+          <span class="specimens-label">Or test a familiar epiphany</span>
+          <button id="shuffleSpecimensBtn" type="button" class="text-action">
+            More specimens &#8635;
+          </button>
+        </div>
+        <div id="specimensList" class="specimens-grid"></div>
+      </div>
     </section>
   </main>
 
   <!-- ======================================================================
-       BRIEF EXCAVATION INTERLUDE
+       INTERLUDE: BRIEF ARCHIVAL EXCAVATION CADENCE
        ====================================================================== -->
   <div id="excavationOverlay" class="excavation-overlay hidden" role="status" aria-live="polite">
     <div class="excavation-inner">
-      <div class="excavation-fleuron" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" style="display:inline-block"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></div>
+      <div class="excavation-fleuron" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:-1px"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></div>
       <div id="excavationTitle" class="excavation-title font-monument">Excavating the Archive…</div>
-      <div id="excavationSub" class="excavation-sub">Tracing 4,600 years of surviving texts</div>
+      <div id="excavationSub" class="excavation-sub">Tracing 4,600 years of surviving scriptures</div>
     </div>
   </div>
 
   <!-- ======================================================================
-       STATE B: MOBILE-FIRST HUMBLING FOLIO (VERDICT & SCRIPTURE FIRST!)
+       STATE B: THE HUMBLING PLATE (VISUAL LINEAGE + MONOGRAPH FOLIO)
        ====================================================================== -->
   <main id="resultView" class="result-view hidden">
-    <article class="monograph-folio" aria-label="Primary-source humbling plate">
-      <!-- 1. IMMEDIATE VERDICT HERO (ABOVE THE FOLD) -->
-      <header class="verdict-hero">
-        <div id="folioRankLabel" class="folio-rank">Oldest Recorded Origin &middot; c. 5th Century BCE</div>
-        <h1 id="verdictYears" class="verdict-years font-monument">2,505 years late.</h1>
-        <div class="verdict-attribution">
-          <span id="verdictThinker" class="verdict-thinker font-monument">Siddhartha Gautama</span>
-          <span class="attr-sep" aria-hidden="true">&mdash;</span>
-          <span id="folioPlaceTop" class="verdict-place">Sāvatthī, Ancient India</span>
-        </div>
-      </header>
+    <!-- Top Result Navigation & Visualization Toggle -->
+    <div class="result-toolbar">
+      <button id="backToThresholdBtn" type="button" class="text-action">
+        &larr; Humble another thought
+      </button>
 
-      <!-- 2. COMPACT SCULPTED VISUAL LINEAGE (OR WORLD MAP ON TAP) -->
-      <section class="visual-stage" aria-label="Visual lineage and geographic origin">
-        <div class="stage-bar">
-          <span id="stageCaptionLeft" class="stage-label">Tap any witness</span>
-          <div class="viz-switcher" role="tablist" aria-label="Visualization mode">
-            <button id="timelineModeBtn" type="button" role="tab" aria-selected="true" class="ctrl-link is-active">
-              Timeline
-            </button>
-            <span class="ctrl-sep" aria-hidden="true">/</span>
-            <button id="mapModeBtn" type="button" role="tab" aria-selected="false" class="ctrl-link">
-              Map
-            </button>
-          </div>
+      <div class="viz-switcher" role="tablist" aria-label="Visualization mode">
+        <button id="timelineModeBtn" type="button" role="tab" aria-selected="true" class="ctrl-link is-active">
+          Lineage Timeline
+        </button>
+        <span class="ctrl-sep" aria-hidden="true">/</span>
+        <button id="mapModeBtn" type="button" role="tab" aria-selected="false" class="ctrl-link">
+          World Origin Map
+        </button>
+      </div>
+    </div>
+
+    <!-- Interactive Engraved Visual Stage (Timeline OR Natural Earth 50m Map) -->
+    <section class="visual-stage" aria-label="Historical lineage visualization">
+      <div id="stageCaption" class="stage-caption">
+        <span id="stageCaptionLeft">Chronological Descent &middot; Click any medallion to inspect primary scripture</span>
+        <span id="stageCaptionRight" class="stage-caption-right"></span>
+      </div>
+      <div id="vizWrap" class="viz-wrap">
+        <svg id="lineageSvg" class="lineage-svg" role="img" aria-label="Interactive lineage of the ancient idea"></svg>
+      </div>
+    </section>
+
+    <!-- Primary-Source Monograph Folio -->
+    <article id="monographFolio" class="monograph-folio" aria-label="Primary-source humbling plate">
+      <!-- Quiet Folio Running Head -->
+      <div class="folio-head">
+        <div class="folio-meta-left">
+          <span id="folioRankLabel" class="folio-rank">Oldest Recorded Origin</span>
+          <span class="folio-dot" aria-hidden="true">&middot;</span>
+          <span id="folioPlaceTop" class="folio-place-top">Sāvatthī, Kosala</span>
+        </div>
+        <div id="folioThreads" class="folio-threads"></div>
+      </div>
+
+      <!-- Engraved Verdict Hero -->
+      <div class="verdict-hero">
+        <div class="verdict-left">
+          <div id="verdictYears" class="verdict-years font-monument">2,505 years late</div>
+          <div id="verdictSubline" class="verdict-subline"></div>
         </div>
 
-        <div id="vizWrap" class="viz-wrap">
-          <svg id="lineageSvg" class="lineage-svg" role="img" aria-label="Interactive lineage of the ancient idea"></svg>
-          <div id="mapZoomControls" class="map-zoom-controls hidden" aria-label="Map zoom controls">
-            <button id="mapZoomInBtn" type="button" class="map-zoom-btn" aria-label="Zoom in">+</button>
-            <span class="map-zoom-rule" aria-hidden="true"></span>
-            <button id="mapZoomOutBtn" type="button" class="map-zoom-btn" aria-label="Zoom out">&minus;</button>
-          </div>
+        <div class="verdict-right">
+          <div id="verdictDate" class="verdict-date">c. 5th Century BCE</div>
+          <div id="verdictThinker" class="verdict-thinker font-monument">Siddhartha Gautama</div>
+          <div id="verdictTradition" class="verdict-tradition">Early Buddhism &middot; Pāli Canon</div>
         </div>
-      </section>
+      </div>
 
-      <!-- 3. THE ACTUAL SCRIPTURE IN ITS ORIGINAL FORM (VISIBLE ON SCREEN 1) -->
+      <!-- Unboxed Two-Column Comparison Ledger -->
+      <div class="comparison-ledger">
+        <div class="comparison-col">
+          <div class="col-kicker">Your Formulation &middot; Today</div>
+          <p id="userClaimDisplay" class="claim-text"></p>
+        </div>
+        <div class="comparison-col">
+          <div class="col-kicker">First Recorded Principle</div>
+          <p id="ancientThesisDisplay" class="thesis-text"></p>
+        </div>
+      </div>
+
+      <!-- Classical Fleuron + Actual Scripture in Its Original Form -->
+      <div class="sheet-fleuron" aria-hidden="true">
+        <span class="fleuron-rule"></span>
+        <span class="fleuron-mark"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:-1px"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></span>
+        <span class="fleuron-rule"></span>
+      </div>
+
       <figure class="scripture-plate">
-        <div class="sheet-fleuron" aria-hidden="true">
-          <span class="fleuron-rule"></span>
-          <span class="fleuron-mark"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:-1px"><path d="M6 0.8L7.4 4.6L11.2 6L7.4 7.4L6 11.2L4.6 7.4L0.8 6L4.6 4.6Z" fill="currentColor"/></svg></span>
-          <span class="fleuron-rule"></span>
+        <div class="scripture-head">
+          <span id="scriptureTitleTop" class="scripture-name"></span>
+          <div class="script-toggle" role="group" aria-label="Scripture display format">
+            <button type="button" class="script-btn is-active" data-script-mode="parallel">Parallel</button>
+            <span class="ctrl-sep" aria-hidden="true">/</span>
+            <button type="button" class="script-btn" data-script-mode="original">Original</button>
+            <span class="ctrl-sep" aria-hidden="true">/</span>
+            <button type="button" class="script-btn" data-script-mode="translation">Translation</button>
+          </div>
         </div>
 
         <div id="originalScriptBlock" class="original-script-block">
@@ -160,25 +208,11 @@
 
         <blockquote id="translationText" class="epigraph-quote font-monument"></blockquote>
 
-        <figcaption class="scripture-meta">
-          <span id="scriptureProvenance" class="scripture-provenance"></span>
-          <div class="script-toggle" role="group" aria-label="Scripture format">
-            <button type="button" class="script-btn is-active" data-script-mode="parallel">Both</button>
-            <span class="ctrl-sep" aria-hidden="true">/</span>
-            <button type="button" class="script-btn" data-script-mode="original">Original</button>
-            <span class="ctrl-sep" aria-hidden="true">/</span>
-            <button type="button" class="script-btn" data-script-mode="translation">English</button>
-          </div>
-        </figcaption>
+        <figcaption id="scriptureProvenance" class="scripture-provenance"></figcaption>
       </figure>
 
-      <!-- 4. QUIET READING DEPTH (BELOW THE FOLD) -->
-      <section class="reading-section">
-        <p id="userClaimLine" class="claim-echo">
-          <span class="claim-lead">Your epiphany &mdash;</span>
-          <span id="userClaimDisplay"></span>
-        </p>
-
+      <!-- Editorial Commentary (2-Line Burnished-Gold Drop Cap) -->
+      <section class="commentary-section">
         <h2 id="folioPlateTitle" class="folio-plate-title font-monument"></h2>
         <p id="folioCommentary" class="folio-prose"></p>
 
@@ -186,42 +220,51 @@
           <span class="marginal-lead">Of note &mdash;</span>
           <span id="folioMarginalia" class="marginal-text"></span>
         </div>
-
-        <div id="relatedBlock" class="related-block hidden">
-          <span class="related-lead">Also echoed in &mdash;</span>
-          <span id="relatedLinks" class="related-links"></span>
-        </div>
-
-        <div id="broadNotice" class="broad-notice hidden">
-          Closest verified root in the local canon. For custom live excavation, try
-          <button id="broadOpenScholarBtn" type="button" class="inline-gold-btn">Live Scholar</button>.
-        </div>
-
-        <footer class="folio-end">
-          <button id="bottomNewBtn" type="button" class="humble-btn humble-btn-ghost">
-            &larr; Humble another epiphany
-          </button>
-        </footer>
       </section>
+
+      <!-- Interactive Lineage Ledger (Origin + Independent Ancient Echoes) -->
+      <section id="lineageLedgerSection" class="lineage-ledger-section">
+        <div class="ledger-head">
+          <span class="ledger-kicker">Lineage Across Civilizations</span>
+          <span class="ledger-hint">Select any witness to read their scripture</span>
+        </div>
+        <div id="lineageLedger" class="lineage-ledger"></div>
+      </section>
+
+      <!-- Secondary Resonances & Book-Leaf Footer -->
+      <div id="relatedBlock" class="related-block hidden">
+        <span class="related-lead">Also resonates with &mdash;</span>
+        <span id="relatedLinks" class="related-links"></span>
+      </div>
+
+      <div id="broadNotice" class="broad-notice hidden">
+        Showing the closest verified ancestor in the local primary-source canon. For bespoke excavation of niche or unconventional philosophical epiphanies, enable
+        <button id="broadOpenScholarBtn" type="button" class="inline-gold-btn">Live Scholar</button>.
+      </div>
+
+      <footer class="folio-footer">
+        <button id="prevWitnessBtn" type="button" class="leaf-btn">&larr; Earlier Witness</button>
+        <span id="witnessCounter" class="leaf-counter">I of IV</span>
+        <button id="nextWitnessBtn" type="button" class="leaf-btn leaf-next">Later Echo &rarr;</button>
+      </footer>
     </article>
   </main>
 
-  <!-- FLOATING TOOLTIP (DESKTOP HOVER ONLY) -->
+  <!-- FLOATING ARCHIVAL MARGIN TOOLTIP (Timeline & World Map Medallions) -->
   <div id="vizTooltip" class="viz-tooltip" role="status" aria-live="polite">
     <div id="ttMeta" class="tt-meta"></div>
     <div id="ttTitle" class="tt-title font-monument"></div>
     <div id="ttDetail" class="tt-detail"></div>
   </div>
 
-  <!-- DRAWER BACKDROP -->
+  <!-- LEFT-HAND DARK ARCHIVAL INDEX OF ORIGINS DRAWER -->
   <div id="drawerBackdrop" class="drawer-backdrop hidden" aria-hidden="true"></div>
 
-  <!-- INDEX OF ORIGINS DRAWER -->
   <aside id="indexDrawer" class="folio-drawer folio-drawer-left" aria-label="Index of Ancient Origins">
     <div class="drawer-head">
       <div>
         <div class="drawer-kicker">Verified Primary Canon</div>
-        <h2 id="indexDrawerHeading" class="drawer-heading font-monument">81 Ancient Roots</h2>
+        <h2 class="drawer-heading font-monument">Fifty-Eight Ancient Roots</h2>
       </div>
       <button id="closeIndexBtn" type="button" class="sheet-close" aria-label="Close index">
         <span>Close</span>
@@ -240,11 +283,11 @@
     <div id="indexList" class="drawer-body quiet-scroll"></div>
   </aside>
 
-  <!-- LIVE SCHOLAR DRAWER (OPTIONAL GEMINI API) -->
+  <!-- RIGHT-HAND LIVE SCHOLAR (OPTIONAL GEMINI API) DRAWER -->
   <aside id="scholarDrawer" class="folio-drawer folio-drawer-right" aria-label="Live Scholar Configuration">
     <div class="drawer-head">
       <div>
-        <div class="drawer-kicker">Optional Dynamic Engine</div>
+        <div class="drawer-kicker">Dynamic Excavation Engine</div>
         <h2 class="drawer-heading font-monument">Live Scholar</h2>
       </div>
       <button id="closeScholarBtn" type="button" class="sheet-close" aria-label="Close Live Scholar">
@@ -255,10 +298,10 @@
 
     <div class="drawer-body quiet-scroll scholar-body">
       <p class="scholar-prose">
-        By default, The Humbler runs instantaneously on its verified 81-root primary archive (2600 BCE&ndash;397 CE), curated strictly for philosophical epiphanies.
+        By default, The Humbler runs instantaneously on its verified 58-root primary-source archive spanning 2600 BCE to 397 CE—curated strictly for philosophical epiphanies.
       </p>
       <p class="scholar-prose">
-        Add your own Gemini API key to excavate any obscure philosophical thought live into the same timeline, map, and scripture folio. Your key stays strictly in your browser.
+        Optionally supply your own Gemini API key to dynamically excavate <em>any</em> esoteric or hyper-specific thought in real time into the same lineage timeline, world origin map, and primary-scripture folio. Your key stays strictly in your browser’s local storage.
       </p>
 
       <form id="scholarKeyForm" class="scholar-form">
@@ -272,21 +315,20 @@
         />
         <div class="scholar-form-actions">
           <button type="submit" class="humble-btn humble-btn-sm">Save &amp; Activate</button>
-          <button id="clearKeyBtn" type="button" class="text-action">Use Archive Only</button>
+          <button id="clearKeyBtn" type="button" class="text-action">Revert to Archive Only</button>
         </div>
         <div id="scholarStatusMsg" class="scholar-status"></div>
       </form>
     </div>
   </aside>
 
-  <!-- Natural Earth 50m World TopoJSON -->
+  <!-- Local Embedded Natural Earth 50m World Territories TopoJSON -->
   <script src="data/world-countries-50m.js"></script>
-  <!-- Verified 81-Root Primary Canon -->
+  <!-- Verified 58-Root Ancient Philosophical & Scriptural Canon -->
   <script src="data/canon-part1.js"></script>
   <script src="data/canon-part2.js"></script>
   <script src="data/canon-part3.js"></script>
-  <script src="data/canon-part4.js"></script>
-  <!-- Engine & App -->
+  <!-- Conceptual Matching, Live Scholar, Visualizations & App Controller -->
   <script src="js/matcher.js"></script>
   <script src="js/live-scholar.js"></script>
   <script src="js/viz.js"></script>

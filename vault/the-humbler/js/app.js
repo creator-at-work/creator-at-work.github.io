@@ -1,7 +1,7 @@
 /* ==========================================================================
-   THE HUMBLER — Mobile-First Application Controller
-   Serene threshold (3 specimens), Verdict + Sculpted Lineage Arc + Actual
-   Primary Scripture immediately above the fold on mobile, and clean drawers.
+   THE HUMBLER — Application Controller
+   Orchestrates the Confession Threshold, Archival Excavation, Interactive
+   Lineage Timeline & World Origin Atlas, Monograph Folio, and Drawers.
    ========================================================================== */
 
 (function (global) {
@@ -12,7 +12,10 @@
   const FEATURED_SPECIMEN_IDS = [
     'expectation-suffering',
     'imagined-anxiety',
-    'wu-wei'
+    'wu-wei',
+    'grief-lent-not-owned',
+    'self-mastery',
+    'perspectivism'
   ];
 
   const state = {
@@ -28,22 +31,24 @@
     requestSeq: 0
   };
 
+  /* DOM References */
   const el = {};
 
   function bindDom() {
     const ids = [
-      'brandHomeBtn', 'backToThresholdBtn', 'bottomNewBtn',
-      'openIndexBtn', 'openScholarBtn', 'canonCount', 'scholarDot',
+      'brandHomeBtn', 'openIndexBtn', 'openScholarBtn', 'canonCount', 'scholarDot',
       'landingView', 'resultView', 'ideaForm', 'ideaInput', 'humbleBtn', 'modeIndicator', 'thresholdNotice',
       'specimensList', 'shuffleSpecimensBtn', 'excavationOverlay', 'excavationTitle', 'excavationSub',
-      'timelineModeBtn', 'mapModeBtn', 'stageCaptionLeft',
-      'vizWrap', 'lineageSvg', 'mapZoomControls', 'mapZoomInBtn', 'mapZoomOutBtn',
-      'folioRankLabel', 'verdictYears', 'verdictThinker', 'folioPlaceTop',
-      'originalScriptBlock', 'originalScriptText', 'transliterationText', 'translationText', 'scriptureProvenance',
-      'userClaimDisplay', 'folioPlateTitle', 'folioCommentary', 'folioMarginaliaBlock', 'folioMarginalia',
-      'relatedBlock', 'relatedLinks', 'broadNotice', 'broadOpenScholarBtn',
+      'backToThresholdBtn', 'timelineModeBtn', 'mapModeBtn', 'stageCaptionLeft', 'stageCaptionRight',
+      'vizWrap', 'lineageSvg', 'folioRankLabel', 'folioPlaceTop', 'folioThreads',
+      'verdictYears', 'verdictSubline', 'verdictDate', 'verdictThinker', 'verdictTradition',
+      'userClaimDisplay', 'ancientThesisDisplay', 'scriptureTitleTop', 'originalScriptBlock',
+      'originalScriptText', 'transliterationText', 'translationText', 'scriptureProvenance',
+      'folioPlateTitle', 'folioCommentary', 'folioMarginaliaBlock', 'folioMarginalia',
+      'lineageLedger', 'relatedBlock', 'relatedLinks', 'broadNotice', 'broadOpenScholarBtn',
+      'prevWitnessBtn', 'nextWitnessBtn', 'witnessCounter',
       'vizTooltip', 'ttMeta', 'ttTitle', 'ttDetail',
-      'drawerBackdrop', 'indexDrawer', 'indexDrawerHeading', 'closeIndexBtn', 'indexSearchInput', 'indexList',
+      'drawerBackdrop', 'indexDrawer', 'closeIndexBtn', 'indexSearchInput', 'indexList',
       'scholarDrawer', 'closeScholarBtn', 'scholarKeyForm', 'geminiKeyInput', 'clearKeyBtn', 'scholarStatusMsg'
     ];
     ids.forEach((id) => {
@@ -52,7 +57,7 @@
   }
 
   /* ========================================================================
-     3 QUIET SPECIMENS (THRESHOLD)
+     SPECIMEN THOUGHTS (THRESHOLD)
      ======================================================================== */
   function getSpecimenBatch() {
     const all = global.HUMBLER_MATCHER.getAllChronological();
@@ -62,9 +67,9 @@
         .filter(Boolean);
     }
     const pool = all.filter((item) => !FEATURED_SPECIMEN_IDS.includes(item.id));
-    const start = ((state.specimenOffset - 1) * 3) % Math.max(1, pool.length);
+    const start = ((state.specimenOffset - 1) * 6) % Math.max(1, pool.length);
     const batch = [];
-    for (let i = 0; i < 3 && i < pool.length; i++) {
+    for (let i = 0; i < 6 && i < pool.length; i++) {
       batch.push(pool[(start + i) % pool.length]);
     }
     return batch;
@@ -89,7 +94,7 @@
   }
 
   /* ========================================================================
-     INLINE ARCHIVAL NOTICE & SUBMISSION
+     SUBMISSION & ARCHIVAL EXCAVATION
      ======================================================================== */
   function showExcavation(title, sub) {
     el.excavationTitle.textContent = title;
@@ -107,6 +112,7 @@
     leadSpan.className = 'threshold-notice-lead';
     leadSpan.textContent = lead;
     el.thresholdNotice.appendChild(leadSpan);
+
     el.thresholdNotice.appendChild(document.createTextNode(message));
 
     if (Array.isArray(actions) && actions.length) {
@@ -141,7 +147,7 @@
     if (!text) {
       showThresholdNotice(
         'Empty manuscript',
-        'Write a philosophical epiphany before consulting the archive.'
+        'Inscribe a thought—even a single philosophical concept—before consulting the archive.'
       );
       el.ideaInput.focus();
       return;
@@ -149,11 +155,12 @@
 
     const reqId = ++state.requestSeq;
     const useLive = !forceArchiveId && global.HUMBLER_LIVE && global.HUMBLER_LIVE.isEnabled();
-    const preCheck = !forceArchiveId ? global.HUMBLER_MATCHER.matchIdea(text) : null;
 
+    /* Fast pre-check for pure symbols/punctuation before launching excavation */
+    const preCheck = !forceArchiveId ? global.HUMBLER_MATCHER.matchIdea(text) : null;
     if (preCheck && preCheck.reason === 'empty_or_symbols') {
       showThresholdNotice(
-        'Unreadable',
+        'Unreadable inscription',
         'Use words rather than symbols alone so the archive can trace your idea.'
       );
       el.ideaInput.focus();
@@ -161,7 +168,7 @@
     }
 
     if (useLive) {
-      showExcavation('Consulting Live Scholar…', 'Excavating oldest primary texts via Gemini');
+      showExcavation('Consulting Live Scholar…', 'Excavating oldest verifiable primary texts via Gemini');
       try {
         const liveResult = await global.HUMBLER_LIVE.excavate(text);
         if (reqId !== state.requestSeq) return;
@@ -171,31 +178,32 @@
       } catch (err) {
         if (reqId !== state.requestSeq) return;
         console.warn('Live Scholar fallback to verified archive:', err);
-        showExcavation('Returning to Archive…', 'Matching against the verified canon');
-        await wait(360);
+        showExcavation('Returning to Verified Archive…', 'Live Scholar unavailable; matching against the verified canon');
+        await wait(420);
         if (reqId !== state.requestSeq) return;
       }
     } else if (!forceArchiveId && preCheck && preCheck.unmatched) {
+      /* Honest archival rejection for gibberish or non-philosophical queries */
       const totalRoots = (global.HUMBLER_CANON || []).length;
       const actions = [
-        { label: 'Browse Index', onClick: openIndexDrawer },
-        { label: 'Live Scholar', onClick: openScholarDrawer }
+        { label: 'Browse Index of Origins', onClick: openIndexDrawer },
+        { label: 'Enable Live Scholar', onClick: openScholarDrawer }
       ];
       if (preCheck.entry && preCheck.score >= 5) {
         actions.unshift({
-          label: `Closest plate (${preCheck.entry.title})`,
+          label: `Open closest plate (${preCheck.entry.title})`,
           onClick: () => submitIdea(text, preCheck.entry.id)
         });
       }
       showThresholdNotice(
-        'No clear echo',
-        `Built for philosophical epiphanies—our ${totalRoots}-root canon found no close match. Try rephrasing, or:`,
+        'No archival echo',
+        `The Humbler is built for philosophical epiphanies, and our ${totalRoots}-root verified canon found no close match for that phrase. Try rephrasing your philosophical insight—or:`,
         actions
       );
       return;
     } else {
-      showExcavation('Excavating…', 'Tracing 4,600 years of surviving texts');
-      await wait(300);
+      showExcavation('Excavating the Archive…', 'Tracing 4,600 years of surviving scriptures');
+      await wait(340);
       if (reqId !== state.requestSeq) return;
     }
 
@@ -226,11 +234,11 @@
 
     if (!result || !result.entry) {
       showThresholdNotice(
-        'No clear echo',
+        'No archival echo',
         'No matching primary source was found in the local archive.',
         [
-          { label: 'Browse Index', onClick: openIndexDrawer },
-          { label: 'Live Scholar', onClick: openScholarDrawer }
+          { label: 'Browse Index of Origins', onClick: openIndexDrawer },
+          { label: 'Enable Live Scholar', onClick: openScholarDrawer }
         ]
       );
       return;
@@ -247,14 +255,12 @@
 
     document.body.classList.remove('is-landing');
     document.body.classList.add('is-result');
-    el.brandHomeBtn.classList.add('hidden');
-    el.backToThresholdBtn.classList.remove('hidden');
     el.landingView.classList.add('hidden');
     el.resultView.classList.remove('hidden');
 
     closeAllDrawers();
     renderResultPlate();
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function returnToThreshold() {
@@ -262,24 +268,21 @@
     hideTooltip();
     document.body.classList.remove('is-result');
     document.body.classList.add('is-landing');
-    el.backToThresholdBtn.classList.add('hidden');
-    el.brandHomeBtn.classList.remove('hidden');
     el.resultView.classList.add('hidden');
     el.landingView.classList.remove('hidden');
     global.HUMBLER_VIZ.renderBackdropMap('#backdropSvg');
-    if (window.innerWidth >= 640) {
-      el.ideaInput.focus();
-    }
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    el.ideaInput.focus();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   /* ========================================================================
-     RENDER HUMBLING PLATE
+     RENDER RESULT PLATE (VISUALIZATION + MONOGRAPH FOLIO)
      ======================================================================== */
   function renderResultPlate() {
     if (!state.result) return;
     renderVisualization();
     renderMonographFolio();
+    renderLineageLedger();
   }
 
   function renderVisualization() {
@@ -291,7 +294,6 @@
     el.mapModeBtn.classList.toggle('is-active', state.vizMode === 'map');
     el.mapModeBtn.setAttribute('aria-selected', String(state.vizMode === 'map'));
     el.vizWrap.classList.toggle('is-map', state.vizMode === 'map');
-    el.mapZoomControls.classList.toggle('hidden', state.vizMode !== 'map');
 
     const callbacks = {
       onSelect: (idx) => {
@@ -306,10 +308,12 @@
     };
 
     if (state.vizMode === 'timeline') {
-      el.stageCaptionLeft.textContent = `${nodes.length} ${nodes.length === 1 ? 'witness' : 'witnesses'} before you · Tap to switch`;
+      el.stageCaptionLeft.textContent = 'Chronological Descent · Click any medallion to inspect primary scripture';
+      el.stageCaptionRight.textContent = `${nodes.length} recorded ${nodes.length === 1 ? 'witness' : 'witnesses'} before you`;
       global.HUMBLER_VIZ.renderTimeline('#lineageSvg', state.result, state.activeNodeIdx, callbacks);
     } else {
-      el.stageCaptionLeft.textContent = 'Geographic origin · Tap pins or zoom';
+      el.stageCaptionLeft.textContent = 'Geographic Origin & Cross-Cultural Echoes · Drag to pan, scroll to zoom';
+      el.stageCaptionRight.textContent = `Natural Earth 50m · ${nodes[0].place}`;
       global.HUMBLER_VIZ.renderWorldOriginMap('#lineageSvg', state.result, state.activeNodeIdx, callbacks);
     }
   }
@@ -321,17 +325,52 @@
     const isOrigin = state.activeNodeIdx === 0;
     const yearsLate = global.HUMBLER_MATCHER.computeYearsLate(node.year);
 
-    /* 1. Immediate Verdict Hero */
+    /* Running Head */
     el.folioRankLabel.textContent = isOrigin
-      ? `Oldest Origin · ${node.yearLabel}`
-      : `Echo ${node.roman} of ${ROMAN[nodes.length] || nodes.length} · ${node.yearLabel}`;
+      ? `Oldest Recorded Origin · ${node.roman} of ${ROMAN[nodes.length] || nodes.length}`
+      : `Independent Echo · ${node.roman} of ${ROMAN[nodes.length] || nodes.length}`;
     el.folioRankLabel.classList.toggle('is-echo', !isOrigin);
+    el.folioPlaceTop.textContent = node.region ? `${node.place} · ${node.region}` : node.place;
 
-    el.verdictYears.textContent = `${yearsLate.toLocaleString()} years late.`;
+    if (res.source === 'live') {
+      el.folioThreads.textContent = `Live Scholar · ${res.threads.join(' · ')}`;
+    } else if (res.threads && res.threads.length) {
+      el.folioThreads.textContent = `Traced via: ${res.threads.join(' · ')}`;
+    } else {
+      el.folioThreads.textContent = res.entry.domain;
+    }
+
+    /* Engraved Verdict Hero */
+    el.verdictYears.textContent = `${yearsLate.toLocaleString()} years late`;
+    el.verdictSubline.textContent = isOrigin
+      ? `First attested in ${node.language}, long before you phrased it`
+      : `Independent echo, ${Math.abs(node.year - nodes[0].year).toLocaleString()} years after ${nodes[0].thinker.replace(/\s*\([^)]*\)/g, '')}`;
+
+    el.verdictDate.textContent = node.yearLabel;
     el.verdictThinker.textContent = node.thinker;
-    el.folioPlaceTop.textContent = node.region ? `${node.place}, ${node.region}` : node.place;
+    el.verdictTradition.textContent = node.tradition;
 
-    /* 2. Primary Scripture in Original Form */
+    /* Comparison Ledger (gracefully handles very long pasted essays via inline toggle) */
+    el.userClaimDisplay.innerHTML = '';
+    const MAX_CLAIM_LEN = 260;
+    if (res.userIdea.length > MAX_CLAIM_LEN && !state.claimExpanded) {
+      el.userClaimDisplay.appendChild(document.createTextNode(`“${res.userIdea.slice(0, MAX_CLAIM_LEN).trim()}…”`));
+      const moreBtn = document.createElement('button');
+      moreBtn.type = 'button';
+      moreBtn.className = 'inline-gold-btn claim-expand-btn';
+      moreBtn.textContent = 'Read full claim';
+      moreBtn.addEventListener('click', () => {
+        state.claimExpanded = true;
+        renderMonographFolio();
+      });
+      el.userClaimDisplay.appendChild(moreBtn);
+    } else {
+      el.userClaimDisplay.textContent = `“${res.userIdea}”`;
+    }
+    el.ancientThesisDisplay.textContent = res.entry.ancientThesis || res.entry.title;
+
+    /* Primary Scripture Centerpiece */
+    el.scriptureTitleTop.textContent = `${node.scripture} (${node.language})`;
     el.originalScriptText.textContent = node.originalScript || '';
     el.originalScriptText.dir = node.scriptDir || 'ltr';
     el.originalScriptText.className = `original-script-text ${node.scriptClass || 'script-latin'}`;
@@ -343,27 +382,10 @@
     el.transliterationText.classList.toggle('hidden', !showTranslit);
 
     el.translationText.textContent = `“${node.translation}”`;
-    el.scriptureProvenance.textContent = `${node.scripture} · ${node.language}`;
+    el.scriptureProvenance.textContent = node.provenance;
     applyScriptDisplayMode();
 
-    /* 3. Quiet Reading Depth Below the Fold */
-    el.userClaimDisplay.innerHTML = '';
-    const MAX_CLAIM_LEN = 220;
-    if (res.userIdea.length > MAX_CLAIM_LEN && !state.claimExpanded) {
-      el.userClaimDisplay.appendChild(document.createTextNode(`“${res.userIdea.slice(0, MAX_CLAIM_LEN).trim()}…”`));
-      const moreBtn = document.createElement('button');
-      moreBtn.type = 'button';
-      moreBtn.className = 'inline-gold-btn claim-expand-btn';
-      moreBtn.textContent = 'Read all';
-      moreBtn.addEventListener('click', () => {
-        state.claimExpanded = true;
-        renderMonographFolio();
-      });
-      el.userClaimDisplay.appendChild(moreBtn);
-    } else {
-      el.userClaimDisplay.textContent = `“${res.userIdea}”`;
-    }
-
+    /* Commentary & Unboxed Marginalia */
     el.folioPlateTitle.textContent = res.entry.title;
     el.folioCommentary.textContent = node.commentary;
 
@@ -398,8 +420,14 @@
       el.relatedBlock.classList.add('hidden');
     }
 
+    /* Broad Match Honest Notice */
     const showBroad = res.source === 'archive' && res.confidence === 'broad' && !global.HUMBLER_LIVE.isEnabled();
     el.broadNotice.classList.toggle('hidden', !showBroad);
+
+    /* Book-Leaf Witness Footer */
+    el.prevWitnessBtn.disabled = state.activeNodeIdx === 0;
+    el.nextWitnessBtn.disabled = state.activeNodeIdx >= nodes.length - 1;
+    el.witnessCounter.textContent = `${node.roman} of ${ROMAN[nodes.length] || nodes.length}`;
   }
 
   function applyScriptDisplayMode() {
@@ -419,8 +447,33 @@
     }
   }
 
+  function renderLineageLedger() {
+    const nodes = global.HUMBLER_VIZ.buildNodes(state.result.entry);
+    el.lineageLedger.innerHTML = '';
+
+    nodes.forEach((node, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = `ledger-row${idx === state.activeNodeIdx ? ' is-active' : ''}${idx === 0 ? ' is-origin' : ''}`;
+      btn.innerHTML = `
+        <span class="ledger-roman">${node.roman}</span>
+        <span class="ledger-year">${escapeHtml(node.yearLabel)}</span>
+        <span class="ledger-main">
+          <span class="ledger-thinker">${escapeHtml(node.thinker)}</span>
+          <span class="ledger-scripture">${escapeHtml(node.scripture)} &middot; ${escapeHtml(node.place)}</span>
+        </span>
+        <span class="ledger-role">${idx === 0 ? 'First Recorded' : 'Independent Echo'}</span>
+      `;
+      btn.addEventListener('click', () => {
+        state.activeNodeIdx = idx;
+        renderResultPlate();
+      });
+      el.lineageLedger.appendChild(btn);
+    });
+  }
+
   /* ========================================================================
-     TOOLTIP (DESKTOP ONLY)
+     TOOLTIP (TIMELINE & WORLD MAP MEDALLIONS)
      ======================================================================== */
   function showTooltip(node, event) {
     el.ttMeta.textContent = `${node.isOrigin ? 'Oldest Origin' : 'Echo'} · ${node.yearLabel} · ${node.place}`;
@@ -436,8 +489,13 @@
     const rect = el.vizTooltip.getBoundingClientRect();
     let left = event.clientX + 16;
     let top = event.clientY - rect.height - 12;
-    if (left + rect.width > window.innerWidth - pad) left = event.clientX - rect.width - 16;
-    if (top < pad) top = event.clientY + 18;
+
+    if (left + rect.width > window.innerWidth - pad) {
+      left = event.clientX - rect.width - 16;
+    }
+    if (top < pad) {
+      top = event.clientY + 18;
+    }
     el.vizTooltip.style.left = `${Math.max(pad, left)}px`;
     el.vizTooltip.style.top = `${Math.max(pad, top)}px`;
   }
@@ -447,7 +505,7 @@
   }
 
   /* ========================================================================
-     DRAWERS
+     INDEX OF ORIGINS & LIVE SCHOLAR DRAWERS
      ======================================================================== */
   function renderIndexList(query) {
     const q = (query || '').trim().toLowerCase();
@@ -455,9 +513,16 @@
     const filtered = q
       ? all.filter((item) => {
           const hay = [
-            item.title, item.domain, item.origin.thinker,
-            item.origin.scripture, item.origin.place, item.origin.yearLabel, item.specimen
-          ].join(' ').toLowerCase();
+            item.title,
+            item.domain,
+            item.origin.thinker,
+            item.origin.scripture,
+            item.origin.place,
+            item.origin.yearLabel,
+            item.specimen
+          ]
+            .join(' ')
+            .toLowerCase();
           return hay.includes(q);
         })
       : all;
@@ -492,19 +557,15 @@
   function openIndexDrawer() {
     closeAllDrawers();
     state.indexOpen = true;
-    document.body.classList.add('drawer-open');
     el.drawerBackdrop.classList.remove('hidden');
     el.indexDrawer.classList.add('is-open');
     renderIndexList(el.indexSearchInput.value);
-    if (window.innerWidth >= 640) {
-      setTimeout(() => el.indexSearchInput.focus(), 120);
-    }
+    setTimeout(() => el.indexSearchInput.focus(), 120);
   }
 
   function openScholarDrawer() {
     closeAllDrawers();
     state.scholarOpen = true;
-    document.body.classList.add('drawer-open');
     el.drawerBackdrop.classList.remove('hidden');
     el.scholarDrawer.classList.add('is-open');
     el.geminiKeyInput.value = global.HUMBLER_LIVE.getApiKey();
@@ -514,7 +575,6 @@
   function closeAllDrawers() {
     state.indexOpen = false;
     state.scholarOpen = false;
-    document.body.classList.remove('drawer-open');
     el.drawerBackdrop.classList.add('hidden');
     el.indexDrawer.classList.remove('is-open');
     el.scholarDrawer.classList.remove('is-open');
@@ -522,22 +582,22 @@
 
   function updateScholarStatusUI() {
     const active = global.HUMBLER_LIVE && global.HUMBLER_LIVE.isEnabled();
-    const totalRoots = (global.HUMBLER_CANON || []).length;
     el.scholarDot.classList.toggle('hidden', !active);
     el.modeIndicator.textContent = active
-      ? 'Live Scholar active · Gemini'
-      : `${totalRoots} verified ancient roots · 2600 BCE–397 CE`;
+      ? 'Live Scholar Active (Gemini) · Verified Archive Fallback'
+      : 'Verified Archival Canon · 2600 BCE – 397 CE';
+    const totalRoots = (global.HUMBLER_CANON || []).length;
     el.scholarStatusMsg.textContent = active
-      ? 'Live Scholar is active. Custom philosophical epiphanies will be excavated via Gemini 2.5 Flash.'
-      : `Using the built-in ${totalRoots}-root verified primary archive.`;
+      ? 'Live Scholar is active. Any custom philosophical epiphany will be excavated live via Gemini 2.5 Flash.'
+      : `Currently running on the built-in ${totalRoots}-root verified primary archive.`;
   }
 
   /* ========================================================================
-     UTILITIES & EVENTS
+     UTILITIES & EVENT WIRING
      ======================================================================== */
   function autoResizeTextarea() {
     el.ideaInput.style.height = 'auto';
-    el.ideaInput.style.height = `${Math.min(200, Math.max(76, el.ideaInput.scrollHeight))}px`;
+    el.ideaInput.style.height = `${Math.min(220, Math.max(76, el.ideaInput.scrollHeight))}px`;
   }
 
   function wait(ms) {
@@ -555,7 +615,6 @@
   function wireEvents() {
     el.brandHomeBtn.addEventListener('click', returnToThreshold);
     el.backToThresholdBtn.addEventListener('click', returnToThreshold);
-    el.bottomNewBtn.addEventListener('click', returnToThreshold);
 
     el.ideaForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -565,11 +624,7 @@
     el.ideaInput.addEventListener('input', () => {
       autoResizeTextarea();
       clearThresholdNotice();
-      if (el.specimensList && el.specimensList.parentElement) {
-        el.specimensList.parentElement.classList.toggle('is-dimmed', el.ideaInput.value.trim().length > 0);
-      }
     });
-
     el.ideaInput.addEventListener('keydown', (e) => {
       if ((e.key === 'Enter' && !e.shiftKey) || ((e.metaKey || e.ctrlKey) && e.key === 'Enter')) {
         e.preventDefault();
@@ -578,15 +633,11 @@
     });
 
     el.shuffleSpecimensBtn.addEventListener('click', () => {
-      const total = (global.HUMBLER_CANON || []).length;
-      const pages = Math.max(1, Math.ceil((total - FEATURED_SPECIMEN_IDS.length) / 3) + 1);
-      state.specimenOffset = (state.specimenOffset + 1) % pages;
+      state.specimenOffset = (state.specimenOffset + 1) % 7;
       renderSpecimens();
     });
 
-    el.mapZoomInBtn.addEventListener('click', () => global.HUMBLER_VIZ.zoomMapBy(1.38));
-    el.mapZoomOutBtn.addEventListener('click', () => global.HUMBLER_VIZ.zoomMapBy(0.72));
-
+    /* Visualization switcher */
     el.timelineModeBtn.addEventListener('click', () => {
       if (state.vizMode === 'timeline') return;
       state.vizMode = 'timeline';
@@ -601,6 +652,7 @@
       renderVisualization();
     });
 
+    /* Script display toggle */
     document.querySelectorAll('.script-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         state.scriptMode = btn.dataset.scriptMode;
@@ -608,6 +660,24 @@
       });
     });
 
+    /* Book-leaf prev/next witness */
+    el.prevWitnessBtn.addEventListener('click', () => {
+      if (state.activeNodeIdx > 0) {
+        state.activeNodeIdx -= 1;
+        renderResultPlate();
+      }
+    });
+
+    el.nextWitnessBtn.addEventListener('click', () => {
+      if (!state.result) return;
+      const nodes = global.HUMBLER_VIZ.buildNodes(state.result.entry);
+      if (state.activeNodeIdx < nodes.length - 1) {
+        state.activeNodeIdx += 1;
+        renderResultPlate();
+      }
+    });
+
+    /* Drawers */
     el.openIndexBtn.addEventListener('click', openIndexDrawer);
     el.closeIndexBtn.addEventListener('click', closeAllDrawers);
     el.openScholarBtn.addEventListener('click', openScholarDrawer);
@@ -615,7 +685,9 @@
     el.broadOpenScholarBtn.addEventListener('click', openScholarDrawer);
     el.drawerBackdrop.addEventListener('click', closeAllDrawers);
 
-    el.indexSearchInput.addEventListener('input', (e) => renderIndexList(e.target.value));
+    el.indexSearchInput.addEventListener('input', (e) => {
+      renderIndexList(e.target.value);
+    });
 
     el.scholarKeyForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -629,9 +701,12 @@
       updateScholarStatusUI();
     });
 
+    /* Keyboard shortcuts */
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && (state.indexOpen || state.scholarOpen)) {
-        closeAllDrawers();
+      if (e.key === 'Escape') {
+        if (state.indexOpen || state.scholarOpen) {
+          closeAllDrawers();
+        }
       } else if (state.view === 'result' && !state.indexOpen && !state.scholarOpen) {
         const tag = document.activeElement && document.activeElement.tagName;
         if (tag === 'INPUT' || tag === 'TEXTAREA') return;
@@ -646,6 +721,7 @@
       }
     });
 
+    /* Responsive re-render on resize */
     let resizeTimer = null;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
@@ -663,28 +739,10 @@
     bindDom();
     const total = (global.HUMBLER_CANON || []).length;
     el.canonCount.textContent = String(total);
-    if (el.indexDrawerHeading) el.indexDrawerHeading.textContent = `${total} Ancient Roots`;
     renderSpecimens();
     updateScholarStatusUI();
     wireEvents();
     global.HUMBLER_VIZ.renderBackdropMap('#backdropSvg');
-
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const q = (params.get('q') || '').trim();
-      const viz = params.get('viz');
-      if (viz === 'map' || viz === 'timeline') state.vizMode = viz;
-      if (q) {
-        el.ideaInput.value = q;
-        autoResizeTextarea();
-        const direct = global.HUMBLER_MATCHER.matchIdea(q);
-        if (direct && !direct.unmatched && direct.entry) {
-          openResult(direct);
-        }
-      }
-    } catch (_) {
-      /* ignore */
-    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
