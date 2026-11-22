@@ -941,8 +941,15 @@ body::after {
 
 .sheet-agedist {
   font-style: italic;
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--ink-3);
+}
+
+.sheet-age-accent {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brass);
+  letter-spacing: 0.03em;
 }
 
 /* Chapter Headline */

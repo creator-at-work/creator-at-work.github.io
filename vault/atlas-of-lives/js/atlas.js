@@ -691,7 +691,8 @@
       .on('mouseenter', (event) => {
         state.hoverIdx = idx;
         updateMapHighlights(false);
-        showTooltip(`${st.number} · ${st.date}`, st.title, '', event.clientX, event.clientY);
+        const ageLabel = st.age ? ` · ${st.age}` : '';
+        showTooltip(`${st.number} · ${st.date}${ageLabel}`, st.title, '', event.clientX, event.clientY);
       })
       .on('mousemove', (event) => moveTooltip(event.clientX, event.clientY))
       .on('mouseleave', () => {
@@ -764,7 +765,7 @@
       .attr('font-style', 'italic')
       .attr('font-size', '11.5px')
       .attr('fill', cssVar('--ink-3'))
-      .text(st.year);
+      .text(st.age ? `${st.year} · ${st.age}` : st.year);
   }
 
   function syncZoomLayers(t) {
@@ -1072,6 +1073,7 @@
             type="button"
             data-open-idx="${idx}"
             data-hover-idx="${idx}"
+            title="${st.shortPlace} · ${st.year}${st.age ? ' (' + st.age + ')' : ''}"
             class="scrubber-year ${state.selectedIdx === idx ? 'active' : ''}"
           >
             <span class="scrubber-num">${st.number}.</span>
@@ -1103,14 +1105,20 @@
     bodyEl.scrollTop = 0;
 
     const km = distanceFromOriginKm(baseStage.coords);
-    const distText = km === 0 ? 'Birthplace' : `${km.toLocaleString()} km from ${state.figure.originName}`;
+    const isBirth = /^birth$/i.test(String(ch.age || '').trim());
+    const ageLabel = isBirth ? 'Age 0 (Birth)' : (ch.age || '');
+    const distText = km === 0
+      ? (isBirth ? 'Birthplace' : `Origin (${state.figure.originName})`)
+      : `${km.toLocaleString()} km from ${state.figure.originName}`;
 
     document.getElementById('drawerChapter').textContent = `Stage ${baseStage.roman || ROMAN[baseStage.number] || baseStage.number}`;
     document.getElementById('drawerLocationTop').textContent = ch.location;
 
     document.getElementById('drawerYear').textContent = ch.year;
     document.getElementById('drawerDate').textContent = ch.date;
-    document.getElementById('drawerAgeDist').textContent = `${ch.age} · ${distText}`;
+    document.getElementById('drawerAgeDist').innerHTML = ageLabel
+      ? `<span class="sheet-age-accent">${ageLabel}</span> &middot; ${distText}`
+      : distText;
 
     document.getElementById('drawerTitle').textContent = ch.title;
     document.getElementById('drawerProse').textContent = ch.prose;

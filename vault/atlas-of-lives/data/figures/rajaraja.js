@@ -11,8 +11,8 @@
   global.ATLAS_FIGURES.rajaraja = {
     id: 'rajaraja',
     era: 'Medieval & Renaissance',
-    title: 'Raja Raja Chola I',
-    fullName: 'Raja Raja Chola I (Arulmozhi Varman)',
+    title: 'Rajaraja Chola I',
+    fullName: 'Rajaraja Chola I (Arulmozhi Varman)',
     years: 'c. 947 — 1014',
     subtitle: 'Thanjavur to the Indian Ocean',
     worldLabel: 'World of 1010',

@@ -92,7 +92,7 @@
         roman: 'I',
         id: 'taxila',
         year: '326 BCE',
-        age: 'Youth',
+        age: 'c. Age 14',
         date: 'c. 326 – 324 BCE',
         location: 'Takshashila (Taxila), Gandhara',
         shortPlace: 'Taxila',
