@@ -679,6 +679,259 @@
         ['time', 'passing time', 'seasons pass', 'delay', 'eventually'],
         ['heals', 'heal', 'healing', 'softens', 'fades', 'cures', 'wounds', 'wound', 'scars', 'grief']
       ]
+    },
+    'know-enemy-self': {
+      threads: ['strategic self-knowledge', 'understanding your opponent', 'sun tzu'],
+      anchors: [
+        'know your enemy', 'know the enemy and know yourself', 'hundred battles',
+        'art of war', 'sun tzu', 'zhi bi zhi ji'
+      ],
+      slots: [
+        ['enemy', 'opponent', 'rival', 'adversary', 'competitor'],
+        ['know yourself', 'understand both', 'blind spots', 'defeat', 'victory', 'battles']
+      ]
+    },
+    'fear-creates-reality': {
+      threads: ['self-fulfilling fear', 'what I feared came upon me', 'anxiety'],
+      anchors: [
+        'thing i greatly feared', 'what we fear most', 'self fulfilling prophecy',
+        'running away from what we fear', 'meet our destiny on the road'
+      ],
+      slots: [
+        ['fear', 'feared', 'dread', 'dreaded', 'terrifies', 'afraid of'],
+        ['attract', 'create', 'bring into reality', 'comes upon', 'befalls', 'draw into', 'self fulfilling']
+      ]
+    },
+    'teaching-is-learning': {
+      threads: ['docendo discimus', 'teaching clarifies thought', 'shared mastery'],
+      anchors: [
+        'while we teach we learn', 'docendo discimus', 'best way to learn is to teach',
+        'explain it to someone else', 'teaching and learning'
+      ],
+      slots: [
+        ['teach', 'teaching', 'explain', 'explaining', 'mentor', 'instruct'],
+        ['learn', 'learning', 'understand', 'master', 'gaps', 'ignorance']
+      ]
+    },
+    'begin-small-steps': {
+      threads: ['journey of a thousand miles', 'single step', 'compounding'],
+      anchors: [
+        'journey of a thousand miles', 'begins with a single step', 'single step',
+        'drop by drop the water pot', 'nine story terrace'
+      ],
+      slots: [
+        ['thousand miles', 'single step', 'small steps', 'tiny steps', 'drop by drop', 'little by little', 'basket of earth'],
+        ['massive', 'impossible', 'achievement', 'journey', 'mountain', 'filled', 'builds']
+      ]
+    },
+    'emptiness-makes-useful': {
+      threads: ['value of emptiness', 'negative space', 'rest & silence'],
+      anchors: [
+        'emptiness makes it useful', 'thirty spokes share one hub', 'hollow of the vessel',
+        'negative space', 'space between the notes'
+      ],
+      slots: [
+        ['emptiness', 'empty space', 'hollow', 'void', 'nothingness', 'negative space', 'pauses'],
+        ['useful', 'usefulness', 'vessel', 'cup', 'room', 'wheel', 'purpose']
+      ]
+    },
+    'true-wealth-health': {
+      threads: ['health as highest wealth', 'arogya parama labha', 'vitality'],
+      anchors: [
+        'health is the greatest wealth', 'health is the highest gain', 'arogya parama labha',
+        'healthy beggar is happier than a sick king', 'sick king'
+      ],
+      slots: [
+        ['health', 'healthy', 'sickness', 'illness', 'sick', 'body', 'disease'],
+        ['wealth', 'rich', 'riches', 'money', 'fortune', 'gold', 'crown', 'worthless']
+      ]
+    },
+    'alone-born-die': {
+      threads: ['existential solitude', 'born alone die alone', 'standing on one’s own'],
+      anchors: [
+        'born alone and die alone', 'born alone', 'die alone',
+        'enter the world alone', 'leave it alone', 'walk the ultimate path alone'
+      ],
+      slots: [
+        ['born alone', 'die alone', 'alone', 'solitude', 'by yourself'],
+        ['born', 'birth', 'die', 'death', 'crossing', 'grave', 'enter', 'leave']
+      ]
+    },
+    'truth-hurts-flattery': {
+      threads: ['bitter truth vs. sweet flattery', 'faithful wounds', 'honest counsel'],
+      anchors: [
+        'truth hurts', 'truth is bitter', 'wounds of a friend', 'flattery is sweet',
+        'truthful words are not pleasant', 'pleasant words are not truthful'
+      ],
+      slots: [
+        ['flattery', 'flatterer', 'sweet words', 'praise', 'compliments', 'pleasant words'],
+        ['truth', 'honest', 'criticism', 'bitter', 'hurts', 'wounds', 'medicine', 'correction']
+      ]
+    },
+    'boredom-restlessness': {
+      threads: ['restless fleeing of self', 'existential boredom', 'taedium vitae'],
+      anchors: [
+        'running away from themselves', 'fleeing from themselves', 'cannot sit quietly in a room',
+        'change of sky not of mind', 'taedium vitae', 'chronically bored'
+      ],
+      slots: [
+        ['bored', 'boredom', 'restless', 'restlessness', 'distraction', 'traveling', 'scrolling', 'busyness'],
+        ['alone with their thoughts', 'sit quietly', 'escape themselves', 'fleeing themselves', 'own company']
+      ]
+    },
+    'gratitude-multiplier': {
+      threads: ['gratitude as abundance', 'turning enough into plenty', 'thankfulness'],
+      anchors: [
+        'gratitude turns what we have into enough', 'gratitude is the parent of all virtues',
+        'ungrateful mind', 'thankfulness'
+      ],
+      slots: [
+        ['gratitude', 'grateful', 'thankful', 'thankfulness', 'appreciate', 'blessings'],
+        ['abundance', 'missing', 'complaining', 'joy', 'richest', 'enough']
+      ]
+    },
+    'fear-of-opinion': {
+      threads: ['other people’s opinions', 'craving approval', 'social anxiety'],
+      anchors: [
+        'what other people think', 'other peoples opinions', 'care more about what others think',
+        'living in their heads', 'validation from others'
+      ],
+      slots: [
+        ['what other people think', 'others think', 'opinions', 'approval', 'validation', 'judging', 'applause'],
+        ['strangers', 'care more', 'fear', 'prisoner', 'peace', 'respect yourself']
+      ]
+    },
+    'memory-unreliable': {
+      threads: ['reconstructed memory', 'nostalgia', 'palace of memory'],
+      anchors: [
+        'memory is unreliable', 'rewrite our past', 'nostalgia is a lie',
+        'palace of memory', 'remember the past differently'
+      ],
+      slots: [
+        ['memory', 'memories', 'remember', 'remembering', 'nostalgia', 'recollection'],
+        ['rewrite', 'reconstruct', 'distortion', 'fictional', 'imagination', 'present self', 'recording']
+      ]
+    },
+    'injustice-silence': {
+      threads: ['complicity of silence', 'civic courage', 'mutual defense'],
+      anchors: [
+        'silence in the face of injustice', 'staying silent', 'complicit in injustice',
+        'who fails to prevent a wrong', 'injustice anywhere'
+      ],
+      slots: [
+        ['injustice', 'wrongdoing', 'oppression', 'evil', 'cruelty', 'unjust'],
+        ['silent', 'silence', 'bystander', 'do nothing', 'passive', 'complicit', 'speak up', 'defend']
+      ]
+    },
+    'evil-from-ignorance': {
+      threads: ['no one errs willingly', 'Socratic ethics', 'moral blindness'],
+      anchors: [
+        'no one does evil willingly', 'nobody is the villain in their own story',
+        'people do bad things out of ignorance', 'mistake the bad for the good'
+      ],
+      slots: [
+        ['villain', 'evil', 'bad things', 'harm', 'cruel', 'wrong'],
+        ['ignorance', 'blind', 'mistake', 'think they are right', 'own story', 'good for them', 'confused']
+      ]
+    },
+    'change-yourself-first': {
+      threads: ['self-cultivation first', 'putting one’s own heart in order', 'inner reform'],
+      anchors: [
+        'change the world start with yourself', 'change yourself first', 'rectify their hearts',
+        'great learning', 'daxue', 'put your own house in order'
+      ],
+      slots: [
+        ['change the world', 'fix the world', 'reform society', 'fix everyone else'],
+        ['change yourself', 'start with yourself', 'own heart', 'own mind', 'own house', 'cultivate yourself']
+      ]
+    },
+    'words-wounds-heal': {
+      threads: ['wound of the tongue', 'reckless speech', 'permanent verbal scars'],
+      anchors: [
+        'words cut deeper than swords', 'tongue has no bones', 'wound of a sword heals',
+        'wound of the tongue never heals', 'cruel words'
+      ],
+      slots: [
+        ['words', 'tongue', 'speech', 'insult', 'cruel remark', 'said in anger'],
+        ['wound', 'wounds', 'scar', 'scars', 'sword', 'arrow', 'blade', 'flesh heals', 'never heals']
+      ]
+    },
+    'youth-wasted-regret': {
+      threads: ['brevity of youth', 'procrastination', 'carpe diem'],
+      anchors: [
+        'youth is wasted on the young', 'putting life on hold', 'waiting for life to start',
+        'while we delay life speeds past', 'best days flee first'
+      ],
+      slots: [
+        ['youth', 'young', 'prime of life', 'someday', 'postpone', 'putting off', 'delaying'],
+        ['old age', 'grown old', 'too late', 'passed you by', 'slipped away', 'wasted']
+      ]
+    },
+    'hope-and-fear': {
+      threads: ['hope and fear as twins', 'future-bound anxiety', 'present peace'],
+      anchors: [
+        'hope and fear are two sides', 'cease to hope and you will cease to fear',
+        'blind hope', 'pandoras jar', 'false hope'
+      ],
+      slots: [
+        ['hope', 'hoping', 'wishful'],
+        ['fear', 'anxiety', 'dread', 'chain', 'two sides', 'future', 'torment']
+      ]
+    },
+    'suffering-connects-us': {
+      threads: ['shared vulnerability', 'tears of things', 'compassion born of pain'],
+      anchors: [
+        'sunt lacrimae rerum', 'tears of things', 'suffering makes us compassionate',
+        'not ignorant of misfortune', 'shared pain connects us'
+      ],
+      slots: [
+        ['heartbreak', 'grief', 'pain', 'suffering', 'wounded', 'loss', 'misfortune'],
+        ['empathy', 'compassion', 'connects us', 'gentler', 'understand others', 'succor', 'tender']
+      ]
+    },
+    'simplicity-genius': {
+      threads: ['manifest plainness', 'uncarved block', 'subtracting clutter'],
+      anchors: [
+        'simplicity is the ultimate sophistication', 'keep it simple', 'less is more',
+        'uncarved block', 'manifest plainness'
+      ],
+      slots: [
+        ['simplicity', 'simple', 'plain', 'minimal', 'uncluttered', 'subtract'],
+        ['complexity', 'complicated', 'clutter', 'excess', 'ornament', 'essentials', 'mastery']
+      ]
+    },
+    'courage-freedom': {
+      threads: ['freedom requires courage', 'happiness requires freedom', 'Pericles'],
+      anchors: [
+        'secret of happiness is freedom', 'secret of freedom is courage',
+        'freedom requires courage', 'cowardice costs you your freedom'
+      ],
+      slots: [
+        ['courage', 'brave', 'bravery', 'fearless', 'cowardice', 'risk'],
+        ['freedom', 'free', 'liberty', 'independent', 'safety']
+      ]
+    },
+    'money-servant-master': {
+      threads: ['wealth as servant or master', 'owned by possessions', 'financial bondage'],
+      anchors: [
+        'money is a good servant but a bad master', 'things you own end up owning you',
+        'wealth serves the wise', 'slave to money'
+      ],
+      slots: [
+        ['money', 'wealth', 'riches', 'fortune', 'possessions', 'luxury'],
+        ['servant', 'master', 'slave', 'owns you', 'owning you', 'obeys', 'commands', 'trap']
+      ]
+    },
+    'uselessness-usefulness': {
+      threads: ['usefulness of being useless', 'sacred gnarly tree', 'refusing instrumentalization'],
+      anchors: [
+        'usefulness of being useless', 'nobody knows the use of the useless',
+        'useless tree', 'cut down first', 'burnout from being useful'
+      ],
+      slots: [
+        ['useless', 'unproductive', 'no commercial value', 'gnarled tree', 'crooked tree'],
+        ['useful', 'exploited', 'cut down', 'harvested', 'survive', 'peace', 'unharmed']
+      ]
     }
   };
 

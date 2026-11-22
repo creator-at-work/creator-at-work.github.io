@@ -1,5 +1,5 @@
 /* ==========================================================================
-   THE HUMBLER — Verified Ancient Philosophical & Scriptural Canon (Part I: 1–18)
+   THE HUMBLER, Verified Ancient Philosophical & Scriptural Canon (Part I: 1–18)
    Every quotation traces to an authenticated primary text with original script,
    transliteration, scholarly translation, provenance, and historical coordinates.
    ========================================================================== */
@@ -14,7 +14,7 @@
       id: 'expectation-suffering',
       domain: 'Relationships & Suffering',
       title: 'The Root of Relational Suffering',
-      ancientThesis: 'Piya-upādāna & Taṇhā — Suffering springs from clinging to what is dear and demanding others conform to our craving.',
+      ancientThesis: 'Piya-upādāna & Taṇhā, Suffering springs from clinging to what is dear and demanding others conform to our craving.',
       modernSummary: 'Expecting another person to fulfill our wishes or remain as we demand is the silent engine of heartbreak and conflict.',
       specimen: 'The root cause of human suffering in relationships is expectation from the other.',
       concepts: [
@@ -47,9 +47,9 @@
         scriptClass: 'script-latin',
         originalScript: 'Piyato jāyatī soko, piyato jāyatī bhayaṃ;\npiyato vippamuttassa, natthi soko kuto bhayaṃ.',
         transliteration: 'Piyato jāyatī soko, piyato jāyatī bhayaṃ; piyato vippamuttassa, natthi soko kuto bhayaṃ.',
-        translation: 'From what is held dear springs sorrow; from what is held dear springs fear. For one wholly free from clinging to the dear, there is no sorrow—whence then fear?',
+        translation: 'From what is held dear springs sorrow; from what is held dear springs fear. For one wholly free from clinging to the dear, there is no sorrow, whence then fear?',
         provenance: 'Dhammapada, Chapter XVI (Piyavagga), v. 212; elaborated in Piyajātikā Sutta, Majjhima Nikāya 87 (c. 5th century BCE)',
-        commentary: 'Your diagnosis of relational pain arrived twenty-five centuries after Gautama stated it in Sāvatthī—and in far blunter terms. In the Piyajātikā Sutta, when a grieving father objects to the claim that sorrow is born from affection, the Buddha traces grief directly to our grasping expectation that loved ones stay unchanged and answer our longing. Where modern psychology speaks gently of "unmet expectations," the Pāli Canon calls it taṇhā—the feverish thirst that turns tenderness into a quiet contract.',
+        commentary: 'Your diagnosis of relational pain arrived twenty-five centuries after Gautama stated it in Sāvatthī, and in far blunter terms. In the Piyajātikā Sutta, when a grieving father objects to the claim that sorrow is born from affection, the Buddha traces grief directly to our grasping expectation that loved ones stay unchanged and answer our longing. Where modern psychology speaks gently of "unmet expectations," the Pāli Canon calls it taṇhā, the feverish thirst that turns tenderness into a quiet contract.',
         marginalia: 'In Majjhima Nikāya 87, Queen Mallikā actually defended this exact teaching to her skeptical husband, King Pasenadi, by asking him whether any harm to his beloved daughter or kingdom would bring him grief; trapped by his own answer, the king turned toward the Jetavana grove and bowed.'
       },
       echoes: [
@@ -61,7 +61,7 @@
           place: 'Meng, State of Song',
           region: 'Warring States China',
           coords: [115.65, 34.41],
-          scripture: 'Zhuangzi, Chapter 20 (Shān Mù — "The Mountain Tree")',
+          scripture: 'Zhuangzi, Chapter 20 (Shān Mù, "The Mountain Tree")',
           language: 'Classical Chinese',
           scriptDir: 'ltr',
           scriptClass: 'script-cjk',
@@ -117,7 +117,7 @@
       id: 'love-and-self',
       domain: 'Relationships & Self',
       title: 'The Self Hidden Behind Every Love',
-      ancientThesis: 'Ātmanastu Kāmāya — We love partners, children, and friends ultimately for the sake of the Self reflected through them.',
+      ancientThesis: 'Ātmanastu Kāmāya, We love partners, children, and friends ultimately for the sake of the Self reflected through them.',
       modernSummary: 'Every seemingly selfless love still passes through the lens of our own selfhood and longing.',
       specimen: 'We never truly love another person purely for themselves; we love how our own self feels through them.',
       concepts: ['relationships', 'ego', 'self_love', 'love', 'selfishness'],
@@ -146,8 +146,8 @@
         transliteration: 'Na vā are patyuḥ kāmāya patiḥ priyo bhavati, ātmanastu kāmāya patiḥ priyo bhavati.',
         translation: 'Verily, not for the sake of the husband is the husband dear, but for the sake of the Self is the husband dear. Not for the sake of the wife is the wife dear, but for the sake of the Self is the wife dear.',
         provenance: 'Bṛhadāraṇyaka Upaniṣad II.4.5, Yājñavalkya–Maitreyī Dialogue (c. 700 BCE)',
-        commentary: 'Before modern cynicism ever called love transactional, the sage Yājñavalkya stunned his wife Maitreyī on the eve of his renunciation with this exact dismantling. Going down the list—husband, wife, sons, wealth, worlds—he declared that every bond is cherished only because of the Ātman (the Self) within. Yet he turned the observation upward: if the shared Self is what we truly seek in another, then recognizing it dissolves possessiveness rather than justifying egoism.',
-        marginalia: 'Maitreyī famously refused Yājñavalkya’s offer to divide his estate between his two wives, asking: "If this whole earth filled with wealth were mine, would I become immortal through it?"—prompting one of antiquity’s earliest recorded philosophical dialogues led by a woman.'
+        commentary: 'Before modern cynicism ever called love transactional, the sage Yājñavalkya stunned his wife Maitreyī on the eve of his renunciation with this exact dismantling. Going down the list, husband, wife, sons, wealth, worlds, he declared that every bond is cherished only because of the Ātman (the Self) within. Yet he turned the observation upward: if the shared Self is what we truly seek in another, then recognizing it dissolves possessiveness rather than justifying egoism.',
+        marginalia: 'Maitreyī famously refused Yājñavalkya’s offer to divide his estate between his two wives, asking: "If this whole earth filled with wealth were mine, would I become immortal through it?", prompting one of antiquity’s earliest recorded philosophical dialogues led by a woman.'
       },
       echoes: [
         {
@@ -166,8 +166,8 @@
           transliteration: 'Hoi men oun dia to chrēsimon philountes allēlous ou kath’ hautous philousin.',
           translation: 'Those who love one another for utility do not love each other for themselves, but insofar as some good accrues to them from the other.',
           provenance: 'Aristotle, Nicomachean Ethics VIII.3, 1156a10–12 (c. 340 BCE)',
-          commentary: 'Aristotle dissected human bonds into three tiers—utility, pleasure, and character—noting that most friendships and romances belong to the first two and vanish the moment the benefit fades. Only rare "complete friendship" loves the other for who they are, and even there, Aristotle calls a true friend "another self" (allos autos).',
-          marginalia: 'Aristotle devoted two full books—a fifth of the entire Nicomachean Ethics—to philia (friendship and love), treating it as more indispensable to a city than justice itself.'
+          commentary: 'Aristotle dissected human bonds into three tiers, utility, pleasure, and character, noting that most friendships and romances belong to the first two and vanish the moment the benefit fades. Only rare "complete friendship" loves the other for who they are, and even there, Aristotle calls a true friend "another self" (allos autos).',
+          marginalia: 'Aristotle devoted two full books, a fifth of the entire Nicomachean Ethics, to philia (friendship and love), treating it as more indispensable to a city than justice itself.'
         }
       ]
     },
@@ -176,7 +176,7 @@
       id: 'nothing-new',
       domain: 'Originality & History',
       title: 'Nothing New Under the Sun',
-      ancientThesis: 'The Complaint of Unoriginality — Humanity has been lamenting that every profound thought was already spoken since 1900 BCE.',
+      ancientThesis: 'The Complaint of Unoriginality, Humanity has been lamenting that every profound thought was already spoken since 1900 BCE.',
       modernSummary: 'There are no truly original ideas left; every generation merely rediscovers and rephrases ancient truths.',
       specimen: 'There are no truly original ideas left; everything profound has already been thought before.',
       concepts: ['originality', 'history', 'repetition', 'meta'],
@@ -203,10 +203,10 @@
         scriptClass: 'script-latin',
         originalScript: 'ḥꜣ n.i mdwt n rx.tw tsw hppyw m rꜣ mꜣw n swꜣ.n.f šw m whm',
         transliteration: 'Ḥꜣ n.i mdwt n rḫ.tw, tsw ḥppyw m rꜣ mꜣw n swꜣ.n.f, šw m wḥm.',
-        translation: 'Would that I had unknown speeches, utterances that are strange, in new language that has not been used, free from repetition—not an utterance that has grown stale, which men of old have spoken.',
+        translation: 'Would that I had unknown speeches, utterances that are strange, in new language that has not been used, free from repetition, not an utterance that has grown stale, which men of old have spoken.',
         provenance: 'Writing Board BM EA 5645, recto ll. 2–3, British Museum (Middle Kingdom, c. 1900 BCE)',
         commentary: 'Even the realization that every idea is unoriginal is itself nearly four thousand years unoriginal. Around 1900 BCE, an Egyptian priest named Khakheperreseneb stared at his writing board in Heliopolis and groaned that the ancestors had already harvested every worthwhile sentence, leaving him only stale repetitions to glean.',
-        marginalia: 'This wooden stuccoed scribe’s board (BM EA 5645), now in the British Museum, predates the Book of Ecclesiastes by roughly sixteen centuries—making "everything has already been said" one of the oldest surviving complaints in literature.'
+        marginalia: 'This wooden stuccoed scribe’s board (BM EA 5645), now in the British Museum, predates the Book of Ecclesiastes by roughly sixteen centuries, making "everything has already been said" one of the oldest surviving complaints in literature.'
       },
       echoes: [
         {
@@ -226,7 +226,7 @@
           translation: 'What has been is what will be, and what has been done is what will be done; and there is nothing new under the sun.',
           provenance: 'Ecclesiastes 1:9 (Masoretic Text, composed c. 4th–3rd century BCE)',
           commentary: 'Qohelet turned the exhaustion of repetition into a full existential meditation: rivers run to the sea yet the sea is never full, generations rise and vanish, and whatever looks brand new has merely outlived our collective memory.',
-          marginalia: 'The very next verse (1:10–11) explains why people still feel original: "There is no remembrance of former things"—humanity’s genius is mostly amnesia.'
+          marginalia: 'The very next verse (1:10–11) explains why people still feel original: "There is no remembrance of former things", humanity’s genius is mostly amnesia.'
         },
         {
           year: -161,
@@ -245,7 +245,7 @@
           translation: 'Nothing has yet been said that has not been said before.',
           provenance: 'Terence, Eunuchus, Prologue l. 41 (first performed at the Ludi Megalenses, Rome, 161 BCE)',
           commentary: 'Accused by rival playwrights of stealing stock characters from older Greek comedies, the North African–born Roman playwright Terence shrugged before the entire theater: every plot and aphorism already belonged to the commons of antiquity.',
-          marginalia: 'Born in Carthage and brought to Rome as a slave before being freed and educated, Terence’s Eunuchus earned the highest fee ever paid for a Roman comedy—8,000 sesterces—and had to be performed twice in one day.'
+          marginalia: 'Born in Carthage and brought to Rome as a slave before being freed and educated, Terence’s Eunuchus earned the highest fee ever paid for a Roman comedy, 8,000 sesterces, and had to be performed twice in one day.'
         }
       ]
     },
@@ -254,7 +254,7 @@
       id: 'humility-wisdom',
       domain: 'Knowledge & Humility',
       title: 'True Wisdom Begins in Knowing You Know Nothing',
-      ancientThesis: 'Epistemic Humility — No artisan reaches the boundary of craft; the wise remain students of the ignorant.',
+      ancientThesis: 'Epistemic Humility, No artisan reaches the boundary of craft; the wise remain students of the ignorant.',
       modernSummary: 'Genuine intelligence is recognizing the vastness of your own ignorance rather than feeling certain.',
       specimen: 'True wisdom is realizing how little you actually know, while fools are certain of everything.',
       concepts: ['humility', 'knowledge', 'ignorance', 'wisdom', 'ego', 'imposter'],
@@ -323,7 +323,7 @@
           translation: 'He thinks he knows something when he does not, whereas I, just as I do not know, do not even think that I know.',
           provenance: 'Plato, Apology 21d (dramatic date: trial of Socrates, 399 BCE)',
           commentary: 'When the Delphic Oracle declared no one wiser than Socrates, Socrates spent years testing politicians, poets, and artisans until he solved the riddle: his sole advantage was refusing to hallucinate expertise where he had none.',
-          marginalia: 'Socrates never actually uttered the viral phrasing "I know that I know nothing"—in the Greek text of Apology 21d, he carefully avoids claiming even absolute ignorance, saying simply that he does not imagine he knows what he does not.'
+          marginalia: 'Socrates never actually uttered the viral phrasing "I know that I know nothing", in the Greek text of Apology 21d, he carefully avoids claiming even absolute ignorance, saying simply that he does not imagine he knows what he does not.'
         }
       ]
     },
@@ -332,7 +332,7 @@
       id: 'two-arrows',
       domain: 'Pain & Psychology',
       title: 'Pain Is Inevitable; Suffering Is the Second Arrow',
-      ancientThesis: 'Sallatha (The Two Darts) — External events inflict the first wound; our mental commentary fires the second.',
+      ancientThesis: 'Sallatha (The Two Darts), External events inflict the first wound; our mental commentary fires the second.',
       modernSummary: 'We cannot avoid physical or circumstantial pain, but the psychological agony we layer on top of it is self-inflicted.',
       specimen: 'Pain in life is unavoidable, but the suffering we create by resisting and narrating it is optional.',
       concepts: ['suffering', 'pain', 'perception', 'mind', 'emotion', 'resilience'],
@@ -354,15 +354,15 @@
         place: 'Sāvatthī, Kosala',
         region: 'Ancient India',
         coords: [82.05, 27.51],
-        scripture: 'Sallatha Sutta (Saṃyutta Nikāya 36.6 — "The Dart")',
+        scripture: 'Sallatha Sutta (Saṃyutta Nikāya 36.6, "The Dart")',
         language: 'Pāli',
         scriptDir: 'ltr',
         scriptClass: 'script-latin',
-        originalScript: 'So ekaṃyeva vedanaṃ vediyati—kāyikaṃ, na cetasikaṃ.',
-        transliteration: 'So ekaṃyeva vedanaṃ vediyati—kāyikaṃ, na cetasikaṃ.',
-        translation: 'Touched by painful feeling, the untaught person grieves, laments, and beats their breast, feeling two pains—bodily and mental—as though struck by a dart and immediately struck by a second dart. The instructed person feels only one pain: the bodily, not the mental.',
+        originalScript: 'So ekaṃyeva vedanaṃ vediyati, kāyikaṃ, na cetasikaṃ.',
+        transliteration: 'So ekaṃyeva vedanaṃ vediyati, kāyikaṃ, na cetasikaṃ.',
+        translation: 'Touched by painful feeling, the untaught person grieves, laments, and beats their breast, feeling two pains, bodily and mental, as though struck by a dart and immediately struck by a second dart. The instructed person feels only one pain: the bodily, not the mental.',
         provenance: 'Sallatha Sutta, Saṃyutta Nikāya 36.6 (Vedanāsaṃyutta, c. 5th century BCE)',
-        commentary: 'That crisp modern wellness aphorism—"pain is inevitable, suffering is optional"—is a 2,500-year-old paraphrase of the Buddha’s parable of the Two Darts. Life shoots the first arrow indiscriminately (illness, loss, setback); it is our panicked resistance, grievance, and compulsive storytelling that reloads the bow and fires the second arrow directly into our own chest.',
+        commentary: 'That crisp modern wellness aphorism, "pain is inevitable, suffering is optional", is a 2,500-year-old paraphrase of the Buddha’s parable of the Two Darts. Life shoots the first arrow indiscriminately (illness, loss, setback); it is our panicked resistance, grievance, and compulsive storytelling that reloads the bow and fires the second arrow directly into our own chest.',
         marginalia: 'The Pāli word vedanā does not mean emotion as a whole, but the raw split-second sensory tone (pleasant, unpleasant, or neutral) before thought ever builds a drama around it.'
       },
       echoes: [
@@ -382,7 +382,7 @@
           transliteration: 'Tarassei tous anthrōpous ou ta pragmata, alla ta peri tōn pragmatōn dogmata.',
           translation: 'People are disturbed not by things themselves, but by the judgments they form about those things.',
           provenance: 'Epictetus, Enchiridion 5 (c. 108–125 CE)',
-          commentary: 'Epictetus distilled the second arrow into a single Greek sentence that became the foundation stone of modern Cognitive Behavioral Therapy (CBT): external events carry no emotional voltage until our dogma—our verdict about them—assigns it.',
+          commentary: 'Epictetus distilled the second arrow into a single Greek sentence that became the foundation stone of modern Cognitive Behavioral Therapy (CBT): external events carry no emotional voltage until our dogma, our verdict about them, assigns it.',
           marginalia: 'Aaron Beck and Albert Ellis, founders of CBT and REBT in the 1950s–60s, both explicitly cited this exact line from Epictetus as the historical ancestor of cognitive therapy.'
         },
         {
@@ -402,7 +402,7 @@
           translation: 'Remove the judgment, and "I have been harmed" is removed; remove "I have been harmed," and the harm itself is gone.',
           provenance: 'Marcus Aurelius, Meditations (Ta eis heauton) IV.7 (written on military campaign, c. 170–180 CE)',
           commentary: 'Jotting private reminders by oil lamp on the freezing Danube frontier during plague and war, the Roman emperor trained himself to strip away his interpretive commentary until only the bare physical fact remained.',
-          marginalia: 'Marcus Aurelius never titled his notebook "Meditations" nor intended it for publication; the Greek manuscript is headed simply Ta eis heauton—"Things to Himself."'
+          marginalia: 'Marcus Aurelius never titled his notebook "Meditations" nor intended it for publication; the Greek manuscript is headed simply Ta eis heauton, "Things to Himself."'
         }
       ]
     },
@@ -411,7 +411,7 @@
       id: 'impermanence-flux',
       domain: 'Change & Time',
       title: 'Everything Flows; Nothing Stays the Same',
-      ancientThesis: 'Panta Rhei & Anicca — Stability is a slow illusion; both the river and the person stepping into it change ceaselessly.',
+      ancientThesis: 'Panta Rhei & Anicca, Stability is a slow illusion; both the river and the person stepping into it change ceaselessly.',
       modernSummary: 'Nothing in life is permanent; trying to freeze a moment, identity, or season is fighting the basic fabric of reality.',
       specimen: 'You can never return to the same moment twice because both the world and you have already changed.',
       concepts: ['impermanence', 'change', 'time', 'flux', 'letting_go'],
@@ -440,8 +440,8 @@
         transliteration: 'Potamoisi toisin autoisin embainousin hetera kai hetera hydata epirrei.',
         translation: 'Upon those who step into the same rivers, different and ever-different waters flow.',
         provenance: 'Heraclitus, Fragment DK B12 (quoted by Arius Didymus apud Eusebius, Praeparatio Evangelica XV.20.2, c. 500 BCE)',
-        commentary: 'Heraclitus of Ephesus—nicknamed "the Obscure" for depositing his book in the Temple of Artemis so the crowd could not misread it—saw that persistence itself is an optical trick of continuous motion. A river remains a river only because its waters never stop leaving; pause the flow and the river ceases to exist.',
-        marginalia: 'The punchier slogan "you cannot step into the same river twice" is actually Plato’s paraphrase of Heraclitus in Cratylus 402a; the authentic Ionic fragment (B12) is subtler—it insists the river stays "the same" precisely by constantly replacing itself.'
+        commentary: 'Heraclitus of Ephesus, nicknamed "the Obscure" for depositing his book in the Temple of Artemis so the crowd could not misread it, saw that persistence itself is an optical trick of continuous motion. A river remains a river only because its waters never stop leaving; pause the flow and the river ceases to exist.',
+        marginalia: 'The punchier slogan "you cannot step into the same river twice" is actually Plato’s paraphrase of Heraclitus in Cratylus 402a; the authentic Ionic fragment (B12) is subtler, it insists the river stays "the same" precisely by constantly replacing itself.'
       },
       echoes: [
         {
@@ -460,7 +460,7 @@
           transliteration: 'Vayadhammā saṅkhārā, appamādena sampādetha.',
           translation: 'All conditioned things are subject to decay; strive on with heedfulness.',
           provenance: 'Mahāparinibbāna Sutta, Dīgha Nikāya 16, Chapter VI (recorded last words of the Buddha, c. 5th century BCE)',
-          commentary: 'Lying between two twin sal trees at Kusinārā, the Buddha condensed forty-five years of teaching into a single parting line: anything assembled—bodies, empires, friendships, thoughts—carries dissolution built into its architecture.',
+          commentary: 'Lying between two twin sal trees at Kusinārā, the Buddha condensed forty-five years of teaching into a single parting line: anything assembled, bodies, empires, friendships, thoughts, carries dissolution built into its architecture.',
           marginalia: 'In Buddhist ontology, anicca (impermanence) is not merely a melancholy observation about aging; it is the exact reason suffering is curable, since no troubled state can lock itself permanently either.'
         },
         {
@@ -479,7 +479,7 @@
           transliteration: 'Potamos tis esti tōn ginomenōn kai rheuma biaion ho aiōn.',
           translation: 'Time is a river of passing events, and strong is its current; no sooner is a thing brought to sight than it is swept away and another takes its place.',
           provenance: 'Marcus Aurelius, Meditations IV.43 (c. 175 CE)',
-          commentary: 'Six centuries after Heraclitus, Marcus Aurelius openly borrowed the river metaphor to calm his dread of losing power, children, and reputation—reminding himself that clinging to a wave in mid-current is sheer comedy.',
+          commentary: 'Six centuries after Heraclitus, Marcus Aurelius openly borrowed the river metaphor to calm his dread of losing power, children, and reputation, reminding himself that clinging to a wave in mid-current is sheer comedy.',
           marginalia: 'Marcus quoted Heraclitus by name at least five times in the Meditations, treating the fiery Ephesian philosopher as his favorite antidote to rigidity.'
         }
       ]
@@ -489,7 +489,7 @@
       id: 'wu-wei',
       domain: 'Action & Effort',
       title: 'Forcing Things Ruins Them',
-      ancientThesis: 'Wú Wéi (無為) — Trying too hard to control or force an outcome breaks the very thing you seek to hold.',
+      ancientThesis: 'Wú Wéi (無為), Trying too hard to control or force an outcome breaks the very thing you seek to hold.',
       modernSummary: 'Excessive strain and anxious over-control sabotage performance, love, and creativity; mastery looks effortless.',
       specimen: 'When you try too hard to force a result, you end up ruining it.',
       concepts: ['effortless_action', 'control', 'forcing', 'flow', 'overtrying'],
@@ -518,8 +518,8 @@
         transliteration: 'Wéi zhě bài zhī, zhí zhě shī zhī. Shì yǐ shèng rén wú wéi, gù wú bài; wú zhí, gù wú shī.',
         translation: 'Those who try to force it spoil it; those who grasp it lose it. Therefore the sage acts without forcing and spoils nothing, does not grasp and loses nothing.',
         provenance: 'Dao De Jing, Chapter 64 (echoing Chapter 29; Guodian bamboo slips c. 300 BCE & Wang Bi text)',
-        commentary: 'Modern productivity writers call it "the backwards law" or "flow state"; Laozi carved it onto bamboo strips over two millennia ago as wú wéi—literally "non-coercive action." It is not laziness, but the recognition that reality has grain like wood or currents like water: push against the grain with clenched fists and the work splinters in your hands.',
-        marginalia: 'Chapter 64 appears among the Guodian Chu bamboo slips discovered in a Hubei tomb dated to roughly 300 BCE—the oldest surviving physical manuscript of the Dao De Jing.'
+        commentary: 'Modern productivity writers call it "the backwards law" or "flow state"; Laozi carved it onto bamboo strips over two millennia ago as wú wéi, literally "non-coercive action." It is not laziness, but the recognition that reality has grain like wood or currents like water: push against the grain with clenched fists and the work splinters in your hands.',
+        marginalia: 'Chapter 64 appears among the Guodian Chu bamboo slips discovered in a Hubei tomb dated to roughly 300 BCE, the oldest surviving physical manuscript of the Dao De Jing.'
       },
       echoes: [
         {
@@ -530,7 +530,7 @@
           place: 'Meng, State of Song',
           region: 'Warring States China',
           coords: [115.65, 34.41],
-          scripture: 'Zhuangzi, Chapter 3 (Yǎng Shēng Zhǔ — "Cook Ding")',
+          scripture: 'Zhuangzi, Chapter 3 (Yǎng Shēng Zhǔ, "Cook Ding")',
           language: 'Classical Chinese',
           scriptDir: 'ltr',
           scriptClass: 'script-cjk',
@@ -538,7 +538,7 @@
           transliteration: 'Yī hū tiān lǐ, pī dà xì, dǎo dà kuǎn, yīn qí gù rán.',
           translation: 'I follow the natural structure, strike into the big hollows, guide the blade through the wide gaps, and rely on things as they already are.',
           provenance: 'Zhuangzi, Inner Chapters, Chapter 3 (Cook Ding carving an ox for Lord Wenhui, c. 300 BCE)',
-          commentary: 'Zhuangzi illustrated effortless mastery through a humble butcher whose knife stayed razor-sharp for nineteen years after carving thousands of oxen—because he never hacked through bone by brute will, but slipped effortlessly through the natural spaces already there.',
+          commentary: 'Zhuangzi illustrated effortless mastery through a humble butcher whose knife stayed razor-sharp for nineteen years after carving thousands of oxen, because he never hacked through bone by brute will, but slipped effortlessly through the natural spaces already there.',
           marginalia: 'In Zhuangzi’s hands, supreme philosophical skill belongs not to monarchs or scholars, but to butchers, wheelwrights, swimmers, and cicada-catchers.'
         }
       ]
@@ -548,7 +548,7 @@
       id: 'soft-overcomes-hard',
       domain: 'Power & Resilience',
       title: 'Gentleness Outlasts Brute Force',
-      ancientThesis: 'Róu Ruò Shèng Gāng Qiáng — What bends survives the storm; water wears down stone without ever striking it.',
+      ancientThesis: 'Róu Ruò Shèng Gāng Qiáng, What bends survives the storm; water wears down stone without ever striking it.',
       modernSummary: 'Flexibility, patience, and gentle persistence quietly defeat rigid strength and aggression.',
       specimen: 'True strength is flexibility and gentleness; whatever is rigid and forceful eventually breaks.',
       concepts: ['gentleness', 'power', 'flexibility', 'resilience', 'water'],
@@ -577,7 +577,7 @@
         transliteration: 'Bə’ōreḵ ’appayim yəfutteh qāṣîn, wəlāshôn rakkāh tishbār-gārem.',
         translation: 'With patience a ruler may be persuaded, and a soft tongue will break a bone.',
         provenance: 'Proverbs 25:15 (from the royal collection copied by the scribes of King Hezekiah, c. 7th–5th century BCE)',
-        commentary: 'Notice the jarring physical paradox preserved in the Hebrew court proverbs more than twenty-five centuries ago: gentleness does not merely soothe—it fractures bone, cracking brittle defenses that aggression only welds tighter.',
+        commentary: 'Notice the jarring physical paradox preserved in the Hebrew court proverbs more than twenty-five centuries ago: gentleness does not merely soothe, it fractures bone, cracking brittle defenses that aggression only welds tighter.',
         marginalia: 'Chapters 25–29 of Proverbs carry an explicit archival colophon crediting royal scribes of King Hezekiah (late 8th century BCE) with copying older wisdom collections.'
       },
       echoes: [
@@ -598,7 +598,7 @@
           translation: 'Nothing under heaven is softer and more yielding than water; yet for overcoming the hard and strong, nothing can surpass it, because nothing can alter its nature.',
           provenance: 'Dao De Jing, Chapter 78 (see also Chapter 76: "The stiff and unbending belong to death; the supple and yielding belong to life")',
           commentary: 'Laozi looked at corpses and dry timber versus newborns and green shoots and inverted humanity’s entire instinct about power. Rigidity looks intimidating until pressure arrives; suppleness absorbs shock, slips around obstacles, and carves canyons out of granite simply by refusing to harden.',
-          marginalia: 'Laozi’s water metaphor went on to shape East Asian martial arts (tài jí and jūdō—literally "the gentle way"), hydrology philosophy, and statecraft for twenty-four centuries.'
+          marginalia: 'Laozi’s water metaphor went on to shape East Asian martial arts (tài jí and jūdō, literally "the gentle way"), hydrology philosophy, and statecraft for twenty-four centuries.'
         }
       ]
     },
@@ -607,8 +607,8 @@
       id: 'control-response',
       domain: 'Agency & Stoicism',
       title: 'The Dichotomy of Control',
-      ancientThesis: 'Niṣkāma Karma & Ta Eph’ Hēmin — Your jurisdiction ends at your own action and choice; outcomes belong to the universe.',
-      modernSummary: 'You cannot control what happens to you or the outcomes of your work—only your own intentions, effort, and response.',
+      ancientThesis: 'Niṣkāma Karma & Ta Eph’ Hēmin, Your jurisdiction ends at your own action and choice; outcomes belong to the universe.',
+      modernSummary: 'You cannot control what happens to you or the outcomes of your work, only your own intentions, effort, and response.',
       specimen: 'You have total control over your actions and responses, and zero control over the final outcome.',
       concepts: ['control', 'agency', 'outcomes', 'stoicism', 'detachment'],
       phrases: [
@@ -636,7 +636,7 @@
         transliteration: 'Karmaṇy evādhikāras te mā phaleṣu kadācana; mā karmaphalahetur bhūr mā te saṅgo ’stv akarmaṇi.',
         translation: 'Your right and jurisdiction are to action alone, never to its fruits. Let not the fruit of action be your motive, nor let your attachment be to inaction.',
         provenance: 'Bhagavad Gītā, Chapter II (Sāṅkhya Yoga), v. 47 (c. 2nd century BCE)',
-        commentary: 'Every modern "trust the process" manifesto is a pale echo of this single Sanskrit śloka. Notice its double edge: the Gītā does not tell you to withdraw from work when results are uncertain—it strips away your claim of ownership over the payoff while forbidding apathy as an excuse.',
+        commentary: 'Every modern "trust the process" manifesto is a pale echo of this single Sanskrit śloka. Notice its double edge: the Gītā does not tell you to withdraw from work when results are uncertain, it strips away your claim of ownership over the payoff while forbidding apathy as an excuse.',
         marginalia: 'The word adhikāra literally means legal jurisdiction or domain of authority; you are sovereign over the effort you put forth and a complete foreigner to the outcome.'
       },
       echoes: [
@@ -666,7 +666,7 @@
       id: 'imagined-anxiety',
       domain: 'Fear & Overthinking',
       title: 'We Suffer More in Imagination Than Reality',
-      ancientThesis: 'Opinione Quam Re — Most human dread is rehearsed catastrophe for futures that never materialize.',
+      ancientThesis: 'Opinione Quam Re, Most human dread is rehearsed catastrophe for futures that never materialize.',
       modernSummary: 'Our anxiety is overwhelmingly caused by inventing worst-case futures in our heads rather than actual present danger.',
       specimen: 'Most of our suffering happens in our imagination, worrying about futures that never arrive.',
       concepts: ['anxiety', 'imagination', 'worry', 'fear', 'overthinking'],
@@ -693,9 +693,9 @@
         scriptClass: 'script-greek',
         originalScript: 'Ὁ τῆς φύσεως πλοῦτος καὶ ὥρισται καὶ εὐπόριστός ἐστιν· ὁ δὲ τῶν κενῶν δοξῶν εἰς ἄπειρον ἐκπίπτει.',
         transliteration: 'Ho tēs physeōs ploutos kai hōristai kai euporistos estin; ho de tōn kenōn doxōn eis apeiron ekpiptei.',
-        translation: 'Nature’s wealth is both bounded and easy to obtain; the wealth—and fear—born of empty opinions stretches out to infinity.',
+        translation: 'Nature’s wealth is both bounded and easy to obtain; the wealth, and fear, born of empty opinions stretches out to infinity.',
         provenance: 'Epicurus, Principal Doctrines (Kyriai Doxai) XV, preserved in Diogenes Laërtius X.144 (c. 300 BCE)',
-        commentary: 'Epicurus diagnosed anxiety as kenodoxia—"empty opinion," the mind spinning unbounded projections untethered from real bodily need or present evidence. What actually hurts in the moment is usually finite and bearable; it is the infinite theater of speculation that exhausts us.',
+        commentary: 'Epicurus diagnosed anxiety as kenodoxia, "empty opinion," the mind spinning unbounded projections untethered from real bodily need or present evidence. What actually hurts in the moment is usually finite and bearable; it is the infinite theater of speculation that exhausts us.',
         marginalia: 'Epicurus’s "Garden" outside the Dipylon Gate of Athens scandalized conventional society by admitting women and enslaved people as full philosophical equals.'
       },
       echoes: [
@@ -725,7 +725,7 @@
       id: 'desire-sufficiency',
       domain: 'Desire & Contentment',
       title: 'Happiness Is Wanting Less, Not Getting More',
-      ancientThesis: 'Santuṭṭhi & Zhī Zú — Appetite is a bottomless pit; wealth consists in the smallness of one’s wants.',
+      ancientThesis: 'Santuṭṭhi & Zhī Zú, Appetite is a bottomless pit; wealth consists in the smallness of one’s wants.',
       modernSummary: 'Chasing more money, pleasure, or possessions never satisfies because the goalpost always moves; peace comes from sufficiency.',
       specimen: 'Happiness is not getting everything you want, but needing less and knowing when enough is enough.',
       concepts: ['desire', 'contentment', 'wealth', 'greed', 'hedonic_treadmill', 'happiness'],
@@ -755,7 +755,7 @@
         translation: 'Not even a rain of gold coins brings satisfaction in sensual desires. Knowing that desires yield brief sweetness and long pain, the wise person finds no delight even in heavenly pleasures.',
         provenance: 'Dhammapada, Chapter XIV (Buddhavagga), v. 186 (c. 5th century BCE)',
         commentary: 'Long before behavioral economists named the "hedonic treadmill," the Pāli Canon noticed that pouring treasure onto craving is like drinking salt water to cure thirst. Each acquisition raises the baseline of appetite rather than extinguishing it.',
-        marginalia: 'In the Raṭṭhapāla Sutta (MN 82), a wealthy merchant’s son walks away from a literal mountain of gold after summarizing the world in four axioms—the fourth being: "The world is incomplete, insatiate, the slave of craving."'
+        marginalia: 'In the Raṭṭhapāla Sutta (MN 82), a wealthy merchant’s son walks away from a literal mountain of gold after summarizing the world in four axioms, the fourth being: "The world is incomplete, insatiate, the slave of craving."'
       },
       echoes: [
         {
@@ -774,7 +774,7 @@
           transliteration: 'Huò mò dà yú bù zhī zú, jiù mò dà yú yù dé. Gù zhī zú zhī zú, cháng zú yǐ.',
           translation: 'No misfortune is greater than not knowing what is enough; no fault is greater than craving acquisition. Therefore, the sufficiency of knowing enough is always enough.',
           provenance: 'Dao De Jing, Chapter 46 (c. 5th–4th century BCE)',
-          commentary: 'Laozi treated insatiability not as a mild personal quirk, but as the root of war itself—remarking in the opening lines of the same chapter that when a society loses sufficiency, warhorses are bred on the sacred outskirts.',
+          commentary: 'Laozi treated insatiability not as a mild personal quirk, but as the root of war itself, remarking in the opening lines of the same chapter that when a society loses sufficiency, warhorses are bred on the sacred outskirts.',
           marginalia: 'The four-character idiom zhī zú cháng lè ("knowing enough brings lasting joy") became one of the most inscribed mottos on Chinese studio walls and inkstones.'
         },
         {
@@ -794,7 +794,7 @@
           translation: 'Nothing is enough for the person to whom enough is too little.',
           provenance: 'Epicurus, Gnomologium Vaticanum 68 (preserved in a 14th-century Vatican manuscript, Codex Vaticanus Graecus 1950)',
           commentary: 'Epicurus inverted the stereotype that later got attached to his name: far from advocating luxury, he lived on bread, water, and occasional cheese, arguing that wanting less makes you instantly wealthier than kings.',
-          marginalia: 'Seneca loved quoting Epicurus’s poverty-maxims in his own Stoic letters—calling them "plunder brought back from the enemy’s camp."'
+          marginalia: 'Seneca loved quoting Epicurus’s poverty-maxims in his own Stoic letters, calling them "plunder brought back from the enemy’s camp."'
         }
       ]
     },
@@ -803,7 +803,7 @@
       id: 'self-mastery',
       domain: 'Discipline & Power',
       title: 'Conquering Yourself Is the Highest Victory',
-      ancientThesis: 'Self-Conquest — Ruling empires is easy compared to governing one’s own impulses and mind.',
+      ancientThesis: 'Self-Conquest, Ruling empires is easy compared to governing one’s own impulses and mind.',
       modernSummary: 'Real power and strength are measured by mastering yourself, not dominating or conquering other people.',
       specimen: 'True strength is governing your own mind, not conquering or controlling other people.',
       concepts: ['self_mastery', 'discipline', 'power', 'strength', 'mind'],
@@ -853,7 +853,7 @@
           translation: 'Knowing others is cleverness; knowing yourself is lucidity. Overcoming others takes force; overcoming yourself is true strength.',
           provenance: 'Dao De Jing, Chapter 33 (c. 5th–4th century BCE)',
           commentary: 'Laozi separates mere muscular leverage (lì) from durable inner strength (qiáng): anyone with weapons or leverage can overpower a rival, yet remain a hostage to their own temper.',
-          marginalia: 'Notice the sharp pairing of intelligence vs. illumination (zhì vs. míng) right alongside outward force vs. inward power—linking self-knowledge directly to self-command.'
+          marginalia: 'Notice the sharp pairing of intelligence vs. illumination (zhì vs. míng) right alongside outward force vs. inward power, linking self-knowledge directly to self-command.'
         },
         {
           year: 65,
@@ -872,7 +872,7 @@
           translation: 'To command oneself is the greatest empire.',
           provenance: 'Seneca, Moral Letters to Lucilius, Letter 113, Section 30 (c. 64–65 CE)',
           commentary: 'Written in the capital of an empire stretching from Britain to the Euphrates, Seneca’s five Latin words stung like quiet treason: the grandest imperium on earth fits inside one skull.',
-          marginalia: 'In the same paragraph Seneca mocks Alexander the Great—conqueror of Persia and master of half the known world, yet utterly unable to rule his own wrath.'
+          marginalia: 'In the same paragraph Seneca mocks Alexander the Great, conqueror of Persia and master of half the known world, yet utterly unable to rule his own wrath.'
         }
       ]
     },
@@ -881,7 +881,7 @@
       id: 'mind-precedes-all',
       domain: 'Mind & Reality',
       title: 'Mind Precedes and Shapes Your Entire World',
-      ancientThesis: 'Manopubbaṅgamā Dhammā — Thought is the architect of experience; our inner lens dyes every external fact.',
+      ancientThesis: 'Manopubbaṅgamā Dhammā, Thought is the architect of experience; our inner lens dyes every external fact.',
       modernSummary: 'Our reality is shaped far more by the state and quality of our thoughts than by external circumstances.',
       specimen: 'Your mind creates your reality; we do not see the world as it is, we see it as our thoughts color it.',
       concepts: ['mind', 'perception', 'thoughts', 'consciousness', 'reality'],
@@ -949,7 +949,7 @@
           transliteration: 'Hoia an pollakis phantasthēis, toiautē soi estai hē dianoia; baptetai gar hypo tōn phantasiōn hē psychē.',
           translation: 'Such as are your habitual impressions, such also will be the character of your mind; for the soul is dyed by its thoughts.',
           provenance: 'Marcus Aurelius, Meditations V.16 (c. 175 CE)',
-          commentary: 'Using the vivid craft image of wool steeped repeatedly in a dye vat (baptetai), Marcus observed that we do not merely have thoughts—we soak in them until their pigment becomes our permanent complexion.',
+          commentary: 'Using the vivid craft image of wool steeped repeatedly in a dye vat (baptetai), Marcus observed that we do not merely have thoughts, we soak in them until their pigment becomes our permanent complexion.',
           marginalia: 'The Greek verb baptein (to dip or dye cloth) is the same root that gave English the word "baptize."'
         }
       ]
@@ -959,7 +959,7 @@
       id: 'ego-nonduality',
       domain: 'Consciousness & Ego',
       title: 'The Illusion of the Separate Ego',
-      ancientThesis: 'Tat Tvam Asi — The boundary between the observer inside you and the fabric of the cosmos is an illusion.',
+      ancientThesis: 'Tat Tvam Asi, The boundary between the observer inside you and the fabric of the cosmos is an illusion.',
       modernSummary: 'The isolated ego is a construct; the awareness inside you and the universe you observe are fundamentally one.',
       specimen: 'The separate ego is an illusion; the observer inside us and the universe itself are the same consciousness.',
       concepts: ['ego', 'nonduality', 'consciousness', 'oneness', 'self', 'spirituality'],
@@ -986,7 +986,7 @@
         scriptClass: 'script-deva',
         originalScript: 'स य एषोऽणिमैतदात्म्यमिदं सर्वं तत्सत्यं स आत्मा तत्त्वमसि श्वेतकेतो।',
         transliteration: 'Sa ya eṣo ’ṇimaitadātmyam idaṃ sarvaṃ tat satyaṃ sa ātmā tat tvam asi, Śvetaketo.',
-        translation: 'That subtle essence—all that exists has this as its Self. That is the Real. That is the Self. And that thou art, Śvetaketu.',
+        translation: 'That subtle essence, all that exists has this as its Self. That is the Real. That is the Self. And that thou art, Śvetaketu.',
         provenance: 'Chāndogya Upaniṣad VI.8.7 (repeated nine times across VI.8–16, c. 700 BCE)',
         commentary: 'When the young scholar Śvetaketu returned home after twelve years of study swollen with academic pride, his father Uddālaka dismantled his ego with salt dissolved in water and the seed of a banyan tree. Nine times he drove the same thunderbolt home: the invisible essence sustaining every star and leaf is not apart from the witness peering through your eyes.',
         marginalia: 'Uddālaka’s salt-in-water experiment (Chāndogya 6.13) is one of the earliest recorded thought-and-kitchen experiments in world philosophy: you can no longer see the salt in the bowl, yet taste any drop from top, middle, or bottom and it is salt throughout.'
@@ -1008,8 +1008,8 @@
           transliteration: 'Netaṃ mama, nesohamasmi, na meso attā.',
           translation: 'This is not mine; this I am not; this is not my self.',
           provenance: 'Anattalakkhaṇa Sutta, Saṃyutta Nikāya 22.59 (second discourse at Sarnath, c. 5th century BCE)',
-          commentary: 'Where the Upaniṣads expanded the self until it swallowed the cosmos, the Buddha attacked the ego from the opposite flank—showing that body, feelings, perceptions, impulses, and consciousness are all shifting streams with no permanent little homunculus steering inside.',
-          marginalia: 'Modern cognitive neuroscience’s discovery that the brain has no single central "self-module"—only distributed processes stitched into a narrative—echoes this exact five-aggregate analysis.'
+          commentary: 'Where the Upaniṣads expanded the self until it swallowed the cosmos, the Buddha attacked the ego from the opposite flank, showing that body, feelings, perceptions, impulses, and consciousness are all shifting streams with no permanent little homunculus steering inside.',
+          marginalia: 'Modern cognitive neuroscience’s discovery that the brain has no single central "self-module", only distributed processes stitched into a narrative, echoes this exact five-aggregate analysis.'
         },
         {
           year: -500,
@@ -1037,7 +1037,7 @@
       id: 'perspectivism',
       domain: 'Truth & Perspective',
       title: 'Every Mind Sees Only One Side of the Elephant',
-      ancientThesis: 'Anekāntavāda — Reality is many-sided; fanaticism is mistaking your local slice for the entire truth.',
+      ancientThesis: 'Anekāntavāda, Reality is many-sided; fanaticism is mistaking your local slice for the entire truth.',
       modernSummary: 'Every person perceives only a fragment of reality from their own angle, yet argues as if they possess the whole.',
       specimen: 'Every person holds only a fragment of the truth, yet fights as if they see the whole.',
       concepts: ['perspective', 'truth', 'relativism', 'humility', 'empathy', 'dogma'],
@@ -1066,8 +1066,8 @@
         transliteration: 'Imesu kira sajjanti eke samaṇabrāhmaṇā; viggayha naṃ vivadanti janā ekaṅgadassino.',
         translation: 'To these views some ascetics and thinkers cling; quarreling and brawling over them, they are people who see only one side.',
         provenance: 'Tittha Sutta, Udāna VI.4 (The Blind Men and the Elephant, Pāli Canon, c. 5th c. BCE); parallel Jain doctrine of Anekāntavāda & Syādvāda',
-        commentary: 'Your realization that warring camps each hold a partial slice is literally the Parable of the Blind Men and the Elephant from fifth-century BCE India. One feels a leg and swears the elephant is a pillar; another feels the ear and swears it is a winnowing fan—and soon they come to blows, each wholly accurate about his sliver and wholly blind to the animal.',
-        marginalia: 'Jain philosophers formalized this insight into Syādvāda ("the doctrine of maybe"), prefixing philosophical claims with syāt—"from a certain standpoint"—as an intellectual vaccine against absolutism.'
+        commentary: 'Your realization that warring camps each hold a partial slice is literally the Parable of the Blind Men and the Elephant from fifth-century BCE India. One feels a leg and swears the elephant is a pillar; another feels the ear and swears it is a winnowing fan, and soon they come to blows, each wholly accurate about his sliver and wholly blind to the animal.',
+        marginalia: 'Jain philosophers formalized this insight into Syādvāda ("the doctrine of maybe"), prefixing philosophical claims with syāt, "from a certain standpoint", as an intellectual vaccine against absolutism.'
       },
       echoes: [
         {
@@ -1078,7 +1078,7 @@
           place: 'Meng, State of Song',
           region: 'Warring States China',
           coords: [115.65, 34.41],
-          scripture: 'Zhuangzi, Chapter 2 (Qí Wù Lùn — "Equalizing Things")',
+          scripture: 'Zhuangzi, Chapter 2 (Qí Wù Lùn, "Equalizing Things")',
           language: 'Classical Chinese',
           scriptDir: 'ltr',
           scriptClass: 'script-cjk',
@@ -1087,7 +1087,7 @@
           translation: 'There is nothing that is not "that," and nothing that is not "this." From "that" standpoint you cannot see it; from your own standpoint you think you know it.',
           provenance: 'Zhuangzi, Inner Chapters, Chapter 2 (Qí Wù Lùn, c. 300 BCE)',
           commentary: 'Zhuangzi laughed at rival Confucian and Mohist schools endlessly declaring each other wrong: "this" and "that" shift the moment you walk three paces to the left. Wisdom stands at the pivot of the hinge, seeing how every perspective generates its own blind spot.',
-          marginalia: 'In the same chapter, Zhuangzi asks: if humans sleep in damp places they get aching backs—does an eel? Humans tremble up in tall trees—does a monkey? Which of the three knows the "right" place to live?'
+          marginalia: 'In the same chapter, Zhuangzi asks: if humans sleep in damp places they get aching backs, does an eel? Humans tremble up in tall trees, does a monkey? Which of the three knows the "right" place to live?'
         }
       ]
     },
@@ -1096,7 +1096,7 @@
       id: 'illusion-perception',
       domain: 'Reality & Illusion',
       title: 'We Mistake Shadows for Reality',
-      ancientThesis: 'Doxa vs. Alētheia — Ordinary appearances are a wall of shadows we mistake for the real world.',
+      ancientThesis: 'Doxa vs. Alētheia, Ordinary appearances are a wall of shadows we mistake for the real world.',
       modernSummary: 'Most humans live trapped inside cultural conditioning and sensory illusions, mistaking shadows on the wall for truth.',
       specimen: 'Most people live inside a mental simulation of shadows and fear anyone who tries to show them reality.',
       concepts: ['illusion', 'perception', 'reality', 'conditioning', 'simulation', 'awakening'],
@@ -1125,7 +1125,7 @@
         transliteration: 'Mēde s’ ethos polypeiron hodon kata tēnde biasthō, nōman askopon omma kai ēchēessan akouēn.',
         translation: 'Let not habit, born of much experience, force you along this beaten road, plying an aimless eye and echoing ear; rather judge by reason the much-contested proof.',
         provenance: 'Parmenides, On Nature, Fragment DK B7.3–5 (preserved in Sextus Empiricus, c. 480 BCE)',
-        commentary: 'Nearly a century before Plato’s famous Cave—and 2,500 years before The Matrix—Parmenides split human understanding into the Way of Truth (Alētheia) and the Way of Mortal Seeming (Doxa). Habitual sensory experience, he warned, is a well-worn rut that deceives two-headed mortals who mistake surface flicker for what truly is.',
+        commentary: 'Nearly a century before Plato’s famous Cave, and 2,500 years before The Matrix, Parmenides split human understanding into the Way of Truth (Alētheia) and the Way of Mortal Seeming (Doxa). Habitual sensory experience, he warned, is a well-worn rut that deceives two-headed mortals who mistake surface flicker for what truly is.',
         marginalia: 'Parmenides wrote the founding work of Western logic and metaphysics not as dry prose, but as an ecstatic hexameter poem in which a chariot drawn by mares carries him beyond the gates of Night and Day to meet an unnamed goddess.'
       },
       echoes: [
@@ -1137,7 +1137,7 @@
           place: 'Athens, Attica',
           region: 'Ancient Greece',
           coords: [23.72, 37.98],
-          scripture: 'Republic, Book VII (514a–517a — Allegory of the Cave)',
+          scripture: 'Republic, Book VII (514a–517a, Allegory of the Cave)',
           language: 'Attic Greek',
           scriptDir: 'ltr',
           scriptClass: 'script-greek',
@@ -1145,8 +1145,8 @@
           transliteration: 'Pantapasi dē hoi toioutoi ouk an allo ti nomizoien to alēthes ē tas tōn skeuastōn skias.',
           translation: 'To such prisoners, the truth would be literally nothing other than the shadows of manufactured objects.',
           provenance: 'Plato, Republic VII.515c (c. 375 BCE)',
-          commentary: 'Plato turned Parmenides’s intuition into history’s most enduring image of mass delusion: prisoners chained from childhood watching puppet-shadows on a cave wall—who would even kill the freed companion who returns blinking from the sunlight to tell them their reality is a projection.',
-          marginalia: 'Plato explicitly notes that the prisoners hold contests and bestow honors on whoever is quickest at predicting which shadow will pass next—an uncanny portrait of modern punditry.'
+          commentary: 'Plato turned Parmenides’s intuition into history’s most enduring image of mass delusion: prisoners chained from childhood watching puppet-shadows on a cave wall, who would even kill the freed companion who returns blinking from the sunlight to tell them their reality is a projection.',
+          marginalia: 'Plato explicitly notes that the prisoners hold contests and bestow honors on whoever is quickest at predicting which shadow will pass next, an uncanny portrait of modern punditry.'
         },
         {
           year: -300,
@@ -1164,8 +1164,8 @@
           transliteration: 'Bù zhī Zhōu zhī mèng wéi húdié yú, húdié zhī mèng wéi Zhōu yú?',
           translation: 'He did not know whether he was Zhuang Zhou who had dreamt he was a butterfly, or a butterfly now dreaming he was Zhuang Zhou.',
           provenance: 'Zhuangzi, Inner Chapters, Chapter 2 (Qí Wù Lùn, c. 300 BCE)',
-          commentary: 'Rather than fleeing the dream for a stern realm of Forms, Zhuangzi gently dissolved the boundary between dreamer and waking reality—leaving us smiling at how flimsy our certainty about "being awake" really is.',
-          marginalia: 'Unlike Descartes’s anxious "evil demon" dream skepticism nearly two millennia later, Zhuangzi greets the uncertainty with delight, calling it wù huà—"the transformation of things."'
+          commentary: 'Rather than fleeing the dream for a stern realm of Forms, Zhuangzi gently dissolved the boundary between dreamer and waking reality, leaving us smiling at how flimsy our certainty about "being awake" really is.',
+          marginalia: 'Unlike Descartes’s anxious "evil demon" dream skepticism nearly two millennia later, Zhuangzi greets the uncertainty with delight, calling it wù huà, "the transformation of things."'
         }
       ]
     },
@@ -1174,7 +1174,7 @@
       id: 'fear-of-death',
       domain: 'Mortality & Fear',
       title: 'Why Fearing Death Is a Logical Error',
-      ancientThesis: 'Ho Thanatos Ouden Pros Hēmas — You never meet your own death; where you are, death is not, and where death is, you are not.',
+      ancientThesis: 'Ho Thanatos Ouden Pros Hēmas, You never meet your own death; where you are, death is not, and where death is, you are not.',
       modernSummary: 'Fearing being dead makes no sense because you will not be conscious to experience non-existence, just as you did not suffer before you were born.',
       specimen: 'Fearing death is irrational because when we are dead we will not exist to experience being dead.',
       concepts: ['death', 'fear', 'mortality', 'nonexistence', 'logic'],
@@ -1203,7 +1203,7 @@
         transliteration: 'Ho thanatos ouden pros hēmas; epeidēper hotan men hēmeis ōmen, ho thanatos ou parestin, hotan de ho thanatos parēi, toth’ hēmeis ouk esmen.',
         translation: 'Death is nothing to us: since when we exist, death is not present, and when death is present, then we do not exist.',
         provenance: 'Epicurus, Letter to Menoeceus 125 (preserved in Diogenes Laërtius X.125, c. 300 BCE)',
-        commentary: 'Your sleek argument dissolving the terror of non-existence was already carved onto Greek garden walls in 300 BCE. Epicurus noticed that humans secretly smuggle a ghostly spectator into their own coffin—imagining themselves watching themselves be dead—when death by definition removes the witness.',
+        commentary: 'Your sleek argument dissolving the terror of non-existence was already carved onto Greek garden walls in 300 BCE. Epicurus noticed that humans secretly smuggle a ghostly spectator into their own coffin, imagining themselves watching themselves be dead, when death by definition removes the witness.',
         marginalia: 'Inscribed across a massive stone colonnade in Oenoanda (Turkey) by Diogenes of Oenoanda in the 2nd century CE as the "Four-Part Cure" (Tetrapharmakos): "Don’t fear god, don’t worry about death; what is good is easy to get, what is terrible is easy to endure."'
       },
       echoes: [
@@ -1233,7 +1233,7 @@
       id: 'mortality-living',
       domain: 'Mortality & Meaning',
       title: 'Mortality Is What Makes Ordinary Life Precious',
-      ancientThesis: 'Siduri’s Counsel — Immortality belongs to the gods; human meaning lives in bread, companionship, and the fleeting day.',
+      ancientThesis: 'Siduri’s Counsel, Immortality belongs to the gods; human meaning lives in bread, companionship, and the fleeting day.',
       modernSummary: 'Chasing immortality or legacy wastes our brief life; knowing we will die should teach us to savor ordinary human joy now.',
       specimen: 'We waste our lives chasing permanence and legacy when mortality is the very reason to savor today.',
       concepts: ['mortality', 'meaning', 'legacy', 'living_now', 'joy', 'ephemeral'],
@@ -1260,7 +1260,7 @@
         scriptClass: 'script-latin',
         originalScript: 'Inūma ilū ibnû awīlūtam, mūtam iškunū ana awīlūtim, balāṭam ina qātīšunu iṣṣabtū.',
         transliteration: 'Inūma ilū ibnû awīlūtam, mūtam iškunū ana awīlūtim, balāṭam ina qātīšunu iṣṣabtū.',
-        translation: 'When the gods created mankind, death for mankind they set aside, keeping eternal life in their own hands. You, Gilgamesh, let your belly be full; make merry by day and by night; gaze on the little one who holds your hand, and let a wife delight in your embrace—for this alone is the lot of humanity.',
+        translation: 'When the gods created mankind, death for mankind they set aside, keeping eternal life in their own hands. You, Gilgamesh, let your belly be full; make merry by day and by night; gaze on the little one who holds your hand, and let a wife delight in your embrace, for this alone is the lot of humanity.',
         provenance: 'Epic of Gilgamesh, Old Babylonian Sippar Tablet (VA+BM, Col. iii, ll. 2–14, c. 1800 BCE)',
         commentary: 'Almost four thousand years ago, in humanity’s oldest surviving epic, a tavern-keeper at the edge of the world intercepted a grieving king hunting for immortality and gave him the answer every modern memoir still thinks it invented: stop running from death, wash your head, dance, hold your child’s hand, and inhabit the warmth you actually have.',
         marginalia: 'Curiously, this passage was excised from the later Standard Babylonian version of Gilgamesh (c. 1200 BCE) and survives only on a broken Old Babylonian clay tablet split between Berlin and the British Museum.'
@@ -1282,8 +1282,8 @@
           transliteration: 'Lēḵ ’ĕḵōl bəśimḥāh laḥmeḵā ūshətēh bəleb-ṭôb yêneḵā… rə’ēh ḥayyîm ‘im-’ishshāh ’ăsher-’āhabtā.',
           translation: 'Go, eat your bread with joy, and drink your wine with a glad heart… Enjoy life with the partner whom you love, all the days of your fleeting life.',
           provenance: 'Ecclesiastes 9:7–9 (c. 3rd century BCE)',
-          commentary: 'Scholars have long marveled at the near-verbatim sequence shared with Siduri’s speech—bread, festive drink, clean garments, oil on the head, and cherishing one’s beloved—proving that this quiet rebellion against existential dread echoed across the ancient Near East for fifteen centuries.',
-          marginalia: 'The Hebrew word hevel, usually translated "vanity," literally means breath, mist, or vapor—something real, warm, and impossible to bottle.'
+          commentary: 'Scholars have long marveled at the near-verbatim sequence shared with Siduri’s speech, bread, festive drink, clean garments, oil on the head, and cherishing one’s beloved, proving that this quiet rebellion against existential dread echoed across the ancient Near East for fifteen centuries.',
+          marginalia: 'The Hebrew word hevel, usually translated "vanity," literally means breath, mist, or vapor, something real, warm, and impossible to bottle.'
         },
         {
           year: 49,
@@ -1302,7 +1302,7 @@
           translation: 'It is not that we have a short space of time, but that we waste much of it.',
           provenance: 'Seneca, De Brevitate Vitae I.3 (c. 49 CE)',
           commentary: 'Seneca turned the lament over mortality back onto our own calendars: people guard their property fiercely while handing away hours of their irredeemable life to status games and procrastination as if they expected to live forever.',
-          marginalia: 'Seneca wrote this essay shortly after returning from eight years of exile on the rocky island of Corsica—having learned firsthand what happens when ambition is stripped away.'
+          marginalia: 'Seneca wrote this essay shortly after returning from eight years of exile on the rocky island of Corsica, having learned firsthand what happens when ambition is stripped away.'
         }
       ]
     },
@@ -1311,7 +1311,7 @@
       id: 'habit-character',
       domain: 'Habit & Character',
       title: 'We Become What We Repeatedly Do',
-      ancientThesis: 'Yathākārī Tathā Bhavati — Intentions leave no mark; repeated desire and action sculpt the self.',
+      ancientThesis: 'Yathākārī Tathā Bhavati, Intentions leave no mark; repeated desire and action sculpt the self.',
       modernSummary: 'You are not defined by your grand intentions or beliefs, but by the daily habits and actions you repeat.',
       specimen: 'We are not what we intend to be; we become whatever we repeatedly practice and do.',
       concepts: ['habits', 'action', 'character', 'practice', 'discipline'],
@@ -1336,11 +1336,11 @@
         language: 'Vedic Sanskrit',
         scriptDir: 'ltr',
         scriptClass: 'script-deva',
-        originalScript: 'यथाकारी यथाचारी तथा भवति—साधुकारी साधुर्भवति, पापकारी पापो भवति।',
-        transliteration: 'Yathākārī yathācārī tathā bhavati—sādhukārī sādhur bhavati, pāpakārī pāpo bhavati.',
+        originalScript: 'यथाकारी यथाचारी तथा भवति, साधुकारी साधुर्भवति, पापकारी पापो भवति।',
+        transliteration: 'Yathākārī yathācārī tathā bhavati, sādhukārī sādhur bhavati, pāpakārī pāpo bhavati.',
         translation: 'As a person acts, as a person conducts themselves, so do they become. The doer of good becomes good; the doer of harm becomes harmful. As is one’s deep desire, so is one’s will; as is one’s will, so is one’s deed; and whatever deed one does, that one reaps.',
         provenance: 'Bṛhadāraṇyaka Upaniṣad IV.4.5 (c. 700 BCE)',
-        commentary: 'Three and a half centuries before Aristotle ever lectured in the Lyceum—and 2,700 years before modern habit books—the Bṛhadāraṇyaka Upaniṣad traced identity as a four-step chain from deep desire (kāma) to resolve (kratu) to repeated action (karma) to who you literally become. You do not merely perform deeds; deeds forge the performer.',
+        commentary: 'Three and a half centuries before Aristotle ever lectured in the Lyceum, and 2,700 years before modern habit books, the Bṛhadāraṇyaka Upaniṣad traced identity as a four-step chain from deep desire (kāma) to resolve (kratu) to repeated action (karma) to who you literally become. You do not merely perform deeds; deeds forge the performer.',
         marginalia: 'This passage contains one of the earliest explicit philosophical formulations of karma in Indian history, long before the word became simplified into cosmic reward-and-punishment.'
       },
       echoes: [
@@ -1361,7 +1361,7 @@
           translation: 'The things we have to learn before we can do them, we learn by doing them… we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.',
           provenance: 'Aristotle, Nicomachean Ethics II.1, 1103a32–b2 (c. 340 BCE)',
           commentary: 'Aristotle compared moral character to playing the lyre or building houses: nobody becomes a harpist by reading lectures on music, and nobody becomes courageous by admiring courage from a sofa.',
-          marginalia: 'The viral quote "We are what we repeatedly do. Excellence, then, is not an act, but a habit" was actually written by Will Durant in 1926 summarizing this exact Aristotelian passage—not verbatim by Aristotle himself.'
+          marginalia: 'The viral quote "We are what we repeatedly do. Excellence, then, is not an act, but a habit" was actually written by Will Durant in 1926 summarizing this exact Aristotelian passage, not verbatim by Aristotle himself.'
         }
       ]
     },
@@ -1370,7 +1370,7 @@
       id: 'character-destiny',
       domain: 'Fate & Character',
       title: 'Your Own Character Is Your Destiny',
-      ancientThesis: 'Ēthos Anthrōpōi Daimōn — What people blame on luck, stars, or fate is mostly the quiet unfolding of their own character.',
+      ancientThesis: 'Ēthos Anthrōpōi Daimōn, What people blame on luck, stars, or fate is mostly the quiet unfolding of their own character.',
       modernSummary: 'Our destiny is not written in external luck or the stars; our inner character quietly manufactures the life we end up living.',
       specimen: 'People blame luck or fate, but a person’s own character is what quietly writes their destiny.',
       concepts: ['character', 'destiny', 'fate', 'responsibility', 'luck'],
@@ -1400,7 +1400,7 @@
         translation: 'A human being’s character is their fate.',
         provenance: 'Heraclitus, Fragment DK B119 (Stobaeus, Anthology IV.40.23, c. 500 BCE)',
         commentary: 'Three Greek words dismantled an entire mythic worldview. In archaic Greece, a daimōn was an external guardian spirit or divine lot assigned at birth; Heraclitus moved the spirit inside the chest, declaring that your habitual disposition (ēthos) is the invisible deity steering your fortunes.',
-        marginalia: 'Notice the word ēthos originally meant an animal’s familiar haunt or dwelling-place—meaning your destiny is literally the mental habitat you choose to live in.'
+        marginalia: 'Notice the word ēthos originally meant an animal’s familiar haunt or dwelling-place, meaning your destiny is literally the mental habitat you choose to live in.'
       },
       echoes: [
         {
@@ -1420,7 +1420,7 @@
           translation: 'Beings are the owners of their deeds, the heirs of their deeds; their deeds are the womb from which they spring, their kin, and their refuge.',
           provenance: 'Cūḷakammavibhaṅga Sutta, Majjhima Nikāya 135 (c. 5th century BCE)',
           commentary: 'Answered to a young brahmin asking why human fortunes diverge so sharply, the Buddha pointed away from birthright or divine whim toward intentional action: you inherit the psychological world your choices construct.',
-          marginalia: 'In Buddhist ethics, kamma is explicitly defined as cetanā—volition or intention—not blind physical accident.'
+          marginalia: 'In Buddhist ethics, kamma is explicitly defined as cetanā, volition or intention, not blind physical accident.'
         }
       ]
     },
@@ -1429,7 +1429,7 @@
       id: 'anger-revenge',
       domain: 'Anger & Forgiveness',
       title: 'Hatred Never Ends Hatred; Anger Burns Its Host First',
-      ancientThesis: 'Averena Ca Sammanti — Retaliation feeds the fire it claims to extinguish; forgiveness liberates the one who lets go.',
+      ancientThesis: 'Averena Ca Sammanti, Retaliation feeds the fire it claims to extinguish; forgiveness liberates the one who lets go.',
       modernSummary: 'Holding onto anger or seeking revenge poisons you far more than your enemy; only non-hatred breaks the cycle.',
       specimen: 'Holding onto anger and seeking revenge destroys the person holding it; only letting go ends the cycle.',
       concepts: ['anger', 'revenge', 'forgiveness', 'hatred', 'peace'],
@@ -1458,8 +1458,8 @@
         transliteration: 'Na hi verena verāni sammantīdha kudācanaṃ; averena ca sammanti, esa dhammo sanantano.',
         translation: 'Never in this world is hatred appeased by hatred; by non-hatred alone is hatred appeased. This is an ancient, eternal law.',
         provenance: 'Dhammapada, Chapter I (Yamakavagga), v. 5 (c. 5th century BCE)',
-        commentary: 'Notice that even in the fifth century BCE, Gautama already called this "an ancient law" (sanantano dhammo)—humbling both you and himself in one stroke. In the companion Kodhana Sutta, he adds an unforgettable psychological sting: an angry person actually fulfills their enemy’s fondest wishes by making themselves sleepless, ugly, and miserable.',
-        marginalia: 'The famous internet meme "Holding onto anger is like drinking poison and expecting the other person to die" is modern—never spoken by the Buddha—though it loosely paraphrases the Kodhana Sutta’s comparison of anger to grabbing a glowing ember or smearing oneself with filth to throw at a foe.'
+        commentary: 'Notice that even in the fifth century BCE, Gautama already called this "an ancient law" (sanantano dhammo), humbling both you and himself in one stroke. In the companion Kodhana Sutta, he adds an unforgettable psychological sting: an angry person actually fulfills their enemy’s fondest wishes by making themselves sleepless, ugly, and miserable.',
+        marginalia: 'The famous internet meme "Holding onto anger is like drinking poison and expecting the other person to die" is modern, never spoken by the Buddha, though it loosely paraphrases the Kodhana Sutta’s comparison of anger to grabbing a glowing ember or smearing oneself with filth to throw at a foe.'
       },
       echoes: [
         {
@@ -1497,7 +1497,7 @@
           transliteration: 'Quidam itaque e sapientibus viris iram dixerunt brevem insaniam.',
           translation: 'Certain wise men have called anger a brief madness: for it is equally devoid of self-control, forgetful of decency, and eager to crush another even as it drags itself down into the same ruin.',
           provenance: 'Seneca, De Ira I.1.2 (dedicated to his brother Novatus, c. 41–52 CE)',
-          commentary: 'Seneca compares fury to a crumbling masonry wall that collapses onto whatever it strikes—destroying itself in the very instant of impact. Even the "wise men" Seneca cites were older still (including Horace, Epistles I.2.62).',
+          commentary: 'Seneca compares fury to a crumbling masonry wall that collapses onto whatever it strikes, destroying itself in the very instant of impact. Even the "wise men" Seneca cites were older still (including Horace, Epistles I.2.62).',
           marginalia: 'Seneca wrote De Ira right after surviving the reign of the famously erratic Emperor Caligula, giving him an uncomfortable front-row seat to unchecked rage.'
         }
       ]
@@ -1507,7 +1507,7 @@
       id: 'reciprocity-empathy',
       domain: 'Ethics & Empathy',
       title: 'The Universal Law of Reciprocity',
-      ancientThesis: 'Shù (恕) — Do not impose upon another what you yourself would not wish to endure.',
+      ancientThesis: 'Shù (恕), Do not impose upon another what you yourself would not wish to endure.',
       modernSummary: 'The entire foundation of morality boils down to treating others the way you would want to be treated in their shoes.',
       specimen: 'All of ethics can be boiled down to one rule: never inflict on another what you would hate to suffer yourself.',
       concepts: ['empathy', 'ethics', 'reciprocity', 'golden_rule', 'morality'],
@@ -1534,7 +1534,7 @@
         scriptClass: 'script-latin',
         originalScript: 'ir n irr n.k, di.k ir.f st',
         transliteration: 'Ir n irr n.k, di.k ir.f st.',
-        translation: 'Now this is the command: do to the doer to make him do—act for one who may act for you, that you may cause him thus to act.',
+        translation: 'Now this is the command: do to the doer to make him do, act for one who may act for you, that you may cause him thus to act.',
         provenance: 'The Tale of the Eloquent Peasant, Papyrus Berlin 3023 (B1, ll. 109–110, Twelfth Dynasty, c. 1850 BCE)',
         commentary: 'Long before every major world religion canonized the Golden Rule, an Egyptian peasant robbed of his donkeys by a corrupt official stood before the High Steward Rensi and argued that social order survives solely on moral reciprocity. The Steward was so dazzled by his rhetoric that the Pharaoh ordered scribes to transcribe every petition.',
         marginalia: 'The four surviving Middle Kingdom papyri of this story show that Egyptian schoolchildren copied the peasant’s nine speeches for centuries as the gold standard of eloquence and justice.'
@@ -1557,7 +1557,7 @@
           translation: 'Zigong asked: "Is there one single word that can serve as a guide for one’s entire life?" The Master replied: "Is it not reciprocity (shù)? What you do not wish for yourself, do not impose upon others."',
           provenance: 'Analects of Confucius (Lúnyǔ) 15.24 (compiled by disciples, 5th–4th century BCE)',
           commentary: 'Notice the quiet wisdom of Confucius’s negative phrasing ("do not impose") over the more forceful positive rule: it respects that another person may not want your exact preferences forced on them, while barring cruelty universally.',
-          marginalia: 'The Chinese character shù (恕) is literally composed of "likeness/as" (如) placed directly over "heart-mind" (心)—comparing another’s heart to your own.'
+          marginalia: 'The Chinese character shù (恕) is literally composed of "likeness/as" (如) placed directly over "heart-mind" (心), comparing another’s heart to your own.'
         },
         {
           year: -20,
@@ -1575,7 +1575,7 @@
           transliteration: 'Da‘ălāḵ sənê ləḥabrāḵ lā ta‘ăbêd; zô hî kol ha-Tôrāh kullāh wə’îdāḵ pêrūshāh hū.',
           translation: 'What is hateful to you, do not do to your neighbor: that is the whole Torah, while the rest is commentary; now go and learn it.',
           provenance: 'Babylonian Talmud, Shabbat 31a (tradition of Hillel the Elder, late 1st century BCE)',
-          commentary: 'Challenged by a prankster to teach the entire Torah while standing on one foot, Hillel answered in one Aramaic breath—compressing thousands of laws into a single ethical mirror.',
+          commentary: 'Challenged by a prankster to teach the entire Torah while standing on one foot, Hillel answered in one Aramaic breath, compressing thousands of laws into a single ethical mirror.',
           marginalia: 'Hillel’s rival Shammai had just chased the same inquirer away with a builder’s measuring rod; Hillel’s patience became a Jewish proverb in its own right.'
         }
       ]
@@ -1585,7 +1585,7 @@
       id: 'limits-of-language',
       domain: 'Language & Mystery',
       title: 'Words Can Never Capture Ultimate Truth',
-      ancientThesis: 'Dào Kě Dào, Fēi Cháng Dào — The moment you pin ultimate reality inside a definition, it slips through the net.',
+      ancientThesis: 'Dào Kě Dào, Fēi Cháng Dào, The moment you pin ultimate reality inside a definition, it slips through the net.',
       modernSummary: 'Language is too narrow for deepest reality; the map is not the territory, and truth begins where words fail.',
       specimen: 'Language can never capture ultimate truth; the moment you put the deepest reality into words, you distort it.',
       concepts: ['language', 'mystery', 'ineffable', 'truth', 'words', 'silence'],
@@ -1615,7 +1615,7 @@
         translation: 'That from which words turn back, together with the mind, unable to reach it.',
         provenance: 'Taittirīya Upaniṣad II.4.1 & II.9.1 (Brahmānandavallī, c. 6th century BCE)',
         commentary: 'Centuries before Ludwig Wittgenstein closed the Tractatus with "Whereof one cannot speak, thereof one must be silent," the Taittirīya Upaniṣad pictured language and conceptual thought running out of breath and turning home empty-handed at the border of ultimate reality.',
-        marginalia: 'The Sanskrit verb nivartante evokes a messenger or traveler turning back from an uncrossable frontier—acknowledging language’s usefulness right up to the border, and its collapse beyond it.'
+        marginalia: 'The Sanskrit verb nivartante evokes a messenger or traveler turning back from an uncrossable frontier, acknowledging language’s usefulness right up to the border, and its collapse beyond it.'
       },
       echoes: [
         {
@@ -1634,7 +1634,7 @@
           transliteration: 'Dào kě dào, fēi cháng dào; míng kě míng, fēi cháng míng.',
           translation: 'The Way that can be spoken is not the constant Way; the name that can be named is not the constant name.',
           provenance: 'Dao De Jing, Chapter 1, opening lines (c. 5th–4th century BCE)',
-          commentary: 'Laozi famously launched an entire 5,000-character classic by immediately warning the reader that words cannot hold what the book is about—a glorious irony that has humbled philosophers ever since.',
+          commentary: 'Laozi famously launched an entire 5,000-character classic by immediately warning the reader that words cannot hold what the book is about, a glorious irony that has humbled philosophers ever since.',
           marginalia: 'In Classical Chinese, the second dào functions as a verb ("to speak" or "to chart a path"), creating an untranslatable pun: a way you can fully map out stops being the living Way.'
         },
         {
@@ -1645,7 +1645,7 @@
           place: 'Meng, State of Song',
           region: 'Warring States China',
           coords: [115.65, 34.41],
-          scripture: 'Zhuangzi, Chapter 26 (Wài Wù — "External Things")',
+          scripture: 'Zhuangzi, Chapter 26 (Wài Wù, "External Things")',
           language: 'Classical Chinese',
           scriptDir: 'ltr',
           scriptClass: 'script-cjk',
@@ -1663,7 +1663,7 @@
       id: 'silence-speech',
       domain: 'Speech & Restraint',
       title: 'The Quiet Mind Outlasts the Loud One',
-      ancientThesis: 'Grw Mꜣꜥ (The Truly Silent Person) — Measured silence is strength; impulsive speech betrays a restless interior.',
+      ancientThesis: 'Grw Mꜣꜥ (The Truly Silent Person), Measured silence is strength; impulsive speech betrays a restless interior.',
       modernSummary: 'Those who talk endlessly usually know the least; restraint, listening, and calm silence carry far deeper authority.',
       specimen: 'The loudest person in the room usually knows the least; silence and restraint reveal far more strength.',
       concepts: ['silence', 'speech', 'listening', 'restraint', 'calm'],
@@ -1690,9 +1690,9 @@
         scriptClass: 'script-latin',
         originalScript: 'ir pꜣ grw mꜣꜥ di.f sw r-gs, sw mi šn rwd m hnt',
         transliteration: 'Ir pꜣ grw mꜣꜥ di.f sw r-gs, sw mi šn rwd m ḥnt.',
-        translation: 'As for the heated, loud man in the temple, he is like a tree growing indoors—a moment lasts his shoot, and his end is in the timber-yard. But the truly silent man sets himself apart; he is like a tree growing in a meadow: it greens, it doubles its yield, its fruit is sweet, its shade is pleasant.',
+        translation: 'As for the heated, loud man in the temple, he is like a tree growing indoors, a moment lasts his shoot, and his end is in the timber-yard. But the truly silent man sets himself apart; he is like a tree growing in a meadow: it greens, it doubles its yield, its fruit is sweet, its shade is pleasant.',
         provenance: 'The Instruction of Amenemope, Chapter 4 (ll. 6.1–12), British Museum Papyrus 10474 (Ramesside period, c. 1100 BCE)',
-        commentary: 'Three millennia before "quiet confidence" became a modern leadership trope, the Egyptian scribe Amenemope built an entire ethical system around the contrast between the šmm ("heated, noisy man") and the grw mꜣꜥ ("truly silent man"). Silence in Egypt did not mean timidity—it meant deep roots capable of weathering heat without reacting.',
+        commentary: 'Three millennia before "quiet confidence" became a modern leadership trope, the Egyptian scribe Amenemope built an entire ethical system around the contrast between the šmm ("heated, noisy man") and the grw mꜣꜥ ("truly silent man"). Silence in Egypt did not mean timidity, it meant deep roots capable of weathering heat without reacting.',
         marginalia: 'Scholars discovered in 1923 that portions of the Instruction of Amenemope closely parallel Book of Proverbs 22:17–24:22, demonstrating how ancient Egyptian wisdom traveled across borders into Hebrew scripture.'
       },
       echoes: [
@@ -1712,8 +1712,8 @@
           transliteration: 'Zhī zhě bù yán, yán zhě bù zhī.',
           translation: 'Those who know do not speak; those who speak do not know.',
           provenance: 'Dao De Jing, Chapter 56 (c. 5th–4th century BCE)',
-          commentary: 'The Tang poet Bai Juyi later teased Laozi for this exact aphorism: "Those who know don’t speak, those who speak don’t know—so Laozi told us. Yet if Laozi himself knew, why did he write five thousand words?"',
-          marginalia: 'In Classical Chinese, yán means not just casual speech but dogmatic pronouncement and lecturing—meaning real insight rarely needs to shout.'
+          commentary: 'The Tang poet Bai Juyi later teased Laozi for this exact aphorism: "Those who know don’t speak, those who speak don’t know, so Laozi told us. Yet if Laozi himself knew, why did he write five thousand words?"',
+          marginalia: 'In Classical Chinese, yán means not just casual speech but dogmatic pronouncement and lecturing, meaning real insight rarely needs to shout.'
         },
         {
           year: -550,
@@ -1731,7 +1731,7 @@
           transliteration: 'Gam ’ĕwîl maḥărîsh ḥāḵām yēḥāshēb; ’ōṭēm śəfātāw nābôn.',
           translation: 'Even a fool who keeps silent is considered wise; when he closes his lips, he is deemed intelligent.',
           provenance: 'Proverbs 17:28 (c. 6th century BCE)',
-          commentary: 'With dry, timeless wit, Proverbs reminds us that silence is not only the hallmark of sages—it is also the last respectable shelter for the rest of us.',
+          commentary: 'With dry, timeless wit, Proverbs reminds us that silence is not only the hallmark of sages, it is also the last respectable shelter for the rest of us.',
           marginalia: 'Centuries later, Abraham Lincoln and Mark Twain were both wrongly credited with inventing this exact epigram.'
         }
       ]
@@ -1741,7 +1741,7 @@
       id: 'self-knowledge',
       domain: 'Introspection & Meaning',
       title: 'Know Thyself & The Unexamined Life',
-      ancientThesis: 'Gnōthi Seauton — Turning the gaze inward is the first and hardest frontier of human inquiry.',
+      ancientThesis: 'Gnōthi Seauton, Turning the gaze inward is the first and hardest frontier of human inquiry.',
       modernSummary: 'Living on autopilot without questioning your own mind, motives, and beliefs wastes a human life.',
       specimen: 'Most people live on autopilot looking outward, when the only real journey is examining yourself.',
       concepts: ['self_knowledge', 'introspection', 'autopilot', 'awareness', 'meaning'],
@@ -1790,7 +1790,7 @@
           transliteration: 'Edizēsamēn emeōuton.',
           translation: 'I went in search of myself.',
           provenance: 'Heraclitus, Fragment DK B101 (Plutarch, Adversus Colotem 1118c, c. 500 BCE)',
-          commentary: 'Heraclitus warned in Fragment B45 that you could walk every road and still never locate the boundaries of the soul—so deep is its measure (logos).',
+          commentary: 'Heraclitus warned in Fragment B45 that you could walk every road and still never locate the boundaries of the soul, so deep is its measure (logos).',
           marginalia: 'Plutarch remarked that Heraclitus considered this two-word expedition the grandest inquiry of his entire life.'
         },
         {
@@ -1810,7 +1810,7 @@
           translation: 'The unexamined life is not worth living for a human being.',
           provenance: 'Plato, Apology 38a5–6 (trial of Socrates, Athens, 399 BCE)',
           commentary: 'Offered exile and silence to spare his life, the seventy-year-old Socrates refused: breathing without questioning one’s assumptions was, in his eyes, barely distinguishable from sleepwalking.',
-          marginalia: 'The Greek word anexetastos comes from exetazein—to audit or assay gold for purity; Socrates was asking citizens to test their convictions the way merchants test coins.'
+          marginalia: 'The Greek word anexetastos comes from exetazein, to audit or assay gold for purity; Socrates was asking citizens to test their convictions the way merchants test coins.'
         }
       ]
     },
@@ -1819,7 +1819,7 @@
       id: 'solitude-restlessness',
       domain: 'Solitude & Escapism',
       title: 'You Cannot Outrun Your Own Restless Mind',
-      ancientThesis: 'Animum Debes Mutare, Non Caelum — Travel and distraction fail because you pack yourself in the suitcase.',
+      ancientThesis: 'Animum Debes Mutare, Non Caelum, Travel and distraction fail because you pack yourself in the suitcase.',
       modernSummary: 'Being alone with our own mind terrifies us; changing cities, jobs, or distractions never cures inner restlessness because we bring ourselves along.',
       specimen: 'Moving to a new place or chasing distractions never fixes restlessness because you always bring yourself with you.',
       concepts: ['solitude', 'escapism', 'restlessness', 'travel', 'distraction', 'alone'],
@@ -1846,7 +1846,7 @@
         scriptClass: 'script-latin',
         originalScript: 'Hoc se quisque modo fugit, at quem scilicet, ut fit,\neffugere haud potis est, ingratis haeret et odit.',
         transliteration: 'Hoc se quisque modo fugit, at quem scilicet, ut fit, effugere haud potis est, ingratis haeret et odit.',
-        translation: 'In this way each person flees from himself—yet the self he cannot escape clings to him against his will, and he hates it, because sick he does not grasp the cause of his disease.',
+        translation: 'In this way each person flees from himself, yet the self he cannot escape clings to him against his will, and he hates it, because sick he does not grasp the cause of his disease.',
         provenance: 'Lucretius, De Rerum Natura III.1068–1070 (c. 55 BCE)',
         commentary: 'Sixteen centuries before Blaise Pascal remarked that all humanity’s troubles stem from an inability to sit quietly alone in a room, Lucretius painted a devastating portrait of Roman escapism: a wealthy man bolts from his city townhouse in boredom, whips his horses madly to his country villa, and the moment he steps across the threshold begins yawning and rushes straight back to Rome.',
         marginalia: 'Lucretius diagnoses modern scroll-addiction and geographic escapism identically: motion masquerading as cure when the ailment is an unhealed mind.'
@@ -1869,7 +1869,7 @@
           translation: 'You must change your soul, not your sky… How can you wonder that travel does you no good, when you take yourself along?',
           provenance: 'Seneca, Moral Letters to Lucilius, Letter 28, Sections 1–2 (quoting Socrates & Lucretius, c. 64 CE)',
           commentary: 'Seneca explicitly cites both Socrates and Lucretius here, turning the observation into a razor-sharp epigram: crossing oceans alters your latitude, never your temperament.',
-          marginalia: 'Horace had written the sister line a few decades earlier (Epistles I.11.27): "Caelum, non animum mutant, qui trans mare currunt"—those who rush across the sea change their sky, not their mind.'
+          marginalia: 'Horace had written the sister line a few decades earlier (Epistles I.11.27): "Caelum, non animum mutant, qui trans mare currunt", those who rush across the sea change their sky, not their mind.'
         }
       ]
     },
@@ -1878,7 +1878,7 @@
       id: 'interdependence',
       domain: 'Systems & Oneness',
       title: 'Nothing Exists Independently on Its Own',
-      ancientThesis: 'Paṭiccasamuppāda — Every event, identity, and object arises solely in dependence on an infinite web of conditions.',
+      ancientThesis: 'Paṭiccasamuppāda, Every event, identity, and object arises solely in dependence on an infinite web of conditions.',
       modernSummary: 'Everything in the universe is interconnected; no person or thing exists in isolation, and every cause ripples outward.',
       specimen: 'Nothing in the universe exists on its own; every person and event is woven into one interdependent web.',
       concepts: ['interdependence', 'systems', 'connection', 'causality', 'emptiness'],
@@ -1925,9 +1925,9 @@
           scriptClass: 'script-deva',
           originalScript: 'यः प्रतीत्यसमुत्पादः शून्यतां तां प्रचक्ष्महे।',
           transliteration: 'Yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe.',
-          translation: 'Whatever is dependently co-arisen, that we declare to be emptiness—it is a dependent designation, and that itself is the middle way.',
+          translation: 'Whatever is dependently co-arisen, that we declare to be emptiness, it is a dependent designation, and that itself is the middle way.',
           provenance: 'Nāgārjuna, Mūlamadhyamakakārikā XXIV.18 (c. 150–250 CE)',
-          commentary: 'Nāgārjuna pushed interdependence to its dazzling logical limit: if nothing possesses an independent, standalone essence (svabhāva), then "emptiness" is not nihilistic void—it is the exact openness that makes change, relationship, and life possible.',
+          commentary: 'Nāgārjuna pushed interdependence to its dazzling logical limit: if nothing possesses an independent, standalone essence (svabhāva), then "emptiness" is not nihilistic void, it is the exact openness that makes change, relationship, and life possible.',
           marginalia: 'Nāgārjuna’s logical proofs are still studied by contemporary analytic philosophers and physicists examining relational quantum mechanics.'
         },
         {
@@ -1946,7 +1946,7 @@
           transliteration: 'Panta allēlois epipeplektai kai hē syndesis hiera.',
           translation: 'All things are interwoven with one another, and the bond is sacred; scarcely anything is foreign to any other thing.',
           provenance: 'Marcus Aurelius, Meditations VII.9 (c. 175 CE)',
-          commentary: 'Drawing on the Stoic doctrine of sympatheia (cosmic mutual responsiveness), Marcus reminded himself that harming any fellow citizen is like one hand injuring the other—because we belong to one woven organism.',
+          commentary: 'Drawing on the Stoic doctrine of sympatheia (cosmic mutual responsiveness), Marcus reminded himself that harming any fellow citizen is like one hand injuring the other, because we belong to one woven organism.',
           marginalia: 'In Meditations VI.54 he compressed the ecological ethic into ten words: "What brings no benefit to the hive brings no benefit to the bee."'
         }
       ]
@@ -1956,8 +1956,8 @@
       id: 'adversity-growth',
       domain: 'Hardship & Growth',
       title: 'Adversity Is the Classroom; The Obstacle Becomes the Way',
-      ancientThesis: 'Pathei Mathos — Wisdom and resilience are forged through friction, not comfort.',
-      modernSummary: 'Hardship, failure, and obstacles are not detours from growth—they are the exact material that builds strength and wisdom.',
+      ancientThesis: 'Pathei Mathos, Wisdom and resilience are forged through friction, not comfort.',
+      modernSummary: 'Hardship, failure, and obstacles are not detours from growth, they are the exact material that builds strength and wisdom.',
       specimen: 'Obstacles and suffering are not interruptions to our path; they are what actually forge wisdom and strength.',
       concepts: ['adversity', 'growth', 'hardship', 'obstacles', 'resilience', 'failure'],
       phrases: [
@@ -1985,7 +1985,7 @@
         transliteration: 'Ton phronein brotous hodōsanta, ton pathei mathos thenta kyriōs echein.',
         translation: 'He who guided mortals on the road to wisdom, who laid down the sovereign law: learning comes through suffering.',
         provenance: 'Aeschylus, Agamemnon ll. 176–178 (first performed at the City Dionysia, Athens, 458 BCE)',
-        commentary: 'Long before Nietzsche’s "what does not kill me" or modern grit books, the chorus of Aeschylus’s Oresteia sang pathei mathos—literally "through suffering, learning." Even against our will, the poet notes in the next line, painful memory drips upon the heart in sleep until wisdom arrives.',
+        commentary: 'Long before Nietzsche’s "what does not kill me" or modern grit books, the chorus of Aeschylus’s Oresteia sang pathei mathos, literally "through suffering, learning." Even against our will, the poet notes in the next line, painful memory drips upon the heart in sleep until wisdom arrives.',
         marginalia: 'Aeschylus fought in the front ranks at the Battle of Marathon (490 BCE), and on his own epitaph he chose to commemorate his military endurance there rather than his legendary plays.'
       },
       echoes: [
@@ -2003,7 +2003,7 @@
           scriptClass: 'script-cjk',
           originalScript: '故天將降大任於是人也，必先苦其心志，勞其筋骨，餓其體膚，空乏其身。',
           transliteration: 'Gù tiān jiāng jiàng dà rèn yú shì rén yě, bì xiān kǔ qí xīn zhì, láo qí jīn gǔ, è qí tǐ fū, kōng fá qí shēn.',
-          translation: 'When Heaven is about to place a great responsibility upon a person, it always first tests their mind with bitterness, toils their sinews and bones, and frustrates their plans—so as to rouse their mind, toughen their nature, and supply what they lacked.',
+          translation: 'When Heaven is about to place a great responsibility upon a person, it always first tests their mind with bitterness, toils their sinews and bones, and frustrates their plans, so as to rouse their mind, toughen their nature, and supply what they lacked.',
           provenance: 'Mencius, Book VI, Part B, Section 15 (c. 300 BCE)',
           commentary: 'Mencius closed this famous passage with a stark biological contrast: "We live through anxiety and hardship, and die through ease and comfort" (shēng yú yōu huàn, sǐ yú ān lè).',
           marginalia: 'Every Chinese schoolchild for over two thousand years memorized this passage; it remains one of the most cited texts in East Asian moral education.'
@@ -2024,8 +2024,8 @@
           transliteration: 'To empodion tēs praxeōs proagei tēn praxin; to en tēi hodōi ginomenon hodos ginetai.',
           translation: 'The mind adapts and converts to its own purposes the obstacle to our acting: the impediment to action advances action. What stands in the way becomes the way.',
           provenance: 'Marcus Aurelius, Meditations V.20 (c. 175 CE)',
-          commentary: 'Like a blazing fire that turns whatever is thrown onto it into brighter flame and heat (Meditations IV.1), a disciplined mind refuses to treat an obstacle as an interruption—it consumes it as fuel.',
-          marginalia: 'Two thousand years later, this single sentence launched a bestselling modern Stoic revival—almost word-for-word from Marcus’s private Greek journal.'
+          commentary: 'Like a blazing fire that turns whatever is thrown onto it into brighter flame and heat (Meditations IV.1), a disciplined mind refuses to treat an obstacle as an interruption, it consumes it as fuel.',
+          marginalia: 'Two thousand years later, this single sentence launched a bestselling modern Stoic revival, almost word-for-word from Marcus’s private Greek journal.'
         }
       ]
     }

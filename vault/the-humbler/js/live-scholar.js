@@ -1,5 +1,5 @@
 /* ==========================================================================
-   THE HUMBLER — Live Scholar (Optional Gemini API Dynamic Excavation)
+   THE HUMBLER: Live Scholar (Optional Gemini API Dynamic Excavation)
    When the user configures a Gemini API key in their browser, any arbitrary
    idea is dynamically mapped to its oldest verifiable ancient primary source
    and rendered on the exact same lineage timeline, world map, and folio.
@@ -97,7 +97,7 @@
 {
   "title": "Short literary plate title (4-8 words)",
   "domain": "Two-word thematic domain, e.g. Relationships & Suffering",
-  "ancientThesis": "Term — One crisp sentence distilling the ancient formulation.",
+  "ancientThesis": "Term: One crisp sentence distilling the ancient formulation.",
   "threads": ["concept 1", "concept 2", "concept 3"],
   "origin": {
     "year": -500,

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   THE HUMBLER — Verified Ancient Philosophical & Scriptural Canon (Part II: 19–36)
+   THE HUMBLER, Verified Ancient Philosophical & Scriptural Canon (Part II: 19–36)
    ========================================================================== */
 
 (function (global) {
@@ -12,7 +12,7 @@
       id: 'present-time',
       domain: 'Time & Presence',
       title: 'Only the Present Moment Actually Exists',
-      ancientThesis: 'Bhaddekaratta — The past is gone, the future is unborn; reality happens solely in the razor-thin now.',
+      ancientThesis: 'Bhaddekaratta, The past is gone, the future is unborn; reality happens solely in the razor-thin now.',
       modernSummary: 'Time as we worry about it is an illusion; the past cannot be altered, the future has not arrived, and life only exists right now.',
       specimen: 'Time is mostly a mental illusion; the past is gone, the future is unborn, and only the present moment is real.',
       concepts: ['present', 'time', 'mindfulness', 'now', 'attention'],
@@ -33,7 +33,7 @@
         place: 'Sāvatthī, Kosala',
         region: 'Ancient India',
         coords: [82.05, 27.51],
-        scripture: 'Bhaddekaratta Sutta (Majjhima Nikāya 131 — "One Single Auspicious Night")',
+        scripture: 'Bhaddekaratta Sutta (Majjhima Nikāya 131, "One Single Auspicious Night")',
         language: 'Pāli',
         scriptDir: 'ltr',
         scriptClass: 'script-latin',
@@ -42,7 +42,7 @@
         translation: 'Let one not chase after the past, nor place expectations on the future. What is past is left behind, and the future has not yet arrived. Instead, with clear insight let one see each presently arisen state right there, right then.',
         provenance: 'Bhaddekaratta Sutta, Majjhima Nikāya 131 (c. 5th century BCE)',
         commentary: 'Every modern "Power of Now" bestseller is repackaging a four-line Pāli verse chanted in monsoon monasteries 2,500 years ago. Notice the crisp precision of the Buddha’s diagnosis: the past is pahīna (already abandoned) and the future is appatta (unreached), meaning all our nostalgia and ambition are negotiations with ghosts.',
-        marginalia: 'The title Bhaddekaratta literally means "a single excellent night"—implying that even one day or night lived wholly awake in the present outweighs decades spent sleepwalking between regret and anticipation.'
+        marginalia: 'The title Bhaddekaratta literally means "a single excellent night", implying that even one day or night lived wholly awake in the present outweighs decades spent sleepwalking between regret and anticipation.'
       },
       echoes: [
         {
@@ -59,10 +59,10 @@
           scriptClass: 'script-greek',
           originalScript: 'Μόνον γὰρ τὸ παρὸν ζῇ ἕκαστος, τοῦτο τὸ ἀκαριαῖον· τὰ δὲ ἄλλα ἢ βεβίωται ἢ ἐν ἀδήλῳ.',
           transliteration: 'Monon gar to paron zēi hekastos, touto to akariaion; ta de alla ē bebiōtai ē en adēlōi.',
-          translation: 'Each of us lives only in this present—this tiny pinpoint of time; the rest has either already been lived or lies in obscurity.',
+          translation: 'Each of us lives only in this present, this tiny pinpoint of time; the rest has either already been lived or lies in obscurity.',
           provenance: 'Marcus Aurelius, Meditations II.14 (c. 175 CE)',
-          commentary: 'Marcus drew a shocking consolation from this fact: the oldest patriarch and the youngest infant lose the exact same amount at death—only the single present instant, because no one can surrender what they do not hold.',
-          marginalia: 'The Greek word akariaion literally means "too tiny to cut"—a single indivisible hair’s breadth of time.'
+          commentary: 'Marcus drew a shocking consolation from this fact: the oldest patriarch and the youngest infant lose the exact same amount at death, only the single present instant, because no one can surrender what they do not hold.',
+          marginalia: 'The Greek word akariaion literally means "too tiny to cut", a single indivisible hair’s breadth of time.'
         },
         {
           year: 397,
@@ -80,7 +80,7 @@
           transliteration: 'Quid est ergo tempus? Si nemo ex me quaerat, scio; si quaerenti explicare velim, nescio.',
           translation: 'What then is time? If no one asks me, I know; if I wish to explain it to one who asks, I do not know.',
           provenance: 'Augustine, Confessions XI.14.17 (written c. 397–400 CE)',
-          commentary: 'Augustine pushed the phenomenology of time to dazzling depth: there are not three objective times, he argued, only three states of the present mind—a present of things past (memory), a present of things present (attention), and a present of things future (expectation).',
+          commentary: 'Augustine pushed the phenomenology of time to dazzling depth: there are not three objective times, he argued, only three states of the present mind, a present of things past (memory), a present of things present (attention), and a present of things future (expectation).',
           marginalia: 'Ludwig Wittgenstein opened his critique of philosophical puzzles in the Philosophical Investigations by quoting this exact sentence from Augustine.'
         }
       ]
@@ -90,7 +90,7 @@
       id: 'humble-leadership',
       domain: 'Leadership & Governance',
       title: 'The Greatest Leader Is Barely Noticed',
-      ancientThesis: 'Tài Shàng, Bù Zhī Yǒu Zhī — The highest leadership empowers people so quietly they believe they did it themselves.',
+      ancientThesis: 'Tài Shàng, Bù Zhī Yǒu Zhī, The highest leadership empowers people so quietly they believe they did it themselves.',
       modernSummary: 'Ego-driven bosses crave credit and visibility; the truly great leader creates conditions where people succeed on their own.',
       specimen: 'The best leader is almost invisible; when the work succeeds, the people feel they accomplished it themselves.',
       concepts: ['leadership', 'management', 'ego', 'humility', 'governance'],
@@ -139,8 +139,8 @@
           transliteration: 'Tài shàng, bù zhī yǒu zhī; qí cì, qīn ér yù zhī; qí cì, wèi zhī; qí cì, wǔ zhī… Gōng chéng shì suì, bǎixìng jiē wèi: "Wǒ zì rán."',
           translation: 'With the highest ruler, the people barely know they exist. Next best is one they love and praise; next, one they fear; worst, one they despise… When the work is accomplished and affairs succeed, the people all say: "We did this naturally ourselves."',
           provenance: 'Dao De Jing, Chapter 17 (c. 5th–4th century BCE)',
-          commentary: 'Laozi sharpened invisible leadership with an unforgettable twist: even the charismatic leader whom everyone adores and praises ranks only second-best—because applause still keeps the spotlight on the ruler’s ego rather than the community’s own vitality.',
-          marginalia: 'The closing phrase wǒ zì rán ("we did it of our own accord / naturally") contains zì rán—literally "self-so," the ancient Daoist term that later became the modern Chinese word for Nature itself.'
+          commentary: 'Laozi sharpened invisible leadership with an unforgettable twist: even the charismatic leader whom everyone adores and praises ranks only second-best, because applause still keeps the spotlight on the ruler’s ego rather than the community’s own vitality.',
+          marginalia: 'The closing phrase wǒ zì rán ("we did it of our own accord / naturally") contains zì rán, literally "self-so," the ancient Daoist term that later became the modern Chinese word for Nature itself.'
         }
       ]
     },
@@ -149,7 +149,7 @@
       id: 'golden-mean',
       domain: 'Balance & Extremes',
       title: 'Extremes Destroy; Excellence Lives in the Middle Way',
-      ancientThesis: 'Mēden Agan & Majjhimā Paṭipadā — Both excess and deprivation corrupt; flourishing resides in calibrated balance.',
+      ancientThesis: 'Mēden Agan & Majjhimā Paṭipadā, Both excess and deprivation corrupt; flourishing resides in calibrated balance.',
       modernSummary: 'Every virtue turns toxic when pushed to an extreme; wisdom is finding the balanced middle path between indulgence and self-punishment.',
       specimen: 'Every strength turns destructive when pushed to an extreme; wisdom lies in moderation and the middle path.',
       concepts: ['balance', 'moderation', 'extremes', 'middle_way', 'virtue'],
@@ -178,8 +178,8 @@
         transliteration: 'Mēden agan.',
         translation: 'Nothing in excess.',
         provenance: 'Inscribed at the Temple of Apollo at Delphi beside "Know thyself" (cited by Plato, Charmides 165a & Protagoras 343b, c. 6th century BCE)',
-        commentary: 'Two words chiseled into limestone on the slope of Mount Parnassus summarized archaic Greek ethics: even good things—ambition, courage, thrift, pride—become hubris and ruin the moment they spill past measure.',
-        marginalia: 'Ancient Greek audiences understood excess not merely as bad manners, but as an active invitation to Nemesis—the cosmic restoration of proportion.'
+        commentary: 'Two words chiseled into limestone on the slope of Mount Parnassus summarized archaic Greek ethics: even good things, ambition, courage, thrift, pride, become hubris and ruin the moment they spill past measure.',
+        marginalia: 'Ancient Greek audiences understood excess not merely as bad manners, but as an active invitation to Nemesis, the cosmic restoration of proportion.'
       },
       echoes: [
         {
@@ -196,7 +196,7 @@
           scriptClass: 'script-latin',
           originalScript: 'Ete kho, bhikkhave, ubho ante anupagamma majjhimā paṭipadā tathāgatena abhisambuddhā.',
           transliteration: 'Ete kho, bhikkhave, ubho ante anupagamma majjhimā paṭipadā tathāgatena abhisambuddhā.',
-          translation: 'Without veering toward either of these two extremes—sensual indulgence or self-mortification—the Tathāgata has awakened to the Middle Way, which gives rise to vision and clarity.',
+          translation: 'Without veering toward either of these two extremes, sensual indulgence or self-mortification, the Tathāgata has awakened to the Middle Way, which gives rise to vision and clarity.',
           provenance: 'Dhammacakkappavattana Sutta, Saṃyutta Nikāya 56.11 (First Discourse at the Deer Park, Sarnath, c. 5th century BCE)',
           commentary: 'Having tried both royal luxury and near-fatal starvation, the Buddha compared spiritual and human effort to tuning a lute (Soṇa Sutta, AN 6.55): string it too tight and it snaps; too loose and it makes no music.',
           marginalia: 'The lute-string simile (AN 6.55) was addressed directly to a former musician named Soṇa who had paced in meditation until his feet bled.'
@@ -217,7 +217,7 @@
           transliteration: 'Estin ara hē aretē hexis proairetikē, en mesotēti ousa tēi pros hēmas.',
           translation: 'Excellence, then, is a state of character concerned with choice, lying in a mean relative to us, determined by practical wisdom.',
           provenance: 'Aristotle, Nicomachean Ethics II.6, 1106b36–1107a2 (c. 340 BCE)',
-          commentary: 'Aristotle turned moderation into a precise geometry of character: courage sits between cowardice and recklessness, generosity between stinginess and waste—not a timid average, but a peak of skill between two cliffs.',
+          commentary: 'Aristotle turned moderation into a precise geometry of character: courage sits between cowardice and recklessness, generosity between stinginess and waste, not a timid average, but a peak of skill between two cliffs.',
           marginalia: 'Aristotle carefully stressed "relative to us": the right portion of food for Milo the Olympic wrestler would be absurd excess for a beginner.'
         }
       ]
@@ -227,7 +227,7 @@
       id: 'envy-comparison',
       domain: 'Comparison & Envy',
       title: 'Comparison & Envy Poison What You Already Have',
-      ancientThesis: 'Envy Ruins Sufficiency — Measuring your plate against another’s turns genuine blessings into bitterness.',
+      ancientThesis: 'Envy Ruins Sufficiency, Measuring your plate against another’s turns genuine blessings into bitterness.',
       modernSummary: 'Comparing yourself to richer or more celebrated people steals all joy from the good life you already possess.',
       specimen: 'Comparing your life to others is the fastest way to ruin joy; envy makes even abundance feel like poverty.',
       concepts: ['envy', 'comparison', 'gratitude', 'fomo', 'status', 'jealousy'],
@@ -256,7 +256,7 @@
         transliteration: 'Nfr pꜣ ꜥq m ib ndm r pꜣ wdꜣ m šnn.',
         translation: 'Better is a single loaf of bread with a happy heart than riches with vexation. Do not cast your heart after wealth or envy the possessions of another, for stolen abundance sprouts wings like geese and flies away to the sky.',
         provenance: 'The Instruction of Amenemope, Chapter 6 (ll. 9.5–8) & Chapter 7 (10.4–5), BM Papyrus 10474 (c. 1100 BCE)',
-        commentary: 'Three thousand years before smartphones put billionaires’ vacations in our pockets, Amenemope warned his son against status-envy—observing that a crust of bread eaten in peace beats a banquet poisoned by anxious comparison.',
+        commentary: 'Three thousand years before smartphones put billionaires’ vacations in our pockets, Amenemope warned his son against status-envy, observing that a crust of bread eaten in peace beats a banquet poisoned by anxious comparison.',
         marginalia: 'The striking image of wealth "sprouting wings like geese and flying to the sky" reappears almost identically centuries later in Book of Proverbs 23:5.'
       },
       echoes: [
@@ -274,10 +274,10 @@
           scriptClass: 'script-greek',
           originalScript: 'Δεῖ γὰρ πρὸς τὰ δυνατὰ τὴν γνώμην ἴσχειν καὶ τοῖς παρεοῦσιν ἀρκέεσθαι, τῶν μὲν ζηλουμένων καὶ θαυμαζομένων ὀλίγην μνήμην ἔχοντα.',
           transliteration: 'Dei gar pros ta dynata tēn gnōmēn ischein kai tois pareousin arkeesthai, tōn men zēloumenōn kai thaumazomenōn oligēn mnēmēn echonta.',
-          translation: 'One must set one’s mind on what is possible and be content with what is at hand, giving little thought to those who are envied and admired—and looking instead at the lives of those in distress, so that your present state appears great and enviable.',
+          translation: 'One must set one’s mind on what is possible and be content with what is at hand, giving little thought to those who are envied and admired, and looking instead at the lives of those in distress, so that your present state appears great and enviable.',
           provenance: 'Democritus, Fragment DK B191 (Stobaeus, Anthology III.1.210, c. 420 BCE)',
-          commentary: 'Democritus—known as the "Laughing Philosopher" for his amused view of human folly—explicitly described upward social comparison as a machine for manufacturing misery, and prescribed downward gratitude as its scientific antidote.',
-          marginalia: 'Democritus called this serene inner cheerfulness euthymia ("well-spiritedness")—the same philosopher who deduced that matter consists of indivisible atoms (atomoi) moving in the void.'
+          commentary: 'Democritus, known as the "Laughing Philosopher" for his amused view of human folly, explicitly described upward social comparison as a machine for manufacturing misery, and prescribed downward gratitude as its scientific antidote.',
+          marginalia: 'Democritus called this serene inner cheerfulness euthymia ("well-spiritedness"), the same philosopher who deduced that matter consists of indivisible atoms (atomoi) moving in the void.'
         },
         {
           year: 108,
@@ -295,7 +295,7 @@
           transliteration: 'Proetimēthē sou tis en hestiasei ē en prosagoreusei?… ouden gar proika ginetai.',
           translation: 'Has someone been honored above you at a banquet or greeted first? Remember: nothing is given for free. They paid for that invitation with flattery and attendance; if you refused to pay the price, why envy the lettuce?',
           provenance: 'Epictetus, Enchiridion 25 (c. 108–125 CE)',
-          commentary: 'Epictetus punctured status envy with market realism: every envied prize carries a hidden invoice of compromises, flattery, and lost freedom. Keep your dignity or pay the seller’s price—just stop complaining that you don’t get both.',
+          commentary: 'Epictetus punctured status envy with market realism: every envied prize carries a hidden invoice of compromises, flattery, and lost freedom. Keep your dignity or pay the seller’s price, just stop complaining that you don’t get both.',
           marginalia: 'Epictetus uses the homely price of a single head of lettuce (one obol) to strip aristocratic prestige of all its mystique.'
         }
       ]
@@ -305,7 +305,7 @@
       id: 'cosmic-doubt',
       domain: 'Cosmology & Agnosticism',
       title: 'Perhaps Even the Creator Does Not Know How It Began',
-      ancientThesis: 'Nāsadīya — The oldest surviving meditation on cosmic origins ends not in dogma, but in breathtaking humility and doubt.',
+      ancientThesis: 'Nāsadīya, The oldest surviving meditation on cosmic origins ends not in dogma, but in breathtaking humility and doubt.',
       modernSummary: 'Nobody truly knows how the universe began or why anything exists at all; honest agnosticism is deeper than certainty.',
       specimen: 'Nobody can truly know how the universe began or what ultimate reality is; honest doubt is more sacred than dogma.',
       concepts: ['doubt', 'agnosticism', 'cosmos', 'creation', 'uncertainty', 'skepticism'],
@@ -332,9 +332,9 @@
         scriptClass: 'script-deva',
         originalScript: 'को अद्धा वेद क इह प्र वोचत्कुत आजाता कुत इयं विसृष्टिः।\nअर्वाग्देवा अस्य विसर्जनेनाथा को वेद यत आबभूव॥\nसो अङ्ग वेद यदि वा न वेद॥',
         transliteration: 'Ko addhā veda ka iha pra vocat kuta ājātā kuta iyaṃ visṛṣṭiḥ; arvāg devā asya visarjanenāthā ko veda yata ābabhūva… so aṅga veda yadi vā na veda.',
-        translation: 'Who really knows? Who will here proclaim it? Whence was it produced, whence this creation? The gods themselves came afterwards, with the creation of this universe. Who then knows whence it has arisen? Only He who surveys it from highest heaven knows—or perhaps even He does not know.',
+        translation: 'Who really knows? Who will here proclaim it? Whence was it produced, whence this creation? The gods themselves came afterwards, with the creation of this universe. Who then knows whence it has arisen? Only He who surveys it from highest heaven knows, or perhaps even He does not know.',
         provenance: 'Ṛgveda Maṇḍala X, Hymn 129 (Nāsadīya Sūkta), vv. 6–7 (c. 1200 BCE)',
-        commentary: 'More than three millennia ago, inside one of humanity’s oldest religious scriptures, a Vedic poet paused mid-creation hymn and detonated every dogmatic theology before it could harden. Even the gods arrived too late to witness the birth of existence—leaving the final line suspended in the boldest question mark in ancient literature.',
+        commentary: 'More than three millennia ago, inside one of humanity’s oldest religious scriptures, a Vedic poet paused mid-creation hymn and detonated every dogmatic theology before it could harden. Even the gods arrived too late to witness the birth of existence, leaving the final line suspended in the boldest question mark in ancient literature.',
         marginalia: 'Carl Sagan highlighted the Nāsadīya Sūkta in Cosmos (1980) as a staggering moment of ancient scientific skepticism embedded inside sacred poetry.'
       },
       echoes: [
@@ -355,7 +355,7 @@
           translation: 'No human being has ever seen clear truth, nor will anyone ever know for certain about the gods and all the things I speak of… opinion is wrought over all things.',
           provenance: 'Xenophanes, Fragment DK B34 (Sextus Empiricus, Adversus Mathematicos VII.49, c. 520 BCE)',
           commentary: 'The same poet who famously joked that if horses and oxen had hands they would draw gods shaped like horses and oxen (DK B15) argued that even if a mortal stumbled onto absolute truth by chance, they could never prove they had it.',
-          marginalia: 'Karl Popper credited Xenophanes with inventing critical fallibilism—the insight that human knowledge advances by guessing and correcting errors rather than possessing final certainty.'
+          marginalia: 'Karl Popper credited Xenophanes with inventing critical fallibilism, the insight that human knowledge advances by guessing and correcting errors rather than possessing final certainty.'
         }
       ]
     },
@@ -364,7 +364,7 @@
       id: 'pleasure-pain-twins',
       domain: 'Duality & Contrast',
       title: 'Pleasure and Pain Are Joined at a Single Head',
-      ancientThesis: 'Harmony of Opposites — Joy cannot exist without contrast; chasing pure pleasure summons its twin shadow.',
+      ancientThesis: 'Harmony of Opposites, Joy cannot exist without contrast; chasing pure pleasure summons its twin shadow.',
       modernSummary: 'Opposites define each other: without hunger, fatigue, or sorrow, pleasure and peace would have no meaning or contrast.',
       specimen: 'Pleasure and pain are inseparable twins; without hardship and contrast, happiness would be meaningless.',
       concepts: ['duality', 'contrast', 'pleasure', 'pain', 'opposites', 'dopamine'],
@@ -393,7 +393,7 @@
         transliteration: 'Nousos hygieiēn epoiēsen hēdy kai agathon, limos koron, kamatos anapausin.',
         translation: 'It is disease that makes health sweet and good, hunger that makes fullness sweet, weariness that makes rest sweet.',
         provenance: 'Heraclitus, Fragment DK B111 (Stobaeus, Anthology III.1.177, c. 500 BCE)',
-        commentary: 'Before neuroscience ever described opponent-process theory or dopamine baselines, Heraclitus noticed that opposites do not merely alternate—they actively manufacture each other’s savor. Erase weariness and rest turns flat; erase tension and a bowstring or lyre goes mute (DK B51).',
+        commentary: 'Before neuroscience ever described opponent-process theory or dopamine baselines, Heraclitus noticed that opposites do not merely alternate, they actively manufacture each other’s savor. Erase weariness and rest turns flat; erase tension and a bowstring or lyre goes mute (DK B51).',
         marginalia: 'In Fragment B60, Heraclitus put the unity of opposites in four crisp words: "The way up and the way down are one and the same."'
       },
       echoes: [
@@ -414,7 +414,7 @@
           translation: 'Presence and absence give birth to one another; difficulty and ease complete one another; long and short shape one another; high and low lean on one another.',
           provenance: 'Dao De Jing, Chapter 2 (c. 5th–4th century BCE)',
           commentary: 'Laozi warned that the very instant a culture crowns one thing "beautiful" or "successful," it automatically invents "ugly" and "failure" at the exact same stroke.',
-          marginalia: 'Notice the kinetic verbs Laozi chose: give birth (shēng), complete (chéng), shape (xíng)—opposites are dance partners, not enemies.'
+          marginalia: 'Notice the kinetic verbs Laozi chose: give birth (shēng), complete (chéng), shape (xíng), opposites are dance partners, not enemies.'
         },
         {
           year: -380,
@@ -430,7 +430,7 @@
           scriptClass: 'script-greek',
           originalScript: 'Ὥσπερ ἐκ μιᾶς κορυφῆς συνημμένω δύ᾽ ὄντε.',
           transliteration: 'Hōsper ek mias koryphēs synēmmenō dy’ onte.',
-          translation: 'How strange a thing is what people call pleasure, and how curiously related to its seeming opposite, pain—as though the two were fastened together at a single head; whoever pursues and catches the one is nearly always compelled to catch the other too.',
+          translation: 'How strange a thing is what people call pleasure, and how curiously related to its seeming opposite, pain, as though the two were fastened together at a single head; whoever pursues and catches the one is nearly always compelled to catch the other too.',
           provenance: 'Plato, Phaedo 60b–c (set on the final morning of Socrates’s life, 399 BCE)',
           commentary: 'Rubbing the aching indentation left on his shin moments after the jailer unlocked his iron shackles before his execution, Socrates marveled at how sharply the fading pain birthed instant pleasure.',
           marginalia: 'Socrates jokes in this passage that if Aesop had noticed the sensation, he would have composed a fable about a god tying pleasure and pain together by their skulls to stop them brawling.'
@@ -442,7 +442,7 @@
       id: 'inner-freedom',
       domain: 'Freedom & Renunciation',
       title: 'True Freedom Is Having Nothing Fortune Can Hold Hostage',
-      ancientThesis: 'Tena Tyaktena Bhuñjīthāḥ — Enjoy the world without clinging; whoever cannot be bribed or threatened is unchainable.',
+      ancientThesis: 'Tena Tyaktena Bhuñjīthāḥ, Enjoy the world without clinging; whoever cannot be bribed or threatened is unchainable.',
       modernSummary: 'True freedom is not buying whatever you want, but needing so little externally that nothing and no one can own you.',
       specimen: 'True freedom is not having endless possessions, but having nothing external that can be used to control you.',
       concepts: ['freedom', 'minimalism', 'renunciation', 'possessions', 'independence'],
@@ -469,9 +469,9 @@
         scriptClass: 'script-deva',
         originalScript: 'ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥',
         transliteration: 'Īśā vāsyam idaṃ sarvaṃ yat kiñca jagatyāṃ jagat; tena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam.',
-        translation: 'All that moves in this moving world is pervaded by the indwelling reality. Therefore enjoy it through renunciation; do not covet—for whose, really, is wealth?',
+        translation: 'All that moves in this moving world is pervaded by the indwelling reality. Therefore enjoy it through renunciation; do not covet, for whose, really, is wealth?',
         provenance: 'Īśā Upaniṣad (Īśāvāsya Upaniṣad), v. 1 (Śukla Yajurveda XL.1, c. 6th century BCE)',
-        commentary: 'Notice the gorgeous paradox hidden in three Sanskrit words—tyaktena bhuñjīthāḥ ("enjoy through letting go"). You do not enjoy a sunset, a meal, or a home more by locking title-deeds around it; you enjoy it fully only once you drop the illusion of ownership, because clinging turns delight into guard-duty.',
+        commentary: 'Notice the gorgeous paradox hidden in three Sanskrit words, tyaktena bhuñjīthāḥ ("enjoy through letting go"). You do not enjoy a sunset, a meal, or a home more by locking title-deeds around it; you enjoy it fully only once you drop the illusion of ownership, because clinging turns delight into guard-duty.',
         marginalia: 'Mahatma Gandhi wrote that if all the other Upaniṣads and scriptures were reduced to ashes, this single opening verse of the Īśā Upaniṣad would suffice to preserve the essence of Indian philosophy.'
       },
       echoes: [
@@ -508,10 +508,10 @@
           scriptClass: 'script-greek',
           originalScript: 'Ἐλεύθερός ἐστιν ὁ ζῶν ὡς βούλεται, ὃν οὔτ᾽ ἀναγκάσαι ἔστιν οὔτε κωλῦσαι οὔτε βιάσασθαι.',
           transliteration: 'Eleutheros estin ho zōn hōs bouletai, hon out’ anankasai estin oute kōlysai oute biasasthai.',
-          translation: 'Free is the person who lives as they will, who can neither be compelled nor hindered nor forced—and whoever desires things outside their control has handed the tyrant a handle.',
+          translation: 'Free is the person who lives as they will, who can neither be compelled nor hindered nor forced, and whoever desires things outside their control has handed the tyrant a handle.',
           provenance: 'Epictetus, Discourses IV.1.1 (c. 108 CE)',
           commentary: 'A former slave lecturing Roman senators, Epictetus bluntly told them that a senator terrified of losing his seat or villa is far more enslaved than a captive who refuses to be intimidated.',
-          marginalia: 'Discourses IV.1 is the longest single chapter in Epictetus’s surviving works—a relentless cross-examination of why wealthy citizens live in invisible chains.'
+          marginalia: 'Discourses IV.1 is the longest single chapter in Epictetus’s surviving works, a relentless cross-examination of why wealthy citizens live in invisible chains.'
         }
       ]
     },
@@ -520,7 +520,7 @@
       id: 'compassion-ahimsa',
       domain: 'Compassion & Non-Violence',
       title: 'Compassion and Non-Harm Are the Highest Moral Law',
-      ancientThesis: 'Ahiṃsā & Innate Empathy — Every living creature recoils from pain just as you do; empathy precedes every rulebook.',
+      ancientThesis: 'Ahiṃsā & Innate Empathy, Every living creature recoils from pain just as you do; empathy precedes every rulebook.',
       modernSummary: 'Compassion is not an artificial rule taught by society; it is an innate human reflex recognizing that every living being feels pain just like us.',
       specimen: 'Compassion is not something we have to invent; every living creature fears pain just like us, and non-harm is the deepest law.',
       concepts: ['compassion', 'nonviolence', 'empathy', 'kindness', 'ahimsa', 'animals'],
@@ -567,10 +567,10 @@
           scriptClass: 'script-cjk',
           originalScript: '今人乍見孺子將入於井，皆有怵惕惻隱之心。',
           transliteration: 'Jīn rén zhà jiàn rúzǐ jiāng rù yú jǐng, jiē yǒu chùtì cèyǐn zhī xīn.',
-          translation: 'Suppose anyone suddenly saw a small child about to crawl into a well: they would instantly feel a jolt of alarm and compassion—not to win the parents’ favor, not to earn praise from neighbors, nor from dislike of the child’s cries.',
+          translation: 'Suppose anyone suddenly saw a small child about to crawl into a well: they would instantly feel a jolt of alarm and compassion, not to win the parents’ favor, not to earn praise from neighbors, nor from dislike of the child’s cries.',
           provenance: 'Mencius, Book II, Part A, Section 6 (c. 300 BCE)',
           commentary: 'Mencius used a razor-sharp thought experiment to demolish the cynical claim that humans are purely selfish calculators: the split-second reflex to grab a falling child fires before strategy, reputation, or reward ever enters the mind.',
-          marginalia: 'Mencius called this innate reflex one of the "four sprouts" (sì duān) of human nature—tiny seedlings that can either be tended into full moral forests or starved by neglect.'
+          marginalia: 'Mencius called this innate reflex one of the "four sprouts" (sì duān) of human nature, tiny seedlings that can either be tended into full moral forests or starved by neglect.'
         }
       ]
     },
@@ -579,7 +579,7 @@
       id: 'moral-choice',
       domain: 'Free Will & Ethics',
       title: 'Every Mind Must Choose Its Own Path Between Truth and Deceit',
-      ancientThesis: 'Free Moral Choice — Good and evil are not blind tribal inheritance, but the conscious choice of every thinking individual.',
+      ancientThesis: 'Free Moral Choice, Good and evil are not blind tribal inheritance, but the conscious choice of every thinking individual.',
       modernSummary: 'Nobody can outsource their conscience; good and evil begin in our individual choices of thought, word, and deed.',
       specimen: 'Good and evil are not inherited by tribe or birth; every single person must consciously choose with their own mind.',
       concepts: ['free_will', 'ethics', 'conscience', 'choice', 'good_evil'],
@@ -600,16 +600,16 @@
         place: 'Greater Bactria / Eastern Iran',
         region: 'Ancient Persia & Central Asia',
         coords: [66.89, 36.76],
-        scripture: 'The Gāthās — Yasna 30.2 (Ahunavaiti Gāthā)',
+        scripture: 'The Gāthās, Yasna 30.2 (Ahunavaiti Gāthā)',
         language: 'Old Avestan',
         scriptDir: 'ltr',
         scriptClass: 'script-latin',
         originalScript: 'Sraotā gə̄uš.āiš vahištā, avaēnatā sūčā mananhā;\nāvarənā̊ vīčiθahyā, narə̄m narəm xᵛaxyāi tanuyē.',
         transliteration: 'Sraotā gə̄uš.āiš vahištā, avaēnatā sūčā mananhā; āvarənā̊ vīčiθahyā, narə̄m narəm xᵛaxyāi tanuyē.',
-        translation: 'Listen with your ears to the highest truths; behold them with a lucid mind, for the choices of decision—each person for their own self, one by one.',
+        translation: 'Listen with your ears to the highest truths; behold them with a lucid mind, for the choices of decision, each person for their own self, one by one.',
         provenance: 'Gāthās of Zarathustra, Yasna 30.2 (Old Avestan liturgy, c. 1200–1000 BCE)',
-        commentary: 'Over three millennia ago on the Central Asian steppe, Zarathustra articulated what historians recognize as one of the earliest explicit statements of individual moral agency: cosmic order (Asha) and deceit (Druj) are not decided by blind fate or bloodline—each person must inspect them with a clear mind and choose for themselves.',
-        marginalia: 'The Zoroastrian ethical triad—Humata, Hūxta, Hvaršta ("Good Thoughts, Good Words, Good Deeds")—appeared in these ancient Avestan hymns centuries before classical Greece.'
+        commentary: 'Over three millennia ago on the Central Asian steppe, Zarathustra articulated what historians recognize as one of the earliest explicit statements of individual moral agency: cosmic order (Asha) and deceit (Druj) are not decided by blind fate or bloodline, each person must inspect them with a clear mind and choose for themselves.',
+        marginalia: 'The Zoroastrian ethical triad, Humata, Hūxta, Hvaršta ("Good Thoughts, Good Words, Good Deeds"), appeared in these ancient Avestan hymns centuries before classical Greece.'
       },
       echoes: [
         {
@@ -629,7 +629,7 @@
           translation: 'Where it is in our power to act, it is also in our power not to act; therefore virtue is up to us, and likewise vice.',
           provenance: 'Aristotle, Nicomachean Ethics III.5, 1113b6–7 (c. 340 BCE)',
           commentary: 'Aristotle rejected the convenient excuse that "bad people just can’t help themselves": while we may not control our starting temperament, we remain co-authors of the character our repeated choices harden into.',
-          marginalia: 'Aristotle compares a neglected habit to throwing a stone—once airborne you cannot pull it back, yet it was entirely in your hand whether to throw it.'
+          marginalia: 'Aristotle compares a neglected habit to throwing a stone, once airborne you cannot pull it back, yet it was entirely in your hand whether to throw it.'
         }
       ]
     },
@@ -638,7 +638,7 @@
       id: 'grief-lent-not-owned',
       domain: 'Grief & Impermanence',
       title: 'Everything We Love Was Only Lent to Us, Never Owned',
-      ancientThesis: 'Given Back, Not Lost — Grief is exacerbated by forgetting that loved ones, youth, and fortune are loans rather than property.',
+      ancientThesis: 'Given Back, Not Lost, Grief is exacerbated by forgetting that loved ones, youth, and fortune are loans rather than property.',
       modernSummary: 'Nobody truly owns anything or anyone; grief is the shock of realizing what we held dear was only borrowed for a season.',
       specimen: 'Nobody truly owns anything; grief is simply forgetting that what we love was only lent to us.',
       concepts: ['grief', 'loss', 'ownership', 'love', 'mortality', 'borrowed'],
@@ -659,7 +659,7 @@
         place: 'Sāvatthī, Kosala',
         region: 'Ancient India',
         coords: [82.05, 27.51],
-        scripture: 'Upajjhatthana Sutta (Aṅguttara Nikāya 5.57 — "Five Daily Remembrances")',
+        scripture: 'Upajjhatthana Sutta (Aṅguttara Nikāya 5.57, "Five Daily Remembrances")',
         language: 'Pāli',
         scriptDir: 'ltr',
         scriptClass: 'script-latin',
@@ -667,8 +667,8 @@
         transliteration: 'Sabbehi me piyehi manāpehi nānābhāvo vinābhāvo.',
         translation: 'I will inevitably grow different from, and be separated from, all that is dear and appealing to me.',
         provenance: 'Upajjhatthana Sutta, Aṅguttara Nikāya 5.57 (The Five Subjects for Frequent Contemplation, c. 5th century BCE)',
-        commentary: 'Rather than waiting for loss to ambush us, the Buddha recommended contemplating five plain facts every single day—aging, illness, death, separation from everything dear, and accountability for our deeds—not to become cold, but to love without the brittle panic of denial.',
-        marginalia: 'Notice the phrasing: this contemplation was prescribed explicitly for lay householders—mothers, fathers, merchants—not just forest monks.'
+        commentary: 'Rather than waiting for loss to ambush us, the Buddha recommended contemplating five plain facts every single day, aging, illness, death, separation from everything dear, and accountability for our deeds, not to become cold, but to love without the brittle panic of denial.',
+        marginalia: 'Notice the phrasing: this contemplation was prescribed explicitly for lay householders, mothers, fathers, merchants, not just forest monks.'
       },
       echoes: [
         {
@@ -688,7 +688,7 @@
           translation: 'We have received everything as a loan. The use and enjoyment are ours, while the giver sets the term. We ought always to keep ready what was lent for an unfixed time and return it without complaint when called.',
           provenance: 'Seneca, Consolation to Marcia X.1–2 (addressed to Marcia three years after her son’s death, c. 40 CE)',
           commentary: 'Writing to a grieving Roman mother, Seneca compared every child, spouse, and joy to borrowed theatrical furnishings: we love them fiercely while they stand in our house, yet forget the lender’s receipt.',
-          marginalia: 'Seneca adds a tender nuance often missed in caricatures of Stoicism: he tells Marcia he is not forbidding tears—nature demands grief—only endless self-torment.'
+          marginalia: 'Seneca adds a tender nuance often missed in caricatures of Stoicism: he tells Marcia he is not forbidding tears, nature demands grief, only endless self-torment.'
         },
         {
           year: 108,
@@ -716,7 +716,7 @@
       id: 'question-authority',
       domain: 'Critical Thinking & Truth',
       title: 'Never Believe Simply Because Tradition or an Authority Said So',
-      ancientThesis: 'Kālāma Inquiry — Reject hearsay, scripture-worship, and charismatic gurus; verify truth in your own lived experience.',
+      ancientThesis: 'Kālāma Inquiry, Reject hearsay, scripture-worship, and charismatic gurus; verify truth in your own lived experience.',
       modernSummary: 'Do not accept beliefs blindly from tradition, authority figures, or crowds; test every idea through reason and direct experience.',
       specimen: 'Never accept a belief just because an authority, crowd, or ancient text says so; test it in your own experience.',
       concepts: ['skepticism', 'authority', 'critical_thinking', 'experience', 'truth'],
@@ -745,8 +745,8 @@
         transliteration: 'Mā anussavena, mā paramparāya, mā itikirāya, mā piṭakasampadānena… yadā tumhe, kālāmā, attanāva jāneyyātha.',
         translation: 'Do not go by oral report, nor by lineage, nor by rumor, nor by scriptural authority, nor by mere logic or the charisma of a teacher… When you know for yourselves that these things are wholesome and lead to welfare, enter and abide in them.',
         provenance: 'Kālāma Sutta (Kesamutti Sutta), Aṅguttara Nikāya 3.65 (c. 5th century BCE)',
-        commentary: 'When the puzzled townspeople of Kesaputta complained that every passing preacher praised his own doctrine and trashed everyone else’s, the Buddha gave them a ten-point checklist forbidding blind trust—including trust in scripture and in the Buddha himself. Modern critical thinking is twenty-five centuries behind a village square in Kosala.',
-        marginalia: 'Ironically, the Buddha warned against mere dry logic (takka) alongside blind tradition—urging people to check whether a teaching actually reduces greed, hatred, and delusion when lived.'
+        commentary: 'When the puzzled townspeople of Kesaputta complained that every passing preacher praised his own doctrine and trashed everyone else’s, the Buddha gave them a ten-point checklist forbidding blind trust, including trust in scripture and in the Buddha himself. Modern critical thinking is twenty-five centuries behind a village square in Kosala.',
+        marginalia: 'Ironically, the Buddha warned against mere dry logic (takka) alongside blind tradition, urging people to check whether a teaching actually reduces greed, hatred, and delusion when lived.'
       },
       echoes: [
         {
@@ -766,7 +766,7 @@
           translation: 'Although both our friends and the truth are dear to us, piety requires us to honor the truth above our friends.',
           provenance: 'Aristotle, Nicomachean Ethics I.6, 1096a16 (critiquing his own teacher Plato’s Theory of Forms, c. 340 BCE)',
           commentary: 'Right before dismantling the core metaphysics of his beloved mentor Plato, Aristotle paused to state the enduring motto of intellectual honesty: affection for a teacher can never outrank fidelity to evidence.',
-          marginalia: 'Centuries later this passage was compressed into the famous Latin proverb: Amicus Plato, sed magis amica veritas—"Plato is my friend, but truth is a greater friend."'
+          marginalia: 'Centuries later this passage was compressed into the famous Latin proverb: Amicus Plato, sed magis amica veritas, "Plato is my friend, but truth is a greater friend."'
         }
       ]
     },
@@ -775,7 +775,7 @@
       id: 'good-company',
       domain: 'Friendship & Environment',
       title: 'You Become Like the Company You Keep',
-      ancientThesis: 'Kalyāṇamittatā — Character is contagious; your circle is not half your life, it quietly becomes your whole trajectory.',
+      ancientThesis: 'Kalyāṇamittatā, Character is contagious; your circle is not half your life, it quietly becomes your whole trajectory.',
       modernSummary: 'You inevitably absorb the habits, standards, and values of the people you surround yourself with.',
       specimen: 'You become the average of the people you surround yourself with; good company quietly shapes your entire life.',
       concepts: ['friendship', 'company', 'environment', 'influence', 'circle'],
@@ -802,10 +802,10 @@
         scriptClass: 'script-latin',
         originalScript: 'Lu2-im-zu-da na-an-da-du-un; lu2-lul-la-da na-an-da-ti-le-en.',
         transliteration: 'Lú-im-zu-da na-an-da-du-un; lú-lul-la-da na-an-da-ti-le-en.',
-        translation: 'Do not travel with a thief, do not dwell beside a liar or a gossip—for friendship lasts a day, kinship lasts forever, and an evil companion pulls your house into the ditch.',
+        translation: 'Do not travel with a thief, do not dwell beside a liar or a gossip, for friendship lasts a day, kinship lasts forever, and an evil companion pulls your house into the ditch.',
         provenance: 'The Instructions of Shuruppak, ll. 15–30 & 175–185 (Early Dynastic IIIa clay tablets from Abu Salabikh, c. 2600 BCE)',
-        commentary: 'Long before modern motivational speakers announced that "you are the average of the five people you spend the most time with," a Sumerian father pressed the exact same warning into wet clay in southern Iraq 4,600 years ago—among the oldest surviving philosophical texts ever excavated.',
-        marginalia: 'Shuruppak’s son Ziusudra is the Sumerian hero of the Great Flood—the earliest ancestor of Utnapishtim in Gilgamesh and Noah in Genesis.'
+        commentary: 'Long before modern motivational speakers announced that "you are the average of the five people you spend the most time with," a Sumerian father pressed the exact same warning into wet clay in southern Iraq 4,600 years ago, among the oldest surviving philosophical texts ever excavated.',
+        marginalia: 'Shuruppak’s son Ziusudra is the Sumerian hero of the Great Flood, the earliest ancestor of Utnapishtim in Gilgamesh and Noah in Genesis.'
       },
       echoes: [
         {
@@ -841,10 +841,10 @@
           scriptClass: 'script-latin',
           originalScript: 'Mā hevaṃ, Ānanda! Sakalamevidaṃ, Ānanda, brahmacariyaṃ, yadidaṃ kalyāṇamittatā.',
           transliteration: 'Mā hevaṃ, Ānanda! Sakalam ev’ idaṃ, Ānanda, brahmacariyaṃ, yadidaṃ kalyāṇamittatā.',
-          translation: 'Not so, Ānanda! Admirable friendship and good companionship are not half of the noble life—they are the entirety of the noble life.',
+          translation: 'Not so, Ānanda! Admirable friendship and good companionship are not half of the noble life, they are the entirety of the noble life.',
           provenance: 'Upaddha Sutta, Saṃyutta Nikāya 45.2 (c. 5th century BCE)',
           commentary: 'When his closest disciple Ānanda guessed that good friends made up "half" of personal growth, the Buddha gently interrupted him and raised the figure to one hundred percent.',
-          marginalia: 'The Pāli term kalyāṇamitta literally means "a beautiful friend"—someone whose very presence reminds you of your highest standards.'
+          marginalia: 'The Pāli term kalyāṇamitta literally means "a beautiful friend", someone whose very presence reminds you of your highest standards.'
         }
       ]
     },
@@ -853,7 +853,7 @@
       id: 'hypocrisy-judging',
       domain: 'Hypocrisy & Blind Spots',
       title: 'We See Others’ Tiny Faults While Blind to Our Own',
-      ancientThesis: 'The Two Wallets — Human vision is eagle-eyed toward a neighbor’s speck and stone-blind to our own sack of flaws.',
+      ancientThesis: 'The Two Wallets, Human vision is eagle-eyed toward a neighbor’s speck and stone-blind to our own sack of flaws.',
       modernSummary: 'We judge other people harshly by tiny mistakes while excusing or completely missing our own far larger flaws.',
       specimen: 'People are obsessed with spotting tiny flaws in others while remaining completely blind to their own hypocrisy.',
       concepts: ['hypocrisy', 'judging', 'blindspots', 'faults', 'projection'],
@@ -882,7 +882,7 @@
         transliteration: 'Peras imposuit Iuppiter nobis duas: propriis repletam vitiis post tergum dedit, alienis ante pectus suspendit gravem.',
         translation: 'Jupiter hung two pouches upon every human being: the one stuffed with our own faults he slung behind our back, and the heavy one filled with others’ faults he hung right in front of our chest. That is why we cannot see our own flaws, yet the moment someone else stumbles we become instant critics.',
         provenance: 'Aesopic Fable (Perry 266; preserved in Phaedrus IV.10, Babrius 66, and referenced in Catullus 22, 6th c. BCE tradition)',
-        commentary: 'Psychology calls it the "fundamental attribution error" and "bias blind spot"; an enslaved Greek storyteller drew the entire diagram in three lines two and a half millennia ago—two saddlebags slung across our shoulders so our own flaws stay permanently behind our eyes.',
+        commentary: 'Psychology calls it the "fundamental attribution error" and "bias blind spot"; an enslaved Greek storyteller drew the entire diagram in three lines two and a half millennia ago, two saddlebags slung across our shoulders so our own flaws stay permanently behind our eyes.',
         marginalia: 'The Roman poet Catullus (Poem 22, c. 55 BCE) remarked that even the most refined wit "never sees the part of the sack hanging on his own back."'
       },
       echoes: [
@@ -902,7 +902,7 @@
           transliteration: 'Sudassaṃ vajjam aññesaṃ, attano pana duddasaṃ; paresaṃ hi so vajjāni opunāti yathā bhusaṃ, attano pana chādeti kaliṃva kitavā saṭho.',
           translation: 'Easily seen is the fault of others, hard indeed to see is one’s own. One winnows others’ faults like chaff in the wind, yet hides one’s own as a cheating gambler conceals a losing throw of the dice.',
           provenance: 'Dhammapada, Chapter XVIII (Malavagga), v. 252 (c. 5th century BCE)',
-          commentary: 'Notice the sharp gambling simile: hiding our own flaws isn’t passive forgetfulness—it is an active sleight of hand, like a dice-player sliding his palm over a bad roll.',
+          commentary: 'Notice the sharp gambling simile: hiding our own flaws isn’t passive forgetfulness, it is an active sleight of hand, like a dice-player sliding his palm over a bad roll.',
           marginalia: 'Six centuries later, the Gospel of Matthew (7:3–5) immortalized the same psychological blind spot as noticing a tiny sawdust speck in a neighbor’s eye while carrying a wooden beam in one’s own.'
         }
       ]
@@ -912,7 +912,7 @@
       id: 'work-without-ego',
       domain: 'Craft & Ambition',
       title: 'Do the Work Without Demanding Applause',
-      ancientThesis: 'Like a Vine Bearing Grapes — Excellence seeks neither audience nor repayment; the act itself is the reward.',
+      ancientThesis: 'Like a Vine Bearing Grapes, Excellence seeks neither audience nor repayment; the act itself is the reward.',
       modernSummary: 'When you do good work solely for recognition, likes, or applause, you corrupt the craft; real mastery does good quietly.',
       specimen: 'Doing good work just for applause or recognition ruins it; true excellence asks for no audience.',
       concepts: ['craft', 'applause', 'fame', 'ego', 'work', 'validation'],
@@ -941,7 +941,7 @@
         transliteration: 'Tasmād asaktaḥ satataṃ kāryaṃ karma samācara; asakto hy ācaran karma param āpnoti pūruṣaḥ.',
         translation: 'Therefore, without clinging to applause or reward, steadily perform the work that ought to be done; for by acting without self-regarding attachment, a person attains the highest.',
         provenance: 'Bhagavad Gītā III.19 (see also XVII.20 on giving without expecting return, c. 2nd century BCE)',
-        commentary: 'In Chapter XVII, the Gītā even classifies generosity into three grades—and explicitly demotes any kindness done for return, praise, or social status into a lower, self-serving tier. Authentic craft and giving finish their circuit the moment the work is done.',
+        commentary: 'In Chapter XVII, the Gītā even classifies generosity into three grades, and explicitly demotes any kindness done for return, praise, or social status into a lower, self-serving tier. Authentic craft and giving finish their circuit the moment the work is done.',
         marginalia: 'The Sanskrit phrase lokasaṅgrahārtham ("for the holding-together of the world," Gītā 3.20) reframes daily work not as ego-display, but as quiet maintenance of the shared fabric.'
       },
       echoes: [
@@ -959,9 +959,9 @@
           scriptClass: 'script-greek',
           originalScript: 'Οἷον ἄμπελος βότρυν ἐνεγκοῦσα καὶ μηδὲν ἄλλο προσεπιζητοῦσα, ἐπειδὰν ἅπαξ τὸν ἴδιον καρπὸν ἐνέγκῃ.',
           transliteration: 'Hoion ampelos botryn enenkousa kai mēden allo prosepizētousa, epeidan hapax ton idion karpon enenkēi.',
-          translation: 'Like a vine that has borne its cluster of grapes and seeks nothing further once it has yielded its proper fruit—so should a human being, having done a good deed, not cry out for attention, but move quietly on to the next, as a vine bears grapes again in season.',
+          translation: 'Like a vine that has borne its cluster of grapes and seeks nothing further once it has yielded its proper fruit, so should a human being, having done a good deed, not cry out for attention, but move quietly on to the next, as a vine bears grapes again in season.',
           provenance: 'Marcus Aurelius, Meditations V.6 (c. 175 CE)',
-          commentary: 'Marcus lists three tiers of helpers: the merchant who immediately hands you an invoice, the subtle egoist who keeps a mental ledger, and the rare third person who barely notices they helped—just as a horse runs or a bee makes honey without posting a press release.',
+          commentary: 'Marcus lists three tiers of helpers: the merchant who immediately hands you an invoice, the subtle egoist who keeps a mental ledger, and the rare third person who barely notices they helped, just as a horse runs or a bee makes honey without posting a press release.',
           marginalia: 'Marcus applied the exact same standard to fame (Meditations IV.19): whoever craves posthumous applause forgets that everyone remembering them will soon be dead too.'
         }
       ]
@@ -971,7 +971,7 @@
       id: 'patience-timing',
       domain: 'Patience & Seasons',
       title: 'Rushing Growth Destroys What Needs Time to Ripen',
-      ancientThesis: 'Bá Miáo Zhù Zhǎng — Pulling on seedlings to make them taller kills the crop; every season unfolds in its own time.',
+      ancientThesis: 'Bá Miáo Zhù Zhǎng, Pulling on seedlings to make them taller kills the crop; every season unfolds in its own time.',
       modernSummary: 'Impatience and rushing the process destroy natural growth; clarity and maturity arrive only when you let things settle in their own season.',
       specimen: 'Impatience destroys what it tries to speed up; you cannot pull on a plant to make it grow faster.',
       concepts: ['patience', 'timing', 'growth', 'seasons', 'rushing', 'stillness'],
@@ -1001,7 +1001,7 @@
         translation: 'Who can remain still until muddy water slowly clears of itself? Who can remain quiet until right movement gradually arises of itself?',
         provenance: 'Dao De Jing, Chapter 15 (c. 5th–4th century BCE)',
         commentary: 'Stirring a muddy pond furiously with a stick in hopes of making it clear only churns up more silt. Laozi’s physical metaphor humiliates our addiction to frantic action: some problems clarify solely when you take your hands out of the water.',
-        marginalia: 'The character xú (徐) literally means walking with an unhurried, measured stride—the opposite of panic.'
+        marginalia: 'The character xú (徐) literally means walking with an unhurried, measured stride, the opposite of panic.'
       },
       echoes: [
         {
@@ -1018,10 +1018,10 @@
           scriptClass: 'script-cjk',
           originalScript: '宋人有閔其苗之不長而揠之者… 趨而往視之，苗則槁矣。',
           transliteration: 'Sòng rén yǒu mǐn qí miáo zhī bù zhǎng ér yà zhī zhě… qū ér wǎng shì zhī, miáo zé gǎo yǐ.',
-          translation: 'There was a man of Song who fretted that his grain sprouts were not growing fast enough, so he went out and tugged every single shoot upward. Returning exhausted, he told his family: "I helped the shoots grow today!" His son ran to the field—and found every sprout withered dead.',
+          translation: 'There was a man of Song who fretted that his grain sprouts were not growing fast enough, so he went out and tugged every single shoot upward. Returning exhausted, he told his family: "I helped the shoots grow today!" His son ran to the field, and found every sprout withered dead.',
           provenance: 'Mencius, Book II, Part A, Section 2 (c. 300 BCE)',
-          commentary: 'Mencius’s four-sentence comedy gave Chinese culture the immortal idiom bá miáo zhù zhǎng ("pulling shoots to help them grow")—the exact portrait of impatient self-improvement, parenting, and leadership.',
-          marginalia: 'In Mencius’s time, "a man of Song" was the standard comedic setup in Chinese philosophy—like an ancient philosophical joke about well-meaning cluelessness.'
+          commentary: 'Mencius’s four-sentence comedy gave Chinese culture the immortal idiom bá miáo zhù zhǎng ("pulling shoots to help them grow"), the exact portrait of impatient self-improvement, parenting, and leadership.',
+          marginalia: 'In Mencius’s time, "a man of Song" was the standard comedic setup in Chinese philosophy, like an ancient philosophical joke about well-meaning cluelessness.'
         },
         {
           year: -250,
@@ -1039,7 +1039,7 @@
           transliteration: 'Lakkōl zəmān wə‘ēt ləḵol-ḥēfeṣ taḥat hashāmāyim: ‘ēt lāledet wə‘ēt lāmūt, ‘ēt lāṭa‘at wə‘ēt la‘ăqôr nāṭūa‘.',
           translation: 'To everything there is a season, and a time for every purpose under heaven: a time to be born and a time to die; a time to plant and a time to uproot what was planted.',
           provenance: 'Ecclesiastes 3:1–2 (c. 3rd century BCE)',
-          commentary: 'Qohelet frames wisdom not as conquering time, but as reading its weather—recognizing when a chapter is meant for planting, when for waiting, and when for releasing.',
+          commentary: 'Qohelet frames wisdom not as conquering time, but as reading its weather, recognizing when a chapter is meant for planting, when for waiting, and when for releasing.',
           marginalia: 'Two thousand two hundred years later, Pete Seeger set these exact Hebrew verses straight onto the pop charts as "Turn! Turn! Turn!"'
         }
       ]
@@ -1049,7 +1049,7 @@
       id: 'value-in-loss',
       domain: 'Gratitude & Loss',
       title: 'We Only Understand What We Had Once It Is Gone',
-      ancientThesis: 'Tum Denique Intellegimus — Familiarity anaesthetizes gratitude; humans measure worth mainly through absence.',
+      ancientThesis: 'Tum Denique Intellegimus, Familiarity anaesthetizes gratitude; humans measure worth mainly through absence.',
       modernSummary: 'We take health, loved ones, and everyday blessings for granted until the moment we lose them.',
       specimen: 'Humans take everything precious for granted and only understand its true value once it is gone.',
       concepts: ['gratitude', 'loss', 'familiarity', 'taking_for_granted', 'appreciation'],
@@ -1096,9 +1096,9 @@
           scriptClass: 'script-latin',
           originalScript: 'Id agamus ut iucunda nobis amissorum fiat recordatio… habuimus.',
           transliteration: 'Id agamus ut iucunda nobis amissorum fiat recordatio… habuimus.',
-          translation: 'Let us greet our friends greedily while they are with us, since we do not know how long we shall have them—for fortune’s gifts are valued most keenly when they slip away.',
+          translation: 'Let us greet our friends greedily while they are with us, since we do not know how long we shall have them, for fortune’s gifts are valued most keenly when they slip away.',
           provenance: 'Seneca, Moral Letters to Lucilius, Letter 63, Sections 7–8 (c. 64 CE)',
-          commentary: 'Seneca’s remedy was deliberately imagining absence in advance—not to become morbid, but to shake off the coma of habit and actually look at the friend sitting across the table today.',
+          commentary: 'Seneca’s remedy was deliberately imagining absence in advance, not to become morbid, but to shake off the coma of habit and actually look at the friend sitting across the table today.',
           marginalia: 'Modern positive psychology revived this exact Stoic exercise under the clinical name "mental subtraction," finding it boosts gratitude more strongly than simple gratitude lists.'
         }
       ]
@@ -1108,7 +1108,7 @@
       id: 'inner-peace-chaos',
       domain: 'Stillness & Resilience',
       title: 'True Peace Is Found Inside Chaos, Not by Fleeing the World',
-      ancientThesis: 'The Ocean & The Inner Citadel — Serenity is not an empty cave far from noise, but an unshaken depth into which rivers pour without overflowing.',
+      ancientThesis: 'The Ocean & The Inner Citadel, Serenity is not an empty cave far from noise, but an unshaken depth into which rivers pour without overflowing.',
       modernSummary: 'Running away to a quiet mountain is easy; genuine inner peace means remaining calm and centered right in the middle of everyday chaos.',
       specimen: 'Real peace is not escaping to a quiet mountain; it is staying unshaken in the middle of everyday chaos.',
       concepts: ['peace', 'stillness', 'chaos', 'equanimity', 'retreat', 'calm'],
@@ -1135,10 +1135,10 @@
         scriptClass: 'script-deva',
         originalScript: 'आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत्।\nतद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी॥',
         transliteration: 'Āpūryamāṇam acalapratiṣṭhaṃ samudram āpaḥ praviśanti yadvat; tadvat kāmā yaṃ praviśanti sarve sa śāntim āpnoti na kāmakāmī.',
-        translation: 'As the waters of countless rivers enter the brimming, unmoving ocean without disturbing its bounds, so the person into whom all desires and impressions flow without shaking their center attains peace—not the one who chases every craving.',
+        translation: 'As the waters of countless rivers enter the brimming, unmoving ocean without disturbing its bounds, so the person into whom all desires and impressions flow without shaking their center attains peace, not the one who chases every craving.',
         provenance: 'Bhagavad Gītā, Chapter II (Sāṅkhya Yoga), v. 70 (c. 2nd century BCE)',
-        commentary: 'Notice the setting of this verse: not a tranquil hermitage, but the dust and roaring conch shells of a battlefield between two massive armies. Peace, the Gītā insists, is not blocking the rivers of life from flowing in—it is cultivating enough depth to receive them without flooding.',
-        marginalia: 'The Sanskrit compound acalapratiṣṭham literally means "immovably established"—like a seabed unaffected by surface storms.'
+        commentary: 'Notice the setting of this verse: not a tranquil hermitage, but the dust and roaring conch shells of a battlefield between two massive armies. Peace, the Gītā insists, is not blocking the rivers of life from flowing in, it is cultivating enough depth to receive them without flooding.',
+        marginalia: 'The Sanskrit compound acalapratiṣṭham literally means "immovably established", like a seabed unaffected by surface storms.'
       },
       echoes: [
         {
@@ -1167,7 +1167,7 @@
       id: 'purpose-service',
       domain: 'Purpose & Community',
       title: 'Human Meaning Comes from Serving Something Larger Than Yourself',
-      ancientThesis: 'Jiān Ài & Social Nature — Isolated self-optimization is sterile; we are built like two hands meant to work together.',
+      ancientThesis: 'Jiān Ài & Social Nature, Isolated self-optimization is sterile; we are built like two hands meant to work together.',
       modernSummary: 'Chasing purely personal pleasure or self-obsession leaves life hollow; true purpose comes from contributing to others and the common good.',
       specimen: 'Obsessing over your own happiness leaves you empty; real meaning only arrives when you serve others.',
       concepts: ['purpose', 'service', 'community', 'altruism', 'meaning', 'cooperation'],
@@ -1188,7 +1188,7 @@
         place: 'State of Lu / Song',
         region: 'Ancient China',
         coords: [116.99, 35.59],
-        scripture: 'Mozi, Chapter 16 (Jiān Ài — "Impartial Care", Part III)',
+        scripture: 'Mozi, Chapter 16 (Jiān Ài, "Impartial Care", Part III)',
         language: 'Classical Chinese',
         scriptDir: 'ltr',
         scriptClass: 'script-cjk',
@@ -1196,7 +1196,7 @@
         transliteration: 'Shì rén zhī guó ruò shì qí guó, shì rén zhī jiā ruò shì qí jiā, shì rén zhī shēn ruò shì qí shēn.',
         translation: 'Regard another’s country as you regard your own country; regard another’s household as you regard your own household; regard another’s person as you regard your own person.',
         provenance: 'Mozi, Chapter 15–16 (Jiān Ài, "Universal / Impartial Care," Warring States China, c. 430 BCE)',
-        commentary: 'Centuries before modern utilitarianism or effective altruism, the artisan-philosopher Mozi argued that every war, theft, and loneliness in human society grows from partial self-concern—and that flourishing expands only when our circle of care stretches beyond our own skin.',
+        commentary: 'Centuries before modern utilitarianism or effective altruism, the artisan-philosopher Mozi argued that every war, theft, and loneliness in human society grows from partial self-concern, and that flourishing expands only when our circle of care stretches beyond our own skin.',
         marginalia: 'Mozi did not merely preach impartial care: he and his disciplined followers famously marched on foot across China to fortify small defenseless cities against aggressive empires, refusing payment.'
       },
       echoes: [
@@ -1217,7 +1217,7 @@
           translation: 'The human being is by nature a civic, community-dwelling creature; one who needs no society because of self-sufficiency must be either a beast or a god.',
           provenance: 'Aristotle, Politics I.2, 1253a2–3 & 27–29 (c. 340 BCE)',
           commentary: 'Aristotle dismantled hyper-individualism in five Greek words: human flourishing (eudaimonia) is not a solo trophy won in a bunker, because language, justice, and purpose exist only in shared life.',
-          marginalia: 'The Greek word idiōtēs originally meant simply a "private person" who refused to participate in public civic life—eventually giving English the word "idiot."'
+          marginalia: 'The Greek word idiōtēs originally meant simply a "private person" who refused to participate in public civic life, eventually giving English the word "idiot."'
         },
         {
           year: 175,
@@ -1235,8 +1235,8 @@
           transliteration: 'Gegonamen gar pros synergian hōs podes, hōs cheires, hōs blephara.',
           translation: 'We were made for cooperation, like feet, like hands, like eyelids, like the rows of the upper and lower teeth. To work against one another is therefore contrary to nature.',
           provenance: 'Marcus Aurelius, Meditations II.1 (c. 175 CE)',
-          commentary: 'Each morning before facing scheming courtiers and imperial crises, Marcus reminded himself that sabotage and selfish withdrawal are anatomical absurdities—like a left hand plotting against the right.',
-          marginalia: 'The Greek word synergia here literally means "working together"—the classical root of our overused corporate buzzword "synergy."'
+          commentary: 'Each morning before facing scheming courtiers and imperial crises, Marcus reminded himself that sabotage and selfish withdrawal are anatomical absurdities, like a left hand plotting against the right.',
+          marginalia: 'The Greek word synergia here literally means "working together", the classical root of our overused corporate buzzword "synergy."'
         }
       ]
     }
