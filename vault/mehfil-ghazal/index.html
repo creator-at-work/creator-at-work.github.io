@@ -26,6 +26,19 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="./css/mehfil.css" />
+  <script>
+    /* In-app browsers (X, Instagram) mis-report 100dvh, hiding the bottom player. Size the app to the real visible area. */
+    (function () {
+      function setH() {
+        var h = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+        document.documentElement.style.setProperty('--app-h', Math.round(h) + 'px');
+      }
+      setH();
+      window.addEventListener('resize', setH);
+      window.addEventListener('orientationchange', setH);
+      if (window.visualViewport) window.visualViewport.addEventListener('resize', setH);
+    })();
+  </script>
 </head>
 <body>
   <!-- Night mehfil room atmosphere: overhead lamplight & deep claret wine velvet -->
