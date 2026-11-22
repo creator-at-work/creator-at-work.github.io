@@ -121,7 +121,7 @@
     Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) secObs.observe(el); });
 
     /* reveal */
-    var rev = document.querySelectorAll('.sec-head, .step, .entry, .rules li, .practice-grid > *, .ledger, .learning, .contact > *, .owner, .feature, .mini, .strip > *, .all-work');
+    var rev = document.querySelectorAll('.sec-head, .step, .entry, .rules li, .practice-grid > *, .ledger, .learning, .contact > *, .owner, .feature, .mini, .strip > *, .all-work, .vault-card, .vault-plate');
     var revObs = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); revObs.unobserve(e.target); } });
     }, { rootMargin: '0px 0px -8% 0px' });

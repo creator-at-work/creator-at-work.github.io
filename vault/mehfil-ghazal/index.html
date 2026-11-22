@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehfil — Ghazals Only</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/mehfil.css" />
+</head>
+<body>
+  <!-- Night mehfil room atmosphere: overhead fanoos lamplight & deep claret wine velvet -->
+  <div class="room-atmosphere" aria-hidden="true">
+    <div class="lamp-halo"></div>
+    <div class="wine-halo"></div>
+    <div class="room-grain"></div>
+  </div>
+
+  <!-- Hanging Brass Fanoos Lantern (anchored cleanly from the top ceiling edge) -->
+  <div class="fanoos-hanging" aria-hidden="true">
+    <svg class="fanoos-svg" viewBox="0 0 140 168" width="126" height="152" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="fanoosGlow" cx="50%" cy="54%" r="50%">
+          <stop offset="0%" stop-color="#FFE7B3" stop-opacity="0.72" />
+          <stop offset="38%" stop-color="#E39D46" stop-opacity="0.30" />
+          <stop offset="76%" stop-color="#A84A24" stop-opacity="0.08" />
+          <stop offset="100%" stop-color="#0E0909" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="brassStroke" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#A98249" />
+          <stop offset="50%" stop-color="#E5BA75" />
+          <stop offset="100%" stop-color="#9A723A" />
+        </linearGradient>
+        <linearGradient id="paneWarmth" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F6C574" stop-opacity="0.22" />
+          <stop offset="55%" stop-color="#E8A24A" stop-opacity="0.34" />
+          <stop offset="100%" stop-color="#8C2632" stop-opacity="0.18" />
+        </linearGradient>
+      </defs>
+
+      <!-- Warm ambient light pool radiating from lantern -->
+      <circle class="fanoos-aura" cx="70" cy="96" r="60" fill="url(#fanoosGlow)" />
+
+      <!-- Slender brass ceiling chain -->
+      <line x1="70" y1="0" x2="70" y2="34" stroke="url(#brassStroke)" stroke-width="0.95" stroke-dasharray="3 2.5" />
+      <circle cx="70" cy="36" r="3" stroke="url(#brassStroke)" stroke-width="0.9" />
+
+      <!-- Mughal lotus dome & finial -->
+      <path d="M70 39 L70 43" stroke="url(#brassStroke)" stroke-width="1" />
+      <path d="M70 43 C64 49, 54 53, 47 59 L93 59 C86 53, 76 49, 70 43 Z" stroke="url(#brassStroke)" stroke-width="1" fill="rgba(218, 168, 96, 0.08)" />
+      <!-- Scalloped crown rim -->
+      <path d="M44 59 L96 59" stroke="url(#brassStroke)" stroke-width="1.15" stroke-linecap="round" />
+      <path d="M48 62 L92 62" stroke="url(#brassStroke)" stroke-width="0.7" stroke-opacity="0.65" />
+
+      <!-- Hexagonal lantern body & Mughal pointed arch (mehrab) glass -->
+      <path d="M49 62 L46 116 L54 124 L86 124 L94 116 L91 62 Z" fill="url(#paneWarmth)" stroke="url(#brassStroke)" stroke-width="1" />
+      <!-- Side ribs -->
+      <line x1="57" y1="62" x2="56" y2="124" stroke="url(#brassStroke)" stroke-width="0.7" stroke-opacity="0.55" />
+      <line x1="83" y1="62" x2="84" y2="124" stroke="url(#brassStroke)" stroke-width="0.7" stroke-opacity="0.55" />
+      <!-- Central pointed mehrab arch filigree -->
+      <path d="M58 119 L58 84 C58 75, 64 70, 70 66 C76 70, 82 75, 82 84 L82 119" stroke="url(#brassStroke)" stroke-width="0.85" stroke-opacity="0.85" />
+      <!-- Fine cross-lattice at top of arch -->
+      <path d="M62 76 L70 71 L78 76" stroke="url(#brassStroke)" stroke-width="0.65" stroke-opacity="0.6" />
+
+      <!-- Glowing inner candle flame -->
+      <path class="flame-path" d="M70 86 C73.2 92, 74 97, 70 101.5 C66 97, 66.8 92, 70 86 Z" fill="#F2B85E" />
+      <path d="M70 91 C71.6 94.5, 72 97.5, 70 100 C68 97.5, 68.4 94.5, 70 91 Z" fill="#FFF6DC" />
+      <!-- Candle wax stub -->
+      <rect x="67.5" y="102" width="5" height="15" rx="1" fill="rgba(245, 228, 198, 0.55)" />
+
+      <!-- Base collar & pendant drop -->
+      <path d="M50 124 L90 124" stroke="url(#brassStroke)" stroke-width="1.1" stroke-linecap="round" />
+      <path d="M56 124 C61 132, 79 132, 84 124" stroke="url(#brassStroke)" stroke-width="0.95" fill="rgba(218, 168, 96, 0.08)" />
+      <line x1="70" y1="131" x2="70" y2="145" stroke="url(#brassStroke)" stroke-width="0.85" />
+      <path d="M70 145 C72.5 149, 72.5 153, 70 156 C67.5 153, 67.5 149, 70 145 Z" fill="url(#brassStroke)" fill-opacity="0.72" />
+    </svg>
+  </div>
+
+  <!-- ====================================================================
+       SERENE TOP BAR
+       ==================================================================== -->
+  <header class="mehfil-header">
+    <button id="brandHomeBtn" type="button" class="brand-mark" aria-label="Return to Mehfil">
+      <span class="brand-name font-display">Mehfil</span>
+      <span class="brand-urdu" aria-hidden="true">محفل</span>
+    </button>
+
+    <div class="header-right">
+      <form id="searchForm" class="search-wrap" role="search" autocomplete="off">
+        <label for="searchInput" class="sr-only">Search ghazals, singers, or poets</label>
+        <input
+          id="searchInput"
+          type="search"
+          class="search-field"
+          placeholder="Search ghazals, singers, poets…"
+          spellcheck="false"
+        />
+        <button id="searchClearBtn" type="button" class="quiet-link hidden" aria-label="Clear search">Clear</button>
+        <button id="searchYtBtn" type="submit" class="quiet-link quiet-link-gold hidden" title="Search more original ghazals on YouTube">
+          More on YouTube
+        </button>
+      </form>
+
+      <button id="eveningDrawerBtn" type="button" class="header-link">
+        <span>Queue</span>
+        <span id="heardCountDot" class="heard-count hidden"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       MAIN SINGLE-COLUMN NIGHT ROOM
+       ==================================================================== -->
+  <main id="mainRoom" class="mehfil-room quiet-scroll">
+    <div class="room-inner">
+
+      <!-- Quiet unboxed notice -->
+      <div id="whisperNotice" class="whisper-notice hidden" role="status" aria-live="polite">
+        <span id="whisperText"></span>
+        <button id="dismissWhisperBtn" type="button" class="whisper-close" aria-label="Dismiss">&times;</button>
+      </div>
+
+      <!-- THE HEARTH -->
+      <section class="hearth" aria-label="Current ghazal">
+        <!-- Idle Welcome State -->
+        <div id="hearthWelcome" class="hearth-welcome">
+          <h1 class="hearth-headline font-display">Night mehfil.</h1>
+          <p class="hearth-sub">
+            Original singers only. No remakes, no remixes, no repeats in a day.
+          </p>
+          <div class="hearth-cta-row">
+            <button id="beginRadioBtn" type="button" class="btn-wine">
+              <span class="btn-glyph" aria-hidden="true">&#9654;</span>
+              <span>Start Radio</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Playing State -->
+        <div id="hearthPlaying" class="hearth-playing hidden">
+          <div id="hearthModeLine" class="hearth-kicker">Radio</div>
+          <blockquote id="hearthMatla" class="hearth-couplet font-display"></blockquote>
+          <p id="hearthTranslation" class="hearth-translation"></p>
+          <div id="hearthTitleLine" class="hearth-track-credit"></div>
+          <div class="hearth-stage-actions">
+            <button id="toggleVideoBtn" type="button" class="quiet-link quiet-link-gold">
+              Watch video
+            </button>
+            <span class="sep-dot" aria-hidden="true">&middot;</span>
+            <button id="hearthNextBtn" type="button" class="quiet-link">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <!-- Persistent YouTube Player Container -->
+        <div id="stageContainer" class="stage-container is-ambient">
+          <div class="stage-frame">
+            <div id="ytPlayerHost" class="yt-host"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FIVE MOODS -->
+      <section class="moods-section" aria-label="Moods">
+        <nav id="moodRibbon" class="mood-ribbon" aria-label="Choose a mood"></nav>
+
+        <div id="moodContextBar" class="mood-context hidden">
+          <div class="mood-context-text">
+            <span id="moodContextTitle" class="mood-context-name font-display"></span>
+            <span id="moodContextScript" class="mood-context-script"></span>
+            <span id="moodContextDesc" class="mood-context-desc"></span>
+          </div>
+          <button id="moodRadioBtn" type="button" class="btn-subtle-gold">
+            <span aria-hidden="true">&#9654;</span>
+            <span id="moodRadioBtnLabel">Play Radio</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- QUIET GHAZAL LIST -->
+      <section class="repertoire-section" aria-label="Ghazals">
+        <div class="repertoire-head">
+          <h2 id="repertoireHeading" class="repertoire-title font-display">Start listening</h2>
+          <div class="repertoire-controls">
+            <button id="clearFilterBtn" type="button" class="quiet-link hidden">All moods</button>
+          </div>
+        </div>
+
+        <div id="ghazalList" class="ghazal-list"></div>
+
+        <div id="showMoreWrap" class="show-more-wrap hidden">
+          <button id="showMoreBtn" type="button" class="quiet-link quiet-link-gold">
+            Show all ghazals
+          </button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Subtle etched wine surahi & jaam silhouette resting quietly in the bottom-left night shadow -->
+  <div class="wine-corner-motif" aria-hidden="true">
+    <svg viewBox="0 0 110 130" width="96" height="114" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Slender traditional surahi (decanter) -->
+      <path d="M40 16 L46 16 M43 16 L43 22 C43 27, 41 31, 41 39 C41 49, 25 58, 25 80 C25 101, 34 114, 43 114 C52 114, 61 101, 61 80 C61 58, 45 49, 45 39 C45 31, 43 27, 43 22" stroke="rgba(223,169,95,0.22)" stroke-width="1" />
+      <path d="M26 84 C32 81, 54 81, 60 84 C59 101, 51 113, 43 113 C35 113, 27 101, 26 84 Z" fill="rgba(148, 30, 46, 0.24)" />
+      <line x1="34" y1="115" x2="52" y2="115" stroke="rgba(223,169,95,0.24)" stroke-width="1" />
+      <!-- Crystal wine goblet (jaam) beside it -->
+      <path d="M72 64 C72 80, 92 80, 92 64 Z" stroke="rgba(223,169,95,0.24)" stroke-width="0.95" />
+      <path d="M74 71 C78 69, 86 69, 90 71 C89 78, 75 78, 74 71 Z" fill="rgba(164, 34, 52, 0.34)" />
+      <line x1="82" y1="78" x2="82" y2="113" stroke="rgba(223,169,95,0.22)" stroke-width="0.9" />
+      <line x1="74" y1="115" x2="90" y2="115" stroke="rgba(223,169,95,0.24)" stroke-width="0.95" />
+    </svg>
+  </div>
+
+  <!-- ====================================================================
+       QUIET SLIDE-OVER: QUEUE & HEARD TODAY
+       ==================================================================== -->
+  <div id="eveningBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="eveningDrawer" class="evening-drawer" aria-label="Queue and history">
+    <div class="drawer-head">
+      <div>
+        <div class="drawer-kicker">Mehfil</div>
+        <h2 class="drawer-title font-display">Up Next &amp; Today</h2>
+      </div>
+      <button id="closeEveningBtn" type="button" class="quiet-link" aria-label="Close">Close &times;</button>
+    </div>
+
+    <div class="drawer-tabs" role="tablist">
+      <button type="button" class="drawer-tab is-active" data-drawer-tab="queue" role="tab">Up Next</button>
+      <button type="button" class="drawer-tab" data-drawer-tab="heard" role="tab">Heard Today</button>
+      <button type="button" class="drawer-tab" data-drawer-tab="note" role="tab">About</button>
+    </div>
+
+    <div id="drawerBody" class="drawer-body quiet-scroll"></div>
+  </aside>
+
+  <!-- ====================================================================
+       SOOTHING BOTTOM LISTENING BAR
+       ==================================================================== -->
+  <footer class="console" aria-label="Playback controls">
+    <div class="console-left">
+      <button id="consoleTrackBtn" type="button" class="console-track-btn" title="Open queue and details">
+        <span id="consoleTitle" class="console-title">Nothing playing</span>
+        <span id="consoleArtist" class="console-artist">Pick a mood or start radio</span>
+      </button>
+    </div>
+
+    <div class="console-center">
+      <div class="transport">
+        <button id="prevBtn" type="button" class="ctrl-icon" aria-label="Previous" title="Previous">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 5v14M18 6l-9 6 9 6V6z" />
+          </svg>
+        </button>
+
+        <button id="playPauseBtn" type="button" class="ctrl-play" aria-label="Play or pause" title="Play / Pause (Space)">
+          <svg id="iconPlay" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M8.5 5.5v13l10.5-6.5-10.5-6.5z" />
+          </svg>
+          <svg id="iconPause" class="hidden" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M7 5h3.5v14H7V5zm6.5 0H17v14h-3.5V5z" />
+          </svg>
+        </button>
+
+        <button id="stopBtn" type="button" class="ctrl-icon" aria-label="Stop" title="Stop">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+            <rect x="6" y="6" width="12" height="12" rx="1" />
+          </svg>
+        </button>
+
+        <button id="nextBtn" type="button" class="ctrl-icon" aria-label="Next" title="Next">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 5v14M6 6l9 6-9 6V6z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="scrubber">
+        <span id="timeCurrent" class="time-text">0:00</span>
+        <input id="seekSlider" type="range" class="hairline-slider" min="0" max="1000" value="0" aria-label="Seek" />
+        <span id="timeDuration" class="time-text">0:00</span>
+      </div>
+    </div>
+
+    <div class="console-right">
+      <button id="consoleRadioBtn" type="button" class="console-pill-link" title="Start radio">
+        <span id="radioGlowDot" class="radio-dot hidden" aria-hidden="true"></span>
+        <span id="consoleRadioLabel">Radio</span>
+      </button>
+
+      <div class="sleep-anchor">
+        <button id="sleepBtn" type="button" class="console-pill-link" aria-haspopup="dialog" aria-expanded="false" title="Sleep timer">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <span id="sleepBtnLabel">Sleep</span>
+        </button>
+
+        <div id="sleepPopover" class="sleep-popover hidden" role="dialog" aria-label="Sleep timer">
+          <div class="sleep-head">
+            <span class="sleep-title font-display">Sleep timer</span>
+            <button id="closeSleepPopoverBtn" type="button" class="quiet-link" aria-label="Close">&times;</button>
+          </div>
+
+          <div id="sleepActivePanel" class="sleep-active hidden">
+            <div class="sleep-live-row">
+              <span id="sleepActiveModeLabel" class="sleep-live-label">Remaining</span>
+              <span id="sleepCountdownDisplay" class="sleep-live-time font-display">15:00</span>
+            </div>
+            <div class="sleep-live-actions">
+              <button id="sleepExtendBtn" type="button" class="sleep-mini-btn">+10 min</button>
+              <button id="sleepCancelBtn" type="button" class="sleep-mini-btn sleep-mini-cancel">Cancel</button>
+            </div>
+          </div>
+
+          <div class="sleep-grid">
+            <button type="button" class="sleep-choice" data-sleep-min="15">15 min</button>
+            <button type="button" class="sleep-choice" data-sleep-min="30">30 min</button>
+            <button type="button" class="sleep-choice" data-sleep-min="45">45 min</button>
+            <button type="button" class="sleep-choice" data-sleep-min="60">60 min</button>
+            <button type="button" class="sleep-choice sleep-choice-full" data-sleep-mode="end_of_track">
+              End of this ghazal
+            </button>
+          </div>
+
+          <form id="sleepCustomForm" class="sleep-custom">
+            <input id="sleepCustomInput" type="number" min="1" max="240" placeholder="Minutes…" class="sleep-input" aria-label="Custom minutes" />
+            <button type="submit" class="sleep-mini-btn">Set</button>
+          </form>
+
+          <label class="sleep-fade">
+            <input id="sleepFadeCheckbox" type="checkbox" checked />
+            <span>Fade out slowly</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="vol-group">
+        <button id="muteBtn" type="button" class="ctrl-icon" aria-label="Mute or unmute" title="Mute">
+          <svg id="iconVolOn" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 5L6 9H3v6h3l5 4V5z" />
+            <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+          </svg>
+          <svg id="iconVolMuted" class="hidden" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 5L6 9H3v6h3l5 4V5z" />
+            <path d="M21 9l-6 6M15 9l6 6" />
+          </svg>
+        </button>
+        <input id="volumeSlider" type="range" class="hairline-slider vol-slider" min="0" max="100" value="82" aria-label="Volume" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/engine.js"></script>
+  <script src="./js/sleep_timer.js"></script>
+  <script src="./js/player.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

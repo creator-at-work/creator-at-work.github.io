@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas of Lives — Historical Life Trajectories</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/atlas.css" />
+</head>
+<body>
+  <!-- FULL-VIEWPORT INTERACTIVE HISTORICAL WORLD GLOBE -->
+  <div id="mapContainer" class="map-container">
+    <svg id="atlasSvg" class="atlas-svg" role="img" aria-label="Interactive historical world atlas"></svg>
+  </div>
+
+  <!-- TOP-LEFT FLOATING ARCHIVAL TITLE & FOLIO INDEX TRIGGER -->
+  <header class="atlas-header header-scrim">
+    <div id="figureNavRow" class="figure-nav-row hidden">
+      <button id="openIndexBtn" type="button" class="index-trigger">
+        <span id="plateCounter">Plate I of XXII</span>
+        <span class="index-dot" aria-hidden="true">&middot;</span>
+        <span class="index-word">Index of Lives</span>
+        <span class="index-caret" aria-hidden="true">&#9662;</span>
+      </button>
+      <span class="nav-arrows">
+        <button id="prevFigureBtn" type="button" class="nav-arrow-btn" aria-label="Previous figure" title="Previous life">&lsaquo;</button>
+        <button id="nextFigureBtn" type="button" class="nav-arrow-btn" aria-label="Next figure" title="Next life">&rsaquo;</button>
+      </span>
+    </div>
+
+    <div class="title-row">
+      <h1 id="figureTitle" class="figure-title font-monument">Napoléon</h1>
+      <span id="figureYears" class="figure-years">1769 — 1821</span>
+    </div>
+
+    <p id="figureSubtitle" class="figure-subtitle font-monument">
+      Ajaccio to Saint Helena
+    </p>
+  </header>
+
+  <!-- LEFT-HAND DARK ARCHIVAL INDEX OF LIVES (OPENS ON CLICK) -->
+  <aside id="indexDrawer" class="index-drawer" aria-label="Index of historical lives">
+    <div class="index-head">
+      <div>
+        <div class="index-kicker">Atlas of Lives</div>
+        <h2 class="index-heading font-monument">Twenty-Two Lives</h2>
+      </div>
+      <button id="closeIndexBtn" type="button" class="sheet-close" aria-label="Close index">
+        <span>Close</span>
+        <span class="sheet-close-x" aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div id="indexList" class="index-body quiet-scroll"></div>
+  </aside>
+
+  <!-- TOP-RIGHT MINIMAL ETCHED MAP CONTROLS -->
+  <div class="map-controls">
+    <button id="lifeViewBtn" type="button" class="ctrl-link is-active">Life Frame</button>
+    <span class="ctrl-sep" aria-hidden="true">/</span>
+    <button id="worldViewBtn" type="button" class="ctrl-link">World of 1812</button>
+    <span class="ctrl-divider" aria-hidden="true"></span>
+    <button id="zoomInBtn" type="button" class="ctrl-glyph" aria-label="Zoom in" title="Zoom in">+</button>
+    <button id="zoomOutBtn" type="button" class="ctrl-glyph" aria-label="Zoom out" title="Zoom out">&minus;</button>
+  </div>
+
+  <!-- FLOATING ARCHIVAL MARGIN TOOLTIP (Pins, Empires & Period Places) -->
+  <div id="mapTooltip" class="map-tooltip" role="status" aria-live="polite">
+    <div id="ttMeta" class="tt-meta"></div>
+    <div id="ttTitle" class="tt-title font-monument"></div>
+    <div id="ttDetail" class="tt-detail"></div>
+  </div>
+
+  <!-- BOTTOM ARCHIVAL CHRONOLOGICAL RIBBON -->
+  <footer id="bottomBar" class="bottom-bar">
+    <div class="bottom-left">
+      <button id="traceBtn" type="button" class="trace-btn">
+        <span id="traceIcon" class="trace-glyph">&#9654;</span>
+        <span id="traceLabel">Trace Life</span>
+      </button>
+
+      <nav id="yearScrubber" class="year-scrubber" aria-label="Life chronology"></nav>
+    </div>
+
+    <div id="sourceCredits" class="source-credits"></div>
+  </footer>
+
+  <!-- RIGHT-HAND ARCHIVAL MONOGRAPH SHEET (OPENS ON CLICKING ANY NUMBER OR YEAR) -->
+  <aside id="chapterDrawer" class="monograph-sheet" aria-label="Stage narrative">
+    <div class="sheet-top">
+      <div class="sheet-folio-meta">
+        <span id="drawerChapter" class="sheet-chapter">Stage I</span>
+        <span class="sheet-dot" aria-hidden="true">&middot;</span>
+        <span id="drawerLocationTop" class="sheet-loc-top">Ajaccio, Corsica</span>
+      </div>
+      <button id="closeDrawerBtn" type="button" class="sheet-close" aria-label="Close chapter">
+        <span>Return to map</span>
+        <span class="sheet-close-x" aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div id="drawerBody" class="sheet-body quiet-scroll">
+      <div id="subStageNav" class="sub-stage-nav hidden"></div>
+
+      <div class="sheet-hero">
+        <div id="drawerYear" class="sheet-year font-monument">1769</div>
+        <div class="sheet-dateline">
+          <div id="drawerDate" class="sheet-date">15 August 1769</div>
+          <div id="drawerAgeDist" class="sheet-agedist">Birthplace</div>
+        </div>
+      </div>
+
+      <h2 id="drawerTitle" class="sheet-title font-monument"></h2>
+      <p id="drawerProse" class="sheet-prose"></p>
+
+      <div id="metricBlock" class="copper-metric hidden">
+        <div class="copper-metric-head">
+          <span id="metricLabel"></span>
+          <span id="metricSummary" class="copper-metric-summary"></span>
+        </div>
+        <div id="metricRows" class="copper-metric-rows"></div>
+      </div>
+
+      <div id="factBlock" class="marginal-note hidden">
+        <span class="marginal-lead">Of note &mdash;</span>
+        <span id="drawerFact" class="marginal-text"></span>
+      </div>
+
+      <div class="sheet-fleuron" aria-hidden="true">
+        <span class="fleuron-rule"></span>
+        <span class="fleuron-mark">&#10086;</span>
+        <span class="fleuron-rule"></span>
+      </div>
+
+      <figure class="epigraph-block">
+        <blockquote id="drawerQuote" class="epigraph-quote font-monument"></blockquote>
+        <figcaption class="epigraph-caption">
+          <span id="drawerProvenance" class="epigraph-source"></span>
+          <span id="drawerLangToggle" class="lang-toggle hidden"></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <nav class="sheet-foot" aria-label="Chapter navigation">
+      <button id="drawerPrevBtn" type="button" class="leaf-btn">&larr; Origin</button>
+      <span id="drawerCounter" class="leaf-counter">I of X</span>
+      <button id="drawerNextBtn" type="button" class="leaf-btn leaf-next">Next &rarr;</button>
+    </nav>
+  </aside>
+
+  <!-- Embedded Natural Earth 50m World Territories TopoJSON (240 territories, Antarctica excluded) -->
+  <script src="data/world-countries-50m.js"></script>
+
+  <!-- 22 Historical Figure Plates -->
+  <script src="data/figures/napoleon.js"></script>
+  <script src="data/figures/alexander.js"></script>
+  <script src="data/figures/chandragupta.js"></script>
+  <script src="data/figures/rajaraja.js"></script>
+  <script src="data/figures/euler.js"></script>
+  <script src="data/figures/ramanujan.js"></script>
+  <script src="data/figures/oppenheimer.js"></script>
+  <script src="data/figures/cyrus.js"></script>
+  <script src="data/figures/aristotle.js"></script>
+  <script src="data/figures/caesar.js"></script>
+  <script src="data/figures/genghis.js"></script>
+  <script src="data/figures/ibnbattuta.js"></script>
+  <script src="data/figures/leonardo.js"></script>
+  <script src="data/figures/akbar.js"></script>
+  <script src="data/figures/galileo.js"></script>
+  <script src="data/figures/newton.js"></script>
+  <script src="data/figures/darwin.js"></script>
+  <script src="data/figures/lincoln.js"></script>
+  <script src="data/figures/curie.js"></script>
+  <script src="data/figures/gandhi.js"></script>
+  <script src="data/figures/einstein.js"></script>
+  <script src="data/figures/turing.js"></script>
+  <script src="data/figures/registry.js"></script>
+
+  <!-- Interactive Historical Globe & Monograph Controller -->
+  <script src="js/atlas.js"></script>
+</body>
+</html>

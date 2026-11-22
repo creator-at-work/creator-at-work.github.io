@@ -76,7 +76,8 @@
       <li><a href="work.html"><span class="num">i</span>Work</a></li>
       <li><a href="practice.html"><span class="num">ii</span>Practice</a></li>
       <li><a href="principles.html"><span class="num">iii</span>Principles</a></li>
-      <li><a href="contact.html"><span class="num">iv</span>Contact</a></li>
+      <li><a href="vault.html"><span class="num">iv</span>Weekend Vault</a></li>
+      <li><a href="contact.html"><span class="num">v</span>Contact</a></li>
     </ol>
   </nav>
   <button class="mode" id="modeToggle" type="button" aria-pressed="false" aria-describedby="modeHint">
@@ -101,7 +102,8 @@
       <li style="--i:0"><a href="work.html"><span class="num">i</span><span class="mn-t">Work</span></a></li>
       <li style="--i:1"><a href="practice.html"><span class="num">ii</span><span class="mn-t">Practice</span></a></li>
       <li style="--i:2"><a href="principles.html"><span class="num">iii</span><span class="mn-t">Principles</span></a></li>
-      <li style="--i:3"><a href="contact.html"><span class="num">iv</span><span class="mn-t">Contact</span></a></li>
+      <li style="--i:3"><a href="vault.html"><span class="num">iv</span><span class="mn-t">Weekend Vault</span></a></li>
+      <li style="--i:4"><a href="contact.html"><span class="num">v</span><span class="mn-t">Contact</span></a></li>
     </ol>
     <ul class="mnav-more">
       <li><a href="#top" aria-current="page">Home</a></li>
@@ -236,6 +238,78 @@
   </ul>
 </section>
 
+<!-- ============ WEEKEND VAULT ============ -->
+<section class="vault-home" id="weekend-vault" aria-labelledby="vault-home-title">
+  <header class="sec-head">
+    <p class="kicker">Weekend Vault</p>
+    <h2 id="vault-home-title">Four things I built on weekends.</h2>
+    <p class="sec-lede">Small obsessions turned into working rooms. All four run live right here.</p>
+  </header>
+  <ol class="vault-grid">
+    <li class="vault-card">
+      <a class="vault-card-link" href="vault/atlas-of-lives/">
+        <div class="vc-top">
+          <span class="vc-no">V° 01</span>
+          <span class="vc-kind">Cartography &amp; History</span>
+        </div>
+        <h3 class="vc-title">Atlas of Lives</h3>
+        <p class="vc-desc">Twenty-two historical lives mapped onto an interactive world globe, each stop paired with exact dates, coordinates and one primary-source quotation.</p>
+        <p class="sig"><span>D3 v7 + embedded Natural Earth 50m TopoJSON. Zoom out for contemporaneous empires.</span></p>
+        <div class="vc-meta">
+          <span class="vc-nums">22 lives · 50m globe</span>
+          <span class="vc-go">Open <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="vault-card">
+      <a class="vault-card-link" href="vault/the-humbler/">
+        <div class="vc-top">
+          <span class="vc-no">V° 02</span>
+          <span class="vc-kind">Philosophy</span>
+        </div>
+        <h3 class="vc-title">The Humbler</h3>
+        <p class="vc-desc">Inscribe a philosophical epiphany you think is original and meet the ancient mind who wrote it down millennia before you.</p>
+        <p class="sig"><span>58 canonical origins across Sanskrit, Greek, Chinese, Hebrew, Pali and Latin.</span></p>
+        <div class="vc-meta">
+          <span class="vc-nums">58 ancient origins · 6 scripts</span>
+          <span class="vc-go">Open <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="vault-card">
+      <a class="vault-card-link" href="vault/product-youtube/">
+        <div class="vc-top">
+          <span class="vc-no">V° 03</span>
+          <span class="vc-kind">Product Craft</span>
+        </div>
+        <h3 class="vc-title">The Product YouTube</h3>
+        <p class="vc-desc">YouTube stripped down to product craft alone: strategy, discovery, pricing, retention and design, with feed, search and marathon mode.</p>
+        <p class="sig"><span>252 vetted talks filtered through 8 topical boundaries and 61 hard-block rules.</span></p>
+        <div class="vc-meta">
+          <span class="vc-nums">252 talks · 8 boundaries</span>
+          <span class="vc-go">Open <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="vault-card">
+      <a class="vault-card-link" href="vault/mehfil-ghazal/">
+        <div class="vc-top">
+          <span class="vc-no">V° 04</span>
+          <span class="vc-kind">Listening Room</span>
+        </div>
+        <h3 class="vc-title">Mehfil</h3>
+        <p class="vc-desc">A late-night ghazal sanctuary across five poetic moods, original maestros only, with a 24-hour zero-repetition radio engine and sleep timer.</p>
+        <p class="sig"><span>418 original recordings across 33 maestros. Persistent 24-hour no-repeat ledger in browser storage.</span></p>
+        <div class="vc-meta">
+          <span class="vc-nums">418 ghazals · 5 moods</span>
+          <span class="vc-go">Open <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </li>
+  </ol>
+  <p class="all-work"><a href="vault.html">Open the Weekend Vault <span aria-hidden="true">→</span></a></p>
+</section>
+
 <!-- ============ WORK, LIGHTLY ============ -->
 <section class="lightly" aria-labelledby="light-title">
   <p class="kicker" id="light-title">Work, lightly</p>
@@ -262,7 +336,7 @@
 
 <footer class="foot">
   <p class="foot-quote">Thanks for staying past day one.</p>
-  <nav class="foot-nav" aria-label="Footer"><a href="#top">Home</a><a href="work.html">Work</a><a href="practice.html">Practice</a><a href="principles.html">Principles</a><a href="shelf.html">Shelf</a><a href="contact.html">Contact</a></nav>
+  <nav class="foot-nav" aria-label="Footer"><a href="#top">Home</a><a href="work.html">Work</a><a href="practice.html">Practice</a><a href="principles.html">Principles</a><a href="vault.html">Weekend Vault</a><a href="shelf.html">Shelf</a><a href="contact.html">Contact</a></nav>
   <div class="foot-meta">
     <p><span id="istTime">India</span></p>
     <p id="session">You have been here for <span id="breaths">0</span> breaths.</p>

@@ -1053,3 +1053,109 @@ html[data-mode="signal"] .hero-person .breath-scale::before { opacity: .45; }
 .wordmark { font-size: 20px; letter-spacing: -.005em; font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 24; }
 .wm-j { font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 24; margin-right: -.03em; padding-left: .06em; }
 @media (max-width: 560px) { .wordmark { font-size: 18px; } }
+
+/* =====================================================================
+   v10: Weekend Vault (home section + vault.html)
+   ===================================================================== */
+.vault-home { margin-top: clamp(90px, 12vw, 150px); }
+.vault-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+}
+.vault-card {
+  position: relative;
+  border-bottom: 1px solid var(--rule);
+}
+.vault-card:nth-child(even) { border-left: 1px solid var(--rule); }
+.vault-card-link {
+  display: flex; flex-direction: column; height: 100%;
+  padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px) clamp(24px, 3vw, 34px) 0;
+  text-decoration: none;
+  transition: background-color .4s var(--ease);
+}
+.vault-card:nth-child(even) .vault-card-link {
+  padding-left: clamp(24px, 3vw, 36px);
+  padding-right: 0;
+}
+.vc-top {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  margin-bottom: 14px;
+}
+.vc-no { font: 500 12px var(--mono); letter-spacing: .07em; color: var(--accent); }
+.vc-kind { font: 11.5px var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.vc-title {
+  font-family: "Display J", var(--serif);
+  font-size: clamp(28px, 2.7vw, 40px); line-height: 1.06; letter-spacing: -.02em; font-weight: 360;
+  font-variation-settings: "opsz" 96, "SOFT" 60;
+  color: var(--ink); margin-bottom: 12px;
+  transition: color .35s var(--ease);
+}
+.vault-card-link:hover .vc-title { color: var(--accent); }
+.vc-desc { font-size: .95em; line-height: 1.54; color: var(--ink-2); max-width: 34em; margin: 0 0 18px; }
+.vc-meta {
+  margin-top: auto;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-top: 14px; border-top: 1px solid var(--rule);
+}
+.vc-nums { font: 11.5px var(--mono); letter-spacing: .04em; color: var(--muted); }
+.vc-go { font: 500 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.vc-go span { display: inline-block; transition: transform .4s var(--spring); }
+.vault-card-link:hover .vc-go span { transform: translateX(5px); }
+.vault-card-link .sig { font-size: 12px; }
+html[data-mode="signal"] .vault-card-link .sig { margin-bottom: 14px; }
+
+/* dedicated vault.html full architectural ledger */
+.vault-shelf { padding-top: 8px !important; }
+.vault-plates { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.vault-plate { border-bottom: 1px solid var(--rule); }
+.vp-link {
+  display: grid; grid-template-columns: minmax(150px, 210px) minmax(0, 1fr) auto;
+  gap: 14px clamp(24px, 4vw, 56px); align-items: start;
+  padding: clamp(28px, 4vw, 46px) 0;
+  text-decoration: none;
+  transition: background-color .4s var(--ease);
+}
+.vp-aside { display: grid; gap: 6px; padding-top: .35em; }
+.vp-no { font: 500 12.5px var(--mono); letter-spacing: .08em; color: var(--accent); }
+.vp-kind { font: 11.5px var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.vp-title {
+  font-family: "Display J", var(--serif);
+  font-size: clamp(32px, 3.6vw, 52px); line-height: 1.03; letter-spacing: -.025em; font-weight: 350;
+  font-variation-settings: "opsz" 144, "SOFT" 65;
+  color: var(--ink); margin-bottom: 14px;
+  transition: color .35s var(--ease), transform .5s var(--spring);
+}
+.vp-link:hover .vp-title { color: var(--accent); transform: translateX(6px); }
+.vp-desc { font-size: 1em; line-height: 1.56; color: var(--ink-2); max-width: 38em; margin: 0 0 18px; }
+.vp-figs {
+  display: flex; flex-wrap: wrap; gap: 8px 28px;
+  font: 12px var(--mono); letter-spacing: .04em; color: var(--muted);
+}
+.vp-figs b {
+  font-family: var(--serif); font-weight: 420; font-size: 1.25em;
+  color: var(--ink); font-feature-settings: "lnum" 1, "tnum" 1;
+  margin-right: 5px;
+}
+.vp-action {
+  padding-top: .5em;
+  font: 500 12px var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); white-space: nowrap;
+}
+.vp-action span { display: inline-block; transition: transform .4s var(--spring); }
+.vp-link:hover .vp-action span { transform: translateX(6px); }
+.vp-main .sig { max-width: 44em; }
+html[data-mode="signal"] .vp-main .sig { margin-top: 14px; }
+
+.vault-note { margin-top: clamp(28px, 4vw, 44px); max-width: 42em; }
+.vault-note p { font-size: .92em; color: var(--muted); margin: 0; }
+
+@media (max-width: 860px) {
+  .vault-grid { grid-template-columns: 1fr; }
+  .vault-card:nth-child(even) { border-left: 0; }
+  .vault-card-link, .vault-card:nth-child(even) .vault-card-link { padding: 24px 0; }
+  .vp-link { grid-template-columns: 1fr; gap: 10px; padding: 26px 0; }
+  .vp-aside { display: flex; align-items: baseline; gap: 14px; padding-top: 0; }
+  .vp-action { padding-top: 6px; }
+  .vp-link:hover .vp-title { transform: none; }
+}

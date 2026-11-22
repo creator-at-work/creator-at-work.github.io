@@ -1,0 +1,1227 @@
+/* ==========================================================================
+   HISTORICAL LIFE ATLAS — Dark Museum Archival Folio & Interactive Globe
+   Candlelit rare-book aesthetic: obsidian sea, smoked vellum landmasses,
+   warm museum ivory typography, Imperial Crimson & burnished antique gold.
+   ========================================================================== */
+
+:root {
+  /* Dark Archival Surfaces (Warm Obsidian & Espresso — Never Cold Blue-Black) */
+  --sea: #11100E;
+  --paper: #171512;
+  --paper-elevated: #1D1A16;
+  --paper-bar: #141210;
+  --land: #1E1C18;
+  --land-stroke: #3B362D;
+
+  /* Candlelit Ivory & Sepia Ink */
+  --ink: #EDE6D6;
+  --ink-2: #BEB5A4;
+  --ink-3: #8D8372;
+  --ink-faint: #635B4E;
+  --rule: rgba(237, 230, 214, 0.13);
+  --rule-soft: rgba(237, 230, 214, 0.08);
+  --grat: rgba(237, 230, 214, 0.048);
+  --water-label: rgba(237, 230, 214, 0.16);
+
+  /* Disciplined Historical Accents: Imperial Crimson & Burnished Gold */
+  --accent: #C24136;
+  --accent-seal: #9F2B24;
+  --brass: #C4A262;
+  --brass-soft: rgba(196, 162, 98, 0.35);
+
+  /* Default Life Frame Subtle Territorial Wash */
+  --life-empire: rgba(194, 65, 54, 0.24);
+  --life-empire-stroke: rgba(194, 65, 54, 0.56);
+  --life-dependent: rgba(194, 65, 54, 0.11);
+
+  /* Interactive 1769–1821 World Globe Glazes */
+  --terr-empire: rgba(194, 65, 54, 0.34);
+  --terr-empire-stroke: rgba(212, 88, 76, 0.65);
+  --terr-dependent: rgba(196, 146, 72, 0.24);
+  --terr-dependent-stroke: rgba(196, 146, 72, 0.52);
+  --terr-ally: rgba(126, 148, 112, 0.22);
+  --terr-ally-stroke: rgba(138, 162, 124, 0.48);
+  --terr-rival: rgba(86, 112, 142, 0.24);
+  --terr-rival-stroke: rgba(112, 140, 172, 0.50);
+
+  --realm-ottoman: rgba(136, 146, 98, 0.22);
+  --realm-maratha: rgba(188, 126, 68, 0.24);
+  --realm-qing: rgba(182, 152, 82, 0.22);
+  --realm-spanish: rgba(178, 144, 78, 0.20);
+  --realm-portuguese: rgba(92, 134, 114, 0.22);
+  --realm-us: rgba(96, 126, 156, 0.22);
+  --realm-persia: rgba(156, 108, 122, 0.22);
+  --realm-japan: rgba(176, 104, 96, 0.23);
+
+  /* Editorial Serif Typography */
+  --font-display: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+  --font-editorial: 'Newsreader', 'Cormorant Garamond', Georgia, serif;
+  --font-folio: 'Cormorant Garamond', Georgia, serif;
+
+  --ease-folio: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--sea);
+  color: var(--ink);
+  font-family: var(--font-editorial);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Eradicate jarring default browser blue focus rings on SVG pins & clicked controls */
+svg *:focus,
+.pin-group:focus,
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 1px solid var(--brass);
+  outline-offset: 3px;
+}
+
+/* Barely perceptible dark-linen archival grain */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 90;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.font-monument {
+  font-family: var(--font-display);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Crisp dark cartographic halo so ivory labels read cleanly over coastlines */
+.atlas-halo {
+  paint-order: stroke;
+  stroke: var(--sea);
+  stroke-width: 4.2px;
+  stroke-linejoin: round;
+}
+
+.header-scrim {
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(17, 16, 14, 0.94) 0%,
+    rgba(17, 16, 14, 0.72) 54%,
+    rgba(17, 16, 14, 0) 84%
+  );
+}
+
+/* --------------------------------------------------------------------------
+   Full-Viewport Interactive Historical World Map
+   -------------------------------------------------------------------------- */
+.map-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  background: radial-gradient(circle at 50% 46%, #161411 0%, #0e0d0b 100%);
+}
+
+.map-container:active {
+  cursor: grabbing;
+}
+
+.atlas-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+}
+
+.map-sea {
+  fill: transparent;
+}
+
+.map-land {
+  transition: fill 0.5s ease, stroke 0.5s ease, opacity 0.2s ease;
+}
+
+.map-land.is-explorable:hover {
+  opacity: 0.84;
+}
+
+.map-grat {
+  stroke: var(--grat);
+}
+
+.map-water-label {
+  fill: var(--water-label);
+}
+
+/* Engraved Obsidian & Antique-Gold Medallions (1..10) */
+.pin-group {
+  cursor: pointer;
+}
+
+.pin-disc {
+  transition: fill 0.22s ease, stroke 0.22s ease, r 0.22s ease;
+}
+
+.pin-inner-ring {
+  transition: stroke 0.22s ease, opacity 0.22s ease;
+}
+
+.pin-halo-ring {
+  transition: opacity 0.24s ease;
+}
+
+.pin-num {
+  transition: fill 0.22s ease;
+  pointer-events: none;
+}
+
+.pin-label {
+  transition: fill 0.22s ease;
+  pointer-events: none;
+}
+
+.pin-years {
+  pointer-events: none;
+}
+
+/* Smooth fade for global world-era layers and Saint Helena inset */
+.world-era-layer,
+.inset-layer {
+  transition: opacity 0.42s var(--ease-folio);
+}
+
+/* Saint Helena Engraved Inset (Dark Archival Print Cartouche) */
+.inset-bg {
+  fill: #13110f;
+  stroke: rgba(196, 162, 98, 0.34);
+  stroke-width: 0.9;
+}
+
+.inset-inner-rule {
+  fill: none;
+  stroke: rgba(237, 230, 214, 0.11);
+  stroke-width: 0.55;
+}
+
+.inset-label {
+  font-family: var(--font-folio);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  fill: var(--ink);
+}
+
+.inset-coords {
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-size: 10.5px;
+  fill: var(--ink-3);
+}
+
+/* --------------------------------------------------------------------------
+   Top-Left Archival Title
+   -------------------------------------------------------------------------- */
+.atlas-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  pointer-events: none;
+  padding: 26px 38px 34px;
+}
+
+.figure-nav-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  pointer-events: auto;
+}
+
+.index-trigger {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  padding: 0 2px 3px 0;
+  font-family: var(--font-folio);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.index-trigger:hover {
+  color: var(--brass);
+  border-bottom-color: var(--brass);
+}
+
+.index-dot {
+  color: var(--brass);
+}
+
+.index-word {
+  color: var(--brass);
+}
+
+.index-caret {
+  font-size: 9px;
+  color: var(--ink-3);
+}
+
+.nav-arrows {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-arrow-btn {
+  background: transparent;
+  border: none;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-folio);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.nav-arrow-btn:hover {
+  color: var(--brass);
+}
+
+/* --------------------------------------------------------------------------
+   Left-Hand Archival Index of Lives Drawer
+   -------------------------------------------------------------------------- */
+.index-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 40;
+  width: 390px;
+  max-width: 92vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+  border-right: 1px solid rgba(196, 162, 98, 0.22);
+  box-shadow:
+    inset -4px 0 0 var(--paper),
+    inset -5px 0 0 rgba(196, 162, 98, 0.12),
+    24px 0 60px rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  transition: transform 0.44s var(--ease-folio);
+}
+
+.index-drawer.open {
+  transform: translateX(0);
+}
+
+.index-head {
+  flex-shrink: 0;
+  padding: 24px 28px 16px 32px;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.index-kicker {
+  font-family: var(--font-folio);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.index-heading {
+  margin: 4px 0 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.index-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 24px 32px 32px;
+}
+
+.index-era-heading {
+  margin: 18px 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--rule-soft);
+  font-family: var(--font-folio);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.index-era-heading:first-child {
+  margin-top: 6px;
+}
+
+.index-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  align-items: baseline;
+  gap: 8px;
+  padding: 9px 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(237, 230, 214, 0.045);
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.index-item-roman {
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+.index-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.index-item-name {
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1.1;
+  color: var(--ink);
+  transition: color 0.16s ease;
+}
+
+.index-item-sub {
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+.index-item-years {
+  font-family: var(--font-folio);
+  font-size: 12.5px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.index-item:hover .index-item-name,
+.index-item.is-current .index-item-name {
+  color: var(--brass);
+}
+
+.index-item.is-current .index-item-roman {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.figure-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: clamp(44px, 4.4vw, 58px);
+  line-height: 0.9;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.figure-years {
+  font-family: var(--font-folio);
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--brass);
+}
+
+.figure-subtitle {
+  margin: 6px 0 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------------------------
+   Top-Right Minimal Typographic Map Controls
+   -------------------------------------------------------------------------- */
+.map-controls {
+  position: fixed;
+  top: 28px;
+  right: 36px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 14px;
+  background-color: rgba(20, 18, 16, 0.88);
+  border-bottom: 1px solid var(--rule);
+}
+
+.ctrl-link {
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  font-family: var(--font-folio);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+
+.ctrl-link:hover,
+.ctrl-link.is-active {
+  color: var(--brass);
+}
+
+.ctrl-sep {
+  font-family: var(--font-folio);
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.ctrl-divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--rule);
+  margin: 0 2px;
+}
+
+.ctrl-glyph {
+  background: transparent;
+  border: none;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-folio);
+  font-size: 17px;
+  line-height: 1;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.ctrl-glyph:hover {
+  color: var(--brass);
+}
+
+/* --------------------------------------------------------------------------
+   Floating Archival Margin Tooltip
+   -------------------------------------------------------------------------- */
+.map-tooltip {
+  position: fixed;
+  z-index: 30;
+  opacity: 0;
+  padding: 10px 15px;
+  max-width: 265px;
+  background-color: var(--paper-elevated);
+  border: 1px solid rgba(196, 162, 98, 0.28);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  color: var(--ink);
+  pointer-events: none;
+  transition: opacity 0.14s ease;
+}
+
+.tt-meta {
+  font-family: var(--font-folio);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.tt-title {
+  font-size: 21px;
+  line-height: 1.12;
+  margin-top: 2px;
+  color: var(--ink);
+}
+
+.tt-detail {
+  margin-top: 4px;
+  font-family: var(--font-editorial);
+  font-size: 13px;
+  line-height: 1.44;
+  color: var(--ink-2);
+}
+
+/* --------------------------------------------------------------------------
+   Bottom Archival Chronological Ribbon
+   -------------------------------------------------------------------------- */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 13px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background-color: var(--paper-bar);
+  border-top: 1px solid var(--rule);
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 1px;
+  scrollbar-width: none;
+}
+
+.bottom-left::-webkit-scrollbar {
+  display: none;
+}
+
+.trace-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 18px 0 0;
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--rule);
+  font-family: var(--font-folio);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  cursor: pointer;
+  transition: opacity 0.16s ease;
+}
+
+.trace-glyph {
+  font-size: 9px;
+}
+
+.trace-btn:hover {
+  opacity: 0.75;
+}
+
+.year-scrubber {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.scrubber-year {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  font-family: var(--font-folio);
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.scrubber-num {
+  font-style: italic;
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  transition: color 0.16s ease;
+}
+
+.scrubber-year:hover {
+  color: var(--ink);
+}
+
+.scrubber-year:hover .scrubber-num {
+  color: var(--brass);
+}
+
+.scrubber-year.active {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.scrubber-year.active .scrubber-num {
+  color: var(--brass);
+}
+
+.scrubber-year.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background-color: var(--accent);
+}
+
+.source-credits {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-3);
+  flex-shrink: 0;
+}
+
+.source-credits a {
+  font-style: normal;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+.source-credits a:hover {
+  color: var(--brass);
+  border-bottom-color: var(--brass-soft);
+}
+
+/* --------------------------------------------------------------------------
+   RIGHT-HAND DARK ARCHIVAL MONOGRAPH SHEET
+   Candlelit folio page: deep espresso rag paper, antique gold binding hairline,
+   drop cap, unboxed marginalia, centered literary epigraph.
+   -------------------------------------------------------------------------- */
+.monograph-sheet {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  width: 486px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+  border-left: 1px solid rgba(196, 162, 98, 0.22);
+  box-shadow:
+    inset 4px 0 0 var(--paper),
+    inset 5px 0 0 rgba(196, 162, 98, 0.14),
+    -24px 0 60px rgba(0, 0, 0, 0.55);
+  transform: translateX(100%);
+  transition: transform 0.46s var(--ease-folio);
+}
+
+.monograph-sheet.open {
+  transform: translateX(0);
+}
+
+/* Top Folio Running Head */
+.sheet-top {
+  flex-shrink: 0;
+  padding: 20px 36px 14px 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.sheet-folio-meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.sheet-chapter {
+  font-family: var(--font-folio);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.sheet-dot {
+  color: var(--ink-faint);
+}
+
+.sheet-loc-top {
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-size: 14.5px;
+  color: var(--ink-3);
+}
+
+.sheet-close {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: var(--font-folio);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.sheet-close:hover {
+  color: var(--ink);
+}
+
+.sheet-close-x {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Scrollable Monograph Page Body */
+.sheet-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 26px 38px 34px 42px;
+}
+
+.sheet-swap {
+  animation: pageReveal 0.34s var(--ease-folio);
+}
+
+@keyframes pageReveal {
+  from {
+    opacity: 0.25;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiet-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.quiet-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.quiet-scroll::-webkit-scrollbar-thumb {
+  background: rgba(196, 162, 98, 0.24);
+}
+
+/* Optional Paris Sub-Chapter Turning Points */
+.sub-stage-nav {
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  font-family: var(--font-folio);
+}
+
+.sub-stage-label {
+  font-style: italic;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.sub-stage-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 2px;
+  font-family: var(--font-folio);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+.sub-stage-btn:hover {
+  color: var(--ink);
+}
+
+.sub-stage-btn.active {
+  color: var(--brass);
+  border-bottom-color: var(--accent);
+}
+
+/* Engraved Year + Dateline Composition */
+.sheet-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.sheet-year {
+  font-size: clamp(64px, 5.5vw, 78px);
+  line-height: 0.82;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+.sheet-dateline {
+  text-align: right;
+  font-family: var(--font-folio);
+  line-height: 1.45;
+  padding-bottom: 2px;
+}
+
+.sheet-date {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0.03em;
+}
+
+.sheet-agedist {
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+/* Chapter Headline */
+.sheet-title {
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: clamp(30px, 2.5vw, 35px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Book-Typography Prose with Classical Drop Cap */
+.sheet-prose {
+  margin: 0 0 20px;
+  font-family: var(--font-editorial);
+  font-size: 16.5px;
+  line-height: 1.72;
+  color: var(--ink-2);
+}
+
+.sheet-prose::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.35em;
+  line-height: 0.78;
+  padding: 4px 10px 0 0;
+  color: var(--brass);
+}
+
+/* Engraved Hairline Metric Diagram (1812 Moscow Attrition) */
+.copper-metric {
+  margin: 22px 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.copper-metric-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: var(--font-folio);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-3);
+  margin-bottom: 10px;
+}
+
+.copper-metric-summary {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.copper-metric-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-folio);
+  font-size: 13px;
+}
+
+.copper-metric-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.copper-metric-date {
+  width: 68px;
+  flex-shrink: 0;
+  color: var(--ink-3);
+}
+
+.copper-metric-track {
+  height: 5px;
+  flex: 1;
+  border-bottom: 1px dotted rgba(237, 230, 214, 0.22);
+  display: flex;
+  align-items: center;
+}
+
+.copper-metric-bar {
+  height: 4px;
+}
+
+.copper-metric-val {
+  width: 58px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Unboxed Archival Marginalia */
+.marginal-note {
+  margin: 0 0 24px;
+  font-family: var(--font-editorial);
+  font-size: 14.5px;
+  line-height: 1.64;
+  color: var(--ink-3);
+}
+
+.marginal-lead {
+  font-family: var(--font-folio);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--brass);
+  margin-right: 4px;
+}
+
+/* Classical Printer's Fleuron Divider */
+.sheet-fleuron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 26px 0 22px;
+}
+
+.fleuron-rule {
+  width: 54px;
+  height: 1px;
+  background-color: var(--rule);
+}
+
+.fleuron-mark {
+  font-size: 13px;
+  line-height: 1;
+  color: var(--brass);
+  opacity: 0.82;
+}
+
+/* Classical Literary Epigraph Quote */
+.epigraph-block {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.epigraph-quote {
+  position: relative;
+  margin: 0 0 14px;
+  font-style: italic;
+  font-size: clamp(23px, 2.05vw, 27px);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.epigraph-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-folio);
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+.epigraph-source {
+  letter-spacing: 0.03em;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  padding: 0 1px 1px;
+  font-family: var(--font-folio);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  color: var(--brass);
+  border-bottom-color: var(--brass);
+}
+
+.lang-sep {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+/* Book-Leaf Page Turn Footer */
+.sheet-foot {
+  flex-shrink: 0;
+  padding: 15px 36px 16px 40px;
+  border-top: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: var(--font-folio);
+}
+
+.leaf-btn {
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  font-family: var(--font-folio);
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+
+.leaf-next {
+  font-weight: 600;
+  color: var(--brass);
+}
+
+.leaf-btn:hover:not(:disabled) {
+  color: var(--ink);
+}
+
+.leaf-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.leaf-counter {
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Refinements
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .source-credits {
+    display: none;
+  }
+  .monograph-sheet {
+    width: 440px;
+  }
+}
+
+@media (max-width: 640px) {
+  .atlas-header {
+    padding: 18px 20px 24px;
+  }
+  .map-controls {
+    top: 18px;
+    right: 16px;
+    padding: 4px 10px;
+    gap: 7px;
+  }
+  .bottom-bar {
+    padding: 11px 18px;
+  }
+  .year-scrubber {
+    gap: 14px;
+  }
+  .monograph-sheet {
+    width: 100vw;
+  }
+  .sheet-top,
+  .sheet-body,
+  .sheet-foot {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

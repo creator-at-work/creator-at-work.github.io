@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Product YouTube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- TOP NAVIGATION BAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button type="button" id="brandHome" class="brand" aria-label="The Product YouTube Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">The Product YouTube</span>
+      </button>
+
+      <nav class="nav-tabs" aria-label="Main navigation">
+        <button type="button" class="nav-tab is-active" data-view="feed">Feed</button>
+        <button type="button" class="nav-tab" data-view="search">Search</button>
+        <button type="button" class="nav-tab" data-view="marathon">Marathon</button>
+      </nav>
+
+      <div class="topbar-right">
+        <span id="catalogLedger" class="mono-meta">Loading…</span>
+        <button type="button" id="openBoundariesBtn" class="text-btn">Boundaries</button>
+        <button type="button" id="syncBtn" class="text-btn" title="Sync vetted talks from verified product channels">
+          <span id="syncLabel">Sync</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ==================== VIEW 1: FEED ==================== -->
+    <section id="view-feed" class="view is-active" aria-label="Product video feed">
+      <div class="toolbar">
+        <nav id="topicRail" class="topic-rail" aria-label="Filter by topic"></nav>
+
+        <div class="toolbar-right">
+          <span id="activeCreatorFilter" class="active-filter hidden">
+            <span id="activeCreatorName"></span>
+            <button type="button" id="clearCreatorBtn" class="icon-x" aria-label="Clear creator filter">&times;</button>
+          </span>
+
+          <div class="sort-tabs" role="group" aria-label="Sort feed">
+            <button type="button" class="sort-btn is-active" data-feed-sort="likes">Likes</button>
+            <button type="button" class="sort-btn" data-feed-sort="recency">Recent</button>
+            <button type="button" class="sort-btn" data-feed-sort="views">Views</button>
+            <button type="button" class="sort-btn" data-feed-sort="least_dislikes">Least Dislikes</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="feedGrid" class="video-grid"></div>
+
+      <div id="feedFooter" class="list-footer hidden">
+        <button type="button" id="loadMoreBtn" class="outline-btn">Load more</button>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: SEARCH ==================== -->
+    <section id="view-search" class="view" aria-label="Search product catalogue">
+      <form id="searchForm" class="search-bar" autocomplete="off">
+        <input
+          id="searchInput"
+          type="search"
+          class="search-field"
+          placeholder="Search product catalogue — e.g. CSAT, pricing, discovery, Marty Cagan"
+          aria-label="Search product catalogue"
+        />
+        <button type="submit" id="searchSubmitBtn" class="primary-btn">Search</button>
+      </form>
+
+      <div class="search-subbar">
+        <div class="quick-terms">
+          <button type="button" class="quick-term" data-q="CSAT">CSAT</button>
+          <button type="button" class="quick-term" data-q="Product Strategy">Product Strategy</button>
+          <button type="button" class="quick-term" data-q="Discovery">Discovery</button>
+          <button type="button" class="quick-term" data-q="Pricing">Pricing</button>
+          <button type="button" class="quick-term" data-q="AI Evals">AI Evals</button>
+          <button type="button" class="quick-term" data-q="Design Craft">Design Craft</button>
+          <button type="button" class="quick-term" data-q="Product-Market Fit">PMF</button>
+          <button type="button" class="quick-term" data-q="Retention">Retention</button>
+        </div>
+
+        <div class="sort-tabs" role="group" aria-label="Sort search results">
+          <button type="button" class="sort-btn is-active" data-search-sort="likes">Likes</button>
+          <button type="button" class="sort-btn" data-search-sort="recency">Recent</button>
+          <button type="button" class="sort-btn" data-search-sort="views">Views</button>
+          <button type="button" class="sort-btn" data-search-sort="least_dislikes">Least Dislikes</button>
+        </div>
+      </div>
+
+      <!-- DIRECT SEARCH -> MARATHON HANDOFF BAR -->
+      <div id="searchMarathonBar" class="handoff-bar hidden">
+        <div class="handoff-left">
+          <span id="searchCountLabel" class="mono-meta"></span>
+        </div>
+        <div id="searchMarathonCta" class="handoff-right hidden">
+          <span class="handoff-label">Create marathon on <strong id="handoffTopicName"></strong>:</span>
+          <div class="handoff-times">
+            <button type="button" class="time-chip" data-handoff-mins="30">30m</button>
+            <button type="button" class="time-chip" data-handoff-mins="45">45m</button>
+            <button type="button" class="time-chip" data-handoff-mins="60">60m</button>
+            <button type="button" class="time-chip" data-handoff-mins="90">90m</button>
+            <button type="button" class="time-chip" data-handoff-mins="120">2h</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="searchGrid" class="video-grid"></div>
+    </section>
+
+    <!-- ==================== VIEW 3: MARATHON ==================== -->
+    <section id="view-marathon" class="view" aria-label="Marathon builder">
+      <form id="marathonForm" class="marathon-panel" autocomplete="off">
+        <div class="mp-row">
+          <div class="mp-field mp-topic">
+            <div class="mp-label-row">
+              <label for="marathonTopic" class="mp-label">Topic</label>
+              <span id="topicMatchHint" class="mono-meta"></span>
+            </div>
+            <input
+              id="marathonTopic"
+              type="text"
+              class="mp-input"
+              value="Product Strategy"
+              placeholder="Search any product topic (e.g. CSAT, Pricing, Discovery, AI Evals)"
+              required
+            />
+            <div class="mp-presets">
+              <button type="button" class="quick-term" data-mtopic="Product Strategy">Product Strategy</button>
+              <button type="button" class="quick-term" data-mtopic="Product Discovery">Product Discovery</button>
+              <button type="button" class="quick-term" data-mtopic="CSAT and Customer Metrics">CSAT &amp; Metrics</button>
+              <button type="button" class="quick-term" data-mtopic="Pricing & Monetization">Pricing</button>
+              <button type="button" class="quick-term" data-mtopic="AI Products & Evals">AI Products</button>
+              <button type="button" class="quick-term" data-mtopic="Design & Software Craft">Design Craft</button>
+              <button type="button" class="quick-term" data-mtopic="Growth & Retention">Growth</button>
+              <button type="button" class="quick-term" data-mtopic="0 to 1 Product-Market Fit">0 to 1</button>
+            </div>
+          </div>
+
+          <div class="mp-field mp-duration">
+            <div class="mp-label-row">
+              <label for="marathonMinutes" class="mp-label">Time Budget</label>
+              <span id="timeReadout" class="time-value">1h 30m</span>
+            </div>
+            <input
+              id="marathonMinutes"
+              type="range"
+              min="20"
+              max="240"
+              step="5"
+              value="90"
+              class="range-input"
+              aria-label="Duration in minutes"
+            />
+            <div class="mp-time-picks">
+              <button type="button" class="time-chip" data-mins="30">30m</button>
+              <button type="button" class="time-chip" data-mins="45">45m</button>
+              <button type="button" class="time-chip" data-mins="60">60m</button>
+              <button type="button" class="time-chip is-active" data-mins="90">90m</button>
+              <button type="button" class="time-chip" data-mins="120">2h</button>
+              <button type="button" class="time-chip" data-mins="180">3h</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mp-footer">
+          <div class="pacing-tabs" role="group" aria-label="Pacing">
+            <span class="mp-label inline">Pacing</span>
+            <button type="button" class="sort-btn is-active" data-pacing="balanced">Balanced</button>
+            <button type="button" class="sort-btn" data-pacing="concise">Concise</button>
+            <button type="button" class="sort-btn" data-pacing="deep">Deep Dive</button>
+          </div>
+
+          <button type="submit" id="composeBtn" class="primary-btn">Build Marathon</button>
+        </div>
+      </form>
+
+      <div id="marathonProgram" class="marathon-output hidden"></div>
+    </section>
+  </main>
+
+  <!-- ==================== SINGLE VIDEO MODAL ==================== -->
+  <div id="cinemaModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="cinemaTitle">
+    <div class="modal-backdrop" data-close-cinema></div>
+    <div class="modal-box modal-theater">
+      <div class="modal-top">
+        <div class="modal-meta-left">
+          <span id="cinemaTopic" class="tag-mono"></span>
+          <span id="cinemaDate" class="mono-meta"></span>
+        </div>
+        <button type="button" class="modal-close" data-close-cinema aria-label="Close player">Close &times;</button>
+      </div>
+
+      <div class="player-stage">
+        <iframe
+          id="cinemaIframe"
+          class="player-frame"
+          src=""
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-head-row">
+          <div>
+            <h2 id="cinemaTitle" class="modal-title"></h2>
+            <div class="modal-sub">
+              <button type="button" id="cinemaCreatorBtn" class="creator-link"></button>
+              <span class="sep">&middot;</span>
+              <span id="cinemaDuration" class="mono-meta"></span>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button type="button" id="cinemaBuildMarathonBtn" class="outline-btn">Marathon on topic</button>
+            <a id="cinemaYtLink" href="#" target="_blank" rel="noopener noreferrer" class="text-btn">YouTube &#8599;</a>
+          </div>
+        </div>
+
+        <div class="stats-bar">
+          <div id="cinemaMetrics" class="stats-items"></div>
+          <div class="ratio-track" aria-label="Approval ratio">
+            <div id="cinemaApprovalFill" class="ratio-fill"></div>
+          </div>
+        </div>
+
+        <p id="cinemaDescription" class="video-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MARATHON AUTOPLAY PLAYER ==================== -->
+  <div id="marathonPlayerModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Marathon player">
+    <div class="modal-backdrop" data-close-mplayer></div>
+    <div class="modal-box modal-marathon">
+      <div class="modal-top">
+        <div class="modal-meta-left">
+          <span id="mplayerKicker" class="tag-mono"></span>
+          <span id="mplayerProgress" class="mono-meta"></span>
+        </div>
+        <div class="modal-meta-right">
+          <label class="autoplay-toggle">
+            <input type="checkbox" id="autoplayNextToggle" checked />
+            <span>Autoplay next</span>
+          </label>
+          <button type="button" class="modal-close" data-close-mplayer aria-label="Exit marathon">Close &times;</button>
+        </div>
+      </div>
+
+      <div class="mplayer-layout">
+        <div class="mplayer-left">
+          <div class="player-stage">
+            <div id="mplayerHost" class="player-frame"></div>
+
+            <!-- MARATHON COMPLETE OVERLAY -->
+            <div id="mplayerComplete" class="complete-overlay hidden">
+              <div class="complete-inner">
+                <div class="tag-mono">MARATHON COMPLETE</div>
+                <h3 id="completeTitle" class="complete-title"></h3>
+                <p id="completeStats" class="mono-meta"></p>
+                <div class="complete-actions">
+                  <button type="button" id="replayMarathonBtn" class="primary-btn">Replay Marathon</button>
+                  <button type="button" class="outline-btn dark-outline" data-close-mplayer>Back to Program</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mplayer-bar">
+            <div class="mplayer-info">
+              <h3 id="mplayerTitle" class="mplayer-title"></h3>
+              <div id="mplayerMeta" class="mono-meta"></div>
+            </div>
+            <div class="mplayer-controls">
+              <button type="button" id="mplayerPrev" class="outline-btn dark-outline">&larr; Prev</button>
+              <button type="button" id="mplayerNext" class="outline-btn dark-outline">Next &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="mplayer-sidebar" aria-label="Marathon queue">
+          <div class="sidebar-head">
+            <span class="sidebar-label">Playlist</span>
+            <span id="mplayerTotalTime" class="mono-meta"></span>
+          </div>
+          <ol id="mplayerList" class="queue-list"></ol>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CATALOGUE BOUNDARIES MODAL ==================== -->
+  <div id="boundariesModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="boundariesTitle">
+    <div class="modal-backdrop" data-close-boundaries></div>
+    <div class="modal-box modal-charter">
+      <div class="modal-top light-top">
+        <span class="tag-mono">CATALOGUE BOUNDARIES</span>
+        <button type="button" class="modal-close light-close" data-close-boundaries>Close &times;</button>
+      </div>
+      <div id="boundariesBody" class="charter-body"></div>
+    </div>
+  </div>
+
+  <div id="statusToast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

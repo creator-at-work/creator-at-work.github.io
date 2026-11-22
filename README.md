@@ -23,6 +23,7 @@ Static HTML, CSS and vanilla JS. No build step, no dependencies, no analytics, f
 - `miracle-of-mind.html`: the full case study.
 - `practice.html`: Hatha Yoga, iResetLife, 1,750 dots.
 - `principles.html`: all seven rules.
+- `vault.html`: Weekend Vault, linking to four live weekend builds under `vault/` (`atlas-of-lives`, `the-humbler`, `product-youtube`, `mehfil-ghazal`).
 - `shelf.html`: the full bookshelf. Stillness keeps the books in the order he remembered them; Signal sorts them into threads with counts and shows a threads chart. Linked from the footer, the mobile menu and the home shelf.
 - `contact.html`: now, email, LinkedIn. Contact is also in every footer.
 Nothing to download (the PDF and its links were removed 2026-10-08): the site is a quiet place that's his own. Keep it that way.
