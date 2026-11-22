@@ -15,10 +15,7 @@
     'wu-wei',
     'grief-lent-not-owned',
     'self-mastery',
-    'perspectivism',
-    'begin-small-steps',
-    'social-masks',
-    'know-enemy-self'
+    'perspectivism'
   ];
 
   const state = {
@@ -40,15 +37,17 @@
   function bindDom() {
     const ids = [
       'brandHomeBtn', 'brandHomeText', 'openIndexBtn', 'openScholarBtn', 'canonCount', 'scholarDot',
-      'landingView', 'resultView', 'ideaForm', 'ideaInput', 'humbleBtn', 'thresholdNotice',
+      'landingView', 'resultView', 'ideaForm', 'ideaInput', 'humbleBtn', 'modeIndicator', 'thresholdNotice',
       'specimensList', 'shuffleSpecimensBtn', 'excavationOverlay', 'excavationTitle', 'excavationSub',
-      'backToThresholdBtn', 'timelineModeBtn', 'mapModeBtn', 'stageCaptionLeft',
+      'backToThresholdBtn', 'timelineModeBtn', 'mapModeBtn', 'stageCaptionLeft', 'stageCaptionRight',
       'vizWrap', 'lineageSvg', 'mapZoomControls', 'mapZoomInBtn', 'mapZoomOutBtn', 'mapWitnessStrip',
-      'folioRankLabel', 'verdictYears', 'verdictDate', 'verdictThinker', 'verdictPlaceTradition',
+      'folioRankLabel', 'folioPlaceTop', 'folioThreads',
+      'verdictYears', 'verdictSubline', 'verdictDate', 'verdictThinker', 'verdictTradition',
       'userClaimDisplay', 'ancientThesisDisplay', 'scriptureTitleTop', 'originalScriptBlock',
       'originalScriptText', 'transliterationText', 'translationText', 'scriptureProvenance',
       'folioPlateTitle', 'folioCommentary', 'folioMarginaliaBlock', 'folioMarginalia',
       'relatedBlock', 'relatedLinks', 'broadNotice', 'broadOpenScholarBtn',
+      'prevWitnessBtn', 'nextWitnessBtn', 'witnessCounter',
       'vizTooltip', 'ttMeta', 'ttTitle', 'ttDetail',
       'drawerBackdrop', 'indexDrawer', 'closeIndexBtn', 'indexSearchInput', 'indexList',
       'scholarDrawer', 'closeScholarBtn', 'scholarKeyForm', 'geminiKeyInput', 'clearKeyBtn', 'scholarStatusMsg'
@@ -59,20 +58,20 @@
   }
 
   /* ========================================================================
-     SPECIMEN THOUGHTS (THRESHOLD: 3 FULL-WIDTH ITEMS AT A TIME)
+     SPECIMEN THOUGHTS (THRESHOLD: 6 ON DESKTOP 2-COL, 4 ON MOBILE)
      ======================================================================== */
   function getSpecimenBatch() {
-    const featured = FEATURED_SPECIMEN_IDS
-      .map((id) => global.HUMBLER_MATCHER.getEntryById(id))
-      .filter(Boolean);
     const all = global.HUMBLER_MATCHER.getAllChronological();
-    const rest = all.filter((item) => !FEATURED_SPECIMEN_IDS.includes(item.id));
-    const pool = featured.concat(rest);
+    if (state.specimenOffset === 0) {
+      return FEATURED_SPECIMEN_IDS
+        .map((id) => global.HUMBLER_MATCHER.getEntryById(id))
+        .filter(Boolean);
+    }
+    const pool = all.filter((item) => !FEATURED_SPECIMEN_IDS.includes(item.id));
     if (!pool.length) return [];
-
-    const start = (state.specimenOffset * 3) % pool.length;
+    const start = ((state.specimenOffset - 1) * 6) % pool.length;
     const batch = [];
-    for (let i = 0; i < 3 && i < pool.length; i++) {
+    for (let i = 0; i < 6 && i < pool.length; i++) {
       batch.push(pool[(start + i) % pool.length]);
     }
     return batch;
@@ -146,7 +145,7 @@
     if (!text) {
       showThresholdNotice(
         'Empty manuscript',
-        'Write a philosophical thought before consulting the archive.'
+        'Inscribe a philosophical thought before consulting the archive.'
       );
       el.ideaInput.focus();
       return;
@@ -183,7 +182,7 @@
     } else if (!forceArchiveId && preCheck && preCheck.unmatched) {
       const totalRoots = (global.HUMBLER_CANON || []).length;
       const actions = [
-        { label: 'Browse Origins', onClick: openIndexDrawer },
+        { label: 'Browse Index of Origins', onClick: openIndexDrawer },
         { label: 'Enable Live Scholar', onClick: openScholarDrawer }
       ];
       if (preCheck.entry && preCheck.score >= 5) {
@@ -194,7 +193,7 @@
       }
       showThresholdNotice(
         'No archival echo',
-        `The Humbler is built for philosophical epiphanies, and our ${totalRoots}-root verified canon found no close match for that phrase. Try rephrasing your insight:`,
+        `The Humbler is built for philosophical epiphanies, and our ${totalRoots}-root verified canon found no close match for that phrase. Try rephrasing your philosophical insight:`,
         actions
       );
       return;
@@ -234,7 +233,7 @@
         'No archival echo',
         'No matching primary source was found in the local archive.',
         [
-          { label: 'Browse Origins', onClick: openIndexDrawer },
+          { label: 'Browse Index of Origins', onClick: openIndexDrawer },
           { label: 'Enable Live Scholar', onClick: openScholarDrawer }
         ]
       );
@@ -254,9 +253,6 @@
     document.body.classList.add('is-result');
     el.landingView.classList.add('hidden');
     el.resultView.classList.remove('hidden');
-    if (el.brandHomeText) {
-      el.brandHomeText.textContent = '← Back';
-    }
 
     closeAllDrawers();
     renderResultPlate();
@@ -270,16 +266,13 @@
     document.body.classList.add('is-landing');
     el.resultView.classList.add('hidden');
     el.landingView.classList.remove('hidden');
-    if (el.brandHomeText) {
-      el.brandHomeText.textContent = 'The Humbler';
-    }
     global.HUMBLER_VIZ.renderBackdropMap('#backdropSvg');
     el.ideaInput.focus();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   /* ========================================================================
-     RENDER RESULT PLATE (VERDICT + VISUAL LINEAGE + SCRIPTURE FOLIO)
+     RENDER RESULT PLATE (VERDICT PLAQUE + VISUAL STAGE + MONOGRAPH FOLIO)
      ======================================================================== */
   function renderResultPlate() {
     if (!state.result) return;
@@ -321,10 +314,16 @@
     };
 
     if (state.vizMode === 'timeline') {
-      el.stageCaptionLeft.textContent = 'Tap any witness to read their scripture';
+      el.stageCaptionLeft.textContent = 'Chronological Descent · Select any witness to inspect primary scripture';
+      if (el.stageCaptionRight) {
+        el.stageCaptionRight.textContent = `${nodes.length} recorded ${nodes.length === 1 ? 'witness' : 'witnesses'} before you`;
+      }
       global.HUMBLER_VIZ.renderTimeline('#lineageSvg', state.result, state.activeNodeIdx, callbacks);
     } else {
-      el.stageCaptionLeft.textContent = 'Tap any pin or witness below to inspect';
+      el.stageCaptionLeft.textContent = 'Geographic Origin & Cross-Cultural Echoes · Select any pin or witness';
+      if (el.stageCaptionRight) {
+        el.stageCaptionRight.textContent = `Natural Earth 50m · ${nodes[0].place}`;
+      }
       global.HUMBLER_VIZ.renderWorldOriginMap('#lineageSvg', state.result, state.activeNodeIdx, callbacks);
     }
   }
@@ -339,7 +338,8 @@
       btn.className = `map-witness-pill${idx === state.activeNodeIdx ? ' is-active' : ''}${idx === 0 ? ' is-origin' : ''}`;
       const shortThinker = node.thinker.replace(/\s*\([^)]*\)/g, '').trim();
       const shortYear = global.HUMBLER_MATCHER.formatYearShort(node.year);
-      btn.innerHTML = `<span class="pill-roman">${escapeHtml(node.roman)}</span><span class="pill-name">${escapeHtml(shortThinker)}</span><span class="pill-year">${escapeHtml(shortYear)}</span>`;
+      const shortPlace = (node.place || '').split(',')[0].trim();
+      btn.innerHTML = `<span class="pill-roman">${escapeHtml(node.roman)}</span><span class="pill-name">${escapeHtml(shortThinker)}</span><span class="pill-year">${escapeHtml(shortYear)} &middot; ${escapeHtml(shortPlace)}</span>`;
       btn.addEventListener('click', () => {
         if (idx === state.activeNodeIdx) return;
         state.activeNodeIdx = idx;
@@ -357,32 +357,38 @@
     const isOrigin = state.activeNodeIdx === 0;
     const yearsLate = global.HUMBLER_MATCHER.computeYearsLate(node.year);
 
-    /* Verdict Hero */
+    /* Running Head & Architectural Verdict Plaque */
     el.folioRankLabel.textContent = isOrigin
-      ? 'Oldest Origin'
-      : `Echo ${node.roman} of ${ROMAN[nodes.length] || nodes.length}`;
+      ? `Oldest Recorded Origin · ${node.roman} of ${ROMAN[nodes.length] || nodes.length}`
+      : `Independent Echo · ${node.roman} of ${ROMAN[nodes.length] || nodes.length}`;
     el.folioRankLabel.classList.toggle('is-echo', !isOrigin);
 
-    el.verdictDate.textContent = node.yearLabel;
+    if (el.folioPlaceTop) {
+      el.folioPlaceTop.textContent = node.region ? `${node.place} · ${node.region}` : node.place;
+    }
+
+    if (el.folioThreads) {
+      if (res.source === 'live') {
+        el.folioThreads.textContent = `Live Scholar · ${res.threads.join(' · ')}`;
+      } else if (res.threads && res.threads.length) {
+        el.folioThreads.textContent = `Traced via: ${res.threads.join(' · ')}`;
+      } else {
+        el.folioThreads.textContent = res.entry.domain;
+      }
+    }
+
     el.verdictYears.textContent = `${yearsLate.toLocaleString()} years late`;
+    if (el.verdictSubline) {
+      el.verdictSubline.textContent = isOrigin
+        ? `First attested in ${node.language} (${node.place}), long before you phrased it`
+        : `Independent echo in ${node.place}, ${Math.abs(node.year - nodes[0].year).toLocaleString()} years after ${nodes[0].thinker.replace(/\s*\([^)]*\)/g, '')}`;
+    }
+
+    el.verdictDate.textContent = node.yearLabel;
     el.verdictThinker.textContent = node.thinker;
-    el.verdictPlaceTradition.textContent = `${node.place} · ${node.tradition}`;
-
-    /* Primary Scripture Centerpiece */
-    el.scriptureTitleTop.textContent = `${node.scripture} (${node.language})`;
-    el.originalScriptText.textContent = node.originalScript || '';
-    el.originalScriptText.dir = node.scriptDir || 'ltr';
-    el.originalScriptText.className = `original-script-text ${node.scriptClass || 'script-latin'}`;
-
-    const showTranslit =
-      node.transliteration &&
-      node.transliteration.replace(/\s+/g, ' ').trim() !== (node.originalScript || '').replace(/\s+/g, ' ').trim();
-    el.transliterationText.textContent = showTranslit ? node.transliteration : '';
-    el.transliterationText.classList.toggle('hidden', !showTranslit);
-
-    el.translationText.textContent = `“${node.translation}”`;
-    el.scriptureProvenance.textContent = node.provenance;
-    applyScriptDisplayMode();
+    if (el.verdictTradition) {
+      el.verdictTradition.textContent = `${node.tradition} · ${node.place}`;
+    }
 
     /* Comparison Ledger */
     el.userClaimDisplay.innerHTML = '';
@@ -402,6 +408,22 @@
       el.userClaimDisplay.textContent = `“${res.userIdea}”`;
     }
     el.ancientThesisDisplay.textContent = res.entry.ancientThesis || res.entry.title;
+
+    /* Primary Scripture Centerpiece */
+    el.scriptureTitleTop.textContent = `${node.scripture} (${node.language})`;
+    el.originalScriptText.textContent = node.originalScript || '';
+    el.originalScriptText.dir = node.scriptDir || 'ltr';
+    el.originalScriptText.className = `original-script-text ${node.scriptClass || 'script-latin'}`;
+
+    const showTranslit =
+      node.transliteration &&
+      node.transliteration.replace(/\s+/g, ' ').trim() !== (node.originalScript || '').replace(/\s+/g, ' ').trim();
+    el.transliterationText.textContent = showTranslit ? node.transliteration : '';
+    el.transliterationText.classList.toggle('hidden', !showTranslit);
+
+    el.translationText.textContent = `“${node.translation}”`;
+    el.scriptureProvenance.textContent = node.provenance;
+    applyScriptDisplayMode();
 
     /* Commentary & Unboxed Marginalia */
     el.folioPlateTitle.textContent = res.entry.title;
@@ -435,6 +457,13 @@
     /* Broad Match Honest Notice */
     const showBroad = res.source === 'archive' && res.confidence === 'broad' && !global.HUMBLER_LIVE.isEnabled();
     el.broadNotice.classList.toggle('hidden', !showBroad);
+
+    /* Book-Leaf Witness Stepper Footer */
+    if (el.prevWitnessBtn && el.nextWitnessBtn && el.witnessCounter) {
+      el.prevWitnessBtn.disabled = state.activeNodeIdx === 0;
+      el.nextWitnessBtn.disabled = state.activeNodeIdx >= nodes.length - 1;
+      el.witnessCounter.textContent = `${node.roman} of ${ROMAN[nodes.length] || nodes.length}`;
+    }
   }
 
   function applyScriptDisplayMode() {
@@ -567,6 +596,11 @@
     const active = global.HUMBLER_LIVE && global.HUMBLER_LIVE.isEnabled();
     el.scholarDot.classList.toggle('hidden', !active);
     const totalRoots = (global.HUMBLER_CANON || []).length;
+    if (el.modeIndicator) {
+      el.modeIndicator.textContent = active
+        ? 'Live Scholar Active (Gemini) · Verified Archive Fallback'
+        : 'Verified Archival Canon · 2600 BCE – 397 CE';
+    }
     el.scholarStatusMsg.textContent = active
       ? 'Live Scholar is active. Custom philosophical epiphanies will be excavated live via Gemini 2.5 Flash.'
       : `Currently running on the built-in ${totalRoots}-root verified primary archive.`;
@@ -613,8 +647,7 @@
     });
 
     el.shuffleSpecimensBtn.addEventListener('click', () => {
-      const total = Math.max(1, (global.HUMBLER_CANON || []).length);
-      state.specimenOffset = (state.specimenOffset + 1) % Math.ceil(total / 3);
+      state.specimenOffset = (state.specimenOffset + 1) % 12;
       renderSpecimens();
     });
 
@@ -652,6 +685,27 @@
         applyScriptDisplayMode();
       });
     });
+
+    /* Book-leaf prev/next witness */
+    if (el.prevWitnessBtn) {
+      el.prevWitnessBtn.addEventListener('click', () => {
+        if (state.activeNodeIdx > 0) {
+          state.activeNodeIdx -= 1;
+          renderResultPlate();
+        }
+      });
+    }
+
+    if (el.nextWitnessBtn) {
+      el.nextWitnessBtn.addEventListener('click', () => {
+        if (!state.result) return;
+        const nodes = global.HUMBLER_VIZ.buildNodes(state.result.entry);
+        if (state.activeNodeIdx < nodes.length - 1) {
+          state.activeNodeIdx += 1;
+          renderResultPlate();
+        }
+      });
+    }
 
     /* Drawers */
     el.openIndexBtn.addEventListener('click', openIndexDrawer);

@@ -1,6 +1,8 @@
 /* ==========================================================================
-   THE HUMBLER: Nocturnal Archival Monograph & Mobile-First Stylesheet
-   Crafted for mobile-first clarity (375px / 390px) and desktop grace (1440px)
+   THE HUMBLER: Nocturnal Archival Monograph & Cartographic Stylesheet
+   Bespoke dual-environment architecture:
+   - Mobile (< 860px): Clutter-free vertical manuscript & chronological spine
+   - Desktop (>= 860px): Wide 1,080px panoramic museum plate & 2-column folio spread
    Every visible text >= 14px, inputs >= 16px, tap targets >= 44x44px,
    and all text contrast >= 4.5:1 WCAG AA.
    ========================================================================== */
@@ -82,12 +84,12 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.72;
+  opacity: 0.78;
   transition: opacity 420ms ease;
 }
 
 body.is-result .backdrop-layer {
-  opacity: 0.22;
+  opacity: 0.25;
 }
 
 .backdrop-svg {
@@ -101,21 +103,21 @@ body.is-result .backdrop-layer {
   inset: 0;
   background: radial-gradient(
     circle at 50% 38%,
-    rgba(17, 16, 14, 0.28) 0%,
-    rgba(17, 16, 14, 0.82) 66%,
-    rgba(17, 16, 14, 0.97) 100%
+    rgba(17, 16, 14, 0.22) 0%,
+    rgba(17, 16, 14, 0.8) 65%,
+    rgba(17, 16, 14, 0.96) 100%
   );
 }
 
 /* ==========================================================================
-   SINGLE-LINE TOP BAR (NEVER WRAPS ON MOBILE)
+   ARCHIVAL MASTHEAD (ADAPTS CLEANLY BETWEEN MOBILE & DESKTOP)
    ========================================================================== */
 .masthead {
   position: relative;
   z-index: 20;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 10px 16px;
+  padding: 10px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,28 +130,39 @@ body.is-result .backdrop-layer {
   background: transparent;
   border: 0;
   color: var(--ink);
-  padding: 0 8px;
+  padding: 0 4px;
   min-height: 44px;
   min-width: 44px;
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 180ms ease;
 }
 
-body.is-result .brand-link {
-  color: var(--gold);
-  letter-spacing: 0.08em;
-}
-
 .brand-link:hover {
   color: var(--gold-bright);
+}
+
+.brand-dot,
+.brand-sub {
+  display: none;
+}
+
+.brand-dot {
+  color: var(--gold);
+}
+
+.brand-sub {
+  color: var(--ink-3);
+  font-weight: 500;
+  letter-spacing: 0.12em;
 }
 
 .masthead-nav {
@@ -161,31 +174,51 @@ body.is-result .brand-link {
 
 .nav-link {
   appearance: none;
-  background: rgba(23, 21, 18, 0.65);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
+  background: transparent;
+  border: 0;
   color: var(--ink-2);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 14px;
+  padding: 0 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 7px;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  transition: color 180ms ease;
 }
 
 .nav-link:hover {
-  color: var(--ink);
-  border-color: var(--rule-strong);
-  background: rgba(196, 162, 98, 0.08);
+  color: var(--gold-bright);
+}
+
+.nav-label-desktop {
+  display: none;
+}
+
+.nav-label-mobile {
+  display: inline;
+}
+
+.nav-count {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--gold);
+}
+
+.nav-sep {
+  color: var(--ink-3);
+  font-size: 14px;
+  user-select: none;
 }
 
 .scholar-dot {
@@ -206,65 +239,76 @@ body.is-result .brand-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 28px 18px 40px;
+  padding: 26px 20px 44px;
 }
 
 .threshold-sheet {
   width: 100%;
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
   text-align: center;
 }
 
 .threshold-kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 12px;
+}
+
+.kicker-dot {
+  color: var(--ink-3);
 }
 
 .threshold-title {
-  margin: 0 0 12px;
-  font-size: clamp(2.25rem, 7vw, 3.45rem);
-  line-height: 1.07;
+  margin: 0 0 14px;
+  font-size: clamp(2.35rem, 6.2vw, 3.85rem);
+  line-height: 1.05;
   letter-spacing: -0.01em;
   color: var(--ink);
 }
 
 .threshold-deck {
-  margin: 0 auto 26px;
-  max-width: 480px;
+  margin: 0 auto 30px;
+  max-width: 540px;
   font-family: var(--font-serif);
-  font-size: 16.5px;
-  line-height: 1.55;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.56;
   color: var(--ink-2);
 }
 
-/* Open-Manuscript Input */
+/* Open-Manuscript Inscription Surface (Unboxed Archival Line) */
 .inscription-form {
   width: 100%;
-  margin: 0 auto 30px;
+  max-width: 660px;
+  margin: 0 auto 24px;
   text-align: left;
 }
 
 .inscription-input {
   width: 100%;
-  background: rgba(23, 21, 18, 0.55);
-  border: 1px solid rgba(196, 162, 98, 0.22);
-  border-bottom: 0;
-  border-radius: 6px 6px 0 0;
-  padding: 16px 18px 14px;
+  background: transparent;
+  border: 0;
+  padding: 8px 4px 12px;
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.32;
+  text-align: center;
   resize: none;
-  min-height: 82px;
+  min-height: 76px;
   display: block;
-  transition: border-color 180ms ease, background-color 180ms ease;
 }
 
 .inscription-input::placeholder {
@@ -274,36 +318,49 @@ body.is-result .brand-link {
 
 .inscription-input:focus {
   outline: none;
-  background: rgba(23, 21, 18, 0.85);
-  border-color: var(--gold);
 }
 
 .inscription-rule {
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: linear-gradient(
     90deg,
-    rgba(196, 162, 98, 0.35) 0%,
+    rgba(196, 162, 98, 0.18) 0%,
     rgba(196, 162, 98, 0.88) 50%,
-    rgba(196, 162, 98, 0.35) 100%
+    rgba(196, 162, 98, 0.18) 100%
   );
+  transition: height 180ms ease;
+}
+
+.inscription-input:focus + .inscription-rule {
+  height: 2px;
 }
 
 .inscription-actions {
-  margin-top: 18px;
+  margin-top: 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.inscription-hint {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-3);
 }
 
 .humble-btn {
   appearance: none;
   background-color: var(--accent-seal);
   border: 1px solid rgba(237, 230, 214, 0.22);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--ink);
-  min-height: 48px;
-  min-width: 184px;
-  padding: 0 32px;
+  min-height: 46px;
+  min-width: 176px;
+  padding: 0 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +369,7 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   transition: background-color 180ms ease, transform 140ms ease, border-color 180ms ease;
 }
@@ -367,12 +424,37 @@ body.is-result .brand-link {
   gap: 8px;
 }
 
-/* Tap-to-Try Examples (3 Full-Width Rows) */
+/* Classical Engraved Fleuron Divider */
+.threshold-fleuron,
+.sheet-fleuron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 22px auto 18px;
+  max-width: 320px;
+}
+
+.sheet-fleuron {
+  max-width: 100%;
+  margin: 26px 0 28px;
+}
+
+.fleuron-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.fleuron-mark {
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Unboxed Archival Specimen Grid (1-col 4 items on mobile, 2-col 6 items on desktop) */
 .specimens-block {
-  margin-top: 8px;
   text-align: left;
-  border-top: 1px solid var(--rule);
-  padding-top: 14px;
 }
 
 .specimens-head {
@@ -387,7 +469,7 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-3);
 }
@@ -395,12 +477,11 @@ body.is-result .brand-link {
 .text-action {
   appearance: none;
   background: transparent;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  border: 0;
   color: var(--gold);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 12px;
+  padding: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -408,31 +489,30 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
-  transition: color 180ms ease, border-color 180ms ease;
+  transition: color 180ms ease;
 }
 
 .text-action:hover {
   color: var(--gold-bright);
-  border-color: var(--rule-strong);
 }
 
 .specimens-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
 }
 
 .specimen-item {
   appearance: none;
   width: 100%;
-  background: rgba(23, 21, 18, 0.52);
-  border: 1px solid var(--rule);
-  border-radius: 5px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
   color: var(--ink-2);
   min-height: 48px;
-  padding: 11px 14px;
+  padding: 11px 6px;
   display: flex;
   align-items: baseline;
   gap: 12px;
@@ -441,14 +521,57 @@ body.is-result .brand-link {
   font-family: var(--font-serif);
   font-size: 15.5px;
   font-style: italic;
-  line-height: 1.42;
-  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  line-height: 1.44;
+  transition: color 180ms ease, border-color 180ms ease;
 }
 
 .specimen-item:hover {
   color: var(--ink);
-  border-color: var(--rule-strong);
-  background: rgba(196, 162, 98, 0.08);
+  border-bottom-color: var(--rule-strong);
+}
+
+/* On mobile (< 720px), keep every bar and header single-line and uncluttered */
+@media (max-width: 719px) {
+  .specimen-item:nth-child(n + 5),
+  .nav-count,
+  .verdict-plaque-meta .folio-dot,
+  .verdict-plaque-meta .folio-place-top,
+  .verdict-plaque-meta .folio-threads,
+  .stage-caption-right {
+    display: none;
+  }
+
+  .threshold-kicker {
+    letter-spacing: 0.07em;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .inscription-hint {
+    text-align: center;
+  }
+
+  .specimens-label,
+  .text-action,
+  .ctrl-link,
+  .leaf-btn,
+  .leaf-counter {
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .leaf-btn {
+    padding: 0 14px;
+  }
+
+  .result-toolbar {
+    flex-wrap: nowrap;
+  }
+
+  .result-toolbar .text-action,
+  .result-toolbar .ctrl-link {
+    padding: 0 4px;
+  }
 }
 
 .specimen-num {
@@ -457,7 +580,7 @@ body.is-result .brand-link {
   font-style: normal;
   font-weight: 600;
   color: var(--gold);
-  min-width: 18px;
+  min-width: 20px;
   flex-shrink: 0;
 }
 
@@ -466,39 +589,98 @@ body.is-result .brand-link {
 }
 
 /* ==========================================================================
-   STATE B: THE HUMBLING REVEAL (VERDICT -> VISUAL STAGE -> SCRIPTURE)
+   STATE B: THE HUMBLING PLATE (WIDE ARCHITECTURAL CANVAS ON DESKTOP,
+            CLEAN SINGLE-COLUMN FLOW ON MOBILE)
    ========================================================================== */
 .result-view {
   position: relative;
   z-index: 10;
-  padding: 18px 16px 56px;
-}
-
-.monograph-folio {
-  width: 100%;
-  max-width: 600px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 12px 18px 64px;
 }
 
-/* 1. Immediate Verdict Hero */
-.verdict-hero {
-  text-align: center;
-  padding: 6px 0 20px;
-  border-bottom: 1px solid var(--rule);
-}
-
-.verdict-kicker-row {
+/* Top Result Toolbar */
+.result-toolbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 18px;
+}
+
+.viz-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ctrl-sep {
+  color: var(--ink-3);
+  font-size: 14px;
+  user-select: none;
+}
+
+.ctrl-link {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ink-3);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  white-space: nowrap;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.ctrl-link:hover {
+  color: var(--ink);
+}
+
+.ctrl-link.is-active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* 1. Architectural Verdict Plaque */
+.verdict-plaque {
+  margin-bottom: 20px;
+}
+
+.verdict-plaque-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 16px;
+  font-family: var(--font-meta);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.folio-meta-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .folio-rank {
@@ -513,112 +695,112 @@ body.is-result .brand-link {
   color: var(--ink-3);
 }
 
-.verdict-date {
-  color: var(--gold);
+.folio-place-top {
+  color: var(--ink-2);
+}
+
+.folio-threads {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-3);
+}
+
+.verdict-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--rule);
 }
 
 .verdict-years {
-  font-size: clamp(2.85rem, 11vw, 4.4rem);
-  line-height: 1.02;
+  font-size: clamp(2.85rem, 10vw, 4.5rem);
+  line-height: 1;
   color: var(--ink);
-  margin: 2px 0 10px;
+  margin: 0 0 6px;
   font-variant-numeric: oldstyle-nums;
 }
 
-.verdict-thinker {
-  font-size: clamp(1.5rem, 4.6vw, 2.05rem);
-  line-height: 1.18;
-  color: var(--ink);
-  margin: 0 0 4px;
-}
-
-.verdict-place-tradition {
+.verdict-subline {
   font-family: var(--font-serif);
   font-size: 15.5px;
   font-style: italic;
   color: var(--ink-2);
 }
 
-/* 2. Interactive Lineage & World Origin Stage */
-.visual-stage {
-  margin: 18px 0 24px;
-  background: var(--bg-stage);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.stage-bar {
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  border-bottom: 1px solid var(--rule);
-  background: rgba(23, 21, 18, 0.75);
-}
-
-.stage-hint {
-  font-family: var(--font-serif);
+.verdict-date {
+  font-family: var(--font-meta);
   font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2px;
+}
+
+.verdict-thinker {
+  font-size: clamp(1.65rem, 4.2vw, 2.35rem);
+  line-height: 1.14;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+.verdict-tradition {
+  font-family: var(--font-serif);
+  font-size: 15px;
   font-style: italic;
   color: var(--ink-2);
 }
 
-.viz-switcher {
+/* 2. Panoramic Engraved Visual Stage */
+.visual-stage {
+  margin-bottom: 28px;
+  background: var(--bg-stage);
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.stage-caption {
+  padding: 10px 14px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 8px;
-}
-
-.ctrl-link {
-  appearance: none;
-  background: rgba(17, 16, 14, 0.65);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  color: var(--ink-2);
-  min-height: 44px;
-  min-width: 44px;
-  padding: 0 13px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-family: var(--font-meta);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-serif);
   font-size: 14px;
+  font-style: italic;
+  color: var(--ink-3);
+}
+
+.stage-caption-right {
+  font-family: var(--font-meta);
+  font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  white-space: nowrap;
-  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
-}
-
-.ctrl-link:hover {
-  color: var(--ink);
-  border-color: var(--rule-strong);
-}
-
-.ctrl-link.is-active {
-  color: var(--ink);
-  background: rgba(159, 43, 36, 0.28);
-  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .viz-wrap {
   position: relative;
   width: 100%;
-  min-height: 260px;
+  min-height: 265px;
 }
 
 .viz-wrap.is-map {
-  height: 295px;
+  height: 300px;
   touch-action: pan-y;
 }
 
 .lineage-svg {
   width: 100%;
-  height: 268px;
+  height: 275px;
   display: block;
   user-select: none;
 }
@@ -642,6 +824,15 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
+  pointer-events: none;
+}
+
+.viz-origin-kicker {
+  font-family: var(--font-meta);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  fill: var(--accent-text);
   pointer-events: none;
 }
 
@@ -715,8 +906,8 @@ body.is-result .brand-link {
 /* Map Zoom Buttons (44x44px) */
 .map-zoom-controls {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 12px;
+  bottom: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -729,7 +920,7 @@ body.is-result .brand-link {
   height: 44px;
   background: rgba(17, 16, 14, 0.88);
   border: 1px solid var(--rule-strong);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--ink);
   font-family: var(--font-meta);
   font-size: 20px;
@@ -745,9 +936,9 @@ body.is-result .brand-link {
   color: var(--gold-bright);
 }
 
-/* Tappable Witness Strip Beneath World Map */
+/* Witness Legend Bar Beneath World Map */
 .map-witness-strip {
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-top: 1px solid var(--rule);
   background: rgba(23, 21, 18, 0.72);
   display: flex;
@@ -757,9 +948,9 @@ body.is-result .brand-link {
 
 .map-witness-pill {
   appearance: none;
-  background: rgba(17, 16, 14, 0.72);
+  background: rgba(17, 16, 14, 0.75);
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--ink-2);
   min-height: 44px;
   padding: 6px 12px;
@@ -770,6 +961,11 @@ body.is-result .brand-link {
   font-family: var(--font-serif);
   font-size: 14px;
   transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.map-witness-pill:hover {
+  color: var(--ink);
+  border-color: var(--rule-strong);
 }
 
 .map-witness-pill.is-active {
@@ -789,11 +985,57 @@ body.is-result .brand-link {
   color: var(--ink-3);
 }
 
-/* 3. Actual Ancient Scripture Plate */
+/* 3. Primary-Source Monograph Folio */
+.monograph-folio {
+  width: 100%;
+}
+
+/* Comparison Ledger */
+.comparison-ledger {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding-bottom: 6px;
+}
+
+.col-kicker {
+  font-family: var(--font-meta);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.claim-text,
+.thesis-text {
+  margin: 0;
+  max-width: 520px;
+  font-size: 16.5px;
+  line-height: 1.56;
+  color: var(--ink-2);
+}
+
+.claim-text {
+  font-style: italic;
+}
+
+.thesis-text {
+  color: var(--ink);
+}
+
+/* Folio Spread (1-col on mobile, 2-col editorial monograph on desktop) */
+.folio-spread {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
 .scripture-plate {
-  margin: 0 0 26px;
+  margin: 0;
   padding: 20px 18px;
-  background: rgba(23, 21, 18, 0.65);
+  background: rgba(23, 21, 18, 0.62);
   border-top: 1px solid var(--rule-strong);
   border-bottom: 1px solid var(--rule-strong);
 }
@@ -803,15 +1045,17 @@ body.is-result .brand-link {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
 }
 
 .scripture-name {
   font-family: var(--font-meta);
   font-size: 14.5px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -819,18 +1063,18 @@ body.is-result .brand-link {
 .script-toggle {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .script-btn {
   appearance: none;
-  background: rgba(17, 16, 14, 0.6);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  color: var(--ink-2);
+  background: transparent;
+  border: 0;
+  border-bottom: 1.5px solid transparent;
+  color: var(--ink-3);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 12px;
+  padding: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -838,32 +1082,31 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  transition: color 180ms ease, border-color 180ms ease;
 }
 
 .script-btn:hover {
   color: var(--ink);
-  border-color: var(--rule-strong);
 }
 
 .script-btn.is-active {
-  color: var(--ink);
-  border-color: var(--gold);
-  background: rgba(196, 162, 98, 0.14);
+  color: var(--gold);
+  border-bottom-color: var(--gold);
 }
 
 .original-script-block {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--rule);
 }
 
 .original-script-text {
-  margin: 0 0 6px;
-  font-size: clamp(1.25rem, 3.6vw, 1.55rem);
-  line-height: 1.5;
+  margin: 0 0 8px;
+  max-width: 520px;
+  font-size: clamp(1.3rem, 3.2vw, 1.55rem);
+  line-height: 1.52;
   color: var(--ink);
 }
 
@@ -882,18 +1125,21 @@ body.is-result .brand-link {
 
 .transliteration-text {
   margin: 0;
+  max-width: 520px;
   font-family: var(--font-serif);
   font-size: 15px;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.52;
   color: var(--ink-2);
 }
 
 .epigraph-quote {
-  margin: 0 0 14px;
-  font-size: clamp(1.45rem, 4.2vw, 1.85rem);
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+  font-size: clamp(1.45rem, 3.6vw, 1.85rem);
   font-style: italic;
-  line-height: 1.34;
+  line-height: 1.35;
   color: var(--ink);
 }
 
@@ -904,57 +1150,22 @@ body.is-result .brand-link {
   color: var(--ink-3);
 }
 
-/* 4. Comparison Ledger & Editorial Commentary */
-.comparison-ledger {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  padding: 16px 0 20px;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 22px;
-}
-
-.col-kicker {
-  font-family: var(--font-meta);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 4px;
-}
-
-.claim-text,
-.thesis-text {
-  margin: 0;
-  max-width: 560px;
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--ink-2);
-}
-
-.claim-text {
-  font-style: italic;
-}
-
-.thesis-text {
-  color: var(--ink);
-}
-
+/* Editorial Commentary & Marginalia */
 .commentary-section {
-  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .folio-plate-title {
-  margin: 0 0 10px;
-  font-size: clamp(1.6rem, 4.2vw, 2.05rem);
-  line-height: 1.18;
+  margin: 0 0 12px;
+  font-size: clamp(1.65rem, 3.5vw, 2.1rem);
+  line-height: 1.16;
   color: var(--ink);
 }
 
 .folio-prose {
   margin: 0 0 18px;
-  max-width: 525px;
+  max-width: 510px;
   font-family: var(--font-serif);
   font-size: 17px;
   line-height: 1.68;
@@ -963,7 +1174,7 @@ body.is-result .brand-link {
 
 .folio-prose::first-letter {
   font-family: var(--font-display);
-  font-size: 2.55em;
+  font-size: 2.65em;
   line-height: 0.86;
   float: left;
   padding-right: 10px;
@@ -972,10 +1183,11 @@ body.is-result .brand-link {
 }
 
 .marginal-note {
-  padding-top: 12px;
+  padding-top: 14px;
   border-top: 1px solid var(--rule);
+  max-width: 510px;
   font-size: 15.5px;
-  line-height: 1.55;
+  line-height: 1.56;
   color: var(--ink-2);
 }
 
@@ -993,10 +1205,10 @@ body.is-result .brand-link {
   font-style: italic;
 }
 
-/* Related Resonances & Footer */
+/* Related Resonances */
 .related-block {
-  margin-top: 20px;
-  padding-top: 16px;
+  margin-top: 18px;
+  padding-top: 14px;
   border-top: 1px solid var(--rule);
 }
 
@@ -1020,9 +1232,9 @@ body.is-result .brand-link {
 .related-link-btn,
 .inline-gold-btn {
   appearance: none;
-  background: rgba(23, 21, 18, 0.75);
+  background: rgba(23, 21, 18, 0.72);
   border: 1px solid var(--rule-strong);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--gold);
   min-height: 44px;
   min-width: 44px;
@@ -1044,30 +1256,34 @@ body.is-result .brand-link {
 }
 
 .broad-notice {
-  margin-top: 18px;
+  margin-top: 16px;
   padding: 14px;
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 15px;
   color: var(--ink-2);
 }
 
+/* Book-Leaf Witness Stepper Footer */
 .folio-footer {
-  margin-top: 28px;
-  padding-top: 20px;
+  margin-top: 32px;
+  padding-top: 16px;
   border-top: 1px solid var(--rule);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.return-threshold-btn {
+.leaf-btn {
   appearance: none;
-  background: rgba(23, 21, 18, 0.8);
-  border: 1px solid var(--rule-strong);
-  border-radius: 4px;
-  color: var(--ink);
-  min-height: 48px;
-  padding: 0 24px;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--gold);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1075,15 +1291,27 @@ body.is-result .brand-link {
   font-family: var(--font-meta);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
+  transition: color 180ms ease, border-color 180ms ease;
 }
 
-.return-threshold-btn:hover {
-  border-color: var(--gold);
+.leaf-btn:hover:not(:disabled) {
   color: var(--gold-bright);
-  background: rgba(196, 162, 98, 0.1);
+  border-color: var(--gold);
+}
+
+.leaf-btn:disabled {
+  color: var(--ink-3);
+  opacity: 0.5;
+  cursor: default;
+}
+
+.leaf-counter {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  font-style: italic;
+  color: var(--ink-3);
 }
 
 /* ==========================================================================
@@ -1125,7 +1353,7 @@ body.is-result .brand-link {
   pointer-events: none;
   background: rgba(17, 16, 14, 0.96);
   border: 1px solid var(--rule-strong);
-  border-radius: 4px;
+  border-radius: 3px;
   padding: 10px 14px;
   max-width: 280px;
   opacity: 0;
@@ -1172,7 +1400,7 @@ body.is-result .brand-link {
   top: 0;
   bottom: 0;
   z-index: 60;
-  width: min(420px, 92vw);
+  width: min(430px, 92vw);
   background: var(--bg-elevated);
   display: flex;
   flex-direction: column;
@@ -1196,7 +1424,7 @@ body.is-result .brand-link {
 }
 
 .drawer-head {
-  padding: 16px 18px;
+  padding: 16px 20px;
   border-bottom: 1px solid var(--rule);
   display: flex;
   align-items: center;
@@ -1224,7 +1452,7 @@ body.is-result .brand-link {
   appearance: none;
   background: rgba(17, 16, 14, 0.65);
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--ink-2);
   min-height: 44px;
   min-width: 64px;
@@ -1246,7 +1474,7 @@ body.is-result .brand-link {
 }
 
 .drawer-filter-row {
-  padding: 12px 18px;
+  padding: 12px 20px;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -1257,7 +1485,7 @@ body.is-result .brand-link {
   padding: 10px 14px;
   background: var(--bg);
   border: 1px solid var(--rule-strong);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--ink);
   font-family: var(--font-serif);
   font-size: 16px;
@@ -1271,7 +1499,7 @@ body.is-result .brand-link {
 .drawer-body {
   flex: 1;
   overflow-y: auto;
-  padding: 10px 18px 28px;
+  padding: 10px 20px 28px;
 }
 
 .index-item {
@@ -1350,40 +1578,86 @@ body.is-result .brand-link {
 }
 
 /* ==========================================================================
-   DESKTOP ENHANCEMENTS (>= 720px)
+   DESKTOP ARCHITECTURAL MONOGRAPH LAYOUT (>= 720px & >= 880px)
    ========================================================================== */
 @media (min-width: 720px) {
   .masthead {
-    padding: 14px 28px;
+    padding: 14px 32px;
+  }
+
+  .brand-dot,
+  .brand-sub {
+    display: inline;
+  }
+
+  .nav-label-desktop {
+    display: inline;
+  }
+
+  .nav-label-mobile {
+    display: none;
   }
 
   .landing-view {
-    padding: 40px 28px 56px;
+    padding: 40px 32px 60px;
   }
 
   .inscription-input {
-    font-size: 25px;
-    padding: 20px 22px 16px;
+    font-size: 27px;
+    padding: 10px 8px 14px;
+  }
+
+  .inscription-actions {
+    flex-direction: row;
+  }
+
+  .specimens-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 40px;
   }
 
   .result-view {
-    padding: 28px 28px 72px;
+    padding: 20px 32px 84px;
   }
 
-  .monograph-folio {
-    max-width: 620px;
+  .lineage-svg {
+    height: 295px;
   }
 
   .viz-wrap.is-map {
-    height: 350px;
-  }
-
-  .scripture-plate {
-    padding: 26px 28px;
+    height: 390px;
   }
 
   .comparison-ledger {
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    gap: 40px;
+  }
+
+  .comparison-col:last-child {
+    padding-left: 36px;
+    border-left: 1px solid var(--rule);
+  }
+}
+
+@media (min-width: 880px) {
+  .verdict-hero {
+    grid-template-columns: 1.25fr 0.95fr;
+    align-items: end;
+    gap: 32px;
+    padding-bottom: 24px;
+  }
+
+  .verdict-right {
+    text-align: right;
+  }
+
+  .folio-spread {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 52px;
+    align-items: start;
+  }
+
+  .scripture-plate {
+    padding: 28px 30px;
   }
 }

@@ -621,6 +621,14 @@
         .attr('text-anchor', 'middle')
         .text(formatYearShort(node.year));
 
+      if (isOrigin) {
+        g.append('text')
+          .attr('class', 'viz-origin-kicker atlas-halo')
+          .attr('y', -(radius + 30))
+          .attr('text-anchor', 'middle')
+          .text('OLDEST ORIGIN');
+      }
+
       const shortName = node.thinker.replace(/\s*\([^)]*\)/g, '').trim();
       const displayName = shortName.length > 20 ? shortName.slice(0, 18) + '…' : shortName;
       const shortPlace = (node.place || '').split(',')[0];
