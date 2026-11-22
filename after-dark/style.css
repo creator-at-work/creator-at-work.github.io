@@ -26,6 +26,7 @@ button:disabled{cursor:default}
 h1 span{color:var(--accent)}
 nav{display:flex;gap:clamp(10px,2.8vw,32px);align-items:center;text-align:right}
 .quiet{min-height:44px;background:transparent;border:0;border-bottom:1px solid transparent;padding:8px 0;font-size:.94rem}
+a.quiet{display:inline-flex;align-items:center;text-decoration:none}
 .quiet:hover{color:var(--accent);border-bottom-color:var(--accent)}
 main > .prompt{padding:clamp(52px,11vh,128px) 0 44px}
 h1,h2,h3,p{margin:0}
