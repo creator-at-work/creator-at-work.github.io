@@ -34,6 +34,10 @@
         document.documentElement.style.setProperty('--app-h', Math.round(h) + 'px');
       }
       setH();
+      /* X, Instagram, Facebook and LinkedIn draw their own toolbars over the bottom of the page; leave room so the player stays visible. */
+      if (/Twitter|TwitterAndroid|Instagram|FBAN|FBAV|LinkedInApp/i.test(navigator.userAgent)) {
+        document.documentElement.classList.add('in-app');
+      }
       window.addEventListener('resize', setH);
       window.addEventListener('orientationchange', setH);
       if (window.visualViewport) window.visualViewport.addEventListener('resize', setH);

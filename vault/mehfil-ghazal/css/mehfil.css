@@ -2177,3 +2177,8 @@ body.is-searching .fanoos-crown {
     opacity: 0.85;
   }
 }
+
+/* In-app browsers (X etc.) overlay a toolbar on the bottom of the page */
+html.in-app .console {
+  padding-bottom: calc(6px + 150px);
+}
