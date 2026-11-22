@@ -1180,8 +1180,11 @@
     }, 7000);
   }
 
+  const ICON_PLAY_SVG = '<svg width="8" height="10" viewBox="0 0 8 10" fill="none"><polygon points="0.5,0.5 7.5,5 0.5,9.5" fill="currentColor"/></svg>';
+  const ICON_PAUSE_SVG = '<svg width="8" height="10" viewBox="0 0 8 10" fill="none"><rect x="0.8" y="1" width="2.2" height="8" fill="currentColor"/><rect x="5" y="1" width="2.2" height="8" fill="currentColor"/></svg>';
+
   function updateTraceUI() {
-    document.getElementById('traceIcon').textContent = state.isTracing ? '❚❚' : '▶';
+    document.getElementById('traceIcon').innerHTML = state.isTracing ? ICON_PAUSE_SVG : ICON_PLAY_SVG;
     document.getElementById('traceLabel').textContent = state.isTracing ? 'Pause' : 'Trace Life';
   }
 

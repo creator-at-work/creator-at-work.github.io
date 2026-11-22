@@ -353,7 +353,7 @@
         return `
           <div class="ghazal-row ${isPlaying ? 'is-playing' : ''}" data-vid="${esc(t.video_id)}" tabindex="0" role="button" aria-label="Play ${esc(t.title)} by ${esc(t.artist)}">
             <div class="ghazal-left">
-              <span class="ghazal-marker" aria-hidden="true">${isPlaying ? '&#9670;' : '&#9654;'}</span>
+              <span class="ghazal-marker" aria-hidden="true">${isPlaying ? '<svg width="8" height="8" viewBox="0 0 8 8" fill="none" style="display:inline-block;vertical-align:middle"><polygon points="4,0.4 7.6,4 4,7.6 0.4,4" fill="currentColor"/></svg>' : '<svg width="8" height="9" viewBox="0 0 9 10" fill="none" style="display:inline-block;vertical-align:middle"><polygon points="1,0.5 8.5,5 1,9.5" fill="currentColor"/></svg>'}</span>
               <div class="ghazal-info">
                 <div class="ghazal-title">${esc(t.title)}</div>
                 <div class="ghazal-meta">${esc(metaParts.join('  ·  '))}</div>
@@ -404,7 +404,7 @@
       const playing = row.dataset.vid === activeId;
       row.classList.toggle('is-playing', playing);
       const marker = row.querySelector('.ghazal-marker');
-      if (marker) marker.innerHTML = playing ? '&#9670;' : '&#9654;';
+      if (marker) marker.innerHTML = playing ? '<svg width="8" height="8" viewBox="0 0 8 8" fill="none" style="display:inline-block;vertical-align:middle"><polygon points="4,0.4 7.6,4 4,7.6 0.4,4" fill="currentColor"/></svg>' : '<svg width="8" height="9" viewBox="0 0 9 10" fill="none" style="display:inline-block;vertical-align:middle"><polygon points="1,0.5 8.5,5 1,9.5" fill="currentColor"/></svg>';
     });
   }
 
@@ -460,7 +460,7 @@
         dom.drawerBody.innerHTML = `
           <p class="empty-whisper">Radio is off. Start it anytime for a repeat-free queue.</p>
           <div class="drawer-foot-action">
-            <button id="drawerStartRadioBtn" type="button" class="btn-subtle-gold">&#9654; Start Radio</button>
+            <button id="drawerStartRadioBtn" type="button" class="btn-subtle-gold"><svg width="8" height="9" viewBox="0 0 9 10" fill="none" style="display:inline-block;vertical-align:-1px;margin-right:4px"><polygon points="1,0.5 8.5,5 1,9.5" fill="currentColor"/></svg>Start Radio</button>
           </div>
         `;
         document.getElementById('drawerStartRadioBtn')?.addEventListener('click', () => {

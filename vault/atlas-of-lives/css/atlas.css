@@ -82,6 +82,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
+  font-variant-emoji: text;
   text-rendering: optimizeLegibility;
 }
 
@@ -659,7 +660,25 @@ body::after {
 }
 
 .trace-glyph {
-  font-size: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.index-caret {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ink-3);
+}
+
+.fleuron-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: var(--brass);
+  opacity: 0.82;
 }
 
 .trace-btn:hover {
