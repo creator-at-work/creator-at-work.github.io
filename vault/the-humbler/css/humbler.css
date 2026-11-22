@@ -1,8 +1,8 @@
 /* ==========================================================================
    THE HUMBLER: Nocturnal Archival Monograph & Cartographic Stylesheet
-   Bespoke dual-environment architecture:
-   - Mobile (< 860px): Clutter-free vertical manuscript & chronological spine
-   - Desktop (>= 860px): Wide 1,080px panoramic museum plate & 2-column folio spread
+   Refined, understated literary typography for philosophical reflection:
+   - Mobile (< 860px): Quiet, intimate vertical manuscript & chronological spine
+   - Desktop (>= 860px): Wide 1,040px panoramic museum plate & 2-column folio spread
    Every visible text >= 14px, inputs >= 16px, tap targets >= 44x44px,
    and all text contrast >= 4.5:1 WCAG AA.
    ========================================================================== */
@@ -11,16 +11,17 @@
   --bg: #11100E;
   --bg-elevated: #171512;
   --bg-stage: #14120F;
-  --ink: #EDE6D6;
-  --ink-2: #C8BFA8;
-  --ink-3: #9E9482;
-  --accent-seal: #9F2B24;
-  --accent-seal-hover: #B6342C;
+  --ink: #E8E0CF;
+  --ink-2: #BFB6A0;
+  --ink-3: #9D9381;
+  --accent-seal: rgba(159, 43, 36, 0.28);
+  --accent-seal-hover: rgba(182, 52, 44, 0.44);
+  --accent-border: rgba(210, 92, 78, 0.55);
   --accent-text: #E27264;
   --gold: #C4A262;
   --gold-bright: #D6B574;
-  --rule: rgba(237, 230, 214, 0.12);
-  --rule-strong: rgba(196, 162, 98, 0.34);
+  --rule: rgba(237, 230, 214, 0.11);
+  --rule-strong: rgba(196, 162, 98, 0.32);
 
   --font-display: 'Instrument Serif', Georgia, serif;
   --font-serif: 'Newsreader', Georgia, serif;
@@ -84,12 +85,12 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.78;
+  opacity: 0.72;
   transition: opacity 420ms ease;
 }
 
 body.is-result .backdrop-layer {
-  opacity: 0.25;
+  opacity: 0.22;
 }
 
 .backdrop-svg {
@@ -103,21 +104,21 @@ body.is-result .backdrop-layer {
   inset: 0;
   background: radial-gradient(
     circle at 50% 38%,
-    rgba(17, 16, 14, 0.22) 0%,
-    rgba(17, 16, 14, 0.8) 65%,
+    rgba(17, 16, 14, 0.26) 0%,
+    rgba(17, 16, 14, 0.82) 65%,
     rgba(17, 16, 14, 0.96) 100%
   );
 }
 
 /* ==========================================================================
-   ARCHIVAL MASTHEAD (ADAPTS CLEANLY BETWEEN MOBILE & DESKTOP)
+   ARCHIVAL MASTHEAD (SUBTLE & PROPORTIONAL)
    ========================================================================== */
 .masthead {
   position: relative;
   z-index: 20;
-  max-width: 1140px;
+  max-width: 1060px;
   margin: 0 auto;
-  padding: 10px 18px;
+  padding: 8px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,12 +136,12 @@ body.is-result .backdrop-layer {
   min-width: 44px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   cursor: pointer;
   font-family: var(--font-meta);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 180ms ease;
@@ -161,14 +162,17 @@ body.is-result .backdrop-layer {
 
 .brand-sub {
   color: var(--ink-3);
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  font-style: italic;
+  font-family: var(--font-serif);
 }
 
 .masthead-nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-shrink: 0;
 }
 
@@ -179,16 +183,16 @@ body.is-result .backdrop-layer {
   color: var(--ink-2);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 10px;
+  padding: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 6px;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 180ms ease;
@@ -222,29 +226,29 @@ body.is-result .backdrop-layer {
 }
 
 .scholar-dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: var(--gold);
   box-shadow: 0 0 6px rgba(196, 162, 98, 0.8);
 }
 
 /* ==========================================================================
-   STATE A: THE CONFESSION THRESHOLD (LANDING VIEW)
+   STATE A: THE CONFESSION THRESHOLD (LANDING VIEW — QUIET & TASTEFUL)
    ========================================================================== */
 .landing-view {
   position: relative;
   z-index: 10;
-  min-height: calc(100dvh - 66px);
+  min-height: calc(100dvh - 62px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 26px 20px 44px;
+  padding: 22px 20px 38px;
 }
 
 .threshold-sheet {
   width: 100%;
-  max-width: 720px;
+  max-width: 660px;
   margin: 0 auto;
   text-align: center;
 }
@@ -254,14 +258,14 @@ body.is-result .backdrop-layer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
+  gap: 8px;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
   border-bottom: 1px solid var(--rule);
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -271,44 +275,48 @@ body.is-result .backdrop-layer {
 }
 
 .threshold-title {
-  margin: 0 0 14px;
-  font-size: clamp(2.35rem, 6.2vw, 3.85rem);
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 4.4vw, 2.35rem);
+  line-height: 1.16;
+  letter-spacing: -0.005em;
   color: var(--ink);
 }
 
 .threshold-deck {
-  margin: 0 auto 30px;
-  max-width: 540px;
+  margin: 0 auto 22px;
+  max-width: 480px;
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 15px;
   font-style: italic;
-  line-height: 1.56;
+  line-height: 1.58;
   color: var(--ink-2);
 }
 
-/* Open-Manuscript Inscription Surface (Unboxed Archival Line) */
+/* Subtle Manuscript Inscription Field (Book-scaled Newsreader 16px, never giant display type) */
 .inscription-form {
   width: 100%;
-  max-width: 660px;
-  margin: 0 auto 24px;
+  max-width: 580px;
+  margin: 0 auto 20px;
   text-align: left;
 }
 
 .inscription-input {
   width: 100%;
-  background: transparent;
-  border: 0;
-  padding: 8px 4px 12px;
+  background: rgba(23, 21, 18, 0.42);
+  border: 1px solid rgba(237, 230, 214, 0.1);
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 13px 15px 11px;
   color: var(--ink);
-  font-family: var(--font-display);
-  font-size: 23px;
-  line-height: 1.32;
-  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
   resize: none;
-  min-height: 76px;
+  min-height: 68px;
   display: block;
+  transition: background-color 180ms ease, border-color 180ms ease;
 }
 
 .inscription-input::placeholder {
@@ -318,6 +326,8 @@ body.is-result .backdrop-layer {
 
 .inscription-input:focus {
   outline: none;
+  background: rgba(23, 21, 18, 0.72);
+  border-color: rgba(196, 162, 98, 0.28);
 }
 
 .inscription-rule {
@@ -325,19 +335,14 @@ body.is-result .backdrop-layer {
   width: 100%;
   background: linear-gradient(
     90deg,
-    rgba(196, 162, 98, 0.18) 0%,
-    rgba(196, 162, 98, 0.88) 50%,
-    rgba(196, 162, 98, 0.18) 100%
+    rgba(196, 162, 98, 0.25) 0%,
+    rgba(196, 162, 98, 0.82) 50%,
+    rgba(196, 162, 98, 0.25) 100%
   );
-  transition: height 180ms ease;
-}
-
-.inscription-input:focus + .inscription-rule {
-  height: 2px;
 }
 
 .inscription-actions {
-  margin-top: 16px;
+  margin-top: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,22 +360,24 @@ body.is-result .backdrop-layer {
 .humble-btn {
   appearance: none;
   background-color: var(--accent-seal);
-  border: 1px solid rgba(237, 230, 214, 0.22);
+  border: 1px solid var(--accent-border);
   border-radius: 3px;
   color: var(--ink);
-  min-height: 46px;
-  min-width: 176px;
-  padding: 0 28px;
+  min-height: 44px;
+  min-width: 144px;
+  padding: 0 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background-color 180ms ease, transform 140ms ease, border-color 180ms ease;
 }
 
@@ -385,24 +392,24 @@ body.is-result .backdrop-layer {
 
 .humble-btn-sm {
   min-height: 44px;
-  min-width: 140px;
-  padding: 0 20px;
+  min-width: 132px;
+  padding: 0 18px;
 }
 
 .humble-seal {
-  color: var(--gold-bright);
+  color: var(--gold);
   display: inline-flex;
   align-items: center;
 }
 
 /* Threshold Notice */
 .threshold-notice {
-  margin-top: 16px;
-  padding: 14px 16px;
+  margin-top: 14px;
+  padding: 12px 14px;
   background: rgba(23, 21, 18, 0.92);
   border-left: 2px solid var(--accent-text);
   color: var(--ink-2);
-  font-size: 15px;
+  font-size: 14.5px;
   line-height: 1.5;
 }
 
@@ -410,15 +417,15 @@ body.is-result .backdrop-layer {
   display: block;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent-text);
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .notice-actions-row {
-  margin-top: 10px;
+  margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -430,14 +437,14 @@ body.is-result .backdrop-layer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  margin: 22px auto 18px;
-  max-width: 320px;
+  gap: 12px;
+  margin: 18px auto 14px;
+  max-width: 260px;
 }
 
 .sheet-fleuron {
   max-width: 100%;
-  margin: 26px 0 28px;
+  margin: 22px 0 24px;
 }
 
 .fleuron-rule {
@@ -452,8 +459,10 @@ body.is-result .backdrop-layer {
   align-items: center;
 }
 
-/* Unboxed Archival Specimen Grid (1-col 4 items on mobile, 2-col 6 items on desktop) */
+/* Unboxed Archival Specimen Grid (Quiet 14.5px italic entries) */
 .specimens-block {
+  max-width: 620px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -462,14 +471,14 @@ body.is-result .backdrop-layer {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .specimens-label {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-3);
 }
@@ -481,15 +490,15 @@ body.is-result .backdrop-layer {
   color: var(--gold);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 8px;
+  padding: 0 6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   transition: color 180ms ease;
 }
@@ -501,7 +510,7 @@ body.is-result .backdrop-layer {
 .specimens-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2px;
+  gap: 0;
 }
 
 .specimen-item {
@@ -511,17 +520,17 @@ body.is-result .backdrop-layer {
   border: 0;
   border-bottom: 1px solid var(--rule);
   color: var(--ink-2);
-  min-height: 48px;
-  padding: 11px 6px;
+  min-height: 46px;
+  padding: 9px 4px;
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  gap: 10px;
   text-align: left;
   cursor: pointer;
   font-family: var(--font-serif);
-  font-size: 15.5px;
+  font-size: 14.5px;
   font-style: italic;
-  line-height: 1.44;
+  line-height: 1.45;
   transition: color 180ms ease, border-color 180ms ease;
 }
 
@@ -578,9 +587,9 @@ body.is-result .backdrop-layer {
   font-family: var(--font-meta);
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gold);
-  min-width: 20px;
+  min-width: 18px;
   flex-shrink: 0;
 }
 
@@ -589,15 +598,14 @@ body.is-result .backdrop-layer {
 }
 
 /* ==========================================================================
-   STATE B: THE HUMBLING PLATE (WIDE ARCHITECTURAL CANVAS ON DESKTOP,
-            CLEAN SINGLE-COLUMN FLOW ON MOBILE)
+   STATE B: THE HUMBLING PLATE (SUBTLE LITERARY SCALE)
    ========================================================================== */
 .result-view {
   position: relative;
   z-index: 10;
-  max-width: 1080px;
+  max-width: 1020px;
   margin: 0 auto;
-  padding: 12px 18px 64px;
+  padding: 10px 18px 60px;
 }
 
 /* Top Result Toolbar */
@@ -607,9 +615,9 @@ body.is-result .backdrop-layer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--rule);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .viz-switcher {
@@ -628,19 +636,19 @@ body.is-result .backdrop-layer {
   appearance: none;
   background: transparent;
   border: 0;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1.5px solid transparent;
   color: var(--ink-3);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 8px;
+  padding: 0 6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 180ms ease, border-color 180ms ease;
@@ -657,7 +665,7 @@ body.is-result .backdrop-layer {
 
 /* 1. Architectural Verdict Plaque */
 .verdict-plaque {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .verdict-plaque-meta {
@@ -666,13 +674,13 @@ body.is-result .backdrop-layer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--rule);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -712,22 +720,22 @@ body.is-result .backdrop-layer {
 .verdict-hero {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
-  padding-bottom: 18px;
+  gap: 10px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--rule);
 }
 
 .verdict-years {
-  font-size: clamp(2.85rem, 10vw, 4.5rem);
-  line-height: 1;
+  font-size: clamp(2rem, 5.5vw, 2.85rem);
+  line-height: 1.05;
   color: var(--ink);
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   font-variant-numeric: oldstyle-nums;
 }
 
 .verdict-subline {
   font-family: var(--font-serif);
-  font-size: 15.5px;
+  font-size: 14.5px;
   font-style: italic;
   color: var(--ink-2);
 }
@@ -735,37 +743,37 @@ body.is-result .backdrop-layer {
 .verdict-date {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 2px;
 }
 
 .verdict-thinker {
-  font-size: clamp(1.65rem, 4.2vw, 2.35rem);
-  line-height: 1.14;
+  font-size: clamp(1.3rem, 3vw, 1.65rem);
+  line-height: 1.2;
   color: var(--ink);
-  margin: 0 0 4px;
+  margin: 0 0 3px;
 }
 
 .verdict-tradition {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 14.5px;
   font-style: italic;
   color: var(--ink-2);
 }
 
 /* 2. Panoramic Engraved Visual Stage */
 .visual-stage {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   background: var(--bg-stage);
   border-top: 1px solid var(--rule-strong);
   border-bottom: 1px solid var(--rule-strong);
 }
 
 .stage-caption {
-  padding: 10px 14px;
+  padding: 8px 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -781,7 +789,7 @@ body.is-result .backdrop-layer {
 .stage-caption-right {
   font-family: var(--font-meta);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
@@ -790,17 +798,17 @@ body.is-result .backdrop-layer {
 .viz-wrap {
   position: relative;
   width: 100%;
-  min-height: 265px;
+  min-height: 255px;
 }
 
 .viz-wrap.is-map {
-  height: 300px;
+  height: 290px;
   touch-action: pan-y;
 }
 
 .lineage-svg {
   width: 100%;
-  height: 275px;
+  height: 265px;
   display: block;
   user-select: none;
 }
@@ -809,7 +817,7 @@ body.is-result .backdrop-layer {
   height: 100%;
 }
 
-/* SVG Typography (Strictly >= 14px and >= 4.5:1 contrast) */
+/* SVG Typography (Subtle 14px-15px scale, >= 4.5:1 contrast) */
 .pin-group {
   cursor: pointer;
   outline: none;
@@ -823,15 +831,15 @@ body.is-result .backdrop-layer {
 .pin-num {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   pointer-events: none;
 }
 
 .viz-origin-kicker {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   fill: var(--accent-text);
   pointer-events: none;
 }
@@ -839,8 +847,8 @@ body.is-result .backdrop-layer {
 .viz-year-label {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   fill: var(--gold);
   pointer-events: none;
 }
@@ -855,7 +863,7 @@ body.is-result .backdrop-layer {
 
 .viz-node-title {
   font-family: var(--font-display);
-  font-size: 17px;
+  font-size: 15.5px;
   fill: var(--ink-2);
   pointer-events: none;
 }
@@ -887,7 +895,7 @@ body.is-result .backdrop-layer {
 .map-pin-label {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   fill: var(--ink-2);
   pointer-events: none;
 }
@@ -923,8 +931,8 @@ body.is-result .backdrop-layer {
   border-radius: 3px;
   color: var(--ink);
   font-family: var(--font-meta);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -938,7 +946,7 @@ body.is-result .backdrop-layer {
 
 /* Witness Legend Bar Beneath World Map */
 .map-witness-strip {
-  padding: 10px 14px;
+  padding: 9px 14px;
   border-top: 1px solid var(--rule);
   background: rgba(23, 21, 18, 0.72);
   display: flex;
@@ -969,14 +977,14 @@ body.is-result .backdrop-layer {
 }
 
 .map-witness-pill.is-active {
-  background: rgba(159, 43, 36, 0.26);
+  background: rgba(159, 43, 36, 0.22);
   border-color: var(--gold);
   color: var(--ink);
 }
 
 .pill-roman {
   font-family: var(--font-meta);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gold);
 }
 
@@ -994,25 +1002,25 @@ body.is-result .backdrop-layer {
 .comparison-ledger {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
-  padding-bottom: 6px;
+  gap: 16px;
+  padding-bottom: 4px;
 }
 
 .col-kicker {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .claim-text,
 .thesis-text {
   margin: 0;
-  max-width: 520px;
-  font-size: 16.5px;
+  max-width: 490px;
+  font-size: 15px;
   line-height: 1.56;
   color: var(--ink-2);
 }
@@ -1029,13 +1037,13 @@ body.is-result .backdrop-layer {
 .folio-spread {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 28px;
+  gap: 24px;
 }
 
 .scripture-plate {
   margin: 0;
-  padding: 20px 18px;
-  background: rgba(23, 21, 18, 0.62);
+  padding: 18px 16px;
+  background: rgba(23, 21, 18, 0.55);
   border-top: 1px solid var(--rule-strong);
   border-bottom: 1px solid var(--rule-strong);
 }
@@ -1046,16 +1054,16 @@ body.is-result .backdrop-layer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 16px;
-  padding-bottom: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--rule);
 }
 
 .scripture-name {
   font-family: var(--font-meta);
-  font-size: 14.5px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -1074,15 +1082,15 @@ body.is-result .backdrop-layer {
   color: var(--ink-3);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 8px;
+  padding: 0 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 180ms ease, border-color 180ms ease;
 }
@@ -1097,16 +1105,16 @@ body.is-result .backdrop-layer {
 }
 
 .original-script-block {
-  margin-bottom: 18px;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--rule);
 }
 
 .original-script-text {
-  margin: 0 0 8px;
-  max-width: 520px;
-  font-size: clamp(1.3rem, 3.2vw, 1.55rem);
-  line-height: 1.52;
+  margin: 0 0 6px;
+  max-width: 490px;
+  font-size: 16.5px;
+  line-height: 1.54;
   color: var(--ink);
 }
 
@@ -1116,7 +1124,7 @@ body.is-result .backdrop-layer {
 
 .script-cjk {
   font-family: 'Noto Serif SC', var(--font-serif);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 .script-hebrew {
@@ -1125,27 +1133,27 @@ body.is-result .backdrop-layer {
 
 .transliteration-text {
   margin: 0;
-  max-width: 520px;
+  max-width: 490px;
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 14.5px;
   font-style: italic;
   line-height: 1.52;
   color: var(--ink-2);
 }
 
 .epigraph-quote {
-  margin: 0 0 16px;
-  padding-left: 16px;
-  border-left: 2px solid var(--gold);
-  font-size: clamp(1.45rem, 3.6vw, 1.85rem);
+  margin: 0 0 14px;
+  padding-left: 14px;
+  border-left: 1.5px solid var(--gold);
+  font-size: clamp(1.12rem, 2.2vw, 1.3rem);
   font-style: italic;
-  line-height: 1.35;
+  line-height: 1.42;
   color: var(--ink);
 }
 
 .scripture-provenance {
   font-family: var(--font-meta);
-  font-size: 14.5px;
+  font-size: 14px;
   line-height: 1.45;
   color: var(--ink-3);
 }
@@ -1157,36 +1165,36 @@ body.is-result .backdrop-layer {
 }
 
 .folio-plate-title {
-  margin: 0 0 12px;
-  font-size: clamp(1.65rem, 3.5vw, 2.1rem);
-  line-height: 1.16;
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 2.4vw, 1.45rem);
+  line-height: 1.22;
   color: var(--ink);
 }
 
 .folio-prose {
-  margin: 0 0 18px;
-  max-width: 510px;
+  margin: 0 0 16px;
+  max-width: 485px;
   font-family: var(--font-serif);
-  font-size: 17px;
-  line-height: 1.68;
+  font-size: 15.5px;
+  line-height: 1.66;
   color: var(--ink-2);
 }
 
 .folio-prose::first-letter {
   font-family: var(--font-display);
-  font-size: 2.65em;
-  line-height: 0.86;
+  font-size: 2.15em;
+  line-height: 0.88;
   float: left;
-  padding-right: 10px;
-  padding-top: 4px;
+  padding-right: 8px;
+  padding-top: 3px;
   color: var(--gold);
 }
 
 .marginal-note {
-  padding-top: 14px;
+  padding-top: 12px;
   border-top: 1px solid var(--rule);
-  max-width: 510px;
-  font-size: 15.5px;
+  max-width: 485px;
+  font-size: 14.5px;
   line-height: 1.56;
   color: var(--ink-2);
 }
@@ -1194,8 +1202,8 @@ body.is-result .backdrop-layer {
 .marginal-lead {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--gold);
   margin-right: 6px;
@@ -1207,8 +1215,8 @@ body.is-result .backdrop-layer {
 
 /* Related Resonances */
 .related-block {
-  margin-top: 18px;
-  padding-top: 14px;
+  margin-top: 16px;
+  padding-top: 12px;
   border-top: 1px solid var(--rule);
 }
 
@@ -1216,8 +1224,8 @@ body.is-result .backdrop-layer {
   display: block;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-3);
   margin-bottom: 8px;
@@ -1238,12 +1246,12 @@ body.is-result .backdrop-layer {
   color: var(--gold);
   min-height: 44px;
   min-width: 44px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   font-family: var(--font-serif);
-  font-size: 14.5px;
+  font-size: 14px;
   text-align: left;
   transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
 }
@@ -1256,18 +1264,18 @@ body.is-result .backdrop-layer {
 }
 
 .broad-notice {
-  margin-top: 16px;
-  padding: 14px;
+  margin-top: 14px;
+  padding: 12px;
   border: 1px solid var(--rule);
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--ink-2);
 }
 
 /* Book-Leaf Witness Stepper Footer */
 .folio-footer {
-  margin-top: 32px;
-  padding-top: 16px;
+  margin-top: 28px;
+  padding-top: 14px;
   border-top: 1px solid var(--rule);
   display: flex;
   align-items: center;
@@ -1283,15 +1291,15 @@ body.is-result .backdrop-layer {
   color: var(--gold);
   min-height: 44px;
   min-width: 44px;
-  padding: 0 16px;
+  padding: 0 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   transition: color 180ms ease, border-color 180ms ease;
 }
@@ -1309,7 +1317,7 @@ body.is-result .backdrop-layer {
 
 .leaf-counter {
   font-family: var(--font-serif);
-  font-size: 14.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--ink-3);
 }
@@ -1335,14 +1343,14 @@ body.is-result .backdrop-layer {
 }
 
 .excavation-title {
-  font-size: 28px;
+  font-size: 22px;
   color: var(--ink);
   margin-bottom: 4px;
 }
 
 .excavation-sub {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 14.5px;
   font-style: italic;
   color: var(--ink-2);
 }
@@ -1354,8 +1362,8 @@ body.is-result .backdrop-layer {
   background: rgba(17, 16, 14, 0.96);
   border: 1px solid var(--rule-strong);
   border-radius: 3px;
-  padding: 10px 14px;
-  max-width: 280px;
+  padding: 9px 12px;
+  max-width: 260px;
   opacity: 0;
   transform: translateY(4px);
   transition: opacity 140ms ease, transform 140ms ease;
@@ -1369,12 +1377,12 @@ body.is-result .backdrop-layer {
 .tt-meta {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gold);
 }
 
 .tt-title {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--ink);
   margin: 2px 0;
 }
@@ -1400,7 +1408,7 @@ body.is-result .backdrop-layer {
   top: 0;
   bottom: 0;
   z-index: 60;
-  width: min(430px, 92vw);
+  width: min(410px, 92vw);
   background: var(--bg-elevated);
   display: flex;
   flex-direction: column;
@@ -1424,7 +1432,7 @@ body.is-result .backdrop-layer {
 }
 
 .drawer-head {
-  padding: 16px 20px;
+  padding: 14px 18px;
   border-bottom: 1px solid var(--rule);
   display: flex;
   align-items: center;
@@ -1435,16 +1443,16 @@ body.is-result .backdrop-layer {
 .drawer-kicker {
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--gold);
 }
 
 .drawer-heading {
   margin: 2px 0 0;
-  font-size: 26px;
-  line-height: 1.15;
+  font-size: 21px;
+  line-height: 1.18;
   color: var(--ink);
 }
 
@@ -1455,16 +1463,16 @@ body.is-result .backdrop-layer {
   border-radius: 3px;
   color: var(--ink-2);
   min-height: 44px;
-  min-width: 64px;
-  padding: 0 14px;
+  min-width: 60px;
+  padding: 0 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -1474,7 +1482,7 @@ body.is-result .backdrop-layer {
 }
 
 .drawer-filter-row {
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -1482,7 +1490,7 @@ body.is-result .backdrop-layer {
 .scholar-input {
   width: 100%;
   min-height: 44px;
-  padding: 10px 14px;
+  padding: 9px 13px;
   background: var(--bg);
   border: 1px solid var(--rule-strong);
   border-radius: 3px;
@@ -1499,7 +1507,7 @@ body.is-result .backdrop-layer {
 .drawer-body {
   flex: 1;
   overflow-y: auto;
-  padding: 10px 20px 28px;
+  padding: 8px 18px 26px;
 }
 
 .index-item {
@@ -1508,7 +1516,7 @@ body.is-result .backdrop-layer {
   background: transparent;
   border: 0;
   border-bottom: 1px solid var(--rule);
-  padding: 14px 4px;
+  padding: 12px 4px;
   text-align: left;
   cursor: pointer;
   display: block;
@@ -1526,9 +1534,9 @@ body.is-result .backdrop-layer {
   gap: 8px;
   font-family: var(--font-meta);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gold);
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .index-item-domain {
@@ -1537,29 +1545,29 @@ body.is-result .backdrop-layer {
 
 .index-item-title {
   font-family: var(--font-display);
-  font-size: 20px;
-  line-height: 1.22;
+  font-size: 17.5px;
+  line-height: 1.24;
   color: var(--ink);
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .index-item-meta {
   font-family: var(--font-serif);
-  font-size: 14.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--ink-2);
 }
 
 .scholar-prose {
-  margin: 0 0 14px;
-  max-width: 56ch;
-  font-size: 15.5px;
-  line-height: 1.6;
+  margin: 0 0 12px;
+  max-width: 54ch;
+  font-size: 14.5px;
+  line-height: 1.58;
   color: var(--ink-2);
 }
 
 .scholar-form {
-  margin-top: 18px;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1572,7 +1580,7 @@ body.is-result .backdrop-layer {
 }
 
 .scholar-status {
-  font-size: 14.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--gold);
 }
@@ -1582,7 +1590,7 @@ body.is-result .backdrop-layer {
    ========================================================================== */
 @media (min-width: 720px) {
   .masthead {
-    padding: 14px 32px;
+    padding: 11px 28px;
   }
 
   .brand-dot,
@@ -1599,52 +1607,53 @@ body.is-result .backdrop-layer {
   }
 
   .landing-view {
-    padding: 40px 32px 60px;
+    padding: 32px 28px 48px;
   }
 
   .inscription-input {
-    font-size: 27px;
-    padding: 10px 8px 14px;
+    font-size: 17px;
+    padding: 14px 18px 12px;
   }
 
   .inscription-actions {
     flex-direction: row;
+    gap: 20px;
   }
 
   .specimens-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4px 40px;
+    gap: 2px 36px;
   }
 
   .result-view {
-    padding: 20px 32px 84px;
+    padding: 18px 28px 72px;
   }
 
   .lineage-svg {
-    height: 295px;
+    height: 275px;
   }
 
   .viz-wrap.is-map {
-    height: 390px;
+    height: 360px;
   }
 
   .comparison-ledger {
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 36px;
   }
 
   .comparison-col:last-child {
-    padding-left: 36px;
+    padding-left: 32px;
     border-left: 1px solid var(--rule);
   }
 }
 
 @media (min-width: 880px) {
   .verdict-hero {
-    grid-template-columns: 1.25fr 0.95fr;
+    grid-template-columns: 1.2fr 0.9fr;
     align-items: end;
-    gap: 32px;
-    padding-bottom: 24px;
+    gap: 28px;
+    padding-bottom: 18px;
   }
 
   .verdict-right {
@@ -1652,12 +1661,12 @@ body.is-result .backdrop-layer {
   }
 
   .folio-spread {
-    grid-template-columns: 1.08fr 0.92fr;
-    gap: 52px;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 44px;
     align-items: start;
   }
 
   .scripture-plate {
-    padding: 28px 30px;
+    padding: 22px 24px;
   }
 }
