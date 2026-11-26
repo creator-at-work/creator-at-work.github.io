@@ -1,0 +1,78 @@
+{
+  "video_id": "UByuXScv3CA",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 21.0,
+      "end": 42.0,
+      "lines": [
+        "Koi yeh kaise bataye ke woh tanha kyun hai?",
+        "Woh jo apna tha wohi aur kisi ka kyun hai?"
+      ],
+      "en": "Who can say why he is alone, or why the one who was his now belongs to someone else?"
+    },
+    {
+      "start": 43.0,
+      "end": 65.0,
+      "lines": [
+        "Yahi duniya hai to phir aisi yeh duniya kyun hai?",
+        "Yahi hota hai to aakhir yahi hota kyun hai?"
+      ],
+      "en": "If this is the world and this is how things go, why must it always be this way?"
+    },
+    {
+      "start": 67.0,
+      "end": 85.0,
+      "lines": [
+        "Ik zara haath badha de to pakad le daaman,",
+        "Uske seene mein sama jaaye"
+      ],
+      "en": "A little reach would catch the hem and draw me close to his chest."
+    },
+    {
+      "start": 85.0,
+      "end": 100.0,
+      "lines": [
+        "Hamari dhadkan,",
+        "Itni qurbat hai to phir faasla itna kyun hai?"
+      ],
+      "en": "If my heart can beat so close to his, why is there still so much distance between us?"
+    },
+    {
+      "start": 102.0,
+      "end": 124.0,
+      "lines": [
+        "Dil-e-barbaad se nikla nahin ab tak koi,",
+        "Ik lute ghar pe diya karta hai dastak koi."
+      ],
+      "en": "Someone still dwells in this ruined heart, and someone keeps knocking at its plundered door."
+    },
+    {
+      "start": 124.0,
+      "end": 135.0,
+      "lines": [
+        "Aas jo toot gayi phir se bandhaata kyun hai?"
+      ],
+      "en": "Why does he make me hope again when that hope has already broken?"
+    },
+    {
+      "start": 141.0,
+      "end": 159.0,
+      "lines": [
+        "Tum masarrat ka kaho ya ise gham ka rishta,",
+        "Kehte hain pyaar ka rishta hai."
+      ],
+      "en": "Call it a bond of joy or sorrow, and people will call it love."
+    },
+    {
+      "start": 159.0,
+      "end": 174.0,
+      "lines": [
+        "Janam ka rishta,",
+        "Hai janam ka jo yeh rishta to badalta kyun hai?"
+      ],
+      "en": "If this bond is meant to last a lifetime, why does it change?"
+    }
+  ]
+}

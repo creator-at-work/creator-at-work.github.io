@@ -1,0 +1,84 @@
+{
+  "video_id": "XfXbRC08uzM",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 27.0,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life grants me a few more days."
+    },
+    {
+      "start": 27.0,
+      "end": 42.0,
+      "lines": [
+        "Apne jee mein hum ne thaani aur hai",
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "I have set my heart on something else, if life grants me a few more days."
+    },
+    {
+      "start": 45.0,
+      "end": 67.6,
+      "lines": [
+        "Bar-ha dekhi hain un ki ranjishein",
+        "Par kuchh ab ke sar-girani aur hai"
+      ],
+      "en": "I have seen her displeasure often, but there is a different coldness this time."
+    },
+    {
+      "start": 67.6,
+      "end": 76.6,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life grants me a few more days."
+    },
+    {
+      "start": 77.6,
+      "end": 100.04,
+      "lines": [
+        "De ke khat munh dekhta hai nama-bar",
+        "Kuchh to paigham-e-zabani aur hai"
+      ],
+      "en": "The messenger hands me the letter and watches my face, so there must be something more to tell."
+    },
+    {
+      "start": 100.04,
+      "end": 108.42,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life grants me a few more days."
+    },
+    {
+      "start": 110.42,
+      "end": 132.76,
+      "lines": [
+        "Ho chuki hain Ghalib balayen sab tamam",
+        "Ek marg-e-nagahani aur hai"
+      ],
+      "en": "All your trials are over, Ghalib, and only a sudden death remains."
+    },
+    {
+      "start": 132.76,
+      "end": 147.76,
+      "lines": [
+        "Koi din gar zindagani aur hai",
+        "Apne jee mein hum ne thaani aur hai"
+      ],
+      "en": "If life grants me a few more days, I have set my heart on something else."
+    },
+    {
+      "start": 147.76,
+      "end": 163.24,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life grants me a few more days."
+    }
+  ]
+}
