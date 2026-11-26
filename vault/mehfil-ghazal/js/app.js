@@ -125,6 +125,7 @@
     // Browsing
     selectedMood: null,
     visibleCount: INITIAL_VISIBLE,
+    showingHomeHero: false,
     searchQuery: '',
     searchLoading: false,
     searchRejected: false,
@@ -137,11 +138,10 @@
     sessionPlayedStack: [],
     wasExplicitlyStopped: false,
     lastRadioConfig: { mode: 'all', mood: '' },
-    videoVisible: false,
 
     // Full-Screen Lyrical Player
     fullPlayerOpen: false,
-    fullPlayerTab: 'cinema', // 'cinema' | 'full' | 'video'
+    fullPlayerTab: 'cinema', // 'cinema' | 'full'
     showEnglish: true,
     lyricsCache: new Map(),
     lyricsData: null,
@@ -840,10 +840,9 @@
 
   function renderHearth() {
     const tr = state.currentTrack;
-    if (!tr || state.wasExplicitlyStopped) {
+    if (!tr || state.wasExplicitlyStopped || state.showingHomeHero) {
       dom.hearthWelcome.classList.remove('hidden');
       dom.hearthPlaying.classList.add('hidden');
-      if (state.videoVisible) setStageVisible(false);
       return;
     }
 
@@ -885,16 +884,6 @@
     }
   }
 
-  function setStageVisible(visible, { inFullPlayer = false } = {}) {
-    state.videoVisible = Boolean(visible);
-    dom.stageContainer.classList.toggle('is-visible', state.videoVisible && !inFullPlayer);
-    dom.stageContainer.classList.toggle('is-fullplayer-video', state.videoVisible && inFullPlayer);
-    dom.stageContainer.classList.toggle('is-ambient', !state.videoVisible);
-    if (dom.toggleVideoBtn) {
-      dom.toggleVideoBtn.textContent = state.videoVisible && !inFullPlayer ? 'Hide video' : 'Video';
-    }
-  }
-
   // =========================================================================
   // Full-Screen Lyrical Player & Live Synced Lyrics
   // =========================================================================
@@ -931,9 +920,7 @@
 
     if (state.lyricsCache.has(vid)) {
       state.lyricsData = state.lyricsCache.get(vid);
-      if (state.fullPlayerTab !== 'video') {
-        state.fullPlayerTab = state.lyricsData.mode === 'untimed' ? 'full' : 'cinema';
-      }
+      state.fullPlayerTab = state.lyricsData.mode === 'untimed' ? 'full' : 'cinema';
       renderFullPlayerStage();
       syncLyricsToTime(player ? player.currentTime : 0, { immediate: true });
       return;
@@ -951,9 +938,7 @@
           state.lyricsCache.set(vid, data);
           if (state.currentTrack && state.currentTrack.video_id === vid) {
             state.lyricsData = data;
-            if (state.fullPlayerTab !== 'video') {
-              state.fullPlayerTab = data.mode === 'untimed' ? 'full' : 'cinema';
-            }
+            state.fullPlayerTab = data.mode === 'untimed' ? 'full' : 'cinema';
             state.lyricsActiveIdx = -2;
             renderFullPlayerStage();
             syncLyricsToTime(player ? player.currentTime : 0, { immediate: true });
@@ -993,10 +978,6 @@
       syncLyricsToTime(player ? player.currentTime : 0, { immediate: true });
     } else {
       dom.fullPlayer.classList.remove('is-open');
-      if (state.fullPlayerTab === 'video') {
-        setStageVisible(false);
-        state.fullPlayerTab = 'cinema';
-      }
       setTimeout(() => {
         if (!state.fullPlayerOpen) dom.fullPlayer.classList.add('hidden');
       }, 220);
@@ -1018,17 +999,8 @@
     const isUntimed = mode === 'untimed';
     const tab = state.fullPlayerTab;
 
-    // Video visibility synced without reparenting the iframe DOM node
-    if (state.fullPlayerOpen && tab === 'video') {
-      setStageVisible(true, { inFullPlayer: true });
-    } else if (state.fullPlayerOpen) {
-      setStageVisible(false);
-    }
-
     // Top kicker
-    if (tab === 'video') {
-      dom.fpModeKicker.textContent = 'Video';
-    } else if (isSynced) {
+    if (isSynced) {
       dom.fpModeKicker.textContent = state.party.inRoom ? `Live · ${state.party.code}` : 'Live lyrics';
     } else if (isUntimed) {
       dom.fpModeKicker.textContent = 'Couplets · untimed';
@@ -1036,17 +1008,13 @@
       dom.fpModeKicker.textContent = state.radio.active ? 'Radio' : 'Now playing';
     }
 
-    // Top right view buttons
-    const canToggleFull = isSynced && tab !== 'video';
-    dom.fpViewToggleBtn.classList.toggle('hidden', !canToggleFull);
+    // Top right view toggle (Full / Stage for synced tracks)
+    dom.fpViewToggleBtn.classList.toggle('hidden', !isSynced);
     dom.fpViewToggleBtn.textContent = tab === 'full' ? 'Stage' : 'Full';
-    dom.fpVideoToggleBtn.textContent = tab === 'video' ? 'Lyrics' : 'Video';
-    dom.fpVideoToggleBtn.classList.toggle('is-gold', tab === 'video');
 
     // Stage panels
     dom.fpCinemaStage.classList.toggle('hidden', tab !== 'cinema');
     dom.fpFullStage.classList.toggle('hidden', tab !== 'full');
-    dom.fpVideoStage.classList.toggle('hidden', tab !== 'video');
 
     // English button state
     dom.fpEnglishBtn.classList.toggle('is-on', state.showEnglish);
@@ -1096,22 +1064,27 @@
       dom.fpBackToLiveBtn.classList.add('hidden');
     }
 
-    // Immediate Cinema render for matla / empty
+    // Immediate Cinema render for matla / empty (non-synced tracks)
     if (tab === 'cinema' && !isSynced) {
+      dom.fpCinemaInstrumental.classList.add('hidden');
       const first = (data.couplets || [])[0];
       if (first) {
+        dom.fpCinemaUrdu.classList.remove('hidden');
         dom.fpCinemaUrdu.innerHTML = `“${(first.lines || []).map((l) => esc(l)).join('<br/>')}”`;
         const showEng = state.showEnglish && Boolean(first.en);
         dom.fpCinemaEng.textContent = first.en || '';
         dom.fpCinemaEng.classList.toggle('hidden', !showEng);
         dom.fpCinemaRule.classList.toggle('hidden', !showEng);
         dom.fpCinemaCounter.textContent = state.currentTrack && state.currentTrack.poet ? state.currentTrack.poet : '';
+        dom.fpCinemaCounter.classList.toggle('hidden', !dom.fpCinemaCounter.textContent);
       } else {
+        dom.fpCinemaUrdu.classList.remove('hidden');
         dom.fpCinemaUrdu.textContent = state.currentTrack ? cleanTitleDisplay(state.currentTrack.title) : 'Mehfil';
         dom.fpCinemaEng.textContent = '';
         dom.fpCinemaEng.classList.add('hidden');
         dom.fpCinemaRule.classList.add('hidden');
         dom.fpCinemaCounter.textContent = '';
+        dom.fpCinemaCounter.classList.add('hidden');
       }
     }
   }
@@ -1124,9 +1097,11 @@
     const couplets = data.couplets;
     let activeIdx = -1;
     for (let i = 0; i < couplets.length; i++) {
-      if (curSec + 0.35 >= couplets[i].start) {
+      const c = couplets[i];
+      const nextStart = i + 1 < couplets.length ? couplets[i + 1].start : Infinity;
+      const effectiveEnd = nextStart - c.end <= 2.5 ? nextStart : c.end + 1.2;
+      if (curSec + 0.35 >= c.start && curSec < effectiveEnd) {
         activeIdx = i;
-      } else {
         break;
       }
     }
@@ -1134,22 +1109,29 @@
     if (activeIdx === state.lyricsActiveIdx && !immediate) return;
     state.lyricsActiveIdx = activeIdx;
 
-    const displayCouplet = activeIdx >= 0 ? couplets[activeIdx] : couplets[0];
-    const urduHtml = (displayCouplet.lines || []).map((l) => esc(l)).join('<br/>');
-    const engText = displayCouplet.en || '';
-    const showEng = state.showEnglish && Boolean(engText);
-    const counterText =
-      activeIdx >= 0
-        ? `Couplet ${activeIdx + 1} of ${couplets.length}`
-        : `Prelude · opens at ${formatDuration(couplets[0].start)}`;
-
-    // 1. Update Option B Cinema Stage with subtle cross-fade
+    // 1. Update Option B Cinema Stage (quiet music note during instrumental stretches)
     const applyCinema = () => {
-      dom.fpCinemaUrdu.innerHTML = activeIdx >= 0 ? `“${urduHtml}”` : urduHtml;
+      if (activeIdx < 0) {
+        dom.fpCinemaInstrumental.classList.remove('hidden');
+        dom.fpCinemaUrdu.classList.add('hidden');
+        dom.fpCinemaRule.classList.add('hidden');
+        dom.fpCinemaEng.classList.add('hidden');
+        dom.fpCinemaCounter.classList.add('hidden');
+        return;
+      }
+      const displayCouplet = couplets[activeIdx];
+      const urduHtml = (displayCouplet.lines || []).map((l) => esc(l)).join('<br/>');
+      const engText = displayCouplet.en || '';
+      const showEng = state.showEnglish && Boolean(engText);
+
+      dom.fpCinemaInstrumental.classList.add('hidden');
+      dom.fpCinemaUrdu.classList.remove('hidden');
+      dom.fpCinemaUrdu.innerHTML = `“${urduHtml}”`;
       dom.fpCinemaEng.textContent = engText;
       dom.fpCinemaEng.classList.toggle('hidden', !showEng);
       dom.fpCinemaRule.classList.toggle('hidden', !showEng);
-      dom.fpCinemaCounter.textContent = counterText;
+      dom.fpCinemaCounter.textContent = `Couplet ${activeIdx + 1} of ${couplets.length}`;
+      dom.fpCinemaCounter.classList.remove('hidden');
     };
 
     if (immediate) {
@@ -1180,16 +1162,6 @@
           activeEl.scrollIntoView({ behavior: immediate ? 'auto' : 'smooth', block: 'center' });
         }
       }
-    }
-
-    // 3. Update quiet caption below Video mode
-    if (state.fullPlayerTab === 'video' && activeIdx >= 0) {
-      dom.fpVideoCaption.classList.remove('hidden');
-      dom.fpVideoCaptionUrdu.innerHTML = urduHtml;
-      dom.fpVideoCaptionEng.textContent = showEng ? engText : '';
-      dom.fpVideoCaptionEng.classList.toggle('hidden', !showEng);
-    } else if (state.fullPlayerTab === 'video') {
-      dom.fpVideoCaption.classList.add('hidden');
     }
   }
 
@@ -1588,6 +1560,7 @@
     }
     state.currentTrack = track;
     state.wasExplicitlyStopped = false;
+    state.showingHomeHero = false;
     state.trackById.set(track.video_id, track);
 
     player.loadAndPlay(track.video_id, track.duration_sec || 0, startSeconds);
@@ -2184,12 +2157,11 @@
       'partyStatusLine', 'partyStatusText', 'partyQuickShareBtn', 'partyQuickResyncBtn', 'partyQuickLeaveBtn',
       'hearthWelcome', 'beginRadioBtn', 'heroListenTogetherBtn',
       'hearthPlaying', 'hearthModeLine', 'hearthMatla', 'hearthTranslation', 'hearthTitleLine',
-      'hearthLyricsBtn', 'toggleVideoBtn', 'hearthNextSep', 'hearthNextBtn', 'hearthSharePartyBtn',
+      'hearthLyricsBtn', 'hearthNextSep', 'hearthNextBtn', 'hearthSharePartyBtn',
       'stageContainer',
-      'fullPlayer', 'fpMinimizeBtn', 'fpModeKicker', 'fpViewToggleBtn', 'fpVideoToggleBtn',
-      'fpCinemaStage', 'fpCinemaContent', 'fpCinemaUrdu', 'fpCinemaRule', 'fpCinemaEng', 'fpCinemaCounter',
+      'fullPlayer', 'fpMinimizeBtn', 'fpModeKicker', 'fpViewToggleBtn',
+      'fpCinemaStage', 'fpCinemaContent', 'fpCinemaInstrumental', 'fpCinemaUrdu', 'fpCinemaRule', 'fpCinemaEng', 'fpCinemaCounter',
       'fpFullStage', 'fpFullList', 'fpBackToLiveBtn',
-      'fpVideoStage', 'fpVideoSlot', 'fpVideoCaption', 'fpVideoCaptionUrdu', 'fpVideoCaptionEng',
       'fpTrackTitle', 'fpTrackArtist', 'fpTimeCurrent', 'fpSeekSlider', 'fpTimeDuration',
       'fpPrevBtn', 'fpPlayPauseBtn', 'fpIconPlay', 'fpIconPause', 'fpNextBtn',
       'fpEnglishBtn', 'fpSleepBtn', 'fpTogetherBtn', 'fpQueueBtn',
@@ -2218,14 +2190,20 @@
       dom[id] = document.getElementById(id);
     }
 
-    // Home reset
+    // Home reset (returns to main Mehfil home page without interrupting playing music)
     dom.brandHomeBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
       clearSearchSilently();
       setMobileSearchOpen(false);
+      setDrawerOpen(false);
+      setPartySheetOpen(false);
+      toggleSleepPopover(false);
+      if (state.fullPlayerOpen) setFullPlayerOpen(false);
       state.selectedMood = null;
       state.visibleCount = INITIAL_VISIBLE;
+      state.showingHomeHero = true;
       hideWhisper();
+      renderHearth();
       renderMoodRibbon();
       renderRepertoire();
       dom.mainRoom.scrollTo({ top: 0, behavior: 'smooth' });
@@ -2251,10 +2229,6 @@
     dom.hearthLyricsBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
       setFullPlayerOpen(true);
-    });
-    dom.toggleVideoBtn.addEventListener('click', (e) => {
-      e.currentTarget.blur();
-      setFullPlayerOpen(true, { tab: 'video' });
     });
     dom.moodRadioBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
@@ -2374,7 +2348,13 @@
       setDrawerOpen(!state.drawerOpen);
     });
     dom.consoleTrackBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       e.currentTarget.blur();
+      setFullPlayerOpen(true);
+    });
+    // Clicking anywhere on the bottom player box (outside buttons/sliders/links) expands the lyrical player
+    dom.consoleFooter.addEventListener('click', (e) => {
+      if (e.target.closest('button, input, a, .scrubber')) return;
       setFullPlayerOpen(true);
     });
 
@@ -2386,15 +2366,6 @@
     dom.fpViewToggleBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
       setFullPlayerTab(state.fullPlayerTab === 'full' ? 'cinema' : 'full');
-    });
-    dom.fpVideoToggleBtn.addEventListener('click', (e) => {
-      e.currentTarget.blur();
-      if (state.fullPlayerTab === 'video') {
-        const fallbackTab = state.lyricsData && state.lyricsData.mode === 'untimed' ? 'full' : 'cinema';
-        setFullPlayerTab(fallbackTab);
-      } else {
-        setFullPlayerTab('video');
-      }
     });
     dom.fpEnglishBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();

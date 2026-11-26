@@ -190,10 +190,6 @@
             <button id="hearthLyricsBtn" type="button" class="quiet-link quiet-link-gold">
               Lyrics
             </button>
-            <span class="sep-dot" aria-hidden="true">&middot;</span>
-            <button id="toggleVideoBtn" type="button" class="quiet-link">
-              Video
-            </button>
             <span id="hearthNextSep" class="sep-dot" aria-hidden="true">&middot;</span>
             <button id="hearthNextBtn" type="button" class="quiet-link">
               Next
@@ -284,7 +280,6 @@
 
       <div class="fp-top-actions">
         <button id="fpViewToggleBtn" type="button" class="fp-top-link is-gold">Full</button>
-        <button id="fpVideoToggleBtn" type="button" class="fp-top-link">Video</button>
       </div>
     </header>
 
@@ -300,6 +295,13 @@
       </svg>
 
       <div id="fpCinemaContent" class="fp-cinema-content">
+        <div id="fpCinemaInstrumental" class="fp-instrumental hidden" aria-label="Instrumental">
+          <svg class="fp-music-note-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V5l12-2v13" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+        </div>
         <p id="fpCinemaUrdu" class="fp-cinema-urdu font-display"></p>
         <div id="fpCinemaRule" class="fp-gold-rule" aria-hidden="true"></div>
         <p id="fpCinemaEng" class="fp-cinema-eng"></p>
@@ -312,15 +314,6 @@
     <div id="fpFullStage" class="fp-full-stage quiet-scroll hidden">
       <div id="fpFullList" class="fp-full-list"></div>
       <button id="fpBackToLiveBtn" type="button" class="fp-back-live hidden">Back to live</button>
-    </div>
-
-    <!-- Embedded Video Stage inside Full Player -->
-    <div id="fpVideoStage" class="fp-video-stage hidden">
-      <div id="fpVideoSlot" class="fp-video-slot"></div>
-      <div id="fpVideoCaption" class="fp-video-caption hidden">
-        <p id="fpVideoCaptionUrdu" class="fp-video-caption-urdu font-display"></p>
-        <p id="fpVideoCaptionEng" class="fp-video-caption-eng"></p>
-      </div>
     </div>
 
     <footer class="fp-bottom">
