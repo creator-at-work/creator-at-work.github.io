@@ -148,6 +148,7 @@
     lyricsActiveIdx: -2,
     lyricsUserScrolled: false,
     lyricsFadeTimer: null,
+    cinemaActiveLayer: 'A', // 'A' | 'B' for smooth dual-layer cross-dissolve
 
     radio: {
       active: false,
@@ -792,11 +793,6 @@
       dom.partyStatusLine.classList.add('hidden');
     }
 
-    // Hide host-only Next button on hearth for guests
-    const hideNext = isGuestInParty();
-    dom.hearthNextBtn.classList.toggle('hidden', hideNext);
-    dom.hearthNextSep.classList.toggle('hidden', hideNext);
-
     if (needsGuestTap) {
       const snap = state.party.lastSnapshot;
       dom.guestJoinKicker.textContent = `Room ${code} · Hosted by ${state.party.hostName} · ${count} here`;
@@ -868,21 +864,8 @@
     }
 
     const displayTitle = cleanTitleDisplay(tr.title);
-    if (tr.matla) {
-      dom.hearthMatla.textContent = `“${tr.matla}”`;
-      dom.hearthTranslation.textContent = tr.matla_translation || '';
-      dom.hearthTranslation.classList.toggle('hidden', !tr.matla_translation);
-      const creditParts = [`<strong>${esc(displayTitle)}</strong>`, esc(tr.artist)];
-      if (tr.poet) creditParts.push(esc(tr.poet));
-      dom.hearthTitleLine.innerHTML = creditParts.join(' &nbsp;&middot;&nbsp; ');
-    } else {
-      dom.hearthMatla.textContent = displayTitle;
-      dom.hearthTranslation.textContent = '';
-      dom.hearthTranslation.classList.add('hidden');
-      const creditParts = [`<strong>${esc(tr.artist)}</strong>`];
-      if (tr.poet) creditParts.push(esc(tr.poet));
-      dom.hearthTitleLine.innerHTML = creditParts.join(' &nbsp;&middot;&nbsp; ');
-    }
+    dom.hearthTitle.textContent = displayTitle;
+    dom.hearthCredit.textContent = tr.poet ? `${tr.artist}  ·  ${tr.poet}` : tr.artist;
   }
 
   // =========================================================================
@@ -993,6 +976,67 @@
     syncLyricsToTime(player ? player.currentTime : 0, { immediate: true });
   }
 
+  const SVG_INSTRUMENTAL_NOTE = `
+    <div class="fp-instrumental" aria-label="Instrumental">
+      <svg class="fp-music-note-svg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18V5l12-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="18" cy="16" r="3" />
+      </svg>
+    </div>`;
+
+  function buildCinemaCoupletHtml(lines, engText, quoted = true) {
+    const urduHtml = (lines || []).map((l) => esc(l)).join('<br/>');
+    const showEng = state.showEnglish && Boolean(engText);
+    return `
+      <p class="fp-cinema-urdu font-display">${quoted ? `“${urduHtml}”` : urduHtml}</p>
+      ${showEng ? `<div class="fp-gold-rule" aria-hidden="true"></div><p class="fp-cinema-eng">${esc(engText)}</p>` : ''}
+    `;
+  }
+
+  function transitionCinemaStage(html, counterText, { immediate = false } = {}) {
+    if (!dom.fpCinemaLayerA || !dom.fpCinemaLayerB) return;
+    clearTimeout(state.lyricsFadeTimer);
+
+    const currentLayer = state.cinemaActiveLayer === 'A' ? dom.fpCinemaLayerA : dom.fpCinemaLayerB;
+    const nextLayer = state.cinemaActiveLayer === 'A' ? dom.fpCinemaLayerB : dom.fpCinemaLayerA;
+
+    if (immediate) {
+      currentLayer.classList.add('no-transition');
+      nextLayer.classList.add('no-transition');
+      currentLayer.classList.remove('is-shown', 'is-leaving');
+      nextLayer.classList.remove('is-leaving');
+      nextLayer.innerHTML = html;
+      nextLayer.classList.add('is-shown');
+      void nextLayer.offsetHeight;
+      currentLayer.classList.remove('no-transition');
+      nextLayer.classList.remove('no-transition');
+      state.cinemaActiveLayer = state.cinemaActiveLayer === 'A' ? 'B' : 'A';
+    } else {
+      // Prepare incoming layer quietly below center without transition
+      nextLayer.classList.add('no-transition');
+      nextLayer.classList.remove('is-shown', 'is-leaving');
+      nextLayer.innerHTML = html;
+      void nextLayer.offsetHeight;
+      nextLayer.classList.remove('no-transition');
+
+      // Dissolve outgoing layer slowly upward
+      currentLayer.classList.remove('is-shown');
+      currentLayer.classList.add('is-leaving');
+
+      // After a calm 180ms breath, float the new layer slowly into the lamplight
+      state.lyricsFadeTimer = setTimeout(() => {
+        nextLayer.classList.add('is-shown');
+        state.cinemaActiveLayer = state.cinemaActiveLayer === 'A' ? 'B' : 'A';
+      }, 180);
+    }
+
+    if (dom.fpCinemaCounter) {
+      dom.fpCinemaCounter.textContent = counterText || '';
+      dom.fpCinemaCounter.classList.toggle('is-quiet', !counterText);
+    }
+  }
+
   function renderFullPlayerStage() {
     if (!dom.fullPlayer) return;
     const data = state.lyricsData || buildFallbackLyrics(state.currentTrack);
@@ -1068,25 +1112,14 @@
 
     // Immediate Cinema render for matla / empty (non-synced tracks)
     if (tab === 'cinema' && !isSynced) {
-      dom.fpCinemaInstrumental.classList.add('hidden');
       const first = (data.couplets || [])[0];
       if (first) {
-        dom.fpCinemaUrdu.classList.remove('hidden');
-        dom.fpCinemaUrdu.innerHTML = `“${(first.lines || []).map((l) => esc(l)).join('<br/>')}”`;
-        const showEng = state.showEnglish && Boolean(first.en);
-        dom.fpCinemaEng.textContent = first.en || '';
-        dom.fpCinemaEng.classList.toggle('hidden', !showEng);
-        dom.fpCinemaRule.classList.toggle('hidden', !showEng);
-        dom.fpCinemaCounter.textContent = state.currentTrack && state.currentTrack.poet ? state.currentTrack.poet : '';
-        dom.fpCinemaCounter.classList.toggle('hidden', !dom.fpCinemaCounter.textContent);
+        const html = buildCinemaCoupletHtml(first.lines, first.en || '', true);
+        const poetLabel = state.currentTrack && state.currentTrack.poet ? state.currentTrack.poet : '';
+        transitionCinemaStage(html, poetLabel, { immediate: true });
       } else {
-        dom.fpCinemaUrdu.classList.remove('hidden');
-        dom.fpCinemaUrdu.textContent = state.currentTrack ? cleanTitleDisplay(state.currentTrack.title) : 'Mehfil';
-        dom.fpCinemaEng.textContent = '';
-        dom.fpCinemaEng.classList.add('hidden');
-        dom.fpCinemaRule.classList.add('hidden');
-        dom.fpCinemaCounter.textContent = '';
-        dom.fpCinemaCounter.classList.add('hidden');
+        const title = state.currentTrack ? cleanTitleDisplay(state.currentTrack.title) : 'Mehfil';
+        transitionCinemaStage(buildCinemaCoupletHtml([title], '', false), '', { immediate: true });
       }
     }
   }
@@ -1111,42 +1144,13 @@
     if (activeIdx === state.lyricsActiveIdx && !immediate) return;
     state.lyricsActiveIdx = activeIdx;
 
-    // 1. Update Option B Cinema Stage (quiet music note during instrumental stretches)
-    const applyCinema = () => {
-      if (activeIdx < 0) {
-        dom.fpCinemaInstrumental.classList.remove('hidden');
-        dom.fpCinemaUrdu.classList.add('hidden');
-        dom.fpCinemaRule.classList.add('hidden');
-        dom.fpCinemaEng.classList.add('hidden');
-        dom.fpCinemaCounter.classList.add('hidden');
-        return;
-      }
-      const displayCouplet = couplets[activeIdx];
-      const urduHtml = (displayCouplet.lines || []).map((l) => esc(l)).join('<br/>');
-      const engText = displayCouplet.en || '';
-      const showEng = state.showEnglish && Boolean(engText);
-
-      dom.fpCinemaInstrumental.classList.add('hidden');
-      dom.fpCinemaUrdu.classList.remove('hidden');
-      dom.fpCinemaUrdu.innerHTML = `“${urduHtml}”`;
-      dom.fpCinemaEng.textContent = engText;
-      dom.fpCinemaEng.classList.toggle('hidden', !showEng);
-      dom.fpCinemaRule.classList.toggle('hidden', !showEng);
-      dom.fpCinemaCounter.textContent = `Couplet ${activeIdx + 1} of ${couplets.length}`;
-      dom.fpCinemaCounter.classList.remove('hidden');
-    };
-
-    if (immediate) {
-      clearTimeout(state.lyricsFadeTimer);
-      dom.fpCinemaContent.classList.remove('is-fading');
-      applyCinema();
+    // 1. Slow, zero-jump dual-layer cross-dissolve on Option B Cinema Stage
+    if (activeIdx < 0) {
+      transitionCinemaStage(SVG_INSTRUMENTAL_NOTE, '', { immediate });
     } else {
-      dom.fpCinemaContent.classList.add('is-fading');
-      clearTimeout(state.lyricsFadeTimer);
-      state.lyricsFadeTimer = setTimeout(() => {
-        applyCinema();
-        dom.fpCinemaContent.classList.remove('is-fading');
-      }, 150);
+      const c = couplets[activeIdx];
+      const html = buildCinemaCoupletHtml(c.lines, c.en || '', true);
+      transitionCinemaStage(html, `Couplet ${activeIdx + 1} of ${couplets.length}`, { immediate });
     }
 
     // 2. Update Full Scrollable List highlight & smooth auto-center
@@ -2173,11 +2177,11 @@
       'guestJoinBanner', 'guestJoinKicker', 'guestJoinTitle', 'guestTapSyncBtn',
       'partyStatusLine', 'partyStatusText', 'partyQuickShareBtn', 'partyQuickResyncBtn', 'partyQuickLeaveBtn',
       'hearthWelcome', 'beginRadioBtn', 'heroListenTogetherBtn',
-      'hearthPlaying', 'hearthModeLine', 'hearthMatla', 'hearthTranslation', 'hearthTitleLine',
-      'hearthLyricsBtn', 'hearthNextSep', 'hearthNextBtn', 'hearthSharePartyBtn',
+      'hearthPlaying', 'hearthModeLine', 'hearthTitle', 'hearthCredit',
+      'hearthLyricsBtn', 'hearthSharePartyBtn',
       'stageContainer',
       'fullPlayer', 'fpMinimizeBtn', 'fpModeKicker', 'fpViewToggleBtn',
-      'fpCinemaStage', 'fpCinemaContent', 'fpCinemaInstrumental', 'fpCinemaUrdu', 'fpCinemaRule', 'fpCinemaEng', 'fpCinemaCounter',
+      'fpCinemaStage', 'fpCinemaViewport', 'fpCinemaLayerA', 'fpCinemaLayerB', 'fpCinemaCounter',
       'fpFullStage', 'fpFullList', 'fpBackToLiveBtn',
       'fpTrackTitle', 'fpTrackArtist', 'fpTimeCurrent', 'fpSeekSlider', 'fpTimeDuration',
       'fpPrevBtn', 'fpPlayPauseBtn', 'fpIconPlay', 'fpIconPause', 'fpNextBtn',
@@ -2240,10 +2244,6 @@
     dom.hearthSharePartyBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
       setPartySheetOpen(true);
-    });
-    dom.hearthNextBtn.addEventListener('click', (e) => {
-      e.currentTarget.blur();
-      handleNext();
     });
     dom.hearthLyricsBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();

@@ -523,8 +523,8 @@ input:focus-visible {
 }
 
 .hearth-headline {
-  font-size: clamp(38px, 10vw, 62px);
-  line-height: 1.05;
+  font-size: clamp(34px, 8vw, 48px);
+  line-height: 1.06;
   color: var(--ivory);
   margin: 0 0 10px;
 }
@@ -608,9 +608,9 @@ input:focus-visible {
   width: 100%;
 }
 
-/* Active Playing Hearth */
+/* Active Playing Hearth — Restrained, airy, zero clutter */
 .hearth-playing {
-  max-width: 660px;
+  max-width: 520px;
   margin: 0 auto;
 }
 
@@ -620,38 +620,23 @@ input:focus-visible {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--amber);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
-.hearth-couplet {
-  font-style: italic;
-  font-size: clamp(24px, 6.2vw, 36px);
-  line-height: 1.3;
+.hearth-playing-title {
+  font-size: 24px;
+  line-height: 1.2;
   color: var(--ivory);
-  margin: 0 0 10px;
-  padding: 0 4px;
+  margin: 0 0 4px;
+  text-wrap: balance;
 }
 
-.hearth-translation {
+.hearth-playing-credit {
   font-size: 15px;
-  line-height: 1.55;
+  font-style: italic;
+  line-height: 1.45;
   color: var(--parchment);
-  max-width: 52ch;
-  margin: 0 auto 14px;
-}
-
-.hearth-track-credit {
-  font-family: var(--font-folio);
-  font-size: 14px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--dusk);
-  margin-bottom: 14px;
-}
-
-.hearth-track-credit strong {
-  font-weight: 500;
-  color: var(--ivory);
+  margin: 0 0 8px;
 }
 
 .hearth-stage-actions {
@@ -659,7 +644,7 @@ input:focus-visible {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 8px 12px;
+  gap: 6px 10px;
 }
 
 .sep-dot {
@@ -2315,34 +2300,64 @@ body.is-searching .fanoos-crown {
 }
 
 .fp-mini-fanoos {
-  width: 38px;
-  height: 42px;
-  margin-bottom: 18px;
-  opacity: 0.72;
+  width: 36px;
+  height: 40px;
+  margin-bottom: 14px;
+  opacity: 0.68;
   flex-shrink: 0;
 }
 
-.fp-cinema-content {
+/* Fixed-height dual-layer dissolve viewport: zero vertical jump, slow candle-smoke cross-fade */
+.fp-cinema-viewport {
+  position: relative;
   width: 100%;
-  transition: opacity 0.32s ease;
+  height: 184px;
+  flex-shrink: 0;
 }
 
-.fp-cinema-content.is-fading {
-  opacity: 0.15;
+.fp-cinema-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(7px);
+  pointer-events: none;
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.fp-cinema-layer.is-shown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fp-cinema-layer.is-leaving {
+  opacity: 0;
+  transform: translateY(-7px);
+  transition: opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1), transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fp-cinema-layer.no-transition {
+  transition: none !important;
 }
 
 .fp-instrumental {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 16px 0;
   color: var(--amber);
 }
 
 .fp-music-note-svg {
-  width: 28px;
-  height: 28px;
-  opacity: 0.78;
+  width: 26px;
+  height: 26px;
+  opacity: 0.75;
 }
 
 .fp-cinema-urdu {
@@ -2359,13 +2374,13 @@ body.is-searching .fanoos-crown {
   width: 32px;
   height: 1px;
   background: var(--hairline-gold);
-  margin: 16px auto;
+  margin: 15px auto;
 }
 
 .fp-cinema-eng {
   font-family: var(--font-prose);
   font-size: 15px;
-  line-height: 1.58;
+  line-height: 1.56;
   color: var(--parchment);
   margin: 0 auto;
   max-width: 38ch;
@@ -2373,12 +2388,18 @@ body.is-searching .fanoos-crown {
 }
 
 .fp-cinema-counter {
-  margin-top: 20px;
+  margin-top: 12px;
+  min-height: 22px;
   font-family: var(--font-folio);
   font-size: 14px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--dusk);
+  transition: opacity 0.65s ease;
+}
+
+.fp-cinema-counter.is-quiet {
+  opacity: 0;
 }
 
 /* Scrollable Full Couplets View */
@@ -2412,7 +2433,7 @@ body.is-searching .fanoos-crown {
   text-align: left;
   cursor: pointer;
   display: block;
-  transition: border-color 0.22s ease, opacity 0.22s ease;
+  transition: border-color 0.6s ease, opacity 0.6s ease;
 }
 
 .fp-sher-item.is-untimed {
@@ -2427,6 +2448,7 @@ body.is-searching .fanoos-crown {
   line-height: 1.32;
   color: var(--dusk);
   margin: 0 0 4px;
+  transition: color 0.6s ease;
 }
 
 .fp-sher-eng {
@@ -2435,6 +2457,7 @@ body.is-searching .fanoos-crown {
   line-height: 1.52;
   color: var(--dusk);
   margin: 0;
+  transition: color 0.6s ease;
 }
 
 .fp-sher-item.is-untimed .fp-sher-urdu {
@@ -2613,14 +2636,22 @@ body.is-searching .fanoos-crown {
 }
 
 @media (min-width: 768px) {
+  .hearth-playing-title {
+    font-size: 28px;
+  }
+
   .fp-top {
     padding: 16px 32px 10px;
   }
 
   .fp-mini-fanoos {
-    width: 42px;
-    height: 46px;
-    margin-bottom: 22px;
+    width: 40px;
+    height: 44px;
+    margin-bottom: 18px;
+  }
+
+  .fp-cinema-viewport {
+    height: 204px;
   }
 
   .fp-cinema-urdu {
@@ -2640,7 +2671,7 @@ body.is-searching .fanoos-crown {
   }
 
   .fp-sher-item.is-active .fp-sher-urdu {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .fp-track-title {
@@ -2705,7 +2736,11 @@ body.is-searching .fanoos-crown {
 
 @media (prefers-reduced-motion: reduce) {
   .full-player,
-  .fp-cinema-content {
+  .fp-cinema-layer,
+  .fp-cinema-counter,
+  .fp-sher-item,
+  .fp-sher-urdu,
+  .fp-sher-eng {
     transition: none;
   }
 }

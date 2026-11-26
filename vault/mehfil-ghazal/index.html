@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./css/mehfil.css?v=17b33d42" />
+  <link rel="stylesheet" href="./css/mehfil.css?v=08fd9440" />
 </head>
 <body>
   <!-- Night mehfil room atmosphere: overhead lamplight & deep claret wine velvet -->
@@ -184,19 +184,14 @@
           </div>
         </div>
 
-        <!-- Active Playing State -->
+        <!-- Active Playing State (Whisper-quiet, restrained — full poetry lives in the lyrical player) -->
         <div id="hearthPlaying" class="hearth-playing hidden">
           <div id="hearthModeLine" class="hearth-kicker">Radio</div>
-          <blockquote id="hearthMatla" class="hearth-couplet font-display"></blockquote>
-          <p id="hearthTranslation" class="hearth-translation"></p>
-          <div id="hearthTitleLine" class="hearth-track-credit"></div>
+          <div id="hearthTitle" class="hearth-playing-title font-display"></div>
+          <div id="hearthCredit" class="hearth-playing-credit"></div>
           <div class="hearth-stage-actions">
             <button id="hearthLyricsBtn" type="button" class="quiet-link quiet-link-gold">
-              Lyrics
-            </button>
-            <span id="hearthNextSep" class="sep-dot" aria-hidden="true">&middot;</span>
-            <button id="hearthNextBtn" type="button" class="quiet-link">
-              Next
+              Open lyrics
             </button>
             <span class="sep-dot" aria-hidden="true">&middot;</span>
             <button id="hearthSharePartyBtn" type="button" class="quiet-link">
@@ -298,17 +293,9 @@
         <path d="M70 67 C73.5 75 74.5 84 70 91 C65.5 84 66.5 75 70 67 Z" fill="#F2B85B" />
       </svg>
 
-      <div id="fpCinemaContent" class="fp-cinema-content">
-        <div id="fpCinemaInstrumental" class="fp-instrumental hidden" aria-label="Instrumental">
-          <svg class="fp-music-note-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 18V5l12-2v13" />
-            <circle cx="6" cy="18" r="3" />
-            <circle cx="18" cy="16" r="3" />
-          </svg>
-        </div>
-        <p id="fpCinemaUrdu" class="fp-cinema-urdu font-display"></p>
-        <div id="fpCinemaRule" class="fp-gold-rule" aria-hidden="true"></div>
-        <p id="fpCinemaEng" class="fp-cinema-eng"></p>
+      <div id="fpCinemaViewport" class="fp-cinema-viewport" aria-live="polite">
+        <div id="fpCinemaLayerA" class="fp-cinema-layer is-shown"></div>
+        <div id="fpCinemaLayerB" class="fp-cinema-layer"></div>
       </div>
 
       <div id="fpCinemaCounter" class="fp-cinema-counter"></div>
@@ -670,6 +657,6 @@
 
   <script src="./js/sleep_timer.js?v=37691859"></script>
   <script src="./js/player.js?v=7c0825cf"></script>
-  <script src="./js/app.js?v=78d7a70c"></script>
+  <script src="./js/app.js?v=17ef7eac"></script>
 </body>
 </html>
