@@ -1,0 +1,51 @@
+{
+  "video_id": "KUoeqLnkf_k",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 30.0,
+      "end": 57.84,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera, kyun bujh gaya, aawargi?",
+        "Is dasht mein ek shehar tha, woh kya hua, aawargi?"
+      ],
+      "en": "Why has this mad heart of mine gone dark, and what became of the city that once stood in this desert, my wandering?"
+    },
+    {
+      "start": 72.0,
+      "end": 92.0,
+      "lines": [
+        "Kal shab mujhe be-shakl si aawaz ne chaunka diya.",
+        "Maine kaha, tu kaun hai, us ne kaha, aawargi."
+      ],
+      "en": "Last night a disembodied voice startled me, and when I asked who it was, it called itself wandering."
+    },
+    {
+      "start": 98.0,
+      "end": 118.0,
+      "lines": [
+        "Logo, bhala us shehar mein kaise jiyenge hum?",
+        "Jahan ho jurm tanha sochna, lekin saza aawargi."
+      ],
+      "en": "How are we to live in a city where thinking alone is a crime and wandering is the sentence?"
+    },
+    {
+      "start": 131.0,
+      "end": 158.0,
+      "lines": [
+        "Ek ajnabi jhonke ne jab poochha mere gham ka sabab.",
+        "Sehra ki bheegi ret par maine likha, aawargi."
+      ],
+      "en": "When a passing gust asked why I grieved, I wrote wandering in the damp desert sand."
+    },
+    {
+      "start": 172.36,
+      "end": 199.08,
+      "lines": [
+        "Kal raat tanha chaand ko dekha tha maine khwaab mein."
+      ],
+      "en": "Last night I saw the lonely moon in a dream."
+    }
+  ]
+}
