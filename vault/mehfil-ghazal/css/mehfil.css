@@ -2648,6 +2648,61 @@ body.is-searching .fanoos-crown {
   }
 }
 
+.about-sheet {
+  z-index: 66;
+}
+
+.about-lead {
+  font-size: 15.5px;
+  line-height: 1.62;
+  color: var(--ivory);
+  margin: 0 0 18px;
+}
+
+.about-points {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--hairline-soft);
+}
+
+.about-point {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline-soft);
+}
+
+.about-point-title {
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 3px;
+}
+
+.about-point-desc {
+  font-size: 14.5px;
+  line-height: 1.54;
+  color: var(--parchment);
+  margin: 0;
+}
+
+.about-credit {
+  margin: 18px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--dusk);
+}
+
+.about-credit-link {
+  color: var(--amber-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-credit-link:hover {
+  color: var(--ivory);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .full-player,
   .fp-cinema-content {

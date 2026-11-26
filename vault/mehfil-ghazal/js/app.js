@@ -185,6 +185,7 @@
     // Sheets & UI
     drawerOpen: false,
     drawerTab: 'queue',
+    aboutOpen: false,
     partySheetOpen: false,
     sleepOpen: false,
     mobileSearchOpen: false,
@@ -962,6 +963,7 @@
 
     if (nextOpen) {
       setDrawerOpen(false);
+      setAboutSheetOpen(false);
       setPartySheetOpen(false);
       toggleSleepPopover(false);
       setMobileSearchOpen(false);
@@ -1384,6 +1386,7 @@
 
   function setDrawerOpen(open) {
     if (open) {
+      setAboutSheetOpen(false);
       setPartySheetOpen(false);
       toggleSleepPopover(false);
     }
@@ -1396,9 +1399,22 @@
     }
   }
 
+  function setAboutSheetOpen(open) {
+    if (open) {
+      setDrawerOpen(false);
+      setPartySheetOpen(false);
+      toggleSleepPopover(false);
+    }
+    state.aboutOpen = Boolean(open);
+    if (dom.aboutSheet) dom.aboutSheet.classList.toggle('hidden', !state.aboutOpen);
+    if (dom.aboutBackdrop) dom.aboutBackdrop.classList.toggle('hidden', !state.aboutOpen);
+    if (dom.aboutHeaderBtn) dom.aboutHeaderBtn.setAttribute('aria-expanded', String(state.aboutOpen));
+  }
+
   function setPartySheetOpen(open) {
     if (open) {
       setDrawerOpen(false);
+      setAboutSheetOpen(false);
       toggleSleepPopover(false);
       if (state.userName && !dom.partyNameInput.value) {
         dom.partyNameInput.value = state.userName;
@@ -1414,6 +1430,7 @@
     const open = forceOpen !== undefined ? forceOpen : !state.sleepOpen;
     if (open) {
       setDrawerOpen(false);
+      setAboutSheetOpen(false);
       setPartySheetOpen(false);
     }
     state.sleepOpen = Boolean(open);
@@ -2151,7 +2168,7 @@
       'mobileSearchToggleBtn', 'mobileSearchBar', 'mobileSearchForm', 'mobileSearchInput',
       'mobileSearchYtBtn', 'mobileSearchCloseBtn',
       'partyHeaderBtn', 'partyHeaderDot', 'partyHeaderLabel',
-      'eveningDrawerBtn', 'heardCountDot', 'mainRoom',
+      'eveningDrawerBtn', 'aboutHeaderBtn', 'heardCountDot', 'mainRoom',
       'whisperNotice', 'whisperText', 'dismissWhisperBtn',
       'guestJoinBanner', 'guestJoinKicker', 'guestJoinTitle', 'guestTapSyncBtn',
       'partyStatusLine', 'partyStatusText', 'partyQuickShareBtn', 'partyQuickResyncBtn', 'partyQuickLeaveBtn',
@@ -2169,6 +2186,7 @@
       'moodContextDesc', 'moodRadioBtn', 'moodRadioBtnLabel', 'moodClearBtn',
       'repertoireHead', 'repertoireHeading', 'clearFilterBtn', 'ghazalList', 'showMoreWrap', 'showMoreBtn',
       'eveningBackdrop', 'eveningDrawer', 'closeEveningBtn', 'drawerBody',
+      'aboutBackdrop', 'aboutSheet', 'closeAboutSheetBtn',
       'partyBackdrop', 'partySheet', 'closePartySheetBtn',
       'partySetupView', 'partyNameInput', 'createRadioPartyBtn', 'createPlaylistPartyBtn',
       'joinPartyForm', 'partyCodeInput',
@@ -2196,6 +2214,7 @@
       clearSearchSilently();
       setMobileSearchOpen(false);
       setDrawerOpen(false);
+      setAboutSheetOpen(false);
       setPartySheetOpen(false);
       toggleSleepPopover(false);
       if (state.fullPlayerOpen) setFullPlayerOpen(false);
@@ -2341,6 +2360,20 @@
     });
     dom.partyQuickLeaveBtn.addEventListener('click', () => leaveParty());
     dom.partyLeaveBtn.addEventListener('click', () => leaveParty());
+
+    // About Sheet
+    if (dom.aboutHeaderBtn) {
+      dom.aboutHeaderBtn.addEventListener('click', (e) => {
+        e.currentTarget.blur();
+        setAboutSheetOpen(!state.aboutOpen);
+      });
+    }
+    if (dom.closeAboutSheetBtn) {
+      dom.closeAboutSheetBtn.addEventListener('click', () => setAboutSheetOpen(false));
+    }
+    if (dom.aboutBackdrop) {
+      dom.aboutBackdrop.addEventListener('click', () => setAboutSheetOpen(false));
+    }
 
     // Queue Drawer
     dom.eveningDrawerBtn.addEventListener('click', (e) => {
@@ -2577,10 +2610,11 @@
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        if (state.sleepOpen || state.partySheetOpen || state.drawerOpen || state.mobileSearchOpen) {
+        if (state.sleepOpen || state.partySheetOpen || state.drawerOpen || state.aboutOpen || state.mobileSearchOpen) {
           toggleSleepPopover(false);
           setPartySheetOpen(false);
           setDrawerOpen(false);
+          setAboutSheetOpen(false);
           setMobileSearchOpen(false);
         } else if (state.fullPlayerOpen) {
           setFullPlayerOpen(false);

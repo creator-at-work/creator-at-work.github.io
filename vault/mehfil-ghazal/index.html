@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./css/mehfil.css?v=5d1f3e6b" />
+  <link rel="stylesheet" href="./css/mehfil.css?v=17b33d42" />
 </head>
 <body>
   <!-- Night mehfil room atmosphere: overhead lamplight & deep claret wine velvet -->
@@ -66,6 +66,10 @@
       <button id="eveningDrawerBtn" type="button" class="header-link">
         <span>Queue</span>
         <span id="heardCountDot" class="heard-count hidden"></span>
+      </button>
+
+      <button id="aboutHeaderBtn" type="button" class="header-link" aria-haspopup="dialog" aria-expanded="false">
+        <span>About</span>
       </button>
     </div>
   </header>
@@ -380,11 +384,59 @@
     <div class="drawer-tabs" role="tablist">
       <button type="button" class="drawer-tab is-active" data-drawer-tab="queue" role="tab">Up Next</button>
       <button type="button" class="drawer-tab" data-drawer-tab="heard" role="tab">Heard Today</button>
-      <button type="button" class="drawer-tab" data-drawer-tab="note" role="tab">About</button>
+      <button type="button" class="drawer-tab" data-drawer-tab="note" role="tab">Track</button>
     </div>
 
     <div id="drawerBody" class="drawer-body quiet-scroll"></div>
   </aside>
+
+  <!-- ====================================================================
+       ABOUT MEHFIL SHEET (Quiet introduction for first-time listeners)
+       ==================================================================== -->
+  <div id="aboutBackdrop" class="sheet-backdrop hidden"></div>
+  <section id="aboutSheet" class="party-sheet about-sheet hidden" role="dialog" aria-modal="true" aria-label="About Mehfil">
+    <div class="sheet-handle mobile-only" aria-hidden="true"></div>
+    <div class="drawer-head">
+      <div>
+        <div class="drawer-kicker">About</div>
+        <h2 class="drawer-title font-display">What is Mehfil?</h2>
+      </div>
+      <button id="closeAboutSheetBtn" type="button" class="quiet-link touch-target" aria-label="Close">Close &times;</button>
+    </div>
+
+    <div class="party-sheet-body quiet-scroll">
+      <p class="about-lead">
+        A quiet listening room for original ghazals. Every recording here is sung by its original vocalist, with no modern remakes, covers, lofi edits, or multi-hour jukeboxes.
+      </p>
+
+      <div class="about-points">
+        <div class="about-point">
+          <div class="about-point-title">Five moods</div>
+          <p class="about-point-desc">Browse or start radio by Bireh, Naraazgi, Izhaar, Tanhai, or Maikada.</p>
+        </div>
+        <div class="about-point">
+          <div class="about-point-title">No repeats in a day</div>
+          <p class="about-point-desc">Radio remembers what you heard over the last 24 hours, even if you pause, stop, or return later.</p>
+        </div>
+        <div class="about-point">
+          <div class="about-point-title">Live lyrics &amp; translation</div>
+          <p class="about-point-desc">Click anywhere on the bottom player bar to open live Roman Urdu lyrics with English meaning underneath.</p>
+        </div>
+        <div class="about-point">
+          <div class="about-point-title">Listen together</div>
+          <p class="about-point-desc">Share a live room link so a friend or partner hears the same ghazal at the same moment.</p>
+        </div>
+        <div class="about-point">
+          <div class="about-point-title">Sleep timer</div>
+          <p class="about-point-desc">Set a gentle fade-out timer or stop quietly at the end of the current ghazal.</p>
+        </div>
+      </div>
+
+      <p class="about-credit">
+        Made by <a class="about-credit-link" href="https://jatinbhatt.me/vault.html">Jatin Bhatt</a> as part of the Weekend Vault.
+      </p>
+    </div>
+  </section>
 
   <!-- ====================================================================
        LISTEN TOGETHER SHEET (Synced Live Radio / Live Playlist Party)
@@ -618,6 +670,6 @@
 
   <script src="./js/sleep_timer.js?v=37691859"></script>
   <script src="./js/player.js?v=7c0825cf"></script>
-  <script src="./js/app.js?v=bbb6be84"></script>
+  <script src="./js/app.js?v=78d7a70c"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+{
+  "video_id": "A373M8P6S6o",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 30.0,
+      "end": 57.6,
+      "lines": [
+        "Patta patta boota boota haal hamara jaane hai."
+      ],
+      "en": "Every leaf and every little plant knows what I am going through."
+    },
+    {
+      "start": 57.6,
+      "end": 67.6,
+      "lines": [
+        "Jaane na jaane gul hi na jaane."
+      ],
+      "en": "Only the rose seems unaware."
+    },
+    {
+      "start": 67.6,
+      "end": 90.68,
+      "lines": [
+        "Jaane na jaane gul hi na jaane, baagh to saara jaane hai."
+      ],
+      "en": "Only the rose seems unaware, though the whole garden knows."
+    },
+    {
+      "start": 90.68,
+      "end": 100.68,
+      "lines": [
+        "Patta patta boota boota."
+      ],
+      "en": "Every leaf, every little plant."
+    },
+    {
+      "start": 115.68,
+      "end": 141.68,
+      "lines": [
+        "Chaaragari beemari-e-dil ki rasm-e-shahr-e-husn nahin."
+      ],
+      "en": "In the city of beauty, there is no custom of tending a lovesick heart."
+    },
+    {
+      "start": 148.68,
+      "end": 161.68,
+      "lines": [
+        "Chaaragari beemari-e-dil ki rasm-e-shahr-e-husn nahin."
+      ],
+      "en": "In the city of beauty, there is no custom of tending a lovesick heart."
+    },
+    {
+      "start": 165.68,
+      "end": 195.68,
+      "lines": [
+        "Warna dilbar-e-naadaan bhi."
+      ],
+      "en": "Otherwise, even the guileless beloved would."
+    },
+    {
+      "start": 195.68,
+      "end": 225.68,
+      "lines": [
+        "Warna dilbar-e-naadaan bhi is dard ka chaara jaane hai."
+      ],
+      "en": "Otherwise, even the guileless beloved knows the remedy for this pain."
+    },
+    {
+      "start": 225.68,
+      "end": 250.39,
+      "lines": [
+        "Baagh to saara jaane hai."
+      ],
+      "en": "The whole garden knows."
+    }
+  ]
+}

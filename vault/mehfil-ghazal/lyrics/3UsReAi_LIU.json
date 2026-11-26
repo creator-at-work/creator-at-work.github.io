@@ -1,0 +1,100 @@
+{
+  "video_id": "3UsReAi_LIU",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 24.0,
+      "lines": [
+        "Shaam se aankh mein nami si hai",
+        "Shaam se aankh mein nami si hai"
+      ],
+      "en": "Since dusk, my eyes have been a little damp."
+    },
+    {
+      "start": 24.0,
+      "end": 42.74,
+      "lines": [
+        "Shaam se aankh mein nami si hai",
+        "Aaj phir aap ki kami si hai"
+      ],
+      "en": "My eyes have been a little damp since dusk, and today I miss you again."
+    },
+    {
+      "start": 42.74,
+      "end": 51.74,
+      "lines": [
+        "Shaam se aankh mein nami si hai"
+      ],
+      "en": "Since dusk, my eyes have been a little damp."
+    },
+    {
+      "start": 54.0,
+      "end": 74.0,
+      "lines": [
+        "Dafn kar do hamein ke saans mile"
+      ],
+      "en": "Bury me so I can breathe."
+    },
+    {
+      "start": 83.0,
+      "end": 99.44,
+      "lines": [
+        "Dafn kar do hamein ke saans mile",
+        "Nabz kuchh der se thami si hai"
+      ],
+      "en": "Bury me so I can breathe, for my pulse seems to have been still a while."
+    },
+    {
+      "start": 99.44,
+      "end": 107.68,
+      "lines": [
+        "Nabz kuchh der se thami si hai"
+      ],
+      "en": "My pulse seems to have been still a while."
+    },
+    {
+      "start": 107.68,
+      "end": 115.68,
+      "lines": [
+        "Aaj phir aap ki kami si hai"
+      ],
+      "en": "Today I miss you again."
+    },
+    {
+      "start": 137.68,
+      "end": 147.68,
+      "lines": [
+        "Waqt rehta nahin kahin tik kar"
+      ],
+      "en": "Time never stays in one place."
+    },
+    {
+      "start": 149.68,
+      "end": 166.68,
+      "lines": [
+        "Waqt rehta nahin kahin tik kar",
+        "Is ki aadat bhi aadmi si hai"
+      ],
+      "en": "Time never stays in one place, a habit it shares with us."
+    },
+    {
+      "start": 166.68,
+      "end": 174.68,
+      "lines": [
+        "Is ki aadat bhi aadmi si hai"
+      ],
+      "en": "Time has that human habit too."
+    },
+    {
+      "start": 174.68,
+      "end": 192.68,
+      "lines": [
+        "Shaam se aankh mein nami si hai",
+        "Aaj phir aap ki kami si hai"
+      ],
+      "en": "My eyes have been a little damp since dusk, and today I miss you again."
+    }
+  ]
+}
