@@ -1051,6 +1051,7 @@
       row.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
+          e.stopPropagation();
           playIt();
         }
       });
@@ -1279,10 +1280,37 @@
     state.trackById.set(track.video_id, track);
 
     player.loadAndPlay(track.video_id, track.duration_sec || 0, startSeconds);
+    updateMediaSessionMetadata(track);
     renderHearth();
     updateConsoleMeta();
     highlightActiveRows();
     if (state.drawerOpen) renderDrawerBody();
+  }
+
+  function updateMediaSessionMetadata(track) {
+    if (!track || !('mediaSession' in navigator) || typeof MediaMetadata === 'undefined') return;
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: cleanTitleDisplay(track.title || ''),
+        artist: track.artist || 'Mehfil',
+        album: track.poet ? `Poet: ${track.poet}` : 'Mehfil',
+      });
+    } catch (_) {}
+  }
+
+  function initMediaSessionHandlers() {
+    if (!('mediaSession' in navigator)) return;
+    const handlers = [
+      ['play', () => { if (player.state !== 'playing') togglePlayPause(); }],
+      ['pause', () => { if (player.state === 'playing') togglePlayPause(); }],
+      ['previoustrack', () => handlePrevious()],
+      ['nexttrack', () => handleNext()],
+    ];
+    for (const [action, fn] of handlers) {
+      try {
+        navigator.mediaSession.setActionHandler(action, fn);
+      } catch (_) {}
+    }
   }
 
   async function playManualTrack(track, listContext = []) {
@@ -2052,6 +2080,7 @@
         return;
       }
       player.seekTo(targetSec);
+      dom.seekSlider.blur();
       if (isHostInParty()) {
         hostBroadcastUpdate({ position_sec: targetSec, is_playing: player.state === 'playing' });
       }
@@ -2061,6 +2090,11 @@
     });
 
     // Volume
+    const toggleMuteUI = () => {
+      const muted = player.toggleMute();
+      dom.iconVolOn.classList.toggle('hidden', muted);
+      dom.iconVolMuted.classList.toggle('hidden', !muted);
+    };
     dom.volumeSlider.addEventListener('input', () => {
       const vol = Number(dom.volumeSlider.value);
       player.setVolume(vol);
@@ -2068,11 +2102,12 @@
       dom.iconVolOn.classList.toggle('hidden', player.muted || vol === 0);
       dom.iconVolMuted.classList.toggle('hidden', !(player.muted || vol === 0));
     });
+    dom.volumeSlider.addEventListener('change', () => {
+      dom.volumeSlider.blur();
+    });
     dom.muteBtn.addEventListener('click', (e) => {
       e.currentTarget.blur();
-      const muted = player.toggleMute();
-      dom.iconVolOn.classList.toggle('hidden', muted);
-      dom.iconVolMuted.classList.toggle('hidden', !muted);
+      toggleMuteUI();
     });
 
     // Sleep Timer
@@ -2111,19 +2146,65 @@
     dom.sleepCancelBtn.addEventListener('click', () => sleepTimer.cancel());
 
     // Keyboard shortcuts
+    const isTypingTarget = (el) => {
+      if (!el) return false;
+      if (el.isContentEditable) return true;
+      const tag = el.tagName || '';
+      if (tag === 'TEXTAREA' || tag === 'SELECT') return true;
+      if (tag === 'INPUT') {
+        const type = (el.type || 'text').toLowerCase();
+        return !['range', 'checkbox', 'radio', 'button', 'submit'].includes(type);
+      }
+      return false;
+    };
+
     document.addEventListener('keydown', (e) => {
-      const tag = (e.target && e.target.tagName) || '';
-      const inInput = tag === 'INPUT' || tag === 'TEXTAREA';
       if (e.key === 'Escape') {
         toggleSleepPopover(false);
         setPartySheetOpen(false);
         setDrawerOpen(false);
         setMobileSearchOpen(false);
+        if (document.activeElement && typeof document.activeElement.blur === 'function') {
+          document.activeElement.blur();
+        }
         return;
       }
-      if (e.code === 'Space' && !inInput) {
+
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (isTypingTarget(e.target)) return;
+
+      if (e.code === 'Space' || e.key === ' ' || e.key === 'k' || e.key === 'K') {
         e.preventDefault();
         togglePlayPause();
+        return;
+      }
+
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        handleNext();
+        return;
+      }
+
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        handlePrevious();
+        return;
+      }
+
+      if (e.key === 'm' || e.key === 'M') {
+        e.preventDefault();
+        toggleMuteUI();
+        return;
+      }
+
+      if (e.key === '/') {
+        e.preventDefault();
+        if (window.innerWidth < 768) {
+          setMobileSearchOpen(true);
+        } else if (dom.searchInput) {
+          dom.searchInput.focus();
+          dom.searchInput.select();
+        }
       }
     });
 
@@ -2146,6 +2227,7 @@
       onTrackError: (vid) => handleTrackError(vid),
     });
     initSleepTimer();
+    initMediaSessionHandlers();
     bootstrap();
   }
 
