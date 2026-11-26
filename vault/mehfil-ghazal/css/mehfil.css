@@ -43,7 +43,6 @@ html, body {
   padding: 0;
   height: 100%;
   height: 100dvh;
-  height: var(--app-h, 100dvh);
   width: 100%;
   background: var(--night);
   color: var(--ivory);
@@ -687,6 +686,18 @@ input:focus-visible {
   margin: 20px auto 0;
   opacity: 1;
   pointer-events: auto;
+}
+
+.stage-container.is-fullplayer-video {
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(620px, calc(100vw - 32px));
+  margin: 0;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 54;
 }
 
 .stage-frame {
@@ -2178,7 +2189,521 @@ body.is-searching .fanoos-crown {
   }
 }
 
-/* In-app browsers (X etc.) overlay a toolbar on the bottom of the page */
-html.in-app .console {
-  padding-bottom: calc(6px + 150px);
+/* ==========================================================================
+   FULL-SCREEN LYRICAL PLAYER (Subtle Art Presenter — Option B Cinema Stage)
+   ========================================================================== */
+
+.console-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.console-expand-chevron {
+  color: var(--amber);
+  opacity: 0.7;
+  flex-shrink: 0;
+  transition: transform 0.16s ease, opacity 0.16s ease;
+}
+
+.console-track-btn:hover .console-expand-chevron {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.full-player {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--night);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.24s ease, transform 0.26s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.full-player.is-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fp-atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 52% 38% at 50% 34%, rgba(232, 165, 82, 0.11) 0%, rgba(160, 82, 42, 0.03) 56%, transparent 78%),
+    radial-gradient(ellipse 64% 38% at 50% 96%, rgba(141, 35, 48, 0.18) 0%, transparent 75%);
+}
+
+.fp-top {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) 16px 8px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fp-icon-btn {
+  min-width: 44px;
+  min-height: 44px;
+  background: none;
+  border: none;
+  color: var(--parchment);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fp-icon-btn:hover,
+.fp-icon-btn:active {
+  color: var(--amber-soft);
+}
+
+.fp-kicker {
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fp-top-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.fp-top-link {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
+  background: none;
+  border: none;
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.fp-top-link.is-gold,
+.fp-top-link:hover,
+.fp-top-link:active {
+  color: var(--amber-soft);
+}
+
+/* Option B: Subtle Cinema Lyrical Stage */
+.fp-cinema-stage {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 28px 20px;
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fp-mini-fanoos {
+  width: 38px;
+  height: 42px;
+  margin-bottom: 18px;
+  opacity: 0.72;
+  flex-shrink: 0;
+}
+
+.fp-cinema-content {
+  width: 100%;
+  transition: opacity 0.32s ease;
+}
+
+.fp-cinema-content.is-fading {
+  opacity: 0.15;
+}
+
+.fp-cinema-urdu {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 1.34;
+  color: var(--ivory);
+  margin: 0 auto;
+  max-width: 26ch;
+  text-wrap: balance;
+}
+
+.fp-gold-rule {
+  width: 32px;
+  height: 1px;
+  background: var(--hairline-gold);
+  margin: 16px auto;
+}
+
+.fp-cinema-eng {
+  font-family: var(--font-prose);
+  font-size: 15px;
+  line-height: 1.58;
+  color: var(--parchment);
+  margin: 0 auto;
+  max-width: 38ch;
+  text-wrap: balance;
+}
+
+.fp-cinema-counter {
+  margin-top: 20px;
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--dusk);
+}
+
+/* Scrollable Full Couplets View */
+.fp-full-stage {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 24px 36px;
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fp-full-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-bottom: 36px;
+}
+
+.fp-sher-item {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 0 8px 14px;
+  border: none;
+  border-left: 2px solid transparent;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  transition: border-color 0.22s ease, opacity 0.22s ease;
+}
+
+.fp-sher-item.is-untimed {
+  cursor: default;
+  border-left-color: rgba(220, 174, 108, 0.16);
+}
+
+.fp-sher-urdu {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.32;
+  color: var(--dusk);
+  margin: 0 0 4px;
+}
+
+.fp-sher-eng {
+  font-family: var(--font-prose);
+  font-size: 14.5px;
+  line-height: 1.52;
+  color: var(--dusk);
+  margin: 0;
+}
+
+.fp-sher-item.is-untimed .fp-sher-urdu {
+  color: var(--ivory);
+}
+
+.fp-sher-item.is-untimed .fp-sher-eng {
+  color: var(--parchment);
+}
+
+.fp-sher-item.is-active {
+  border-left-color: var(--amber);
+}
+
+.fp-sher-item.is-active .fp-sher-urdu {
+  font-size: 22px;
+  color: var(--ivory);
+}
+
+.fp-sher-item.is-active .fp-sher-eng {
+  font-size: 15px;
+  color: var(--parchment);
+}
+
+.fp-back-live {
+  position: sticky;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 18px;
+  background: var(--walnut);
+  border: 1px solid var(--hairline-gold);
+  color: var(--amber-soft);
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Embedded Video Stage inside Full Player */
+.fp-video-stage {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 20px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fp-video-slot {
+  width: 100%;
+  max-width: 620px;
+}
+
+.fp-video-slot .stage-container.is-visible {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.fp-video-caption {
+  text-align: center;
+  max-width: 50ch;
+}
+
+.fp-video-caption-urdu {
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--ivory);
+  margin: 0 0 4px;
+}
+
+.fp-video-caption-eng {
+  font-size: 14.5px;
+  line-height: 1.48;
+  color: var(--parchment);
+  margin: 0;
+}
+
+/* Full Player Bottom Controls */
+.fp-bottom {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  padding: 10px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, transparent 0%, rgba(22, 15, 14, 0.92) 22%, var(--walnut) 100%);
+}
+
+.fp-bottom-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fp-track-plate {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.fp-track-title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--ivory);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fp-track-artist {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--dusk);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fp-scrubber-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fp-time-label {
+  font-family: var(--font-folio);
+  font-size: 14px;
+  color: var(--dusk);
+  font-variant-numeric: tabular-nums;
+  min-width: 38px;
+}
+
+.fp-time-label.right {
+  text-align: right;
+}
+
+.fp-transport-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin: 2px 0 8px;
+}
+
+.fp-ctrl-btn {
+  min-width: 44px;
+  min-height: 44px;
+  background: none;
+  border: none;
+  color: var(--parchment);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fp-ctrl-btn:hover,
+.fp-ctrl-btn:active {
+  color: var(--ivory);
+}
+
+.fp-play-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--wine);
+  border: 1px solid rgba(223, 169, 95, 0.45);
+  color: var(--ivory);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fp-play-btn:hover,
+.fp-play-btn:active {
+  background: var(--wine-bright);
+  border-color: var(--amber);
+}
+
+.fp-util-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid var(--hairline-soft);
+  padding-top: 4px;
+}
+
+.fp-util-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 6px;
+  background: none;
+  border: none;
+  font-family: var(--font-folio);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.fp-util-btn.is-on,
+.fp-util-btn:hover,
+.fp-util-btn:active {
+  color: var(--amber-soft);
+}
+
+@media (min-width: 768px) {
+  .fp-top {
+    padding: 16px 32px 10px;
+  }
+
+  .fp-mini-fanoos {
+    width: 42px;
+    height: 46px;
+    margin-bottom: 22px;
+  }
+
+  .fp-cinema-urdu {
+    font-size: 29px;
+    line-height: 1.3;
+    max-width: 30ch;
+  }
+
+  .fp-cinema-eng {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 46ch;
+  }
+
+  .fp-sher-urdu {
+    font-size: 22px;
+  }
+
+  .fp-sher-item.is-active .fp-sher-urdu {
+    font-size: 25px;
+  }
+
+  .fp-track-title {
+    font-size: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .full-player,
+  .fp-cinema-content {
+    transition: none;
+  }
 }
