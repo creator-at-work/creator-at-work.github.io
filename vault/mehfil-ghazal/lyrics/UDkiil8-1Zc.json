@@ -1,0 +1,23 @@
+{
+  "video_id": "UDkiil8-1Zc",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 189.98,
+      "end": 219.98,
+      "lines": [
+        "Kar raha tha gham-e-jahan ka hisaab"
+      ],
+      "en": "I was counting the sorrows of the world."
+    },
+    {
+      "start": 219.98,
+      "end": 230.98,
+      "lines": [
+        "Aaj tum yaad be-hisaab aaye"
+      ],
+      "en": "Today, memories of you were beyond counting."
+    }
+  ]
+}
