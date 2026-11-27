@@ -1,0 +1,34 @@
+{
+  "video_id": "uo520GcGZiA",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 55.0,
+      "end": 87.6,
+      "lines": [
+        "Sab kahan, kuchh laala-o-gul mein numaayan ho gayin",
+        "Khaak mein kya sooratein hongi ke pinhaan ho gayin"
+      ],
+      "en": "Only a few faces have come to light in tulip and rose, and who can imagine the faces that lie hidden in the dust?"
+    },
+    {
+      "start": 91.1,
+      "end": 124.1,
+      "lines": [
+        "Ranj se khoogar hua insaan to mit jaata hai ranj",
+        "Mushkilein mujh par padi itni ke aasaan ho gayin"
+      ],
+      "en": "Sorrow fades as we grow used to it, and so many troubles fell to me that they became easy to bear."
+    },
+    {
+      "start": 135.1,
+      "end": 165.1,
+      "lines": [
+        "Yun hi gar rota raha Ghalib",
+        "Dekhna in bastiyon ko tum ke veeraan ho gayin"
+      ],
+      "en": "If Ghalib goes on weeping like this, you will see these towns laid desolate."
+    }
+  ]
+}
