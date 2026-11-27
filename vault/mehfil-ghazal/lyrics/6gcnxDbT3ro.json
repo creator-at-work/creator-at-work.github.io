@@ -1,116 +1,135 @@
 {
   "video_id": "6gcnxDbT3ro",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 21.31,
-      "end": 49.67,
+      "start": 0.0,
+      "end": 41.0,
       "lines": [
-        "Din kuchh aise guzaarta hai koi",
+        "Din kuch aise guzarta hai koi"
+      ],
+      "en": "This is how someone gets through the day."
+    },
+    {
+      "start": 41.0,
+      "end": 50.0,
+      "lines": [
         "Jaise ehsaan utaarta hai koi"
       ],
-      "en": "One gets through the day as though repaying a favor."
+      "en": "As though paying back a kindness."
     },
     {
-      "start": 49.67,
-      "end": 80.89,
+      "start": 50.0,
+      "end": 59.0,
       "lines": [
-        "Din kuchh aise guzaarta hai koi"
+        "Din kuch aise guzarta hai koi"
       ],
-      "en": "That is how one gets through the day."
+      "en": "This is how someone gets through the day."
     },
     {
-      "start": 80.89,
-      "end": 100.71,
+      "start": 71.0,
+      "end": 101.0,
       "lines": [
         "Aaina dekh kar tasalli hui"
       ],
-      "en": "It was a comfort to look in the mirror."
+      "en": "The mirror put me at ease."
     },
     {
-      "start": 100.71,
-      "end": 126.15,
+      "start": 101.0,
+      "end": 135.0,
       "lines": [
         "Humko is ghar mein jaanta hai koi"
       ],
       "en": "Someone in this house knows me."
     },
     {
-      "start": 126.15,
-      "end": 157.19,
+      "start": 153.0,
+      "end": 176.0,
       "lines": [
-        "Humko is ghar mein jaanta hai koi"
+        "Pak gaya hai shahr pe phal shayad"
       ],
-      "en": "Someone in this house knows me."
+      "en": "Perhaps the fruit has ripened over the city."
     },
     {
-      "start": 157.19,
-      "end": 177.04,
-      "lines": [
-        "Pak gaya hai shajar pe phal shayad"
-      ],
-      "en": "Perhaps the fruit on the tree has ripened."
-    },
-    {
-      "start": 177.04,
-      "end": 193.76,
+      "start": 176.0,
+      "end": 193.0,
       "lines": [
         "Phir se patthar uchhaalta hai koi"
       ],
-      "en": "Someone is tossing stones again."
+      "en": "Someone is throwing stones again."
     },
     {
-      "start": 193.76,
-      "end": 215.68,
+      "start": 193.0,
+      "end": 201.0,
       "lines": [
-        "Jaise ehsaan utaarta hai koi",
-        "Din kuchh aise guzaarta hai koi"
+        "Jaise ehsaan utaarta hai koi"
       ],
-      "en": "As though repaying a favor, one gets through the day."
+      "en": "As though paying back a kindness."
     },
     {
-      "start": 215.68,
-      "end": 223.15,
+      "start": 201.0,
+      "end": 206.0,
       "lines": [
-        "Tumhare gham ki dali utha kar",
+        "Tumhare gham ki dali utha kar"
+      ],
+      "en": "I picked up a small piece of your sorrow."
+    },
+    {
+      "start": 206.0,
+      "end": 212.0,
+      "lines": [
         "Zabaan pe rakh li hai dekho maine"
       ],
-      "en": "See, I have taken a lump of your sorrow and set it on my tongue."
+      "en": "Look, I have laid it on my tongue."
     },
     {
-      "start": 223.15,
-      "end": 233.12,
+      "start": 212.0,
+      "end": 220.0,
       "lines": [
-        "Yeh qatra-qatra pighal rahi hai",
+        "Ye qatra-qatra pighal rahi hai"
+      ],
+      "en": "It is melting drop by drop."
+    },
+    {
+      "start": 220.0,
+      "end": 229.0,
+      "lines": [
         "Main qatra-qatra hi jee raha hoon"
       ],
-      "en": "It melts drop by drop, and drop by drop I go on living."
+      "en": "I live a drop at a time."
     },
     {
-      "start": 233.12,
-      "end": 253.31,
+      "start": 231.0,
+      "end": 252.0,
       "lines": [
         "Der se goonjte hain sannaate"
       ],
       "en": "The silences have been echoing for a while."
     },
     {
-      "start": 253.31,
-      "end": 278.53,
+      "start": 252.0,
+      "end": 277.0,
       "lines": [
         "Jaise humko pukaarta hai koi"
       ],
-      "en": "It is as though someone were calling to me."
+      "en": "As though someone were calling to me."
     },
     {
-      "start": 278.53,
-      "end": 294.86,
+      "start": 277.0,
+      "end": 286.0,
       "lines": [
-        "Din kuchh aise guzaarta hai koi",
+        "Din kuch aise guzarta hai koi"
+      ],
+      "en": "This is how someone gets through the day."
+    },
+    {
+      "start": 286.0,
+      "end": 296.0,
+      "lines": [
         "Jaise ehsaan utaarta hai koi"
       ],
-      "en": "One gets through the day as though repaying a favor."
+      "en": "As though paying back a kindness."
     }
   ]
 }

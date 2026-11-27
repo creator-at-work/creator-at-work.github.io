@@ -1,264 +1,375 @@
 {
   "video_id": "i7W1hhnFZnw",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 4.98,
-      "end": 18.12,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 18.12,
-      "end": 31.74,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 31.74,
-      "end": 52.36,
+      "start": 0.0,
+      "end": 16.0,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 52.36,
-      "end": 71.96,
+      "start": 16.0,
+      "end": 20.0,
       "lines": [
-        "O pichhli rut ke saathi",
-        "Ab ke baras main tanha hoon"
-      ],
-      "en": "Companion of a season past, this year I am alone."
-    },
-    {
-      "start": 71.96,
-      "end": 81.07,
-      "lines": [
-        "Apni dhun mein rehta hoon",
         "Main bhi tere jaisa hoon"
       ],
-      "en": "I keep to my own tune, just as you do."
+      "en": "I am like you, too."
     },
     {
-      "start": 81.07,
-      "end": 105.63,
+      "start": 20.0,
+      "end": 30.32,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 105.63,
-      "end": 133.48,
+      "start": 30.32,
+      "end": 34.12,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 34.12,
+      "end": 39.32,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 133.48,
-      "end": 146.21,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 146.21,
-      "end": 168.92,
+      "start": 54.32,
+      "end": 70.32,
       "lines": [
         "O pichhli rut ke saathi"
       ],
-      "en": "O companion of a season past."
+      "en": "Oh, my companion from last season."
     },
     {
-      "start": 168.92,
-      "end": 181.86,
+      "start": 70.32,
+      "end": 75.32,
       "lines": [
-        "O pichhli rut ke saathi",
         "Ab ke baras main tanha hoon"
       ],
-      "en": "Companion of a season past, this year I am alone."
+      "en": "This year I am alone."
     },
     {
-      "start": 181.86,
-      "end": 190.61,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 190.61,
-      "end": 210.47,
+      "start": 77.32,
+      "end": 79.32,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 210.47,
-      "end": 231.09,
+      "start": 79.32,
+      "end": 83.32,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 83.32,
+      "end": 88.32,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 138.32,
+      "end": 143.32,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 143.32,
+      "end": 147.32,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 147.32,
+      "end": 152.32,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 152.32,
+      "end": 159.32,
+      "lines": [
+        "O pichhli rut ke saathi"
+      ],
+      "en": "Oh, my companion from last season."
+    },
+    {
+      "start": 162.32,
+      "end": 178.32,
+      "lines": [
+        "Ab ke baras main tanha hoon"
+      ],
+      "en": "This year I am alone."
+    },
+    {
+      "start": 178.32,
+      "end": 189.36,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 189.36,
+      "end": 196.36,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 213.36,
+      "end": 232.36,
       "lines": [
         "Teri gali mein saara din"
       ],
-      "en": "All day long, in your lane."
+      "en": "In your lane all day."
     },
     {
-      "start": 231.09,
-      "end": 250.49,
+      "start": 232.36,
+      "end": 239.36,
       "lines": [
-        "Teri gali mein saara din",
+        "Saara din"
+      ],
+      "en": "All day long."
+    },
+    {
+      "start": 239.36,
+      "end": 249.36,
+      "lines": [
+        "Teri gali mein saara din"
+      ],
+      "en": "In your lane all day."
+    },
+    {
+      "start": 249.36,
+      "end": 253.36,
+      "lines": [
         "Dukh ke kankar chunta hoon"
       ],
-      "en": "All day in your lane I gather the pebbles of sorrow."
+      "en": "I pick up the small stones of sorrow."
     },
     {
-      "start": 250.49,
-      "end": 259.72,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 259.72,
-      "end": 269.92,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 269.92,
-      "end": 287.1,
+      "start": 253.36,
+      "end": 258.36,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 287.1,
-      "end": 306.44,
+      "start": 258.36,
+      "end": 262.36,
       "lines": [
-        "Mera diya jalaye kaun",
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 262.36,
+      "end": 267.36,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 267.36,
+      "end": 271.36,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 271.36,
+      "end": 275.42,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 283.36,
+      "end": 304.36,
+      "lines": [
+        "Mera diya jalaye kaun?"
+      ],
+      "en": "Who will light my lamp?"
+    },
+    {
+      "start": 304.36,
+      "end": 309.36,
+      "lines": [
         "Main tera khaali kamra hoon"
       ],
-      "en": "Who will light the lamp in me, your empty room?"
+      "en": "I am your empty room."
     },
     {
-      "start": 306.44,
-      "end": 315.37,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 315.37,
-      "end": 332.81,
+      "start": 309.36,
+      "end": 313.36,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 332.81,
-      "end": 378.54,
+      "start": 313.36,
+      "end": 317.36,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 317.36,
+      "end": 322.36,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 334.36,
+      "end": 346.36,
       "lines": [
         "Apni lehar hai apna rog"
       ],
-      "en": "I have my own current and my own affliction."
+      "en": "I have my own tide, my own ache."
     },
     {
-      "start": 378.54,
-      "end": 391.05,
+      "start": 364.36,
+      "end": 389.66,
       "lines": [
-        "Apni lehar hai apna rog",
+        "Apni lehar hai apna rog"
+      ],
+      "en": "I have my own tide, my own ache."
+    },
+    {
+      "start": 389.66,
+      "end": 394.0,
+      "lines": [
         "Dariya hoon aur pyaasa hoon"
       ],
-      "en": "I have my own current and my own affliction, a river that thirsts."
+      "en": "I am a river and still I thirst."
     },
     {
-      "start": 391.05,
-      "end": 400.23,
-      "lines": [
-        "Apni dhun mein rehta hoon",
-        "Main bhi tere jaisa hoon"
-      ],
-      "en": "I keep to my own tune, just as you do."
-    },
-    {
-      "start": 400.23,
-      "end": 420.76,
+      "start": 394.0,
+      "end": 398.76,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 420.76,
-      "end": 440.72,
+      "start": 398.76,
+      "end": 402.86,
+      "lines": [
+        "Main bhi tere jaisa hoon"
+      ],
+      "en": "I am like you, too."
+    },
+    {
+      "start": 402.86,
+      "end": 406.96,
+      "lines": [
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 419.66,
+      "end": 458.66,
       "lines": [
         "Aati rut mujhe royegi"
       ],
       "en": "The coming season will weep for me."
     },
     {
-      "start": 440.72,
-      "end": 461.15,
+      "start": 458.66,
+      "end": 462.86,
       "lines": [
-        "Aati rut mujhe royegi",
         "Jaati rut ka jhonka hoon"
       ],
-      "en": "The coming season will weep for me, a gust from the season passing."
+      "en": "I am a gust of the departing season."
     },
     {
-      "start": 461.15,
-      "end": 465.76,
+      "start": 462.86,
+      "end": 466.86,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     },
     {
-      "start": 465.76,
-      "end": 491.5,
+      "start": 466.86,
+      "end": 473.86,
       "lines": [
-        "Aati rut mujhe royegi",
+        "Aati rut mujhe royegi"
+      ],
+      "en": "The coming season will weep for me."
+    },
+    {
+      "start": 480.86,
+      "end": 489.86,
+      "lines": [
+        "Aati rut mujhe royegi"
+      ],
+      "en": "The coming season will weep for me."
+    },
+    {
+      "start": 489.86,
+      "end": 493.86,
+      "lines": [
         "Jaati rut ka jhonka hoon"
       ],
-      "en": "The coming season will weep for me, a gust from the season passing."
+      "en": "I am a gust of the departing season."
     },
     {
-      "start": 491.5,
-      "end": 500.15,
+      "start": 493.86,
+      "end": 498.86,
       "lines": [
-        "Apni dhun mein rehta hoon",
+        "Apni dhun mein rehta hoon"
+      ],
+      "en": "I live to a tune of my own."
+    },
+    {
+      "start": 498.86,
+      "end": 502.86,
+      "lines": [
         "Main bhi tere jaisa hoon"
       ],
-      "en": "I keep to my own tune, just as you do."
+      "en": "I am like you, too."
     },
     {
-      "start": 500.15,
-      "end": 508.15,
+      "start": 502.86,
+      "end": 507.86,
       "lines": [
         "Apni dhun mein rehta hoon"
       ],
-      "en": "I keep to my own tune."
+      "en": "I live to a tune of my own."
     }
   ]
 }

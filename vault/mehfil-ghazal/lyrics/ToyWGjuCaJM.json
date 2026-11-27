@@ -1,209 +1,231 @@
 {
   "video_id": "ToyWGjuCaJM",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 27.62,
-      "end": 46.29,
+      "start": 0.74,
+      "end": 6.54,
       "lines": [
-        "Dil ki choton ne kabhi chain se rehne na diya.",
-        "Jab chali sard hawa, maine tujhe yaad kiya."
+        "Dil ki choton ne kabhi"
       ],
-      "en": "The heart's wounds gave me no rest, and whenever the cold wind blew, I thought of you."
+      "en": "The wounds of the heart gave me no respite."
     },
     {
-      "start": 46.29,
-      "end": 74.96,
+      "start": 7.88,
+      "end": 11.65,
       "lines": [
-        "Is ka rona nahin kyun tum ne kiya dil barbaad.",
-        "Is ka gham hai ke bahut der mein barbaad kiya."
+        "Chain se rehne na diya"
       ],
-      "en": "I grieve for how long you took to break my heart."
+      "en": "They never let me rest."
     },
     {
-      "start": 74.96,
-      "end": 85.13,
+      "start": 15.5,
+      "end": 18.29,
       "lines": [
-        "Hum ko kis ke gham ne maara,",
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Jab chali sard hawa"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "Whenever the cold wind rose, I thought of you."
     },
     {
-      "start": 85.13,
-      "end": 94.27,
+      "start": 18.3,
+      "end": 20.86,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Maine tujhe yaad kiya"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "You came back to me."
     },
     {
-      "start": 94.27,
-      "end": 108.91,
+      "start": 22.73,
+      "end": 25.51,
       "lines": [
-        "Kis ne toda dil hamara,",
-        "Kis ne toda dil hamara, yeh kahani phir sahi."
+        "Is ka rona nahin"
       ],
-      "en": "Who broke my heart is a story for another time."
+      "en": "That is hardly what I grieve for."
     },
     {
-      "start": 108.91,
-      "end": 118.71,
+      "start": 27.29,
+      "end": 31.72,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Kyun tumne kiya dil barbaad"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "Why did you lay waste to my heart?"
     },
     {
-      "start": 118.71,
-      "end": 132.39,
+      "start": 32.79,
+      "end": 34.97,
       "lines": [
-        "Kis ne toda dil hamara,",
-        "Kis ne toda dil hamara, yeh kahani phir sahi."
+        "Is ka gham hai ke"
       ],
-      "en": "Who broke my heart is a story for another time."
+      "en": "Here is what grieves me."
     },
     {
-      "start": 132.39,
-      "end": 157.67,
+      "start": 34.98,
+      "end": 38.61,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Bahut der mein barbaad kiya"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "You took so long to bring it to ruin."
     },
     {
-      "start": 157.67,
-      "end": 164.71,
+      "start": 50.89,
+      "end": 59.54,
       "lines": [
-        "Dil ke lutne ka sabab poochho na sab ke saamne."
+        "Humko kis ke gham ne maara"
       ],
-      "en": "Spare me, before them all, the question of how I lost my heart."
+      "en": "Whose sorrow was it that undid me?"
     },
     {
-      "start": 164.71,
-      "end": 191.36,
+      "start": 59.55,
+      "end": 64.07,
       "lines": [
-        "Dil ke lutne ka sabab poochho na sab ke saamne.",
-        "Naam aayega tumhara, yeh kahani phir sahi."
+        "Yeh kahani phir sahi"
       ],
-      "en": "Spare me the question of how I lost my heart before them all, for your name would come up, and that is a story for another time."
+      "en": "That story can wait."
     },
     {
-      "start": 191.36,
-      "end": 200.93,
+      "start": 64.59,
+      "end": 74.13,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Humko kis ke gham ne maara"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "Whose sorrow was it that undid me?"
     },
     {
-      "start": 200.93,
-      "end": 215.21,
+      "start": 74.14,
+      "end": 78.53,
       "lines": [
-        "Kis ne toda dil hamara,",
-        "Kis ne toda dil hamara, yeh kahani phir sahi."
+        "Yeh kahani phir sahi"
       ],
-      "en": "Who broke my heart is a story for another time."
+      "en": "That story can wait."
     },
     {
-      "start": 215.21,
-      "end": 245.41,
+      "start": 79.44,
+      "end": 87.98,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Kisne toda dil hamara"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "Who broke my heart?"
     },
     {
-      "start": 245.41,
-      "end": 252.47,
+      "start": 88.32,
+      "end": 94.34,
       "lines": [
-        "Nafraton ke teer kha kar doston ke shahr mein."
+        "Yeh kahani phir sahi"
       ],
-      "en": "In the city of friends, I took the arrows of hatred."
+      "en": "That story can wait."
     },
     {
-      "start": 252.47,
-      "end": 279.45,
+      "start": 112.77,
+      "end": 116.69,
       "lines": [
-        "Nafraton ke teer kha kar doston ke shahr mein,",
-        "Hum ne kis kis ko pukaara, yeh kahani phir sahi."
+        "Dil ke lutne ka sabab"
       ],
-      "en": "Who I called out to after taking the arrows of hatred in the city of friends is a story for another time."
+      "en": "Why my heart was plundered is a private matter."
     },
     {
-      "start": 279.45,
-      "end": 287.59,
+      "start": 116.7,
+      "end": 120.69,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Puchho na sab ke saamne"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "Please spare me the question in front of everyone."
     },
     {
-      "start": 287.59,
-      "end": 301.87,
+      "start": 122.57,
+      "end": 127.19,
       "lines": [
-        "Kis ne toda dil hamara,",
-        "Kis ne toda dil hamara, yeh kahani phir sahi."
+        "Naam aayega tumhara"
       ],
-      "en": "Who broke my heart is a story for another time."
+      "en": "Your name would come up."
     },
     {
-      "start": 301.87,
-      "end": 325.93,
+      "start": 127.2,
+      "end": 131.69,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Yeh kahani phir sahi"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "That story can wait."
     },
     {
-      "start": 325.93,
-      "end": 334.63,
+      "start": 132.02,
+      "end": 141.47,
       "lines": [
-        "Kya bataayen pyaar ki baazi wafa ki raah mein?"
+        "Humko kis ke gham ne maara"
       ],
-      "en": "What can I say of the gamble of love on the road of devotion?"
+      "en": "Whose sorrow was it that undid me?"
     },
     {
-      "start": 334.63,
-      "end": 374.81,
+      "start": 141.48,
+      "end": 145.78,
       "lines": [
-        "Kya bataayen pyaar ki baazi wafa ki raah mein?"
+        "Yeh kahani phir sahi"
       ],
-      "en": "What can I say of the gamble of love on the road of devotion?"
+      "en": "That story can wait."
     },
     {
-      "start": 374.81,
-      "end": 384.29,
+      "start": 147.82,
+      "end": 150.88,
       "lines": [
-        "Kaun jeeta, kaun haara, yeh kahani phir sahi."
+        "Nafraton ke teer kha kar"
       ],
-      "en": "Who won and who lost is a story for another time."
+      "en": "I bore the arrows of hatred."
     },
     {
-      "start": 384.29,
-      "end": 393.67,
+      "start": 151.35,
+      "end": 155.02,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Doston ke shahr mein"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "It happened in the city of friends."
     },
     {
-      "start": 393.67,
-      "end": 407.74,
+      "start": 156.36,
+      "end": 160.43,
       "lines": [
-        "Kis ne toda dil hamara,",
-        "Kis ne toda dil hamara, yeh kahani phir sahi."
+        "Nafraton ke teer kha kar"
       ],
-      "en": "Who broke my heart is a story for another time."
+      "en": "I bore the arrows of hatred."
     },
     {
-      "start": 407.74,
-      "end": 421.14,
+      "start": 160.86,
+      "end": 165.13,
       "lines": [
-        "Hum ko kis ke gham ne maara, yeh kahani phir sahi."
+        "Doston ke shahr mein"
       ],
-      "en": "Whose loss laid me low is a story for another time."
+      "en": "It happened in the city of friends."
+    },
+    {
+      "start": 165.63,
+      "end": 169.69,
+      "lines": [
+        "Humne kis kis ko pukara"
+      ],
+      "en": "To whom did I call out?"
+    },
+    {
+      "start": 170.37,
+      "end": 173.92,
+      "lines": [
+        "Yeh kahani phir sahi"
+      ],
+      "en": "That story can wait."
+    },
+    {
+      "start": 175.41,
+      "end": 179.57,
+      "lines": [
+        "Humko kis ke gham ne maara"
+      ],
+      "en": "Whose sorrow was it that undid me?"
+    },
+    {
+      "start": 179.58,
+      "end": 188.81,
+      "lines": [
+        "Yeh kahani phir sahi"
+      ],
+      "en": "That story can wait."
     }
   ]
 }

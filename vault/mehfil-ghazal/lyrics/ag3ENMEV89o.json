@@ -1,131 +1,135 @@
 {
   "video_id": "ag3ENMEV89o",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 12.81,
-      "end": 22.79,
+      "start": 0.0,
+      "end": 25.0,
       "lines": [
-        "Hosh walon ko khabar kya, bekhudi kya cheez hai"
+        "Hoshwalon ko khabar kya, bekhudi kya cheez hai?"
       ],
-      "en": "What can the clearheaded know of losing themselves?"
+      "en": "What would the clearheaded know of losing themselves?"
     },
     {
-      "start": 22.79,
-      "end": 47.32,
+      "start": 84.0,
+      "end": 93.0,
       "lines": [
-        "Hosh walon ko khabar kya, bekhudi kya cheez hai",
-        "Ishq kije, phir samajhiye, zindagi kya cheez hai"
+        "Unse nazrein kya milin, roshan fizayen ho gayin"
       ],
-      "en": "What can the clearheaded know of losing themselves until they fall in love and learn what it is to live?"
+      "en": "Our eyes met, and the air grew bright."
     },
     {
-      "start": 47.32,
-      "end": 83.14,
+      "start": 103.0,
+      "end": 114.0,
       "lines": [
-        "Hosh walon ko khabar kya, bekhudi kya cheez hai"
+        "Unse nazrein kya milin, roshan fizayen ho gayin"
       ],
-      "en": "What can the clearheaded know of losing themselves?"
+      "en": "Our eyes met, and the air grew bright."
     },
     {
-      "start": 83.14,
-      "end": 103.49,
-      "lines": [
-        "Unse nazrein kya milin, raushan fizayein ho gayin"
-      ],
-      "en": "Our eyes met, and the very air grew bright."
-    },
-    {
-      "start": 103.49,
-      "end": 124.19,
-      "lines": [
-        "Unse nazrein kya milin, raushan fizayein ho gayin",
-        "Aaj jaana, pyaar ki jaadugari kya cheez hai"
-      ],
-      "en": "Our eyes met and the air grew bright, and today I learned the spell that love can cast."
-    },
-    {
-      "start": 124.19,
-      "end": 134.34,
+      "start": 114.0,
+      "end": 134.0,
       "lines": [
         "Aaj jaana, pyaar ki jaadugari kya cheez hai"
       ],
-      "en": "Today I learned the spell that love can cast."
+      "en": "Today I learned what magic love can work."
     },
     {
-      "start": 134.34,
-      "end": 159.19,
+      "start": 134.0,
+      "end": 138.8,
+      "lines": [
+        "Ishq kije, phir samajhiye..."
+      ],
+      "en": "Fall in love, and then you may understand."
+    },
+    {
+      "start": 138.8,
+      "end": 148.96,
       "lines": [
         "Ishq kije, phir samajhiye, zindagi kya cheez hai"
       ],
-      "en": "Fall in love, and you will know what it is to live."
+      "en": "Fall in love, and then you may understand what it is to live."
     },
     {
-      "start": 159.19,
-      "end": 179.4,
+      "start": 158.92,
+      "end": 169.92,
       "lines": [
-        "Khulti zulfon ne sikhaayi mausamon ko shayari"
+        "Khulti zulfon ne sikhayi mausamon ko shayari"
       ],
-      "en": "That loosening hair taught the seasons poetry."
+      "en": "Their hair fell loose and taught the seasons poetry."
     },
     {
-      "start": 179.4,
-      "end": 199.74,
+      "start": 179.32,
+      "end": 189.52,
       "lines": [
-        "Khulti zulfon ne sikhaayi mausamon ko shayari",
-        "Jukti aankhon ne bataaya, maikashi kya cheez hai"
+        "Khulti zulfon ne sikhayi mausamon ko shayari"
       ],
-      "en": "That loosening hair taught the seasons poetry, and those downcast eyes taught me what it is to be drunk."
+      "en": "Their hair fell loose and taught the seasons poetry."
     },
     {
-      "start": 199.74,
-      "end": 210.31,
+      "start": 189.52,
+      "end": 209.32,
       "lines": [
-        "Jukti aankhon ne bataaya, maikashi kya cheez hai"
+        "Jhhukti aankhon ne bataya, maikashi kya cheez hai"
       ],
-      "en": "Those downcast eyes taught me what it is to be drunk."
+      "en": "Their lowered eyes showed me what it is to be drunk on wine."
     },
     {
-      "start": 210.31,
-      "end": 235.07,
+      "start": 209.32,
+      "end": 213.5,
+      "lines": [
+        "Ishq kije, phir samajhiye..."
+      ],
+      "en": "Fall in love, and then you may understand."
+    },
+    {
+      "start": 213.5,
+      "end": 225.32,
       "lines": [
         "Ishq kije, phir samajhiye, zindagi kya cheez hai"
       ],
-      "en": "Fall in love, and you will know what it is to live."
+      "en": "Fall in love, and then you may understand what it is to live."
     },
     {
-      "start": 235.07,
-      "end": 255.75,
+      "start": 234.32,
+      "end": 245.32,
       "lines": [
         "Hum labon se keh na paaye unse haal-e-dil kabhi"
       ],
-      "en": "I could never tell my beloved what was in my heart."
+      "en": "I could never tell them what was in my heart."
     },
     {
-      "start": 255.75,
-      "end": 276.11,
+      "start": 255.32,
+      "end": 266.62,
       "lines": [
-        "Hum labon se keh na paaye unse haal-e-dil kabhi",
-        "Aur woh samjhe nahin, yeh khamoshi kya cheez hai"
+        "Hum labon se keh na paaye unse haal-e-dil kabhi"
       ],
-      "en": "I could never tell my beloved what was in my heart, and they never understood what my silence meant."
+      "en": "I could never tell them what was in my heart."
     },
     {
-      "start": 276.11,
-      "end": 286.47,
+      "start": 266.62,
+      "end": 286.62,
       "lines": [
         "Aur woh samjhe nahin, yeh khamoshi kya cheez hai"
       ],
       "en": "And they never understood what my silence meant."
     },
     {
-      "start": 286.47,
-      "end": 299.3,
+      "start": 286.62,
+      "end": 291.3,
+      "lines": [
+        "Ishq kije, phir samajhiye..."
+      ],
+      "en": "Fall in love, and then you may understand."
+    },
+    {
+      "start": 291.3,
+      "end": 301.62,
       "lines": [
         "Ishq kije, phir samajhiye, zindagi kya cheez hai"
       ],
-      "en": "Fall in love, and you will know what it is to live."
+      "en": "Fall in love, and then you may understand what it is to live."
     }
   ]
 }

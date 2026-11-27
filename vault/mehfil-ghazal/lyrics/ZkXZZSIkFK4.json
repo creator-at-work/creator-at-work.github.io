@@ -1,175 +1,183 @@
 {
   "video_id": "ZkXZZSIkFK4",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 19.68,
-      "end": 33.63,
+      "start": 0.0,
+      "end": 22.0,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
     },
     {
-      "start": 33.63,
-      "end": 52.48,
+      "start": 30.0,
+      "end": 42.0,
       "lines": [
-        "Be-sabab baat badhaane ki zaroorat kya hai?",
+        "Be-sabab baat badhaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make more of this than there is?"
+    },
+    {
+      "start": 42.0,
+      "end": 51.0,
+      "lines": [
         "Hum khafa kab the, manaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this when I never took offence?"
+      "en": "Why make amends when I was never upset?"
     },
     {
-      "start": 52.48,
-      "end": 89.76,
+      "start": 51.0,
+      "end": 62.0,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
     },
     {
-      "start": 89.76,
-      "end": 101.42,
+      "start": 81.0,
+      "end": 110.0,
       "lines": [
-        "Aap ke dam se to duniya ka bharam hai qaayam"
+        "Aap ke dam se to duniya ka bharam hai qaayam."
       ],
-      "en": "It is you who keep the world's illusion alive."
+      "en": "You keep the world's illusion alive."
     },
     {
-      "start": 101.42,
-      "end": 120.02,
+      "start": 110.0,
+      "end": 120.0,
       "lines": [
-        "Aap ke dam se to duniya ka bharam hai qaayam",
         "Aap jab hain to zamaane ki zaroorat kya hai?"
       ],
-      "en": "You alone keep the world's illusion alive, so what need have I of the world when you are here?"
+      "en": "With you here, what need have I of the world?"
     },
     {
-      "start": 120.02,
-      "end": 138.81,
+      "start": 120.0,
+      "end": 129.0,
       "lines": [
-        "Be-sabab baat badhaane ki zaroorat kya hai?",
+        "Be-sabab baat badhaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make more of this than there is?"
+    },
+    {
+      "start": 129.0,
+      "end": 138.0,
+      "lines": [
         "Hum khafa kab the, manaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this when I never took offence?"
+      "en": "Why make amends when I was never upset?"
     },
     {
-      "start": 138.81,
-      "end": 176.57,
+      "start": 138.0,
+      "end": 149.0,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
     },
     {
-      "start": 176.57,
-      "end": 188.43,
+      "start": 159.0,
+      "end": 197.0,
       "lines": [
-        "Tera koocha, tera dar, teri gali kaafi hai"
+        "Tera koocha, tera dar, teri gali kaafi hai."
       ],
-      "en": "Your quarter, your doorstep, your lane are enough."
+      "en": "Your quarter, your doorstep, your lane are enough for me."
     },
     {
-      "start": 188.43,
-      "end": 206.56,
-      "lines": [
-        "Tera koocha, tera dar, teri gali kaafi hai",
-        "Be-thikaanon ko thikaane ki zaroorat kya hai?"
-      ],
-      "en": "Your quarter, your doorstep, your lane are enough, so what need have wanderers of a place to call their own?"
-    },
-    {
-      "start": 206.56,
-      "end": 215.91,
+      "start": 197.0,
+      "end": 215.0,
       "lines": [
         "Be-thikaanon ko thikaane ki zaroorat kya hai?"
       ],
-      "en": "What need have wanderers of a place to call their own?"
+      "en": "What need have wanderers of a place to call home?"
     },
     {
-      "start": 215.91,
-      "end": 253.39,
+      "start": 215.0,
+      "end": 227.0,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
     },
     {
-      "start": 253.39,
-      "end": 265.13,
+      "start": 236.0,
+      "end": 273.8,
       "lines": [
-        "Dil se milne ki tamanna hi nahin jab dil mein"
+        "Dil se milne ki tamanna hi nahin jab dil mein."
       ],
-      "en": "The heart has no wish to meet another."
+      "en": "The heart feels no longing to meet another."
     },
     {
-      "start": 265.13,
-      "end": 283.78,
+      "start": 273.8,
+      "end": 282.8,
       "lines": [
-        "Dil se milne ki tamanna hi nahin jab dil mein",
         "Haath se haath milaane ki zaroorat kya hai?"
       ],
-      "en": "Why shake hands when the hearts have no wish to meet?"
+      "en": "Why shake hands at all?"
     },
     {
-      "start": 283.78,
-      "end": 302.33,
-      "lines": [
-        "Be-sabab baat badhaane ki zaroorat kya hai?",
-        "Hum khafa kab the, manaane ki zaroorat kya hai?"
-      ],
-      "en": "Why make more of this when I never took offence?"
-    },
-    {
-      "start": 302.33,
-      "end": 339.94,
+      "start": 282.8,
+      "end": 292.8,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
     },
     {
-      "start": 339.94,
-      "end": 351.73,
+      "start": 292.8,
+      "end": 301.8,
       "lines": [
-        "Rang aankhon ke liye, boo hai dimaaghon ke liye"
+        "Hum khafa kab the, manaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make amends when I was never upset?"
+    },
+    {
+      "start": 301.8,
+      "end": 312.8,
+      "lines": [
+        "Be-sabab baat badhaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make more of this than there is?"
+    },
+    {
+      "start": 331.8,
+      "end": 358.8,
+      "lines": [
+        "Rang aankhon ke liye, boo hai dimaaghon ke liye."
       ],
       "en": "Colour is for the eyes, fragrance for the mind."
     },
     {
-      "start": 351.73,
-      "end": 370.09,
-      "lines": [
-        "Rang aankhon ke liye, boo hai dimaaghon ke liye",
-        "Phool ko haath lagaane ki zaroorat kya hai?"
-      ],
-      "en": "When colour is for the eyes and fragrance for the mind, why touch the flower?"
-    },
-    {
-      "start": 370.09,
-      "end": 379.59,
+      "start": 358.8,
+      "end": 378.8,
       "lines": [
         "Phool ko haath lagaane ki zaroorat kya hai?"
       ],
-      "en": "Why touch the flower?"
+      "en": "Why reach out to touch the flower?"
     },
     {
-      "start": 379.59,
-      "end": 398.46,
-      "lines": [
-        "Be-sabab baat badhaane ki zaroorat kya hai?",
-        "Hum khafa kab the, manaane ki zaroorat kya hai?"
-      ],
-      "en": "Why make more of this when I never took offence?"
-    },
-    {
-      "start": 398.46,
-      "end": 406.46,
+      "start": 378.8,
+      "end": 387.8,
       "lines": [
         "Be-sabab baat badhaane ki zaroorat kya hai?"
       ],
-      "en": "Why make more of this without cause?"
+      "en": "Why make more of this than there is?"
+    },
+    {
+      "start": 387.8,
+      "end": 397.8,
+      "lines": [
+        "Hum khafa kab the, manaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make amends when I was never upset?"
+    },
+    {
+      "start": 397.8,
+      "end": 409.8,
+      "lines": [
+        "Be-sabab baat badhaane ki zaroorat kya hai?"
+      ],
+      "en": "Why make more of this than there is?"
     }
   ]
 }

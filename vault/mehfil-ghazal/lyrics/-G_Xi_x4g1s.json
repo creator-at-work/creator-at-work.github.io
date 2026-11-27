@@ -1,97 +1,167 @@
 {
   "video_id": "-G_Xi_x4g1s",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 20.32,
-      "end": 46.95,
+      "start": 21.36,
+      "end": 37.32,
       "lines": [
-        "Tere aane ki jab khabar mehke",
-        "Teri khushboo se saara ghar mehke"
+        "Tere aane ki jab khabar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "When word of your coming scents the air."
     },
     {
-      "start": 46.95,
-      "end": 91.54,
+      "start": 39.92,
+      "end": 45.96,
       "lines": [
-        "Tere aane ki jab khabar mehke",
         "Teri khushboo se saara ghar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "Your scent fills the whole house."
     },
     {
-      "start": 91.54,
-      "end": 126.33,
+      "start": 47.84,
+      "end": 53.32,
       "lines": [
-        "Shaam mehke tere tasavvur se",
+        "Tere aane ki jab khabar mehke"
+      ],
+      "en": "When word of your coming scents the air."
+    },
+    {
+      "start": 55.76,
+      "end": 61.96,
+      "lines": [
+        "Teri khushboo se saara ghar mehke"
+      ],
+      "en": "Your scent fills the whole house."
+    },
+    {
+      "start": 92.64,
+      "end": 110.12,
+      "lines": [
+        "Shaam mehke tere tasavvur se"
+      ],
+      "en": "The thought of you perfumes the evening."
+    },
+    {
+      "start": 111.12,
+      "end": 125.56,
+      "lines": [
         "Shaam ke baad phir sahar mehke"
       ],
-      "en": "The thought of you scents the evening, and after evening, the dawn."
+      "en": "After evening, dawn too takes on the scent."
     },
     {
-      "start": 126.33,
-      "end": 152.58,
+      "start": 127.2,
+      "end": 132.68,
       "lines": [
-        "Tere aane ki jab khabar mehke",
+        "Tere aane ki jab khabar mehke"
+      ],
+      "en": "When word of your coming scents the air."
+    },
+    {
+      "start": 135.28,
+      "end": 141.4,
+      "lines": [
         "Teri khushboo se saara ghar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "Your scent fills the whole house."
     },
     {
-      "start": 152.58,
-      "end": 187.27,
+      "start": 153.6,
+      "end": 171.32,
       "lines": [
-        "Raat bhar sochta raha tujhko",
+        "Raat bhar sochta raha tujhko"
+      ],
+      "en": "I thought of you all night."
+    },
+    {
+      "start": 172.24,
+      "end": 186.36,
+      "lines": [
         "Zehn-o-dil mere raat bhar mehke"
       ],
-      "en": "I thought of you all night, and your fragrance lingered in my heart and mind."
+      "en": "The scent stayed in my mind and heart all night."
     },
     {
-      "start": 187.27,
-      "end": 231.92,
+      "start": 188.08,
+      "end": 193.72,
       "lines": [
-        "Tere aane ki jab khabar mehke",
+        "Tere aane ki jab khabar mehke"
+      ],
+      "en": "When word of your coming scents the air."
+    },
+    {
+      "start": 196.08,
+      "end": 202.28,
+      "lines": [
         "Teri khushboo se saara ghar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "Your scent fills the whole house."
     },
     {
-      "start": 231.92,
-      "end": 266.71,
+      "start": 233.04,
+      "end": 250.68,
       "lines": [
-        "Yaad aaye to dil munavvar ho",
+        "Yaad aaye to dil munavvar ho"
+      ],
+      "en": "My heart lights up when I think of you."
+    },
+    {
+      "start": 251.68,
+      "end": 265.8,
+      "lines": [
         "Deed ho jaaye to nazar mehke"
       ],
-      "en": "The memory of you lights my heart, and a glimpse of you leaves my eyes fragrant."
+      "en": "At the sight of you, even my gaze takes on a scent."
     },
     {
-      "start": 266.71,
-      "end": 292.88,
+      "start": 267.6,
+      "end": 273.16,
       "lines": [
-        "Tere aane ki jab khabar mehke",
+        "Tere aane ki jab khabar mehke"
+      ],
+      "en": "When word of your coming scents the air."
+    },
+    {
+      "start": 275.68,
+      "end": 281.8,
+      "lines": [
         "Teri khushboo se saara ghar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "Your scent fills the whole house."
     },
     {
-      "start": 292.88,
-      "end": 327.64,
+      "start": 293.84,
+      "end": 311.16,
       "lines": [
-        "Woh ghadi do ghadi jahaan baithe",
+        "Woh ghadi do ghadi jahaan baithe"
+      ],
+      "en": "Where we sat together for a moment or two."
+    },
+    {
+      "start": 312.48,
+      "end": 326.76,
+      "lines": [
         "Woh zameen mehke, woh shajar mehke"
       ],
-      "en": "Wherever you sat for a moment or two, the earth and the tree grew fragrant."
+      "en": "The earth and the tree still carry the scent."
     },
     {
-      "start": 327.64,
-      "end": 343.69,
+      "start": 328.64,
+      "end": 334.04,
       "lines": [
-        "Tere aane ki jab khabar mehke",
+        "Tere aane ki jab khabar mehke"
+      ],
+      "en": "When word of your coming scents the air."
+    },
+    {
+      "start": 336.56,
+      "end": 342.76,
+      "lines": [
         "Teri khushboo se saara ghar mehke"
       ],
-      "en": "When word of your coming scents the air, your fragrance fills the house."
+      "en": "Your scent fills the whole house."
     }
   ]
 }

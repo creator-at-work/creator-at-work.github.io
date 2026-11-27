@@ -1,141 +1,143 @@
 {
   "video_id": "ZrsUbxFgKfc",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 26.73,
-      "end": 39.98,
+      "start": 26.76,
+      "end": 48.68,
       "lines": [
         "Badla na apne aap ko, jo the wahin rahe"
       ],
-      "en": "We never changed, remaining as we were."
+      "en": "We did not change, we stayed as we were."
     },
     {
-      "start": 39.98,
-      "end": 57.22,
+      "start": 48.68,
+      "end": 57.36,
       "lines": [
-        "Badla na apne aap ko, jo the wahin rahe",
         "Milte rahe sabhi se, magar ajnabi rahe"
       ],
-      "en": "We stayed as we were, meeting everyone yet remaining strangers."
+      "en": "We met everyone, yet remained strangers."
     },
     {
-      "start": 57.22,
-      "end": 92.47,
+      "start": 57.36,
+      "end": 64.48,
       "lines": [
         "Badla na apne aap ko, jo the wahin rahe"
       ],
-      "en": "We never changed, remaining as we were."
+      "en": "We did not change, we stayed as we were."
     },
     {
-      "start": 92.47,
-      "end": 105.82,
+      "start": 92.56,
+      "end": 99.72,
       "lines": [
         "Duniya na jeet pao to haaro na khud ko tum"
       ],
       "en": "If you cannot win the world, do not lose yourself."
     },
     {
-      "start": 105.82,
-      "end": 123.3,
+      "start": 105.88,
+      "end": 114.52,
       "lines": [
-        "Duniya na jeet pao to haaro na khud ko tum",
-        "Thodi bahut to zehan mein narazgi rahe"
+        "Duniya na jeet pao to haaro na khud ko tum"
       ],
-      "en": "If you cannot win the world, keep hold of yourself and let a little discontent remain."
+      "en": "If you cannot win the world, do not lose yourself."
     },
     {
-      "start": 123.3,
-      "end": 132.18,
+      "start": 114.52,
+      "end": 131.96,
       "lines": [
-        "Thodi bahut to zehan mein narazgi rahe"
+        "Thodi-bahut to zehan mein narazgi rahe"
       ],
-      "en": "Let a little discontent remain."
+      "en": "Let a little discontent linger in the mind."
     },
     {
-      "start": 132.18,
-      "end": 160.13,
+      "start": 132.24,
+      "end": 139.04,
       "lines": [
         "Badla na apne aap ko, jo the wahin rahe"
       ],
-      "en": "We never changed, remaining as we were."
+      "en": "We did not change, we stayed as we were."
     },
     {
-      "start": 160.13,
-      "end": 173.66,
+      "start": 160.4,
+      "end": 168.6,
       "lines": [
         "Apni tarah sabhi ko kisi ki talash thi"
       ],
       "en": "Like us, everyone was looking for someone."
     },
     {
-      "start": 173.66,
-      "end": 191.21,
+      "start": 173.6,
+      "end": 182.48,
       "lines": [
-        "Apni tarah sabhi ko kisi ki talash thi",
-        "Hum jis ke bhi qareeb rahe, door hi rahe"
+        "Apni tarah sabhi ko kisi ki talash thi"
       ],
-      "en": "Like us, everyone was looking for someone, yet whoever we grew close to, we stayed apart."
+      "en": "Like us, everyone was looking for someone."
     },
     {
-      "start": 191.21,
-      "end": 200.39,
+      "start": 182.48,
+      "end": 200.08,
       "lines": [
-        "Hum jis ke bhi qareeb rahe, door hi rahe"
+        "Hum jiske bhi qareeb rahe, door hi rahe"
       ],
-      "en": "Whoever we grew close to, we stayed apart."
+      "en": "Whomever we drew close to, we stayed far away."
     },
     {
-      "start": 200.39,
-      "end": 235.23,
+      "start": 200.08,
+      "end": 207.12,
       "lines": [
         "Badla na apne aap ko, jo the wahin rahe"
       ],
-      "en": "We never changed, remaining as we were."
+      "en": "We did not change, we stayed as we were."
     },
     {
-      "start": 235.23,
-      "end": 248.42,
+      "start": 235.2,
+      "end": 257.2,
       "lines": [
         "Guzro jo baagh se to dua maangte chalo"
       ],
-      "en": "Say a prayer as you pass through the garden."
+      "en": "As you pass through the garden, say a prayer."
     },
     {
-      "start": 248.42,
-      "end": 265.82,
-      "lines": [
-        "Guzro jo baagh se to dua maangte chalo",
-        "Jis mein khile hain phool, woh daali hari rahe"
-      ],
-      "en": "As you pass through the garden, pray that the branch in bloom may stay green."
-    },
-    {
-      "start": 265.82,
-      "end": 274.83,
+      "start": 257.2,
+      "end": 274.64,
       "lines": [
         "Jis mein khile hain phool, woh daali hari rahe"
       ],
-      "en": "May the branch in bloom stay green."
+      "en": "May the branch that bears the blossoms stay green."
     },
     {
-      "start": 274.83,
-      "end": 292.23,
+      "start": 274.64,
+      "end": 283.56,
       "lines": [
-        "Badla na apne aap ko, jo the wahin rahe",
+        "Badla na apne aap ko, jo the wahin rahe"
+      ],
+      "en": "We did not change, we stayed as we were."
+    },
+    {
+      "start": 283.56,
+      "end": 292.2,
+      "lines": [
         "Milte rahe sabhi se, magar ajnabi rahe"
       ],
-      "en": "We stayed as we were, meeting everyone yet remaining strangers."
+      "en": "We met everyone, yet remained strangers."
     },
     {
-      "start": 292.23,
-      "end": 309.29,
+      "start": 292.2,
+      "end": 299.28,
       "lines": [
-        "Badla na apne aap ko, jo the wahin rahe",
-        "Jo the wahin rahe, jo the wahin rahe"
+        "Badla na apne aap ko, jo the wahin rahe"
       ],
-      "en": "We never changed, we stayed as we were, as we were."
+      "en": "We did not change, we stayed as we were."
+    },
+    {
+      "start": 301.04,
+      "end": 308.08,
+      "lines": [
+        "Jo the wahin rahe"
+      ],
+      "en": "We stayed as we were."
     }
   ]
 }

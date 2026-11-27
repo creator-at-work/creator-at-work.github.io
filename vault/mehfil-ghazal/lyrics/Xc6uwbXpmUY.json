@@ -1,205 +1,355 @@
 {
   "video_id": "Xc6uwbXpmUY",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 79.43,
-      "end": 95.84,
+      "start": 60.0,
+      "end": 78.0,
       "lines": [
         "Ranjish hi sahi, dil hi dukhane ke liye aa"
       ],
       "en": "Come, even in resentment, even if only to hurt me."
     },
     {
-      "start": 95.84,
-      "end": 122.63,
+      "start": 80.0,
+      "end": 90.0,
       "lines": [
-        "Ranjish hi sahi, dil hi dukhane ke liye aa",
         "Aa phir se mujhe chhod ke jaane ke liye aa"
       ],
-      "en": "Come, even in resentment, to hurt me and leave me once again."
+      "en": "Come back, if only to leave me again."
     },
     {
-      "start": 122.63,
-      "end": 137.98,
+      "start": 90.0,
+      "end": 100.8,
       "lines": [
-        "Ranjish hi sahi",
-        "Aa phir se mujhe chhod ke jaane ke liye aa"
+        "Ranjish hi sahi, dil hi dukhane ke liye aa"
       ],
-      "en": "Come, even in resentment, if only to leave me once again."
+      "en": "Come, even in resentment, even if only to hurt me."
     },
     {
-      "start": 137.98,
-      "end": 155.86,
+      "start": 100.8,
+      "end": 105.34,
       "lines": [
         "Ranjish hi sahi"
       ],
       "en": "Even if it is only resentment."
     },
     {
-      "start": 155.86,
-      "end": 179.06,
-      "lines": [
-        "Pehle se marasim na sahi, phir bhi kabhi to"
-      ],
-      "en": "Even if we are no longer as close, still, sometime."
-    },
-    {
-      "start": 179.06,
-      "end": 204.99,
-      "lines": [
-        "Pehle se marasim na sahi, phir bhi kabhi to"
-      ],
-      "en": "Even if we are no longer as close, still, sometime."
-    },
-    {
-      "start": 204.99,
-      "end": 225.22,
-      "lines": [
-        "Pehle se marasim na sahi, phir bhi kabhi to",
-        "Rasm-o-rah-e-duniya hi nibhane ke liye aa"
-      ],
-      "en": "Though we are no longer close, come sometime, if only because it is expected."
-    },
-    {
-      "start": 225.22,
-      "end": 240.51,
-      "lines": [
-        "Ranjish hi sahi",
-        "Rasm-o-rah-e-duniya hi nibhane ke liye aa"
-      ],
-      "en": "Come, even in resentment, if only because it is expected."
-    },
-    {
-      "start": 240.51,
-      "end": 268.07,
-      "lines": [
-        "Ranjish hi sahi, dil hi dukhane ke liye aa"
-      ],
-      "en": "Come, even in resentment, even if only to hurt me."
-    },
-    {
-      "start": 268.07,
-      "end": 293.13,
-      "lines": [
-        "Kis kis ko batayenge judai ka sabab hum"
-      ],
-      "en": "How many people will I have to tell why we parted?"
-    },
-    {
-      "start": 293.13,
-      "end": 320.23,
-      "lines": [
-        "Kis kis ko"
-      ],
-      "en": "How many people?"
-    },
-    {
-      "start": 320.23,
-      "end": 342.5,
-      "lines": [
-        "Kis kis ko batayenge judai ka sabab hum"
-      ],
-      "en": "How many people will I have to tell why we parted?"
-    },
-    {
-      "start": 342.5,
-      "end": 361.93,
-      "lines": [
-        "Kis kis ko batayenge judai ka sabab hum",
-        "Tu mujh se khafa hai to zamane ke liye aa"
-      ],
-      "en": "Must I tell everyone why we parted, when you could come for their sake, though you are angry with me?"
-    },
-    {
-      "start": 361.93,
-      "end": 376.77,
-      "lines": [
-        "Ranjish hi sahi",
-        "Tu mujh se khafa hai to zamane ke liye aa"
-      ],
-      "en": "If you are angry with me, come for the sake of what people will say."
-    },
-    {
-      "start": 376.77,
-      "end": 404.82,
-      "lines": [
-        "Ranjish hi sahi, dil hi dukhane ke liye aa"
-      ],
-      "en": "Come, even in resentment, even if only to hurt me."
-    },
-    {
-      "start": 404.82,
-      "end": 426.76,
+      "start": 110.0,
+      "end": 140.0,
       "lines": [
         "Ab tak dil-e-khush-fahm ko hain tujh se ummeedein"
       ],
-      "en": "My heart still hopes for something from you."
+      "en": "This heart, so easily deceived, still pins its hopes on you."
     },
     {
-      "start": 426.76,
-      "end": 444.05,
+      "start": 170.0,
+      "end": 172.0,
       "lines": [
-        "Ab tak dil-e-khush-fahm ko hain tujh se ummeedein"
+        "Ye aakhiri sham'ein bhi bujhane ke liye aa"
       ],
-      "en": "My heart still hopes for something from you."
+      "en": "Come and put out these last candles too."
     },
     {
-      "start": 444.05,
-      "end": 466.36,
+      "start": 172.0,
+      "end": 175.5,
       "lines": [
-        "Ab tak dil-e-khush-fahm ko hain tujh se ummeedein",
-        "Ye aakhiri shamein bhi bujhane ke liye aa"
+        "Ranjish hi sahi"
       ],
-      "en": "My foolish heart still hopes, so come put out these last candles too."
+      "en": "Even if it is only resentment."
     },
     {
-      "start": 466.36,
-      "end": 480.69,
+      "start": 175.5,
+      "end": 185.0,
       "lines": [
-        "Ranjish hi sahi",
-        "Ye aakhiri shamein bhi bujhane ke liye aa"
+        "Ye aakhiri sham'ein bhi bujhane ke liye aa"
       ],
-      "en": "Come, even in resentment, and put out these last candles too."
+      "en": "Come and put out these last candles too."
     },
     {
-      "start": 480.69,
-      "end": 506.07,
+      "start": 185.0,
+      "end": 197.0,
       "lines": [
         "Ranjish hi sahi, dil hi dukhane ke liye aa"
       ],
       "en": "Come, even in resentment, even if only to hurt me."
     },
     {
-      "start": 506.07,
-      "end": 516.3,
+      "start": 197.0,
+      "end": 202.0,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 216.0,
+      "end": 237.0,
       "lines": [
         "Ek umr se hoon lazzat-e-girya se bhi mahroom"
       ],
       "en": "For an age, even the comfort of tears has been denied me."
     },
     {
-      "start": 516.3,
-      "end": 535.78,
+      "start": 237.0,
+      "end": 268.0,
       "lines": [
-        "Ek umr se hoon lazzat-e-girya se bhi mahroom",
-        "Ai rahat-e-jaan, mujh ko rulane ke liye aa"
+        "Ek umr se hoon..."
       ],
-      "en": "I have gone an age without the comfort of tears, so come, my solace, and make me weep."
+      "en": "For an age now..."
     },
     {
-      "start": 535.78,
-      "end": 549.88,
+      "start": 268.0,
+      "end": 289.0,
       "lines": [
-        "Ranjish hi sahi",
-        "Ai rahat-e-jaan, mujh ko rulane ke liye aa"
+        "Ek umr se hoon lazzat-e-girya se bhi mahroom"
       ],
-      "en": "Come, my solace, even in resentment, if only to make me weep."
+      "en": "For an age, even the comfort of tears has been denied me."
     },
     {
-      "start": 549.88,
-      "end": 566.1,
+      "start": 289.0,
+      "end": 302.0,
+      "lines": [
+        "Ai rahat-e-jaan, mujh ko rulane ke liye aa"
+      ],
+      "en": "Come, my solace, and let me weep."
+    },
+    {
+      "start": 302.0,
+      "end": 306.8,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 306.8,
+      "end": 318.0,
+      "lines": [
+        "Ai rahat-e-jaan, mujh ko rulane ke liye aa"
+      ],
+      "en": "Come, my solace, and let me weep."
+    },
+    {
+      "start": 318.0,
+      "end": 326.0,
+      "lines": [
+        "Ranjish hi sahi, dil hi dukhane ke liye aa"
+      ],
+      "en": "Come, even in resentment, even if only to hurt me."
+    },
+    {
+      "start": 326.0,
+      "end": 330.8,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 336.8,
+      "end": 340.7,
+      "lines": [
+        "Kuchh to..."
+      ],
+      "en": "At least..."
+    },
+    {
+      "start": 340.7,
+      "end": 371.0,
+      "lines": [
+        "Kuchh to mere pindar-e-mohabbat ka bharam rakh"
+      ],
+      "en": "Spare me a little of the pride I take in loving you."
+    },
+    {
+      "start": 371.0,
+      "end": 385.8,
+      "lines": [
+        "Kuchh to..."
+      ],
+      "en": "At least..."
+    },
+    {
+      "start": 405.8,
+      "end": 426.8,
+      "lines": [
+        "Kuchh to mere pindar-e-mohabbat ka bharam rakh"
+      ],
+      "en": "Spare me a little of the pride I take in loving you."
+    },
+    {
+      "start": 426.8,
+      "end": 450.0,
+      "lines": [
+        "Tu bhi to kabhi mujh ko manane ke liye aa"
+      ],
+      "en": "Come someday and make it up to me, too."
+    },
+    {
+      "start": 450.0,
+      "end": 460.5,
+      "lines": [
+        "Ranjish hi sahi, dil hi dukhane ke liye aa"
+      ],
+      "en": "Come, even in resentment, even if only to hurt me."
+    },
+    {
+      "start": 460.5,
+      "end": 465.8,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 478.8,
+      "end": 482.0,
+      "lines": [
+        "Maana..."
+      ],
+      "en": "I grant you..."
+    },
+    {
+      "start": 482.0,
+      "end": 503.6,
+      "lines": [
+        "Maana ke mohabbat ka chhupana hai mohabbat"
+      ],
+      "en": "I know that keeping love hidden is itself a way of loving."
+    },
+    {
+      "start": 503.6,
+      "end": 526.5,
+      "lines": [
+        "Maana..."
+      ],
+      "en": "I grant you..."
+    },
+    {
+      "start": 526.5,
+      "end": 547.8,
+      "lines": [
+        "Maana ke mohabbat ka chhupana hai mohabbat"
+      ],
+      "en": "I know that keeping love hidden is itself a way of loving."
+    },
+    {
+      "start": 547.8,
+      "end": 557.7,
+      "lines": [
+        "Chupke se kisi roz jatane ke liye aa"
+      ],
+      "en": "Come quietly one day and let me know."
+    },
+    {
+      "start": 557.7,
+      "end": 561.92,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 561.92,
+      "end": 571.6,
+      "lines": [
+        "Chupke se kisi roz jatane ke liye aa"
+      ],
+      "en": "Come quietly one day and let me know."
+    },
+    {
+      "start": 571.6,
+      "end": 580.4,
+      "lines": [
+        "Ranjish hi sahi, dil hi dukhane ke liye aa"
+      ],
+      "en": "Come, even in resentment, even if only to hurt me."
+    },
+    {
+      "start": 580.4,
+      "end": 584.56,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 591.92,
+      "end": 629.92,
+      "lines": [
+        "Jaise tumhein aate hain na aane ke bahane"
+      ],
+      "en": "You know so well how to find a reason to stay away."
+    },
+    {
+      "start": 629.92,
+      "end": 645.8,
+      "lines": [
+        "Jaise..."
+      ],
+      "en": "Just as..."
+    },
+    {
+      "start": 645.8,
+      "end": 666.92,
+      "lines": [
+        "Jaise tumhein aate hain na aane ke bahane"
+      ],
+      "en": "You know so well how to find a reason to stay away."
+    },
+    {
+      "start": 666.92,
+      "end": 677.6,
+      "lines": [
+        "Aise hi kisi roz na jaane ke liye aa"
+      ],
+      "en": "One day, come with a reason to stay."
+    },
+    {
+      "start": 677.6,
+      "end": 680.92,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 680.92,
+      "end": 691.3,
+      "lines": [
+        "Aise hi kisi roz na jaane ke liye aa"
+      ],
+      "en": "One day, come with a reason to stay."
+    },
+    {
+      "start": 691.3,
+      "end": 699.8,
+      "lines": [
+        "Ranjish hi sahi, dil hi dukhane ke liye aa"
+      ],
+      "en": "Come, even in resentment, even if only to hurt me."
+    },
+    {
+      "start": 699.8,
+      "end": 702.4,
+      "lines": [
+        "Ranjish hi sahi"
+      ],
+      "en": "Even if it is only resentment."
+    },
+    {
+      "start": 702.4,
+      "end": 709.0,
+      "lines": [
+        "Aa phir se mujhe chhod ke jaane ke liye aa"
+      ],
+      "en": "Come back, if only to leave me again."
+    },
+    {
+      "start": 709.0,
+      "end": 728.92,
       "lines": [
         "Ranjish hi sahi, dil hi dukhane ke liye aa"
       ],

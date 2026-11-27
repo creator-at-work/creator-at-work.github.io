@@ -1,153 +1,143 @@
 {
   "video_id": "krLDcZG1Mak",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 18.88,
-      "end": 28.79,
+      "start": 24.08,
+      "end": 43.12,
       "lines": [
         "Tu kahin bhi rahe, sar par tere ilzaam to hai"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, the blame still follows you."
     },
     {
-      "start": 28.79,
-      "end": 48.81,
+      "start": 43.86,
+      "end": 52.84,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai",
         "Tere haathon ki lakeeron mein mera naam to hai"
       ],
-      "en": "Wherever you may be, the blame still hangs over you, and my name is written in the lines of your hands."
+      "en": "My name, at least, is written in the lines of your hands."
     },
     {
-      "start": 48.81,
-      "end": 77.12,
+      "start": 53.18,
+      "end": 59.5,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai"
+        "Tu kahin bhi rahe, sar par tere"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, you still carry it."
     },
     {
-      "start": 77.12,
-      "end": 96.8,
+      "start": 82.44,
+      "end": 110.62,
       "lines": [
-        "Mujhko tu apna bana ya na bana, teri khushi",
         "Mujhko tu apna bana ya na bana, teri khushi"
       ],
-      "en": "Call me your own if you wish, the choice is yours."
+      "en": "Whether you make me yours is yours to decide."
     },
     {
-      "start": 96.8,
-      "end": 116.56,
+      "start": 111.56,
+      "end": 121.12,
       "lines": [
-        "Mujhko tu apna bana ya na bana, teri khushi",
         "Tu zamaane mein mere naam se badnaam to hai"
       ],
-      "en": "Call me your own if you wish, though my name has already brought you scandal."
+      "en": "It is my name that has brought you shame in the eyes of the world."
     },
     {
-      "start": 116.56,
-      "end": 145.76,
+      "start": 121.46,
+      "end": 127.66,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai"
+        "Tu kahin bhi rahe, sar par tere"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, you still carry it."
     },
     {
-      "start": 145.76,
-      "end": 163.91,
+      "start": 150.2,
+      "end": 173.8,
       "lines": [
-        "Mere hisse mein koi jaam na aaya, na sahi",
         "Mere hisse mein koi jaam na aaya, na sahi"
       ],
       "en": "If no cup fell to my share, so be it."
     },
     {
-      "start": 163.91,
-      "end": 185.01,
+      "start": 180.5,
+      "end": 188.98,
       "lines": [
-        "Mere hisse mein koi jaam na aaya, na sahi",
         "Teri mehfil mein mere naam koi shaam to hai"
       ],
-      "en": "If no cup fell to my share, there is still an evening in your company that bears my name."
+      "en": "Some evening in your gathering still bears my name."
     },
     {
-      "start": 185.01,
-      "end": 213.62,
+      "start": 189.38,
+      "end": 195.52,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai"
+        "Tu kahin bhi rahe, sar par tere"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, you still carry it."
     },
     {
-      "start": 213.62,
-      "end": 233.34,
+      "start": 218.72,
+      "end": 247.24,
       "lines": [
-        "Dekh kar log mujhe naam tera lete hain",
         "Dekh kar log mujhe naam tera lete hain"
       ],
       "en": "When people see me, they speak your name."
     },
     {
-      "start": 233.34,
-      "end": 253.55,
+      "start": 248.24,
+      "end": 257.68,
       "lines": [
-        "Dekh kar log mujhe naam tera lete hain",
-        "Is mein main khush hoon, mohabbat ka ye anjaam to hai"
+        "Is par main khush hoon, mohabbat ka ye anjaam to hai"
       ],
-      "en": "When people see me, they speak your name, and I take quiet pleasure in what love has come to."
+      "en": "I am glad that love has come to this, at least."
     },
     {
-      "start": 253.55,
-      "end": 282.08,
+      "start": 258.14,
+      "end": 264.34,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai"
+        "Tu kahin bhi rahe, sar par tere"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, you still carry it."
     },
     {
-      "start": 282.08,
-      "end": 301.16,
+      "start": 286.94,
+      "end": 315.84,
       "lines": [
-        "Woh sitamgar hi sahi, dekh ke usko Shabbir",
-        "Woh sitamgar hi sahi, dekh ke usko Shabbir"
+        "Woh sitamgar hi sahi, dekh ke usko, Sabir"
       ],
-      "en": "Even a glimpse of that cruel beloved matters, Shabbir."
+      "en": "Cruel though they may be, Sabir, the sight of them is enough."
     },
     {
-      "start": 301.16,
-      "end": 322.99,
+      "start": 316.34,
+      "end": 324.84,
       "lines": [
-        "Woh sitamgar hi sahi, dekh ke usko Shabbir",
         "Shukr hai is dil-e-bimaar ko aaraam to hai"
       ],
-      "en": "Cruel as the beloved may be, Shabbir, a glimpse brings this aching heart some rest."
+      "en": "I am thankful this ailing heart has found some rest."
     },
     {
-      "start": 322.99,
-      "end": 331.32,
+      "start": 326.12,
+      "end": 342.22,
       "lines": [
         "Tu kahin bhi rahe, sar par tere ilzaam to hai"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, the blame still follows you."
     },
     {
-      "start": 331.32,
-      "end": 350.77,
+      "start": 346.02,
+      "end": 354.82,
       "lines": [
-        "Tu kahin bhi rahe, sar par tere ilzaam to hai",
         "Tere haathon ki lakeeron mein mera naam to hai"
       ],
-      "en": "Wherever you may be, the blame still hangs over you, and my name is written in the lines of your hands."
+      "en": "My name, at least, is written in the lines of your hands."
     },
     {
-      "start": 350.77,
-      "end": 358.77,
+      "start": 357.48,
+      "end": 374.5,
       "lines": [
         "Tu kahin bhi rahe, sar par tere ilzaam to hai"
       ],
-      "en": "Wherever you may be, the blame still hangs over you."
+      "en": "Wherever you may be, the blame still follows you."
     }
   ]
 }
