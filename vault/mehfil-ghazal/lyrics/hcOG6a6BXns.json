@@ -1,0 +1,123 @@
+{
+  "video_id": "hcOG6a6BXns",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 30.0,
+      "end": 50.0,
+      "lines": [
+        "Aaj phir unka saamna hoga"
+      ],
+      "en": "Today I will see them again."
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "lines": [
+        "Aaj phir unka saamna hoga"
+      ],
+      "en": "Today I will see them again."
+    },
+    {
+      "start": 80.0,
+      "end": 93.2,
+      "lines": [
+        "Aasmaan ro raha hai do din se"
+      ],
+      "en": "The sky has been weeping for two days."
+    },
+    {
+      "start": 93.2,
+      "end": 115.32,
+      "lines": [
+        "Aasmaan ro raha hai do din se",
+        "Aap ne kuchh kaha suna hoga"
+      ],
+      "en": "The sky has been weeping for two days, so you must have said or heard something."
+    },
+    {
+      "start": 115.32,
+      "end": 131.72,
+      "lines": [
+        "Aap ne kuchh kaha suna hoga"
+      ],
+      "en": "You must have said or heard something."
+    },
+    {
+      "start": 131.72,
+      "end": 139.72,
+      "lines": [
+        "Aaj phir unka saamna hoga"
+      ],
+      "en": "Today I will see them again."
+    },
+    {
+      "start": 155.16,
+      "end": 174.08,
+      "lines": [
+        "Do qadam par sahi tera koocha"
+      ],
+      "en": "Your lane may be only two steps away."
+    },
+    {
+      "start": 175.36,
+      "end": 200.4,
+      "lines": [
+        "Do qadam par sahi tera koocha",
+        "Ye bhi sadiyon ka faasla hoga"
+      ],
+      "en": "Your lane may be only two steps away, yet even those steps will span centuries."
+    },
+    {
+      "start": 200.6,
+      "end": 208.4,
+      "lines": [
+        "Aaj phir unka saamna hoga"
+      ],
+      "en": "Today I will see them again."
+    },
+    {
+      "start": 213.6,
+      "end": 242.6,
+      "lines": [
+        "Ghar jalata hai roshni ke liye"
+      ],
+      "en": "He sets his house alight for a little light."
+    },
+    {
+      "start": 242.6,
+      "end": 255.6,
+      "lines": [
+        "Ghar jalata hai roshni ke liye"
+      ],
+      "en": "He sets his house alight for a little light."
+    },
+    {
+      "start": 255.6,
+      "end": 272.0,
+      "lines": [
+        "Ghar jalata hai roshni ke liye",
+        "Koi mujh sa hi diljala hoga"
+      ],
+      "en": "To burn his house for a little light, he must have a heart as scorched as mine."
+    },
+    {
+      "start": 272.0,
+      "end": 289.0,
+      "lines": [
+        "Aaj phir unka saamna hoga",
+        "Kya pata uske baad kya hoga"
+      ],
+      "en": "I will see them again today, and who knows what will follow?"
+    },
+    {
+      "start": 289.0,
+      "end": 297.0,
+      "lines": [
+        "Aaj phir unka saamna hoga"
+      ],
+      "en": "Today I will see them again."
+    }
+  ]
+}

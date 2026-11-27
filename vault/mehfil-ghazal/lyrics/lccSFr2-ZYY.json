@@ -1,0 +1,67 @@
+{
+  "video_id": "lccSFr2-ZYY",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 24.0,
+      "lines": [
+        "Aur bazaar se le aaye agar toot gaya",
+        "Saaghar-e-Jam se mera jaam-e-sifaal achha hai"
+      ],
+      "en": "I prefer my clay cup to Jamshid's goblet, for if it breaks I can buy another in the bazaar."
+    },
+    {
+      "start": 26.0,
+      "end": 59.1,
+      "lines": [
+        "Unke dekhe se jo aa jaati hai munh par raunaq",
+        "Woh samajhte hain ki beemaar ka haal achha hai"
+      ],
+      "en": "The sight of her brings color to my face, and she takes it for a sign that I am getting better."
+    },
+    {
+      "start": 61.62,
+      "end": 71.7,
+      "lines": [
+        "Dekhiye paate hain ushshaaq buton se kya faiz"
+      ],
+      "en": "Let us see what favor lovers receive from their idols."
+    },
+    {
+      "start": 75.9,
+      "end": 96.9,
+      "lines": [
+        "Dekhiye paate hain ushshaaq buton se kya faiz",
+        "Ik barahman ne kaha hai ki ye saal achha hai"
+      ],
+      "en": "Let us see what favor lovers receive from their idols, now that a Brahmin has foretold a good year."
+    },
+    {
+      "start": 96.9,
+      "end": 108.9,
+      "lines": [
+        "Ik barahman ne kaha hai ki ye saal achha hai"
+      ],
+      "en": "A Brahmin has foretold a good year."
+    },
+    {
+      "start": 109.9,
+      "end": 126.9,
+      "lines": [
+        "Hum ko maaloom hai jannat ki haqeeqat lekin"
+      ],
+      "en": "We know the truth about paradise, though."
+    },
+    {
+      "start": 130.9,
+      "end": 163.9,
+      "lines": [
+        "Hum ko maaloom hai jannat ki haqeeqat lekin",
+        "Dil ke khush rakhne ko, Ghalib, ye khayaal achha hai"
+      ],
+      "en": "We know the truth about paradise, Ghalib, though the thought of it still comforts the heart."
+    }
+  ]
+}

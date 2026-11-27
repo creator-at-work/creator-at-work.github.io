@@ -1,0 +1,68 @@
+{
+  "video_id": "49XOMo2hak0",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 30.0,
+      "end": 47.0,
+      "lines": [
+        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?"
+      ],
+      "en": "It is only a heart, neither stone nor brick, so why should it not fill with pain?"
+    },
+    {
+      "start": 60.0,
+      "end": 87.0,
+      "lines": [
+        "Dard se bhar na aaye kyun?",
+        "Royenge hum hazaar baar, koi hamein sataaye kyun?"
+      ],
+      "en": "Why should the heart not fill with pain, and why torment us when we will weep a thousand times?"
+    },
+    {
+      "start": 120.0,
+      "end": 149.0,
+      "lines": [
+        "Qaid-e-hayaat o band-e-gham, asl mein dono ek hain.",
+        "Maut se pehle aadmi gham se nijaat paaye kyun?"
+      ],
+      "en": "If life's prison and sorrow's chains are one, why should anyone find release before death?"
+    },
+    {
+      "start": 149.0,
+      "end": 177.0,
+      "lines": [
+        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?",
+        "Royenge hum hazaar baar, koi hamein sataaye kyun?"
+      ],
+      "en": "Why should a heart that is neither stone nor brick not fill with pain, and why torment us when we will weep a thousand times?"
+    },
+    {
+      "start": 179.0,
+      "end": 204.0,
+      "lines": [
+        "Ghalib-e-khasta ke baghair, kaun se kaam band hain?"
+      ],
+      "en": "What comes to a standstill without poor Ghalib?"
+    },
+    {
+      "start": 205.0,
+      "end": 232.0,
+      "lines": [
+        "Ghalib-e-khasta ke baghair, kaun se kaam band hain?",
+        "Roiye zaar zaar kya, kijiye haaye haaye kyun?"
+      ],
+      "en": "If nothing comes to a standstill without poor Ghalib, why weep so bitterly or lament at all?"
+    },
+    {
+      "start": 233.0,
+      "end": 259.48,
+      "lines": [
+        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?",
+        "Royenge hum hazaar baar, koi hamein sataaye kyun?"
+      ],
+      "en": "Why should a heart that is neither stone nor brick not fill with pain, and why torment us when we will weep a thousand times?"
+    }
+  ]
+}

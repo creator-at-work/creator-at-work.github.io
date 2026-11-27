@@ -1,0 +1,108 @@
+{
+  "video_id": "HgF3-p3kt7k",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 13.0,
+      "lines": [
+        "Ab to itni bhi nahin milti hai maikhane mein"
+      ],
+      "en": "These days the tavern pours so little."
+    },
+    {
+      "start": 13.0,
+      "end": 29.0,
+      "lines": [
+        "Ab to itni bhi nahin milti hai maikhane mein",
+        "Jitni hum chhod diya karte the paimane mein"
+      ],
+      "en": "The tavern now pours less than I used to leave in my cup."
+    },
+    {
+      "start": 34.0,
+      "end": 58.0,
+      "lines": [
+        "Main nazar se pee raha hoon, yeh samaa badal na jaaye"
+      ],
+      "en": "I drink with my eyes, may this moment hold."
+    },
+    {
+      "start": 77.0,
+      "end": 85.0,
+      "lines": [
+        "Main nazar se pee raha hoon, yeh samaa badal na jaaye"
+      ],
+      "en": "I drink with my eyes, may this moment hold."
+    },
+    {
+      "start": 85.0,
+      "end": 107.0,
+      "lines": [
+        "Main nazar se pee raha hoon, yeh samaa badal na jaaye",
+        "Na jhukao tum nigaahein, kahin raat dhal na jaaye"
+      ],
+      "en": "I drink with my eyes, so keep your gaze upon me lest the night slip away and take this moment with it."
+    },
+    {
+      "start": 107.0,
+      "end": 115.0,
+      "lines": [
+        "Na jhukao tum nigaahein, kahin raat dhal na jaaye"
+      ],
+      "en": "Keep your gaze upon me lest the night slip away."
+    },
+    {
+      "start": 136.0,
+      "end": 149.32,
+      "lines": [
+        "Mere ashk bhi hain is mein, yeh sharaab ubal na jaaye"
+      ],
+      "en": "My tears are in this wine too, and I fear it may come to a boil."
+    },
+    {
+      "start": 149.32,
+      "end": 169.04,
+      "lines": [
+        "Mere ashk bhi hain is mein, yeh sharaab ubal na jaaye",
+        "Mera jaam chhoone waale, tera haath jal na jaaye"
+      ],
+      "en": "My tears are in this wine too, and if it comes to a boil my cup may burn your hand."
+    },
+    {
+      "start": 169.04,
+      "end": 185.04,
+      "lines": [
+        "Mera jaam chhoone waale, tera haath jal na jaaye"
+      ],
+      "en": "Take care as you touch my cup, for it may burn your hand."
+    },
+    {
+      "start": 199.04,
+      "end": 217.04,
+      "lines": [
+        "Meri zindagi ke maalik, mere dil pe haath rakh de"
+      ],
+      "en": "You who hold my life, lay your hand upon my heart."
+    },
+    {
+      "start": 217.04,
+      "end": 242.04,
+      "lines": [
+        "Meri zindagi ke maalik, mere dil pe haath rakh de",
+        "Tere aane ki khushi mein, mera dam nikal na jaaye"
+      ],
+      "en": "You who hold my life, lay your hand upon my heart lest the joy of your coming take my last breath."
+    },
+    {
+      "start": 242.04,
+      "end": 263.04,
+      "lines": [
+        "Tere aane ki khushi mein, mera dam nikal na jaaye",
+        "Main nazar se pee raha hoon, yeh samaa badal na jaaye"
+      ],
+      "en": "The joy of your coming may take my last breath, yet I drink with my eyes and wish this moment would hold."
+    }
+  ]
+}
