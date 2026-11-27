@@ -1,72 +1,95 @@
 {
   "video_id": "EqjO3K2N2K4",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 39.0,
+      "start": 17.44,
+      "end": 37.56,
       "lines": [
-        "Ae mohabbat, tere anjaam pe rona aaya"
+        "Ae mohabbat tere anjaam pe rona aaya"
       ],
       "en": "O love, I wept at how you ended."
     },
     {
-      "start": 44.8,
-      "end": 59.0,
+      "start": 44.96,
+      "end": 58.76,
       "lines": [
         "Jaane kyun aaj tere naam pe rona aaya"
       ],
-      "en": "I wonder why your name brought me to tears today."
+      "en": "I don't know why your name made me weep today."
     },
     {
-      "start": 60.0,
-      "end": 85.0,
+      "start": 65.92,
+      "end": 67.8,
+      "lines": [
+        "Yun to har"
+      ],
+      "en": "It used to be that every..."
+    },
+    {
+      "start": 75.84,
+      "end": 84.04,
       "lines": [
         "Yun to har shaam ummeedon mein guzar jaati thi"
       ],
       "en": "Every evening used to pass in hope."
     },
     {
-      "start": 85.0,
-      "end": 103.0,
+      "start": 88.72,
+      "end": 103.24,
       "lines": [
         "Aaj kuchh baat hai jo shaam pe rona aaya"
       ],
-      "en": "Something about this evening moved me to tears."
+      "en": "Something was different today, and the evening moved me to tears."
     },
     {
-      "start": 113.0,
-      "end": 137.0,
+      "start": 113.04,
+      "end": 114.04,
       "lines": [
-        "Kabhi taqdeer ka maatam, kabhi duniya ka gila"
+        "Kabhi"
+      ],
+      "en": "Sometimes..."
+    },
+    {
+      "start": 123.6,
+      "end": 134.12,
+      "lines": [
+        "Kabhi taqdeer ka maatam kabhi duniya ka gila"
       ],
       "en": "Sometimes I mourned my fate, sometimes I blamed the world."
     },
     {
-      "start": 143.0,
-      "end": 156.0,
+      "start": 144.0,
+      "end": 155.72,
       "lines": [
         "Manzil-e-ishq mein har gaam pe rona aaya"
       ],
-      "en": "On the road of love, I wept at every step."
+      "en": "On love's road, every step brought me to tears."
     },
     {
-      "start": 167.0,
-      "end": 186.0,
+      "start": 167.2,
+      "end": 180.76,
       "lines": [
-        "Jab hua zikr zamaane mein mohabbat ka, Shakeel"
+        "Jab hua zikr zamaane mein mohabbat ka Shakeel"
       ],
-      "en": "Then people spoke of love, Shakeel."
+      "en": "When people spoke of love, Shakeel, I thought of my own heart."
     },
     {
-      "start": 186.0,
-      "end": 206.04,
+      "start": 186.32,
+      "end": 194.28,
       "lines": [
-        "Mujh ko apne dil-e-naakaam pe rona aaya",
-        "Ae mohabbat, tere anjaam pe rona aaya"
+        "Mujhko apne dil-e-naakaam pe rona aaya"
       ],
-      "en": "I wept for my thwarted heart and for how you ended, O love."
+      "en": "I wept for my own disappointed heart."
+    },
+    {
+      "start": 195.12,
+      "end": 204.2,
+      "lines": [
+        "Ae mohabbat tere anjaam pe rona aaya"
+      ],
+      "en": "O love, I wept at how you ended."
     }
   ]
 }

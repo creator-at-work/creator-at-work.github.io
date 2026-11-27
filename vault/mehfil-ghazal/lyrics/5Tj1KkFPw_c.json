@@ -1,196 +1,127 @@
 {
   "video_id": "5Tj1KkFPw_c",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 37.4,
+      "start": 27.28,
+      "end": 48.08,
       "lines": [
-        "Rooth gaya, ab us ka haal bataayen kya?"
+        "Woh ishq jo humse rooth gaya, ab uska haal batayen kya?"
       ],
-      "en": "It turned away, and what can we say of it now?"
+      "en": "What can I say now of the love that turned away?"
     },
     {
-      "start": 37.4,
-      "end": 48.0,
+      "start": 48.16,
+      "end": 58.6,
       "lines": [
-        "Woh ishq jo hum se rooth gaya, ab us ka haal bataayen kya?"
+        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunayen kya?"
       ],
-      "en": "What can we say now of the love that turned away from us?"
+      "en": "With neither kindness nor wrath, what honest verse can I recite?"
     },
     {
-      "start": 48.0,
-      "end": 58.0,
+      "start": 58.72,
+      "end": 64.16,
       "lines": [
-        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunaayen kya?"
+        "Woh ishq jo humse rooth gaya."
       ],
-      "en": "With neither tenderness nor wrath, what true verse can we recite?"
+      "en": "That love has turned away from me."
     },
     {
-      "start": 58.0,
-      "end": 64.0,
+      "start": 79.44,
+      "end": 102.92,
       "lines": [
-        "Woh ishq jo hum se rooth gaya."
+        "Ek hijr jo humko laahiq hai, ta der use dohrayen kya?"
       ],
-      "en": "That love turned away from us."
+      "en": "How long must I go on telling of the separation that haunts me?"
     },
     {
-      "start": 79.0,
-      "end": 90.0,
+      "start": 103.04,
+      "end": 123.76,
       "lines": [
-        "Ik hijr jo hum ko laahaq hai, taa-der use dohraayen kya?"
+        "Woh zahr jo dil mein utaar liya, phir uske naaz uthayen kya?"
       ],
-      "en": "Why keep telling of the separation that still afflicts us?"
+      "en": "Must I still indulge the whims of the one whose poison I took to heart?"
     },
     {
-      "start": 92.0,
-      "end": 113.0,
+      "start": 123.84,
+      "end": 134.28,
       "lines": [
-        "Ik hijr jo hum ko laahaq hai, taa-der use dohraayen kya?",
-        "Woh zehr jo dil mein utaar liya, phir us ke naaz uthaayen kya?"
+        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunayen kya?"
       ],
-      "en": "Why keep speaking of this separation or still indulge the poison we took to heart?"
+      "en": "With neither kindness nor wrath, what honest verse can I recite?"
     },
     {
-      "start": 113.0,
-      "end": 123.0,
+      "start": 134.4,
+      "end": 139.84,
       "lines": [
-        "Woh zehr jo dil mein utaar liya, phir us ke naaz uthaayen kya?"
+        "Woh ishq jo humse rooth gaya."
       ],
-      "en": "Why still indulge the poison we took to heart?"
+      "en": "That love has turned away from me."
     },
     {
-      "start": 123.0,
-      "end": 134.0,
+      "start": 165.6,
+      "end": 188.92,
       "lines": [
-        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunaayen kya?"
+        "Ek aag lagi tanhai ki, jo saare badan mein phail gayi."
       ],
-      "en": "With neither tenderness nor wrath, what true verse can we recite?"
+      "en": "A fire of solitude caught and spread through my whole body."
     },
     {
-      "start": 134.0,
-      "end": 140.0,
+      "start": 189.04,
+      "end": 209.92,
       "lines": [
-        "Woh ishq jo hum se rooth gaya."
+        "Jab jism hi saara jalta ho, phir daaman-e-dil ko bachayen kya?"
       ],
-      "en": "That love turned away from us."
+      "en": "When the whole body burns, how can I spare even the hem of the heart?"
     },
     {
-      "start": 143.0,
-      "end": 164.0,
+      "start": 210.0,
+      "end": 220.36,
       "lines": [
-        "Ik aag gham-e-tanhaai ki, jo saare badan mein.",
-        "Ik aag gham-e-tanhaai ki, jo saare badan mein."
+        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunayen kya?"
       ],
-      "en": "The grief of solitude was a fire within the whole body."
+      "en": "With neither kindness nor wrath, what honest verse can I recite?"
     },
     {
-      "start": 164.0,
-      "end": 176.0,
-      "lines": [
-        "Ik aag gham-e-tanhaai ki, jo saare badan mein phail gayi."
-      ],
-      "en": "The grief of solitude spread like fire through the body."
-    },
-    {
-      "start": 178.0,
-      "end": 199.0,
-      "lines": [
-        "Ik aag gham-e-tanhaai ki, jo saare badan mein phail gayi.",
-        "Jab jism hi saara jalta ho, phir daaman-e-dil ko bachaayen kya?"
-      ],
-      "en": "When the fire of solitude has spread through the whole body, how can we save even the hem of the heart?"
-    },
-    {
-      "start": 199.0,
-      "end": 209.3,
-      "lines": [
-        "Jab jism hi saara jalta ho, phir daaman-e-dil ko bachaayen kya?"
-      ],
-      "en": "When the whole body burns, how can we save even the hem of the heart?"
-    },
-    {
-      "start": 209.3,
-      "end": 220.0,
-      "lines": [
-        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunaayen kya?"
-      ],
-      "en": "With neither tenderness nor wrath, what true verse can we recite?"
-    },
-    {
-      "start": 220.0,
+      "start": 220.48,
       "end": 226.0,
       "lines": [
-        "Woh ishq jo hum se rooth gaya."
+        "Woh ishq jo humse rooth gaya."
       ],
-      "en": "That love turned away from us."
+      "en": "That love has turned away from me."
     },
     {
-      "start": 229.0,
-      "end": 238.0,
+      "start": 236.08,
+      "end": 259.52,
       "lines": [
-        "Hum naghma-sara kuchh ghazlon ke, hum surat-gar kuchh khwaabon ke."
+        "Hum naghma-sara kuchh ghazlon ke, hum suratgar kuchh khwabon ke."
       ],
-      "en": "We sing a few ghazals and give shape to a few dreams."
+      "en": "I sing a few ghazals and give shape to a few dreams."
     },
     {
-      "start": 240.0,
-      "end": 255.0,
+      "start": 259.6,
+      "end": 280.32,
       "lines": [
-        "Hum naghma-sara kuchh ghazlon ke, hum surat-gar kuchh khwaabon ke.",
-        "Hum naghma-sara kuchh ghazlon ke, hum surat-gar kuchh khwaabon ke."
+        "Be-jazba-e-shauq sunayen kya, koi khwab na ho to batayen kya?"
       ],
-      "en": "We sing a few ghazals and give shape to a few dreams."
+      "en": "What can I sing without longing, what can I tell without a dream?"
     },
     {
-      "start": 256.0,
-      "end": 264.84,
+      "start": 280.4,
+      "end": 290.8,
       "lines": [
-        "Koi khwaab na ho to bataayen kya, be-jazba-e-shauq sunaayen kya?"
+        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunayen kya?"
       ],
-      "en": "With no dream to tell and no longing left, what can we sing?"
+      "en": "With neither kindness nor wrath, what honest verse can I recite?"
     },
     {
-      "start": 264.84,
-      "end": 275.32,
+      "start": 290.88,
+      "end": 324.24,
       "lines": [
-        "Koi khwaab na ho to bataayen kya, be-jazba-e-shauq sunaayen kya?"
+        "Woh ishq jo humse rooth gaya, ab uska haal batayen kya?"
       ],
-      "en": "With no dream to tell and no longing left, what can we sing?"
-    },
-    {
-      "start": 275.32,
-      "end": 290.68,
-      "lines": [
-        "Koi khwaab na ho to bataayen kya?",
-        "Koi mehr nahin, koi qahr nahin, phir sachcha sher sunaayen kya?"
-      ],
-      "en": "With no dream to tell and neither tenderness nor wrath, what true verse can we recite?"
-    },
-    {
-      "start": 290.68,
-      "end": 300.68,
-      "lines": [
-        "Woh ishq jo hum se rooth gaya, ab us ka haal bataayen kya?"
-      ],
-      "en": "What can we say now of the love that turned away from us?"
-    },
-    {
-      "start": 300.68,
-      "end": 311.68,
-      "lines": [
-        "Woh ishq jo hum se rooth gaya, ab us ka haal bataayen kya?"
-      ],
-      "en": "What can we say now of the love that turned away from us?"
-    },
-    {
-      "start": 311.68,
-      "end": 325.68,
-      "lines": [
-        "Woh ishq jo hum se rooth gaya, ab us ka haal bataayen kya?"
-      ],
-      "en": "What can we say now of the love that turned away from us?"
+      "en": "What can I say now of the love that turned away?"
     }
   ]
 }
