@@ -1,169 +1,135 @@
 {
   "video_id": "LZenFfb1SQk",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 40.34,
-      "end": 51.04,
+      "start": 40.56,
+      "end": 61.08,
       "lines": [
         "Koi fariyaad tere dil mein dabi ho jaise"
       ],
-      "en": "It is as though an unspoken plea lies buried in your heart."
+      "en": "As though your heart held an unspoken plea."
     },
     {
-      "start": 51.04,
-      "end": 73.04,
+      "start": 63.12,
+      "end": 72.76,
       "lines": [
-        "Koi fariyaad tere dil mein dabi ho jaise",
         "Tune aankhon se koi baat kahi ho jaise"
       ],
-      "en": "It is as though your eyes have spoken a plea your heart is keeping."
+      "en": "As though your eyes had said something."
     },
     {
-      "start": 74.04,
-      "end": 85.04,
+      "start": 74.24,
+      "end": 95.08,
       "lines": [
-        "Jaagte jaagte ik umr kati ho jaise"
+        "Jaagte jaagte ek umr kati ho jaise"
       ],
-      "en": "It feels as though a lifetime has passed in wakefulness."
+      "en": "As though a lifetime had passed without sleep."
     },
     {
-      "start": 85.44,
-      "end": 107.52,
+      "start": 96.96,
+      "end": 106.68,
       "lines": [
-        "Jaagte jaagte ik umr kati ho jaise",
         "Jaan baaqi hai magar saans ruki ho jaise"
       ],
-      "en": "It feels as though I have spent a lifetime awake, still alive with my breath suspended."
+      "en": "As though life lingered after the breath had stopped."
     },
     {
-      "start": 161.64,
-      "end": 184.14,
+      "start": 150.4,
+      "end": 171.96,
       "lines": [
-        "Har mulaaqaat pe mehsoos yahi hota hai",
+        "Har mulaaqaat pe mehsoos yahi hota hai"
+      ],
+      "en": "I feel the same each time we meet."
+    },
+    {
+      "start": 173.04,
+      "end": 183.08,
+      "lines": [
         "Mujhse kuchh teri nazar poochh rahi ho jaise"
       ],
-      "en": "Each time we meet, I feel as though your eyes are asking me something."
+      "en": "As though your gaze were asking me something."
     },
     {
-      "start": 186.84,
-      "end": 205.84,
-      "lines": [
-        "Raah chalte hue aksar ye gumaan hota hai",
-        "Raah chalte hue aksar ye gumaan hota hai"
-      ],
-      "en": "As I walk along, this feeling often comes over me."
-    },
-    {
-      "start": 205.84,
-      "end": 215.84,
+      "start": 207.2,
+      "end": 228.44,
       "lines": [
         "Raah chalte hue aksar ye gumaan hota hai"
       ],
-      "en": "As I walk along, this feeling often comes over me."
+      "en": "Walking along, I often have this feeling."
     },
     {
-      "start": 215.84,
-      "end": 239.84,
+      "start": 229.6,
+      "end": 250.36,
       "lines": [
-        "Raah chalte hue aksar ye gumaan hota hai",
-        "Woh nazar chupke mujhe dekh rahi ho jaise"
+        "Woh nazar chhup ke mujhe dekh rahi ho jaise"
       ],
-      "en": "As I walk along, I often feel as though those eyes are quietly watching me."
+      "en": "As though those eyes were watching me unseen."
     },
     {
-      "start": 239.84,
-      "end": 250.84,
+      "start": 314.48,
+      "end": 335.48,
       "lines": [
-        "Mujhe dekh rahi ho jaise"
+        "Ek lamhe mein simat aaya hai sadiyon ka safar"
       ],
-      "en": "It is as though those eyes are watching me."
+      "en": "A journey of centuries has folded into a moment."
     },
     {
-      "start": 299.84,
-      "end": 312.84,
-      "lines": [
-        "Ik lamhe mein simat aaya hai sadiyon ka safar",
-        "Ik lamhe mein simat aaya hai sadiyon ka safar"
-      ],
-      "en": "A journey of centuries has folded into a single moment."
-    },
-    {
-      "start": 312.84,
-      "end": 326.84,
-      "lines": [
-        "Ik lamhe mein simat aaya hai sadiyon ka safar",
-        "Ik lamhe mein simat aaya hai sadiyon ka safar"
-      ],
-      "en": "A journey of centuries has folded into a single moment."
-    },
-    {
-      "start": 326.84,
-      "end": 347.84,
-      "lines": [
-        "Ik lamhe mein simat aaya hai sadiyon ka safar",
-        "Zindagi tez, bahut tez chali ho jaise"
-      ],
-      "en": "A journey of centuries has folded into a moment, as though life had rushed past."
-    },
-    {
-      "start": 347.84,
-      "end": 358.84,
+      "start": 336.96,
+      "end": 357.8,
       "lines": [
         "Zindagi tez, bahut tez chali ho jaise"
       ],
-      "en": "It is as though life had rushed past."
+      "en": "As though life had swept by all too quickly."
     },
     {
-      "start": 407.84,
-      "end": 436.84,
+      "start": 418.96,
+      "end": 440.28,
       "lines": [
-        "Is tarah pehron tujhe sochta rehta hoon main",
+        "Is tarah pehron tujhe sochta rehta hoon main"
+      ],
+      "en": "I go on thinking of you like this for hours."
+    },
+    {
+      "start": 441.68,
+      "end": 462.28,
+      "lines": [
         "Meri har saans tere naam likhi ho jaise"
       ],
-      "en": "I think of you for hours, as though every breath of mine were written in your name."
+      "en": "As though each breath of mine were written in your name."
     },
     {
-      "start": 436.84,
-      "end": 450.84,
+      "start": 464.24,
+      "end": 473.72,
       "lines": [
-        "Meri har saans tere naam likhi ho jaise"
+        "Koi fariyaad tere dil mein dabi ho jaise"
       ],
-      "en": "It is as though every breath of mine were written in your name."
+      "en": "As though your heart held an unspoken plea."
     },
     {
-      "start": 450.84,
-      "end": 457.84,
-      "lines": [
-        "Meri har saans tere naam"
-      ],
-      "en": "Every breath of mine bears your name."
-    },
-    {
-      "start": 457.84,
-      "end": 464.84,
+      "start": 475.52,
+      "end": 485.08,
       "lines": [
         "Tune aankhon se koi baat kahi ho jaise"
       ],
-      "en": "It is as though your eyes had said something."
+      "en": "As though your eyes had said something."
     },
     {
-      "start": 470.84,
-      "end": 478.84,
+      "start": 486.72,
+      "end": 496.12,
       "lines": [
-        "Tune aankhon se koi baat kahi ho jaise"
+        "Jaagte jaagte ek umr kati ho jaise"
       ],
-      "en": "It is as though your eyes had said something."
+      "en": "As though a lifetime had passed without sleep."
     },
     {
-      "start": 484.84,
-      "end": 508.84,
+      "start": 498.16,
+      "end": 507.8,
       "lines": [
-        "Jaagte jaagte ik umr kati ho jaise",
         "Jaan baaqi hai magar saans ruki ho jaise"
       ],
-      "en": "It feels as though I have spent a lifetime awake, still alive with my breath suspended."
+      "en": "As though life lingered after the breath had stopped."
     }
   ]
 }

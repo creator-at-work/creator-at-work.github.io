@@ -1,238 +1,215 @@
 {
   "video_id": "oeX7JDyLmng",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 53.1,
+      "start": 42.48,
+      "end": 60.52,
       "lines": [
         "Aaye kuchh abr, kuchh sharaab aaye"
       ],
       "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 53.1,
-      "end": 75.1,
+      "start": 65.36,
+      "end": 76.08,
       "lines": [
-        "Aaye kuchh abr, kuchh sharaab aaye",
-        "Uske baad aaye jo azaab aaye"
+        "Uske baad jo azaab aaye"
       ],
-      "en": "Let a few clouds come, and a little wine, then let whatever torment follows come."
+      "en": "Then let whatever sorrow comes, come."
     },
     {
-      "start": 75.1,
-      "end": 97.1,
+      "start": 76.08,
+      "end": 97.6,
       "lines": [
         "Aaye kuchh abr, kuchh sharaab aaye"
       ],
       "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 97.1,
-      "end": 110.1,
+      "start": 97.6,
+      "end": 107.76,
       "lines": [
-        "Uske baad aaye jo azaab aaye"
+        "Uske baad jo azaab aaye"
       ],
-      "en": "After that, let whatever torment follows come."
+      "en": "Then let whatever sorrow comes, come."
     },
     {
-      "start": 121.1,
-      "end": 151.1,
+      "start": 107.76,
+      "end": 109.6,
       "lines": [
-        "Baam-e-meena se"
+        "Aaye kuchh abr, kuchh sharaab aaye"
       ],
-      "en": "From the lip of the wine flask."
+      "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 151.1,
-      "end": 180.1,
+      "start": 121.2,
+      "end": 126.0,
       "lines": [
-        "Mahtaab utre"
+        "Baam-e-meena se mahtaab utre"
       ],
-      "en": "Let the moon descend."
+      "en": "Let the moon descend from the rooftop of the tavern."
     },
     {
-      "start": 180.1,
-      "end": 201.5,
+      "start": 155.96,
+      "end": 180.16,
       "lines": [
-        "Baam-e-meena se"
+        "Baam-e-meena se mahtaab utre"
       ],
-      "en": "From the lip of the wine flask."
+      "en": "Let the moon descend from the rooftop of the tavern."
     },
     {
-      "start": 201.5,
-      "end": 227.22,
+      "start": 184.2,
+      "end": 185.4,
       "lines": [
-        "Mahtaab utre",
         "Dast-e-saaqi mein aaftaab aaye"
       ],
-      "en": "Let the moon descend and the sun come into the cupbearer's hand."
+      "en": "Let the sun come to rest in the cupbearer's hand."
     },
     {
-      "start": 227.22,
-      "end": 247.34,
+      "start": 204.2,
+      "end": 208.0,
       "lines": [
-        "Aaye kuchh abr, kuchh sharaab aaye",
-        "Uske baad aaye jo azaab aaye"
+        "Baam-e-meena se mahtaab utre"
       ],
-      "en": "Let a few clouds come, and a little wine, then let whatever torment follows come."
+      "en": "Let the moon descend from the rooftop of the tavern."
     },
     {
-      "start": 255.34,
-      "end": 267.86,
+      "start": 208.44,
+      "end": 228.68,
       "lines": [
-        "Kar raha tha"
+        "Dast-e-saaqi mein aaftaab aaye"
       ],
-      "en": "I was reckoning."
+      "en": "Let the sun come to rest in the cupbearer's hand."
     },
     {
-      "start": 269.14,
-      "end": 277.74,
+      "start": 230.6,
+      "end": 236.64,
       "lines": [
-        "Gham-e-jahaan ka hisaab"
+        "Aaye kuchh abr, kuchh sharaab aaye"
       ],
-      "en": "I was tallying the world's sorrows."
+      "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 277.74,
-      "end": 298.74,
+      "start": 236.64,
+      "end": 246.36,
+      "lines": [
+        "Uske baad jo azaab aaye"
+      ],
+      "en": "Then let whatever sorrow comes, come."
+    },
+    {
+      "start": 255.84,
+      "end": 278.32,
       "lines": [
         "Kar raha tha gham-e-jahaan ka hisaab"
       ],
-      "en": "I was tallying the world's sorrows."
+      "en": "I was counting the sorrows of the world."
     },
     {
-      "start": 298.74,
-      "end": 325.74,
+      "start": 284.44,
+      "end": 294.68,
       "lines": [
-        "Gham-e-jahaan ka hisaab"
+        "Kar raha tha gham-e-jahaan ka hisaab"
       ],
-      "en": "I was tallying the world's sorrows."
+      "en": "I was counting the sorrows of the world."
     },
     {
-      "start": 325.74,
-      "end": 345.3,
+      "start": 301.08,
+      "end": 336.08,
       "lines": [
-        "Kar raha tha gham-e-jahaan ka hisaab",
+        "Kar raha tha gham-e-jahaan ka hisaab"
+      ],
+      "en": "I was counting the sorrows of the world."
+    },
+    {
+      "start": 336.36,
+      "end": 365.76,
+      "lines": [
         "Aaj tum yaad be-hisaab aaye"
       ],
-      "en": "I was tallying the world's sorrows when you came to mind today beyond all reckoning."
+      "en": "Today you came to mind beyond all counting."
     },
     {
-      "start": 345.78,
-      "end": 364.74,
-      "lines": [
-        "Aaj tum yaad be-hisaab aaye"
-      ],
-      "en": "Today you came to mind beyond all reckoning."
-    },
-    {
-      "start": 365.74,
-      "end": 372.74,
+      "start": 365.76,
+      "end": 370.96,
       "lines": [
         "Aaye kuchh abr, kuchh sharaab aaye"
       ],
       "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 385.74,
-      "end": 398.74,
+      "start": 390.16,
+      "end": 447.92,
       "lines": [
-        "Apni khamoshi goonji"
+        "Is tarah apni khamoshi goonji"
       ],
-      "en": "My own silence echoed."
+      "en": "How our silence echoed."
     },
     {
-      "start": 398.74,
-      "end": 420.74,
+      "start": 447.92,
+      "end": 466.96,
       "lines": [
-        "Apni khamoshi"
+        "Goya har samt se jawaab aaye"
       ],
-      "en": "It was my own silence."
+      "en": "It was as though an answer came from every side."
     },
     {
-      "start": 421.74,
-      "end": 434.74,
-      "lines": [
-        "Apni khamoshi goonji"
-      ],
-      "en": "My own silence echoed."
-    },
-    {
-      "start": 436.74,
-      "end": 455.74,
-      "lines": [
-        "Is tarah apni khamoshi goonji",
-        "Goya har simt se jawaab aaye"
-      ],
-      "en": "My silence echoed as though answers had come from every side."
-    },
-    {
-      "start": 456.74,
-      "end": 466.74,
-      "lines": [
-        "Goya har simt se jawaab aaye"
-      ],
-      "en": "It was as though answers had come from every side."
-    },
-    {
-      "start": 466.74,
-      "end": 473.74,
+      "start": 466.96,
+      "end": 474.04,
       "lines": [
         "Aaye kuchh abr, kuchh sharaab aaye"
       ],
       "en": "Let a few clouds come, and a little wine."
     },
     {
-      "start": 486.74,
-      "end": 499.74,
+      "start": 493.68,
+      "end": 524.72,
       "lines": [
-        "Faiz, thi raah"
+        "Faiz, thi raah sar-ba-sar manzil"
       ],
-      "en": "There was a road, Faiz."
+      "en": "Faiz, every step of the road was an arrival."
     },
     {
-      "start": 499.74,
-      "end": 519.74,
+      "start": 533.16,
+      "end": 544.48,
       "lines": [
-        "Faiz, thi raah"
+        "Faiz, thi raah sar-ba-sar manzil"
       ],
-      "en": "There was a road, Faiz."
+      "en": "Faiz, every step of the road was an arrival."
     },
     {
-      "start": 519.74,
-      "end": 533.74,
-      "lines": [
-        "Sar-ba-sar manzil"
-      ],
-      "en": "Every step was an arrival."
-    },
-    {
-      "start": 533.74,
-      "end": 553.74,
-      "lines": [
-        "Faiz, thi raah sar-ba-sar manzil",
-        "Hum jahaan pahunche kaamyaab aaye"
-      ],
-      "en": "Faiz, the road was itself the destination, and wherever we reached, we arrived fulfilled."
-    },
-    {
-      "start": 553.74,
-      "end": 563.74,
+      "start": 544.48,
+      "end": 563.68,
       "lines": [
         "Hum jahaan pahunche kaamyaab aaye"
       ],
-      "en": "Wherever we reached, we arrived fulfilled."
+      "en": "Wherever we arrived, we came through."
     },
     {
-      "start": 563.74,
-      "end": 585.74,
+      "start": 563.68,
+      "end": 573.36,
       "lines": [
-        "Aaye kuchh abr, kuchh sharaab aaye",
-        "Uske baad aaye jo azaab aaye"
+        "Aaye kuchh abr, kuchh sharaab aaye"
       ],
-      "en": "Let a few clouds come, and a little wine, then let whatever torment follows come."
+      "en": "Let a few clouds come, and a little wine."
+    },
+    {
+      "start": 573.36,
+      "end": 583.28,
+      "lines": [
+        "Uske baad jo azaab aaye"
+      ],
+      "en": "Then let whatever sorrow comes, come."
+    },
+    {
+      "start": 583.28,
+      "end": 584.48,
+      "lines": [
+        "Aaye kuchh abr, kuchh sharaab aaye"
+      ],
+      "en": "Let a few clouds come, and a little wine."
     }
   ]
 }

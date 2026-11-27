@@ -1,203 +1,175 @@
 {
   "video_id": "95DMN5iy-a4",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 52.0,
+      "start": 43.2,
+      "end": 71.64,
       "lines": [
-        "Thukrao ab ke pyaar karo, main nashe mein hoon."
+        "Thukrao ab ke pyaar karo, main nashe mein hoon"
       ],
-      "en": "Turn me away or love me this time, I am drunk."
+      "en": "Turn me away or love me, I am drunk."
     },
     {
-      "start": 52.0,
-      "end": 80.0,
+      "start": 71.64,
+      "end": 80.2,
       "lines": [
-        "Thukrao, thukrao, thukrao ab ke pyaar karo, main nashe mein hoon.",
-        "Jo chaho mere yaar karo, main nashe mein hoon."
+        "Jo chaho mere yaar karo, main nashe mein hoon"
       ],
-      "en": "Turn me away or love me, my dear, do as you will with me while I am drunk."
+      "en": "Do as you wish, my dear, I am drunk."
     },
     {
-      "start": 80.0,
-      "end": 94.0,
+      "start": 81.52,
+      "end": 92.64,
       "lines": [
-        "Thukrao, thukrao, thukrao ab ke pyaar karo, main nashe mein hoon."
+        "Thukrao ab ke pyaar karo, main nashe mein hoon"
       ],
-      "en": "Turn me away or love me this time, I am drunk."
+      "en": "Turn me away or love me, I am drunk."
     },
     {
-      "start": 101.0,
-      "end": 128.0,
+      "start": 121.12,
+      "end": 159.44,
       "lines": [
-        "Ab bhi dila raha hoon yaqeen-e-wafa magar."
+        "Ab bhi dila raha hoon yaqeen-e-wafa magar"
       ],
-      "en": "Even now I am trying to persuade you that my love is true."
+      "en": "Even now I am trying to assure you of my faithfulness."
     },
     {
-      "start": 128.0,
-      "end": 150.0,
+      "start": 159.44,
+      "end": 177.84,
       "lines": [
-        "Ab bhi dila raha hoon yaqeen-e-wafa magar."
+        "Mera na aitbaar karo, main nashe mein hoon"
       ],
-      "en": "Even now I am trying to persuade you that my love is true."
+      "en": "Put no faith in my word, I am drunk."
     },
     {
-      "start": 150.0,
-      "end": 167.0,
+      "start": 177.84,
+      "end": 184.92,
       "lines": [
-        "Ab bhi dila raha hoon yaqeen-e-wafa magar.",
-        "Mera na aitbaar karo, main nashe mein hoon."
+        "Main nashe mein hoon"
       ],
-      "en": "I am still trying to convince you of my devotion, though I am too drunk for you to take my word."
+      "en": "I am drunk."
     },
     {
-      "start": 168.0,
-      "end": 185.0,
+      "start": 226.52,
+      "end": 261.88,
       "lines": [
-        "Mera na aitbaar karo, main nashe mein hoon.",
-        "Main nashe mein hoon, main nashe mein hoon."
+        "Girne do tum mujhe, mera saaghar sambhaal lo"
       ],
-      "en": "You can hardly take my word when I am this drunk."
+      "en": "Let me fall, but keep my wine cup safe."
     },
     {
-      "start": 219.0,
-      "end": 238.0,
+      "start": 261.88,
+      "end": 280.52,
       "lines": [
-        "Girne do, girne do tum mujhe, mera saaghar sambhaal lo."
+        "Itna to mere yaar karo, main nashe mein hoon"
       ],
-      "en": "Let me fall, but catch my cup."
+      "en": "Do this much for me, my dear, I am drunk."
     },
     {
-      "start": 239.0,
-      "end": 252.0,
+      "start": 280.52,
+      "end": 296.16,
       "lines": [
-        "Girne do, girne do, girne do mujhe."
+        "Main nashe mein hoon"
       ],
-      "en": "Let me fall, let me fall."
+      "en": "I am drunk."
     },
     {
-      "start": 252.0,
-      "end": 269.0,
+      "start": 326.32,
+      "end": 357.64,
       "lines": [
-        "Girne do mujhe, mera saaghar sambhaal lo.",
-        "Itna to mere yaar karo, main nashe mein hoon."
+        "Mujhko qadam qadam pe bhatakne do waaiz"
       ],
-      "en": "Let me fall and catch my cup, my dear, do that much for me while I am drunk."
+      "en": "Let me lose my way at every step, preacher."
     },
     {
-      "start": 270.0,
-      "end": 296.56,
+      "start": 357.64,
+      "end": 374.2,
       "lines": [
-        "Itna to mere yaar karo, main nashe mein hoon.",
-        "Main nashe mein hoon, main nashe mein hoon."
+        "Tum apna kaarobaar karo, main nashe mein hoon"
       ],
-      "en": "Do that much for me, my dear, I am drunk."
+      "en": "See to your own affairs, I am drunk."
     },
     {
-      "start": 319.0,
-      "end": 332.0,
+      "start": 404.24,
+      "end": 413.08,
       "lines": [
-        "Mujhko qadam qadam pe bhatakne do, waaizo.",
-        "Mujhko qadam qadam pe bhatakne do, waaizo."
+        "Phir bekhudi mein had se guzarne laga hoon main"
       ],
-      "en": "Let me stray at every step, you preachers."
+      "en": "Lost to myself again, I am beginning to go too far."
     },
     {
-      "start": 333.0,
-      "end": 346.0,
+      "start": 413.08,
+      "end": 416.24,
       "lines": [
-        "Mujhko qadam qadam pe bhatakne do, waaizo.",
-        "Mujhko qadam qadam pe bhatakne do, waaizo."
+        "Phir bekhudi mein"
       ],
-      "en": "Let me stray at every step, you preachers."
+      "en": "Lost to myself again."
     },
     {
-      "start": 347.0,
-      "end": 366.0,
+      "start": 436.68,
+      "end": 448.12,
       "lines": [
-        "Mujhko qadam qadam pe bhatakne do, waaizo.",
-        "Tum apna kaarobaar karo, main nashe mein hoon."
+        "Bekhudi"
       ],
-      "en": "Let me stray at every step, you preachers, and go about your business while I am drunk."
+      "en": "Lost to myself."
     },
     {
-      "start": 366.0,
-      "end": 375.0,
+      "start": 452.8,
+      "end": 456.36,
       "lines": [
-        "Tum apna kaarobaar karo, main nashe mein hoon."
+        "Bekhudi mein"
       ],
-      "en": "Go about your business, I am drunk."
+      "en": "In that forgetting of myself."
     },
     {
-      "start": 377.0,
-      "end": 407.0,
+      "start": 467.04,
+      "end": 475.8,
       "lines": [
-        "Phir bekhudi mein had se."
+        "Phir bekhudi mein had se guzarne laga hoon main"
       ],
-      "en": "Once more, beside myself, I reach the limit."
+      "en": "Lost to myself again, I am beginning to go too far."
     },
     {
-      "start": 407.0,
-      "end": 417.0,
+      "start": 475.8,
+      "end": 494.28,
       "lines": [
-        "Guzarne laga hoon main.",
-        "Phir bekhudi."
+        "Itna na mujhse pyaar karo, main nashe mein hoon"
       ],
-      "en": "I begin to go too far, beside myself again."
+      "en": "Do not love me so much, I am drunk."
     },
     {
-      "start": 419.0,
-      "end": 435.0,
+      "start": 494.28,
+      "end": 510.16,
       "lines": [
-        "Bekhudi, bekhudi."
+        "Main nashe mein hoon"
       ],
-      "en": "I am beside myself again."
+      "en": "I am drunk."
     },
     {
-      "start": 437.0,
-      "end": 464.0,
+      "start": 511.52,
+      "end": 521.08,
       "lines": [
-        "Bekhudi."
+        "Itna na mujhse pyaar karo, main nashe mein hoon"
       ],
-      "en": "I am beside myself."
+      "en": "Do not love me so much, I am drunk."
     },
     {
-      "start": 467.0,
-      "end": 484.34,
+      "start": 521.08,
+      "end": 534.0,
       "lines": [
-        "Phir bekhudi mein had se guzarne laga hoon main.",
-        "Itna na mujhse pyaar karo, main nashe mein hoon."
+        "Main nashe mein hoon"
       ],
-      "en": "I am losing myself and going too far again, so love me a little less while I am drunk."
+      "en": "I am drunk."
     },
     {
-      "start": 484.68,
-      "end": 511.16,
+      "start": 534.28,
+      "end": 541.68,
       "lines": [
-        "Itna na mujhse pyaar karo, main nashe mein hoon.",
-        "Main nashe mein hoon."
+        "Thukrao ab ke pyaar karo, main nashe mein hoon"
       ],
-      "en": "Love me a little less, I am drunk."
-    },
-    {
-      "start": 511.16,
-      "end": 533.16,
-      "lines": [
-        "Itna na mujhse pyaar karo, main nashe mein hoon.",
-        "Main nashe mein hoon, main nashe mein hoon, main nashe mein hoon."
-      ],
-      "en": "Love me a little less, I am drunk."
-    },
-    {
-      "start": 534.16,
-      "end": 543.16,
-      "lines": [
-        "Thukrao ab ke pyaar karo, main nashe mein hoon."
-      ],
-      "en": "Turn me away or love me this time, I am drunk."
+      "en": "Turn me away or love me, I am drunk."
     }
   ]
 }

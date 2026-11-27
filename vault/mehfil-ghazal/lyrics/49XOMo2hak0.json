@@ -1,7 +1,7 @@
 {
   "video_id": "49XOMo2hak0",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
       "start": 30.0,
@@ -13,34 +13,55 @@
     },
     {
       "start": 60.0,
-      "end": 87.0,
+      "end": 67.0,
       "lines": [
-        "Dard se bhar na aaye kyun?",
-        "Royenge hum hazaar baar, koi hamein sataaye kyun?"
+        "Dard se bhar na aaye kyun?"
       ],
-      "en": "Why should the heart not fill with pain, and why torment us when we will weep a thousand times?"
+      "en": "Why should the heart not fill with pain?"
     },
     {
-      "start": 120.0,
+      "start": 68.55,
+      "end": 83.0,
+      "lines": [
+        "Royenge hum hazaar baar, koi hamein sataaye kyun?"
+      ],
+      "en": "We will weep a thousand times, so why should anyone torment us?"
+    },
+    {
+      "start": 107.87,
+      "end": 129.92,
+      "lines": [
+        "Qaid-e-hayaat o band-e-gham, asl mein dono ek hain."
+      ],
+      "en": "The prison of life and the chains of sorrow are one and the same."
+    },
+    {
+      "start": 132.0,
       "end": 149.0,
       "lines": [
-        "Qaid-e-hayaat o band-e-gham, asl mein dono ek hain.",
         "Maut se pehle aadmi gham se nijaat paaye kyun?"
       ],
-      "en": "If life's prison and sorrow's chains are one, why should anyone find release before death?"
+      "en": "Why should anyone be free of sorrow before death?"
     },
     {
       "start": 149.0,
-      "end": 177.0,
+      "end": 162.69,
       "lines": [
-        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?",
+        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?"
+      ],
+      "en": "It is only a heart, neither stone nor brick, so why should it not fill with pain?"
+    },
+    {
+      "start": 163.0,
+      "end": 176.29,
+      "lines": [
         "Royenge hum hazaar baar, koi hamein sataaye kyun?"
       ],
-      "en": "Why should a heart that is neither stone nor brick not fill with pain, and why torment us when we will weep a thousand times?"
+      "en": "We will weep a thousand times, so why should anyone torment us?"
     },
     {
       "start": 179.0,
-      "end": 204.0,
+      "end": 199.12,
       "lines": [
         "Ghalib-e-khasta ke baghair, kaun se kaam band hain?"
       ],
@@ -48,21 +69,35 @@
     },
     {
       "start": 205.0,
-      "end": 232.0,
+      "end": 213.95,
       "lines": [
-        "Ghalib-e-khasta ke baghair, kaun se kaam band hain?",
-        "Roiye zaar zaar kya, kijiye haaye haaye kyun?"
+        "Ghalib-e-khasta ke baghair, kaun se kaam band hain?"
       ],
-      "en": "If nothing comes to a standstill without poor Ghalib, why weep so bitterly or lament at all?"
+      "en": "What comes to a standstill without poor Ghalib?"
     },
     {
-      "start": 233.0,
+      "start": 219.0,
+      "end": 231.43,
+      "lines": [
+        "Roiye zaar zaar kya, kijiye haaye haaye kyun?"
+      ],
+      "en": "Why weep so bitterly, why cry out in grief?"
+    },
+    {
+      "start": 232.54,
+      "end": 245.8,
+      "lines": [
+        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?"
+      ],
+      "en": "It is only a heart, neither stone nor brick, so why should it not fill with pain?"
+    },
+    {
+      "start": 246.44,
       "end": 259.48,
       "lines": [
-        "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun?",
         "Royenge hum hazaar baar, koi hamein sataaye kyun?"
       ],
-      "en": "Why should a heart that is neither stone nor brick not fill with pain, and why torment us when we will weep a thousand times?"
+      "en": "We will weep a thousand times, so why should anyone torment us?"
     }
   ]
 }

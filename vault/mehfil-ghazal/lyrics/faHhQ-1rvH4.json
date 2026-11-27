@@ -1,177 +1,173 @@
 {
   "video_id": "faHhQ-1rvH4",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 27.0,
+      "start": 61.92,
+      "end": 72.46,
       "lines": [
-        "Ghane darakht ke neeche sula ke chhod gaya."
+        "Tumhare shehar ka mausam bada suhana lage"
       ],
-      "en": "He laid me down to sleep beneath a thickly leafed tree and left."
+      "en": "How lovely the weather is in your city."
     },
     {
-      "start": 29.0,
-      "end": 38.6,
+      "start": 75.14,
+      "end": 91.51,
       "lines": [
-        "Ajeeb shakhs tha, sapne dikha ke chhod gaya."
+        "Main ek shaam chura loon agar bura na lage"
       ],
-      "en": "Strange man, he gave me dreams and then left."
+      "en": "Let me steal an evening, if you would not mind."
     },
     {
-      "start": 42.44,
-      "end": 58.44,
+      "start": 92.91,
+      "end": 104.29,
       "lines": [
-        "Ye ujda ghar to usi ek ki nishani hai,",
-        "Vo apne naam ki takhti laga ke chhod gaya."
+        "Tumhare shehar ka mausam bada suhana lage"
       ],
-      "en": "This desolate house is his keepsake, with his name still on the door."
+      "en": "How lovely the weather is in your city."
     },
     {
-      "start": 59.0,
-      "end": 74.0,
+      "start": 121.26,
+      "end": 141.36,
       "lines": [
-        "Tumhare shehar ka mausam bada suhana lage."
+        "Jo doobna hai to itne sukoon se doobo"
       ],
-      "en": "The weather in your city feels so lovely."
+      "en": "If you must drown, go under quietly."
     },
     {
-      "start": 74.0,
-      "end": 80.0,
+      "start": 141.46,
+      "end": 157.81,
       "lines": [
-        "Main ek shaam chura loon."
+        "Ki aas-paas ki lehron ko bhi pata na lage"
       ],
-      "en": "Let me steal an evening."
+      "en": "Let even the waves around you know nothing of it."
     },
     {
-      "start": 80.0,
-      "end": 105.0,
+      "start": 157.82,
+      "end": 162.81,
       "lines": [
-        "Main ek shaam chura loon agar bura na lage,",
-        "Tumhare shehar ka mausam bada suhana lage."
-      ],
-      "en": "If you don't mind, let me steal an evening in this lovely weather of yours."
-    },
-    {
-      "start": 117.0,
-      "end": 129.0,
-      "lines": [
-        "Jo doobna hai to itne sukoon se doobo."
-      ],
-      "en": "If you must drown, do it quietly."
-    },
-    {
-      "start": 129.0,
-      "end": 150.5,
-      "lines": [
-        "Jo doobna hai to itne sukoon se doobo,",
-        "Ke aas-paas ki lehron ko bhi pata na lage."
-      ],
-      "en": "If you must drown, do it so quietly that even the waves around you never know."
-    },
-    {
-      "start": 150.76,
-      "end": 158.66,
-      "lines": [
-        "Ke aas-paas ki lehron ko bhi pata na lage."
-      ],
-      "en": "Let even the waves around you never know."
-    },
-    {
-      "start": 158.98,
-      "end": 163.04,
-      "lines": [
-        "Tumhare shehar ka mausam."
+        "Tumhare shehar ka mausam"
       ],
       "en": "The weather in your city."
     },
     {
-      "start": 172.0,
-      "end": 183.0,
+      "start": 174.54,
+      "end": 182.81,
       "lines": [
-        "Tumhare bas mein agar ho to bhool jao hamein."
+        "Tumhare bas mein agar ho to bhool jaao hamein"
       ],
-      "en": "Forget me if you can."
+      "en": "Forget me, if you can."
     },
     {
-      "start": 187.0,
-      "end": 212.08,
+      "start": 187.89,
+      "end": 195.38,
       "lines": [
-        "Tumhare bas mein agar ho to bhool jao hamein,",
-        "Tumhein bhulane mein shayad hamein zamana lage."
+        "Tumhare bas mein agar ho to bhool jaao hamein"
       ],
-      "en": "Forget me if you can, for it may take me an age to forget you."
+      "en": "Forget me, if you can."
     },
     {
-      "start": 212.56,
-      "end": 225.04,
+      "start": 195.39,
+      "end": 211.91,
       "lines": [
-        "Main ek shaam chura loon agar bura na lage,",
-        "Tumhare shehar ka mausam."
+        "Tumhein bhulane mein shayad hamein zamana lage"
       ],
-      "en": "If you don't mind, let me steal an evening in your city's weather."
+      "en": "It may take me a lifetime to forget you."
     },
     {
-      "start": 226.0,
-      "end": 246.0,
+      "start": 211.92,
+      "end": 220.52,
       "lines": [
-        "Na jaane kya hai kisi ki udaas aankhon mein,",
-        "Na jaane kya hai kisi ki udaas aankhon mein."
+        "Main ek shaam chura loon agar bura na lage"
       ],
-      "en": "Who knows what lies in those sad eyes?"
+      "en": "Let me steal an evening, if you would not mind."
     },
     {
-      "start": 246.0,
-      "end": 283.54,
+      "start": 220.71,
+      "end": 224.93,
       "lines": [
-        "Na jaane kya hai kisi ki udaas aankhon mein,",
-        "Vo munh chhupa ke bhi jaaye to bewafa na lage."
+        "Tumhare shehar ka mausam"
       ],
-      "en": "There's something in those sad eyes that makes even a face turned away seem faithful."
+      "en": "The weather in your city."
     },
     {
-      "start": 283.54,
-      "end": 294.54,
+      "start": 236.98,
+      "end": 244.51,
       "lines": [
-        "Hamare pyaar se jalne lagi hai ye duniya,",
-        "Hamare pyaar se jalne lagi hai ye duniya."
+        "Main nahin jaanta kya hai kisi ki udaas aankhon mein"
       ],
-      "en": "The world has begun to envy our love."
+      "en": "I cannot say what lies in those sad eyes."
     },
     {
-      "start": 296.54,
-      "end": 308.54,
+      "start": 249.15,
+      "end": 256.82,
       "lines": [
-        "Hamare pyaar se jalne lagi hai ye duniya,",
-        "Hamare pyaar se jalne lagi hai ye duniya."
+        "Na jaane kya hai kisi ki udaas aankhon mein"
       ],
-      "en": "The world has begun to envy our love."
+      "en": "Who knows what lies in those sad eyes."
     },
     {
-      "start": 310.54,
-      "end": 335.54,
+      "start": 257.22,
+      "end": 273.96,
       "lines": [
-        "Hamare pyaar se jalne lagi hai ye duniya,",
-        "Dua karo kisi dushman ki baddua na lage."
+        "Woh munh chhupa ke bhi jaaye to bewafa na lage"
       ],
-      "en": "The world has begun to envy our love, so pray that no enemy's curse takes hold."
+      "en": "Even leaving with a hidden face, they seem true."
     },
     {
-      "start": 335.54,
-      "end": 348.54,
+      "start": 273.97,
+      "end": 281.58,
       "lines": [
-        "Main ek shaam chura loon agar bura na lage,",
-        "Tumhare shehar ka mausam."
+        "Main ek shaam chura loon agar bura na lage"
       ],
-      "en": "If you don't mind, let me steal an evening in your city's weather."
+      "en": "Let me steal an evening, if you would not mind."
     },
     {
-      "start": 348.54,
-      "end": 357.54,
+      "start": 281.59,
+      "end": 287.3,
       "lines": [
-        "Tumhare shehar ka mausam,",
-        "Tumhare shehar ka mausam."
+        "Tumhare shehar ka mausam"
+      ],
+      "en": "The weather in your city."
+    },
+    {
+      "start": 299.26,
+      "end": 306.9,
+      "lines": [
+        "Hamare pyaar se jalne lagi hai ek duniya"
+      ],
+      "en": "A whole world has grown jealous of our love."
+    },
+    {
+      "start": 312.01,
+      "end": 314.45,
+      "lines": [
+        "Hamare pyaar se"
+      ],
+      "en": "All for the love we share."
+    },
+    {
+      "start": 320.08,
+      "end": 335.85,
+      "lines": [
+        "Dua karo ke kisi dushman ki baddua na lage"
+      ],
+      "en": "Pray that no enemy's curse finds us."
+    },
+    {
+      "start": 335.86,
+      "end": 344.46,
+      "lines": [
+        "Main ek shaam chura loon agar bura na lage"
+      ],
+      "en": "Let me steal an evening, if you would not mind."
+    },
+    {
+      "start": 345.04,
+      "end": 359.63,
+      "lines": [
+        "Tumhare shehar ka mausam"
       ],
       "en": "The weather in your city."
     }

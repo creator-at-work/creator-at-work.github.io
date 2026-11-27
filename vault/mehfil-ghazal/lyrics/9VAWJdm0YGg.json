@@ -1,107 +1,119 @@
 {
   "video_id": "9VAWJdm0YGg",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 60.0,
-      "end": 70.0,
+      "start": 57.52,
+      "end": 86.24,
       "lines": [
-        "Desh mein, desh mein nikla hoga chaand"
+        "Hum to hain pardes mein, desh mein nikla hoga chaand"
       ],
-      "en": "Back home, the moon must have risen."
+      "en": "Here I am far from home, where the moon must have risen."
     },
     {
-      "start": 72.0,
-      "end": 97.26,
+      "start": 86.24,
+      "end": 95.52,
       "lines": [
-        "Hum to hain pardes mein, desh mein nikla hoga chaand",
         "Apni raat ki chhat par kitna tanha hoga chaand"
       ],
-      "en": "Here we are far from home, and how alone the moon must be above the rooftop of our night."
+      "en": "How lonely the moon must be on the rooftop of its night."
     },
     {
-      "start": 97.26,
-      "end": 110.68,
+      "start": 97.56,
+      "end": 109.32,
       "lines": [
         "Hum to hain pardes mein, desh mein nikla hoga chaand"
       ],
-      "en": "We are far from home, where the moon must have risen by now."
+      "en": "Here I am far from home, where the moon must have risen."
     },
     {
-      "start": 116.0,
-      "end": 140.0,
+      "start": 128.68,
+      "end": 149.0,
       "lines": [
-        "Jin aankhon mein kajal ban kar tairi kaali raat",
         "Jin aankhon mein kajal ban kar tairi kaali raat"
       ],
-      "en": "In those eyes, the dark night floated like kohl."
+      "en": "In those eyes the dark night once floated like kohl."
     },
     {
-      "start": 140.0,
-      "end": 162.0,
+      "start": 151.24,
+      "end": 160.48,
       "lines": [
-        "Jin aankhon mein kajal ban kar tairi kaali raat",
-        "Un aankhon mein aansu ka ek qatra hoga chaand"
+        "Un aankhon mein aansoo ka ek qatra hoga chaand"
       ],
-      "en": "In the eyes where the dark night floated like kohl, the moon must be a single tear."
+      "en": "In those same eyes the moon must be a single tear."
     },
     {
-      "start": 162.4,
-      "end": 175.4,
+      "start": 162.44,
+      "end": 174.2,
       "lines": [
         "Hum to hain pardes mein, desh mein nikla hoga chaand"
       ],
-      "en": "We are far from home, where the moon must have risen by now."
+      "en": "Here I am far from home, where the moon must have risen."
     },
     {
-      "start": 192.4,
-      "end": 229.2,
+      "start": 196.32,
+      "end": 218.48,
       "lines": [
-        "Aangan waale neem mein ja kar atka hoga chaand"
+        "Raat ne aisa pech lagaya, tooti haath se dor"
       ],
-      "en": "The moon must have caught in the branches of the courtyard neem."
+      "en": "The night made such a sudden turn that the kite string snapped in my hand."
+    },
+    {
+      "start": 218.68,
+      "end": 227.76,
+      "lines": [
+        "Aangan wale neem mein ja kar atka hoga chaand"
+      ],
+      "en": "The moon must have snagged in the neem tree in the courtyard."
     },
     {
       "start": 229.8,
-      "end": 242.4,
+      "end": 241.04,
       "lines": [
         "Hum to hain pardes mein, desh mein nikla hoga chaand"
       ],
-      "en": "We are far from home, where the moon must have risen by now."
+      "en": "Here I am far from home, where the moon must have risen."
     },
     {
-      "start": 252.4,
-      "end": 260.56,
+      "start": 260.88,
+      "end": 283.28,
       "lines": [
         "Chaand bina har din yun beeta, jaise yug beete"
       ],
-      "en": "Without the moon, each day passed like an age."
+      "en": "Without the moon, each day felt like an age."
     },
     {
-      "start": 282.4,
-      "end": 293.4,
+      "start": 283.28,
+      "end": 292.28,
       "lines": [
         "Mere bina kis haal mein hoga, kaisa hoga chaand"
       ],
-      "en": "How must the moon be faring without me?"
+      "en": "How is the moon faring without me, I wonder?"
     },
     {
-      "start": 293.4,
-      "end": 319.4,
-      "lines": [
-        "Hum to hain pardes mein, desh mein nikla hoga chaand",
-        "Apni raat ki chhat par kitna tanha hoga chaand"
-      ],
-      "en": "Here we are far from home, and how alone the moon must be above the rooftop of our night."
-    },
-    {
-      "start": 319.4,
-      "end": 332.4,
+      "start": 294.28,
+      "end": 308.52,
       "lines": [
         "Hum to hain pardes mein, desh mein nikla hoga chaand"
       ],
-      "en": "We are far from home, where the moon must have risen by now."
+      "en": "Here I am far from home, where the moon must have risen."
+    },
+    {
+      "start": 308.52,
+      "end": 317.72,
+      "lines": [
+        "Apni raat ki chhat par kitna tanha hoga chaand"
+      ],
+      "en": "How lonely the moon must be on the rooftop of its night."
+    },
+    {
+      "start": 319.76,
+      "end": 331.44,
+      "lines": [
+        "Hum to hain pardes mein, desh mein nikla hoga chaand"
+      ],
+      "en": "Here I am far from home, where the moon must have risen."
     }
   ]
 }

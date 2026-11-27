@@ -891,7 +891,7 @@
     return { video_id: track.video_id, mode: 'empty', couplets: [] };
   }
 
-  const LYRICS_CACHE_VER = 'ff68e56f';
+  const LYRICS_CACHE_VER = 'a2d281d9';
 
   async function loadLyricsForTrack(track) {
     if (!track || !track.video_id) {

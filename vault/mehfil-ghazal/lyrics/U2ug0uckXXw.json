@@ -1,122 +1,111 @@
 {
   "video_id": "U2ug0uckXXw",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 90.0,
-      "end": 118.0,
-      "lines": [
-        "Koi paas aaya savere savere",
-        "Mujhe aazmaya savere savere"
-      ],
-      "en": "Someone came close at daybreak and put me to the test."
-    },
-    {
-      "start": 118.0,
-      "end": 133.7,
+      "start": 84.64,
+      "end": 104.48,
       "lines": [
         "Koi paas aaya savere savere"
       ],
-      "en": "Someone came close at daybreak."
+      "en": "Someone drew near at the first light of dawn."
     },
     {
-      "start": 148.0,
-      "end": 169.0,
+      "start": 104.48,
+      "end": 123.68,
+      "lines": [
+        "Mujhe aazmaya savere savere"
+      ],
+      "en": "I was put to the test at dawn."
+    },
+    {
+      "start": 123.68,
+      "end": 131.52,
+      "lines": [
+        "Koi paas aaya savere savere"
+      ],
+      "en": "Someone drew near at the first light of dawn."
+    },
+    {
+      "start": 155.44,
+      "end": 174.28,
       "lines": [
         "Meri daastaan ko zara sa badal kar"
       ],
-      "en": "My story was altered a little."
+      "en": "They changed my story ever so slightly."
     },
     {
-      "start": 170.0,
-      "end": 193.0,
+      "start": 174.32,
+      "end": 191.84,
       "lines": [
         "Mujhe hi sunaya savere savere"
       ],
-      "en": "At daybreak, it was told back to me."
+      "en": "Then they told it back to me at dawn."
     },
     {
-      "start": 208.0,
-      "end": 231.6,
+      "start": 222.88,
+      "end": 241.76,
       "lines": [
         "Jo kehta tha kal shab sambhalna sambhalna"
       ],
-      "en": "Last night he kept telling me to watch my step."
+      "en": "Last night he kept telling me to mind my step."
     },
     {
-      "start": 232.52,
-      "end": 250.44,
-      "lines": [
-        "Jo kehta tha kal shab sambhalna sambhalna",
-        "Wahi ladkhadaya savere savere"
-      ],
-      "en": "The one who told me to watch my step last night was the one who stumbled at dawn."
-    },
-    {
-      "start": 251.44,
-      "end": 276.68,
+      "start": 242.2,
+      "end": 260.72,
       "lines": [
         "Wahi ladkhadaya savere savere"
       ],
-      "en": "It was he who stumbled at dawn."
+      "en": "By dawn, he was the one who stumbled."
     },
     {
-      "start": 281.44,
-      "end": 306.12,
+      "start": 287.44,
+      "end": 313.44,
       "lines": [
-        "Kati raat saari meri mai-kade mein"
+        "Kati raat saari meri maikade mein"
       ],
       "en": "I spent the whole night in the tavern."
     },
     {
-      "start": 306.12,
-      "end": 326.12,
+      "start": 313.44,
+      "end": 337.0,
       "lines": [
-        "Kati raat saari meri mai-kade mein"
+        "Kati raat saari meri maikade mein"
       ],
-      "en": "The whole night passed for me in the tavern."
+      "en": "I spent the whole night in the tavern."
     },
     {
-      "start": 327.12,
-      "end": 345.52,
-      "lines": [
-        "Kati raat saari meri mai-kade mein",
-        "Khuda yaad aaya savere savere"
-      ],
-      "en": "I spent the whole night in the tavern, and at dawn I remembered God."
-    },
-    {
-      "start": 346.52,
-      "end": 355.72,
+      "start": 337.16,
+      "end": 356.48,
       "lines": [
         "Khuda yaad aaya savere savere"
       ],
-      "en": "At daybreak, I remembered God."
+      "en": "At dawn, I remembered God."
     },
     {
-      "start": 356.32,
-      "end": 365.2,
+      "start": 356.48,
+      "end": 365.84,
       "lines": [
         "Mujhe aazmaya savere savere"
       ],
-      "en": "At daybreak, I was put to the test."
+      "en": "I was put to the test at dawn."
     },
     {
-      "start": 365.92,
-      "end": 374.6,
+      "start": 365.84,
+      "end": 373.44,
       "lines": [
         "Koi paas aaya savere savere"
       ],
-      "en": "Someone came close at daybreak."
+      "en": "Someone drew near at the first light of dawn."
     },
     {
-      "start": 376.52,
-      "end": 405.72,
+      "start": 397.56,
+      "end": 405.36,
       "lines": [
         "Koi paas aaya savere savere"
       ],
-      "en": "Someone came close at daybreak."
+      "en": "Someone drew near at the first light of dawn."
     }
   ]
 }

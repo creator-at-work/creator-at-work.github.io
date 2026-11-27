@@ -1,115 +1,151 @@
 {
   "video_id": "6FWUh0i912o",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 22.12,
-      "end": 43.12,
+      "start": 21.98,
+      "end": 43.5,
       "lines": [
-        "Humko dushman ki nigaahon se na dekha keeje",
         "Humko dushman ki nigaahon se na dekha keeje"
       ],
-      "en": "Do not look at us through the eyes of an enemy."
+      "en": "Do not look at us as you would an enemy."
     },
     {
-      "start": 44.12,
-      "end": 70.16,
+      "start": 43.94,
+      "end": 53.86,
       "lines": [
-        "Pyaar hi pyaar hain hum, pyaar hi pyaar hain hum, hum pe bharosa keeje",
+        "Pyaar hi pyaar hain hum"
+      ],
+      "en": "We are all love."
+    },
+    {
+      "start": 54.2,
+      "end": 59.7,
+      "lines": [
+        "Hum pe bharosa keeje"
+      ],
+      "en": "Put your trust in us."
+    },
+    {
+      "start": 60.26,
+      "end": 71.16,
+      "lines": [
         "Humko dushman ki nigaahon se na dekha keeje"
       ],
-      "en": "Trust us, for we are all love, and turn no enemy's gaze on us."
+      "en": "Do not look at us as you would an enemy."
     },
     {
       "start": 74.12,
-      "end": 95.12,
+      "end": 114.14,
       "lines": [
-        "Chand yaadon ke siwa haath na kuchh aayega",
         "Chand yaadon ke siwa haath na kuchh aayega"
       ],
-      "en": "All you will come away with is a handful of memories."
+      "en": "Only a few memories will be yours to keep."
     },
     {
-      "start": 98.12,
-      "end": 125.12,
+      "start": 115.14,
+      "end": 124.6,
       "lines": [
-        "Chand yaadon ke siwa haath na kuchh aayega",
         "Is tarah umr-e-gurezaan ka na peechha keeje"
       ],
-      "en": "Do not chase the fleeting years so, for they will leave you only a handful of memories."
+      "en": "Do not chase the fleeting years so."
     },
     {
-      "start": 125.12,
-      "end": 138.12,
+      "start": 125.84,
+      "end": 135.0,
       "lines": [
-        "Humko dushman ki nigaahon se na dekha keeje",
-        "Humko dushman ki nigaahon se na dekha keeje"
+        "Pyaar hi pyaar hain hum"
       ],
-      "en": "Do not look at us through the eyes of an enemy."
+      "en": "We are all love."
     },
     {
-      "start": 138.12,
-      "end": 152.12,
+      "start": 139.14,
+      "end": 151.72,
       "lines": [
-        "Humko dushman ki nigaahon se na dekha keeje",
         "Humko dushman ki nigaahon se na dekha keeje"
       ],
-      "en": "Do not look at us through the eyes of an enemy."
+      "en": "Do not look at us as you would an enemy."
     },
     {
       "start": 152.12,
-      "end": 179.36,
+      "end": 190.8,
       "lines": [
-        "Roshni auron ke aangan mein gawaara na sahi",
         "Roshni auron ke aangan mein gawaara na sahi"
       ],
-      "en": "Perhaps you cannot bear the light in another's courtyard."
+      "en": "Perhaps you cannot abide the light in another's courtyard."
     },
     {
-      "start": 179.36,
-      "end": 200.36,
+      "start": 191.06,
+      "end": 201.64,
       "lines": [
-        "Roshni auron ke aangan mein gawaara na sahi",
         "Kam se kam apne hi ghar mein to ujaala keeje"
       ],
-      "en": "If you cannot bear the light in another's courtyard, at least kindle some in your own home."
+      "en": "At least kindle a light in your own home."
     },
     {
-      "start": 202.36,
-      "end": 227.96,
+      "start": 201.92,
+      "end": 211.96,
       "lines": [
-        "Pyaar hi pyaar hain hum, pyaar hi pyaar hain hum, hum pe bharosa keeje",
+        "Pyaar hi pyaar hain hum"
+      ],
+      "en": "We are all love."
+    },
+    {
+      "start": 212.46,
+      "end": 217.48,
+      "lines": [
+        "Hum pe bharosa keeje"
+      ],
+      "en": "Put your trust in us."
+    },
+    {
+      "start": 218.66,
+      "end": 226.84,
+      "lines": [
         "Humko dushman ki nigaahon se na dekha keeje"
       ],
-      "en": "Trust us, for we are all love, and turn no enemy's gaze on us."
+      "en": "Do not look at us as you would an enemy."
     },
     {
       "start": 232.36,
-      "end": 256.36,
+      "end": 272.98,
       "lines": [
-        "Kya khabar kab woh chale aayenge milne ke liye",
         "Kya khabar kab woh chale aayenge milne ke liye"
       ],
-      "en": "Who knows when the beloved might come to see you?"
+      "en": "Who knows when the one you long for might come to see you?"
     },
     {
-      "start": 256.36,
-      "end": 281.36,
+      "start": 273.98,
+      "end": 282.28,
       "lines": [
-        "Kya khabar kab woh chale aayenge milne ke liye",
         "Roz palkon pe nayi shammein jalaaya keeje"
       ],
-      "en": "Light fresh candles on your lashes each day, for who knows when the beloved might come?"
+      "en": "Light fresh candles on your lashes each day."
     },
     {
-      "start": 282.36,
-      "end": 308.36,
+      "start": 283.04,
+      "end": 292.24,
       "lines": [
-        "Pyaar hi pyaar hain hum, pyaar hi pyaar hain hum, hum pe bharosa keeje",
+        "Pyaar hi pyaar hain hum"
+      ],
+      "en": "We are all love."
+    },
+    {
+      "start": 292.36,
+      "end": 297.22,
+      "lines": [
+        "Hum pe bharosa keeje"
+      ],
+      "en": "Put your trust in us."
+    },
+    {
+      "start": 297.36,
+      "end": 309.52,
+      "lines": [
         "Humko dushman ki nigaahon se na dekha keeje"
       ],
-      "en": "Trust us, for we are all love, and turn no enemy's gaze on us."
+      "en": "Do not look at us as you would an enemy."
     }
   ]
 }
