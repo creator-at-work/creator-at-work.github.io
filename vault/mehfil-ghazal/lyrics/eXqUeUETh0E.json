@@ -1,152 +1,180 @@
 {
   "video_id": "eXqUeUETh0E",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 0.03,
-      "end": 24.55,
+      "start": 0.0,
+      "end": 11.5,
       "lines": [
-        "Peete hain na muflis hi, na daulat wale",
+        "Baatein hain, na muflis hi, na daulat wale"
+      ],
+      "en": "Poverty and wealth are only words."
+    },
+    {
+      "start": 11.5,
+      "end": 24.0,
+      "lines": [
         "Pee kar jo maza lete hain qismat wale"
       ],
-      "en": "Rich or poor, only the fortunate know the pleasure of the cup."
+      "en": "Fortunate are those who can savor the wine."
     },
     {
-      "start": 24.55,
-      "end": 50.1,
+      "start": 24.0,
+      "end": 36.0,
       "lines": [
-        "Jo hosh ki daldal mein hain, woh kya jaanein",
-        "Is paar se kis paar gaye matwale"
+        "Jo hosh ki daldal mein hain, woh kya jaanein?"
       ],
-      "en": "How can those mired in sobriety know what shore the wine-drunk have reached?"
+      "en": "What would they know, mired in sobriety?"
     },
     {
-      "start": 50.1,
-      "end": 71.02,
+      "start": 36.0,
+      "end": 48.0,
       "lines": [
-        "Duniya hai hawa, saara bharam hai, saaqi",
-        "Ek aag hai, yeh umr alam hai, saaqi"
+        "Is paar se kis paar gaye matwale?"
       ],
-      "en": "Cupbearer, the world is air and illusion, and this life burns with sorrow."
+      "en": "To what shore have the revelers crossed?"
     },
     {
-      "start": 71.02,
-      "end": 117.05,
+      "start": 50.0,
+      "end": 60.44,
       "lines": [
-        "Paani ki tarah paak hain, lekin",
-        "Ek din mil jaayenge mitti mein, yeh gham hai, saaqi"
+        "Duniya hai hawa, saara bharam hai, saaqi"
       ],
-      "en": "Pure as water, cupbearer, we grieve that one day we will mingle with the dust."
+      "en": "The world is air, all of it an illusion, cupbearer."
     },
     {
-      "start": 117.05,
-      "end": 130.52,
+      "start": 60.44,
+      "end": 70.92,
+      "lines": [
+        "Ik aag hai, yeh umr alam hai, saaqi"
+      ],
+      "en": "Life burns with sorrow, cupbearer."
+    },
+    {
+      "start": 70.92,
+      "end": 79.2,
+      "lines": [
+        "Paani ki tarah paak hain, lekin"
+      ],
+      "en": "And yet, we are as pure as water."
+    },
+    {
+      "start": 79.2,
+      "end": 93.48,
+      "lines": [
+        "Ik din mil jaayenge mitti mein, yeh gham hai, saaqi"
+      ],
+      "en": "Our sorrow, cupbearer, is that one day we will return to dust."
+    },
+    {
+      "start": 104.48,
+      "end": 143.48,
       "lines": [
         "Bikhre pade hain ghaas pe aansoo, samet le"
       ],
       "en": "Gather the tears scattered on the grass."
     },
     {
-      "start": 130.52,
-      "end": 157.02,
+      "start": 143.48,
+      "end": 156.48,
       "lines": [
-        "Bikhre pade hain ghaas pe aansoo, samet le",
         "Yeh chaandni ka dukh hai, magar tu samet le"
       ],
-      "en": "Gather the tears scattered on the grass, though the sorrow is the moonlight's."
+      "en": "The grief is the moonlight's, but gather it all the same."
     },
     {
-      "start": 157.02,
-      "end": 186.49,
+      "start": 156.48,
+      "end": 170.0,
       "lines": [
         "Bikhre pade hain ghaas pe aansoo, samet le"
       ],
       "en": "Gather the tears scattered on the grass."
     },
     {
-      "start": 186.49,
-      "end": 212.26,
+      "start": 186.48,
+      "end": 224.2,
       "lines": [
-        "Raaton ko tootte hue taaron ka gham na kar",
-        "Raaton ko tootte hue taaron ka gham na kar"
+        "Raaton ko toot-te hue taaron ka gham na kar"
       ],
-      "en": "Do not grieve for the stars that fall in the night."
+      "en": "Do not grieve for the stars that fall at night."
     },
     {
-      "start": 212.26,
-      "end": 237.21,
+      "start": 224.2,
+      "end": 237.2,
       "lines": [
-        "Raaton ko tootte hue taaron ka gham na kar",
         "Palkon pe uski yaad ke jugnu, samet le"
       ],
-      "en": "Let the stars fall through the night and gather the fireflies of remembrance on your lashes."
+      "en": "Gather the fireflies of that memory from your lashes."
     },
     {
-      "start": 237.21,
-      "end": 275.66,
+      "start": 237.2,
+      "end": 251.2,
       "lines": [
         "Bikhre pade hain ghaas pe aansoo, samet le"
       ],
       "en": "Gather the tears scattered on the grass."
     },
     {
-      "start": 275.66,
-      "end": 288.3,
+      "start": 267.2,
+      "end": 300.2,
       "lines": [
-        "Sab jagmagaate khwaab fizaaon mein uchhaal de"
+        "Sab jagmagate khwaab fizaaon mein uchhaal de"
       ],
-      "en": "Cast every shimmering dream into the open air."
+      "en": "Toss every shimmering dream into the open air."
     },
     {
-      "start": 288.3,
-      "end": 313.16,
+      "start": 300.2,
+      "end": 312.2,
       "lines": [
-        "Sab jagmagaate khwaab fizaaon mein uchhaal de",
         "Sooraj ke ehtiraam mein pehlu, samet le"
       ],
-      "en": "Cast every shimmering dream into the open air and draw yourself in before the sun."
+      "en": "Draw yourself in, in deference to the sun."
     },
     {
-      "start": 313.16,
-      "end": 348.28,
+      "start": 312.2,
+      "end": 326.2,
       "lines": [
         "Bikhre pade hain ghaas pe aansoo, samet le"
       ],
       "en": "Gather the tears scattered on the grass."
     },
     {
-      "start": 348.28,
-      "end": 373.28,
+      "start": 342.2,
+      "end": 385.6,
       "lines": [
-        "Kaali ghata ko khul ke barasna naseeb ho",
         "Kaali ghata ko khul ke barasna naseeb ho"
       ],
-      "en": "May the dark cloud have its chance to pour."
+      "en": "May the dark clouds have their fill of rain."
     },
     {
-      "start": 373.28,
-      "end": 397.85,
+      "start": 385.6,
+      "end": 397.6,
       "lines": [
-        "Kaali ghata ko khul ke barasna naseeb ho",
-        "Ya Rab, zameen ki pyaas agar tu samet le"
+        "Ya Rab, zameen ki pyaas, agar tu samet le"
       ],
-      "en": "Lord, if you would take away the earth's thirst, grant the dark cloud leave to pour."
+      "en": "Lord, if only you would gather up the earth's thirst."
     },
     {
-      "start": 397.85,
-      "end": 422.82,
+      "start": 397.6,
+      "end": 410.6,
       "lines": [
-        "Bikhre pade hain ghaas pe aansoo, samet le",
+        "Bikhre pade hain ghaas pe aansoo, samet le"
+      ],
+      "en": "Gather the tears scattered on the grass."
+    },
+    {
+      "start": 410.6,
+      "end": 422.6,
+      "lines": [
         "Yeh chaandni ka dukh hai, magar tu samet le"
       ],
-      "en": "Gather the tears scattered on the grass, though the sorrow is the moonlight's."
+      "en": "The grief is the moonlight's, but gather it all the same."
     },
     {
-      "start": 422.82,
-      "end": 443.06,
+      "start": 422.6,
+      "end": 448.6,
       "lines": [
-        "Bikhre pade hain ghaas pe aansoo, samet le",
         "Bikhre pade hain ghaas pe aansoo, samet le"
       ],
       "en": "Gather the tears scattered on the grass."

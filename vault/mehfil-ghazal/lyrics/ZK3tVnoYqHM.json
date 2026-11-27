@@ -1,159 +1,287 @@
 {
   "video_id": "ZK3tVnoYqHM",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 13.58,
-      "end": 40.43,
+      "start": 0.0,
+      "end": 1.2,
       "lines": [
-        "Yeh log, patthar ke dil hain jin ke",
+        "Ye log, patthar ke dil hain jin ke"
+      ],
+      "en": "These people have hearts of stone."
+    },
+    {
+      "start": 1.2,
+      "end": 3.0,
+      "lines": [
         "Numaish-e-rang mein hain doobe"
       ],
-      "en": "These people with hearts of stone are lost in a show of color."
+      "en": "They are lost in a show of colours."
     },
     {
-      "start": 40.43,
-      "end": 50.77,
+      "start": 30.0,
+      "end": 35.0,
       "lines": [
-        "Yeh kaghazi phool jaise chehre",
+        "Ye kaghazi phool jaise chehre"
+      ],
+      "en": "These faces are like paper flowers."
+    },
+    {
+      "start": 35.0,
+      "end": 40.0,
+      "lines": [
         "Mazaq udate hain aadmi ka"
       ],
-      "en": "These faces, like paper flowers, make a mockery of being human."
+      "en": "They make a mockery of being human."
     },
     {
-      "start": 50.77,
-      "end": 67.78,
+      "start": 40.0,
+      "end": 45.0,
       "lines": [
-        "Inhein koi kaash yeh bata de",
+        "Inhein koi kaash ye bata de"
+      ],
+      "en": "If only someone would tell them."
+    },
+    {
+      "start": 45.0,
+      "end": 51.0,
+      "lines": [
         "Maqaam ooncha hai saadgi ka"
       ],
-      "en": "If only someone would tell them how much dignity there is in simplicity."
+      "en": "There is a quiet dignity in simplicity."
     },
     {
-      "start": 67.78,
-      "end": 80.26,
+      "start": 54.0,
+      "end": 59.0,
       "lines": [
-        "Inhein bhala zakhm ki khabar kya",
+        "Inhein koi kaash ye bata de"
+      ],
+      "en": "If only someone would tell them."
+    },
+    {
+      "start": 59.0,
+      "end": 62.0,
+      "lines": [
+        "Maqaam ooncha hai saadgi ka"
+      ],
+      "en": "There is a quiet dignity in simplicity."
+    },
+    {
+      "start": 67.6,
+      "end": 72.6,
+      "lines": [
+        "Inhein bhala zakhm ki khabar kya"
+      ],
+      "en": "What could they know of wounds?"
+    },
+    {
+      "start": 72.6,
+      "end": 79.6,
+      "lines": [
         "Ke teer chalte hue na dekha"
       ],
-      "en": "What would they know of the wound, having never seen the arrow fly?"
+      "en": "They have never seen the arrows fly."
     },
     {
-      "start": 80.26,
-      "end": 90.28,
+      "start": 80.0,
+      "end": 85.0,
       "lines": [
-        "Udaas aankhon mein aarzuon",
+        "Udaas aankhon mein aarzoo'on"
+      ],
+      "en": "In sorrowful eyes, longing smoulders."
+    },
+    {
+      "start": 85.0,
+      "end": 90.0,
+      "lines": [
         "Ka khoon jalte hue na dekha"
       ],
-      "en": "They have never seen the blood of longing burn in sorrowful eyes."
+      "en": "They have never seen the blood of longing burn."
     },
     {
-      "start": 90.28,
-      "end": 100.07,
+      "start": 90.0,
+      "end": 95.0,
       "lines": [
-        "Andhera chhaya hai in ke aage",
+        "Andhera chhaya hai in ke aage"
+      ],
+      "en": "Darkness has gathered before them."
+    },
+    {
+      "start": 95.0,
+      "end": 100.0,
+      "lines": [
         "Haseen ghaflat ki roshni ka"
       ],
-      "en": "The glow of their lovely oblivion casts a darkness before them."
+      "en": "It comes from the glow of their lovely oblivion."
     },
     {
-      "start": 100.07,
-      "end": 116.81,
+      "start": 100.0,
+      "end": 105.0,
       "lines": [
-        "Yeh kaghazi phool jaise chehre",
+        "Ye kaghazi phool jaise chehre"
+      ],
+      "en": "These faces are like paper flowers."
+    },
+    {
+      "start": 105.0,
+      "end": 111.0,
+      "lines": [
         "Mazaq udate hain aadmi ka"
       ],
-      "en": "These faces, like paper flowers, make a mockery of being human."
+      "en": "They make a mockery of being human."
     },
     {
-      "start": 116.81,
-      "end": 129.33,
+      "start": 115.0,
+      "end": 121.0,
       "lines": [
-        "Yeh sehn-e-gulshan mein jab gaye hain",
+        "Ye sehn-e-gulshan mein jab gaye hain"
+      ],
+      "en": "They stepped into the garden."
+    },
+    {
+      "start": 121.0,
+      "end": 127.0,
+      "lines": [
         "Bahaar hi loot le gaye hain"
       ],
-      "en": "When they entered the garden, they made off with spring itself."
+      "en": "They carried off spring itself."
     },
     {
-      "start": 129.33,
-      "end": 139.08,
+      "start": 127.0,
+      "end": 133.0,
       "lines": [
-        "Jahaan gaye hain, yeh do dilon ka",
+        "Jahaan gaye hain, ye do dilon ka"
+      ],
+      "en": "Wherever they went, two hearts paid the price."
+    },
+    {
+      "start": 133.0,
+      "end": 139.0,
+      "lines": [
         "Qaraar hi loot le gaye hain"
       ],
-      "en": "Wherever they went, they robbed two hearts of their peace."
+      "en": "They stole the peace those hearts had found."
     },
     {
-      "start": 139.08,
-      "end": 148.83,
+      "start": 139.0,
+      "end": 143.8,
       "lines": [
-        "Ke dil dukhana hai in ka shewa",
+        "Ke dil dukhaana hai in ka shewa"
+      ],
+      "en": "They have made a habit of hurting hearts."
+    },
+    {
+      "start": 143.8,
+      "end": 148.6,
+      "lines": [
         "Inhein hai ehsaas kab kisi ka"
       ],
-      "en": "They make a habit of hurting hearts, with little thought for anyone."
+      "en": "When have they ever cared how anyone felt?"
     },
     {
-      "start": 148.83,
-      "end": 163.44,
+      "start": 148.6,
+      "end": 153.44,
       "lines": [
-        "Yeh kaghazi phool jaise chehre",
+        "Ye kaghazi phool jaise chehre"
+      ],
+      "en": "These faces are like paper flowers."
+    },
+    {
+      "start": 153.44,
+      "end": 159.52,
+      "lines": [
         "Mazaq udate hain aadmi ka"
       ],
-      "en": "These faces, like paper flowers, make a mockery of being human."
+      "en": "They make a mockery of being human."
     },
     {
-      "start": 163.44,
-      "end": 176.1,
+      "start": 163.08,
+      "end": 168.04,
       "lines": [
-        "Main jhoot ki jagmagati mehfil",
+        "Main jhoot ki jagmagaati mehfil"
+      ],
+      "en": "I am among the glittering company of lies."
+    },
+    {
+      "start": 168.04,
+      "end": 175.04,
+      "lines": [
         "Mein aaj sach bolne laga hoon"
       ],
-      "en": "Today I have begun to speak the truth in this glittering company of lies."
+      "en": "Today I have begun to speak the truth."
     },
     {
-      "start": 176.1,
-      "end": 185.96,
+      "start": 176.04,
+      "end": 181.04,
       "lines": [
-        "Main ho ke majboor apne geeton",
+        "Main ho ke majboor apne geeton"
+      ],
+      "en": "I find myself driven back to my songs."
+    },
+    {
+      "start": 181.04,
+      "end": 186.04,
+      "lines": [
         "Mein zehr phir gholne laga hoon"
       ],
-      "en": "With little choice left, I have begun to stir poison into my songs again."
+      "en": "Once again I am stirring poison into them."
     },
     {
-      "start": 185.96,
-      "end": 195.83,
+      "start": 186.04,
+      "end": 191.04,
       "lines": [
-        "Yeh zehr shaayad uda de nasha",
+        "Ye zehr shaayad uda de nasha"
+      ],
+      "en": "Perhaps this poison will clear the haze."
+    },
+    {
+      "start": 191.04,
+      "end": 196.04,
+      "lines": [
         "Ghuroor mein doobi zindagi ka"
       ],
-      "en": "Perhaps this poison will sober a life drunk on pride."
+      "en": "It hangs over a life steeped in pride."
     },
     {
-      "start": 195.83,
-      "end": 205.55,
+      "start": 196.04,
+      "end": 200.84,
       "lines": [
-        "Yeh kaghazi phool jaise chehre",
+        "Ye kaghazi phool jaise chehre"
+      ],
+      "en": "These faces are like paper flowers."
+    },
+    {
+      "start": 200.84,
+      "end": 205.64,
+      "lines": [
         "Mazaq udate hain aadmi ka"
       ],
-      "en": "These faces, like paper flowers, make a mockery of being human."
+      "en": "They make a mockery of being human."
     },
     {
-      "start": 205.55,
-      "end": 215.37,
+      "start": 205.64,
+      "end": 210.44,
       "lines": [
-        "Inhein koi kaash yeh bata de",
+        "Inhein koi kaash ye bata de"
+      ],
+      "en": "If only someone would tell them."
+    },
+    {
+      "start": 210.44,
+      "end": 215.24,
+      "lines": [
         "Maqaam ooncha hai saadgi ka"
       ],
-      "en": "If only someone would tell them how much dignity there is in simplicity."
+      "en": "There is a quiet dignity in simplicity."
     },
     {
-      "start": 215.37,
-      "end": 223.37,
+      "start": 215.24,
+      "end": 221.04,
       "lines": [
-        "Yeh kaghazi phool jaise chehre"
+        "Ye kaghazi phool jaise chehre"
       ],
-      "en": "These faces resemble paper flowers."
+      "en": "These faces are like paper flowers."
     }
   ]
 }

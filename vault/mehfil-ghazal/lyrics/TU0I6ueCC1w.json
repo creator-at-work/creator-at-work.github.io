@@ -1,202 +1,163 @@
 {
   "video_id": "TU0I6ueCC1w",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 64.01,
-      "end": 74.94,
+      "start": 67.0,
+      "end": 88.0,
       "lines": [
         "Dil jalane ki baat karte ho"
       ],
       "en": "You speak of setting my heart alight."
     },
     {
-      "start": 74.94,
-      "end": 94.67,
+      "start": 88.0,
+      "end": 97.0,
       "lines": [
-        "Dil jalane ki baat karte ho",
         "Aashiyane ki baat karte ho"
       ],
-      "en": "You speak of setting my heart alight, then of making a home."
+      "en": "You speak of a place to call home."
     },
     {
-      "start": 94.67,
-      "end": 104.11,
+      "start": 97.0,
+      "end": 106.32,
       "lines": [
         "Dil jalane ki baat karte ho"
       ],
       "en": "You speak of setting my heart alight."
     },
     {
-      "start": 104.11,
-      "end": 125.25,
+      "start": 106.32,
+      "end": 117.0,
       "lines": [
         "Aashiyane ki baat karte ho"
       ],
-      "en": "You speak of making a home."
+      "en": "You speak of a place to call home."
     },
     {
-      "start": 125.25,
-      "end": 135.08,
+      "start": 127.0,
+      "end": 146.0,
       "lines": [
         "Saari duniya ke ranj-o-gham de kar"
       ],
-      "en": "You have given me all the sorrows of the world."
+      "en": "You leave me with all the sorrow in the world."
     },
     {
-      "start": 135.08,
-      "end": 153.19,
-      "lines": [
-        "Saari duniya ke ranj-o-gham de kar",
-        "Muskurane ki baat karte ho"
-      ],
-      "en": "After giving me all the sorrows of the world, you speak of smiling."
-    },
-    {
-      "start": 153.19,
-      "end": 162.75,
+      "start": 146.0,
+      "end": 165.0,
       "lines": [
         "Muskurane ki baat karte ho"
       ],
-      "en": "You speak of smiling."
+      "en": "And still you ask me to smile."
     },
     {
-      "start": 162.75,
-      "end": 184.96,
+      "start": 165.0,
+      "end": 175.0,
       "lines": [
         "Aashiyane ki baat karte ho"
       ],
-      "en": "You speak of making a home."
+      "en": "You speak of a place to call home."
     },
     {
-      "start": 184.96,
-      "end": 194.71,
+      "start": 176.0,
+      "end": 206.22,
       "lines": [
         "Saari duniya ke ranj-o-gham de kar"
       ],
-      "en": "You have given me all the sorrows of the world."
+      "en": "You leave me with all the sorrow in the world."
     },
     {
-      "start": 194.71,
-      "end": 212.97,
-      "lines": [
-        "Saari duniya ke ranj-o-gham de kar",
-        "Muskurane ki baat karte ho"
-      ],
-      "en": "After giving me all the sorrows of the world, you speak of smiling."
-    },
-    {
-      "start": 212.97,
-      "end": 222.59,
+      "start": 206.22,
+      "end": 224.62,
       "lines": [
         "Muskurane ki baat karte ho"
       ],
-      "en": "You speak of smiling."
+      "en": "And still you ask me to smile."
     },
     {
-      "start": 222.59,
-      "end": 249.91,
+      "start": 224.62,
+      "end": 234.62,
       "lines": [
         "Aashiyane ki baat karte ho"
       ],
-      "en": "You speak of making a home."
+      "en": "You speak of a place to call home."
     },
     {
-      "start": 249.91,
-      "end": 259.4,
+      "start": 252.62,
+      "end": 271.38,
       "lines": [
         "Hum ko apni khabar nahin, yaaro"
       ],
-      "en": "Friends, I hardly know myself."
+      "en": "Friends, we scarcely know ourselves."
     },
     {
-      "start": 259.4,
-      "end": 277.89,
-      "lines": [
-        "Hum ko apni khabar nahin, yaaro",
-        "Tum zamane ki baat karte ho"
-      ],
-      "en": "Friends, I hardly know myself, and you speak of the world."
-    },
-    {
-      "start": 277.89,
-      "end": 300.46,
+      "start": 271.38,
+      "end": 290.38,
       "lines": [
         "Tum zamane ki baat karte ho"
       ],
-      "en": "You speak of the world."
+      "en": "And you speak of the world."
     },
     {
-      "start": 300.46,
-      "end": 309.52,
+      "start": 301.38,
+      "end": 321.38,
       "lines": [
         "Hum ko apni khabar nahin, yaaro"
       ],
-      "en": "Friends, I hardly know myself."
+      "en": "Friends, we scarcely know ourselves."
     },
     {
-      "start": 309.52,
-      "end": 327.35,
-      "lines": [
-        "Hum ko apni khabar nahin, yaaro",
-        "Tum zamane ki baat karte ho"
-      ],
-      "en": "Friends, I hardly know myself, and you speak of the world."
-    },
-    {
-      "start": 327.35,
-      "end": 336.5,
+      "start": 321.38,
+      "end": 338.18,
       "lines": [
         "Tum zamane ki baat karte ho"
       ],
-      "en": "You speak of the world."
+      "en": "And you speak of the world."
     },
     {
-      "start": 336.5,
-      "end": 359.41,
+      "start": 338.18,
+      "end": 349.18,
       "lines": [
         "Dil jalane ki baat karte ho"
       ],
       "en": "You speak of setting my heart alight."
     },
     {
-      "start": 359.41,
-      "end": 368.94,
+      "start": 351.38,
+      "end": 372.38,
       "lines": [
-        "Zikr mera suna to chidh ke kaha"
+        "Zikr mera suna to chadh ke kaha"
       ],
-      "en": "At the mention of me, they answered sharply."
+      "en": "At the mention of my name, you answered sharply."
     },
     {
-      "start": 368.94,
-      "end": 386.74,
-      "lines": [
-        "Zikr mera suna to chidh ke kaha",
-        "Kis deewane ki baat karte ho?"
-      ],
-      "en": "At the mention of me, they snapped, 'Which madman are you talking about?'"
-    },
-    {
-      "start": 386.74,
-      "end": 396.22,
+      "start": 372.38,
+      "end": 385.38,
       "lines": [
         "Kis deewane ki baat karte ho?"
       ],
-      "en": "Which madman are you talking about?"
+      "en": "Which lovesick fool do you mean?"
     },
     {
-      "start": 396.22,
-      "end": 414.61,
+      "start": 385.38,
+      "end": 408.38,
       "lines": [
-        "Dil jalane ki baat karte ho",
+        "Dil jalane ki baat karte ho"
+      ],
+      "en": "You speak of setting my heart alight."
+    },
+    {
+      "start": 408.38,
+      "end": 417.78,
+      "lines": [
         "Aashiyane ki baat karte ho"
       ],
-      "en": "You speak of setting my heart alight, then of making a home."
+      "en": "You speak of a place to call home."
     },
     {
-      "start": 414.61,
-      "end": 422.61,
+      "start": 417.78,
+      "end": 429.18,
       "lines": [
         "Dil jalane ki baat karte ho"
       ],

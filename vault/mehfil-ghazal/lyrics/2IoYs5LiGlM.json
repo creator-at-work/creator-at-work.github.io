@@ -1,156 +1,239 @@
 {
   "video_id": "2IoYs5LiGlM",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 27.06,
-      "end": 46.01,
+      "start": 27.0,
+      "end": 39.0,
       "lines": [
-        "Jhoom liya, naara-e-mastana bhi bana",
+        "Jhoom liya, naara-e-mastaana bhi bana"
+      ],
+      "en": "I swayed and became a cry of rapture."
+    },
+    {
+      "start": 39.0,
+      "end": 46.0,
+      "lines": [
         "Deewana jo banaya to main deewana bhi bana"
       ],
-      "en": "I swayed and raised the cry of ecstasy, for you had made me mad with love."
+      "en": "When you drove me mad, I gave myself to madness."
     },
     {
-      "start": 46.01,
-      "end": 65.1,
+      "start": 46.0,
+      "end": 65.0,
       "lines": [
-        "Jhoom liya, naara-e-mastana bhi bana"
+        "Ho, jhoom liya, naara-e-mastaana bhi bana"
       ],
-      "en": "I swayed and let the cry of ecstasy rise."
+      "en": "I swayed and became a cry of rapture."
     },
     {
-      "start": 65.1,
-      "end": 92.37,
+      "start": 65.0,
+      "end": 72.0,
       "lines": [
-        "Deewana jo banaya to main deewana bhi bana",
-        "Jhoom liya, naara-e-mastana bhi bana"
+        "Deewana jo banaya to main deewana bhi bana"
       ],
-      "en": "When you made me mad with love, I swayed and raised the cry of ecstasy."
+      "en": "When you drove me mad, I gave myself to madness."
     },
     {
-      "start": 92.37,
-      "end": 107.92,
+      "start": 72.0,
+      "end": 85.0,
       "lines": [
-        "Nigaah-e-yaar ne hi mujh ko deewana banaya",
+        "Jhoom liya, naara-e-mastaana bhi bana"
+      ],
+      "en": "I swayed and became a cry of rapture."
+    },
+    {
+      "start": 92.0,
+      "end": 102.0,
+      "lines": [
+        "Nigaah-e-yaar ne hi mujh ko deewana banaya"
+      ],
+      "en": "The beloved's gaze alone drove me mad."
+    },
+    {
+      "start": 102.0,
+      "end": 107.0,
+      "lines": [
         "Raunaq-e-duniya aur gham se begaana banaya"
       ],
-      "en": "The beloved's glance drove me mad and put the world's glitter and grief beyond my care."
+      "en": "The world's glitter and its grief fell away."
     },
     {
-      "start": 107.92,
-      "end": 115.83,
+      "start": 107.0,
+      "end": 111.0,
       "lines": [
-        "Sar-e-mehfil jo ik tamaasha lagaya",
+        "Sar-e-mehfil jo ek tamaasha lagaya"
+      ],
+      "en": "You made a spectacle before the whole gathering."
+    },
+    {
+      "start": 111.0,
+      "end": 115.0,
+      "lines": [
         "Meri nazron mein jo khud ko basaya"
       ],
-      "en": "You made a spectacle before the gathering and took up dwelling in my eyes."
+      "en": "You made your home in my eyes."
     },
     {
-      "start": 115.83,
-      "end": 125.9,
+      "start": 115.0,
+      "end": 120.0,
       "lines": [
-        "Dar-e-yaar pe jis ne Bulleh Shah ko nachaya",
-        "Bulleh Shah ko nachaya, Bulleh Shah ko nachaya"
+        "Dar-e-yaar pe jis ne Bullhe Shah ko nachaya"
       ],
-      "en": "It was you who set Bulleh Shah dancing at the beloved's door."
+      "en": "You made Bullhe Shah dance at the beloved's door."
     },
     {
-      "start": 125.9,
-      "end": 144.27,
+      "start": 120.0,
+      "end": 125.0,
       "lines": [
-        "Jab maanga deedaar to Koh-e-Toor jalaya",
-        "Koh-e-Toor jalaya, Koh-e-Toor jalaya"
+        "Bullhe Shah ko nachaya"
       ],
-      "en": "When a glimpse was asked of you, you set Mount Sinai ablaze."
+      "en": "You made Bullhe Shah dance."
     },
     {
-      "start": 144.27,
-      "end": 152.98,
+      "start": 125.0,
+      "end": 131.0,
       "lines": [
-        "Jo dar maanga to dar paaya",
-        "Jo sar maanga to kham paaya"
+        "Jab maanga deedaar to Koh-e-Toor jalaya"
       ],
-      "en": "I asked for a door and found one, and when a head was asked of me, mine was already bowed."
+      "en": "When I asked to see you, you set Mount Sinai ablaze."
     },
     {
-      "start": 152.98,
-      "end": 159.02,
+      "start": 131.0,
+      "end": 136.0,
       "lines": [
-        "Kahin Sarmad, kahin Mansoor",
+        "Koh-e-Toor jalaya"
+      ],
+      "en": "You set Mount Sinai ablaze."
+    },
+    {
+      "start": 136.0,
+      "end": 138.0,
+      "lines": [
         "Haq pe hoon to faazil hoon"
       ],
-      "en": "Here Sarmad, there Mansoor, and in the truth I find my worth."
+      "en": "My only distinction is to stand with Truth."
     },
     {
-      "start": 159.02,
-      "end": 181.19,
+      "start": 138.0,
+      "end": 154.0,
       "lines": [
-        "Hans ke main jaan de doon",
-        "Laahaasil ka woh haasil hoon"
+        "Hans ke main jaan de doon"
       ],
-      "en": "I would give my life with a smile, for I am the fruit of what cannot be attained."
+      "en": "I would give my life with a smile."
     },
     {
-      "start": 181.19,
-      "end": 200.16,
+      "start": 154.0,
+      "end": 156.0,
       "lines": [
-        "Jhoom liya, naara-e-mastana bhi bana",
+        "Kaheen Sarmad, kaheen Mansoor"
+      ],
+      "en": "Here is Sarmad, there is Mansoor."
+    },
+    {
+      "start": 156.0,
+      "end": 159.0,
+      "lines": [
+        "Haq pe hoon to faazil hoon"
+      ],
+      "en": "My only distinction is to stand with Truth."
+    },
+    {
+      "start": 159.0,
+      "end": 164.0,
+      "lines": [
+        "Hans ke main jaan de doon"
+      ],
+      "en": "I would give my life with a smile."
+    },
+    {
+      "start": 164.0,
+      "end": 175.0,
+      "lines": [
+        "La-haasil ka woh haasil hoon"
+      ],
+      "en": "I am what is found when nothing can be gained."
+    },
+    {
+      "start": 181.0,
+      "end": 193.0,
+      "lines": [
+        "Jhoom liya, naara-e-mastaana bhi bana"
+      ],
+      "en": "I swayed and became a cry of rapture."
+    },
+    {
+      "start": 193.0,
+      "end": 200.0,
+      "lines": [
         "Deewana jo banaya to main deewana bhi bana"
       ],
-      "en": "I swayed and raised the cry of ecstasy, for you had made me mad with love."
+      "en": "When you drove me mad, I gave myself to madness."
     },
     {
-      "start": 200.16,
-      "end": 216.73,
+      "start": 200.0,
+      "end": 213.0,
       "lines": [
-        "Jhoom liya, naara-e-mastana bhi bana"
+        "Ho, jhoom liya, naara-e-mastaana bhi bana"
       ],
-      "en": "I swayed and let the cry of ecstasy rise."
+      "en": "I swayed and became a cry of rapture."
     },
     {
-      "start": 216.73,
-      "end": 242.07,
+      "start": 216.0,
+      "end": 229.0,
       "lines": [
-        "Ki jo hasrat ke mujh ko tamaasha na bana",
-        "Sar-e-baazaar jo nachaya to ab hosh mein na la"
+        "Ki jo hasrat ke, ki jo hasrat ke, ki jo hasrat ke mujh ko tamaasha na bana"
       ],
-      "en": "I wished to be spared the spectacle, but having made me dance in the marketplace, leave me in my trance."
+      "en": "I only wished you would spare me the crowd's gaze."
     },
     {
-      "start": 242.07,
-      "end": 259.78,
+      "start": 229.0,
+      "end": 241.0,
       "lines": [
-        "Saaghar ki aarzu hai, saaghar ki aarzu hai",
-        "Haan, saaghar ki aarzu hai, ab tu paimaana na thama"
+        "Sar-e-baazaar jo, sar-e-baazaar jo nachaya to ab hosh mein na la"
       ],
-      "en": "I long for the brimming goblet, so hand me no measured cup."
+      "en": "You made me dance in the marketplace, so let me stay beside myself."
     },
     {
-      "start": 259.78,
-      "end": 281.31,
+      "start": 241.0,
+      "end": 250.0,
       "lines": [
-        "Hauz-e-Kausar pe bula, mujhe be-hisaab pila",
+        "Saaghar ki aarzoo hai"
+      ],
+      "en": "I long for the goblet."
+    },
+    {
+      "start": 250.0,
+      "end": 259.46,
+      "lines": [
+        "Haan, saaghar ki aarzoo hai, ab tu paimaana na thama"
+      ],
+      "en": "Yes, I long for the goblet, so spare me the measuring cup."
+    },
+    {
+      "start": 259.46,
+      "end": 271.26,
+      "lines": [
+        "Hauz-e-Kausar pe bula, mujhe be-hisaab pila"
+      ],
+      "en": "Call me to the pool of Kausar and let me drink without measure."
+    },
+    {
+      "start": 274.04,
+      "end": 281.14,
+      "lines": [
         "Deewana jo banaya to main deewana bhi bana"
       ],
-      "en": "Call me to the pool of Kawthar and let me drink without measure, for you have made me mad with love."
+      "en": "When you drove me mad, I gave myself to madness."
     },
     {
-      "start": 281.31,
-      "end": 297.26,
+      "start": 307.14,
+      "end": 310.14,
       "lines": [
-        "Maula, Maula"
+        "Maula"
       ],
-      "en": "My Lord, my Lord."
-    },
-    {
-      "start": 297.26,
-      "end": 311.63,
-      "lines": [
-        "Maula, Maula"
-      ],
-      "en": "My Lord, my Lord."
+      "en": "My Lord."
     }
   ]
 }

@@ -1,140 +1,183 @@
 {
   "video_id": "h5nowa68ew8",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 9.55,
-      "end": 24.99,
+      "start": 0.0,
+      "end": 5.2,
       "lines": [
-        "Yeh dhoop kinara",
         "Yeh dhoop kinara shaam dhale"
       ],
-      "en": "This edge of sunlight as evening falls."
+      "en": "Here is the edge of sunlight as evening falls."
     },
     {
-      "start": 24.99,
-      "end": 40.1,
+      "start": 30.0,
+      "end": 46.08,
       "lines": [
-        "Milte hain dono waqt jahaan",
         "Jo raat na din, jo aaj na kal"
-      ],
-      "en": "Day and night meet where there is neither day nor night, neither today nor tomorrow."
-    },
-    {
-      "start": 40.1,
-      "end": 52.0,
-      "lines": [
-        "Jo raat na din, jo aaj na kal",
-        "Jo aaj na kal"
       ],
       "en": "Neither night nor day, neither today nor tomorrow."
     },
     {
-      "start": 52.0,
-      "end": 64.25,
+      "start": 46.08,
+      "end": 52.08,
       "lines": [
-        "Pal bhar ko amar",
-        "Pal bhar mein dhuaan"
+        "Jo aaj na kal"
       ],
-      "en": "Deathless for a moment, smoke in the next."
+      "en": "It belongs to neither today nor tomorrow."
     },
     {
-      "start": 64.25,
-      "end": 98.94,
+      "start": 52.08,
+      "end": 58.08,
       "lines": [
-        "Yeh dhoop kinara",
+        "Pal bhar ko amar"
+      ],
+      "en": "For a moment, it lives forever."
+    },
+    {
+      "start": 58.08,
+      "end": 64.08,
+      "lines": [
+        "Pal bhar mein dhuan"
+      ],
+      "en": "In a moment, it is smoke."
+    },
+    {
+      "start": 64.08,
+      "end": 69.08,
+      "lines": [
+        "Yeh dhoop kinara"
+      ],
+      "en": "Here is the edge of sunlight."
+    },
+    {
+      "start": 69.08,
+      "end": 78.08,
+      "lines": [
         "Yeh dhoop kinara shaam dhale"
       ],
-      "en": "This edge of sunlight as evening falls."
+      "en": "Here is the edge of sunlight as evening falls."
     },
     {
-      "start": 98.94,
-      "end": 111.91,
+      "start": 94.08,
+      "end": 100.08,
       "lines": [
-        "Is dhoop kinare pal do pal",
-        "Honton ki lapak, baahon ki khanak"
+        "Honton ki lapak"
       ],
-      "en": "A moment or two at the edge of sunlight, a flash of lips and the chime of an embrace."
+      "en": "Lips reach for each other."
     },
     {
-      "start": 111.91,
-      "end": 120.23,
+      "start": 100.08,
+      "end": 106.08,
       "lines": [
-        "Honton ki lapak",
+        "Baanhon ki khanak"
+      ],
+      "en": "There is a soft chime in the embrace."
+    },
+    {
+      "start": 106.08,
+      "end": 112.08,
+      "lines": [
+        "Honton ki lapak"
+      ],
+      "en": "Lips reach for each other."
+    },
+    {
+      "start": 112.08,
+      "end": 126.08,
+      "lines": [
         "Yeh mel hamara"
       ],
-      "en": "A flash of lips, this meeting of ours."
+      "en": "This is our coming together."
     },
     {
-      "start": 120.23,
-      "end": 138.02,
+      "start": 126.08,
+      "end": 132.08,
       "lines": [
-        "Yeh mel hamara",
-        "Pal bhar ko amar, pal bhar mein dhuaan"
+        "Pal bhar ko amar"
       ],
-      "en": "This meeting of ours, deathless for a moment and smoke in the next."
+      "en": "For a moment, it lives forever."
     },
     {
-      "start": 138.02,
-      "end": 147.32,
+      "start": 132.08,
+      "end": 138.08,
       "lines": [
-        "Yeh mel hamara",
+        "Pal bhar mein dhuan"
+      ],
+      "en": "In a moment, it is smoke."
+    },
+    {
+      "start": 138.08,
+      "end": 147.08,
+      "lines": [
         "Yeh mel hamara"
       ],
-      "en": "This meeting of ours, this meeting of ours."
+      "en": "This is our coming together."
     },
     {
-      "start": 147.32,
-      "end": 175.1,
+      "start": 147.08,
+      "end": 157.08,
       "lines": [
-        "Jhooth na sach"
+        "Jab teri samandar aankhon mein"
       ],
-      "en": "Neither false nor true."
+      "en": "Into the sea of your eyes."
     },
     {
-      "start": 175.1,
-      "end": 189.9,
+      "start": 157.08,
+      "end": 167.08,
       "lines": [
-        "Jab teri samandar aankhon mein",
         "Is shaam ka sooraj doobega"
       ],
-      "en": "When the sun of this evening sinks into the sea of your eyes."
+      "en": "This evening's sun will sink."
     },
     {
-      "start": 189.9,
-      "end": 204.88,
+      "start": 167.08,
+      "end": 177.08,
       "lines": [
-        "Sukh soyenge ghar dar wale",
+        "Sukh soyenge ghar dar waale"
+      ],
+      "en": "Those with a home will sleep in peace."
+    },
+    {
+      "start": 177.08,
+      "end": 213.08,
+      "lines": [
         "Aur raahi apni raah lega"
       ],
-      "en": "Those with homes will sleep in peace, and the traveler will go his way."
+      "en": "And the traveler will go his own way."
     },
     {
-      "start": 204.88,
-      "end": 213.45,
+      "start": 213.08,
+      "end": 220.08,
       "lines": [
-        "Aur raahi apni raah lega"
+        "Pal bhar ko amar"
       ],
-      "en": "And the traveler will go his way."
+      "en": "For a moment, it lives forever."
     },
     {
-      "start": 213.45,
-      "end": 224.8,
+      "start": 220.08,
+      "end": 226.08,
       "lines": [
-        "Pal bhar ko amar",
-        "Pal bhar mein dhuaan"
+        "Pal bhar mein dhuan"
       ],
-      "en": "Deathless for a moment, smoke in the next."
+      "en": "In a moment, it is smoke."
     },
     {
-      "start": 224.8,
-      "end": 239.46,
+      "start": 226.08,
+      "end": 232.08,
       "lines": [
-        "Yeh dhoop kinara",
+        "Yeh dhoop kinara"
+      ],
+      "en": "Here is the edge of sunlight."
+    },
+    {
+      "start": 232.08,
+      "end": 247.0,
+      "lines": [
         "Yeh dhoop kinara shaam dhale"
       ],
-      "en": "This edge of sunlight as evening falls."
+      "en": "Here is the edge of sunlight as evening falls."
     }
   ]
 }

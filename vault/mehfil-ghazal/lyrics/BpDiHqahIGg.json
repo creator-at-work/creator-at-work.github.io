@@ -1,195 +1,183 @@
 {
   "video_id": "BpDiHqahIGg",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 21.15,
-      "end": 33.99,
+      "start": 35.0,
+      "end": 46.0,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "At every word you ask me what I am."
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 33.99,
-      "end": 58.09,
+      "start": 46.0,
+      "end": 57.62,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?",
-        "Tumhi kaho ke ye andaaz-e-guftagu kya hai?"
+        "Tumhin kaho ke ye andaaz-e-guftagu kya hai?"
       ],
-      "en": "At every word you ask me what I am, so tell me, what kind of conversation is this?"
+      "en": "You tell me, what manner of speaking is this?"
     },
     {
-      "start": 58.09,
-      "end": 85.87,
+      "start": 57.62,
+      "end": 71.74,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "At every word you ask me what I am."
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 85.87,
-      "end": 97.69,
+      "start": 76.0,
+      "end": 105.0,
       "lines": [
-        "Jala hai jism jahaan, dil bhi jal gaya hoga"
+        "Jala hai jism jahaan dil bhi jal gaya hoga"
       ],
       "en": "Where the body burned, the heart must have burned too."
     },
     {
-      "start": 97.69,
-      "end": 121.3,
+      "start": 105.0,
+      "end": 120.0,
       "lines": [
-        "Jala hai jism jahaan, dil bhi jal gaya hoga",
-        "Kuredte ho jo ab raakh, justuju kya hai?"
+        "Kuredte ho jo ab raakh, justaju kya hai?"
       ],
-      "en": "The heart must have burned with the body, so what are you looking for now in the ashes?"
+      "en": "What are you looking for now, sifting through the ashes?"
     },
     {
-      "start": 121.3,
-      "end": 134.74,
+      "start": 120.0,
+      "end": 133.0,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "At every word you ask me what I am."
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 152.26,
-      "end": 164.01,
+      "start": 162.0,
+      "end": 191.0,
       "lines": [
         "Na shole mein ye karishma, na barq mein ye ada"
       ],
-      "en": "The flame has no such magic, nor lightning such grace."
+      "en": "Flame has no such magic, and lightning no such grace."
     },
     {
-      "start": 164.01,
-      "end": 179.23,
+      "start": 191.0,
+      "end": 202.0,
       "lines": [
-        "Na shole mein...",
-        "Na shole mein ye karishma, karishma..."
+        "Koi batao ki woh shokh-e-tund-khu kya hai?"
       ],
-      "en": "Even the flame has no such magic."
+      "en": "Can anyone tell me what to make of that fierce, teasing beloved?"
     },
     {
-      "start": 179.23,
-      "end": 202.81,
+      "start": 202.0,
+      "end": 220.0,
       "lines": [
-        "Na shole mein ye karishma, na barq mein ye ada",
-        "Koi bataao ke woh shokh-e-tund-khu kya hai?"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "If flame has no such magic and lightning no such grace, what are we to make of that fiery beloved?"
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 202.81,
-      "end": 215.05,
+      "start": 221.0,
+      "end": 257.0,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?"
+        "Ragon mein daurte phirne ke hum nahin qaail"
       ],
-      "en": "At every word you ask me what I am."
+      "en": "Blood coursing through the veins hardly persuades me."
     },
     {
-      "start": 215.05,
-      "end": 233.88,
+      "start": 257.0,
+      "end": 269.0,
       "lines": [
-        "Har ek baat pe..."
+        "Jab aankh hi se na tapka to phir lahu kya hai?"
       ],
-      "en": "At every word..."
+      "en": "What good is blood if it never falls from the eye?"
     },
     {
-      "start": 233.88,
-      "end": 245.34,
+      "start": 269.0,
+      "end": 286.0,
       "lines": [
-        "Ragon mein daudte phirne ke hum nahin qaayal"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "I put little faith in blood that merely runs through the veins."
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 245.34,
-      "end": 269.16,
-      "lines": [
-        "Ragon mein daudte phirne ke hum nahin qaayal",
-        "Jab aankh hi se na tapka, to phir lahu kya hai?"
-      ],
-      "en": "What does it matter that blood runs through the veins if it never falls from the eye?"
-    },
-    {
-      "start": 269.16,
-      "end": 285.42,
-      "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?",
-        "Har ek baat pe..."
-      ],
-      "en": "At every word you ask me what I am."
-    },
-    {
-      "start": 302.7,
-      "end": 314.61,
+      "start": 315.0,
+      "end": 326.0,
       "lines": [
         "Rahi na taaqat-e-guftaar, aur agar ho bhi"
       ],
-      "en": "The strength to speak is gone, and even if it were still mine..."
+      "en": "The strength to speak is gone, and even if some remained."
     },
     {
-      "start": 314.61,
-      "end": 338.43,
+      "start": 326.0,
+      "end": 338.0,
       "lines": [
-        "Rahi na taaqat-e-guftaar, aur agar ho bhi",
-        "To kis ummeed pe kahiye ke aarzoo kya hai?"
+        "To kis umeed pe kahiye ke aarzoo kya hai?"
       ],
-      "en": "Even if I still had the strength to speak, what hope would I have in telling you what I long for?"
+      "en": "With what hope could I say what I long for?"
     },
     {
-      "start": 338.43,
-      "end": 361.87,
+      "start": 338.0,
+      "end": 350.0,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?",
-        "Tumhi kaho ke ye andaaz-e-guftagu kya hai?"
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "At every word you ask me what I am, so tell me, what kind of conversation is this?"
+      "en": "At every word, you ask me, what are you?"
     },
     {
-      "start": 361.87,
-      "end": 380.33,
+      "start": 350.0,
+      "end": 362.0,
       "lines": [
-        "Har ek baat pe..."
+        "Tumhin kaho ke ye andaaz-e-guftagu kya hai?"
       ],
-      "en": "At every word..."
+      "en": "You tell me, what manner of speaking is this?"
     },
     {
-      "start": 380.33,
-      "end": 407.36,
+      "start": 362.0,
+      "end": 367.0,
       "lines": [
-        "Hua hai shah ka musaahib, phire hai itraata",
-        "Hua hai shah ka, shah ka, shah ka musaahib"
+        "Har ek baat pe"
       ],
-      "en": "He struts about now that he keeps the king company."
+      "en": "At every word."
     },
     {
-      "start": 407.36,
-      "end": 430.52,
+      "start": 368.0,
+      "end": 419.0,
       "lines": [
-        "Hua hai shah ka musaahib, phire hai itraata",
-        "Wagarna shehar mein Ghalib ki aabroo kya hai?"
+        "Bana hai shaah ka musaahib, phire hai itraata"
       ],
-      "en": "He struts because he keeps the king company, for what standing would Ghalib otherwise have in this city?"
+      "en": "Made a companion to the king, he goes about preening."
     },
     {
-      "start": 430.52,
-      "end": 453.81,
+      "start": 419.0,
+      "end": 430.16,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?",
-        "Tumhi kaho ke ye andaaz-e-guftagu kya hai?"
+        "Vagarna shehr mein Ghalib ki aabru kya hai?"
       ],
-      "en": "At every word you ask me what I am, so tell me, what kind of conversation is this?"
+      "en": "What standing would Ghalib otherwise have in this city?"
     },
     {
-      "start": 453.81,
-      "end": 473.84,
+      "start": 430.16,
+      "end": 442.16,
       "lines": [
-        "Har ek baat pe kehte ho tum ke tu kya hai?",
-        "Har ek baat pe..."
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
       ],
-      "en": "At every word you ask me what I am."
+      "en": "At every word, you ask me, what are you?"
+    },
+    {
+      "start": 442.16,
+      "end": 453.66,
+      "lines": [
+        "Tumhin kaho ke ye andaaz-e-guftagu kya hai?"
+      ],
+      "en": "You tell me, what manner of speaking is this?"
+    },
+    {
+      "start": 453.66,
+      "end": 470.86,
+      "lines": [
+        "Har ek baat pe kehte ho tum ki tu kya hai?"
+      ],
+      "en": "At every word, you ask me, what are you?"
     }
   ]
 }

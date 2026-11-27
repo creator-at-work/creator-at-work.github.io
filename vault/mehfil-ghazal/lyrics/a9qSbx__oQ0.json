@@ -1,153 +1,183 @@
 {
   "video_id": "a9qSbx__oQ0",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 10.94,
-      "end": 20.44,
+      "start": 0.0,
+      "end": 13.0,
       "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "The scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 20.44,
-      "end": 38.65,
+      "start": 13.0,
+      "end": 14.0,
       "lines": [
-        "Daagh-e-dil hum ko yaad aane lage",
-        "Log apne diye jalaane lage"
+        "Log apne diye jalane lage"
       ],
-      "en": "The scars of my heart came back to mind as people began to light their lamps."
+      "en": "People began to light their lamps."
     },
     {
-      "start": 38.65,
-      "end": 57.46,
+      "start": 14.0,
+      "end": 28.0,
       "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "The scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 57.46,
-      "end": 69.17,
+      "start": 28.0,
+      "end": 37.0,
+      "lines": [
+        "Log apne diye jalane lage"
+      ],
+      "en": "People began to light their lamps."
+    },
+    {
+      "start": 37.0,
+      "end": 48.0,
+      "lines": [
+        "Daagh-e-dil hum ko yaad aane lage"
+      ],
+      "en": "The heart's old wounds began to come back to me."
+    },
+    {
+      "start": 51.0,
+      "end": 80.0,
       "lines": [
         "Khud-farebi si khud-farebi hai"
       ],
-      "en": "What a way to deceive oneself."
+      "en": "How thoroughly one can deceive oneself."
     },
     {
-      "start": 69.17,
-      "end": 87.21,
+      "start": 80.0,
+      "end": 85.0,
       "lines": [
-        "Khud-farebi si khud-farebi hai",
         "Paas ke dhol bhi suhaane lage"
       ],
-      "en": "Such is my self-deception that even the drums close by have begun to sound sweet."
+      "en": "Even the drums close by began to sound sweet."
     },
     {
-      "start": 87.21,
-      "end": 115.04,
+      "start": 85.0,
+      "end": 94.0,
       "lines": [
-        "Log apne diye jalaane lage",
+        "Log apne diye jalane lage"
+      ],
+      "en": "People began to light their lamps."
+    },
+    {
+      "start": 94.0,
+      "end": 105.0,
+      "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "As people began to light their lamps, the scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 115.04,
-      "end": 126.46,
+      "start": 110.0,
+      "end": 136.0,
       "lines": [
         "Ab to hota hai har qadam pe gumaan"
       ],
-      "en": "Now doubt comes with every step."
+      "en": "Now I have my doubts at every step."
     },
     {
-      "start": 126.46,
-      "end": 144.23,
+      "start": 136.0,
+      "end": 145.0,
       "lines": [
-        "Ab to hota hai har qadam pe gumaan",
-        "Hum ye kaisa qadam uthaane lage"
+        "Hum yeh kaisa qadam uthane lage"
       ],
-      "en": "Now at every step I wonder what kind of step I am about to take."
+      "en": "What sort of step am I about to take?"
     },
     {
-      "start": 144.23,
-      "end": 172.01,
+      "start": 145.0,
+      "end": 153.0,
       "lines": [
-        "Log apne diye jalaane lage",
+        "Log apne diye jalane lage"
+      ],
+      "en": "People began to light their lamps."
+    },
+    {
+      "start": 153.0,
+      "end": 162.0,
+      "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "As people began to light their lamps, the scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 172.01,
-      "end": 183.68,
+      "start": 166.0,
+      "end": 187.0,
       "lines": [
         "Ek pal mein wahaan se hum uthe"
       ],
-      "en": "In a single moment I rose from that place."
+      "en": "In a moment I rose from that place."
     },
     {
-      "start": 183.68,
-      "end": 201.04,
+      "start": 187.0,
+      "end": 195.0,
       "lines": [
-        "Ek pal mein wahaan se hum uthe",
         "Baithne mein jahaan zamaane lage"
       ],
-      "en": "In a moment I rose from the place where it had taken me ages to settle."
+      "en": "It had taken me ages to settle there."
     },
     {
-      "start": 201.04,
-      "end": 228.48,
+      "start": 195.0,
+      "end": 203.0,
       "lines": [
-        "Log apne diye jalaane lage",
+        "Log apne diye jalane lage"
+      ],
+      "en": "People began to light their lamps."
+    },
+    {
+      "start": 203.0,
+      "end": 216.0,
+      "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "As people began to light their lamps, the scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 228.48,
-      "end": 239.85,
+      "start": 217.0,
+      "end": 243.0,
       "lines": [
         "Apni qismat se hai mafar kis ko"
       ],
-      "en": "Who can escape their fate?"
+      "en": "Who can escape their own fate?"
     },
     {
-      "start": 239.85,
-      "end": 257.45,
+      "start": 243.0,
+      "end": 252.0,
       "lines": [
-        "Apni qismat se hai mafar kis ko",
-        "Teer par ur ke bhi nishaane lage"
+        "Teer par ud ke bhi nishaane lage"
       ],
-      "en": "Who can escape their fate when even a winged arrow finds its mark?"
+      "en": "Even in flight, the arrow found its mark."
     },
     {
-      "start": 257.45,
-      "end": 275.57,
+      "start": 252.0,
+      "end": 260.0,
       "lines": [
-        "Log apne diye jalaane lage",
+        "Log apne diye jalane lage"
+      ],
+      "en": "People began to light their lamps."
+    },
+    {
+      "start": 260.0,
+      "end": 294.0,
+      "lines": [
         "Daagh-e-dil hum ko yaad aane lage"
       ],
-      "en": "As people began to light their lamps, the scars of my heart came back to mind."
+      "en": "The heart's old wounds began to come back to me."
     },
     {
-      "start": 275.57,
-      "end": 293.68,
-      "lines": [
-        "Daagh-e-dil hum ko yaad aane lage",
-        "Daagh-e-dil hum ko yaad aane lage"
-      ],
-      "en": "The scars of my heart came back to mind."
-    },
-    {
-      "start": 293.68,
-      "end": 301.68,
+      "start": 294.0,
+      "end": 298.0,
       "lines": [
         "Daagh-e-dil hum ko..."
       ],
-      "en": "The scars of my heart..."
+      "en": "The heart's old wounds..."
     }
   ]
 }

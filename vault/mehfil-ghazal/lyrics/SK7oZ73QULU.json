@@ -1,250 +1,471 @@
 {
   "video_id": "SK7oZ73QULU",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 21.77,
-      "end": 32.89,
+      "start": 0.0,
+      "end": 2.0,
       "lines": [
-        "Hum dekhenge, hum dekhenge",
-        "Lazim hai ke hum bhi dekhenge"
+        "Hum dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We shall see."
     },
     {
-      "start": 32.89,
-      "end": 43.68,
+      "start": 2.0,
+      "end": 5.0,
       "lines": [
-        "Hum dekhenge, hum dekhenge",
-        "Lazim hai ke hum bhi dekhenge"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We too shall surely see."
     },
     {
-      "start": 43.68,
-      "end": 56.33,
+      "start": 30.0,
+      "end": 32.5,
       "lines": [
-        "Hum dekhenge",
-        "Woh din ke jis ka wada hai, hum dekhenge"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "We shall see it, we shall see the promised day."
+      "en": "We too shall surely see."
     },
     {
-      "start": 56.33,
-      "end": 68.95,
+      "start": 32.5,
+      "end": 38.8,
       "lines": [
-        "Woh din ke jis ka wada hai, hum dekhenge",
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 38.8,
+      "end": 40.88,
+      "lines": [
+        "Laazim hai ke hum bhi dekhenge"
+      ],
+      "en": "We too shall surely see."
+    },
+    {
+      "start": 40.88,
+      "end": 46.84,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 47.68,
+      "end": 52.2,
+      "lines": [
+        "Woh din ke jis ka waada hai"
+      ],
+      "en": "The day that was promised will come."
+    },
+    {
+      "start": 52.2,
+      "end": 55.04,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 56.32,
+      "end": 60.98,
+      "lines": [
+        "Woh din ke jis ka waada hai"
+      ],
+      "en": "The day that was promised will come."
+    },
+    {
+      "start": 60.98,
+      "end": 64.12,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 64.92,
+      "end": 69.7,
+      "lines": [
         "Jo lauh-e-azal mein likha hai"
       ],
-      "en": "We shall see the promised day, inscribed from eternity."
+      "en": "That day was written on the tablet of eternity."
     },
     {
-      "start": 68.95,
-      "end": 89.34,
+      "start": 69.7,
+      "end": 71.98,
       "lines": [
-        "Hum dekhenge, lazim hai ke hum bhi dekhenge",
         "Hum dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We shall see."
     },
     {
-      "start": 89.34,
-      "end": 102.46,
+      "start": 71.98,
+      "end": 75.95,
       "lines": [
-        "Jab zulm-o-sitam ke koh-e-giran",
-        "Jab zulm-o-sitam ke koh-e-giran"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "When the heavy mountains of oppression, when those mountains."
+      "en": "We too shall surely see."
     },
     {
-      "start": 102.46,
-      "end": 115.28,
+      "start": 75.95,
+      "end": 79.12,
       "lines": [
-        "Jab zulm-o-sitam ke koh-e-giran",
-        "Rui ki tarah ur jayenge"
-      ],
-      "en": "The heavy mountains of oppression will blow away like cotton."
-    },
-    {
-      "start": 115.28,
-      "end": 127.79,
-      "lines": [
-        "Jab zulm-o-sitam ke koh-e-giran",
-        "Rui ki tarah ur jayenge"
-      ],
-      "en": "The heavy mountains of oppression will blow away like cotton."
-    },
-    {
-      "start": 127.79,
-      "end": 153.42,
-      "lines": [
-        "Hum mahkoomon ke paon tale, hum mahkoomon ke paon tale",
-        "Ye dharti dhar dhar dharkegi, ye dharti dhar dhar dharkegi"
-      ],
-      "en": "Beneath the feet of us who live under their rule, the earth will pound and tremble."
-    },
-    {
-      "start": 153.42,
-      "end": 161.46,
-      "lines": [
-        "Aur ahl-e-hukm ke sar oopar",
-        "Jab bijli kar kar karkegi"
-      ],
-      "en": "Lightning will crack above the heads of those who rule."
-    },
-    {
-      "start": 161.46,
-      "end": 171.77,
-      "lines": [
-        "Hum dekhenge, hum dekhenge",
-        "Lazim hai ke hum bhi dekhenge"
-      ],
-      "en": "We shall see it, surely we too shall see it."
-    },
-    {
-      "start": 171.77,
-      "end": 189.94,
-      "lines": [
-        "Hum dekhenge, lazim hai ke hum bhi dekhenge",
         "Hum dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We shall see."
     },
     {
-      "start": 189.94,
-      "end": 208.49,
+      "start": 86.32,
+      "end": 107.32,
       "lines": [
-        "Jab arz-e-Khuda ke Kaabe se, jab arz-e-Khuda ke Kaabe se",
-        "Sab but uthwaye jayenge"
+        "Jab zulm-o-sitam ke koh-e-giraan"
       ],
-      "en": "Every idol will be carried out of the Kaaba of God's earth."
+      "en": "Even oppression has its mountains."
     },
     {
-      "start": 208.49,
-      "end": 220.81,
+      "start": 107.32,
+      "end": 114.32,
       "lines": [
-        "Jab arz-e-Khuda ke Kaabe se",
-        "Sab but uthwaye jayenge"
+        "Rooi ki tarah ud jaayenge"
       ],
-      "en": "Every idol will be carried out of the Kaaba of God's earth."
+      "en": "They will blow away like cotton."
     },
     {
-      "start": 220.81,
-      "end": 239.1,
+      "start": 114.32,
+      "end": 120.32,
       "lines": [
-        "Hum ahl-e-safa, mardood-e-haram, hum ahl-e-safa, mardood-e-haram",
-        "Masnad pe bithaye jayenge"
+        "Jab zulm-o-sitam ke koh-e-giraan"
       ],
-      "en": "We who are pure of heart and cast out of the sanctuary will be given the seat of honor."
+      "en": "Even oppression has its mountains."
     },
     {
-      "start": 239.1,
-      "end": 251.56,
+      "start": 121.32,
+      "end": 126.32,
       "lines": [
-        "Hum ahl-e-safa, mardood-e-haram",
-        "Masnad pe bithaye jayenge"
+        "Rooi ki tarah ud jaayenge"
       ],
-      "en": "We who are pure of heart and cast out of the sanctuary will be given the seat of honor."
+      "en": "They will blow away like cotton."
     },
     {
-      "start": 251.56,
-      "end": 259.24,
+      "start": 127.32,
+      "end": 139.32,
       "lines": [
-        "Sab taj uchhale jayenge",
-        "Sab takht giraye jayenge"
+        "Hum mahkoomon ke paaon tale"
       ],
-      "en": "Every crown will be cast aside and every throne brought down."
+      "en": "It will happen beneath the feet of those made to kneel."
     },
     {
-      "start": 259.24,
-      "end": 269.31,
+      "start": 140.32,
+      "end": 152.32,
       "lines": [
-        "Hum dekhenge, hum dekhenge",
-        "Lazim hai ke hum bhi dekhenge"
+        "Yeh dharti dhad dhad dhadkegi"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "This earth will thud and tremble."
     },
     {
-      "start": 269.31,
-      "end": 289.15,
+      "start": 153.32,
+      "end": 156.95,
       "lines": [
-        "Hum dekhenge, lazim hai ke hum bhi dekhenge",
+        "Aur ahl-e-hukm ke sar oopar"
+      ],
+      "en": "It will happen above the heads of those who rule."
+    },
+    {
+      "start": 156.95,
+      "end": 161.32,
+      "lines": [
+        "Jab bijli kad kad kadkegi"
+      ],
+      "en": "Lightning will crack and crack again."
+    },
+    {
+      "start": 161.32,
+      "end": 166.7,
+      "lines": [
         "Hum dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We shall see."
     },
     {
-      "start": 289.15,
-      "end": 307.59,
+      "start": 166.7,
+      "end": 170.3,
       "lines": [
-        "Bas naam rahega Allah ka, bas naam rahega Allah ka",
-        "Jo ghaib bhi hai, hazir bhi"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "Only the name of God will remain, who is both unseen and present."
+      "en": "We too shall surely see."
     },
     {
-      "start": 307.59,
-      "end": 320.06,
+      "start": 170.3,
+      "end": 173.2,
       "lines": [
-        "Bas naam rahega Allah ka",
-        "Jo ghaib bhi hai, hazir bhi"
+        "Hum dekhenge"
       ],
-      "en": "Only the name of God will remain, who is both unseen and present."
+      "en": "We shall see."
     },
     {
-      "start": 320.06,
-      "end": 332.3,
+      "start": 173.2,
+      "end": 177.3,
       "lines": [
-        "Jo manzar bhi hai, nazir bhi",
-        "Jo manzar bhi hai, nazir bhi"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "He is both the sight and the one who beholds it."
+      "en": "We too shall surely see."
     },
     {
-      "start": 332.3,
-      "end": 350.28,
+      "start": 177.3,
+      "end": 181.32,
       "lines": [
-        "Uthega Ana al-Haqq ka naara, uthega Ana al-Haqq ka naara",
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 189.32,
+      "end": 201.32,
+      "lines": [
+        "Jab arz-e-Khuda ke Kaabe se"
+      ],
+      "en": "That day will come to the Kaaba on God's earth."
+    },
+    {
+      "start": 201.32,
+      "end": 207.32,
+      "lines": [
+        "Sab but uthwaaye jaayenge"
+      ],
+      "en": "Every idol will be carried out."
+    },
+    {
+      "start": 208.32,
+      "end": 214.32,
+      "lines": [
+        "Jab arz-e-Khuda ke Kaabe se"
+      ],
+      "en": "That day will come to the Kaaba on God's earth."
+    },
+    {
+      "start": 214.32,
+      "end": 219.32,
+      "lines": [
+        "Sab but uthwaaye jaayenge"
+      ],
+      "en": "Every idol will be carried out."
+    },
+    {
+      "start": 219.32,
+      "end": 231.32,
+      "lines": [
+        "Hum ahl-e-safa mardood-e-haram"
+      ],
+      "en": "We are the pure of heart, cast out of the sanctuary."
+    },
+    {
+      "start": 231.32,
+      "end": 237.32,
+      "lines": [
+        "Masnad pe bithaaye jaayenge"
+      ],
+      "en": "We will be given the seat of honor."
+    },
+    {
+      "start": 237.32,
+      "end": 243.32,
+      "lines": [
+        "Hum ahl-e-safa mardood-e-haram"
+      ],
+      "en": "We are the pure of heart, cast out of the sanctuary."
+    },
+    {
+      "start": 243.32,
+      "end": 247.32,
+      "lines": [
+        "Sab taaj uchhaale jaayenge"
+      ],
+      "en": "Every crown will be tossed away."
+    },
+    {
+      "start": 247.32,
+      "end": 251.32,
+      "lines": [
+        "Sab takht giraaye jaayenge"
+      ],
+      "en": "Every throne will be brought down."
+    },
+    {
+      "start": 251.32,
+      "end": 255.32,
+      "lines": [
+        "Sab taaj uchhaale jaayenge"
+      ],
+      "en": "Every crown will be tossed away."
+    },
+    {
+      "start": 255.32,
+      "end": 259.9,
+      "lines": [
+        "Sab takht giraaye jaayenge"
+      ],
+      "en": "Every throne will be brought down."
+    },
+    {
+      "start": 259.9,
+      "end": 265.45,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 265.45,
+      "end": 269.32,
+      "lines": [
+        "Laazim hai ke hum bhi dekhenge"
+      ],
+      "en": "We too shall surely see."
+    },
+    {
+      "start": 269.32,
+      "end": 271.45,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 271.45,
+      "end": 275.32,
+      "lines": [
+        "Laazim hai ke hum bhi dekhenge"
+      ],
+      "en": "We too shall surely see."
+    },
+    {
+      "start": 275.32,
+      "end": 279.32,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 285.32,
+      "end": 300.32,
+      "lines": [
+        "Bas naam rahega Allah ka"
+      ],
+      "en": "Only the name of Allah will remain."
+    },
+    {
+      "start": 300.32,
+      "end": 306.32,
+      "lines": [
+        "Jo ghaaib bhi hai, haazir bhi"
+      ],
+      "en": "He is hidden and yet present."
+    },
+    {
+      "start": 306.32,
+      "end": 312.32,
+      "lines": [
+        "Bas naam rahega Allah ka"
+      ],
+      "en": "Only the name of Allah will remain."
+    },
+    {
+      "start": 312.32,
+      "end": 318.32,
+      "lines": [
+        "Jo ghaaib bhi hai, haazir bhi"
+      ],
+      "en": "He is hidden and yet present."
+    },
+    {
+      "start": 318.32,
+      "end": 330.32,
+      "lines": [
+        "Jo manzar bhi hai, naazir bhi"
+      ],
+      "en": "He is both what is seen and the one who sees."
+    },
+    {
+      "start": 330.32,
+      "end": 343.8,
+      "lines": [
+        "Uthega Ana al-Haqq ka naara"
+      ],
+      "en": "The cry of I am the Truth will rise."
+    },
+    {
+      "start": 343.8,
+      "end": 348.32,
+      "lines": [
         "Jo main bhi hoon aur tum bhi ho"
       ],
-      "en": "The cry will rise, I am the Truth, the truth that you and I both are."
+      "en": "That truth is you and it is me."
     },
     {
-      "start": 350.28,
-      "end": 357.96,
+      "start": 348.32,
+      "end": 354.4,
       "lines": [
-        "Aur raaj karegi khalq-e-Khuda",
+        "Aur raaj karegi khalq-e-Khuda"
+      ],
+      "en": "And God's people will reign."
+    },
+    {
+      "start": 354.4,
+      "end": 358.48,
+      "lines": [
         "Jo main bhi hoon aur tum bhi ho"
       ],
-      "en": "And God's people will rule, you and I among them."
+      "en": "Those people are you and me."
     },
     {
-      "start": 357.96,
-      "end": 367.84,
+      "start": 358.48,
+      "end": 363.46,
       "lines": [
-        "Hum dekhenge, hum dekhenge",
-        "Lazim hai ke hum bhi dekhenge"
+        "Hum dekhenge"
       ],
-      "en": "We shall see it, surely we too shall see it."
+      "en": "We shall see."
     },
     {
-      "start": 367.84,
-      "end": 379.32,
+      "start": 363.46,
+      "end": 368.4,
       "lines": [
-        "Hum dekhenge woh din ke jis ka wada hai",
-        "Hum dekhenge jo lauh-e-azal mein likha hai"
+        "Laazim hai ke hum bhi dekhenge"
       ],
-      "en": "We shall see the promised day, inscribed from eternity."
+      "en": "We too shall surely see."
     },
     {
-      "start": 379.32,
-      "end": 395.48,
+      "start": 368.4,
+      "end": 369.94,
       "lines": [
-        "Hum dekhenge, hum dekhenge, hum dekhenge",
-        "Hum dekhenge, hum dekhenge"
+        "Hum dekhenge"
       ],
-      "en": "We shall see it, we shall see it."
+      "en": "We shall see."
+    },
+    {
+      "start": 369.94,
+      "end": 374.4,
+      "lines": [
+        "Woh din ke jis ka waada hai"
+      ],
+      "en": "The day that was promised will come."
+    },
+    {
+      "start": 374.4,
+      "end": 375.91,
+      "lines": [
+        "Hum dekhenge"
+      ],
+      "en": "We shall see."
+    },
+    {
+      "start": 375.91,
+      "end": 380.4,
+      "lines": [
+        "Jo lauh-e-azal mein likha hai"
+      ],
+      "en": "That day was written on the tablet of eternity."
     }
   ]
 }

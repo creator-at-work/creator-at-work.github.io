@@ -1,107 +1,139 @@
 {
   "video_id": "YK9bkNjoU8w",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "audio-aligned",
   "couplets": [
     {
-      "start": 24.16,
-      "end": 42.47,
+      "start": 16.0,
+      "end": 30.0,
       "lines": [
-        "Tu meri zindagi hai, tu meri har khushi hai",
-        "Tu hi pyaar, tu hi chahat, tu hi bandagi hai"
+        "Tu meri zindagi hai, tu meri har khushi hai"
       ],
-      "en": "You are my life and every joy, my love, my longing, my devotion."
+      "en": "You are my life and every joy in it."
     },
     {
-      "start": 42.47,
-      "end": 59.35,
+      "start": 30.0,
+      "end": 42.0,
+      "lines": [
+        "Tu hi pyaar, tu hi chaahat, tu hi bandagi hai"
+      ],
+      "en": "All my love, my longing, my devotion are yours."
+    },
+    {
+      "start": 42.0,
+      "end": 48.4,
       "lines": [
         "Tu meri zindagi hai"
       ],
       "en": "You are my life."
     },
     {
-      "start": 59.35,
-      "end": 73.94,
+      "start": 59.4,
+      "end": 73.96,
       "lines": [
-        "Jab tak na dekhun tujhe, sooraj na nikle",
         "Jab tak na dekhun tujhe, sooraj na nikle"
       ],
-      "en": "Until I see you, the sun does not rise."
+      "en": "The sun does not rise until I see you."
     },
     {
-      "start": 73.94,
-      "end": 87.62,
+      "start": 73.96,
+      "end": 81.04,
       "lines": [
-        "Zulfon ke saaye saaye mahtaab ubhre",
+        "Zulfon ke saaye saaye, mahtaab ubhre"
+      ],
+      "en": "The moon rises in the shadows of your hair."
+    },
+    {
+      "start": 81.04,
+      "end": 87.76,
+      "lines": [
         "Mere dil ka hosh tu hai, tu hi bekhudi hai"
       ],
-      "en": "The moon rises in the shadows of your hair, and you are both my heart's awareness and its abandon."
+      "en": "My heart comes to its senses in you and loses itself in you."
     },
     {
-      "start": 87.62,
-      "end": 105.88,
+      "start": 87.76,
+      "end": 98.0,
       "lines": [
-        "Tu meri zindagi hai, tu meri har khushi hai",
-        "Tu hi pyaar, tu hi chahat, tu hi bandagi hai"
+        "Tu meri zindagi hai, tu meri har khushi hai"
       ],
-      "en": "You are my life and every joy, my love, my longing, my devotion."
+      "en": "You are my life and every joy in it."
     },
     {
-      "start": 105.88,
-      "end": 121.24,
+      "start": 98.0,
+      "end": 105.6,
+      "lines": [
+        "Tu hi pyaar, tu hi chaahat, tu hi bandagi hai"
+      ],
+      "en": "All my love, my longing, my devotion are yours."
+    },
+    {
+      "start": 105.6,
+      "end": 111.76,
       "lines": [
         "Tu meri zindagi hai"
       ],
       "en": "You are my life."
     },
     {
-      "start": 121.24,
-      "end": 135.55,
+      "start": 117.76,
+      "end": 134.76,
       "lines": [
-        "Mere labon pe tere naghme milenge",
         "Mere labon pe tere naghme milenge"
       ],
-      "en": "On my lips you will find songs of you."
+      "en": "On my lips you will find your songs."
     },
     {
-      "start": 135.55,
-      "end": 149.3,
+      "start": 134.76,
+      "end": 141.76,
       "lines": [
-        "Aankhon mein, saathi, tere jalwe milenge",
+        "Aankhon mein, saathi, tere jalwe milenge"
+      ],
+      "en": "Look into my eyes, my love, and you will see yourself there."
+    },
+    {
+      "start": 141.76,
+      "end": 149.0,
+      "lines": [
         "Mere dil mein tu hi tu hai, teri roshni hai"
       ],
-      "en": "Beloved, in my eyes you will find your radiance, and in my heart only you and your light."
+      "en": "My heart holds only you and your light."
     },
     {
-      "start": 149.3,
-      "end": 166.07,
+      "start": 149.0,
+      "end": 155.76,
       "lines": [
         "Tu meri zindagi hai"
       ],
       "en": "You are my life."
     },
     {
-      "start": 166.07,
-      "end": 180.57,
+      "start": 165.76,
+      "end": 179.76,
       "lines": [
-        "Chhor ke duniya, tujh ko apna bana loon",
         "Chhor ke duniya, tujh ko apna bana loon"
       ],
-      "en": "Let me leave the world behind and make you mine."
+      "en": "I would leave the world behind to make you mine."
     },
     {
-      "start": 180.57,
-      "end": 194.39,
+      "start": 179.76,
+      "end": 186.76,
       "lines": [
-        "Sab se chhupa ke tujh ko dil mein basa loon",
-        "Tu hi meri pehli khwahish, tu hi aakhiri hai"
+        "Sab se chhupa ke, tujh ko dil mein basa loon"
       ],
-      "en": "Let me keep you in my heart, hidden from all, my first wish and my last."
+      "en": "I would keep you in my heart, where no one else could see."
     },
     {
-      "start": 194.39,
-      "end": 202.39,
+      "start": 186.76,
+      "end": 194.0,
+      "lines": [
+        "Tu hi meri pehli khwaahish, tu hi aakhiri hai"
+      ],
+      "en": "You are my first wish and my last."
+    },
+    {
+      "start": 194.0,
+      "end": 200.76,
       "lines": [
         "Tu meri zindagi hai"
       ],
