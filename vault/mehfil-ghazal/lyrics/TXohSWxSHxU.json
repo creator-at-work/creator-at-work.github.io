@@ -1,110 +1,125 @@
 {
   "video_id": "TXohSWxSHxU",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 26.04,
-      "end": 48.52,
+      "start": 26.76,
+      "end": 48.92,
       "lines": [
-        "Yeh na thi hamari qismat ke wisaal-e-yaar hota"
+        "Ye na thi hamari qismat ke wisaal-e-yaar hota"
       ],
-      "en": "It was never my fate to be with my beloved."
+      "en": "It was never my fate to be with the one I loved."
     },
     {
-      "start": 48.52,
-      "end": 69.48,
+      "start": 48.92,
+      "end": 69.8,
       "lines": [
         "Agar aur jeete rehte, yahi intezaar hota"
       ],
-      "en": "Had I lived longer, I would have gone on waiting."
+      "en": "Had I lived longer, I would still be waiting."
     },
     {
-      "start": 69.48,
-      "end": 76.48,
+      "start": 69.8,
+      "end": 73.72,
       "lines": [
-        "Yeh na thi hamari qismat"
+        "Ye na thi hamari qismat"
       ],
       "en": "It was never my fate."
     },
     {
-      "start": 88.48,
-      "end": 103.48,
+      "start": 88.44,
+      "end": 104.76,
       "lines": [
-        "Koi mere dil se poochhe, tere teer-e-neem-kash ko"
+        "Koi mere dil se poochhe tere teer-e-neem-kash ko"
       ],
-      "en": "Let someone ask my heart about the arrow you loosed from a half-drawn bow."
+      "en": "Let someone ask my heart what your half-drawn arrow did."
     },
     {
-      "start": 104.48,
-      "end": 126.28,
+      "start": 104.76,
+      "end": 127.0,
       "lines": [
-        "Yeh khalish kahan se hoti, jo jigar ke paar hota"
+        "Ye khalish kahaan se hoti jo jigar ke paar hota"
       ],
-      "en": "Would it still sting if the arrow had passed clean through?"
+      "en": "Would it still ache if the arrow had passed clean through?"
     },
     {
-      "start": 126.28,
-      "end": 133.92,
+      "start": 127.0,
+      "end": 131.16,
       "lines": [
-        "Yeh na thi hamari qismat"
-      ],
-      "en": "It was never my fate."
-    },
-    {
-      "start": 163.92,
-      "end": 184.92,
-      "lines": [
-        "Koi chaarasaaz hota, koi gham-gusaar hota",
-        "Yeh na thi hamari qismat"
-      ],
-      "en": "If only someone had eased my pain or shared my sorrow, but it was never my fate."
-    },
-    {
-      "start": 193.92,
-      "end": 212.92,
-      "lines": [
-        "Kahun kis se main ke kya hai, shab-e-gham buri bala hai"
-      ],
-      "en": "Who can I tell what this night of sorrow puts me through?"
-    },
-    {
-      "start": 212.92,
-      "end": 236.72,
-      "lines": [
-        "Mujhe kya bura tha marna, agar ek baar hota"
-      ],
-      "en": "I would hardly mind dying if I had to die only once."
-    },
-    {
-      "start": 236.72,
-      "end": 242.72,
-      "lines": [
-        "Yeh na thi hamari qismat"
+        "Ye na thi hamari qismat"
       ],
       "en": "It was never my fate."
     },
     {
-      "start": 248.72,
-      "end": 262.72,
+      "start": 139.72,
+      "end": 156.4,
       "lines": [
-        "Yeh masaa'il-e-tasawwuf, yeh tera bayaan, Ghalib"
+        "Ye kahaan ki dosti hai ke bane hain dost naaseh"
       ],
-      "en": "How well you speak of the mysteries of the mystics, Ghalib."
+      "en": "What kind of friendship is it when friends take to preaching?"
     },
     {
-      "start": 266.72,
-      "end": 289.72,
+      "start": 156.4,
+      "end": 178.16,
       "lines": [
-        "Tujhe hum wali samajhte, jo na baada-khwaar hota"
+        "Koi chaara-saaz hota, koi gham-gusaar hota"
       ],
-      "en": "We might take you for a saint if you did not drink."
+      "en": "If only someone could ease the pain, or sit with me in it."
     },
     {
-      "start": 289.72,
-      "end": 298.96,
+      "start": 178.16,
+      "end": 182.4,
       "lines": [
-        "Yeh na thi hamari qismat"
+        "Ye na thi hamari qismat"
+      ],
+      "en": "It was never my fate."
+    },
+    {
+      "start": 198.0,
+      "end": 215.28,
+      "lines": [
+        "Kahoon kis se main ke kya hai, shab-e-gham buri bala hai"
+      ],
+      "en": "Whom can I tell what this cruel night of grief is like?"
+    },
+    {
+      "start": 215.28,
+      "end": 237.44,
+      "lines": [
+        "Mujhe kya bura tha marna agar ek baar hota"
+      ],
+      "en": "I would not have minded dying if I had only to die once."
+    },
+    {
+      "start": 237.44,
+      "end": 240.32,
+      "lines": [
+        "Ye na thi hamari qismat"
+      ],
+      "en": "It was never my fate."
+    },
+    {
+      "start": 249.52,
+      "end": 268.12,
+      "lines": [
+        "Ye masaa'il-e-tasawwuf, ye tera bayaan Ghalib"
+      ],
+      "en": "How well you speak of the mysteries of the spirit, Ghalib."
+    },
+    {
+      "start": 268.12,
+      "end": 290.12,
+      "lines": [
+        "Tujhe hum wali samajhte jo na baada-khwaar hota"
+      ],
+      "en": "We would take you for a saint if you did not drink."
+    },
+    {
+      "start": 290.12,
+      "end": 295.36,
+      "lines": [
+        "Ye na thi hamari qismat"
       ],
       "en": "It was never my fate."
     }

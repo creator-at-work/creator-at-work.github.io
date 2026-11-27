@@ -1,150 +1,127 @@
 {
   "video_id": "qiCL5KXwlcI",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 29.0,
-      "end": 35.0,
+      "start": 27.2,
+      "end": 45.48,
       "lines": [
         "Apni marzi se kahan apne safar ke hum hain"
       ],
-      "en": "When have we ever chosen our own course?"
+      "en": "When have we ever chosen our own way?"
     },
     {
-      "start": 36.0,
-      "end": 54.84,
+      "start": 46.16,
+      "end": 55.68,
       "lines": [
-        "Apni marzi se kahan apne safar ke hum hain",
         "Rukh hawaon ka jidhar ka hai udhar ke hum hain"
       ],
-      "en": "Our course is scarcely ours to choose, for we go where the winds turn."
+      "en": "We belong wherever the winds are headed."
     },
     {
-      "start": 55.44,
-      "end": 64.0,
+      "start": 55.68,
+      "end": 64.52,
       "lines": [
         "Apni marzi se kahan apne safar ke hum hain"
       ],
-      "en": "When have we ever chosen our own course?"
+      "en": "When have we ever chosen our own way?"
     },
     {
-      "start": 81.0,
-      "end": 90.0,
+      "start": 91.36,
+      "end": 110.32,
       "lines": [
         "Pehle har cheez thi apni magar ab lagta hai"
       ],
-      "en": "Once everything felt like ours, but now the feeling has changed."
+      "en": "Once everything felt like ours, but now it seems otherwise."
     },
     {
-      "start": 90.0,
-      "end": 100.0,
-      "lines": [
-        "Pehle har cheez thi apni magar ab lagta hai"
-      ],
-      "en": "Once everything felt like ours, but now the feeling has changed."
-    },
-    {
-      "start": 100.0,
-      "end": 118.0,
-      "lines": [
-        "Pehle har cheez thi apni magar ab lagta hai",
-        "Apne hi ghar mein kisi doosre ghar ke hum hain"
-      ],
-      "en": "Once everything felt like ours, yet now, even in our own home, we seem to belong somewhere else."
-    },
-    {
-      "start": 119.0,
-      "end": 128.0,
+      "start": 110.32,
+      "end": 128.52,
       "lines": [
         "Apne hi ghar mein kisi doosre ghar ke hum hain"
       ],
-      "en": "Even in our own home, we seem to belong somewhere else."
+      "en": "In our own home, we feel we belong to another."
     },
     {
-      "start": 129.0,
-      "end": 147.0,
+      "start": 129.12,
+      "end": 138.48,
       "lines": [
-        "Rukh hawaon ka jidhar ka hai udhar ke hum hain",
+        "Rukh hawaon ka jidhar ka hai udhar ke hum hain"
+      ],
+      "en": "We belong wherever the winds are headed."
+    },
+    {
+      "start": 138.48,
+      "end": 147.24,
+      "lines": [
         "Apni marzi se kahan apne safar ke hum hain"
       ],
-      "en": "We go where the winds turn, with scarcely a say in our own course."
+      "en": "When have we ever chosen our own way?"
     },
     {
-      "start": 159.0,
-      "end": 183.68,
+      "start": 166.72,
+      "end": 195.04,
       "lines": [
         "Waqt ke saath hai mitti ka safar sadiyon se"
       ],
-      "en": "For centuries the dust has traveled alongside time."
+      "en": "For centuries the earth has journeyed with time."
     },
     {
-      "start": 183.68,
-      "end": 203.68,
+      "start": 195.04,
+      "end": 213.16,
       "lines": [
-        "Waqt ke saath hai mitti ka safar sadiyon se",
-        "Kis ko maloom kahan ke hain kidhar ke hum hain"
+        "Kisko maaloom kahan ke hain kidhar ke hum hain"
       ],
-      "en": "For centuries the dust has traveled alongside time, and who knows where we come from or where we belong?"
+      "en": "Who knows where we come from, or where we belong?"
     },
     {
-      "start": 203.68,
-      "end": 212.68,
+      "start": 214.08,
+      "end": 223.36,
       "lines": [
-        "Kis ko maloom kahan ke hain kidhar ke hum hain"
+        "Rukh hawaon ka jidhar ka hai udhar ke hum hain"
       ],
-      "en": "Who knows where we come from or where we belong?"
+      "en": "We belong wherever the winds are headed."
     },
     {
-      "start": 212.68,
-      "end": 231.68,
+      "start": 223.36,
+      "end": 232.04,
       "lines": [
-        "Rukh hawaon ka jidhar ka hai udhar ke hum hain",
         "Apni marzi se kahan apne safar ke hum hain"
       ],
-      "en": "We go where the winds turn, with scarcely a say in our own course."
+      "en": "When have we ever chosen our own way?"
     },
     {
-      "start": 242.68,
-      "end": 256.68,
+      "start": 255.92,
+      "end": 274.72,
       "lines": [
-        "Chalte rehte hain ki chalna hai musafir ka naseeb"
+        "Chalte rehte hain ke chalna hai musafir ka naseeb"
       ],
-      "en": "We keep walking, for walking is the traveler's lot."
+      "en": "We keep walking, for that is the traveler's lot."
     },
     {
-      "start": 256.68,
-      "end": 268.68,
-      "lines": [
-        "Chalte rehte hain ki chalna hai musafir ka naseeb"
-      ],
-      "en": "We keep walking, for walking is the traveler's lot."
-    },
-    {
-      "start": 268.68,
-      "end": 283.38,
-      "lines": [
-        "Chalte rehte hain ki chalna hai musafir ka naseeb",
-        "Sochte rehte hain kis raahguzar ke hum hain"
-      ],
-      "en": "We keep walking because it is the traveler's lot, all the while wondering which road we belong to."
-    },
-    {
-      "start": 284.02,
-      "end": 292.9,
+      "start": 275.0,
+      "end": 293.08,
       "lines": [
         "Sochte rehte hain kis raahguzar ke hum hain"
       ],
       "en": "We keep wondering which road we belong to."
     },
     {
-      "start": 293.46,
-      "end": 320.8,
+      "start": 293.68,
+      "end": 302.88,
       "lines": [
-        "Rukh hawaon ka jidhar ka hai udhar ke hum hain",
+        "Rukh hawaon ka jidhar ka hai udhar ke hum hain"
+      ],
+      "en": "We belong wherever the winds are headed."
+    },
+    {
+      "start": 302.88,
+      "end": 323.48,
+      "lines": [
         "Apni marzi se kahan apne safar ke hum hain"
       ],
-      "en": "We go where the winds turn, with scarcely a say in our own course."
+      "en": "When have we ever chosen our own way?"
     }
   ]
 }

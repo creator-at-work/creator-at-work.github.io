@@ -1,164 +1,191 @@
 {
   "video_id": "SK49I5xq7e8",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 10.0,
+      "start": 11.12,
+      "end": 12.96,
       "lines": [
         "Yaad nahin"
       ],
-      "en": "I cannot remember."
+      "en": "I don't remember."
     },
     {
-      "start": 30.0,
-      "end": 35.0,
+      "start": 18.24,
+      "end": 20.04,
+      "lines": [
+        "Yaad nahin"
+      ],
+      "en": "I don't remember."
+    },
+    {
+      "start": 25.44,
+      "end": 30.44,
+      "lines": [
+        "Yaad nahin kya kya dekha tha"
+      ],
+      "en": "I can't remember all I saw."
+    },
+    {
+      "start": 35.2,
+      "end": 43.96,
       "lines": [
         "Yaad nahin kya kya dekha tha, saare manzar bhool gaye"
       ],
-      "en": "I cannot recall all that I saw, for every scene has faded."
+      "en": "I can't remember all I saw, every scene has faded."
     },
     {
-      "start": 35.0,
-      "end": 43.0,
+      "start": 54.24,
+      "end": 63.16,
       "lines": [
         "Yaad nahin kya kya dekha tha, saare manzar bhool gaye"
       ],
-      "en": "I cannot recall all that I saw, for every scene has faded."
+      "en": "I can't remember all I saw, every scene has faded."
     },
     {
-      "start": 43.0,
-      "end": 51.0,
+      "start": 64.08,
+      "end": 72.76,
       "lines": [
-        "Yaad nahin kya kya dekha tha, saare manzar bhool gaye"
+        "Uski galiyon se jab laute, apna hi ghar bhool gaye"
       ],
-      "en": "I cannot recall all that I saw, for every scene has faded."
+      "en": "When I came back from those lanes, I'd forgotten my own home."
     },
     {
-      "start": 51.0,
-      "end": 73.0,
+      "start": 73.44,
+      "end": 80.04,
       "lines": [
-        "Yaad nahin kya kya dekha tha, saare manzar bhool gaye",
-        "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
+        "Yaad nahin"
       ],
-      "en": "Every scene slipped from memory, and by the time I came back from her lanes, I had forgotten even my own home."
+      "en": "I don't remember."
     },
     {
-      "start": 73.0,
-      "end": 80.8,
+      "start": 104.56,
+      "end": 127.96,
       "lines": [
-        "Yaad nahin, yaad nahin"
+        "Khoob gaye pardes ke apne deewar-o-dar bhool gaye"
       ],
-      "en": "I cannot remember."
+      "en": "I went so far from home that I forgot its very walls and doors."
     },
     {
-      "start": 103.0,
-      "end": 114.0,
+      "start": 128.72,
+      "end": 137.48,
       "lines": [
-        "Khoob gaye pardes ke apne deewaar-o-dar bhool gaye"
-      ],
-      "en": "We went so far from home that we forgot our own walls and doors."
-    },
-    {
-      "start": 118.0,
-      "end": 137.22,
-      "lines": [
-        "Khoob gaye pardes ke apne deewaar-o-dar bhool gaye",
         "Sheesh mahal ne aisa ghera, mitti ke ghar bhool gaye"
       ],
-      "en": "We went so far from home that we forgot our own walls and doors, and the palace of mirrors made us forget our earthen houses."
+      "en": "The palace of mirrors held me till I forgot the houses of clay."
     },
     {
-      "start": 137.22,
-      "end": 147.08,
+      "start": 138.48,
+      "end": 147.16,
       "lines": [
         "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
       ],
-      "en": "By the time I came back from her lanes, I had forgotten even my own home."
+      "en": "When I came back from those lanes, I'd forgotten even my own home."
     },
     {
-      "start": 147.08,
-      "end": 156.96,
+      "start": 147.92,
+      "end": 154.36,
       "lines": [
-        "Yaad nahin, yaad nahin"
+        "Yaad nahin"
       ],
-      "en": "I cannot remember."
+      "en": "I don't remember."
     },
     {
-      "start": 181.0,
-      "end": 191.0,
+      "start": 181.84,
+      "end": 190.36,
       "lines": [
-        "Tujhko bhi jab apni qasmen, apne waade yaad nahin"
+        "Tujhko bhi jab apni kasmein, apne vaade yaad nahin"
       ],
-      "en": "Even you no longer remember your vows and promises."
+      "en": "When even you can't recall the vows and promises you made."
     },
     {
-      "start": 195.0,
-      "end": 214.0,
+      "start": 196.16,
+      "end": 204.76,
       "lines": [
-        "Tujhko bhi jab apni qasmen, apne waade yaad nahin",
-        "Hum bhi apne khwaab teri aankhon mein rakh kar bhool gaye"
+        "Tujhko bhi jab apni kasmein, apne vaade yaad nahin"
       ],
-      "en": "When you forgot your vows and promises, I too left my dreams in your eyes and forgot them there."
+      "en": "When even you can't recall the vows and promises you made."
     },
     {
-      "start": 215.0,
-      "end": 224.0,
+      "start": 205.52,
+      "end": 214.28,
       "lines": [
-        "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
+        "Hum bhi apne khwab teri aankhon mein rakh kar bhool gaye"
       ],
-      "en": "By the time I came back from her lanes, I had forgotten even my own home."
+      "en": "I too left my dreams in your eyes and forgot them there."
     },
     {
-      "start": 224.0,
-      "end": 232.0,
-      "lines": [
-        "Yaad nahin, yaad nahin"
-      ],
-      "en": "I cannot remember."
-    },
-    {
-      "start": 235.0,
-      "end": 264.0,
-      "lines": [
-        "Mujhko jinhon ne qatl kiya hai, koi unhen batlaaye, Nazeer"
-      ],
-      "en": "Nazeer, someone should tell those who killed me."
-    },
-    {
-      "start": 265.0,
-      "end": 289.0,
-      "lines": [
-        "Mujhko jinhon ne qatl kiya hai, koi unhen batlaaye, Nazeer",
-        "Meri laash ke pehlu mein woh apna khanjar bhool gaye"
-      ],
-      "en": "Nazeer, someone should tell my killers they left their dagger beside my body."
-    },
-    {
-      "start": 289.0,
-      "end": 298.22,
+      "start": 215.28,
+      "end": 223.88,
       "lines": [
         "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
       ],
-      "en": "By the time I came back from her lanes, I had forgotten even my own home."
+      "en": "When I came back from those lanes, I'd forgotten even my own home."
     },
     {
-      "start": 298.22,
-      "end": 321.82,
+      "start": 224.56,
+      "end": 231.08,
       "lines": [
-        "Yaad nahin kya kya dekha tha, saare manzar bhool gaye",
+        "Yaad nahin"
+      ],
+      "en": "I don't remember."
+    },
+    {
+      "start": 255.76,
+      "end": 264.68,
+      "lines": [
+        "Mujhko jinhon ne qatl kiya hai, koi unhein batlaye Bashir"
+      ],
+      "en": "Bashir, someone should tell the ones who killed me."
+    },
+    {
+      "start": 270.16,
+      "end": 279.08,
+      "lines": [
+        "Mujhko jinhon ne qatl kiya hai, koi unhein batlaye Bashir"
+      ],
+      "en": "Bashir, someone should tell the ones who killed me."
+    },
+    {
+      "start": 280.0,
+      "end": 288.6,
+      "lines": [
+        "Meri laash ke pahlu mein vo apna khanjar bhool gaye"
+      ],
+      "en": "They left their dagger lying beside my body."
+    },
+    {
+      "start": 289.6,
+      "end": 298.28,
+      "lines": [
         "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
       ],
-      "en": "Every scene slipped from memory, and by the time I came back from her lanes, I had forgotten even my own home."
+      "en": "When I came back from those lanes, I'd forgotten even my own home."
     },
     {
-      "start": 321.82,
-      "end": 334.82,
+      "start": 298.96,
+      "end": 307.8,
       "lines": [
-        "Yaad nahin, yaad nahin"
+        "Yaad nahin kya kya dekha tha, saare manzar bhool gaye"
       ],
-      "en": "I cannot remember."
+      "en": "I can't remember all I saw, every scene has faded."
+    },
+    {
+      "start": 308.8,
+      "end": 317.4,
+      "lines": [
+        "Uski galiyon se jab laute, apna bhi ghar bhool gaye"
+      ],
+      "en": "When I came back from those lanes, I'd forgotten even my own home."
+    },
+    {
+      "start": 318.16,
+      "end": 334.36,
+      "lines": [
+        "Yaad nahin"
+      ],
+      "en": "I don't remember."
     }
   ]
 }

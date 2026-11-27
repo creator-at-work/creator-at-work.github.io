@@ -1,116 +1,111 @@
 {
   "video_id": "46oFnF12Cyw",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 27.32,
-      "end": 36.56,
+      "start": 27.49,
+      "end": 47.98,
       "lines": [
         "Woh firaaq aur woh wisaal kahan?"
       ],
-      "en": "Where now are the parting and the reunion?"
+      "en": "Where are those partings and those reunions now?"
     },
     {
-      "start": 38.4,
-      "end": 60.08,
-      "lines": [
-        "Woh firaaq aur woh wisaal kahan?",
-        "Woh shab-o-roz-o-maah-o-saal kahan?"
-      ],
-      "en": "Where now are the parting and the reunion, those nights and days, those months and years?"
-    },
-    {
-      "start": 72.52,
-      "end": 81.82,
-      "lines": [
-        "Thi woh ek shakhs ke tasawwur se"
-      ],
-      "en": "It came from the thought of one person."
-    },
-    {
-      "start": 83.96,
-      "end": 103.36,
-      "lines": [
-        "Thi woh ek shakhs ke tasawwur se",
-        "Ab woh ra'naai-e-khayal kahan?"
-      ],
-      "en": "The thought of one person gave the mind its grace, and where is that grace now?"
-    },
-    {
-      "start": 105.16,
-      "end": 113.36,
+      "start": 51.47,
+      "end": 59.39,
       "lines": [
         "Woh shab-o-roz-o-maah-o-saal kahan?"
       ],
-      "en": "Where now are those nights and days, those months and years?"
+      "en": "Where are those nights and days, those months and years?"
     },
     {
-      "start": 124.84,
-      "end": 133.84,
+      "start": 71.98,
+      "end": 93.96,
       "lines": [
-        "Aisa aasaan nahin lahu rona"
+        "Thi woh ek shakhs ke tasavvur se."
       ],
-      "en": "It is no easy thing to weep blood."
+      "en": "The thought of one person gave it all its grace."
     },
     {
-      "start": 134.84,
-      "end": 143.84,
+      "start": 94.76,
+      "end": 102.41,
       "lines": [
-        "Aisa aasaan nahin lahu rona"
+        "Ab woh ra'nai-e-khayaal kahan?"
       ],
-      "en": "It is no easy thing to weep blood."
+      "en": "Where is that grace of imagining now?"
     },
     {
-      "start": 144.84,
-      "end": 170.84,
+      "start": 105.09,
+      "end": 112.89,
       "lines": [
-        "Aisa aasaan nahin lahu rona",
-        "Dil mein taaqat, jigar mein haal kahan?"
+        "Woh shab-o-roz-o-maah-o-saal kahan?"
       ],
-      "en": "Weeping blood comes hard when the heart has lost its strength and the spirit its fire."
+      "en": "Where are those nights and days, those months and years?"
     },
     {
-      "start": 170.84,
-      "end": 180.84,
+      "start": 139.08,
+      "end": 159.85,
+      "lines": [
+        "Aisa aasaan nahin lahu rona."
+      ],
+      "en": "It takes much to weep tears of blood."
+    },
+    {
+      "start": 160.59,
+      "end": 178.65,
       "lines": [
         "Dil mein taaqat, jigar mein haal kahan?"
       ],
-      "en": "Where is the heart's strength, where is the spirit's fire?"
+      "en": "Where is the strength of heart, the spirit to endure it?"
     },
     {
-      "start": 180.84,
-      "end": 189.58,
+      "start": 180.89,
+      "end": 188.63,
       "lines": [
         "Woh shab-o-roz-o-maah-o-saal kahan?"
       ],
-      "en": "Where now are those nights and days, those months and years?"
+      "en": "Where are those nights and days, those months and years?"
     },
     {
-      "start": 209.34,
-      "end": 226.86,
+      "start": 209.35,
+      "end": 216.32,
       "lines": [
-        "Fikr-e-duniya mein sar khapaata hoon",
+        "Fikr-e-duniya mein sar khapaata hoon."
+      ],
+      "en": "I wear myself out with worldly cares."
+    },
+    {
+      "start": 218.28,
+      "end": 226.4,
+      "lines": [
         "Main kahan aur yeh wabaal kahan?"
       ],
-      "en": "I wear myself out over worldly cares, and what have I to do with this burden?"
+      "en": "How did I come to be saddled with all this?"
     },
     {
-      "start": 228.34,
-      "end": 236.86,
+      "start": 228.31,
+      "end": 235.84,
       "lines": [
         "Woh shab-o-roz-o-maah-o-saal kahan?"
       ],
-      "en": "Where now are those nights and days, those months and years?"
+      "en": "Where are those nights and days, those months and years?"
     },
     {
-      "start": 238.94,
-      "end": 256.94,
+      "start": 239.05,
+      "end": 248.13,
       "lines": [
-        "Woh firaaq aur woh wisaal kahan?",
+        "Woh firaaq aur woh wisaal kahan?"
+      ],
+      "en": "Where are those partings and those reunions now?"
+    },
+    {
+      "start": 249.34,
+      "end": 256.9,
+      "lines": [
         "Woh shab-o-roz-o-maah-o-saal kahan?"
       ],
-      "en": "Where now are the parting and the reunion, those nights and days, those months and years?"
+      "en": "Where are those nights and days, those months and years?"
     }
   ]
 }

@@ -1,151 +1,191 @@
 {
   "video_id": "acfXO-alrpo",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 24.0,
+      "start": 0.12,
+      "end": 8.52,
       "lines": [
-        "Chaand bhi dekha, phool bhi dekha, baadal, bijli, titli, jugnu",
-        "Koi nahin hai aisa, tera husn hai jaisa, tera husn hai jaisa"
+        "Chaand bhi dekha, phool bhi dekha"
       ],
-      "en": "I have seen the moon, the flower, clouds, lightning, butterflies and fireflies, and still your beauty has no equal."
+      "en": "I have seen the moon and the flower."
     },
     {
-      "start": 24.0,
-      "end": 34.0,
+      "start": 8.56,
+      "end": 12.76,
       "lines": [
-        "Meri nigaah ne yeh kaisa khwaab dekha hai",
-        "Zameen pe chalta hua mahtaab dekha hai"
+        "Baadal, bijli, titli, jugnu"
       ],
-      "en": "What dream did my eyes behold, a moon walking on the earth?"
+      "en": "I have seen clouds, lightning, butterflies and fireflies."
     },
     {
-      "start": 34.0,
-      "end": 51.0,
+      "start": 12.8,
+      "end": 16.44,
       "lines": [
-        "Meri aankhon ne chuna hai tujhko duniya dekh kar",
+        "Koi nahin hai aisa"
+      ],
+      "en": "None can compare."
+    },
+    {
+      "start": 16.48,
+      "end": 24.84,
+      "lines": [
+        "Tera husn hai jaisa"
+      ],
+      "en": "Your beauty has no likeness."
+    },
+    {
+      "start": 24.88,
+      "end": 29.44,
+      "lines": [
+        "Meri nigaah ne yeh kaisa khwaab dekha hai"
+      ],
+      "en": "What dream have my eyes seen?"
+    },
+    {
+      "start": 29.48,
+      "end": 34.72,
+      "lines": [
+        "Zameen pe jalta hua mahtaab dekha hai"
+      ],
+      "en": "I saw the moon burning here on earth."
+    },
+    {
+      "start": 34.76,
+      "end": 51.68,
+      "lines": [
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world, my eyes chose you."
+      "en": "My eyes chose you after seeing the world."
     },
     {
-      "start": 51.0,
-      "end": 77.0,
+      "start": 51.72,
+      "end": 68.72,
       "lines": [
-        "Kiska chehra, kiska chehra ab main dekhoon tera chehra dekh kar",
+        "Kiska chehra ab main dekhoon tera chehra dekh kar"
+      ],
+      "en": "Whose face could I look upon now that I have seen yours?"
+    },
+    {
+      "start": 68.76,
+      "end": 76.12,
+      "lines": [
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world and chosen you, whose face could my eyes turn to now?"
+      "en": "My eyes chose you after seeing the world."
     },
     {
-      "start": 111.0,
-      "end": 141.0,
+      "start": 116.64,
+      "end": 133.52,
       "lines": [
-        "Neend bhi dekhi, khwaab bhi dekha, neend bhi dekhi, khwaab bhi dekha",
-        "Choodi, bindiya, darpan, khushboo, koi nahin hai aisa"
+        "Neend bhi dekhi, khwaab bhi dekha"
       ],
-      "en": "I have known sleep and dreams, the bangle, the bindi, the mirror and its lingering fragrance, and found nothing to compare."
+      "en": "I have known sleep and seen its dreams."
     },
     {
-      "start": 141.0,
-      "end": 149.0,
+      "start": 133.56,
+      "end": 138.16,
       "lines": [
-        "Tera pyaar hai jaisa",
+        "Choodi, bindiya, darpan, khushboo"
+      ],
+      "en": "I have known the bangle, the bindi, the mirror and the scent."
+    },
+    {
+      "start": 138.2,
+      "end": 141.48,
+      "lines": [
+        "Koi nahin hai aisa"
+      ],
+      "en": "None can compare."
+    },
+    {
+      "start": 141.52,
+      "end": 149.4,
+      "lines": [
         "Tera pyaar hai jaisa"
       ],
-      "en": "Nothing compares to your love."
+      "en": "There is nothing like your love."
     },
     {
-      "start": 149.0,
-      "end": 166.0,
+      "start": 149.44,
+      "end": 166.4,
       "lines": [
-        "Meri aankhon ne chuna hai tujhko duniya dekh kar",
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world, my eyes chose you."
+      "en": "My eyes chose you after seeing the world."
     },
     {
-      "start": 166.0,
-      "end": 193.0,
+      "start": 166.44,
+      "end": 183.4,
       "lines": [
-        "Kiska chehra, kiska chehra ab main dekhoon tera chehra dekh kar",
+        "Kiska chehra ab main dekhoon tera chehra dekh kar"
+      ],
+      "en": "Whose face could I look upon now that I have seen yours?"
+    },
+    {
+      "start": 183.44,
+      "end": 190.68,
+      "lines": [
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world and chosen you, whose face could my eyes turn to now?"
+      "en": "My eyes chose you after seeing the world."
     },
     {
-      "start": 230.0,
-      "end": 253.0,
+      "start": 238.08,
+      "end": 256.4,
       "lines": [
-        "Rang bhi dekha, roop bhi dekha, rang bhi dekha, roop bhi dekha",
+        "Rang bhi dekha, roop bhi dekha"
+      ],
+      "en": "I have seen color and the forms beauty takes."
+    },
+    {
+      "start": 256.6,
+      "end": 261.12,
+      "lines": [
         "Rasta, manzil, saahil, mehfil"
       ],
-      "en": "I have seen colour and beauty, the road and its end, the shore and the gathering."
+      "en": "I have known the road, its end, the shore and the gathering."
     },
     {
-      "start": 253.0,
-      "end": 272.0,
+      "start": 261.16,
+      "end": 264.44,
       "lines": [
-        "Rang bhi dekha, roop bhi dekha, saahil, mehfil, koi nahin hai aisa",
-        "Tera saath hai jaisa, ho, tera saath hai jaisa"
+        "Koi nahin hai aisa"
       ],
-      "en": "Of all the beauty I have seen, nothing compares to being with you."
+      "en": "None can compare."
     },
     {
-      "start": 272.4,
-      "end": 288.0,
+      "start": 264.48,
+      "end": 272.4,
       "lines": [
-        "Meri aankhon ne chuna hai tujhko duniya dekh kar",
+        "Tera saath hai jaisa"
+      ],
+      "en": "There is nothing like having you beside me."
+    },
+    {
+      "start": 272.44,
+      "end": 289.36,
+      "lines": [
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world, my eyes chose you."
+      "en": "My eyes chose you after seeing the world."
     },
     {
-      "start": 289.0,
-      "end": 314.74,
+      "start": 289.4,
+      "end": 306.28,
       "lines": [
-        "Kiska chehra, kiska chehra ab main dekhoon tera chehra dekh kar",
+        "Kiska chehra ab main dekhoon tera chehra dekh kar"
+      ],
+      "en": "Whose face could I look upon now that I have seen yours?"
+    },
+    {
+      "start": 306.32,
+      "end": 316.84,
+      "lines": [
         "Meri aankhon ne chuna hai tujhko duniya dekh kar"
       ],
-      "en": "Having seen the world and chosen you, whose face could my eyes turn to now?"
-    },
-    {
-      "start": 316.74,
-      "end": 323.82,
-      "lines": [
-        "Bahut khoobsurat hain aankhen tumhari",
-        "Bana dijiye inko qismat hamari"
-      ],
-      "en": "Let those beautiful eyes of yours be my fate."
-    },
-    {
-      "start": 325.42,
-      "end": 332.34,
-      "lines": [
-        "Use aur kya chahiye zindagi mein",
-        "Jise mil gayi hai mohabbat tumhari"
-      ],
-      "en": "What more could life offer someone who has found your love?"
-    },
-    {
-      "start": 346.74,
-      "end": 355.74,
-      "lines": [
-        "Kitna pyaar tumhein karte hain",
-        "Aaj hamein maaloom hua"
-      ],
-      "en": "Only today did I learn how much I love you."
-    },
-    {
-      "start": 355.74,
-      "end": 375.74,
-      "lines": [
-        "Bahut khoobsurat ghazal likh raha hoon, bahut khoobsurat ghazal likh raha hoon",
-        "Tumhein dekh kar aaj kal likh raha hoon"
-      ],
-      "en": "These days I look at you and find myself writing a beautiful ghazal."
+      "en": "My eyes chose you after seeing the world."
     }
   ]
 }

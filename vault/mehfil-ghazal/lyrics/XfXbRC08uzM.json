@@ -1,84 +1,119 @@
 {
   "video_id": "XfXbRC08uzM",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 27.0,
+      "start": 12.68,
+      "end": 27.76,
       "lines": [
         "Koi din gar zindagani aur hai"
       ],
-      "en": "If life grants me a few more days."
+      "en": "If life has a few more days in store."
     },
     {
-      "start": 27.0,
-      "end": 42.0,
+      "start": 27.76,
+      "end": 35.4,
       "lines": [
-        "Apne jee mein hum ne thaani aur hai",
+        "Apne jee mein humne thaani aur hai"
+      ],
+      "en": "In my heart, I have resolved on something else."
+    },
+    {
+      "start": 35.4,
+      "end": 45.2,
+      "lines": [
         "Koi din gar zindagani aur hai"
       ],
-      "en": "I have set my heart on something else, if life grants me a few more days."
+      "en": "If life has a few more days in store."
     },
     {
-      "start": 45.0,
-      "end": 67.6,
+      "start": 46.16,
+      "end": 59.92,
       "lines": [
-        "Bar-ha dekhi hain un ki ranjishein",
+        "Baarha dekhi hai unki ranjish"
+      ],
+      "en": "I have seen them displeased many times."
+    },
+    {
+      "start": 60.4,
+      "end": 68.08,
+      "lines": [
         "Par kuchh ab ke sar-girani aur hai"
       ],
-      "en": "I have seen her displeasure often, but there is a different coldness this time."
+      "en": "But there is a different coldness in them this time."
     },
     {
-      "start": 67.6,
-      "end": 76.6,
+      "start": 68.08,
+      "end": 77.72,
       "lines": [
         "Koi din gar zindagani aur hai"
       ],
-      "en": "If life grants me a few more days."
+      "en": "If life has a few more days in store."
     },
     {
-      "start": 77.6,
-      "end": 100.04,
+      "start": 77.76,
+      "end": 92.84,
       "lines": [
-        "De ke khat munh dekhta hai nama-bar",
-        "Kuchh to paigham-e-zabani aur hai"
+        "De ke khat munh dekhta hai nama-bar"
       ],
-      "en": "The messenger hands me the letter and watches my face, so there must be something more to tell."
+      "en": "The messenger hands me the letter and watches my face."
     },
     {
-      "start": 100.04,
-      "end": 108.42,
+      "start": 92.84,
+      "end": 100.56,
       "lines": [
-        "Koi din gar zindagani aur hai"
+        "Kuchh to paigham-e zabani aur hai"
       ],
-      "en": "If life grants me a few more days."
+      "en": "There must be something more to tell me in person."
     },
     {
-      "start": 110.42,
-      "end": 132.76,
-      "lines": [
-        "Ho chuki hain Ghalib balayen sab tamam",
-        "Ek marg-e-nagahani aur hai"
-      ],
-      "en": "All your trials are over, Ghalib, and only a sudden death remains."
-    },
-    {
-      "start": 132.76,
-      "end": 147.76,
-      "lines": [
-        "Koi din gar zindagani aur hai",
-        "Apne jee mein hum ne thaani aur hai"
-      ],
-      "en": "If life grants me a few more days, I have set my heart on something else."
-    },
-    {
-      "start": 147.76,
-      "end": 163.24,
+      "start": 100.56,
+      "end": 110.52,
       "lines": [
         "Koi din gar zindagani aur hai"
       ],
-      "en": "If life grants me a few more days."
+      "en": "If life has a few more days in store."
+    },
+    {
+      "start": 110.52,
+      "end": 125.6,
+      "lines": [
+        "Ho chuki Ghalib balaen sab tamam"
+      ],
+      "en": "All your troubles are over now, Ghalib."
+    },
+    {
+      "start": 125.6,
+      "end": 133.12,
+      "lines": [
+        "Ek marg-e na-gahani aur hai"
+      ],
+      "en": "Only a sudden death remains."
+    },
+    {
+      "start": 133.12,
+      "end": 140.56,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life has a few more days in store."
+    },
+    {
+      "start": 140.56,
+      "end": 148.24,
+      "lines": [
+        "Apne jee mein humne thaani aur hai"
+      ],
+      "en": "In my heart, I have resolved on something else."
+    },
+    {
+      "start": 148.24,
+      "end": 163.0,
+      "lines": [
+        "Koi din gar zindagani aur hai"
+      ],
+      "en": "If life has a few more days in store."
     }
   ]
 }

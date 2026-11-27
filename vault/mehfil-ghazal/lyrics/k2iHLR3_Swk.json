@@ -1,104 +1,135 @@
 {
   "video_id": "k2iHLR3_Swk",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 13.7,
-      "end": 36.0,
+      "start": 13.76,
+      "end": 22.3,
       "lines": [
-        "Tere khushboo mein base khat main jalata kaise",
-        "Pyaar mein doobe hue khat main jalata kaise"
+        "Tere khushboo mein base khat main jalata kaise"
       ],
-      "en": "How could I burn those letters, steeped in your scent and drenched in love?"
+      "en": "How could I burn the letters that still held your fragrance?"
     },
     {
-      "start": 38.0,
-      "end": 48.0,
+      "start": 26.1,
+      "end": 34.9,
+      "lines": [
+        "Pyaar mein doobe hue khat main jalata kaise"
+      ],
+      "en": "How could I burn letters steeped in love?"
+    },
+    {
+      "start": 37.92,
+      "end": 46.6,
       "lines": [
         "Tere haathon ke likhe khat main jalata kaise"
       ],
       "en": "How could I burn the letters you wrote with your own hands?"
     },
     {
-      "start": 56.0,
-      "end": 79.96,
+      "start": 56.42,
+      "end": 65.56,
       "lines": [
-        "Jin ko duniya ki nigaahon se chhupaye rakha",
-        "Jin ko ik umr kaleje se lagaye rakha"
+        "Jinko duniya ki nigahon se chhupaye rakha"
       ],
-      "en": "I kept them from the eyes of the world and held them to my heart for a lifetime."
+      "en": "I kept them hidden from the eyes of the world."
     },
     {
-      "start": 80.96,
-      "end": 103.3,
+      "start": 68.84,
+      "end": 75.4,
       "lines": [
-        "Deen jin ko, jinhen imaan banaye rakha",
+        "Jinko ik umr kaleje se lagaye rakha"
+      ],
+      "en": "I held them close to my heart for a lifetime."
+    },
+    {
+      "start": 81.08,
+      "end": 91.68,
+      "lines": [
+        "Deen jinko, jinhen imaan banaye rakha"
+      ],
+      "en": "I held them sacred and made them my faith."
+    },
+    {
+      "start": 93.08,
+      "end": 101.22,
+      "lines": [
         "Tere khushboo mein base khat main jalata kaise"
       ],
-      "en": "How could I burn those letters, still fragrant with you, when I had made them my very faith?"
+      "en": "How could I burn the letters that still held your fragrance?"
     },
     {
-      "start": 110.96,
-      "end": 137.96,
+      "start": 114.72,
+      "end": 124.96,
       "lines": [
-        "Jin ka har lafz mujhe yaad tha paani ki tarah",
-        "Yaad the mujh ko jo paighaam-e-zabaani ki tarah"
+        "Jinka har lafz mujhe yaad tha paani ki tarah"
       ],
-      "en": "I knew every word by heart, as readily as water flows, as though you had spoken them to me."
+      "en": "I knew every word by heart, as familiar as water."
     },
     {
-      "start": 137.96,
-      "end": 160.96,
+      "start": 138.06,
+      "end": 148.84,
       "lines": [
-        "Mujh ko pyaare the jo anmol nishaani ki tarah",
+        "Mujhko pyaare the jo anmol nishani ki tarah"
+      ],
+      "en": "They were dear to me, like a keepsake beyond price."
+    },
+    {
+      "start": 167.88,
+      "end": 177.16,
+      "lines": [
+        "Tune duniya ki nigahon se jo bachkar likhe"
+      ],
+      "en": "You wrote them beyond the world's gaze."
+    },
+    {
+      "start": 179.52,
+      "end": 187.78,
+      "lines": [
+        "Saal-ha-saal mere naam barabar likhe"
+      ],
+      "en": "Year after year, you kept writing to me."
+    },
+    {
+      "start": 191.52,
+      "end": 201.18,
+      "lines": [
+        "Kabhi din mein to kabhi raat ko uthkar likhe"
+      ],
+      "en": "You wrote sometimes by day, sometimes rising in the night."
+    },
+    {
+      "start": 203.24,
+      "end": 213.71,
+      "lines": [
         "Tere khushboo mein base khat main jalata kaise"
       ],
-      "en": "How could I burn those letters, still fragrant with you, when I treasured them like a keepsake beyond price?"
+      "en": "How could I burn the letters that still held your fragrance?"
     },
     {
-      "start": 167.96,
-      "end": 189.44,
-      "lines": [
-        "Tu ne duniya ki nigaahon se jo bach kar likhe",
-        "Saal-ha-saal mere naam baraabar likhe"
-      ],
-      "en": "Out of sight of the world, you kept writing to me year after year."
-    },
-    {
-      "start": 191.56,
-      "end": 213.4,
-      "lines": [
-        "Kabhi din mein to kabhi raat ko uth kar likhe",
-        "Tere khushboo mein base khat main jalata kaise"
-      ],
-      "en": "How could I burn those letters, still fragrant with you, that you wrote by day and sometimes rose at night to write?"
-    },
-    {
-      "start": 214.84,
-      "end": 236.88,
-      "lines": [
-        "Pyaar mein doobe hue khat main jalata kaise",
-        "Tere haathon ke likhe khat main jalata kaise"
-      ],
-      "en": "How could I burn letters so full of love, written in your own hand?"
-    },
-    {
-      "start": 238.88,
-      "end": 249.8,
+      "start": 238.68,
+      "end": 252.84,
       "lines": [
         "Tere khat aaj main Ganga mein baha aaya hoon"
       ],
       "en": "Today I let the Ganges carry your letters away."
     },
     {
-      "start": 250.64,
-      "end": 273.2,
+      "start": 262.94,
+      "end": 268.92,
       "lines": [
-        "Tere khat aaj main Ganga mein baha aaya hoon",
         "Aag behte hue paani mein laga aaya hoon"
       ],
-      "en": "Today I let the Ganges carry your letters away and set fire to its flowing waters."
+      "en": "I set fire to the flowing water."
+    },
+    {
+      "start": 280.4,
+      "end": 289.06,
+      "lines": [
+        "Tere khushboo mein base khat main jalata kaise"
+      ],
+      "en": "How could I burn the letters that still held your fragrance?"
     }
   ]
 }
