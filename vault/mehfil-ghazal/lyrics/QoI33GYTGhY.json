@@ -1,103 +1,127 @@
 {
   "video_id": "QoI33GYTGhY",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 29.0,
-      "end": 44.8,
+      "start": 30.62,
+      "end": 39.76,
       "lines": [
-        "Main bhool jaaun tumhein",
-        "Main bhool jaaun tumhein, ab yahi munaasib hai"
+        "Main bhool jaaoon tumhein"
       ],
-      "en": "It would be best now if I forgot you."
+      "en": "I should forget you."
     },
     {
-      "start": 48.4,
-      "end": 69.0,
+      "start": 39.8,
+      "end": 45.16,
       "lines": [
-        "Main bhool jaaun tumhein, ab yahi munaasib hai",
-        "Magar bhulaana bhi chaahoon to kis tarah bhooloon?"
+        "Ab yahi munaasib hai"
       ],
-      "en": "I ought to forget you now, but how could I, even if I wished to?"
+      "en": "It seems best now."
     },
     {
-      "start": 72.0,
-      "end": 91.0,
+      "start": 72.92,
+      "end": 81.18,
       "lines": [
-        "Magar bhulaana bhi chaahoon to kis tarah bhooloon?",
+        "Magar bhulaana bhi chaahoon to kis tarah bhooloon"
+      ],
+      "en": "Even if I wanted to forget, how could I?"
+    },
+    {
+      "start": 81.68,
+      "end": 88.42,
+      "lines": [
         "Ki tum to phir bhi haqeeqat ho, koi khwaab nahin"
       ],
-      "en": "Even if I wished to forget you, how could I, when you are real and no mere dream?"
+      "en": "You are real, after all, and dreams are easier to forget."
     },
     {
-      "start": 94.0,
-      "end": 116.0,
+      "start": 94.56,
+      "end": 101.58,
       "lines": [
-        "Yahaan to dil ka ye aalam hai, kya kahoon?",
-        "Kambakht, bhula saka na ye wo silsila jo tha hi nahin"
+        "Yahaan to dil ka ye aalam hai, kya kahoon"
       ],
-      "en": "What can I say of this poor heart, still unable to forget a story that never was?"
+      "en": "How can I say what state my heart is in?"
     },
     {
-      "start": 118.26,
-      "end": 137.1,
+      "start": 104.34,
+      "end": 115.48,
       "lines": [
-        "Bhula saka na ye wo silsila jo tha hi nahin",
-        "Wo ek khayaal jo aawaaz tak gaya hi nahin"
+        "Bhula na paaya vo silsila jo tha hi nahin"
       ],
-      "en": "My heart could never forget what never was, that one thought that never found a voice."
+      "en": "I could never forget what had never been between us."
     },
     {
-      "start": 137.1,
-      "end": 156.1,
+      "start": 120.38,
+      "end": 127.42,
       "lines": [
-        "Wo ek baat jo main keh nahin saka tumse",
-        "Wo ek rabt jo hum mein kabhi raha hi nahin"
+        "Bhula na paaya vo silsila jo tha hi nahin"
       ],
-      "en": "There was the one thing I could never tell you, and the bond we never shared."
+      "en": "I could never forget what had never been between us."
     },
     {
-      "start": 156.1,
-      "end": 166.1,
+      "start": 127.82,
+      "end": 137.08,
       "lines": [
-        "Mujhe hai yaad wo sab jo kabhi hua hi nahin"
+        "Vo ik khayaal jo aawaaz tak gaya hi nahin"
+      ],
+      "en": "There was a thought that never found a voice."
+    },
+    {
+      "start": 137.42,
+      "end": 146.16,
+      "lines": [
+        "Vo ek baat jo main keh nahin saka tumse"
+      ],
+      "en": "There was one thing I could never tell you."
+    },
+    {
+      "start": 147.5,
+      "end": 156.76,
+      "lines": [
+        "Vo ek rabt jo ham mein kabhi raha hi nahin"
+      ],
+      "en": "I recall a bond that never formed between us."
+    },
+    {
+      "start": 157.04,
+      "end": 166.51,
+      "lines": [
+        "Mujhe hai yaad vo sab jo kabhi hua hi nahin"
       ],
       "en": "I remember everything that never happened."
     },
     {
-      "start": 169.1,
-      "end": 191.1,
+      "start": 169.74,
+      "end": 189.04,
       "lines": [
-        "Agar ye haal hai dil ka to koi samjhaaye",
-        "Agar ye haal hai dil ka to koi samjhaaye"
+        "Agar ye haal hai dil ka to koi samjhe"
       ],
-      "en": "If this is how the heart is, let someone explain it to me."
+      "en": "If this is how the heart feels, who could make sense of it?"
     },
     {
-      "start": 191.1,
-      "end": 203.1,
+      "start": 191.78,
+      "end": 199.04,
       "lines": [
-        "Tumhein bhulaana bhi chaahoon to kis tarah bhooloon?"
+        "Tumhein bhulaana bhi chaahoon to kis tarah"
       ],
       "en": "Even if I wanted to forget you, how could I?"
     },
     {
-      "start": 203.1,
-      "end": 223.1,
+      "start": 213.18,
+      "end": 222.4,
       "lines": [
-        "Ki tum to phir bhi haqeeqat ho, koi khwaab nahin",
         "Ki tum to phir bhi haqeeqat ho, koi khwaab nahin"
       ],
-      "en": "After all, you are real and no mere dream."
+      "en": "You are real, after all, and dreams are easier to forget."
     },
     {
-      "start": 223.1,
-      "end": 236.1,
+      "start": 225.36,
+      "end": 231.18,
       "lines": [
         "Ki tum to phir bhi haqeeqat ho, koi khwaab nahin"
       ],
-      "en": "After all, you are real and no mere dream."
+      "en": "You are real, after all, and dreams are easier to forget."
     }
   ]
 }

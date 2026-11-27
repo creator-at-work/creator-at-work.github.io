@@ -1,229 +1,271 @@
 {
   "video_id": "TUEfMaAYcPw",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 60.0,
-      "end": 91.0,
+      "start": 65.56,
+      "end": 98.12,
       "lines": [
-        "Ye mojiza bhi mohabbat kabhi dikhaye mujhe"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "May love show me this miracle someday."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 91.0,
-      "end": 103.0,
+      "start": 98.12,
+      "end": 113.64,
       "lines": [
-        "Ke sang tujh pe gire"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "May the stone fall on you."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 133.0,
-      "end": 152.0,
+      "start": 121.52,
+      "end": 126.96,
       "lines": [
-        "Ye mojiza bhi mohabbat kabhi dikhaye mujhe"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "May love show me this miracle someday."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 153.38,
-      "end": 170.34,
+      "start": 134.24,
+      "end": 153.16,
       "lines": [
-        "Ke sang tujh pe gire aur zakhm aaye mujhe"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "May the stone fall on you and leave its wound on me."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 200.34,
-      "end": 220.34,
+      "start": 153.16,
+      "end": 171.4,
       "lines": [
-        "Ba rang-e-ud milegi use meri khushbu"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "My fragrance will reach him like the scent of burning oud."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 230.34,
-      "end": 252.44,
+      "start": 171.4,
+      "end": 175.6,
       "lines": [
-        "Ba rang-e-ud milegi use meri khushbu"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "My fragrance will reach him like the scent of burning oud."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 279.44,
-      "end": 299.44,
+      "start": 200.84,
+      "end": 222.56,
       "lines": [
-        "Ba rang-e-ud milegi use meri khushbu",
-        "Woh jab bhi chahe bade shauq se jalaye mujhe"
+        "Ba-rang-e ood milegi use meri khushboo"
       ],
-      "en": "My fragrance will reach him like burning oud whenever he takes pleasure in setting me alight."
+      "en": "My scent will reach them like burning agarwood."
     },
     {
-      "start": 299.44,
-      "end": 319.44,
+      "start": 238.72,
+      "end": 264.4,
       "lines": [
-        "Woh jab bhi chahe bade shauq se jalaye mujhe"
+        "Ba-rang-e ood milegi use meri khushboo"
       ],
-      "en": "Whenever he wishes, let him take his pleasure in burning me."
+      "en": "My scent will reach them like burning agarwood."
     },
     {
-      "start": 319.44,
-      "end": 332.44,
+      "start": 276.0,
+      "end": 288.76,
       "lines": [
-        "Woh jab bhi chahe bade shauq se jalaye mujhe"
+        "Ba-rang-e ood milegi use meri khushboo"
       ],
-      "en": "Whenever he wishes, let him take his pleasure in burning me."
+      "en": "My scent will reach them like burning agarwood."
     },
     {
-      "start": 332.44,
-      "end": 361.44,
+      "start": 288.76,
+      "end": 333.28,
       "lines": [
-        "Ke sang tujh pe gire"
+        "Woh jab bhi chahe bade shauq se jala mujhe"
       ],
-      "en": "May the stone fall on you."
+      "en": "Whenever the fancy takes them, let them burn me to their heart's content."
     },
     {
-      "start": 392.44,
-      "end": 415.4,
+      "start": 333.28,
+      "end": 358.52,
       "lines": [
-        "Woh mera dost hai"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "He is my friend."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 415.4,
-      "end": 443.96,
+      "start": 359.76,
+      "end": 363.16,
       "lines": [
-        "Woh mera dost hai, saare jahan ko hai maloom"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "The whole world knows he is my friend."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 503.96,
-      "end": 533.92,
+      "start": 385.84,
+      "end": 389.0,
       "lines": [
-        "Woh mera dost hai, saare jahan ko hai maloom"
+        "Woh mera dost hai, saare jahaan ko hai maloom"
       ],
-      "en": "The whole world knows he is my friend."
+      "en": "All the world knows we are friends."
     },
     {
-      "start": 533.92,
-      "end": 563.92,
+      "start": 394.28,
+      "end": 449.56,
       "lines": [
-        "Dagha kare woh kisi se to sharm aaye mujhe"
+        "Woh mera dost hai, saare jahaan ko hai maloom"
       ],
-      "en": "If he betrays anyone, the shame falls on me."
+      "en": "All the world knows we are friends."
     },
     {
-      "start": 623.92,
-      "end": 653.92,
+      "start": 463.8,
+      "end": 478.64,
       "lines": [
-        "Woh mehrban hai to iqrar kyun nahin karta",
-        "Woh badguman hai to sau baar azmaye mujhe"
+        "Woh mera dost hai, saare jahaan ko hai maloom"
       ],
-      "en": "If he cares for me, why does he keep silent, and if he doubts me, let him try me a hundred times."
+      "en": "All the world knows we are friends."
     },
     {
-      "start": 653.92,
-      "end": 664.92,
+      "start": 500.88,
+      "end": 533.56,
       "lines": [
-        "Azmaye mujhe"
+        "Woh mera dost hai, saare jahaan ko hai maloom"
       ],
-      "en": "Let him put me to the test."
+      "en": "All the world knows we are friends."
     },
     {
-      "start": 664.92,
-      "end": 694.94,
+      "start": 533.56,
+      "end": 588.96,
       "lines": [
-        "Ke sang tujh pe gire aur zakhm aaye mujhe"
+        "Daga kare woh kisi se to sharm aaye mujhe"
       ],
-      "en": "May the stone fall on you and leave its wound on me."
+      "en": "If they betray someone, the shame falls on me."
     },
     {
-      "start": 694.94,
-      "end": 708.94,
+      "start": 625.68,
+      "end": 637.36,
       "lines": [
-        "Ye mojiza bhi mohabbat kabhi dikhaye mujhe"
+        "Woh mehrbaan hai to iqraar kyun nahin karta"
       ],
-      "en": "May love show me this miracle someday."
+      "en": "If they care for me, why do they never say so?"
     },
     {
-      "start": 762.82,
-      "end": 775.46,
+      "start": 637.36,
+      "end": 669.4,
       "lines": [
-        "Main apni zaat mein nilaam ho raha hoon, Qateel"
+        "Woh badgumaan hai to sau baar aazma mujhe"
       ],
-      "en": "Within my own self I am being sold at auction, Qateel."
+      "en": "If they doubt me, let them put me to the test a hundred times."
     },
     {
-      "start": 779.28,
-      "end": 803.72,
+      "start": 669.4,
+      "end": 688.76,
       "lines": [
-        "Main apni zaat mein nilaam ho raha hoon, Qateel"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "Within my own self I am being sold at auction, Qateel."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 803.72,
-      "end": 830.72,
+      "start": 689.96,
+      "end": 709.08,
       "lines": [
-        "Main apni zaat mein nilaam ho raha hoon, Qateel",
-        "Gham-e-hayat se keh do"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "Tell life's sorrow that within my own self I am up for auction, Qateel."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 830.72,
-      "end": 854.72,
+      "start": 709.08,
+      "end": 738.32,
       "lines": [
-        "Kharid laaye mujhe",
-        "Main apni zaat mein nilaam ho raha hoon, Qateel"
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
       ],
-      "en": "Let sorrow buy me, for within my own self I am up for auction, Qateel."
+      "en": "Let the stone strike you and leave its wound on me."
     },
     {
-      "start": 868.72,
-      "end": 895.56,
+      "start": 738.32,
+      "end": 742.32,
       "lines": [
-        "Main apni zaat mein nilaam ho raha hoon, Qateel",
-        "Gham-e-hayat se keh do kharid laaye mujhe"
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
       ],
-      "en": "Within my own self I am up for auction, Qateel, so tell life's sorrow to come and buy me."
+      "en": "Love, show me this miracle someday."
     },
     {
-      "start": 895.56,
-      "end": 909.76,
+      "start": 762.72,
+      "end": 793.44,
       "lines": [
-        "Gham-e-hayat se keh do kharid laaye mujhe"
+        "Main apni zaat mein neelaam ho raha hoon"
       ],
-      "en": "Tell life's sorrow to come and buy me."
+      "en": "Within myself, I am being sold at auction."
     },
     {
-      "start": 910.24,
-      "end": 923.96,
+      "start": 798.08,
+      "end": 804.12,
       "lines": [
-        "Ye mojiza bhi mohabbat kabhi dikhaye mujhe"
+        "Main apni zaat mein neelaam ho raha hoon"
       ],
-      "en": "May love show me this miracle someday."
+      "en": "Within myself, I am being sold at auction."
     },
     {
-      "start": 924.52,
-      "end": 942.84,
+      "start": 808.64,
+      "end": 817.28,
       "lines": [
-        "Ke sang tujh pe gire"
+        "Main apni zaat mein neelaam ho raha hoon"
       ],
-      "en": "May the stone fall on you."
+      "en": "Within myself, I am being sold at auction."
     },
     {
-      "start": 942.84,
-      "end": 955.84,
+      "start": 819.84,
+      "end": 838.36,
       "lines": [
-        "Aur zakhm aaye mujhe",
-        "Ye mojiza bhi mohabbat"
+        "Gham-e hayaat se keh do khareed le mujhe"
       ],
-      "en": "May the wound be mine, if love can work such a miracle."
+      "en": "Tell the sorrow of living to buy me."
+    },
+    {
+      "start": 842.08,
+      "end": 862.84,
+      "lines": [
+        "Main apni zaat mein neelaam ho raha hoon"
+      ],
+      "en": "Within myself, I am being sold at auction."
+    },
+    {
+      "start": 869.28,
+      "end": 877.72,
+      "lines": [
+        "Main apni zaat mein neelaam ho raha hoon"
+      ],
+      "en": "Within myself, I am being sold at auction."
+    },
+    {
+      "start": 879.76,
+      "end": 914.84,
+      "lines": [
+        "Gham-e hayaat se keh do khareed le mujhe"
+      ],
+      "en": "Tell the sorrow of living to buy me."
+    },
+    {
+      "start": 914.84,
+      "end": 924.44,
+      "lines": [
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
+      ],
+      "en": "Love, show me this miracle someday."
+    },
+    {
+      "start": 924.44,
+      "end": 947.24,
+      "lines": [
+        "Ki sang tujh pe gire aur zakhm aaye mujhe"
+      ],
+      "en": "Let the stone strike you and leave its wound on me."
+    },
+    {
+      "start": 947.24,
+      "end": 951.28,
+      "lines": [
+        "Ye mojiza bhi mohabbat kabhi dikha mujhe"
+      ],
+      "en": "Love, show me this miracle someday."
     }
   ]
 }

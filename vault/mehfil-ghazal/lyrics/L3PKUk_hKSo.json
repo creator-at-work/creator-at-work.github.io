@@ -1,160 +1,191 @@
 {
   "video_id": "L3PKUk_hKSo",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 193.0,
-      "end": 213.0,
+      "start": 187.9,
+      "end": 212.91,
       "lines": [
         "Khuli jo aankh to woh tha na woh zamana tha."
       ],
-      "en": "When I opened my eyes, he and those days were gone."
+      "en": "I opened my eyes to find him gone and those days gone with him."
     },
     {
-      "start": 214.0,
-      "end": 238.72,
+      "start": 214.22,
+      "end": 223.92,
       "lines": [
-        "Dehakti aag thi, tanhai thi, fasana tha.",
-        "Khuli jo aankh to woh tha na woh zamana tha."
-      ],
-      "en": "When I opened my eyes, he and those days were gone, and there was a fire, solitude, and a story."
-    },
-    {
-      "start": 238.72,
-      "end": 264.72,
-      "lines": [
-        "Khuli jo aankh to woh tha na woh zamana tha.",
         "Dehakti aag thi, tanhai thi, fasana tha."
       ],
-      "en": "I opened my eyes to find him and those days gone, with only a fire, solitude, and a story left."
+      "en": "A fire still burned, and there was solitude and a story."
     },
     {
-      "start": 268.72,
-      "end": 295.72,
+      "start": 226.64,
+      "end": 249.13,
+      "lines": [
+        "Khuli jo aankh to woh tha na woh zamana tha."
+      ],
+      "en": "I opened my eyes to find him gone and those days gone with him."
+    },
+    {
+      "start": 250.76,
+      "end": 257.52,
+      "lines": [
+        "Dehakti aag thi, tanhai thi, fasana tha."
+      ],
+      "en": "A fire still burned, and there was solitude and a story."
+    },
+    {
+      "start": 260.68,
+      "end": 267.8,
+      "lines": [
+        "Khuli jo aankh to woh tha na woh zamana tha."
+      ],
+      "en": "I opened my eyes to find him gone and those days gone with him."
+    },
+    {
+      "start": 272.85,
+      "end": 286.45,
       "lines": [
         "Ghamon ne baant liya hai."
       ],
       "en": "My sorrows have divided me up."
     },
     {
-      "start": 295.72,
-      "end": 313.72,
+      "start": 303.01,
+      "end": 333.21,
       "lines": [
         "Ghamon ne baant liya hai mujhe yun aapas mein."
       ],
-      "en": "This is how my sorrows have divided me among themselves."
+      "en": "My sorrows have shared me out among themselves."
     },
     {
-      "start": 313.72,
-      "end": 337.72,
+      "start": 338.66,
+      "end": 356.33,
       "lines": [
-        "Yun aapas mein."
+        "Ghamon ne baant liya hai mujhe yun aapas mein."
       ],
-      "en": "They shared me out among themselves."
+      "en": "My sorrows have shared me out among themselves."
     },
     {
-      "start": 347.72,
-      "end": 368.72,
-      "lines": [
-        "Ghamon ne baant liya hai mujhe yun aapas mein.",
-        "Ke jaise main koi loota hua khazana tha."
-      ],
-      "en": "My sorrows divided me among themselves like treasure taken in a raid."
-    },
-    {
-      "start": 368.72,
-      "end": 377.94,
+      "start": 357.73,
+      "end": 377.33,
       "lines": [
         "Ke jaise main koi loota hua khazana tha."
       ],
-      "en": "It was as though I were plundered treasure."
+      "en": "It was as though I were treasure taken in a raid."
     },
     {
-      "start": 378.88,
-      "end": 398.42,
+      "start": 379.86,
+      "end": 387.48,
       "lines": [
-        "Dehakti aag thi, tanhai thi, fasana tha.",
+        "Dehakti aag thi, tanhai thi, fasana tha."
+      ],
+      "en": "A fire still burned, and there was solitude and a story."
+    },
+    {
+      "start": 389.12,
+      "end": 397.27,
+      "lines": [
         "Khuli jo aankh to woh tha na woh zamana tha."
       ],
-      "en": "When I opened my eyes, he and those days were gone, and there was a fire, solitude, and a story."
+      "en": "I opened my eyes to find him gone and those days gone with him."
     },
     {
-      "start": 428.72,
-      "end": 452.04,
+      "start": 416.68,
+      "end": 445.15,
       "lines": [
-        "Qadmon pe thak ke baith gaye.",
-        "Ye kya ke chand hi qadmon pe thak ke baith gaye?"
+        "Yeh kya ke chand hi qadmon pe thak ke baith gaye?"
       ],
       "en": "How did you tire and sit down after only a few steps?"
     },
     {
-      "start": 455.04,
-      "end": 480.04,
+      "start": 454.67,
+      "end": 468.48,
       "lines": [
-        "Ye kya ke chand hi qadmon pe thak ke baith gaye?"
-      ],
-      "en": "How did you tire and sit down after only a few steps?"
-    },
-    {
-      "start": 480.04,
-      "end": 506.04,
-      "lines": [
-        "Qadmon pe thak ke baith gaye."
-      ],
-      "en": "You tired after a few steps and sat down."
-    },
-    {
-      "start": 506.04,
-      "end": 520.04,
-      "lines": [
-        "Ye kya ke chand hi."
+        "Yeh kya ke chand hi."
       ],
       "en": "How could it be, after so few steps?"
     },
     {
-      "start": 520.04,
-      "end": 541.04,
+      "start": 476.84,
+      "end": 498.61,
       "lines": [
-        "Ye kya ke chand hi qadmon pe thak ke baith gaye?",
-        "Tumhein to saath mera door tak nibhana tha."
+        "Yeh kya ke chand hi qadmon pe thak ke baith gaye?"
       ],
-      "en": "How did you tire after only a few steps, when you were to stay with me much farther down the road?"
+      "en": "How did you tire and sit down after only a few steps?"
     },
     {
-      "start": 541.04,
-      "end": 551.04,
+      "start": 510.39,
+      "end": 513.1,
+      "lines": [
+        "Yeh kya ke chand hi."
+      ],
+      "en": "How could it be, after so few steps?"
+    },
+    {
+      "start": 520.34,
+      "end": 529.9,
+      "lines": [
+        "Yeh kya ke chand hi qadmon pe thak ke baith gaye?"
+      ],
+      "en": "How did you tire and sit down after only a few steps?"
+    },
+    {
+      "start": 530.91,
+      "end": 550.67,
       "lines": [
         "Tumhein to saath mera door tak nibhana tha."
       ],
       "en": "You were to stay with me much farther down the road."
     },
     {
-      "start": 551.04,
-      "end": 570.04,
+      "start": 551.56,
+      "end": 559.79,
       "lines": [
-        "Dehakti aag thi, tanhai thi, fasana tha.",
-        "Khuli jo aankh to woh tha na woh zamana tha."
+        "Dehakti aag thi, tanhai thi, fasana tha."
       ],
-      "en": "When I opened my eyes, he and those days were gone, and there was a fire, solitude, and a story."
+      "en": "A fire still burned, and there was solitude and a story."
     },
     {
-      "start": 589.04,
-      "end": 618.04,
+      "start": 560.94,
+      "end": 568.28,
       "lines": [
-        "Mujhe jo mere lahu mein bhigo ke guzra hai.",
+        "Khuli jo aankh to woh tha na woh zamana tha."
+      ],
+      "en": "I opened my eyes to find him gone and those days gone with him."
+    },
+    {
+      "start": 589.34,
+      "end": 595.08,
+      "lines": [
+        "Mujhe jo mere lahu mein dubo ke guzra hai."
+      ],
+      "en": "He passed by and left me drowning in my own blood."
+    },
+    {
+      "start": 598.3,
+      "end": 616.27,
+      "lines": [
         "Woh koi ghair nahin, yaar ek purana tha."
       ],
-      "en": "It was an old friend who passed by and left me soaked in my own blood."
+      "en": "The man who passed was an old friend."
     },
     {
-      "start": 618.04,
-      "end": 642.04,
+      "start": 618.8,
+      "end": 628.02,
       "lines": [
-        "Dehakti aag thi, tanhai thi, fasana tha.",
+        "Dehakti aag thi, tanhai thi, fasana tha."
+      ],
+      "en": "A fire still burned, and there was solitude and a story."
+    },
+    {
+      "start": 629.15,
+      "end": 637.51,
+      "lines": [
         "Khuli jo aankh to woh tha na woh zamana tha."
       ],
-      "en": "When I opened my eyes, he and those days were gone, and there was a fire, solitude, and a story."
+      "en": "I opened my eyes to find him gone and those days gone with him."
     }
   ]
 }

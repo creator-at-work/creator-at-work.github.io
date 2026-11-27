@@ -1,168 +1,191 @@
 {
   "video_id": "f2IPxavwkzM",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 49.0,
+      "start": 37.2,
+      "end": 59.24,
       "lines": [
-        "Tu ne ye phool jo zulfon mein saja rakha hai"
+        "Tune ye phool jo zulfon mein saja rakha hai"
       ],
       "en": "You have tucked this flower into your hair."
     },
     {
-      "start": 49.0,
-      "end": 70.0,
+      "start": 60.4,
+      "end": 70.6,
       "lines": [
-        "Tu ne ye phool jo zulfon mein saja rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Ek diya hai jo andheron mein jala rakha hai"
       ],
-      "en": "The flower you wear in your hair is a lamp kept burning in the dark."
+      "en": "It is a lamp you keep alight in the dark."
     },
     {
-      "start": 70.0,
-      "end": 96.0,
+      "start": 70.8,
+      "end": 80.68,
       "lines": [
-        "Tu ne ye phool jo zulfon mein saja rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Tune ye phool jo zulfon mein saja rakha hai"
       ],
-      "en": "The flower you wear in your hair is a lamp kept burning in the dark."
+      "en": "You have tucked this flower into your hair."
     },
     {
-      "start": 100.0,
-      "end": 130.0,
+      "start": 81.76,
+      "end": 90.56,
       "lines": [
-        "Jeet le jaaye"
+        "Ek diya hai jo andheron mein jala rakha hai"
       ],
-      "en": "Let someone win me."
+      "en": "It is a lamp you keep alight in the dark."
     },
     {
-      "start": 130.0,
-      "end": 154.0,
+      "start": 92.08,
+      "end": 93.92,
+      "lines": [
+        "Tune ye phool"
+      ],
+      "en": "This flower of yours."
+    },
+    {
+      "start": 110.24,
+      "end": 168.84,
       "lines": [
         "Jeet le jaaye koi mujhko naseebon wala"
       ],
-      "en": "Let someone with luck on their side win me."
+      "en": "May someone with luck on their side win me."
     },
     {
-      "start": 154.0,
-      "end": 180.0,
+      "start": 170.96,
+      "end": 196.52,
       "lines": [
-        "Jeet le jaaye koi mujhko naseebon wala",
-        "Zindagi ne mujhe"
+        "Zindagi ne mujhe daav pe laga rakha hai"
       ],
-      "en": "Let some lucky soul win what life has staked."
+      "en": "Life has put me up as a wager."
     },
     {
-      "start": 180.0,
-      "end": 209.0,
+      "start": 196.8,
+      "end": 206.04,
       "lines": [
-        "Zindagi ne mujhe daav pe laga rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Ek diya hai jo andheron mein jala rakha hai"
       ],
-      "en": "Life has wagered me, and a lamp still burns in the dark."
+      "en": "It is a lamp you keep alight in the dark."
     },
     {
-      "start": 210.0,
-      "end": 233.16,
+      "start": 206.16,
+      "end": 208.2,
       "lines": [
-        "Jaane kab dil mein koi"
+        "Tune ye phool"
       ],
-      "en": "Who knows when someone might look into my heart?"
+      "en": "This flower of yours."
     },
     {
-      "start": 233.16,
-      "end": 258.16,
+      "start": 226.8,
+      "end": 278.8,
       "lines": [
         "Jaane kab dil mein koi jhaankne wala aa jaaye"
       ],
-      "en": "Who knows when someone might come to look into my heart?"
+      "en": "Who knows when someone might come and look into my heart?"
     },
     {
-      "start": 258.16,
-      "end": 279.04,
-      "lines": [
-        "Jaane kab dil mein koi jhaankne wala aa jaaye"
-      ],
-      "en": "Who knows when someone might come to look into my heart?"
-    },
-    {
-      "start": 279.04,
-      "end": 299.8,
+      "start": 279.92,
+      "end": 309.16,
       "lines": [
         "Is liye maine girebaan khula rakha hai"
       ],
       "en": "That is why I have left my collar open."
     },
     {
-      "start": 299.8,
-      "end": 321.8,
+      "start": 309.44,
+      "end": 318.44,
       "lines": [
-        "Is liye maine girebaan khula rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Ek diya hai jo andheron mein jala rakha hai"
       ],
-      "en": "That is why I keep my collar open, with a lamp still burning in the dark."
+      "en": "It is a lamp you keep alight in the dark."
     },
     {
-      "start": 389.8,
-      "end": 406.52,
+      "start": 318.56,
+      "end": 320.68,
       "lines": [
-        "Imtihaan aur mere zabt ka tum kya loge",
-        "Maine dhadkan ko bhi"
+        "Tune ye phool"
       ],
-      "en": "How else will you test my restraint, when I have hidden even my heartbeat?"
+      "en": "This flower of yours."
     },
     {
-      "start": 406.52,
-      "end": 435.52,
+      "start": 340.24,
+      "end": 396.2,
       "lines": [
-        "Maine dhadkan ko bhi seene mein chhupa rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Imtihaan aur mere zabt ka tum kya loge"
       ],
-      "en": "I have hidden even my heartbeat in my chest, while a lamp burns in the dark."
+      "en": "What further test can you put my restraint to?"
     },
     {
-      "start": 435.52,
-      "end": 442.96,
+      "start": 398.08,
+      "end": 423.16,
       "lines": [
-        "Tu ne ye phool jo zulfon mein saja rakha hai"
+        "Maine dhadkan ko bhi seene mein chhupa rakha hai"
+      ],
+      "en": "I have hidden even my heartbeat within my chest."
+    },
+    {
+      "start": 423.44,
+      "end": 432.44,
+      "lines": [
+        "Ek diya hai jo andheron mein jala rakha hai"
+      ],
+      "en": "It is a lamp you keep alight in the dark."
+    },
+    {
+      "start": 432.56,
+      "end": 442.28,
+      "lines": [
+        "Tune ye phool jo zulfon mein saja rakha hai"
       ],
       "en": "You have tucked this flower into your hair."
     },
     {
-      "start": 462.32,
-      "end": 487.72,
+      "start": 462.4,
+      "end": 484.59,
       "lines": [
-        "Dil tha ik shola"
+        "Dil tha ek shola"
       ],
       "en": "The heart was once a flame."
     },
     {
-      "start": 487.72,
-      "end": 511.28,
+      "start": 491.52,
+      "end": 510.76,
       "lines": [
-        "Dil tha ik shola, magar beet gaye din woh, Qateel"
+        "Magar beet gaye din woh, Qateel"
       ],
-      "en": "The heart was once a flame, Qateel, and those days are gone."
+      "en": "But those days have passed, Qateel."
     },
     {
-      "start": 511.28,
-      "end": 537.28,
+      "start": 511.36,
+      "end": 520.68,
       "lines": [
-        "Dil tha ik shola, magar beet gaye din woh, Qateel",
+        "Dil tha ek shola magar beet gaye din woh, Qateel"
+      ],
+      "en": "The heart was once a flame, but those days have passed, Qateel."
+    },
+    {
+      "start": 521.76,
+      "end": 547.08,
+      "lines": [
         "Ab kuredo na ise, raakh mein kya rakha hai"
       ],
-      "en": "The heart's fire is long gone, Qateel, so why stir the ashes now?"
+      "en": "Let it lie, for what is left in the ashes?"
     },
     {
-      "start": 537.28,
-      "end": 562.0,
+      "start": 547.2,
+      "end": 555.96,
       "lines": [
-        "Ab kuredo na ise, raakh mein kya rakha hai",
-        "Ik diya hai jo andheron mein jala rakha hai"
+        "Ek diya hai jo andheron mein jala rakha hai"
       ],
-      "en": "Leave the ashes undisturbed, for a lamp still burns in the dark."
+      "en": "It is a lamp you keep alight in the dark."
+    },
+    {
+      "start": 556.16,
+      "end": 557.92,
+      "lines": [
+        "Tune ye phool"
+      ],
+      "en": "This flower of yours."
     }
   ]
 }

@@ -1,149 +1,151 @@
 {
   "video_id": "8uBxIDvbkig",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 30.0,
+      "start": 5.4,
+      "end": 37.28,
       "lines": [
-        "Mere hamnafas, mere hamnafas"
+        "Mere humnafas, mere humnawa, mujhe dost ban ke dagha na de"
       ],
-      "en": "My companion, my companion."
+      "en": "My dearest companion, do not betray me in the guise of a friend."
     },
     {
-      "start": 30.0,
-      "end": 50.0,
+      "start": 37.28,
+      "end": 68.16,
       "lines": [
-        "Mere hamnafas, mere hamnava, mujhe dost ban ke dagha na de",
-        "Main khud dard-e-ishq se jaan-ba-lab, mujhe zindagi ki dua na de"
+        "Main hoon dard-e-ishq se jaan-ba-lab, mujhe zindagi ki dua na de"
       ],
-      "en": "My companion, my kindred voice, spare me betrayal in the guise of friendship and prayers for life when love has all but taken mine."
+      "en": "Love has brought me to my last breath, so do not pray that I live."
     },
     {
-      "start": 50.0,
-      "end": 71.48,
+      "start": 68.16,
+      "end": 70.4,
       "lines": [
-        "Main khud dard-e-ishq se jaan-ba-lab, mujhe zindagi ki dua na de"
+        "Mere humnafas"
       ],
-      "en": "Love's pain has brought me to my last breath, so spare me a prayer for life."
+      "en": "My dearest companion."
     },
     {
-      "start": 80.0,
-      "end": 102.9,
+      "start": 95.32,
+      "end": 119.84,
       "lines": [
-        "Mere dagh-e-dil se hai roshni"
+        "Mere daagh-e-dil se hai roshni, isi roshni se hai zindagi"
       ],
-      "en": "This light comes from the wound in my heart."
+      "en": "The wound in my heart gives light, and by that light I live."
     },
     {
-      "start": 102.9,
-      "end": 128.9,
+      "start": 122.24,
+      "end": 153.36,
       "lines": [
-        "Isi roshni se hai zindagi",
-        "Mujhe dar hai ai mere charagar"
+        "Mujhe dar hai ai mere charagar, ye charagh tu hi bujha na de"
       ],
-      "en": "This very light keeps me alive, and I am afraid, my healer."
+      "en": "My healer, I fear you may be the one to put out this lamp."
     },
     {
-      "start": 128.9,
-      "end": 156.9,
+      "start": 153.36,
+      "end": 155.68,
       "lines": [
-        "Mujhe dar hai ai mere charagar",
-        "Ye charagh tu hi bujha na de"
+        "Mere humnafas"
       ],
-      "en": "I fear, my healer, that you yourself may put out this lamp."
+      "en": "My dearest companion."
     },
     {
-      "start": 158.9,
-      "end": 171.9,
-      "lines": [
-        "Tera kya bharosa hai charagar"
-      ],
-      "en": "What faith can I place in you, my healer?"
-    },
-    {
-      "start": 171.9,
-      "end": 189.9,
+      "start": 172.92,
+      "end": 195.48,
       "lines": [
         "Mujhe chhod de mere haal par, tera kya bharosa hai charagar"
       ],
-      "en": "Leave me as I am, my healer, for how can I trust you?"
+      "en": "Leave me as I am, for how can I trust you, my healer?"
     },
     {
-      "start": 194.9,
-      "end": 217.9,
+      "start": 195.48,
+      "end": 211.32,
       "lines": [
-        "Ye teri navazish-e-mukhtasar, mera dard aur badha na de"
+        "Ye teri nawazish-e-mukhtasar, mera dard aur badha na de"
       ],
-      "en": "This brief kindness of yours may only deepen my pain."
+      "en": "I fear this brief kindness of yours may deepen my pain."
     },
     {
-      "start": 217.9,
-      "end": 229.9,
+      "start": 211.32,
+      "end": 226.0,
       "lines": [
-        "Mere hamnafas, mere hamnava, mujhe dost ban ke dagha na de"
+        "Mere humnafas, mere humnawa, mujhe dost ban ke dagha na de"
       ],
-      "en": "My companion, my kindred voice, spare me betrayal in the guise of friendship."
+      "en": "My dearest companion, do not betray me in the guise of a friend."
     },
     {
-      "start": 246.9,
-      "end": 264.9,
+      "start": 226.0,
+      "end": 229.12,
+      "lines": [
+        "Mere humnafas"
+      ],
+      "en": "My dearest companion."
+    },
+    {
+      "start": 247.28,
+      "end": 279.28,
       "lines": [
         "Mera azm itna buland hai ke paraye sholon ka dar nahin"
       ],
-      "en": "My resolve is strong enough to face any flame from outside."
+      "en": "My resolve is strong enough that I do not fear another's flames."
     },
     {
-      "start": 265.9,
-      "end": 278.9,
+      "start": 279.28,
+      "end": 294.8,
       "lines": [
-        "Mera azm itna buland hai ke paraye sholon ka dar nahin"
+        "Mujhe khauf aatish-e-gul se hai, ye kahin chaman ko jala na de"
       ],
-      "en": "My resolve is strong enough to face any flame from outside."
+      "en": "I fear the fire within the rose may burn the garden down."
     },
     {
-      "start": 278.9,
-      "end": 297.9,
+      "start": 294.8,
+      "end": 302.28,
       "lines": [
-        "Mujhe khauf aatish-e-gul se hai",
-        "Ye kahin chaman ko jala na de"
+        "Mere humnafas, mere humnawa"
       ],
-      "en": "I fear the fire in the rose may burn the garden down."
+      "en": "My companion, my confidant."
     },
     {
-      "start": 297.9,
-      "end": 304.9,
+      "start": 302.28,
+      "end": 304.25,
       "lines": [
-        "Mere hamnafas, mere hamnafas"
+        "Mere humnafas"
       ],
-      "en": "My companion, my companion."
+      "en": "My dearest companion."
     },
     {
-      "start": 315.9,
-      "end": 342.9,
+      "start": 325.6,
+      "end": 342.44,
       "lines": [
-        "Woh uthe hain le ke khum-o-subu, are o Shakeel, kahan hai tu"
+        "Woh uthe hain le ke khum-o-subu, are o Shakeel kahan hai tu"
       ],
-      "en": "They have risen with jar and flagon in hand, and where are you, Shakeel?"
+      "en": "They have risen with the wine jar and pitcher, and where are you, Shakeel?"
     },
     {
-      "start": 345.9,
-      "end": 366.9,
+      "start": 347.44,
+      "end": 363.04,
       "lines": [
-        "Tera jaam lene ko bazm mein koi aur haath badha na de",
-        "Mere hamnafas, mere hamnava"
+        "Tera jaam lene ko bazm mein koi aur haath badha na de"
       ],
-      "en": "Someone else in the gathering may reach for your cup, my companion, my kindred voice."
+      "en": "Someone else at the gathering may reach for your cup."
     },
     {
-      "start": 366.9,
-      "end": 393.9,
+      "start": 363.04,
+      "end": 377.96,
       "lines": [
-        "Mere hamnafas, mere hamnava, mujhe dost ban ke dagha na de",
-        "Main khud dard-e-ishq se jaan-ba-lab, mujhe zindagi ki dua na de"
+        "Mere humnafas, mere humnawa, mujhe dost ban ke dagha na de"
       ],
-      "en": "My companion, my kindred voice, spare me betrayal in the guise of friendship and prayers for life when love has all but taken mine."
+      "en": "My dearest companion, do not betray me in the guise of a friend."
+    },
+    {
+      "start": 377.96,
+      "end": 399.0,
+      "lines": [
+        "Main hoon dard-e-ishq se jaan-ba-lab, mujhe zindagi ki dua na de"
+      ],
+      "en": "Love has brought me to my last breath, so do not pray that I live."
     }
   ]
 }

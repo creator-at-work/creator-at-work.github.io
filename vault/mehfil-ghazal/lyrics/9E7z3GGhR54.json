@@ -1,155 +1,87 @@
 {
   "video_id": "9E7z3GGhR54",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 25.0,
+      "start": 14.24,
+      "end": 37.52,
       "lines": [
         "Dard minnat-kash-e-dawa na hua"
       ],
-      "en": "My pain owed nothing to the remedy."
+      "en": "My pain owed the remedy nothing."
     },
     {
-      "start": 30.0,
-      "end": 56.9,
+      "start": 37.52,
+      "end": 59.92,
       "lines": [
-        "Dard minnat-kash-e-dawa na hua",
         "Main na achchha hua, bura na hua"
       ],
-      "en": "My pain owed nothing to the remedy, and I grew neither better nor worse."
+      "en": "I did not get well, and perhaps that was just as well."
     },
     {
-      "start": 60.0,
-      "end": 87.0,
+      "start": 74.24,
+      "end": 104.44,
       "lines": [
         "Kya woh Namrood ki khudai thi?"
       ],
-      "en": "Was that the godhood Nimrod claimed?"
+      "en": "Was that the godhood Namrood claimed?"
     },
     {
-      "start": 87.0,
-      "end": 112.0,
-      "lines": [
-        "Kya woh Namrood ki khudai thi?",
-        "Bandagi mein mera bhala na hua"
-      ],
-      "en": "What kind of god was Nimrod, if all my worship did me no good?"
-    },
-    {
-      "start": 112.0,
-      "end": 121.32,
+      "start": 104.88,
+      "end": 129.12,
       "lines": [
         "Bandagi mein mera bhala na hua"
       ],
-      "en": "All my worship did me no good."
+      "en": "All my devotion brought me no good."
     },
     {
-      "start": 121.68,
-      "end": 131.08,
+      "start": 141.8,
+      "end": 176.96,
       "lines": [
-        "Bandagi mein mera bhala na hua"
-      ],
-      "en": "All my worship did me no good."
-    },
-    {
-      "start": 142.0,
-      "end": 168.12,
-      "lines": [
-        "Hum kahan qismat aazmane jaayen?"
+        "Hum kahaan qismat aazmane jaayen?"
       ],
       "en": "Where am I to go to try my luck?"
     },
     {
-      "start": 169.44,
-      "end": 187.24,
-      "lines": [
-        "Hum kahan qismat aazmane jaayen?",
-        "Jab tu hi khanjar-aazma na hua"
-      ],
-      "en": "Where am I to try my luck when even you would not try your dagger?"
-    },
-    {
-      "start": 187.44,
-      "end": 197.24,
+      "start": 176.96,
+      "end": 209.76,
       "lines": [
         "Jab tu hi khanjar-aazma na hua"
       ],
-      "en": "Even you would not try your dagger."
+      "en": "You yourself would not put your dagger to the test."
     },
     {
-      "start": 197.44,
-      "end": 204.52,
-      "lines": [
-        "Jab tu hi khanjar-aazma na hua"
-      ],
-      "en": "Even you would not try your dagger."
-    },
-    {
-      "start": 215.92,
-      "end": 236.38,
+      "start": 216.04,
+      "end": 251.36,
       "lines": [
         "Jama karte ho kyun raqeebon ko?"
       ],
-      "en": "Why do you gather my rivals?"
+      "en": "Why do you gather my rivals around you?"
     },
     {
-      "start": 240.46,
-      "end": 261.8,
-      "lines": [
-        "Jama karte ho kyun raqeebon ko?",
-        "Ek tamasha hua, gila na hua"
-      ],
-      "en": "Why gather my rivals when it only makes a spectacle of my grievance?"
-    },
-    {
-      "start": 261.96,
-      "end": 276.98,
+      "start": 251.36,
+      "end": 274.8,
       "lines": [
         "Ek tamasha hua, gila na hua"
       ],
-      "en": "It all became a spectacle, and my grievance went unsaid."
+      "en": "My grievance went unheard, and there was a spectacle instead."
     },
     {
-      "start": 281.5,
-      "end": 307.5,
+      "start": 283.36,
+      "end": 323.68,
       "lines": [
-        "Kuchh to kahiye, ki log kehte hain"
+        "Kuchh to kahiye ke log kehte hain"
       ],
-      "en": "Do say something, for people are beginning to talk."
+      "en": "Do say something, for people are already talking."
     },
     {
-      "start": 307.5,
-      "end": 317.5,
-      "lines": [
-        "Aaj Ghalib ghazal-sara na hua"
-      ],
-      "en": "Ghalib recited no ghazal today."
-    },
-    {
-      "start": 318.5,
-      "end": 327.5,
+      "start": 323.68,
+      "end": 367.84,
       "lines": [
         "Aaj Ghalib ghazal-sara na hua"
       ],
-      "en": "Ghalib recited no ghazal today."
-    },
-    {
-      "start": 328.5,
-      "end": 336.5,
-      "lines": [
-        "Aaj Ghalib ghazal-sara na hua"
-      ],
-      "en": "Ghalib recited no ghazal today."
-    },
-    {
-      "start": 337.5,
-      "end": 347.1,
-      "lines": [
-        "Aaj Ghalib ghazal-sara na hua"
-      ],
-      "en": "Ghalib recited no ghazal today."
+      "en": "Today Ghalib did not sing a ghazal."
     }
   ]
 }

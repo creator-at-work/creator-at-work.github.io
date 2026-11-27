@@ -1,109 +1,159 @@
 {
   "video_id": "m3x2dcnXmy0",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 39.0,
+      "start": 27.28,
+      "end": 37.24,
       "lines": [
-        "Khilte hain, bikhar jaate hain."
+        "Dard ke phool bhi khilte hain, bikhar jaate hain."
       ],
-      "en": "They bloom and fall apart."
+      "en": "Even sorrow flowers, then scatters."
     },
     {
-      "start": 43.0,
-      "end": 64.0,
+      "start": 43.76,
+      "end": 53.72,
       "lines": [
-        "Dard ke phool bhi khilte hain, bikhar jaate hain.",
+        "Dard ke phool bhi khilte hain, bikhar jaate hain."
+      ],
+      "en": "Even sorrow flowers, then scatters."
+    },
+    {
+      "start": 54.72,
+      "end": 64.52,
+      "lines": [
         "Zakhm kaise bhi hon, kuchh roz mein bhar jaate hain."
       ],
-      "en": "Even the flowers of pain bloom and fall apart, and every wound closes in a few days."
+      "en": "Whatever the wound, it closes in a few days."
     },
     {
-      "start": 65.0,
-      "end": 76.0,
+      "start": 65.52,
+      "end": 75.8,
       "lines": [
         "Dard ke phool bhi khilte hain, bikhar jaate hain."
       ],
-      "en": "Even the flowers of pain bloom and fall apart."
+      "en": "Even sorrow flowers, then scatters."
     },
     {
-      "start": 84.0,
-      "end": 111.0,
+      "start": 100.96,
+      "end": 107.8,
       "lines": [
-        "Us dareeche mein bhi ab koi nahin, aur hum bhi"
+        "Us dareeche mein bhi ab koi nahin."
       ],
-      "en": "That window, too, is empty now."
+      "en": "There is no one at that window now, either."
     },
     {
-      "start": 114.0,
-      "end": 138.64,
+      "start": 107.92,
+      "end": 110.28,
       "lines": [
-        "Us dareeche mein bhi ab koi nahin, aur hum bhi",
-        "Sar jhukaaye hue chup-chaap guzar jaate hain."
+        "Aur hum"
       ],
-      "en": "That window, too, is empty now, and we pass in silence with our heads bowed."
+      "en": "And we..."
     },
     {
-      "start": 180.16,
-      "end": 201.04,
+      "start": 117.28,
+      "end": 124.12,
       "lines": [
-        "Raasta roke khadi hai yahi uljhan kab se.",
+        "Us dareeche mein bhi ab koi nahin."
+      ],
+      "en": "There is no one at that window now, either."
+    },
+    {
+      "start": 124.24,
+      "end": 138.2,
+      "lines": [
+        "Aur hum bhi sar jhukaaye hue chupchaap guzar jaate hain."
+      ],
+      "en": "And we pass by in silence, our heads bowed."
+    },
+    {
+      "start": 163.68,
+      "end": 173.4,
+      "lines": [
+        "Raasta roke khadi hai yahi uljhan kab se."
+      ],
+      "en": "This same doubt has stood in our way for so long."
+    },
+    {
+      "start": 180.24,
+      "end": 189.88,
+      "lines": [
+        "Raasta roke khadi hai yahi uljhan kab se."
+      ],
+      "en": "This same doubt has stood in our way for so long."
+    },
+    {
+      "start": 191.2,
+      "end": 200.92,
+      "lines": [
         "Koi poochhe to kahein kya ki kidhar jaate hain?"
       ],
-      "en": "This doubt has long barred our way, for what could we say if someone asked where we were going?"
+      "en": "If someone asks where we are headed, what shall we say?"
     },
     {
-      "start": 201.86,
-      "end": 222.86,
+      "start": 202.0,
+      "end": 211.72,
       "lines": [
-        "Zakhm kaise bhi hon, kuchh roz mein bhar jaate hain.",
+        "Zakhm kaise bhi hon, kuchh roz mein bhar jaate hain."
+      ],
+      "en": "Whatever the wound, it closes in a few days."
+    },
+    {
+      "start": 212.72,
+      "end": 223.08,
+      "lines": [
         "Dard ke phool bhi khilte hain, bikhar jaate hain."
       ],
-      "en": "Every wound closes in a few days, and even the flowers of pain bloom and fall apart."
+      "en": "Even sorrow flowers, then scatters."
     },
     {
-      "start": 231.86,
-      "end": 236.86,
+      "start": 248.08,
+      "end": 257.48,
       "lines": [
-        "Mohazzab lehje."
+        "Narm aawaaz, bhali baatein, muhazzab lahje."
       ],
-      "en": "There are voices schooled in courtesy."
+      "en": "A soft voice, kind words, the tones of courtesy."
     },
     {
-      "start": 261.86,
-      "end": 285.9,
+      "start": 264.48,
+      "end": 273.96,
       "lines": [
-        "Narm alfaaz, bhali baatein, mohazzab lehje.",
+        "Narm aawaaz, bhali baatein, muhazzab lahje."
+      ],
+      "en": "A soft voice, kind words, the tones of courtesy."
+    },
+    {
+      "start": 275.84,
+      "end": 296.28,
+      "lines": [
         "Pehli baarish mein hi ye rang utar jaate hain."
       ],
-      "en": "Soft words, kindly talk and courteous tones all wash away in the first rain."
+      "en": "The very first rain washes those colors away."
     },
     {
-      "start": 285.9,
-      "end": 296.9,
-      "lines": [
-        "Pehli baarish mein hi ye rang utar jaate hain."
-      ],
-      "en": "These colours wash away in the first rain."
-    },
-    {
-      "start": 296.9,
-      "end": 307.9,
+      "start": 297.28,
+      "end": 307.16,
       "lines": [
         "Dard ke phool bhi khilte hain, bikhar jaate hain."
       ],
-      "en": "Even the flowers of pain bloom and fall apart."
+      "en": "Even sorrow flowers, then scatters."
     },
     {
-      "start": 307.9,
-      "end": 328.9,
+      "start": 308.32,
+      "end": 318.04,
       "lines": [
-        "Zakhm kaise bhi hon, kuchh roz mein bhar jaate hain.",
+        "Zakhm kaise bhi hon, kuchh roz mein bhar jaate hain."
+      ],
+      "en": "Whatever the wound, it closes in a few days."
+    },
+    {
+      "start": 319.12,
+      "end": 329.08,
+      "lines": [
         "Dard ke phool bhi khilte hain, bikhar jaate hain."
       ],
-      "en": "Every wound closes in a few days, and even the flowers of pain bloom and fall apart."
+      "en": "Even sorrow flowers, then scatters."
     }
   ]
 }

@@ -1,139 +1,119 @@
 {
   "video_id": "hRzd8JxhRTo",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 30.0,
+      "start": 16.56,
+      "end": 36.16,
       "lines": [
-        "Ibn-e-Mariyam hua kare koi"
+        "Ibn-e-Maryam hua kare koi"
       ],
-      "en": "Let someone be the son of Mary."
+      "en": "Let someone be a son of Mary."
     },
     {
-      "start": 30.0,
-      "end": 54.4,
+      "start": 36.16,
+      "end": 52.84,
       "lines": [
         "Mere dukh ki dawa kare koi"
       ],
       "en": "Let someone bring a remedy for my sorrow."
     },
     {
-      "start": 60.0,
-      "end": 80.0,
+      "start": 74.04,
+      "end": 90.1,
       "lines": [
         "Na suno gar bura kahe koi"
       ],
-      "en": "Turn a deaf ear to unkind words."
+      "en": "Turn a deaf ear when someone speaks ill."
     },
     {
-      "start": 80.0,
-      "end": 108.22,
+      "start": 99.72,
+      "end": 109.32,
       "lines": [
-        "Na suno gar bura kahe koi",
         "Na kaho gar bura kare koi"
       ],
-      "en": "Give no ear to unkind words, and say nothing when someone wrongs you."
+      "en": "Say nothing when someone wrongs you."
     },
     {
-      "start": 109.22,
-      "end": 117.24,
+      "start": 109.32,
+      "end": 116.76,
       "lines": [
-        "Ibn-e-Mariyam hua kare koi"
+        "Ibn-e-Maryam hua kare koi"
       ],
-      "en": "Let someone be the son of Mary."
+      "en": "Let someone be a son of Mary."
     },
     {
-      "start": 118.0,
-      "end": 147.0,
+      "start": 134.68,
+      "end": 154.08,
       "lines": [
         "Baat par waan zabaan katti hai"
       ],
-      "en": "Over there, a word is enough to have your tongue cut out."
+      "en": "There, a word can cost you your tongue."
     },
     {
-      "start": 148.0,
-      "end": 169.2,
+      "start": 160.08,
+      "end": 179.84,
       "lines": [
-        "Baat par waan zabaan katti hai",
-        "Woh kahein aur suna kare koi"
+        "Woh kahen aur suna kare koi"
       ],
-      "en": "There they cut your tongue for speaking, and you are left to listen while they talk."
+      "en": "Let them speak, and let someone listen."
     },
     {
-      "start": 169.6,
-      "end": 179.2,
+      "start": 179.84,
+      "end": 186.6,
       "lines": [
-        "Woh kahein aur suna kare koi"
+        "Ibn-e-Maryam hua kare koi"
       ],
-      "en": "They can go on talking while you sit and listen."
+      "en": "Let someone be a son of Mary."
     },
     {
-      "start": 179.6,
-      "end": 188.2,
+      "start": 206.76,
+      "end": 227.96,
       "lines": [
-        "Ibn-e-Mariyam hua kare koi"
+        "Kaun hai jo nahin hai haajatmand"
       ],
-      "en": "Let someone be the son of Mary."
+      "en": "Who among us is free of need?"
     },
     {
-      "start": 190.0,
-      "end": 201.0,
-      "lines": [
-        "Kaun hai jo nahin hai haajat-mand"
-      ],
-      "en": "Who is there without a need?"
-    },
-    {
-      "start": 202.0,
-      "end": 228.0,
-      "lines": [
-        "Kaun hai jo nahin hai haajat-mand",
-        "Kis ki haajat rawa kare koi"
-      ],
-      "en": "When everyone is in need, whose need can one meet?"
-    },
-    {
-      "start": 228.0,
-      "end": 245.4,
+      "start": 227.96,
+      "end": 246.08,
       "lines": [
         "Kis ki haajat rawa kare koi"
       ],
-      "en": "Whose need can one meet?"
+      "en": "Whose need is anyone to answer?"
     },
     {
-      "start": 246.4,
-      "end": 255.0,
+      "start": 246.08,
+      "end": 254.04,
       "lines": [
-        "Ibn-e-Mariyam hua kare koi"
+        "Ibn-e-Maryam hua kare koi"
       ],
-      "en": "Let someone be the son of Mary."
+      "en": "Let someone be a son of Mary."
     },
     {
-      "start": 268.0,
-      "end": 288.12,
+      "start": 275.04,
+      "end": 298.2,
       "lines": [
-        "Jab tavaqqo hi uth gayi Ghalib"
+        "Jab tawaqqo hi uth gayi Ghalib"
       ],
-      "en": "All expectation has faded, Ghalib."
+      "en": "When hope itself has gone, Ghalib."
     },
     {
-      "start": 288.12,
-      "end": 315.64,
+      "start": 298.2,
+      "end": 316.44,
       "lines": [
-        "Jab tavaqqo hi uth gayi Ghalib",
         "Kyun kisi ka gila kare koi"
       ],
-      "en": "When you expect nothing anymore, Ghalib, what grievance is left to voice?"
+      "en": "Why hold a grievance against anyone?"
     },
     {
-      "start": 315.64,
-      "end": 327.64,
+      "start": 316.44,
+      "end": 324.04,
       "lines": [
-        "Ibn-e-Mariyam hua kare koi"
+        "Ibn-e-Maryam hua kare koi"
       ],
-      "en": "Let someone be the son of Mary."
+      "en": "Let someone be a son of Mary."
     }
   ]
 }

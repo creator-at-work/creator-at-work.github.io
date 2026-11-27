@@ -1,31 +1,167 @@
 {
   "video_id": "DkjCox_BgAk",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 12.0,
-      "end": 27.0,
+      "start": 1.2,
+      "end": 2.92,
       "lines": [
-        "Unki berukhi mein bhi iltefaat shamil hai."
+        "Unki berukhi"
       ],
-      "en": "Even in their coldness, there is a trace of regard."
+      "en": "They turn away."
     },
     {
-      "start": 27.0,
-      "end": 40.0,
+      "start": 12.72,
+      "end": 26.52,
       "lines": [
-        "Unki berukhi mein bhi iltefaat shamil hai."
+        "Unki berukhi mein bhi iltifaat shaamil hai"
       ],
-      "en": "Even in their coldness, there is a trace of regard."
+      "en": "Even their coldness holds a trace of tenderness."
     },
     {
-      "start": 51.0,
-      "end": 67.0,
+      "start": 28.0,
+      "end": 29.0,
       "lines": [
-        "Unki berukhi mein bhi iltefaat shamil hai."
+        "Unki"
       ],
-      "en": "Even in their coldness, there is a trace of regard."
+      "en": "Even theirs."
+    },
+    {
+      "start": 53.84,
+      "end": 66.6,
+      "lines": [
+        "Unki berukhi mein bhi iltifaat shaamil hai"
+      ],
+      "en": "Even their coldness holds a trace of tenderness."
+    },
+    {
+      "start": 70.48,
+      "end": 90.12,
+      "lines": [
+        "Aajkal meri haalat dekhne ke qaabil hai"
+      ],
+      "en": "You should see what has become of me."
+    },
+    {
+      "start": 111.6,
+      "end": 124.24,
+      "lines": [
+        "Qatl ho to mera sa, maut ho to meri si"
+      ],
+      "en": "If one must be slain, if one must die, let it be as I did."
+    },
+    {
+      "start": 156.24,
+      "end": 165.44,
+      "lines": [
+        "Qatl ho to mera sa, maut ho to meri si"
+      ],
+      "en": "If one must be slain, if one must die, let it be as I did."
+    },
+    {
+      "start": 170.8,
+      "end": 186.12,
+      "lines": [
+        "Mere sogwaaron mein aaj mera qaatil hai"
+      ],
+      "en": "Today the one who killed me stands among my mourners."
+    },
+    {
+      "start": 194.4,
+      "end": 195.6,
+      "lines": [
+        "Aaj"
+      ],
+      "en": "Today."
+    },
+    {
+      "start": 220.4,
+      "end": 224.48,
+      "lines": [
+        "Har qadam pe mahroomi"
+      ],
+      "en": "At every step, something was denied me."
+    },
+    {
+      "start": 233.12,
+      "end": 234.32,
+      "lines": [
+        "Har qadam"
+      ],
+      "en": "At every step."
+    },
+    {
+      "start": 241.92,
+      "end": 252.08,
+      "lines": [
+        "Har qadam pe naakaami"
+      ],
+      "en": "At every step, I came up short."
+    },
+    {
+      "start": 256.24,
+      "end": 273.92,
+      "lines": [
+        "Ghaaliban koi dushman doston mein shaamil hai"
+      ],
+      "en": "Perhaps an enemy has found a place among my friends."
+    },
+    {
+      "start": 292.72,
+      "end": 298.4,
+      "lines": [
+        "Ghaaliban koi dushman doston mein shaamil hai"
+      ],
+      "en": "Perhaps an enemy has found a place among my friends."
+    },
+    {
+      "start": 313.52,
+      "end": 320.64,
+      "lines": [
+        "Uth rahe hain toofaan kyun"
+      ],
+      "en": "Why are the storms rising?"
+    },
+    {
+      "start": 329.04,
+      "end": 339.04,
+      "lines": [
+        "Muztarib hain maujen kyun, uth rahe hain toofaan kyun"
+      ],
+      "en": "Why are the waves restless, why are the storms rising?"
+    },
+    {
+      "start": 346.4,
+      "end": 349.76,
+      "lines": [
+        "Kya kisi safeene ko"
+      ],
+      "en": "Could it be that some ship longs?"
+    },
+    {
+      "start": 356.72,
+      "end": 370.12,
+      "lines": [
+        "Kya kisi safeene ko aarzu-e-saahil hai"
+      ],
+      "en": "Does some ship long for shore?"
+    },
+    {
+      "start": 430.64,
+      "end": 433.0,
+      "lines": [
+        "Sirf rahzan hi se kyun, Amir, shikwa ho"
+      ],
+      "en": "Amir, why lay all the blame on the bandit?"
+    },
+    {
+      "start": 446.72,
+      "end": 461.8,
+      "lines": [
+        "Manzilon ki raahon mein rahbar bhi haa'il hai"
+      ],
+      "en": "On the road to your destination, even the guide stands in your way."
     }
   ]
 }
