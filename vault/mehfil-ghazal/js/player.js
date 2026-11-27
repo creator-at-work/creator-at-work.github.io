@@ -140,7 +140,7 @@ window.MehfilPlayer = (function () {
 
     _startProgressLoop() {
       this._stopProgressLoop();
-      this._progressTimer = setInterval(() => this._emitProgress(), 350);
+      this._progressTimer = setInterval(() => this._emitProgress(), 100);
     }
 
     _stopProgressLoop() {

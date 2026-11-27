@@ -1,116 +1,151 @@
 {
   "video_id": "C8eAKT-zQXk",
   "mode": "synced",
-  "source": "lrclib",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 24.23,
-      "end": 52.76,
-      "lines": [
-        "Tum itna jo muskura rahe ho",
-        "Kya gham hai jisko chhupa rahe ho?"
-      ],
-      "en": "What sorrow are you hiding behind that smile?"
-    },
-    {
-      "start": 52.76,
-      "end": 86.18,
+      "start": 22.84,
+      "end": 39.08,
       "lines": [
         "Tum itna jo muskura rahe ho"
       ],
-      "en": "You are smiling so much."
+      "en": "You are smiling so sweetly."
     },
     {
-      "start": 86.18,
-      "end": 103.29,
+      "start": 39.08,
+      "end": 49.64,
+      "lines": [
+        "Kya gham hai jisko chhupa rahe ho?"
+      ],
+      "en": "What sorrow are you hiding?"
+    },
+    {
+      "start": 49.64,
+      "end": 55.12,
+      "lines": [
+        "Tum itna jo muskura rahe ho"
+      ],
+      "en": "You are smiling so sweetly."
+    },
+    {
+      "start": 81.12,
+      "end": 97.24,
       "lines": [
         "Aankhon mein nami, hansi labon par"
       ],
-      "en": "Your eyes are moist, your lips are smiling."
+      "en": "Your eyes are moist, your lips smiling."
     },
     {
-      "start": 103.29,
-      "end": 120.15,
+      "start": 97.24,
+      "end": 113.08,
       "lines": [
         "Kya haal hai, kya dikha rahe ho?"
       ],
-      "en": "How do you fare, and what do you let us see?"
+      "en": "How do you really feel, and what do you let us see?"
     },
     {
-      "start": 120.15,
-      "end": 148.54,
+      "start": 113.08,
+      "end": 118.52,
       "lines": [
-        "Kya gham hai jisko chhupa rahe ho?",
+        "Kya gham hai jisko chhupa rahe ho?"
+      ],
+      "en": "What sorrow are you hiding?"
+    },
+    {
+      "start": 118.52,
+      "end": 123.28,
+      "lines": [
         "Tum itna jo muskura rahe ho"
       ],
-      "en": "What sorrow are you hiding behind that smile?"
+      "en": "You are smiling so sweetly."
     },
     {
-      "start": 148.54,
-      "end": 171.38,
+      "start": 139.32,
+      "end": 155.24,
       "lines": [
-        "Ban jaayenge zehr peete peete",
+        "Ban jaayenge zehar peete-peete"
+      ],
+      "en": "Swallow them long enough and they will turn to poison."
+    },
+    {
+      "start": 155.24,
+      "end": 165.88,
+      "lines": [
         "Ye ashk jo peete ja rahe ho"
       ],
-      "en": "The tears you keep swallowing will turn to poison."
+      "en": "You keep swallowing these tears."
     },
     {
-      "start": 171.38,
-      "end": 203.67,
-      "lines": [
-        "Ye ashk jo peete ja rahe ho"
-      ],
-      "en": "These are the tears you keep swallowing."
-    },
-    {
-      "start": 203.67,
-      "end": 220.86,
+      "start": 191.4,
+      "end": 207.24,
       "lines": [
         "Jin zakhmon ko waqt bhar chala hai"
       ],
-      "en": "Time has nearly healed those wounds."
+      "en": "Time has almost healed those wounds."
     },
     {
-      "start": 220.86,
-      "end": 237.74,
+      "start": 207.24,
+      "end": 223.08,
       "lines": [
         "Tum kyun unhein chhede ja rahe ho?"
       ],
       "en": "Why do you keep opening them again?"
     },
     {
-      "start": 237.74,
-      "end": 265.86,
+      "start": 223.08,
+      "end": 228.32,
       "lines": [
-        "Kya gham hai jisko chhupa rahe ho?",
+        "Kya gham hai jisko chhupa rahe ho?"
+      ],
+      "en": "What sorrow are you hiding?"
+    },
+    {
+      "start": 228.32,
+      "end": 233.72,
+      "lines": [
         "Tum itna jo muskura rahe ho"
       ],
-      "en": "What sorrow are you hiding behind that smile?"
+      "en": "You are smiling so sweetly."
     },
     {
-      "start": 265.86,
-      "end": 282.17,
+      "start": 249.08,
+      "end": 264.88,
       "lines": [
-        "Rekhaon ka khel hai muqaddar"
+        "Rekhaaon ka khel hai muqaddar"
       ],
-      "en": "Fate is a game played by the lines of your palm."
+      "en": "Fate is a game played in the lines of your palm."
     },
     {
-      "start": 282.17,
-      "end": 299.18,
+      "start": 264.88,
+      "end": 280.56,
       "lines": [
-        "Rekhaon se maat kha rahe ho"
+        "Rekhaaon se maat kha rahe ho"
       ],
       "en": "Those very lines are getting the better of you."
     },
     {
-      "start": 299.18,
-      "end": 318.45,
+      "start": 280.56,
+      "end": 285.92,
       "lines": [
-        "Kya gham hai jisko chhupa rahe ho?",
+        "Kya gham hai jisko chhupa rahe ho?"
+      ],
+      "en": "What sorrow are you hiding?"
+    },
+    {
+      "start": 285.92,
+      "end": 291.12,
+      "lines": [
         "Tum itna jo muskura rahe ho"
       ],
-      "en": "What sorrow are you hiding behind that smile?"
+      "en": "You are smiling so sweetly."
+    },
+    {
+      "start": 291.12,
+      "end": 296.52,
+      "lines": [
+        "Kya gham hai jisko chhupa rahe ho?"
+      ],
+      "en": "What sorrow are you hiding?"
     }
   ]
 }

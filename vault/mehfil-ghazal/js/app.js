@@ -891,6 +891,8 @@
     return { video_id: track.video_id, mode: 'empty', couplets: [] };
   }
 
+  const LYRICS_CACHE_VER = 'fda6c15c';
+
   async function loadLyricsForTrack(track) {
     if (!track || !track.video_id) {
       state.lyricsData = null;
@@ -915,7 +917,7 @@
     renderFullPlayerStage();
 
     try {
-      const resp = await fetch(`./lyrics/${encodeURIComponent(vid)}.json`, { cache: 'default' });
+      const resp = await fetch(`./lyrics/${encodeURIComponent(vid)}.json?v=${LYRICS_CACHE_VER}`, { cache: 'default' });
       if (resp.ok) {
         const data = await resp.json();
         if (data && Array.isArray(data.couplets) && data.couplets.length > 0) {
@@ -1130,12 +1132,15 @@
     if (data.mode !== 'synced' || !Array.isArray(data.couplets) || !data.couplets.length) return;
 
     const couplets = data.couplets;
+    // Lead-in anticipation (~0.50s) matches the 180ms breath + slow 900ms dissolve
+    // so each line reaches full readability right as the vocalist begins singing.
+    const t = curSec + 0.5;
     let activeIdx = -1;
     for (let i = 0; i < couplets.length; i++) {
       const c = couplets[i];
       const nextStart = i + 1 < couplets.length ? couplets[i + 1].start : Infinity;
-      const effectiveEnd = nextStart - c.end <= 2.5 ? nextStart : c.end + 1.2;
-      if (curSec + 0.35 >= c.start && curSec < effectiveEnd) {
+      const effectiveEnd = nextStart - c.end <= 3.0 ? nextStart : c.end + 0.8;
+      if (t >= c.start && t < effectiveEnd) {
         activeIdx = i;
         break;
       }
@@ -1150,7 +1155,7 @@
     } else {
       const c = couplets[activeIdx];
       const html = buildCinemaCoupletHtml(c.lines, c.en || '', true);
-      transitionCinemaStage(html, `Couplet ${activeIdx + 1} of ${couplets.length}`, { immediate });
+      transitionCinemaStage(html, `${activeIdx + 1} of ${couplets.length}`, { immediate });
     }
 
     // 2. Update Full Scrollable List highlight & smooth auto-center
