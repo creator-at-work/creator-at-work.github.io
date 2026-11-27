@@ -1,0 +1,31 @@
+{
+  "video_id": "DkjCox_BgAk",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 12.0,
+      "end": 27.0,
+      "lines": [
+        "Unki berukhi mein bhi iltefaat shamil hai."
+      ],
+      "en": "Even in their coldness, there is a trace of regard."
+    },
+    {
+      "start": 27.0,
+      "end": 40.0,
+      "lines": [
+        "Unki berukhi mein bhi iltefaat shamil hai."
+      ],
+      "en": "Even in their coldness, there is a trace of regard."
+    },
+    {
+      "start": 51.0,
+      "end": 67.0,
+      "lines": [
+        "Unki berukhi mein bhi iltefaat shamil hai."
+      ],
+      "en": "Even in their coldness, there is a trace of regard."
+    }
+  ]
+}
