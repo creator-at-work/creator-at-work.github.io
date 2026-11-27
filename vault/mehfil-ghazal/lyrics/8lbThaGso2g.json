@@ -1,0 +1,367 @@
+{
+  "video_id": "8lbThaGso2g",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 3.0,
+      "end": 6.0,
+      "lines": [
+        "Dil ke dard ko jaane kaun"
+      ],
+      "en": "Who knows the ache of the heart?"
+    },
+    {
+      "start": 6.0,
+      "end": 9.5,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 9.5,
+      "end": 12.5,
+      "lines": [
+        "Dil ke dard ko jaane kaun"
+      ],
+      "en": "Who knows the ache of the heart?"
+    },
+    {
+      "start": 12.5,
+      "end": 17.3,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 17.3,
+      "end": 20.4,
+      "lines": [
+        "Dil ke dard ko jaane kaun"
+      ],
+      "en": "Who knows the ache of the heart?"
+    },
+    {
+      "start": 20.4,
+      "end": 23.0,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 23.0,
+      "end": 28.8,
+      "lines": [
+        "Dil ke dard ko jaane kaun"
+      ],
+      "en": "Who knows the ache of the heart?"
+    },
+    {
+      "start": 29.0,
+      "end": 34.0,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 34.0,
+      "end": 39.8,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 40.0,
+      "end": 45.0,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 45.0,
+      "end": 50.8,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 51.0,
+      "end": 57.0,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 57.0,
+      "end": 64.0,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 64.0,
+      "end": 71.9,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 81.0,
+      "end": 93.0,
+      "lines": [
+        "Sadiyon sadiyon wohi tamasha"
+      ],
+      "en": "The same spectacle plays out through the ages."
+    },
+    {
+      "start": 93.0,
+      "end": 105.0,
+      "lines": [
+        "Rasta rasta lambi khoj"
+      ],
+      "en": "The long search goes from road to road."
+    },
+    {
+      "start": 105.0,
+      "end": 112.5,
+      "lines": [
+        "Sadiyon sadiyon wohi tamasha"
+      ],
+      "en": "The same spectacle plays out through the ages."
+    },
+    {
+      "start": 112.5,
+      "end": 120.7,
+      "lines": [
+        "Rasta rasta lambi khoj"
+      ],
+      "en": "The long search goes from road to road."
+    },
+    {
+      "start": 120.7,
+      "end": 127.16,
+      "lines": [
+        "Lekin jab hum mil jaate hain"
+      ],
+      "en": "Then comes the moment we meet."
+    },
+    {
+      "start": 127.16,
+      "end": 133.56,
+      "lines": [
+        "Kho jaata hai jaane kaun"
+      ],
+      "en": "Who can say which of us disappears?"
+    },
+    {
+      "start": 133.56,
+      "end": 139.56,
+      "lines": [
+        "Lekin jab hum mil jaate hain"
+      ],
+      "en": "Then comes the moment we meet."
+    },
+    {
+      "start": 139.56,
+      "end": 146.56,
+      "lines": [
+        "Kho jaata hai jaane kaun"
+      ],
+      "en": "Who can say which of us disappears?"
+    },
+    {
+      "start": 146.56,
+      "end": 152.56,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 152.56,
+      "end": 159.1,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 159.1,
+      "end": 166.5,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 182.56,
+      "end": 209.56,
+      "lines": [
+        "Main uski parchhaai hoon"
+      ],
+      "en": "Am I that person's shadow?"
+    },
+    {
+      "start": 209.56,
+      "end": 216.0,
+      "lines": [
+        "Woh mera aaina hai ya"
+      ],
+      "en": "Is that person my mirror?"
+    },
+    {
+      "start": 216.0,
+      "end": 222.56,
+      "lines": [
+        "Main uski parchhaai hoon"
+      ],
+      "en": "Am I that person's shadow?"
+    },
+    {
+      "start": 222.56,
+      "end": 228.72,
+      "lines": [
+        "Mere hi ghar mein rehta hai"
+      ],
+      "en": "Someone lives under my very roof."
+    },
+    {
+      "start": 228.72,
+      "end": 235.56,
+      "lines": [
+        "Mujh jaisa hi jaane kaun"
+      ],
+      "en": "Who is it who seems so much like me?"
+    },
+    {
+      "start": 235.56,
+      "end": 241.56,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 241.56,
+      "end": 248.2,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 248.2,
+      "end": 255.9,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 277.56,
+      "end": 285.0,
+      "lines": [
+        "Kiran kiran alsaata suraj"
+      ],
+      "en": "Ray by ray, the sun stirs lazily."
+    },
+    {
+      "start": 285.0,
+      "end": 292.5,
+      "lines": [
+        "Palak palak khulti neendein"
+      ],
+      "en": "Eyelid by eyelid, sleep lifts."
+    },
+    {
+      "start": 292.5,
+      "end": 300.0,
+      "lines": [
+        "Kiran kiran alsaata suraj"
+      ],
+      "en": "Ray by ray, the sun stirs lazily."
+    },
+    {
+      "start": 300.0,
+      "end": 307.56,
+      "lines": [
+        "Palak palak khulti neendein"
+      ],
+      "en": "Eyelid by eyelid, sleep lifts."
+    },
+    {
+      "start": 307.56,
+      "end": 313.5,
+      "lines": [
+        "Dheere dheere bikhar raha hai"
+      ],
+      "en": "It is slowly scattering."
+    },
+    {
+      "start": 313.5,
+      "end": 319.56,
+      "lines": [
+        "Zarra zarra jaane kaun"
+      ],
+      "en": "Who could know each scattered grain?"
+    },
+    {
+      "start": 319.56,
+      "end": 325.56,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    },
+    {
+      "start": 325.56,
+      "end": 332.56,
+      "lines": [
+        "Dil ke dard ko jaane kaun"
+      ],
+      "en": "Who knows the ache of the heart?"
+    },
+    {
+      "start": 332.56,
+      "end": 338.56,
+      "lines": [
+        "Aawaazon ke bazaaron mein"
+      ],
+      "en": "The bazaars are full of voices."
+    },
+    {
+      "start": 338.56,
+      "end": 344.56,
+      "lines": [
+        "Khamoshi pehchaane kaun"
+      ],
+      "en": "Who would recognize silence?"
+    },
+    {
+      "start": 344.56,
+      "end": 356.56,
+      "lines": [
+        "Munh ki baat sune har koi"
+      ],
+      "en": "Everyone hears what is said."
+    }
+  ]
+}
