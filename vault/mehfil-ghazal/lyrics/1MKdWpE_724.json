@@ -1,97 +1,123 @@
 {
   "video_id": "1MKdWpE_724",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 12.0,
-      "end": 37.32,
-      "lines": [
-        "Baat niklegi to phir door talak jayegi",
-        "Log bewajah udaasi ka sabab poochhenge"
-      ],
-      "en": "Once word gets out, it will travel far, and people will ask for no reason what makes you sad."
-    },
-    {
-      "start": 37.32,
-      "end": 48.64,
-      "lines": [
-        "Ye bhi poochhenge ke tum itni pareshaan kyun ho"
-      ],
-      "en": "They will ask, too, why you are so troubled."
-    },
-    {
-      "start": 53.64,
-      "end": 77.54,
-      "lines": [
-        "Ungliyan uthengi sookhe hue baalon ki taraf",
-        "Ek nazar dekhenge guzre hue saalon ki taraf"
-      ],
-      "en": "Fingers will point at your dry hair, and someone will cast a glance back at the years gone by."
-    },
-    {
-      "start": 79.04,
-      "end": 102.04,
-      "lines": [
-        "Joodon par bhi kai tanz kiye jayenge",
-        "Kaanpte haathon pe bhi fiqre kase jayenge"
-      ],
-      "en": "They will mock the way you pin up your hair and make jibes at your trembling hands."
-    },
-    {
-      "start": 106.84,
-      "end": 128.94,
-      "lines": [
-        "Log zaalim hain, har ek baat ka taana denge",
-        "Baaton baaton mein mera zikr bhi le aayenge"
-      ],
-      "en": "People are cruel, and they will find a taunt in everything and slip my name into the conversation."
-    },
-    {
-      "start": 130.64,
-      "end": 141.64,
-      "lines": [
-        "Baaton baaton mein mera zikr bhi le aayenge"
-      ],
-      "en": "In the course of talking, they will bring me up too."
-    },
-    {
-      "start": 142.64,
-      "end": 164.8,
-      "lines": [
-        "Unki baaton ka zara sa bhi asar mat lena",
-        "Warna chehre ke taassur se samajh jayenge"
-      ],
-      "en": "Let none of their words get to you, or they will read it in your face."
-    },
-    {
-      "start": 169.6,
-      "end": 179.96,
-      "lines": [
-        "Chaahe kuchh bhi ho, sawaalaat na karna unse"
-      ],
-      "en": "Whatever happens, ask them nothing."
-    },
-    {
-      "start": 181.28,
-      "end": 203.28,
-      "lines": [
-        "Chaahe kuchh bhi ho, sawaalaat na karna unse",
-        "Mere baare mein koi baat na karna unse"
-      ],
-      "en": "Whatever happens, ask them no questions and say nothing to them about me."
-    },
-    {
-      "start": 205.28,
-      "end": 217.28,
+      "start": 12.28,
+      "end": 27.4,
       "lines": [
         "Baat niklegi to phir door talak jayegi"
       ],
       "en": "Once word gets out, it will travel far."
     },
     {
-      "start": 227.28,
-      "end": 238.28,
+      "start": 27.4,
+      "end": 37.96,
+      "lines": [
+        "Log bewajah udaasi ka sabab poochhenge"
+      ],
+      "en": "For no reason at all, people will ask why you are sad."
+    },
+    {
+      "start": 37.96,
+      "end": 53.76,
+      "lines": [
+        "Yeh bhi poochhenge ke tum itni pareshaan kyun ho"
+      ],
+      "en": "They will ask, too, why you are so troubled."
+    },
+    {
+      "start": 54.32,
+      "end": 66.36,
+      "lines": [
+        "Ungliyaan uthengi sookhe hue baalon ki taraf"
+      ],
+      "en": "Fingers will point at your dry hair."
+    },
+    {
+      "start": 66.36,
+      "end": 79.04,
+      "lines": [
+        "Ek nazar dekhenge guzre hue saalon ki taraf"
+      ],
+      "en": "They will cast a glance back at the years gone by."
+    },
+    {
+      "start": 79.04,
+      "end": 89.84,
+      "lines": [
+        "Choodiyon par bhi kai tanz kiye jayenge"
+      ],
+      "en": "Even your bangles will draw a few barbs."
+    },
+    {
+      "start": 92.0,
+      "end": 106.8,
+      "lines": [
+        "Kaanpte haathon pe bhi fiqre kase jayenge"
+      ],
+      "en": "They will make remarks about your trembling hands, too."
+    },
+    {
+      "start": 106.8,
+      "end": 118.68,
+      "lines": [
+        "Log zaalim hain, har ek baat ka taana denge"
+      ],
+      "en": "People are cruel, and will turn every little thing into a taunt."
+    },
+    {
+      "start": 118.68,
+      "end": 142.6,
+      "lines": [
+        "Baaton baaton mein mera zikr bhi le aayenge"
+      ],
+      "en": "Somewhere in the conversation, they will bring up my name."
+    },
+    {
+      "start": 142.6,
+      "end": 154.56,
+      "lines": [
+        "Unki baaton ka zara sa bhi asar mat lena"
+      ],
+      "en": "Do not let a word they say get to you."
+    },
+    {
+      "start": 154.56,
+      "end": 169.52,
+      "lines": [
+        "Warna chehre ke taassur se samajh jayenge"
+      ],
+      "en": "Otherwise, they will read it in your face."
+    },
+    {
+      "start": 169.52,
+      "end": 192.96,
+      "lines": [
+        "Chaahe kuchh bhi ho, sawaalaat na karna unse"
+      ],
+      "en": "Whatever happens, ask them no questions."
+    },
+    {
+      "start": 192.96,
+      "end": 205.08,
+      "lines": [
+        "Mere baare mein koi baat na karna unse"
+      ],
+      "en": "Say nothing to them about me."
+    },
+    {
+      "start": 205.24,
+      "end": 214.48,
+      "lines": [
+        "Baat niklegi to phir door talak jayegi"
+      ],
+      "en": "Once word gets out, it will travel far."
+    },
+    {
+      "start": 226.84,
+      "end": 239.68,
       "lines": [
         "Baat niklegi to phir door talak jayegi"
       ],

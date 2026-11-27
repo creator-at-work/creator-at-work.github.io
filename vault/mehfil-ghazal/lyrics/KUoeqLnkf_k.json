@@ -1,51 +1,151 @@
 {
   "video_id": "KUoeqLnkf_k",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 57.84,
+      "start": 16.56,
+      "end": 20.84,
       "lines": [
-        "Yeh dil, yeh paagal dil mera, kyun bujh gaya, aawargi?",
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
+    },
+    {
+      "start": 20.84,
+      "end": 37.0,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera, kyun bujh gaya, aawargi?"
+      ],
+      "en": "Why has this wayward heart of mine gone dark, O wandering?"
+    },
+    {
+      "start": 37.0,
+      "end": 41.72,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
+    },
+    {
+      "start": 41.72,
+      "end": 53.48,
+      "lines": [
         "Is dasht mein ek shehar tha, woh kya hua, aawargi?"
       ],
-      "en": "Why has this mad heart of mine gone dark, and what became of the city that once stood in this desert, my wandering?"
+      "en": "There was a city in this wilderness once, O wandering, what became of it?"
+    },
+    {
+      "start": 53.48,
+      "end": 57.72,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
     },
     {
       "start": 72.0,
-      "end": 92.0,
+      "end": 79.88,
       "lines": [
-        "Kal shab mujhe be-shakl si aawaz ne chaunka diya.",
-        "Maine kaha, tu kaun hai, us ne kaha, aawargi."
+        "Kal shab mujhe be-shakl ki aawaaz ne chaunka diya"
       ],
-      "en": "Last night a disembodied voice startled me, and when I asked who it was, it called itself wandering."
+      "en": "Last night a voice without a face startled me."
     },
     {
-      "start": 98.0,
-      "end": 118.0,
+      "start": 79.88,
+      "end": 87.72,
       "lines": [
-        "Logo, bhala us shehar mein kaise jiyenge hum?",
-        "Jahan ho jurm tanha sochna, lekin saza aawargi."
+        "Maine kaha tu kaun hai, usne kaha aawargi"
       ],
-      "en": "How are we to live in a city where thinking alone is a crime and wandering is the sentence?"
+      "en": "I asked who it was, and it said wandering."
     },
     {
-      "start": 131.0,
-      "end": 158.0,
+      "start": 87.72,
+      "end": 91.72,
       "lines": [
-        "Ek ajnabi jhonke ne jab poochha mere gham ka sabab.",
-        "Sehra ki bheegi ret par maine likha, aawargi."
+        "Yeh dil, yeh paagal dil mera"
       ],
-      "en": "When a passing gust asked why I grieved, I wrote wandering in the damp desert sand."
+      "en": "This heart of mine, this wayward heart."
     },
     {
-      "start": 172.36,
-      "end": 199.08,
+      "start": 98.52,
+      "end": 105.52,
       "lines": [
-        "Kal raat tanha chaand ko dekha tha maine khwaab mein."
+        "Logon, bhala us shehar mein kaise jiyenge hum?"
+      ],
+      "en": "Tell me, how are we to live in such a city?"
+    },
+    {
+      "start": 105.52,
+      "end": 114.24,
+      "lines": [
+        "Jahaan ho jurm tanha sochna, lekin saza aawargi"
+      ],
+      "en": "There, to think alone is a crime, and the sentence is to wander."
+    },
+    {
+      "start": 114.24,
+      "end": 118.48,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
+    },
+    {
+      "start": 127.0,
+      "end": 139.0,
+      "lines": [
+        "Ek ajnabi jhonke ne jab poochha mere gham ka sabab"
+      ],
+      "en": "When a passing gust asked what lay behind my sorrow."
+    },
+    {
+      "start": 139.0,
+      "end": 154.68,
+      "lines": [
+        "Sehra ki bheegi ret par maine likha aawargi"
+      ],
+      "en": "On the desert's damp sand I wrote one word, wandering."
+    },
+    {
+      "start": 154.68,
+      "end": 157.12,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
+    },
+    {
+      "start": 174.04,
+      "end": 200.94,
+      "lines": [
+        "Kal raat tanha chaand ko dekha tha maine khwaab mein"
       ],
       "en": "Last night I saw the lonely moon in a dream."
+    },
+    {
+      "start": 206.52,
+      "end": 214.12,
+      "lines": [
+        "Kal raat tanha chaand ko dekha tha maine khwaab mein"
+      ],
+      "en": "Last night I saw the lonely moon in a dream."
+    },
+    {
+      "start": 214.12,
+      "end": 222.08,
+      "lines": [
+        "Mohsin, mujhe raas aayegi shayad sada aawargi"
+      ],
+      "en": "Perhaps a life of wandering will suit me after all, Mohsin."
+    },
+    {
+      "start": 222.08,
+      "end": 225.96,
+      "lines": [
+        "Yeh dil, yeh paagal dil mera"
+      ],
+      "en": "This heart of mine, this wayward heart."
     }
   ]
 }

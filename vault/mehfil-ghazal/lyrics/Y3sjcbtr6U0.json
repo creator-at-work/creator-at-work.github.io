@@ -1,99 +1,119 @@
 {
   "video_id": "Y3sjcbtr6U0",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 52.0,
+      "start": 36.02,
+      "end": 52.8,
       "lines": [
         "Hazaaron khwahishein aisi ke har khwahish pe dam nikle"
       ],
-      "en": "A thousand longings, each enough to draw my last breath."
+      "en": "I have a thousand desires, and each could take my dying breath."
     },
     {
-      "start": 52.0,
-      "end": 73.0,
+      "start": 55.4,
+      "end": 73.1,
       "lines": [
         "Bahut nikle mere armaan lekin phir bhi kam nikle"
       ],
-      "en": "So many of my desires were fulfilled, and still too few."
+      "en": "Many of my longings came to pass, and still too few."
     },
     {
-      "start": 73.0,
-      "end": 106.84,
+      "start": 76.46,
+      "end": 90.04,
       "lines": [
-        "Nikalna khuld se Aadam ka sunte aaye hain lekin",
-        "Bahut be-aabru ho kar tere kooche se hum nikle"
+        "Nikalna khuld se Aadam ka sunte aaye hain lekin"
       ],
-      "en": "We have long heard how Adam left paradise, but I left your lane in utter disgrace."
+      "en": "We have long heard how Adam was driven out of Eden."
     },
     {
-      "start": 125.84,
-      "end": 150.84,
+      "start": 93.38,
+      "end": 112.0,
+      "lines": [
+        "Bahut be-aabroo ho kar tere kooche se hum nikle"
+      ],
+      "en": "I left your street with my honor in tatters."
+    },
+    {
+      "start": 127.34,
+      "end": 151.75,
       "lines": [
         "Mohabbat mein nahin hai farq jeene aur marne ka"
       ],
-      "en": "In love, there is no difference between living and dying."
+      "en": "In love, living and dying feel much the same."
     },
     {
-      "start": 151.84,
-      "end": 163.84,
+      "start": 152.12,
+      "end": 163.3,
       "lines": [
         "Usi ko dekh kar jeete hain jis kaafir pe dam nikle"
       ],
-      "en": "The sight of that faithless one keeps me alive, and for that same one I would draw my last breath."
+      "en": "The sight of that faithless beloved keeps me alive and takes my breath away."
     },
     {
-      "start": 163.84,
-      "end": 189.84,
+      "start": 164.9,
+      "end": 176.8,
       "lines": [
-        "Hazaaron khwahishein aisi ke har khwahish pe dam nikle",
+        "Hazaaron khwahishein aisi ke har khwahish pe dam nikle"
+      ],
+      "en": "I have a thousand desires, and each could take my dying breath."
+    },
+    {
+      "start": 177.12,
+      "end": 188.38,
+      "lines": [
         "Bahut nikle mere armaan lekin phir bhi kam nikle"
       ],
-      "en": "A thousand longings, each enough to draw my last breath, and though so many were fulfilled, they were still too few."
+      "en": "Many of my longings came to pass, and still too few."
     },
     {
-      "start": 202.44,
-      "end": 215.44,
+      "start": 202.64,
+      "end": 226.56,
       "lines": [
-        "Khuda ke waaste parda na Kaabe se utha zaalim"
+        "Khuda ke waaste parda na Kaabe se utha, zaalim"
       ],
-      "en": "For God's sake, cruel one, leave the veil upon the Kaaba."
+      "en": "For God's sake, cruel one, leave the Kaaba veiled."
     },
     {
-      "start": 215.44,
-      "end": 239.44,
+      "start": 227.36,
+      "end": 238.18,
       "lines": [
-        "Khuda ke waaste parda na Kaabe se utha zaalim",
         "Kahin aisa na ho yaan bhi wahi kaafir sanam nikle"
       ],
-      "en": "For God's sake, cruel one, leave the veil upon the Kaaba, lest that same faithless idol be there too."
+      "en": "What if that same faithless idol were to appear here too?"
     },
     {
-      "start": 253.44,
-      "end": 282.44,
+      "start": 252.92,
+      "end": 273.4,
       "lines": [
-        "Kahaan maikhaane ka darwaaza Ghalib aur kahaan waaiz"
+        "Kahaan maikhaane ka darwaaza, Ghalib, aur kahaan waaiz"
       ],
-      "en": "What business has the preacher at the tavern door, Ghalib?"
+      "en": "What business has a preacher at the tavern door, Ghalib?"
     },
     {
-      "start": 282.44,
-      "end": 308.68,
+      "start": 273.8,
+      "end": 287.6,
       "lines": [
         "Par itna jaante hain kal woh jaata tha ke hum nikle"
       ],
-      "en": "All I know is that yesterday he was heading in as I came out."
+      "en": "All I know is that yesterday he was on his way there as I came out."
     },
     {
-      "start": 282.44,
-      "end": 314.68,
+      "start": 290.1,
+      "end": 302.9,
       "lines": [
-        "Hazaaron khwahishein aisi ke har khwahish pe dam nikle",
+        "Hazaaron khwahishein aisi ke har khwahish pe dam nikle"
+      ],
+      "en": "I have a thousand desires, and each could take my dying breath."
+    },
+    {
+      "start": 303.2,
+      "end": 313.78,
+      "lines": [
         "Bahut nikle mere armaan lekin phir bhi kam nikle"
       ],
-      "en": "A thousand longings, each enough to draw my last breath, and though so many were fulfilled, they were still too few."
+      "en": "Many of my longings came to pass, and still too few."
     }
   ]
 }

@@ -1,168 +1,111 @@
 {
   "video_id": "JzaVoULkZNM",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 17.44,
-      "end": 30.78,
+      "start": 17.42,
+      "end": 31.66,
       "lines": [
-        "Kal chaudhvin ki raat thi, shab bhar raha charcha tera."
+        "Kal chaudhvin ki raat thi, shab bhar raha charcha tera"
       ],
-      "en": "Last night the moon was full, and all night there was talk of you."
+      "en": "Last night the moon was full, and we spoke of you till dawn."
     },
     {
-      "start": 32.06,
-      "end": 49.54,
+      "start": 31.88,
+      "end": 45.4,
       "lines": [
-        "Kuchh ne kaha yeh chaand hai, kuchh ne kaha chehra tera.",
-        "Kal chaudhvin ki raat thi."
+        "Kuchh ne kaha yeh chaand hai, kuchh ne kaha chehra tera"
       ],
-      "en": "Under last night's full moon, some said it was the moon and others said it was your face."
+      "en": "Some said it was the moon, others said it was your face."
     },
     {
-      "start": 55.38,
-      "end": 74.42,
+      "start": 76.2,
+      "end": 85.22,
       "lines": [
-        "Hum bhi wahin maujood the, hum se bhi sab poochha kiye."
+        "Hum bhi wahin maujood the, hum se bhi sab poochha kiye"
       ],
       "en": "I was there too, and everyone kept asking me."
     },
     {
-      "start": 76.38,
-      "end": 98.68,
+      "start": 85.22,
+      "end": 99.76,
       "lines": [
-        "Hum bhi wahin maujood the, hum se bhi sab poochha kiye.",
-        "Hum hans diye, hum chup rahe, manzoor tha parda tera."
+        "Hum hans diye, hum chup rahe, manzoor tha parda tera"
       ],
-      "en": "They all kept asking me too, and I smiled and held my tongue to keep your secret."
+      "en": "I smiled and said nothing, content to keep you hidden."
     },
     {
-      "start": 98.68,
-      "end": 107.54,
+      "start": 157.52,
+      "end": 163.5,
       "lines": [
-        "Kal chaudhvin ki raat thi."
+        "Is shahr mein kis se milen, hum se to chhooti mahfilen"
+      ],
+      "en": "Whom shall I see in this city, now that my gatherings are behind me?"
+    },
+    {
+      "start": 163.94,
+      "end": 177.04,
+      "lines": [
+        "Har shakhs tera naam le, har shakhs deewana tera"
+      ],
+      "en": "Everyone speaks your name, and everyone is in love with you."
+    },
+    {
+      "start": 232.7,
+      "end": 248.3,
+      "lines": [
+        "Kooche ko tere chhod kar, jogi hi ban jaayen magar"
+      ],
+      "en": "I could leave your lane and become a wandering ascetic."
+    },
+    {
+      "start": 248.3,
+      "end": 261.66,
+      "lines": [
+        "Jangal tere, parbat tere, basti teri, sahra tera"
+      ],
+      "en": "Yet yours are the forests and mountains, the villages and the desert."
+    },
+    {
+      "start": 261.66,
+      "end": 269.94,
+      "lines": [
+        "Kal chaudhvin ki raat thi"
       ],
       "en": "Last night the moon was full."
     },
     {
-      "start": 115.38,
-      "end": 117.38,
+      "start": 301.64,
+      "end": 305.54,
       "lines": [
-        "Is shahr mein kis se milen?"
+        "Bedard, sunni ho to chal"
       ],
-      "en": "Who is there for me to meet in this city?"
+      "en": "Hear me, dear heart, if you will."
     },
     {
-      "start": 145.38,
-      "end": 163.3,
+      "start": 317.12,
+      "end": 321.72,
       "lines": [
-        "Hum se to chhooti mehfilen.",
-        "Is shahr mein kis se milen, hum se to chhooti mehfilen."
+        "Bedard, sunni ho to chal, kehta hai kya achchhi ghazal"
       ],
-      "en": "Who is there for me to meet in this city now that my evenings in company are gone?"
+      "en": "Come, heartless one, and hear what a lovely ghazal he recites."
     },
     {
-      "start": 164.02,
-      "end": 186.14,
+      "start": 326.24,
+      "end": 337.48,
       "lines": [
-        "Har shakhs tera naam le, har shakhs deewana tera.",
-        "Kal chaudhvin ki raat thi."
+        "Aashiq tera, ruswa tera, shayar tera, Insha tera"
       ],
-      "en": "Under last night's full moon, everyone spoke your name and everyone was in love with you."
+      "en": "Your lover, yours in disgrace, your poet, your Insha."
     },
     {
-      "start": 186.14,
-      "end": 195.14,
+      "start": 338.28,
+      "end": 350.5,
       "lines": [
-        "Shab bhar raha charcha tera, kal chaudhvin ki raat thi."
+        "Kal chaudhvin ki raat thi, shab bhar raha charcha tera"
       ],
-      "en": "All through the night of the full moon there was talk of you."
-    },
-    {
-      "start": 203.14,
-      "end": 230.14,
-      "lines": [
-        "Kooche ko tere chhod kar, jogi hi ban jaayen magar."
-      ],
-      "en": "I could leave your lane and take to the road as a wandering ascetic."
-    },
-    {
-      "start": 231.14,
-      "end": 248.14,
-      "lines": [
-        "Kooche ko tere chhod kar, jogi hi ban jaayen magar."
-      ],
-      "en": "I could leave your lane and take to the road as a wandering ascetic."
-    },
-    {
-      "start": 248.14,
-      "end": 263.14,
-      "lines": [
-        "Jangal tere, parbat tere, basti teri, sehra tera.",
-        "Kal chaudhvin ki raat thi."
-      ],
-      "en": "Under last night's full moon, the forests, the mountains, the towns and the desert were all yours."
-    },
-    {
-      "start": 263.14,
-      "end": 270.14,
-      "lines": [
-        "Kal chaudhvin ki raat thi."
-      ],
-      "en": "Last night the moon was full."
-    },
-    {
-      "start": 270.14,
-      "end": 283.02,
-      "lines": [
-        "Bedard, sunni ho to chal."
-      ],
-      "en": "Come, heartless one, if you care to listen."
-    },
-    {
-      "start": 283.02,
-      "end": 303.02,
-      "lines": [
-        "Kehta hai kya achchhi ghazal.",
-        "Bedard, sunni ho to chal."
-      ],
-      "en": "Come, heartless one, if you care to hear how well he recites a ghazal."
-    },
-    {
-      "start": 303.02,
-      "end": 326.02,
-      "lines": [
-        "Achchhi ghazal.",
-        "Aashiq tera, rusva tera."
-      ],
-      "en": "A fine ghazal from your lover, disgraced for loving you."
-    },
-    {
-      "start": 326.02,
-      "end": 341.26,
-      "lines": [
-        "Aashiq tera, rusva tera, shayar tera, Insha tera.",
-        "Kal chaudhvin ki raat thi."
-      ],
-      "en": "Under last night's full moon, Insha was yours, your lover and your poet, with all his disgrace."
-    },
-    {
-      "start": 341.26,
-      "end": 355.26,
-      "lines": [
-        "Kal chaudhvin ki raat thi, shab bhar raha charcha tera."
-      ],
-      "en": "Last night the moon was full, and all night there was talk of you."
-    },
-    {
-      "start": 355.26,
-      "end": 372.26,
-      "lines": [
-        "Kuchh ne kaha yeh chaand hai, kuchh ne kaha chehra tera.",
-        "Kal chaudhvin ki raat thi."
-      ],
-      "en": "Under last night's full moon, some said it was the moon and others said it was your face."
+      "en": "Last night the moon was full, and we spoke of you till dawn."
     }
   ]
 }

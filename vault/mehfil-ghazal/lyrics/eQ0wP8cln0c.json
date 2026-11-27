@@ -1,148 +1,143 @@
 {
   "video_id": "eQ0wP8cln0c",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 40.0,
+      "start": 21.68,
+      "end": 60.96,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Mujhse pehli si mohabbat mere mehboob na maang"
       ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "My love, spare me the asking for the love I once gave you."
     },
     {
-      "start": 41.0,
-      "end": 50.0,
+      "start": 100.44,
+      "end": 110.48,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Maine samjha tha ke tu hai to darakhshan hai hayaat"
       ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "I thought your presence was enough to make life shine."
     },
     {
-      "start": 51.0,
-      "end": 61.0,
+      "start": 110.48,
+      "end": 119.88,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Tera gham hai to hamein dahr ka jhagda kya hai"
       ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "With the sorrow of loving you, what quarrel had I with the world?"
     },
     {
-      "start": 111.0,
-      "end": 130.04,
+      "start": 120.48,
+      "end": 130.4,
       "lines": [
-        "Tera gham hai to gham-e-dahr ka jhagda kya hai?",
-        "Teri surat se hai aalam mein bahaaron ko sabaat."
+        "Teri soorat se hai aalam mein bahaaron ko sabaat"
       ],
-      "en": "The world's sorrows seemed small beside yours, and your face kept spring alive."
+      "en": "It was your face that made spring seem everlasting."
     },
     {
-      "start": 130.04,
-      "end": 149.4,
+      "start": 130.4,
+      "end": 149.44,
       "lines": [
-        "Teri aankhon ke siwa duniya mein rakha kya hai?"
+        "Teri aankhon ke siwa duniya mein rakha kya hai"
       ],
-      "en": "Beyond your eyes, what does the world hold?"
+      "en": "What did the world hold for me beyond your eyes?"
     },
     {
-      "start": 152.4,
-      "end": 171.06,
+      "start": 152.36,
+      "end": 162.2,
       "lines": [
-        "Tu jo mil jaaye to taqdeer nigoon ho jaaye.",
-        "Yun na tha, maine faqat chaha tha yun ho jaaye."
+        "Tu jo mil jaaye to taqdeer nigoon ho jaaye"
       ],
-      "en": "I only wished that fate would bow if I found you."
+      "en": "If I could be with you, even fate would bow."
     },
     {
-      "start": 171.06,
-      "end": 181.6,
+      "start": 162.2,
+      "end": 170.88,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Yoon na tha, maine faqat chaaha tha yoon ho jaaye"
       ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "It was only my wish that things should be so."
     },
     {
-      "start": 181.6,
-      "end": 191.8,
+      "start": 171.68,
+      "end": 190.88,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Mujhse pehli si mohabbat mere mehboob na maang"
       ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "My love, spare me the asking for the love I once gave you."
     },
     {
-      "start": 211.6,
-      "end": 233.24,
+      "start": 214.52,
+      "end": 234.36,
       "lines": [
-        "Anginat sadiyon ke taareek baheemana tilism.",
-        "Anginat sadiyon ke taareek baheemana tilism."
+        "Anginat sadiyon ke taareek baheemana tilism"
       ],
-      "en": "The dark, brutal spells of countless centuries endure."
+      "en": "Countless centuries cast their dark and cruel spell."
     },
     {
-      "start": 233.24,
-      "end": 243.06,
+      "start": 234.36,
+      "end": 243.36,
       "lines": [
-        "Resham o atlas o kamkhwab mein bunwaaye hue."
+        "Resham o atlas o kamkhwab mein bunwaaye hue"
       ],
-      "en": "Those spells are woven into silk, satin and brocade."
+      "en": "Their cruelty was woven into silk, satin and brocade."
     },
     {
-      "start": 243.06,
-      "end": 262.28,
+      "start": 243.36,
+      "end": 253.16,
       "lines": [
-        "Ja-ba-ja bikte hue kucha-o-bazaar mein jism.",
-        "Khaak mein lithde hue, khoon mein nahlaaye hue."
+        "Ja-ba-ja bikte hue koocha o bazaar mein jism"
       ],
-      "en": "Bodies caked in dust and bathed in blood are sold in streets and markets everywhere."
+      "en": "Bodies were sold in every lane and marketplace."
     },
     {
-      "start": 263.06,
-      "end": 272.48,
+      "start": 253.16,
+      "end": 263.04,
       "lines": [
-        "Laut jaati hai udhar ko bhi nazar, kya kije?"
+        "Khaak mein lithde hue, khoon mein nahlaaye hue"
       ],
-      "en": "My gaze keeps returning there too, what can I do?"
+      "en": "They were caked in dust and drenched in blood."
     },
     {
-      "start": 272.48,
-      "end": 282.16,
+      "start": 263.04,
+      "end": 272.72,
       "lines": [
-        "Ab bhi dilkash hai tera husn, magar kya kije?"
+        "Laut jaati hai udhar ko bhi nazar, kya keeje"
+      ],
+      "en": "My eyes keep returning there, what can I do?"
+    },
+    {
+      "start": 272.72,
+      "end": 291.44,
+      "lines": [
+        "Ab bhi dilkash hai tera husn, magar kya keeje"
       ],
       "en": "Your beauty still draws me, but what can I do?"
     },
     {
-      "start": 282.16,
-      "end": 291.16,
+      "start": 294.72,
+      "end": 304.2,
       "lines": [
-        "Ab bhi dilkash hai tera husn, magar kya kije?"
+        "Aur bhi dukh hain zamaane mein mohabbat ke siwa"
       ],
-      "en": "Your beauty still draws me, but what can I do?"
+      "en": "The world holds sorrows beyond those of love."
     },
     {
-      "start": 294.16,
-      "end": 316.16,
+      "start": 304.96,
+      "end": 313.28,
       "lines": [
-        "Aur bhi dukh hain zamaane mein mohabbat ke siwa.",
-        "Raahatein aur bhi hain vasl ki raahat ke siwa."
+        "Raahatein aur bhi hain wasl ki raahat ke siwa"
       ],
-      "en": "The world holds sorrows besides love, and comforts besides being together."
+      "en": "There are other comforts besides being with you."
     },
     {
-      "start": 316.16,
-      "end": 323.66,
+      "start": 314.04,
+      "end": 332.76,
       "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
+        "Mujhse pehli si mohabbat mere mehboob na maang"
       ],
-      "en": "My love, do not ask me to love you as I once did."
-    },
-    {
-      "start": 323.66,
-      "end": 333.66,
-      "lines": [
-        "Mujh se pehli si mohabbat, mere mehboob, na maang."
-      ],
-      "en": "My love, do not ask me to love you as I once did."
+      "en": "My love, spare me the asking for the love I once gave you."
     }
   ]
 }

@@ -1,91 +1,79 @@
 {
   "video_id": "Qy5y4BgPnRI",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 11.12,
-      "end": 21.42,
+      "start": 17.42,
+      "end": 23.68,
       "lines": [
         "Aah ko chahiye ek umr asar hone tak"
       ],
-      "en": "A sigh takes a lifetime to have its effect."
+      "en": "A sigh takes a lifetime to be felt."
     },
     {
-      "start": 22.8,
-      "end": 44.92,
-      "lines": [
-        "Aah ko chahiye ek umr asar hone tak",
-        "Kaun jeeta hai teri zulf ke sar hone tak"
-      ],
-      "en": "A sigh takes a lifetime to have its effect, and who lives to see your tresses mastered?"
-    },
-    {
-      "start": 45.92,
-      "end": 58.32,
+      "start": 34.38,
+      "end": 41.97,
       "lines": [
         "Kaun jeeta hai teri zulf ke sar hone tak"
       ],
-      "en": "Who lives to see your tresses mastered?"
+      "en": "Who lives long enough to win a single lock of your hair?"
     },
     {
-      "start": 69.32,
-      "end": 94.56,
+      "start": 83.72,
+      "end": 91.84,
       "lines": [
-        "Aashiqi sabr-talab aur tamanna betaab"
+        "Aashiqi sabr talab aur tamanna betaab"
       ],
       "en": "Love asks for patience, and longing cannot wait."
     },
     {
-      "start": 95.32,
-      "end": 117.38,
+      "start": 100.22,
+      "end": 109.66,
       "lines": [
         "Dil ka kya rang karun khoon-e-jigar hone tak"
       ],
-      "en": "What color shall I give my heart until the blood of my liver is ready?"
+      "en": "What hue shall I give my heart until my grief runs to blood?"
     },
     {
-      "start": 125.32,
-      "end": 150.32,
+      "start": 150.74,
+      "end": 151.74,
       "lines": [
-        "Ham ne maana ke taghaful na karoge lekin"
+        "Hum ne maana ke taghaful na karoge lekin"
       ],
-      "en": "I grant you will not look away, and yet."
+      "en": "I grant that you will turn your attention to me, but."
     },
     {
-      "start": 150.32,
-      "end": 174.32,
+      "start": 153.44,
+      "end": 162.9,
       "lines": [
-        "Khaak ho jaenge ham tum ko khabar hone tak",
+        "Khaak ho jaayenge hum tum ko khabar hone tak"
+      ],
+      "en": "I will be dust by the time you hear of me."
+    },
+    {
+      "start": 171.08,
+      "end": 173.28,
+      "lines": [
         "Aah ko chahiye ek umr asar hone tak"
       ],
-      "en": "I will be dust by the time you hear, for a sigh takes a lifetime to have its effect."
+      "en": "A sigh takes a lifetime to be felt."
     },
     {
-      "start": 180.32,
-      "end": 205.32,
+      "start": 222.62,
+      "end": 235.26,
       "lines": [
-        "Gham-e-hasti ka Asad kis se ho juz marg ilaaj"
+        "Aah ko chahiye ek umr asar hone tak"
       ],
-      "en": "Asad, what but death can cure the sorrow of being?"
+      "en": "A sigh takes a lifetime to be felt."
     },
     {
-      "start": 205.32,
-      "end": 229.32,
+      "start": 236.72,
+      "end": 242.81,
       "lines": [
-        "Gham-e-hasti ka Asad kis se ho juz marg ilaaj",
-        "Sham'a har rang mein jalti hai sahar hone tak"
-      ],
-      "en": "Asad, what but death can cure the sorrow of being, when the candle burns through every hue until dawn?"
-    },
-    {
-      "start": 229.32,
-      "end": 247.32,
-      "lines": [
-        "Aah ko chahiye ek umr asar hone tak",
         "Kaun jeeta hai teri zulf ke sar hone tak"
       ],
-      "en": "A sigh takes a lifetime to have its effect, and who lives to see your tresses mastered?"
+      "en": "Who lives long enough to win a single lock of your hair?"
     }
   ]
 }

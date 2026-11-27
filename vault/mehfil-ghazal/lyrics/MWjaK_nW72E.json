@@ -1,120 +1,159 @@
 {
   "video_id": "MWjaK_nW72E",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 60.0,
-      "end": 89.0,
+      "start": 65.36,
+      "end": 89.16,
       "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
       "en": "I remember weeping in secret, night and day."
     },
     {
-      "start": 89.0,
-      "end": 114.0,
+      "start": 91.0,
+      "end": 103.16,
       "lines": [
-        "Humko ab tak aashiqi ka woh zamana yaad hai",
+        "Humko ab tak aashiqi ka woh zamana yaad hai"
+      ],
+      "en": "I still remember those days of love."
+    },
+    {
+      "start": 103.64,
+      "end": 114.68,
+      "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
-      "en": "I still remember those days of love, and how I wept in secret, night and day."
+      "en": "I remember weeping in secret, night and day."
     },
     {
-      "start": 119.0,
-      "end": 141.0,
+      "start": 128.72,
+      "end": 154.2,
       "lines": [
-        "Tujh se milte hi woh kuchh bebaak ho jaana mera"
+        "Tujhse milte hi woh kuchh bebaak ho jaana mera"
       ],
-      "en": "I remember how bold I grew the moment we met."
+      "en": "The moment we met, I grew a little bold."
     },
     {
-      "start": 141.0,
-      "end": 166.0,
+      "start": 154.36,
+      "end": 167.04,
       "lines": [
-        "Tujh se milte hi woh kuchh bebaak ho jaana mera",
         "Aur tera daanton mein woh ungli dabana yaad hai"
       ],
-      "en": "I remember how bold I grew when we met, and how you pressed a finger between your teeth."
+      "en": "I remember how you pressed a finger between your teeth."
     },
     {
-      "start": 166.0,
-      "end": 192.0,
+      "start": 167.92,
+      "end": 179.36,
       "lines": [
-        "Humko ab tak aashiqi ka woh zamana yaad hai",
+        "Humko ab tak aashiqi ka woh zamana yaad hai"
+      ],
+      "en": "I still remember those days of love."
+    },
+    {
+      "start": 180.72,
+      "end": 191.76,
+      "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
-      "en": "I still remember those days of love, and how I wept in secret, night and day."
+      "en": "I remember weeping in secret, night and day."
     },
     {
-      "start": 226.0,
-      "end": 255.0,
+      "start": 218.72,
+      "end": 244.28,
       "lines": [
-        "Chori chori hum se tum aa kar mile the jis jagah",
-        "Muddatein guzriin par ab tak woh thikana yaad hai"
+        "Chori chori humse tum aakar mile the jis jagah"
       ],
-      "en": "Years have passed, yet I still remember the place where you came to meet me in secret."
+      "en": "You came to meet me there in secret."
     },
     {
-      "start": 256.0,
-      "end": 281.0,
+      "start": 245.12,
+      "end": 256.4,
       "lines": [
-        "Humko ab tak aashiqi ka woh zamana yaad hai",
+        "Muddat guzri par ab tak woh thikana yaad hai"
+      ],
+      "en": "So much time has passed, and I still remember the place."
+    },
+    {
+      "start": 257.36,
+      "end": 269.72,
+      "lines": [
+        "Humko ab tak aashiqi ka woh zamana yaad hai"
+      ],
+      "en": "I still remember those days of love."
+    },
+    {
+      "start": 269.72,
+      "end": 280.16,
+      "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
-      "en": "I still remember those days of love, and how I wept in secret, night and day."
+      "en": "I remember weeping in secret, night and day."
     },
     {
-      "start": 286.0,
-      "end": 304.0,
+      "start": 294.76,
+      "end": 319.88,
       "lines": [
-        "Kheench lena woh mera parde ka kona dafaatan"
+        "Kheench lena woh mera parde ka kona dafatan"
       ],
-      "en": "I remember how suddenly I tugged at the corner of the curtain."
+      "en": "I tugged suddenly at the corner of the curtain."
     },
     {
-      "start": 304.0,
-      "end": 331.0,
+      "start": 320.52,
+      "end": 332.6,
       "lines": [
-        "Kheench lena woh mera parde ka kona dafaatan",
         "Aur dupatte se tera woh munh chhupana yaad hai"
       ],
-      "en": "I remember tugging suddenly at the corner of the curtain, and how you hid your face in your dupatta."
+      "en": "I remember how you hid your face behind your scarf."
     },
     {
-      "start": 332.0,
-      "end": 357.0,
+      "start": 333.48,
+      "end": 345.72,
       "lines": [
-        "Humko ab tak aashiqi ka woh zamana yaad hai",
+        "Humko ab tak aashiqi ka woh zamana yaad hai"
+      ],
+      "en": "I still remember those days of love."
+    },
+    {
+      "start": 346.12,
+      "end": 357.16,
+      "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
-      "en": "I still remember those days of love, and how I wept in secret, night and day."
+      "en": "I remember weeping in secret, night and day."
     },
     {
-      "start": 362.0,
-      "end": 392.0,
+      "start": 384.84,
+      "end": 409.08,
       "lines": [
         "Dopahar ki dhoop mein mere bulane ke liye"
       ],
       "en": "It was in the midday sun that you came to call me."
     },
     {
-      "start": 392.0,
-      "end": 420.0,
+      "start": 409.08,
+      "end": 421.6,
       "lines": [
-        "Dopahar ki dhoop mein mere bulane ke liye",
         "Woh tera kothe pe nange paon aana yaad hai"
       ],
-      "en": "I remember you coming barefoot onto the roof in the midday sun to call me."
+      "en": "I remember you coming barefoot onto the rooftop."
     },
     {
-      "start": 420.0,
-      "end": 446.0,
+      "start": 422.4,
+      "end": 434.52,
       "lines": [
-        "Humko ab tak aashiqi ka woh zamana yaad hai",
+        "Humko ab tak aashiqi ka woh zamana yaad hai"
+      ],
+      "en": "I still remember those days of love."
+    },
+    {
+      "start": 434.92,
+      "end": 445.88,
+      "lines": [
         "Chupke chupke raat din aansoo bahana yaad hai"
       ],
-      "en": "I still remember those days of love, and how I wept in secret, night and day."
+      "en": "I remember weeping in secret, night and day."
     }
   ]
 }

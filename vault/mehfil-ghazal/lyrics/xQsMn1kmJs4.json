@@ -1,178 +1,175 @@
 {
   "video_id": "xQsMn1kmJs4",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 37.0,
+      "start": 59.76,
+      "end": 63.42,
       "lines": [
-        "Hungama hai kyon barpa?"
+        "Thodi si jo pee li hai"
       ],
-      "en": "Why all this uproar?"
+      "en": "I've only had a little wine."
     },
     {
-      "start": 60.0,
-      "end": 73.32,
+      "start": 64.88,
+      "end": 73.72,
       "lines": [
-        "Thodi si jo pee li hai.",
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Hungama hai kyon barpa, thodi si jo pee li hai"
       ],
-      "en": "I have only had a little, so why all this uproar?"
+      "en": "Why all the uproar over a little wine?"
     },
     {
-      "start": 74.6,
-      "end": 97.68,
+      "start": 74.9,
+      "end": 87.58,
       "lines": [
-        "Daaka to nahin daala, chori to nahin ki hai.",
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Daaka to nahin daala, chori to nahin ki hai"
       ],
-      "en": "I have robbed no one and stolen nothing, so why the uproar over a little wine?"
+      "en": "I haven't robbed or stolen."
     },
     {
-      "start": 117.74,
-      "end": 126.34,
+      "start": 117.44,
+      "end": 120.46,
       "lines": [
-        "Us mai se nahin matlab, dil jis se ho begaana."
+        "Us mai se nahin matlab"
       ],
-      "en": "I have no taste for wine that estranges the heart."
+      "en": "I don't mean that wine."
     },
     {
-      "start": 132.18,
-      "end": 155.9,
+      "start": 142.52,
+      "end": 154.84,
       "lines": [
-        "Us mai se nahin matlab, dil jis se ho begaana.",
-        "Maqsood hai us mai se, dil hi mein jo khinchti hai."
+        "Us mai se nahin matlab, dil hi mein jo khinchti hai"
       ],
-      "en": "I seek the wine that is drawn into the heart itself."
+      "en": "I don't mean the wine that wells up in the heart itself."
     },
     {
-      "start": 155.9,
-      "end": 179.9,
+      "start": 160.98,
+      "end": 163.78,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?",
-        "Daaka to nahin daala, chori to nahin ki hai."
+        "Thodi si jo pee li hai"
       ],
-      "en": "Why all this uproar over a little wine, when I have robbed no one and stolen nothing?"
+      "en": "I've only had a little wine."
     },
     {
-      "start": 179.9,
-      "end": 189.1,
+      "start": 166.16,
+      "end": 179.14,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Daaka to nahin daala, chori to nahin ki hai"
       ],
-      "en": "Why all this uproar over a little wine?"
+      "en": "I haven't robbed or stolen."
     },
     {
-      "start": 209.9,
-      "end": 233.9,
+      "start": 180.38,
+      "end": 188.8,
       "lines": [
-        "Suraj mein lage dhabba, fitrat ke karishme hain."
+        "Hungama hai kyon barpa, thodi si jo pee li hai"
       ],
-      "en": "Even a blemish on the sun is one of nature's wonders."
+      "en": "Why all the uproar over a little wine?"
     },
     {
-      "start": 233.9,
-      "end": 248.9,
+      "start": 217.7,
+      "end": 219.7,
       "lines": [
-        "But hum ko kahein kaafir, Allah ki marzi hai."
+        "Karishme hain"
       ],
-      "en": "If idols call me an unbeliever, such is God's will."
+      "en": "They are wonders."
     },
     {
-      "start": 248.9,
-      "end": 273.06,
+      "start": 254.7,
+      "end": 258.94,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?",
-        "Daaka to nahin daala, chori to nahin ki hai."
+        "Thodi si jo pee li hai"
       ],
-      "en": "Why all this uproar over a little wine, when I have robbed no one and stolen nothing?"
+      "en": "I've only had a little wine."
     },
     {
-      "start": 273.06,
-      "end": 292.14,
+      "start": 259.46,
+      "end": 272.14,
       "lines": [
-        "Hungama hai kyon barpa?",
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Daaka to nahin daala, chori to nahin ki hai"
       ],
-      "en": "Why all this uproar when I have only had a little wine?"
+      "en": "I haven't robbed or stolen."
     },
     {
-      "start": 311.14,
-      "end": 320.34,
+      "start": 342.92,
+      "end": 356.38,
       "lines": [
-        "Na-tajrabakaari se, waaiz ki ye baatein hain."
+        "Is rang ko kya jaane, poochho to kabhi pee hai"
       ],
-      "en": "The preacher speaks out of inexperience."
+      "en": "What would he know of this feeling, has he ever tasted wine?"
     },
     {
-      "start": 333.14,
-      "end": 356.1,
+      "start": 361.82,
+      "end": 365.38,
       "lines": [
-        "Na-tajrabakaari se, waaiz ki ye baatein hain.",
-        "Is rang ko kya jaane, poochho to kabhi pee hai?"
+        "Thodi si jo pee li hai"
       ],
-      "en": "What can the preacher know of this delight, and has he ever tasted it?"
+      "en": "I've only had a little wine."
     },
     {
-      "start": 356.1,
-      "end": 381.1,
+      "start": 366.98,
+      "end": 379.02,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?",
-        "Daaka to nahin daala, chori to nahin ki hai."
+        "Daaka to nahin daala, chori to nahin ki hai"
       ],
-      "en": "Why all this uproar over a little wine, when I have robbed no one and stolen nothing?"
+      "en": "I haven't robbed or stolen."
     },
     {
-      "start": 381.1,
-      "end": 389.82,
+      "start": 381.14,
+      "end": 389.62,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Hungama hai kyon barpa, thodi si jo pee li hai"
       ],
-      "en": "Why all this uproar over a little wine?"
+      "en": "Why all the uproar over a little wine?"
     },
     {
-      "start": 411.1,
-      "end": 421.1,
+      "start": 416.78,
+      "end": 420.7,
       "lines": [
-        "Har zarra chamakta hai, anwaar-e-ilaahi se."
+        "Anwaar-e-ilaahi se"
       ],
-      "en": "Every particle shines with divine light."
+      "en": "It shines with the light of God."
     },
     {
-      "start": 426.1,
-      "end": 455.1,
+      "start": 426.84,
+      "end": 435.24,
       "lines": [
-        "Har zarra chamakta hai, anwaar-e-ilaahi se.",
-        "Har saans ye kehti hai, hum hain to Khuda bhi hai."
+        "Har zarra chamakta hai, anwaar-e-ilaahi se"
       ],
-      "en": "Every particle shines with divine light, and every breath says that if we exist, so does God."
+      "en": "Every mote shines with the light of God."
     },
     {
-      "start": 455.1,
-      "end": 473.1,
+      "start": 436.1,
+      "end": 449.38,
       "lines": [
-        "Thodi si jo pee li hai.",
-        "Daaka to nahin daala, chori to nahin ki hai."
+        "Har saans ye kehti hai, hum hain to Khuda bhi hai"
       ],
-      "en": "I have only had a little wine, and I have robbed no one and stolen nothing."
+      "en": "Every breath says that if we exist, God does too."
     },
     {
-      "start": 474.1,
-      "end": 482.1,
+      "start": 460.34,
+      "end": 473.26,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?"
+        "Daaka to nahin daala, chori to nahin ki hai"
       ],
-      "en": "Why all this uproar over a little wine?"
+      "en": "I haven't robbed or stolen."
     },
     {
-      "start": 488.1,
-      "end": 507.1,
+      "start": 479.28,
+      "end": 483.22,
       "lines": [
-        "Hungama hai kyon barpa, thodi si jo pee li hai?",
-        "Thodi si jo pee li hai."
+        "Thodi si jo pee li hai"
       ],
-      "en": "Why all this uproar when I have only had a little wine?"
+      "en": "I've only had a little wine."
+    },
+    {
+      "start": 497.18,
+      "end": 501.7,
+      "lines": [
+        "Thodi si jo pee li hai"
+      ],
+      "en": "I've only had a little wine."
     }
   ]
 }

@@ -1,103 +1,111 @@
 {
   "video_id": "xY2P6IAd0MI",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 4.0,
+      "start": 15.2,
+      "end": 33.0,
       "lines": [
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?",
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?"
+        "Jhuki jhuki si nazar, beqaraar hai ke nahin"
       ],
-      "en": "Is that lowered gaze restless?"
+      "en": "Is there restlessness in that lowered gaze?"
     },
     {
-      "start": 4.0,
-      "end": 12.0,
+      "start": 34.08,
+      "end": 42.44,
       "lines": [
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?",
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?"
+        "Daba daba sa sahi, dil mein pyaar hai ke nahin"
       ],
-      "en": "Is that lowered gaze restless?"
+      "en": "However well hidden, is there love in your heart?"
     },
     {
-      "start": 12.0,
-      "end": 24.2,
-      "lines": [
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?",
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?"
-      ],
-      "en": "Is that lowered gaze restless?"
-    },
-    {
-      "start": 24.2,
-      "end": 43.2,
-      "lines": [
-        "Jhuki jhuki si nazar, beqaraar hai ke nahin?",
-        "Daba daba sa sahi, dil mein pyaar hai ke nahin?"
-      ],
-      "en": "Is that lowered gaze restless, and is there love in your heart, however deeply hidden?"
-    },
-    {
-      "start": 43.2,
-      "end": 47.2,
+      "start": 43.6,
+      "end": 47.26,
       "lines": [
         "Jhuki jhuki si nazar"
       ],
-      "en": "That softly lowered gaze."
+      "en": "Your eyes are softly downcast."
     },
     {
-      "start": 68.9,
-      "end": 77.9,
+      "start": 68.96,
+      "end": 77.6,
       "lines": [
         "Tu apne dil ki jawaan dhadkanon ko gin ke bata"
       ],
       "en": "Count the beats of your young heart and tell me."
     },
     {
-      "start": 87.7,
-      "end": 106.3,
+      "start": 87.76,
+      "end": 96.48,
       "lines": [
-        "Tu apne dil ki jawaan dhadkanon ko gin ke bata",
-        "Meri tarah tera dil beqaraar hai ke nahin?"
+        "Tu apne dil ki jawaan dhadkanon ko gin ke bata"
       ],
-      "en": "Count the beats of your young heart and tell me if it is as restless as mine."
+      "en": "Count the beats of your young heart and tell me."
     },
     {
-      "start": 106.3,
-      "end": 120.3,
+      "start": 97.28,
+      "end": 105.72,
       "lines": [
-        "Daba daba sa sahi, dil mein pyaar hai ke nahin?",
+        "Meri tarah tera dil beqaraar hai ke nahin"
+      ],
+      "en": "Is your heart as restless as mine?"
+    },
+    {
+      "start": 106.72,
+      "end": 115.08,
+      "lines": [
+        "Daba daba sa sahi, dil mein pyaar hai ke nahin"
+      ],
+      "en": "However well hidden, is there love in your heart?"
+    },
+    {
+      "start": 116.24,
+      "end": 119.8,
+      "lines": [
         "Jhuki jhuki si nazar"
       ],
-      "en": "Is there love in your heart, however well that lowered gaze conceals it?"
+      "en": "Your eyes are softly downcast."
     },
     {
-      "start": 150.7,
-      "end": 160.02,
+      "start": 150.72,
+      "end": 159.5,
       "lines": [
         "Teri ummeed pe thukra raha hoon duniya ko"
       ],
       "en": "In the hope of you, I am turning the world away."
     },
     {
-      "start": 169.46,
-      "end": 187.78,
+      "start": 169.44,
+      "end": 178.04,
       "lines": [
-        "Teri ummeed pe thukra raha hoon duniya ko",
-        "Tujhe bhi apne pe ye aitbaar hai ke nahin?"
+        "Teri ummeed pe thukra raha hoon duniya ko"
       ],
-      "en": "In the hope of you, I am turning the world away, but do you have that same faith in yourself?"
+      "en": "In the hope of you, I am turning the world away."
     },
     {
-      "start": 187.78,
-      "end": 202.42,
+      "start": 179.04,
+      "end": 187.16,
       "lines": [
-        "Daba daba sa sahi, dil mein pyaar hai ke nahin?",
+        "Tujhe bhi apne pe ye aitbaar hai ke nahin"
+      ],
+      "en": "Do you have that same faith in yourself?"
+    },
+    {
+      "start": 188.16,
+      "end": 196.44,
+      "lines": [
+        "Daba daba sa sahi, dil mein pyaar hai ke nahin"
+      ],
+      "en": "However well hidden, is there love in your heart?"
+    },
+    {
+      "start": 197.6,
+      "end": 201.26,
+      "lines": [
         "Jhuki jhuki si nazar"
       ],
-      "en": "Is there love in your heart, however well that lowered gaze conceals it?"
+      "en": "Your eyes are softly downcast."
     }
   ]
 }

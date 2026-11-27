@@ -1,250 +1,567 @@
 {
   "video_id": "v0_IRIFYC0k",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 42.0,
+      "start": 31.32,
+      "end": 36.96,
       "lines": [
-        "Chitthi aayi hai, aayi hai, chitthi aayi hai.",
-        "Chitthi aayi hai, watan se chitthi aayi hai."
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
       ],
-      "en": "A letter has come, a letter from home."
+      "en": "A letter has come, a letter at last."
     },
     {
-      "start": 42.0,
-      "end": 60.4,
+      "start": 37.0,
+      "end": 38.8,
       "lines": [
-        "Bade dinon ke baad hum bewatanon ko yaad,",
-        "Bade dinon ke baad hum bewatanon ko yaad, watan ki mitti aayi hai."
+        "Chitthi aayi hai"
       ],
-      "en": "After so long away, we remember the soil of home."
+      "en": "A letter has come."
     },
     {
-      "start": 60.4,
-      "end": 72.0,
+      "start": 38.8,
+      "end": 43.2,
       "lines": [
-        "Chitthi aayi hai, aayi hai, chitthi aayi hai.",
-        "Chitthi aayi hai, watan se chitthi aayi hai."
-      ],
-      "en": "A letter has come, a letter from home."
-    },
-    {
-      "start": 83.0,
-      "end": 96.0,
-      "lines": [
-        "Upar mera naam likha hai,",
-        "Andar ye paigham likha hai."
-      ],
-      "en": "My name is on the envelope, and this is what the letter says."
-    },
-    {
-      "start": 96.0,
-      "end": 107.0,
-      "lines": [
-        "O pardes ko jaane wale,",
-        "Laut ke phir na aane wale."
-      ],
-      "en": "You who left for a foreign land and never came back."
-    },
-    {
-      "start": 107.0,
-      "end": 118.3,
-      "lines": [
-        "Saat samandar paar gaya tu,",
-        "Humko zinda maar gaya tu."
-      ],
-      "en": "You crossed seven seas and left us scarcely alive."
-    },
-    {
-      "start": 118.3,
-      "end": 128.94,
-      "lines": [
-        "Khoon ke rishte tod gaya tu,",
-        "Aankh mein aansoo chhod gaya tu."
-      ],
-      "en": "You broke the ties of blood and left us in tears."
-    },
-    {
-      "start": 128.94,
-      "end": 141.64,
-      "lines": [
-        "Kam khaate hain, kam sote hain,",
-        "Bahut zyada hum rote hain."
-      ],
-      "en": "We eat little, sleep little, and weep so much."
-    },
-    {
-      "start": 142.24,
-      "end": 152.84,
-      "lines": [
-        "Chitthi aayi hai, aayi hai, chitthi aayi hai.",
-        "Chitthi aayi hai, watan se chitthi aayi hai."
-      ],
-      "en": "A letter has come, a letter from home."
-    },
-    {
-      "start": 164.84,
-      "end": 176.84,
-      "lines": [
-        "Sooni ho gayi shehar ki galiyan,",
-        "Kaante ban gayin baagh ki kaliyan."
-      ],
-      "en": "The streets have emptied, and the buds in the garden have turned to thorns."
-    },
-    {
-      "start": 176.84,
-      "end": 187.84,
-      "lines": [
-        "Kehte hain Saawan ke jhoole,",
-        "Bhool gaya tu, hum nahin bhoole."
-      ],
-      "en": "The monsoon swings say you forgot, and they still remember."
-    },
-    {
-      "start": 187.84,
-      "end": 198.5,
-      "lines": [
-        "Tere bin jab aayi Diwali,",
-        "Deep nahin, dil jale hain khaali."
-      ],
-      "en": "When Diwali came without you, only our hearts burned."
-    },
-    {
-      "start": 198.5,
-      "end": 209.5,
-      "lines": [
-        "Tere bin jab aayi Holi,",
-        "Pichkaari se chhooti goli."
-      ],
-      "en": "When Holi came without you, even the water pistol felt like a gun."
-    },
-    {
-      "start": 209.5,
-      "end": 220.46,
-      "lines": [
-        "Peepal soona, panghat soona,",
-        "Ghar shamshaan ka bana namoona."
-      ],
-      "en": "The peepal tree and the well are deserted, and the house is still as a cremation ground."
-    },
-    {
-      "start": 220.46,
-      "end": 250.46,
-      "lines": [
-        "Fasal kati, aayi Baisakhi,",
-        "Tera aana reh gaya baaqi, chitthi aayi hai."
-      ],
-      "en": "The harvest is in and Baisakhi has come, and still we wait for you as a letter arrives."
-    },
-    {
-      "start": 280.46,
-      "end": 295.86,
-      "lines": [
-        "Pehle jab tu gaya tha, bhaiya, jab baithi behna,",
-        "Rasta dekh rahe the naina."
-      ],
-      "en": "When you first left, brother, your sister sat with her eyes on the road."
-    },
-    {
-      "start": 295.86,
-      "end": 306.86,
-      "lines": [
-        "Main to baap hoon, mera kya hai,",
-        "Teri maa ka haal bura hai."
-      ],
-      "en": "As for me, I am your father, but your mother is taking it hard."
-    },
-    {
-      "start": 306.86,
-      "end": 317.76,
-      "lines": [
-        "Teri biwi karti hai sewa,",
-        "Soorat se lagti hai bewa."
-      ],
-      "en": "Your wife looks after us, though she has the face of a widow."
-    },
-    {
-      "start": 317.76,
-      "end": 328.52,
-      "lines": [
-        "Tune paisa bahut kamaya,",
-        "Is paise ne des chhudaya."
-      ],
-      "en": "You earned a great deal, and that money took you away from home."
-    },
-    {
-      "start": 328.52,
-      "end": 339.3,
-      "lines": [
-        "Des paraya chhod ke aaja,",
-        "Panchhi, pinjra tod ke aaja."
-      ],
-      "en": "Leave that foreign land, little bird, break your cage and come home."
-    },
-    {
-      "start": 339.3,
-      "end": 352.3,
-      "lines": [
-        "Des paraya chhod ke aaja,",
-        "Panchhi, pinjra tod ke aaja, aaja."
-      ],
-      "en": "Leave that foreign land, little bird, break your cage and come home, come home."
-    },
-    {
-      "start": 352.3,
-      "end": 363.3,
-      "lines": [
-        "Umr bahut hai chhoti,",
-        "Apne ghar mein bhi hai roti."
-      ],
-      "en": "Life is short, and there is bread at home too."
-    },
-    {
-      "start": 363.3,
-      "end": 380.5,
-      "lines": [
-        "Chitthi aayi hai, aayi hai, chitthi aayi hai.",
-        "Bade dinon ke baad hum bewatanon ko yaad watan ki mitti aayi hai."
-      ],
-      "en": "A letter has come, and after so long away we remember the soil of home."
-    },
-    {
-      "start": 380.9,
-      "end": 391.1,
-      "lines": [
-        "Chitthi aayi hai, aayi hai, chitthi aayi hai.",
-        "Chitthi aayi hai, watan se chitthi aayi hai."
-      ],
-      "en": "A letter has come, a letter from home."
-    },
-    {
-      "start": 391.3,
-      "end": 400.02,
-      "lines": [
-        "Watan se chitthi aayi, watan se chitthi aayi.",
-        "Watan se chitthi aayi, watan se chitthi aayi."
+        "Watan se chitthi aayi hai"
       ],
       "en": "A letter has come from home."
     },
     {
-      "start": 400.02,
-      "end": 408.18,
+      "start": 43.2,
+      "end": 54.36,
       "lines": [
-        "Watan se chitthi aayi, watan se chitthi aayi.",
-        "Watan se chitthi aayi, watan se chitthi aayi."
+        "Bade dinon ke baad hum bewatanon ko yaad"
+      ],
+      "en": "After so long, memory stirs in us far from home."
+    },
+    {
+      "start": 54.36,
+      "end": 59.56,
+      "lines": [
+        "Watan ki mitti aayi hai"
+      ],
+      "en": "We remember the soil of home."
+    },
+    {
+      "start": 60.84,
+      "end": 66.52,
+      "lines": [
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "A letter has come, a letter at last."
+    },
+    {
+      "start": 66.52,
+      "end": 68.4,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 68.4,
+      "end": 71.24,
+      "lines": [
+        "Watan se chitthi aayi hai"
       ],
       "en": "A letter has come from home."
     },
     {
-      "start": 408.18,
-      "end": 422.98,
+      "start": 84.56,
+      "end": 90.04,
       "lines": [
-        "Chitthi aayi hai, watan se chitthi aayi hai.",
-        "Chitthi aayi hai, chitthi aayi hai, chitthi aayi hai, watan se chitthi aayi hai."
+        "Oopar mera naam likha hai"
       ],
-      "en": "A letter has come, a letter from home."
+      "en": "My name is written on the outside."
+    },
+    {
+      "start": 90.44,
+      "end": 95.68,
+      "lines": [
+        "Andar ye paigham likha hai"
+      ],
+      "en": "Inside are these words."
+    },
+    {
+      "start": 95.68,
+      "end": 101.48,
+      "lines": [
+        "O pardes ko jaane wale"
+      ],
+      "en": "You who went away to a foreign land."
+    },
+    {
+      "start": 101.48,
+      "end": 107.12,
+      "lines": [
+        "Laut ke phir na aane wale"
+      ],
+      "en": "You who never came back."
+    },
+    {
+      "start": 107.12,
+      "end": 112.8,
+      "lines": [
+        "Saat samandar paar gaya tu"
+      ],
+      "en": "You went across seven seas."
+    },
+    {
+      "start": 112.8,
+      "end": 118.4,
+      "lines": [
+        "Humko zinda maar gaya tu"
+      ],
+      "en": "You left us feeling dead while still alive."
+    },
+    {
+      "start": 118.4,
+      "end": 124.0,
+      "lines": [
+        "Khoon ke rishte tod gaya tu"
+      ],
+      "en": "You broke the ties of blood."
+    },
+    {
+      "start": 124.0,
+      "end": 129.08,
+      "lines": [
+        "Aankh mein aansoo chhod gaya tu"
+      ],
+      "en": "You left tears in our eyes."
+    },
+    {
+      "start": 129.08,
+      "end": 131.88,
+      "lines": [
+        "Kam khaate hain"
+      ],
+      "en": "We eat little."
+    },
+    {
+      "start": 131.88,
+      "end": 134.96,
+      "lines": [
+        "Kam sote hain"
+      ],
+      "en": "We sleep little."
+    },
+    {
+      "start": 134.96,
+      "end": 139.56,
+      "lines": [
+        "Bahut zyada hum rote hain"
+      ],
+      "en": "We spend so much of our time in tears."
+    },
+    {
+      "start": 139.56,
+      "end": 142.4,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 142.4,
+      "end": 147.96,
+      "lines": [
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "A letter has come, a letter at last."
+    },
+    {
+      "start": 147.96,
+      "end": 149.92,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 149.92,
+      "end": 152.64,
+      "lines": [
+        "Watan se chitthi aayi hai"
+      ],
+      "en": "A letter has come from home."
+    },
+    {
+      "start": 165.92,
+      "end": 171.72,
+      "lines": [
+        "Sooni ho gayi shehar ki galiyan"
+      ],
+      "en": "The lanes of town have fallen quiet."
+    },
+    {
+      "start": 171.72,
+      "end": 177.36,
+      "lines": [
+        "Kaante ban gayin baagh ki kaliyan"
+      ],
+      "en": "The garden buds have turned to thorns."
+    },
+    {
+      "start": 177.36,
+      "end": 182.92,
+      "lines": [
+        "Kehte hain saawan ke jhoole"
+      ],
+      "en": "The monsoon swings seem to speak."
+    },
+    {
+      "start": 182.92,
+      "end": 188.52,
+      "lines": [
+        "Bhool gaya tu, hum nahin bhoole"
+      ],
+      "en": "You forgot, and we still remember."
+    },
+    {
+      "start": 188.52,
+      "end": 193.96,
+      "lines": [
+        "Tere bin jab aayi Diwali"
+      ],
+      "en": "Diwali came while you were away."
+    },
+    {
+      "start": 193.96,
+      "end": 199.6,
+      "lines": [
+        "Deep nahin, dil jale hain khaali"
+      ],
+      "en": "Only our hearts burned, and the lamps stayed dark."
+    },
+    {
+      "start": 199.6,
+      "end": 205.2,
+      "lines": [
+        "Tere bin jab aayi Holi"
+      ],
+      "en": "Holi came while you were away."
+    },
+    {
+      "start": 205.84,
+      "end": 210.0,
+      "lines": [
+        "Pichkaari se chhooti goli"
+      ],
+      "en": "The spray of colour felt like a gunshot."
+    },
+    {
+      "start": 210.72,
+      "end": 216.16,
+      "lines": [
+        "Peepal soona, panghat soona"
+      ],
+      "en": "The peepal stands deserted, and so does the well."
+    },
+    {
+      "start": 216.16,
+      "end": 221.68,
+      "lines": [
+        "Ghar shamshaan ka bana namoona"
+      ],
+      "en": "The house has grown as still as a cremation ground."
+    },
+    {
+      "start": 221.68,
+      "end": 227.4,
+      "lines": [
+        "Fasal kati, aayi Baisaakhi"
+      ],
+      "en": "The harvest was cut, and Baisakhi came."
+    },
+    {
+      "start": 227.4,
+      "end": 231.72,
+      "lines": [
+        "Tera aana reh gaya baaqi"
+      ],
+      "en": "We were still waiting for you to come."
+    },
+    {
+      "start": 231.72,
+      "end": 234.52,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 234.52,
+      "end": 239.56,
+      "lines": [
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "A letter has come, a letter at last."
+    },
+    {
+      "start": 240.08,
+      "end": 241.84,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 241.84,
+      "end": 244.72,
+      "lines": [
+        "Watan se chitthi aayi hai"
+      ],
+      "en": "A letter has come from home."
+    },
+    {
+      "start": 262.96,
+      "end": 268.6,
+      "lines": [
+        "Pehle jab tu khat likhta tha"
+      ],
+      "en": "In the days when you used to write."
+    },
+    {
+      "start": 268.6,
+      "end": 274.16,
+      "lines": [
+        "Kaaghaz mein chehra dikhta tha"
+      ],
+      "en": "We could see your face in the paper."
+    },
+    {
+      "start": 274.16,
+      "end": 279.64,
+      "lines": [
+        "Band hua ye mel bhi ab to"
+      ],
+      "en": "Even that small meeting has come to an end."
+    },
+    {
+      "start": 279.64,
+      "end": 284.96,
+      "lines": [
+        "Khatm hua ye khel bhi ab to"
+      ],
+      "en": "Even that little game is over now."
+    },
+    {
+      "start": 284.96,
+      "end": 290.6,
+      "lines": [
+        "Doli mein jab baithi behna"
+      ],
+      "en": "Your sister sat in her bridal palanquin."
+    },
+    {
+      "start": 290.6,
+      "end": 296.16,
+      "lines": [
+        "Raasta dekh rahe the naina"
+      ],
+      "en": "Her eyes were still on the road."
+    },
+    {
+      "start": 296.16,
+      "end": 301.64,
+      "lines": [
+        "Main to baap hoon, mera kya hai"
+      ],
+      "en": "I am your father, so never mind me."
+    },
+    {
+      "start": 301.64,
+      "end": 307.12,
+      "lines": [
+        "Teri maa ka haal bura hai"
+      ],
+      "en": "Your mother is faring poorly."
+    },
+    {
+      "start": 307.44,
+      "end": 312.64,
+      "lines": [
+        "Teri biwi karti hai seva"
+      ],
+      "en": "Your wife looks after us."
+    },
+    {
+      "start": 312.64,
+      "end": 318.16,
+      "lines": [
+        "Soorat se lagti hai bewa"
+      ],
+      "en": "She wears the look of a widow."
+    },
+    {
+      "start": 318.32,
+      "end": 323.4,
+      "lines": [
+        "Tune paisa bahut kamaya"
+      ],
+      "en": "You earned a great deal of money."
+    },
+    {
+      "start": 323.4,
+      "end": 328.92,
+      "lines": [
+        "Is paise ne desh chhudaya"
+      ],
+      "en": "That money took you away from home."
+    },
+    {
+      "start": 328.92,
+      "end": 334.56,
+      "lines": [
+        "Desh paraya chhod ke aaja"
+      ],
+      "en": "Leave that foreign land and come home."
+    },
+    {
+      "start": 334.56,
+      "end": 339.96,
+      "lines": [
+        "Panchhi, pinjra tod ke aaja"
+      ],
+      "en": "Little bird, break open your cage and come home."
+    },
+    {
+      "start": 339.96,
+      "end": 345.32,
+      "lines": [
+        "Desh paraya chhod ke aaja"
+      ],
+      "en": "Leave that foreign land and come home."
+    },
+    {
+      "start": 345.32,
+      "end": 352.32,
+      "lines": [
+        "Panchhi, pinjra tod ke aaja"
+      ],
+      "en": "Little bird, break open your cage and come home."
+    },
+    {
+      "start": 352.4,
+      "end": 356.32,
+      "lines": [
+        "Umr bahut hai chhoti"
+      ],
+      "en": "Life is very short."
+    },
+    {
+      "start": 356.32,
+      "end": 360.68,
+      "lines": [
+        "Apne ghar mein bhi hai roti"
+      ],
+      "en": "There is bread for you at home too."
+    },
+    {
+      "start": 360.68,
+      "end": 363.44,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 363.44,
+      "end": 369.48,
+      "lines": [
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "A letter has come, a letter at last."
+    },
+    {
+      "start": 369.48,
+      "end": 374.8,
+      "lines": [
+        "Bade dinon ke baad hum bewatanon ko yaad"
+      ],
+      "en": "After so long, memory stirs in us far from home."
+    },
+    {
+      "start": 374.8,
+      "end": 381.0,
+      "lines": [
+        "Watan ki mitti aayi hai"
+      ],
+      "en": "We remember the soil of home."
+    },
+    {
+      "start": 381.0,
+      "end": 386.44,
+      "lines": [
+        "Chitthi aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "A letter has come, a letter at last."
+    },
+    {
+      "start": 386.44,
+      "end": 388.28,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 388.28,
+      "end": 391.4,
+      "lines": [
+        "Watan se chitthi aayi hai"
+      ],
+      "en": "A letter has come from home."
+    },
+    {
+      "start": 391.4,
+      "end": 394.2,
+      "lines": [
+        "Bade dinon ke"
+      ],
+      "en": "So many days have passed."
+    },
+    {
+      "start": 399.4,
+      "end": 407.32,
+      "lines": [
+        "Baad hum bewatanon ko yaad"
+      ],
+      "en": "We who are far from home begin to remember."
+    },
+    {
+      "start": 407.32,
+      "end": 413.68,
+      "lines": [
+        "Watan ki mitti aayi hai"
+      ],
+      "en": "We remember the soil of home."
+    },
+    {
+      "start": 413.68,
+      "end": 417.96,
+      "lines": [
+        "Aayi hai, aayi hai, chitthi aayi hai"
+      ],
+      "en": "It has come, the letter has come."
+    },
+    {
+      "start": 417.96,
+      "end": 419.84,
+      "lines": [
+        "Chitthi aayi hai"
+      ],
+      "en": "A letter has come."
+    },
+    {
+      "start": 419.84,
+      "end": 422.8,
+      "lines": [
+        "Watan se chitthi aayi hai"
+      ],
+      "en": "A letter has come from home."
     }
   ]
 }

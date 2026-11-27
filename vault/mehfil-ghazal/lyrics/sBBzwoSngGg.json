@@ -1,154 +1,379 @@
 {
   "video_id": "sBBzwoSngGg",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 51.0,
+      "start": 31.36,
+      "end": 44.2,
       "lines": [
-        "Chitthi na koi sandesh, chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Chitthi na koi sandesh"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "No letter, no word."
     },
     {
-      "start": 52.0,
-      "end": 64.0,
+      "start": 44.2,
+      "end": 47.6,
       "lines": [
-        "Chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Jaane woh kaun sa desh"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "What far country could it be?"
     },
     {
-      "start": 64.0,
-      "end": 76.0,
+      "start": 47.6,
+      "end": 52.8,
       "lines": [
-        "Chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Jahaan tum chale gaye"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "It is where you have gone."
     },
     {
-      "start": 76.0,
-      "end": 93.0,
+      "start": 52.8,
+      "end": 56.96,
       "lines": [
-        "Jahaan tum chale gaye",
-        "Is dil pe laga ke thes, jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Chitthi na koi sandesh"
       ],
-      "en": "Who knows what land you have gone to, leaving this heart bruised?"
+      "en": "No letter, no word."
     },
     {
-      "start": 111.0,
-      "end": 128.0,
+      "start": 56.96,
+      "end": 60.48,
       "lines": [
-        "Ek aah bhari hogi, humne na suni hogi",
-        "Jaate jaate tumne aawaaz to di hogi"
+        "Jaane woh kaun sa desh"
       ],
-      "en": "You must have sighed and called out as you left, and we must have missed it."
+      "en": "What far country could it be?"
     },
     {
-      "start": 128.0,
-      "end": 140.0,
+      "start": 60.52,
+      "end": 65.52,
       "lines": [
-        "Har waqt yahi hai gham, us waqt kahaan the hum",
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 65.52,
+      "end": 69.64,
+      "lines": [
+        "Chitthi na koi sandesh"
+      ],
+      "en": "No letter, no word."
+    },
+    {
+      "start": 69.64,
+      "end": 73.4,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 73.4,
+      "end": 82.28,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 82.28,
+      "end": 86.8,
+      "lines": [
+        "Is dil pe laga ke thes"
+      ],
+      "en": "You left this heart aching."
+    },
+    {
+      "start": 86.8,
+      "end": 90.2,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 90.2,
+      "end": 92.6,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 111.56,
+      "end": 119.52,
+      "lines": [
+        "Ek aah bhari hogi, humne na suni hogi"
+      ],
+      "en": "You must have sighed, and we must have missed it."
+    },
+    {
+      "start": 120.76,
+      "end": 129.12,
+      "lines": [
+        "Jaate-jaate tumne aawaaz to di hogi"
+      ],
+      "en": "Surely you called out as you were leaving."
+    },
+    {
+      "start": 129.12,
+      "end": 133.32,
+      "lines": [
+        "Har waqt yahi hai gham"
+      ],
+      "en": "This sorrow never leaves us."
+    },
+    {
+      "start": 133.32,
+      "end": 136.8,
+      "lines": [
+        "Us waqt kahaan the hum"
+      ],
+      "en": "Where were we then?"
+    },
+    {
+      "start": 136.8,
+      "end": 142.04,
+      "lines": [
         "Kahaan tum chale gaye"
       ],
-      "en": "The same sorrow returns every moment, where were we then, and where did you go?"
+      "en": "Where have you gone?"
     },
     {
-      "start": 141.0,
-      "end": 152.0,
+      "start": 142.04,
+      "end": 146.2,
       "lines": [
-        "Chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Chitthi na koi sandesh"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "No letter, no word."
     },
     {
-      "start": 153.0,
-      "end": 170.0,
+      "start": 146.2,
+      "end": 149.84,
       "lines": [
-        "Jahaan tum chale gaye",
-        "Is dil pe laga ke thes, jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Jaane woh kaun sa desh"
       ],
-      "en": "Who knows what land you have gone to, leaving this heart bruised?"
+      "en": "What far country could it be?"
     },
     {
-      "start": 183.0,
-      "end": 191.0,
+      "start": 149.92,
+      "end": 158.72,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 158.72,
+      "end": 163.16,
+      "lines": [
+        "Is dil pe laga ke thes"
+      ],
+      "en": "You left this heart aching."
+    },
+    {
+      "start": 163.16,
+      "end": 166.52,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 166.52,
+      "end": 169.62,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 205.52,
+      "end": 214.08,
       "lines": [
         "Har cheez pe ashkon se likha hai tumhaara naam"
       ],
-      "en": "Your name is written in tears on everything."
+      "en": "We have written your name on everything in tears."
     },
     {
-      "start": 212.0,
-      "end": 234.0,
+      "start": 214.08,
+      "end": 222.28,
       "lines": [
-        "Ye raste, ghar, galiyaan tumhein kar na sake salaam",
-        "Haaye dil mein reh gayi baat, jaldi se chhuda kar haath, kahaan tum chale gaye"
+        "Ye raaste, ghar, galiyaan tumhein kar na sake salaam"
       ],
-      "en": "These roads, houses, and lanes never got to say farewell, and the words stayed in my heart as you slipped your hand free and went."
+      "en": "These roads, houses and lanes never got to bid you farewell."
     },
     {
-      "start": 234.0,
-      "end": 246.0,
+      "start": 222.28,
+      "end": 226.84,
       "lines": [
-        "Chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Haaye dil mein reh gayi baat"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "What the heart meant to say stayed there."
     },
     {
-      "start": 246.0,
-      "end": 263.0,
+      "start": 226.84,
+      "end": 230.2,
       "lines": [
-        "Jahaan tum chale gaye",
-        "Is dil pe laga ke thes, jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Jaldi se chhuda kar haath"
       ],
-      "en": "Who knows what land you have gone to, leaving this heart bruised?"
+      "en": "How quickly you slipped your hand free."
     },
     {
-      "start": 293.0,
-      "end": 317.0,
+      "start": 230.2,
+      "end": 235.32,
       "lines": [
-        "Ab yaadon ke kaante is dil mein chubhte hain, na dard thaharta hai, na aansoo rukte hain",
-        "Tumhein dhoondh raha hai pyaar, hum kaise karein iqraar ke haan tum chale gaye"
+        "Kahaan tum chale gaye"
       ],
-      "en": "Memories prick at the heart, the ache and tears go on, and love still looks for you when we cannot bring ourselves to say you are gone."
+      "en": "Where have you gone?"
     },
     {
-      "start": 319.0,
-      "end": 331.0,
+      "start": 235.32,
+      "end": 239.28,
       "lines": [
-        "Chitthi na koi sandesh",
-        "Jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Chitthi na koi sandesh"
       ],
-      "en": "No letter, no word, and who knows what land you have gone to?"
+      "en": "No letter, no word."
     },
     {
-      "start": 331.0,
-      "end": 348.0,
+      "start": 239.28,
+      "end": 243.24,
       "lines": [
-        "Jahaan tum chale gaye",
-        "Is dil pe laga ke thes, jaane woh kaun sa desh, jahaan tum chale gaye"
+        "Jaane woh kaun sa desh"
       ],
-      "en": "Who knows what land you have gone to, leaving this heart bruised?"
+      "en": "What far country could it be?"
     },
     {
-      "start": 379.0,
-      "end": 399.0,
+      "start": 243.24,
+      "end": 252.12,
       "lines": [
-        "Ho kahaan tum chale gaye, ho kahaan tum chale gaye",
-        "Ho kahaan tum chale gaye"
+        "Jahaan tum chale gaye"
       ],
-      "en": "Oh, where have you gone, where have you gone, where have you gone?"
+      "en": "It is where you have gone."
     },
     {
-      "start": 408.0,
-      "end": 412.34,
+      "start": 252.12,
+      "end": 256.4,
+      "lines": [
+        "Is dil pe laga ke thes"
+      ],
+      "en": "You left this heart aching."
+    },
+    {
+      "start": 256.4,
+      "end": 259.84,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 259.84,
+      "end": 262.98,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 290.24,
+      "end": 299.68,
+      "lines": [
+        "Ab yaadon ke kaante is dil mein chubhte hain"
+      ],
+      "en": "Now every memory pricks like a thorn."
+    },
+    {
+      "start": 299.68,
+      "end": 307.32,
+      "lines": [
+        "Na dard thaharta hai, na aansoo rukte hain"
+      ],
+      "en": "The pain will not ease, and the tears keep coming."
+    },
+    {
+      "start": 307.32,
+      "end": 311.6,
+      "lines": [
+        "Tumhein dhoondh raha hai pyaar"
+      ],
+      "en": "Love is still looking for you."
+    },
+    {
+      "start": 311.6,
+      "end": 320.28,
+      "lines": [
+        "Hum kaise karein iqraar ke haan tum chale gaye"
+      ],
+      "en": "How can we bring ourselves to say that you are gone?"
+    },
+    {
+      "start": 320.28,
+      "end": 324.32,
+      "lines": [
+        "Chitthi na koi sandesh"
+      ],
+      "en": "No letter, no word."
+    },
+    {
+      "start": 324.32,
+      "end": 328.08,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 328.08,
+      "end": 337.0,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 337.0,
+      "end": 341.48,
+      "lines": [
+        "Is dil pe laga ke thes"
+      ],
+      "en": "You left this heart aching."
+    },
+    {
+      "start": 341.48,
+      "end": 344.84,
+      "lines": [
+        "Jaane woh kaun sa desh"
+      ],
+      "en": "What far country could it be?"
+    },
+    {
+      "start": 344.84,
+      "end": 348.08,
+      "lines": [
+        "Jahaan tum chale gaye"
+      ],
+      "en": "It is where you have gone."
+    },
+    {
+      "start": 377.72,
+      "end": 390.2,
+      "lines": [
+        "Ho, kahaan tum chale gaye"
+      ],
+      "en": "Where have you gone?"
+    },
+    {
+      "start": 394.76,
+      "end": 398.2,
+      "lines": [
+        "Ho, kahaan tum chale gaye"
+      ],
+      "en": "Where have you gone?"
+    },
+    {
+      "start": 408.2,
+      "end": 411.56,
       "lines": [
         "Chitthi na koi sandesh"
       ],

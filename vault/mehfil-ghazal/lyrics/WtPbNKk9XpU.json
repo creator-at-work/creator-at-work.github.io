@@ -1,119 +1,143 @@
 {
   "video_id": "WtPbNKk9XpU",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 52.0,
+      "start": 36.84,
+      "end": 44.92,
       "lines": [
-        "Tum ko dekha to yeh khayal aaya",
+        "Tum ko dekha to yeh khayal aaya"
+      ],
+      "en": "When I saw you, this thought came to me."
+    },
+    {
+      "start": 45.52,
+      "end": 51.48,
+      "lines": [
         "Zindagi dhoop, tum ghana saaya"
       ],
-      "en": "When I saw you, I thought that life is sunlight and you are deep shade."
+      "en": "Life is harsh sunlight, and you are deep shade."
     },
     {
-      "start": 60.0,
-      "end": 68.0,
+      "start": 60.96,
+      "end": 76.88,
       "lines": [
         "Tum ko dekha to yeh khayal aaya"
       ],
-      "en": "This thought came to me when I saw you."
+      "en": "When I saw you, this thought came to me."
     },
     {
-      "start": 68.0,
-      "end": 76.0,
+      "start": 77.44,
+      "end": 84.8,
+      "lines": [
+        "Zindagi dhoop, tum ghana saaya"
+      ],
+      "en": "Life is harsh sunlight, and you are deep shade."
+    },
+    {
+      "start": 84.8,
+      "end": 89.92,
       "lines": [
         "Tum ko dekha to yeh khayal aaya"
       ],
-      "en": "This thought came to me when I saw you."
+      "en": "When I saw you, this thought came to me."
     },
     {
-      "start": 76.0,
-      "end": 91.92,
-      "lines": [
-        "Zindagi dhoop, tum ghana saaya",
-        "Tum ko dekha to yeh khayal aaya"
-      ],
-      "en": "Life is sunlight and you are deep shade, I thought when I saw you."
-    },
-    {
-      "start": 102.84,
-      "end": 110.84,
+      "start": 103.24,
+      "end": 119.08,
       "lines": [
         "Aaj phir dil ne ek tamanna ki"
       ],
-      "en": "Today my heart wished for something again."
+      "en": "Today the heart dared to wish again."
     },
     {
-      "start": 110.84,
-      "end": 134.84,
+      "start": 119.08,
+      "end": 135.08,
       "lines": [
-        "Aaj phir dil ne ek tamanna ki",
-        "Aaj phir dil ko hum ne samjhaya"
+        "Aaj phir dil ko humne samjhaya"
       ],
-      "en": "Today my heart wished for something again, and again I talked it out of it."
+      "en": "Today I talked my heart out of it again."
     },
     {
-      "start": 134.84,
-      "end": 150.84,
+      "start": 135.6,
+      "end": 142.88,
       "lines": [
-        "Zindagi dhoop, tum ghana saaya",
+        "Zindagi dhoop, tum ghana saaya"
+      ],
+      "en": "Life is harsh sunlight, and you are deep shade."
+    },
+    {
+      "start": 142.88,
+      "end": 149.6,
+      "lines": [
         "Tum ko dekha to yeh khayal aaya"
       ],
-      "en": "Life is sunlight and you are deep shade, I thought when I saw you."
+      "en": "When I saw you, this thought came to me."
     },
     {
-      "start": 156.84,
-      "end": 179.84,
+      "start": 161.4,
+      "end": 176.88,
       "lines": [
-        "Tum chale jaaoge to sochenge",
-        "Hum ne kya khoya, hum ne kya paaya"
+        "Tum chale jaaoge to sochenge"
       ],
-      "en": "When you have gone, I will think about what I lost and what I gained."
+      "en": "Once you leave, I will have time to think."
     },
     {
-      "start": 179.84,
-      "end": 191.84,
+      "start": 176.88,
+      "end": 192.68,
       "lines": [
-        "Hum ne kya khoya, hum ne kya paaya"
+        "Humne kya khoya, humne kya paaya"
       ],
       "en": "What did I lose, and what did I gain?"
     },
     {
-      "start": 191.84,
-      "end": 207.84,
+      "start": 193.2,
+      "end": 200.48,
       "lines": [
-        "Zindagi dhoop, tum ghana saaya",
-        "Tum ko dekha to yeh khayal aaya"
+        "Zindagi dhoop, tum ghana saaya"
       ],
-      "en": "Life is sunlight and you are deep shade, I thought when I saw you."
+      "en": "Life is harsh sunlight, and you are deep shade."
     },
     {
-      "start": 215.84,
-      "end": 226.64,
+      "start": 200.48,
+      "end": 207.0,
+      "lines": [
+        "Tum ko dekha to yeh khayal aaya"
+      ],
+      "en": "When I saw you, this thought came to me."
+    },
+    {
+      "start": 218.96,
+      "end": 234.4,
       "lines": [
         "Hum jise gunguna nahin sakte"
       ],
-      "en": "It is a tune I cannot even hum."
+      "en": "There is a song I cannot bring myself to hum."
     },
     {
-      "start": 226.64,
-      "end": 249.84,
+      "start": 234.4,
+      "end": 249.92,
       "lines": [
-        "Hum jise gunguna nahin sakte",
         "Waqt ne aisa geet kyun gaaya"
       ],
-      "en": "Why did time sing a song I cannot even hum?"
+      "en": "Why did time sing such a song?"
     },
     {
-      "start": 249.84,
-      "end": 271.84,
+      "start": 250.44,
+      "end": 257.68,
       "lines": [
-        "Zindagi dhoop, tum ghana saaya",
+        "Zindagi dhoop, tum ghana saaya"
+      ],
+      "en": "Life is harsh sunlight, and you are deep shade."
+    },
+    {
+      "start": 257.68,
+      "end": 271.88,
+      "lines": [
         "Tum ko dekha to yeh khayal aaya"
       ],
-      "en": "Life is sunlight and you are deep shade, I thought when I saw you."
+      "en": "When I saw you, this thought came to me."
     }
   ]
 }
