@@ -1,144 +1,127 @@
 {
   "video_id": "dfDeN9mCN54",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 14.16,
-      "end": 34.96,
+      "start": 13.98,
+      "end": 22.78,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?",
+        "Dil-e-nadaan tujhe hua kya hai?"
+      ],
+      "en": "What ails you, my foolish heart?"
+    },
+    {
+      "start": 25.8,
+      "end": 34.42,
+      "lines": [
         "Aakhir is dard ki dawa kya hai?"
       ],
-      "en": "What has come over you, foolish heart, and what can ease this pain?"
+      "en": "What, after all, can ease this ache?"
     },
     {
       "start": 39.96,
-      "end": 57.96,
+      "end": 46.32,
       "lines": [
-        "Hum ko un se wafa ki hai ummeed",
+        "Hum ko un se wafa ki hai ummeed"
+      ],
+      "en": "I still hope they will be true."
+    },
+    {
+      "start": 49.92,
+      "end": 57.64,
+      "lines": [
         "Jo nahin jaante wafa kya hai"
       ],
-      "en": "I look for constancy from one who has never known it."
+      "en": "They have never known what it means to be true."
     },
     {
-      "start": 70.16,
-      "end": 79.16,
+      "start": 79.92,
+      "end": 86.64,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?"
+        "Dil-e-nadaan tujhe hua kya hai?"
       ],
-      "en": "What has come over you, foolish heart?"
+      "en": "What ails you, my foolish heart?"
     },
     {
-      "start": 79.96,
-      "end": 97.96,
+      "start": 98.4,
+      "end": 106.06,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?",
         "Aakhir is dard ki dawa kya hai?"
       ],
-      "en": "What has come over you, foolish heart, and what can ease this pain?"
+      "en": "What, after all, can ease this ache?"
     },
     {
-      "start": 97.96,
-      "end": 107.96,
+      "start": 139.08,
+      "end": 141.18,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?"
-      ],
-      "en": "What has come over you, foolish heart?"
-    },
-    {
-      "start": 109.96,
-      "end": 129.96,
-      "lines": [
-        "Mushtaaq aur woh bezaar",
         "Hum hain mushtaaq aur woh bezaar"
       ],
-      "en": "I am full of longing, and they have grown weary of me."
+      "en": "I long for them, and they have grown weary of me."
     },
     {
-      "start": 129.96,
-      "end": 142.96,
+      "start": 154.2,
+      "end": 162.82,
       "lines": [
-        "Mushtaaq aur woh bezaar",
         "Ya Ilaahi, yeh maajra kya hai?"
       ],
-      "en": "I long for them and they grow weary of me, so what am I to make of it, Lord?"
+      "en": "My God, what am I to make of this?"
     },
     {
-      "start": 143.96,
-      "end": 162.96,
-      "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?",
-        "Dil-e-naadaan, tujhe hua kya hai?"
-      ],
-      "en": "What has come over you, foolish heart?"
-    },
-    {
-      "start": 175.96,
-      "end": 184.96,
+      "start": 176.24,
+      "end": 182.14,
       "lines": [
         "Jab ki tujh bin nahin koi maujood"
       ],
-      "en": "There is no one here but You."
+      "en": "There is no one here but you."
     },
     {
-      "start": 191.36,
-      "end": 200.36,
+      "start": 200.66,
+      "end": 208.6,
       "lines": [
-        "Jab ki tujh bin nahin koi maujood"
+        "Phir yeh hangaama, ai Khuda, kya hai?"
       ],
-      "en": "There is no one here but You."
+      "en": "Then what is all this tumult, my God?"
     },
     {
-      "start": 200.96,
-      "end": 218.96,
+      "start": 210.18,
+      "end": 218.8,
       "lines": [
-        "Phir yeh hangaama, ai Khuda, kya hai?",
-        "Dil-e-naadaan, tujhe hua kya hai?"
+        "Dil-e-nadaan tujhe hua kya hai?"
       ],
-      "en": "Then what is all this tumult, Lord, and what has come over you, foolish heart?"
+      "en": "What ails you, my foolish heart?"
     },
     {
-      "start": 230.96,
-      "end": 239.96,
+      "start": 231.98,
+      "end": 251.4,
       "lines": [
-        "Jaan tum pe nisaar karta hoon"
+        "Jaan tum par nisaar karta hoon"
       ],
       "en": "I lay down my life for you."
     },
     {
-      "start": 246.96,
-      "end": 265.16,
+      "start": 256.64,
+      "end": 264.7,
       "lines": [
-        "Jaan tum pe nisaar karta hoon",
         "Main nahin jaanta dua kya hai"
       ],
-      "en": "I lay down my life for you, for I know nothing of prayer."
+      "en": "I do not know what it is to pray."
     },
     {
-      "start": 265.16,
-      "end": 273.96,
+      "start": 265.86,
+      "end": 280.38,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?"
+        "Dil-e-nadaan tujhe hua kya hai?"
       ],
-      "en": "What has come over you, foolish heart?"
+      "en": "What ails you, my foolish heart?"
     },
     {
-      "start": 273.96,
-      "end": 291.96,
+      "start": 297.72,
+      "end": 302.22,
       "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?",
-        "Aakhir is dard ki dawa kya hai?"
+        "Dil-e-nadaan tujhe hua kya hai?"
       ],
-      "en": "What has come over you, foolish heart, and what can ease this pain?"
-    },
-    {
-      "start": 291.96,
-      "end": 300.96,
-      "lines": [
-        "Dil-e-naadaan, tujhe hua kya hai?"
-      ],
-      "en": "What has come over you, foolish heart?"
+      "en": "What ails you, my foolish heart?"
     }
   ]
 }

@@ -1,151 +1,207 @@
 {
   "video_id": "TzQVBZhNRUM",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 82.0,
-      "end": 112.0,
+      "start": 68.4,
+      "end": 93.08,
       "lines": [
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Chamakte chaand ko toota hua taara bana daala"
       ],
-      "en": "The shining moon was made a broken star."
+      "en": "The shining moon was made into a fallen star."
     },
     {
-      "start": 112.0,
-      "end": 146.0,
+      "start": 93.52,
+      "end": 102.92,
       "lines": [
-        "Bada dilkash, bada rangeen hai yeh shahar, kehte hain."
+        "Meri aawargi ne mujhko aawara bana daala"
       ],
-      "en": "They say this city is charming and full of color."
+      "en": "My wandering left me with nowhere to belong."
     },
     {
-      "start": 151.0,
-      "end": 171.0,
+      "start": 103.52,
+      "end": 113.0,
       "lines": [
-        "Bada dilkash, bada rangeen hai yeh shahar, kehte hain.",
-        "Yahan par hain hazaaron ghar, gharon mein log rehte hain."
+        "Chamakte chaand ko toota hua taara bana daala"
       ],
-      "en": "They say this city is charming and full of color, with thousands of homes and people living in them."
+      "en": "The shining moon was made into a fallen star."
     },
     {
-      "start": 171.0,
-      "end": 191.34,
+      "start": 136.32,
+      "end": 146.2,
       "lines": [
-        "Mujhe is shahar ne galiyon ka banjaara bana daala.",
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Bada dilkash, bada rangeen hai ye shehar, kehte hain"
       ],
-      "en": "This city made me a wanderer in its lanes, a shining moon reduced to a broken star."
+      "en": "They say this city is lovely and full of color."
     },
     {
-      "start": 226.0,
-      "end": 237.0,
+      "start": 151.44,
+      "end": 161.24,
       "lines": [
-        "Main is duniya ko aksar dekh kar hairaan hota hoon."
+        "Bada dilkash, bada rangeen hai ye shehar, kehte hain"
       ],
-      "en": "I often look at this world in wonder."
+      "en": "They say this city is lovely and full of color."
     },
     {
-      "start": 241.0,
-      "end": 261.6,
+      "start": 161.6,
+      "end": 171.24,
       "lines": [
-        "Main is duniya ko aksar dekh kar hairaan hota hoon.",
-        "Na mujhse ban saka chhota sa ghar, din raat rota hoon."
+        "Yahaan par hain hazaaron ghar, gharon mein log rehte hain"
       ],
-      "en": "I often look at this world in wonder, weeping day and night because I could never build even a small home."
+      "en": "There are thousands of houses here, and people call them home."
     },
     {
-      "start": 261.6,
-      "end": 271.44,
+      "start": 171.36,
+      "end": 180.68,
       "lines": [
-        "Khudaaya, tune kaise yeh jahaan saara bana daala?"
+        "Mujhe is shehar ne galiyon ka banjaara bana daala"
+      ],
+      "en": "This city left me to wander its lanes."
+    },
+    {
+      "start": 181.2,
+      "end": 190.84,
+      "lines": [
+        "Chamakte chaand ko toota hua taara bana daala"
+      ],
+      "en": "The shining moon was made into a fallen star."
+    },
+    {
+      "start": 226.8,
+      "end": 236.6,
+      "lines": [
+        "Main is duniya ko aksar dekh kar hairaan hota hoon"
+      ],
+      "en": "I often look at this world in bewilderment."
+    },
+    {
+      "start": 241.84,
+      "end": 251.64,
+      "lines": [
+        "Main is duniya ko aksar dekh kar hairaan hota hoon"
+      ],
+      "en": "I often look at this world in bewilderment."
+    },
+    {
+      "start": 251.84,
+      "end": 261.72,
+      "lines": [
+        "Na mujhse ban saka chhota sa ghar, din raat rota hoon"
+      ],
+      "en": "I could scarcely build myself a little home, and I weep day and night."
+    },
+    {
+      "start": 261.84,
+      "end": 271.24,
+      "lines": [
+        "Khudaya, tune kaise ye jahaan saara bana daala"
       ],
       "en": "My God, how did you make this whole world?"
     },
     {
-      "start": 271.44,
-      "end": 282.44,
+      "start": 271.76,
+      "end": 281.16,
       "lines": [
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Chamakte chaand ko toota hua taara bana daala"
       ],
-      "en": "The shining moon was made a broken star."
+      "en": "The shining moon was made into a fallen star."
     },
     {
-      "start": 301.44,
-      "end": 323.44,
+      "start": 313.76,
+      "end": 323.56,
       "lines": [
-        "Mere maalik, mera dil kyun tadapta hai, sulagta hai?"
+        "Mere maalik, mera dil kyun tadapta hai, sulagta hai"
       ],
       "en": "My Lord, why does my heart ache and smolder?"
     },
     {
-      "start": 323.44,
-      "end": 347.44,
+      "start": 328.64,
+      "end": 338.16,
       "lines": [
-        "Mere maalik, mera dil kyun tadapta hai, sulagta hai?",
-        "Teri marzi, teri marzi pe kiska zor chalta hai?"
+        "Mere maalik, mera dil kyun tadapta hai, sulagta hai"
       ],
-      "en": "My Lord, why does my heart ache and smolder, and who can prevail against your will?"
+      "en": "My Lord, why does my heart ache and smolder?"
     },
     {
-      "start": 347.44,
-      "end": 367.78,
+      "start": 338.24,
+      "end": 348.04,
       "lines": [
-        "Kisi ko gul, kisi ko tune angaara bana daala.",
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Teri marzi pe kiska zor chalta hai"
       ],
-      "en": "You made one a rose and another a burning ember, and turned the shining moon into a broken star."
+      "en": "Whose will could prevail over yours?"
     },
     {
-      "start": 377.44,
-      "end": 388.32,
+      "start": 348.08,
+      "end": 357.32,
       "lines": [
-        "Yahi aaghaaz tha mera, yahi anjaam hona tha."
+        "Kisi ko gul, kisi ko tune angaara bana daala"
       ],
-      "en": "This was my beginning, and this was how I was bound to end."
+      "en": "You made one a rose, another a burning coal."
     },
     {
-      "start": 388.32,
-      "end": 399.0,
+      "start": 357.76,
+      "end": 367.0,
       "lines": [
-        "Yahi aaghaaz tha mera, yahi anjaam hona tha."
+        "Chamakte chaand ko toota hua sitaara bana daala"
       ],
-      "en": "This was my beginning, and this was how I was bound to end."
+      "en": "The shining moon was made into a fallen star."
     },
     {
-      "start": 399.0,
-      "end": 420.0,
+      "start": 390.16,
+      "end": 399.8,
       "lines": [
-        "Yahi aaghaaz tha mera, yahi anjaam hona tha.",
-        "Mujhe barbaad hona tha, mujhe naakaam hona tha."
+        "Yahi aaghaaz tha mera, yahi anjaam hona tha"
       ],
-      "en": "This was my beginning, and I was bound to end in ruin, with nothing I had hoped for."
+      "en": "This was my beginning, and this was how it had to end."
     },
     {
-      "start": 420.0,
-      "end": 431.12,
+      "start": 405.12,
+      "end": 414.64,
       "lines": [
-        "Mujhe taqdeer ne taqdeer ka maara bana daala."
+        "Yahi aaghaaz tha mera, yahi anjaam hona tha"
       ],
-      "en": "Fate made me its own casualty."
+      "en": "This was my beginning, and this was how it had to end."
     },
     {
-      "start": 431.12,
-      "end": 449.84,
+      "start": 414.72,
+      "end": 424.36,
       "lines": [
-        "Chamakte chaand ko toota hua taara bana daala.",
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Mujhe barbaad hona tha, mujhe nakaam hona tha"
       ],
-      "en": "The shining moon was made a broken star."
+      "en": "I was bound for ruin, and bound to fail."
     },
     {
-      "start": 449.84,
-      "end": 472.84,
+      "start": 424.48,
+      "end": 433.72,
       "lines": [
-        "Meri aawargi ne mujhko aawaara bana daala.",
-        "Chamakte chaand ko toota hua taara bana daala."
+        "Mujhe taqdeer ne taqdeer ka maara bana daala"
       ],
-      "en": "My restlessness made me a wanderer, a shining moon reduced to a broken star."
+      "en": "Fate made me the one to bear its blows."
+    },
+    {
+      "start": 434.24,
+      "end": 453.4,
+      "lines": [
+        "Chamakte chaand ko toota hua taara bana daala"
+      ],
+      "en": "The shining moon was made into a fallen star."
+    },
+    {
+      "start": 453.76,
+      "end": 463.0,
+      "lines": [
+        "Meri aawargi ne mujhko aawara bana daala"
+      ],
+      "en": "My wandering left me with nowhere to belong."
+    },
+    {
+      "start": 463.44,
+      "end": 472.68,
+      "lines": [
+        "Chamakte chaand ko toota hua taara bana daala"
+      ],
+      "en": "The shining moon was made into a fallen star."
     }
   ]
 }

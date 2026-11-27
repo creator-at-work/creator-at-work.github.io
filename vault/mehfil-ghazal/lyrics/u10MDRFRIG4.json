@@ -1,145 +1,295 @@
 {
   "video_id": "u10MDRFRIG4",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 11.0,
+      "start": 16.64,
+      "end": 29.08,
       "lines": [
         "Yeh jo zindagi ki kitaab hai"
       ],
       "en": "Here is the book of life."
     },
     {
-      "start": 11.0,
-      "end": 35.0,
+      "start": 29.28,
+      "end": 35.48,
       "lines": [
         "Yeh kitaab bhi kya kitaab hai"
       ],
       "en": "What a book it is."
     },
     {
-      "start": 39.0,
-      "end": 51.0,
+      "start": 38.88,
+      "end": 44.68,
       "lines": [
-        "Kahin ek haseen sa khwaab hai, kahin jaan-lewa azaab hai"
+        "Kahin ek haseen sa khwaab hai"
       ],
-      "en": "Here a lovely dream, there an anguish that could take your life."
+      "en": "Somewhere there is a lovely dream."
     },
     {
-      "start": 51.0,
-      "end": 70.0,
+      "start": 45.04,
+      "end": 51.08,
       "lines": [
-        "Yeh jo zindagi ki kitaab hai, yeh kitaab bhi kya kitaab hai"
+        "Kahin jaan-lewa azaab hai"
       ],
-      "en": "What a book this life is."
+      "en": "Somewhere the pain is enough to kill."
     },
     {
-      "start": 81.0,
-      "end": 96.0,
+      "start": 51.28,
+      "end": 63.88,
       "lines": [
-        "Kahin chhaaon hai, kahin dhoop hai, kahin aur hi koi roop hai"
+        "Yeh jo zindagi ki kitaab hai"
       ],
-      "en": "Here it is shade, there sunlight, and elsewhere it takes another form."
+      "en": "Here is the book of life."
     },
     {
-      "start": 96.0,
-      "end": 108.0,
+      "start": 63.92,
+      "end": 70.12,
       "lines": [
-        "Kahin chhaaon hai, kahin dhoop hai, kahin aur hi koi roop hai"
+        "Yeh kitaab bhi kya kitaab hai"
       ],
-      "en": "Here it is shade, there sunlight, and elsewhere it takes another form."
+      "en": "What a book it is."
     },
     {
-      "start": 108.0,
-      "end": 133.0,
+      "start": 83.12,
+      "end": 89.08,
       "lines": [
-        "Kai chehre is mein chhupe hue, ek ajeeb si naqaab hai"
+        "Kahin chhaaon hai, kahin dhoop hai"
       ],
-      "en": "What a strange veil it is, with so many faces hidden beneath it."
+      "en": "Here there is shade, there sunlight."
     },
     {
-      "start": 133.0,
-      "end": 158.0,
+      "start": 89.28,
+      "end": 95.32,
       "lines": [
-        "Kahin ek haseen sa khwaab hai, kahin jaan-lewa azaab hai",
-        "Yeh jo zindagi ki kitaab hai, yeh kitaab bhi kya kitaab hai"
+        "Kahin aur hi koi roop hai"
       ],
-      "en": "What a book this life is, with a lovely dream here and a deadly anguish there."
+      "en": "Elsewhere it takes another shape."
     },
     {
-      "start": 171.0,
-      "end": 184.0,
+      "start": 102.0,
+      "end": 107.88,
       "lines": [
-        "Kahin kho diya, kahin paa liya, kahin ro liya, kahin gaa liya"
+        "Kahin chhaaon hai, kahin dhoop hai"
       ],
-      "en": "Here we lost, there we gained, here we wept, there we sang."
+      "en": "Here there is shade, there sunlight."
     },
     {
-      "start": 190.0,
-      "end": 202.36,
+      "start": 108.16,
+      "end": 114.2,
       "lines": [
-        "Kahin kho diya, kahin paa liya, kahin ro liya, kahin gaa liya"
+        "Kahin aur hi koi roop hai"
       ],
-      "en": "Here we lost, there we gained, here we wept, there we sang."
+      "en": "Elsewhere it takes another shape."
     },
     {
-      "start": 202.36,
-      "end": 221.36,
+      "start": 114.64,
+      "end": 126.6,
       "lines": [
-        "Kahin chheen leti hai har khushi, kahin meherbaan be-hisaab hai"
+        "Kai chehre is mein chhupe hue"
       ],
-      "en": "Here it takes away every joy, there its kindness knows no bounds."
+      "en": "Many faces lie hidden in it."
     },
     {
-      "start": 221.36,
-      "end": 246.36,
+      "start": 127.12,
+      "end": 133.16,
       "lines": [
-        "Kahin ek haseen sa khwaab hai, kahin jaan-lewa azaab hai",
-        "Yeh jo zindagi ki kitaab hai, yeh kitaab bhi kya kitaab hai"
+        "Ek ajeeb si yeh naqaab hai"
       ],
-      "en": "What a book this life is, with a lovely dream here and a deadly anguish there."
+      "en": "What a strange veil it is."
     },
     {
-      "start": 251.36,
-      "end": 271.36,
+      "start": 133.6,
+      "end": 139.4,
       "lines": [
-        "Kahin aansuon ki hai daastaan, kahin muskuraahaton ka bayaan"
+        "Kahin ek haseen sa khwaab hai"
       ],
-      "en": "Here it tells a tale of tears, there it speaks of smiles."
+      "en": "Somewhere there is a lovely dream."
     },
     {
-      "start": 278.36,
-      "end": 290.36,
+      "start": 139.68,
+      "end": 145.8,
       "lines": [
-        "Kahin aansuon ki hai daastaan, kahin muskuraahaton ka bayaan"
+        "Kahin jaan-lewa azaab hai"
       ],
-      "en": "Here it tells a tale of tears, there it speaks of smiles."
+      "en": "Somewhere the pain is enough to kill."
     },
     {
-      "start": 291.36,
-      "end": 309.36,
+      "start": 146.08,
+      "end": 152.2,
       "lines": [
-        "Kahin barkaton ki hain baarishein, kahin tishnagi be-hisaab hai"
+        "Yeh jo zindagi ki kitaab hai"
       ],
-      "en": "Here blessings fall like rain, there the thirst knows no end."
+      "en": "Here is the book of life."
     },
     {
-      "start": 310.36,
+      "start": 152.32,
+      "end": 158.52,
+      "lines": [
+        "Yeh kitaab bhi kya kitaab hai"
+      ],
+      "en": "What a book it is."
+    },
+    {
+      "start": 171.36,
+      "end": 177.0,
+      "lines": [
+        "Kahin kho diya, kahin paa liya"
+      ],
+      "en": "Something was lost here, something found there."
+    },
+    {
+      "start": 177.6,
+      "end": 183.32,
+      "lines": [
+        "Kahin ro liya, kahin gaa liya"
+      ],
+      "en": "Here we wept a little, there we sang."
+    },
+    {
+      "start": 190.32,
+      "end": 195.88,
+      "lines": [
+        "Kahin kho diya, kahin paa liya"
+      ],
+      "en": "Something was lost here, something found there."
+    },
+    {
+      "start": 196.56,
+      "end": 201.44,
+      "lines": [
+        "Kahin ro liya, kahin gaa liya"
+      ],
+      "en": "Here we wept a little, there we sang."
+    },
+    {
+      "start": 202.96,
+      "end": 214.84,
+      "lines": [
+        "Kahin chheen leti hai har khushi"
+      ],
+      "en": "Sometimes it takes every joy away."
+    },
+    {
+      "start": 215.68,
+      "end": 221.72,
+      "lines": [
+        "Kahin mehrbaan be-hisaab hai"
+      ],
+      "en": "Sometimes its kindness knows no bounds."
+    },
+    {
+      "start": 222.24,
+      "end": 227.8,
+      "lines": [
+        "Kahin ek haseen sa khwaab hai"
+      ],
+      "en": "Somewhere there is a lovely dream."
+    },
+    {
+      "start": 228.08,
+      "end": 234.2,
+      "lines": [
+        "Kahin jaan-lewa azaab hai"
+      ],
+      "en": "Somewhere the pain is enough to kill."
+    },
+    {
+      "start": 234.48,
+      "end": 240.52,
+      "lines": [
+        "Yeh jo zindagi ki kitaab hai"
+      ],
+      "en": "Here is the book of life."
+    },
+    {
+      "start": 240.64,
+      "end": 246.76,
+      "lines": [
+        "Yeh kitaab bhi kya kitaab hai"
+      ],
+      "en": "What a book it is."
+    },
+    {
+      "start": 259.92,
+      "end": 264.6,
+      "lines": [
+        "Kahin aansuon ki hai daastaan"
+      ],
+      "en": "Here is a tale of tears."
+    },
+    {
+      "start": 266.08,
+      "end": 271.72,
+      "lines": [
+        "Kahin muskurahaton ka bayaan"
+      ],
+      "en": "There it tells of smiles."
+    },
+    {
+      "start": 278.72,
+      "end": 283.56,
+      "lines": [
+        "Kahin aansuon ki hai daastaan"
+      ],
+      "en": "Here is a tale of tears."
+    },
+    {
+      "start": 284.88,
+      "end": 290.84,
+      "lines": [
+        "Kahin muskurahaton ka bayaan"
+      ],
+      "en": "There it tells of smiles."
+    },
+    {
+      "start": 291.44,
+      "end": 302.92,
+      "lines": [
+        "Kahin barkaton ki hain baarishein"
+      ],
+      "en": "Somewhere blessings fall like rain."
+    },
+    {
+      "start": 303.84,
+      "end": 309.8,
+      "lines": [
+        "Kahin tishnagi be-hisaab hai"
+      ],
+      "en": "Somewhere the thirst has no end."
+    },
+    {
+      "start": 310.32,
+      "end": 316.2,
+      "lines": [
+        "Kahin ek haseen sa khwaab hai"
+      ],
+      "en": "Somewhere there is a lovely dream."
+    },
+    {
+      "start": 316.4,
       "end": 322.6,
       "lines": [
-        "Kahin ek haseen sa khwaab hai, kahin jaan-lewa azaab hai"
+        "Kahin jaan-lewa azaab hai"
       ],
-      "en": "Here a lovely dream, there an anguish that could take your life."
+      "en": "Somewhere the pain is enough to kill."
     },
     {
-      "start": 322.6,
-      "end": 341.6,
+      "start": 322.8,
+      "end": 335.16,
       "lines": [
-        "Yeh jo zindagi ki kitaab hai, yeh kitaab bhi kya kitaab hai"
+        "Yeh jo zindagi ki kitaab hai"
       ],
-      "en": "What a book this life is."
+      "en": "Here is the book of life."
+    },
+    {
+      "start": 335.36,
+      "end": 341.48,
+      "lines": [
+        "Yeh kitaab bhi kya kitaab hai"
+      ],
+      "en": "What a book it is."
     }
   ]
 }

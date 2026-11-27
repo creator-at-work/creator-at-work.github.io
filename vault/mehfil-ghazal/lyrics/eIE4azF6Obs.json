@@ -1,136 +1,159 @@
 {
   "video_id": "eIE4azF6Obs",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 52.88,
+      "start": 45.56,
+      "end": 60.08,
       "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "Something like a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     },
     {
-      "start": 52.88,
-      "end": 67.88,
+      "start": 61.52,
+      "end": 69.08,
       "lines": [
-        "Dil mein ek lehar si uthi hai abhi",
         "Koi taaza hawa chali hai abhi"
       ],
-      "en": "A ripple has just stirred in the heart as a fresh breeze rises."
+      "en": "A fresh breeze has just begun to stir."
     },
     {
-      "start": 68.88,
-      "end": 76.88,
+      "start": 69.08,
+      "end": 75.68,
       "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "Something like a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     },
     {
-      "start": 82.88,
-      "end": 102.88,
+      "start": 95.2,
+      "end": 113.04,
       "lines": [
         "Shor barpa hai khaana-e-dil mein"
       ],
-      "en": "There is a commotion in the house of the heart."
+      "en": "A clamor has risen in the chambers of my heart."
     },
     {
-      "start": 102.88,
-      "end": 127.88,
+      "start": 113.08,
+      "end": 128.48,
       "lines": [
-        "Shor barpa hai khaana-e-dil mein",
         "Koi deewaar si giri hai abhi"
       ],
-      "en": "There is a commotion in the house of the heart, as though a wall has just fallen."
+      "en": "It is as though a wall has just fallen."
     },
     {
-      "start": 127.88,
-      "end": 143.88,
+      "start": 128.48,
+      "end": 136.08,
       "lines": [
-        "Koi taaza hawa chali hai abhi",
+        "Koi taaza hawa chali hai abhi"
+      ],
+      "en": "A fresh breeze has just begun to stir."
+    },
+    {
+      "start": 136.08,
+      "end": 142.56,
+      "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "A fresh breeze has risen and a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     },
     {
-      "start": 157.88,
-      "end": 169.88,
+      "start": 162.24,
+      "end": 177.8,
       "lines": [
         "Kuchh to naazuk mizaaj hain hum bhi"
       ],
-      "en": "I am rather tender by nature."
+      "en": "I am a little tender by nature, too."
     },
     {
-      "start": 169.88,
-      "end": 192.14,
+      "start": 177.8,
+      "end": 192.92,
       "lines": [
-        "Kuchh to naazuk mizaaj hain hum bhi",
         "Aur ye chot bhi nayi hai abhi"
       ],
-      "en": "I am rather tender by nature, and this wound is still fresh."
+      "en": "And this wound is still fresh."
     },
     {
-      "start": 193.04,
-      "end": 208.32,
+      "start": 192.92,
+      "end": 200.2,
       "lines": [
-        "Koi taaza hawa chali hai abhi",
+        "Koi taaza hawa chali hai abhi"
+      ],
+      "en": "A fresh breeze has just begun to stir."
+    },
+    {
+      "start": 200.2,
+      "end": 206.72,
+      "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "A fresh breeze has risen and a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     },
     {
-      "start": 226.32,
-      "end": 233.76,
+      "start": 226.44,
+      "end": 244.6,
       "lines": [
         "Yaad ke be-nishaan jazeeron se"
       ],
-      "en": "From the uncharted islands of memory."
+      "en": "It comes from the uncharted islands of memory."
     },
     {
-      "start": 236.92,
-      "end": 259.44,
+      "start": 245.04,
+      "end": 259.92,
       "lines": [
-        "Yaad ke be-nishaan jazeeron se",
         "Teri aawaaz aa rahi hai abhi"
       ],
-      "en": "Your voice is reaching me now from the uncharted islands of memory."
+      "en": "Your voice is reaching me even now."
     },
     {
-      "start": 259.94,
-      "end": 274.88,
+      "start": 259.92,
+      "end": 267.4,
       "lines": [
-        "Koi taaza hawa chali hai abhi",
+        "Koi taaza hawa chali hai abhi"
+      ],
+      "en": "A fresh breeze has just begun to stir."
+    },
+    {
+      "start": 267.4,
+      "end": 273.72,
+      "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "A fresh breeze has risen and a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     },
     {
-      "start": 293.28,
-      "end": 311.64,
+      "start": 293.4,
+      "end": 319.12,
       "lines": [
         "Shehar ki be-charaagh galiyon mein"
       ],
-      "en": "In the unlit lanes of the city."
+      "en": "The city streets lie unlit."
     },
     {
-      "start": 311.64,
-      "end": 334.24,
+      "start": 320.16,
+      "end": 334.52,
       "lines": [
-        "Shehar ki be-charaagh galiyon mein",
         "Zindagi tujh ko dhoondti hai abhi"
       ],
-      "en": "In the unlit lanes of the city, life is still looking for you."
+      "en": "Life is still looking for you."
     },
     {
-      "start": 334.24,
-      "end": 350.34,
+      "start": 334.52,
+      "end": 341.92,
       "lines": [
-        "Koi taaza hawa chali hai abhi",
+        "Koi taaza hawa chali hai abhi"
+      ],
+      "en": "A fresh breeze has just begun to stir."
+    },
+    {
+      "start": 341.92,
+      "end": 348.4,
+      "lines": [
         "Dil mein ek lehar si uthi hai abhi"
       ],
-      "en": "A fresh breeze has risen and a ripple has just stirred in the heart."
+      "en": "A ripple has just stirred in my heart."
     }
   ]
 }

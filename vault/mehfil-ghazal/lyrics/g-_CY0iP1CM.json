@@ -1,130 +1,103 @@
 {
   "video_id": "g-_CY0iP1CM",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 29.4,
+      "start": 16.52,
+      "end": 42.96,
       "lines": [
         "Zindagi jab bhi teri bazm mein laati hai humein"
       ],
-      "en": "Life keeps bringing me into your company."
+      "en": "Whenever life brings me into your company."
     },
     {
-      "start": 30.0,
-      "end": 52.72,
-      "lines": [
-        "Zindagi jab bhi teri bazm mein laati hai humein",
-        "Yeh zameen chaand se behtar nazar aati hai humein"
-      ],
-      "en": "Whenever life brings me into your company, the earth looks lovelier than the moon."
-    },
-    {
-      "start": 52.72,
-      "end": 62.72,
+      "start": 42.96,
+      "end": 61.8,
       "lines": [
         "Yeh zameen chaand se behtar nazar aati hai humein"
       ],
-      "en": "The earth looks lovelier than the moon."
+      "en": "This earth seems lovelier than the moon."
     },
     {
-      "start": 80.72,
-      "end": 93.72,
+      "start": 80.68,
+      "end": 103.6,
       "lines": [
         "Surkh phoolon se mahak uthti hain dil ki raahein"
       ],
-      "en": "Red blossoms scent the paths of my heart."
+      "en": "Red flowers fill the paths of the heart with fragrance."
     },
     {
-      "start": 93.72,
-      "end": 113.72,
+      "start": 103.6,
+      "end": 123.88,
       "lines": [
-        "Surkh phoolon se mahak uthti hain dil ki raahein",
-        "Din dhale yun teri aawaaz bulaati hai humein"
+        "Din dhale yoon teri aawaaz bulaati hai humein"
       ],
-      "en": "As your voice calls to me at dusk, the paths of my heart fill with the scent of red blossoms."
+      "en": "As daylight fades, this is how your voice calls to me."
     },
     {
-      "start": 113.72,
-      "end": 123.72,
-      "lines": [
-        "Din dhale yun teri aawaaz bulaati hai humein"
-      ],
-      "en": "As daylight fades, your voice calls to me."
-    },
-    {
-      "start": 123.72,
-      "end": 133.44,
+      "start": 123.88,
+      "end": 132.68,
       "lines": [
         "Yeh zameen chaand se behtar nazar aati hai humein"
       ],
-      "en": "The earth looks lovelier than the moon."
+      "en": "This earth seems lovelier than the moon."
     },
     {
-      "start": 151.28,
-      "end": 160.7,
+      "start": 151.48,
+      "end": 173.92,
       "lines": [
         "Yaad teri kabhi dastak, kabhi sargoshi se"
       ],
-      "en": "The memory of you comes sometimes as a knock, sometimes as a whisper."
+      "en": "The thought of you comes sometimes as a knock, sometimes as a whisper."
     },
     {
-      "start": 163.78,
-      "end": 183.78,
+      "start": 173.92,
+      "end": 193.92,
       "lines": [
-        "Yaad teri kabhi dastak, kabhi sargoshi se",
-        "Raat ke pichhle pehar roz jagaati hai humein"
+        "Raat ke pichhle pahar roz jagaati hai humein"
       ],
-      "en": "In the last watch of every night, the memory of you wakes me with a knock or a whisper."
+      "en": "It wakes me every night in the hours before dawn."
     },
     {
-      "start": 183.78,
-      "end": 193.78,
-      "lines": [
-        "Raat ke pichhle pehar roz jagaati hai humein"
-      ],
-      "en": "The memory wakes me in the last watch of every night."
-    },
-    {
-      "start": 193.78,
-      "end": 203.38,
+      "start": 193.92,
+      "end": 202.6,
       "lines": [
         "Yeh zameen chaand se behtar nazar aati hai humein"
       ],
-      "en": "The earth looks lovelier than the moon."
+      "en": "This earth seems lovelier than the moon."
     },
     {
-      "start": 218.78,
-      "end": 228.5,
+      "start": 218.76,
+      "end": 240.04,
       "lines": [
-        "Har mulaaqaat ka anjaam judaai kyun hai?"
+        "Har mulaaqaat ka anjaam judaai kyoon hai"
       ],
-      "en": "Why does every meeting end in parting?"
+      "en": "Why must every meeting end in parting?"
     },
     {
-      "start": 231.1,
-      "end": 242.82,
-      "lines": [
-        "Har mulaaqaat ka anjaam judaai kyun hai?"
-      ],
-      "en": "Why does every meeting end in parting?"
-    },
-    {
-      "start": 243.5,
-      "end": 273.5,
+      "start": 243.48,
+      "end": 263.12,
       "lines": [
         "Ab to har waqt yahi baat sataati hai humein"
       ],
-      "en": "Now that question gives me no peace."
+      "en": "Now that question gives me no rest."
     },
     {
-      "start": 273.5,
-      "end": 283.5,
+      "start": 263.12,
+      "end": 273.0,
+      "lines": [
+        "Yeh zameen chaand se behtar nazar aati hai humein"
+      ],
+      "en": "This earth seems lovelier than the moon."
+    },
+    {
+      "start": 273.12,
+      "end": 281.56,
       "lines": [
         "Zindagi jab bhi teri bazm mein laati hai humein"
       ],
-      "en": "Life keeps bringing me into your company."
+      "en": "Whenever life brings me into your company."
     }
   ]
 }

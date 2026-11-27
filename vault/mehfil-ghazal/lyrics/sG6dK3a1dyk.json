@@ -1,75 +1,95 @@
 {
   "video_id": "sG6dK3a1dyk",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 30.0,
-      "end": 55.0,
+      "start": 12.4,
+      "end": 33.4,
       "lines": [
-        "Deewana banana hai to deewana bana de",
+        "Deewana banana hai to deewana bana de"
+      ],
+      "en": "If you would drive me mad, then let me lose myself."
+    },
+    {
+      "start": 36.88,
+      "end": 54.04,
+      "lines": [
         "Warna kahin taqdeer tamasha na bana de"
       ],
-      "en": "If you mean to drive me mad, do so before fate makes a spectacle of me."
+      "en": "Or fate may yet make a spectacle of me."
     },
     {
-      "start": 55.0,
-      "end": 82.0,
+      "start": 65.44,
+      "end": 80.68,
       "lines": [
-        "Ai dekhne waalo, mujhe hans hans ke na dekho"
+        "Ai dekhne walo, mujhe hans hans ke na dekho"
       ],
-      "en": "You who stand watching, do not laugh at me."
+      "en": "You who watch, do not laugh at the sight of me."
     },
     {
-      "start": 85.0,
-      "end": 110.0,
+      "start": 90.48,
+      "end": 107.56,
       "lines": [
         "Tumko bhi mohabbat kahin mujh sa na bana de"
       ],
-      "en": "Love may yet make you as I am."
+      "en": "Love may yet leave you as it has left me."
     },
     {
-      "start": 111.0,
-      "end": 129.0,
+      "start": 112.16,
+      "end": 128.2,
       "lines": [
-        "Main dhoondh raha hoon, meri woh shama kahan hai?"
+        "Main dhoondh raha hoon, meri woh shama kahan hai"
       ],
-      "en": "Where is that flame I keep looking for?"
+      "en": "Where is that flame I have been looking for?"
     },
     {
-      "start": 141.0,
-      "end": 168.0,
+      "start": 138.08,
+      "end": 147.88,
       "lines": [
-        "Meri woh shama kahan hai?",
+        "Main dhoondh raha hoon, meri woh shama kahan hai"
+      ],
+      "en": "Where is that flame I have been looking for?"
+    },
+    {
+      "start": 148.32,
+      "end": 164.44,
+      "lines": [
         "Jo bazm ki har cheez ko parwana bana de"
       ],
-      "en": "Where is that flame of mine that would turn everything in the room into a moth?"
+      "en": "It would draw all in the room like moths to a flame."
     },
     {
-      "start": 170.0,
-      "end": 186.72,
+      "start": 170.72,
+      "end": 177.08,
       "lines": [
-        "Aakhir koi soorat bhi to ho khaana-e-dil ki",
-        "Kaaba nahin banta hai to but-khaana bana de"
+        "Aakhir koi soorat to ho khana-e-dil ki"
       ],
-      "en": "The heart must take some shape, and if it cannot be a Kaaba, make it a temple of idols."
+      "en": "Let the dwelling of the heart take some shape at last."
     },
     {
-      "start": 186.72,
-      "end": 207.84,
+      "start": 180.32,
+      "end": 193.64,
       "lines": [
-        "Behzad, har ik gaam pe ik sajda-e-masti",
-        "Har zarre ko sang-e-dar-e-jaanana bana de"
+        "Kaaba nahin banta hai to butkhana bana de"
       ],
-      "en": "Behzad, bow in rapture at every step and make each grain of dust the stone at the beloved's threshold."
+      "en": "If it cannot be a Kaaba, make it a temple of idols."
     },
     {
-      "start": 208.84,
-      "end": 217.84,
+      "start": 193.76,
+      "end": 197.72,
       "lines": [
-        "Har zarre ko sang-e-dar-e-jaanana bana de"
+        "Behzad, har ik gaam pe ik sajda-e-masti"
       ],
-      "en": "Make every grain of dust the stone at the beloved's threshold."
+      "en": "Behzad, bow in rapture at every step."
+    },
+    {
+      "start": 199.76,
+      "end": 217.0,
+      "lines": [
+        "Har zarre ko sang-e-dar-e-janana bana de"
+      ],
+      "en": "Make every mote of dust a stone at the beloved's threshold."
     }
   ]
 }

@@ -1,93 +1,127 @@
 {
   "video_id": "prtrsIG7564",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 0.0,
-      "end": 3.0,
+      "start": 16.0,
+      "end": 34.72,
       "lines": [
-        "Pyaar mujhse jo kiya tumne to kya paaogi?"
+        "Pyaar mujhse jo kiya tumne to kya paaogi"
       ],
-      "en": "What will you gain by loving me?"
+      "en": "What will you find in loving me?"
     },
     {
-      "start": 30.0,
-      "end": 53.0,
+      "start": 34.72,
+      "end": 43.76,
       "lines": [
-        "Mere haalaat ki aandhi mein bikhar jaaogi.",
-        "Pyaar mujhse jo kiya tumne to kya paaogi?"
+        "Mere haalaat ki aandhi mein bikhar jaaogi"
       ],
-      "en": "When the storm around me will scatter you, what will you gain by loving me?"
+      "en": "The storm of my life will scatter you."
     },
     {
-      "start": 60.0,
-      "end": 71.0,
+      "start": 43.76,
+      "end": 50.76,
       "lines": [
-        "Ranj aur dard ki basti ka main baashinda hoon.",
-        "Ye to bas main hoon ke is haal mein bhi zinda hoon."
+        "Pyaar mujhse jo kiya tumne to kya paaogi"
       ],
-      "en": "I make my home among grief and pain, and only I could go on living this way."
+      "en": "What will you find in loving me?"
     },
     {
-      "start": 72.0,
-      "end": 89.0,
+      "start": 66.96,
+      "end": 76.24,
       "lines": [
-        "Khwaab kyun dekhoon woh kal jis pe"
+        "Ranj aur dard ki basti ka main baashinda hoon"
       ],
-      "en": "Why dream of that yesterday?"
+      "en": "I live where grief and pain make their home."
     },
     {
-      "start": 90.0,
-      "end": 103.0,
+      "start": 76.24,
+      "end": 84.84,
       "lines": [
-        "Main sharminda hoon.",
-        "Main jo sharminda hua, tum bhi to sharmaaogi."
+        "Ye to bas main hoon ki is haal mein bhi zinda hoon"
       ],
-      "en": "I am ashamed, and my shame will make you lower your eyes too."
+      "en": "Only I could go on living like this."
     },
     {
-      "start": 103.0,
-      "end": 112.0,
+      "start": 85.36,
+      "end": 94.4,
       "lines": [
-        "Pyaar mujhse jo kiya tumne to kya paaogi?"
+        "Khwaab kyun dekhoon woh kal jis pe main sharminda hoon"
       ],
-      "en": "What will you gain by loving me?"
+      "en": "Why dream of a tomorrow I am already ashamed of?"
     },
     {
-      "start": 120.0,
-      "end": 141.96,
+      "start": 94.4,
+      "end": 103.36,
       "lines": [
-        "Ek main kya, abhi aayenge deewaane kitne.",
-        "Abhi goonjenge mohabbat ke taraane kitne."
+        "Main jo sharminda hua tum bhi to sharmaaogi"
       ],
-      "en": "How many more lovers will come after me, and how many songs of love will ring out?"
+      "en": "If I feel ashamed, you will lower your eyes too."
     },
     {
-      "start": 141.96,
-      "end": 163.96,
+      "start": 103.36,
+      "end": 110.36,
       "lines": [
-        "Zindagi tumko sunaaegi fasaane kitne.",
-        "Kyun samajhti ho mujhe bhool nahin paaogi?"
+        "Pyaar mujhse jo kiya tumne to kya paaogi"
       ],
-      "en": "With all the stories life has yet to tell you, why think you will never forget me?"
+      "en": "What will you find in loving me?"
     },
     {
-      "start": 164.96,
-      "end": 183.96,
+      "start": 124.24,
+      "end": 133.36,
       "lines": [
-        "Pyaar mujhse jo kiya tumne to kya paaogi?",
-        "Mere haalaat ki aandhi mein bikhar jaaogi."
+        "Ek main kya, abhi aaenge deewaane kitne"
       ],
-      "en": "What will you gain by loving me when the storm around me will scatter you?"
+      "en": "Who am I, when so many more will fall for you?"
     },
     {
-      "start": 183.96,
-      "end": 192.96,
+      "start": 133.36,
+      "end": 142.48,
       "lines": [
-        "Pyaar mujhse jo kiya tumne to kya paaogi?"
+        "Abhi ho jaaenge mohabbat ke taraane kitne"
       ],
-      "en": "What will you gain by loving me?"
+      "en": "There are so many love songs still to be sung."
+    },
+    {
+      "start": 142.84,
+      "end": 151.6,
+      "lines": [
+        "Zindagi tumko sunaaegi fasaane kitne"
+      ],
+      "en": "Life has so many stories yet to tell you."
+    },
+    {
+      "start": 151.6,
+      "end": 165.2,
+      "lines": [
+        "Kyun samajhti ho mujhe bhool nahin paaogi"
+      ],
+      "en": "Why do you think you will never forget me?"
+    },
+    {
+      "start": 165.4,
+      "end": 175.12,
+      "lines": [
+        "Pyaar mujhse jo kiya tumne to kya paaogi"
+      ],
+      "en": "What will you find in loving me?"
+    },
+    {
+      "start": 175.12,
+      "end": 184.16,
+      "lines": [
+        "Mere haalaat ki aandhi mein bikhar jaaogi"
+      ],
+      "en": "The storm of my life will scatter you."
+    },
+    {
+      "start": 184.16,
+      "end": 191.08,
+      "lines": [
+        "Pyaar mujhse jo kiya tumne to kya paaogi"
+      ],
+      "en": "What will you find in loving me?"
     }
   ]
 }

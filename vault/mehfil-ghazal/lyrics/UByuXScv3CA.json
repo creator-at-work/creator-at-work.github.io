@@ -1,78 +1,111 @@
 {
   "video_id": "UByuXScv3CA",
   "mode": "synced",
-  "source": "audio-aligned",
+  "source": "yt-transcript",
   "couplets": [
     {
-      "start": 21.0,
-      "end": 42.0,
+      "start": 21.52,
+      "end": 32.36,
       "lines": [
-        "Koi yeh kaise bataye ke woh tanha kyun hai?",
-        "Woh jo apna tha wohi aur kisi ka kyun hai?"
+        "Koi yeh kaise bataye ke woh tanha kyun hai"
       ],
-      "en": "Who can say why he is alone, or why the one who was his now belongs to someone else?"
+      "en": "How can anyone say why he is alone?"
     },
     {
-      "start": 43.0,
-      "end": 65.0,
+      "start": 32.36,
+      "end": 43.68,
       "lines": [
-        "Yahi duniya hai to phir aisi yeh duniya kyun hai?",
-        "Yahi hota hai to aakhir yahi hota kyun hai?"
+        "Woh jo apna tha wohi aur kisi ka kyun hai"
       ],
-      "en": "If this is the world and this is how things go, why must it always be this way?"
+      "en": "Why does the one who was mine now belong to someone else?"
     },
     {
-      "start": 67.0,
-      "end": 85.0,
+      "start": 43.68,
+      "end": 54.96,
       "lines": [
-        "Ik zara haath badha de to pakad le daaman,",
-        "Uske seene mein sama jaaye"
+        "Yahi duniya hai to phir aisi yeh duniya kyun hai"
       ],
-      "en": "A little reach would catch the hem and draw me close to his chest."
+      "en": "If this is the world, why must it be this way?"
     },
     {
-      "start": 85.0,
-      "end": 100.0,
+      "start": 54.96,
+      "end": 67.76,
       "lines": [
-        "Hamari dhadkan,",
-        "Itni qurbat hai to phir faasla itna kyun hai?"
+        "Yahi hota hai to aakhir yahi hota kyun hai"
       ],
-      "en": "If my heart can beat so close to his, why is there still so much distance between us?"
+      "en": "If this is how things go, why do they always go this way?"
     },
     {
-      "start": 102.0,
-      "end": 124.0,
+      "start": 67.76,
+      "end": 79.04,
       "lines": [
-        "Dil-e-barbaad se nikla nahin ab tak koi,",
-        "Ik lute ghar pe diya karta hai dastak koi."
+        "Ik zara haath badha de to pakad le daaman"
       ],
-      "en": "Someone still dwells in this ruined heart, and someone keeps knocking at its plundered door."
+      "en": "If he reached out just a little, he could catch the hem."
     },
     {
-      "start": 124.0,
-      "end": 135.0,
+      "start": 79.04,
+      "end": 88.52,
       "lines": [
-        "Aas jo toot gayi phir se bandhaata kyun hai?"
+        "Uske seene mein sama jaaye hamari dhadkan"
       ],
-      "en": "Why does he make me hope again when that hope has already broken?"
+      "en": "My heartbeat could find its home in his chest."
     },
     {
-      "start": 141.0,
-      "end": 159.0,
+      "start": 90.32,
+      "end": 102.76,
       "lines": [
-        "Tum masarrat ka kaho ya ise gham ka rishta,",
-        "Kehte hain pyaar ka rishta hai."
+        "Itni qurbat hai to phir faasla itna kyun hai"
       ],
-      "en": "Call it a bond of joy or sorrow, and people will call it love."
+      "en": "If we are so close, why are we so far apart?"
     },
     {
-      "start": 159.0,
-      "end": 174.0,
+      "start": 102.76,
+      "end": 113.44,
       "lines": [
-        "Janam ka rishta,",
-        "Hai janam ka jo yeh rishta to badalta kyun hai?"
+        "Dil-e-barbaad se nikla nahin ab tak koi"
       ],
-      "en": "If this bond is meant to last a lifetime, why does it change?"
+      "en": "No one has yet left this ruined heart."
+    },
+    {
+      "start": 113.44,
+      "end": 124.76,
+      "lines": [
+        "Ik lute ghar pe diya karta hai dastak koi"
+      ],
+      "en": "Someone keeps knocking at the door of a house stripped bare."
+    },
+    {
+      "start": 124.92,
+      "end": 135.12,
+      "lines": [
+        "Aas jo toot gayi phir se bandhata kyun hai"
+      ],
+      "en": "Why does he rekindle a hope that has already broken?"
+    },
+    {
+      "start": 142.04,
+      "end": 153.16,
+      "lines": [
+        "Tum masarrat ka kaho ya ise gham ka rishta"
+      ],
+      "en": "Call it a bond of joy or a bond of sorrow."
+    },
+    {
+      "start": 153.16,
+      "end": 164.44,
+      "lines": [
+        "Kehte hain pyaar ka rishta hai janam ka rishta"
+      ],
+      "en": "They say the bond of love lasts a lifetime."
+    },
+    {
+      "start": 164.44,
+      "end": 174.28,
+      "lines": [
+        "Hai janam ka jo yeh rishta to badalta kyun hai"
+      ],
+      "en": "If this bond is for a lifetime, why does it change?"
     }
   ]
 }
