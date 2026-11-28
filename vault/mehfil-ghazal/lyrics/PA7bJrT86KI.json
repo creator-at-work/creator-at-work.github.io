@@ -1,0 +1,39 @@
+{
+  "video_id": "PA7bJrT86KI",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 123.0,
+      "end": 151.0,
+      "lines": [
+        "Tum shahr mein ho to hamein kya gham, jab uthenge"
+      ],
+      "en": "With you in town, what sorrow could trouble me when I rise?"
+    },
+    {
+      "start": 213.0,
+      "end": 227.72,
+      "lines": [
+        "Kehte hain ki Ghalib ka hai andaaz-e-bayaan aur"
+      ],
+      "en": "They say Ghalib has a way with words all his own."
+    },
+    {
+      "start": 227.72,
+      "end": 235.72,
+      "lines": [
+        "Hain aur bhi duniya mein sukhanwar bahut achchhe"
+      ],
+      "en": "There are other fine poets in the world."
+    },
+    {
+      "start": 235.72,
+      "end": 241.72,
+      "lines": [
+        "Kehte hain ki Ghalib ka hai andaaz-e-bayaan aur"
+      ],
+      "en": "They say Ghalib has a way with words all his own."
+    }
+  ]
+}
