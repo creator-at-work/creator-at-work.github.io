@@ -1,0 +1,79 @@
+{
+  "video_id": "LfL8UykwToE",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 30.0,
+      "end": 34.5,
+      "lines": [
+        "Be-zabani zubaan na ho jaye"
+      ],
+      "en": "I fear my silence may find a voice."
+    },
+    {
+      "start": 34.5,
+      "end": 55.0,
+      "lines": [
+        "Raaz-e-ulfat ayaan na ho jaye"
+      ],
+      "en": "I fear the secret of my love may come to light."
+    },
+    {
+      "start": 55.0,
+      "end": 81.0,
+      "lines": [
+        "Is qadar pyaar se na dekh mujhe"
+      ],
+      "en": "Do not look at me with such tenderness."
+    },
+    {
+      "start": 82.0,
+      "end": 98.0,
+      "lines": [
+        "Phir tamanna jawaan na ho jaye"
+      ],
+      "en": "I fear the old longing may stir again."
+    },
+    {
+      "start": 100.0,
+      "end": 127.0,
+      "lines": [
+        "Lutf aane laga jafa mein"
+      ],
+      "en": "I have begun to take pleasure in your cruelty."
+    },
+    {
+      "start": 127.0,
+      "end": 143.0,
+      "lines": [
+        "Woh kahin mehrbaan na ho jaye"
+      ],
+      "en": "I fear my beloved may yet grow kind."
+    },
+    {
+      "start": 144.0,
+      "end": 171.48,
+      "lines": [
+        "Zikr unka"
+      ],
+      "en": "Their name comes up."
+    },
+    {
+      "start": 171.48,
+      "end": 181.5,
+      "lines": [
+        "Yeh kahin daastaan na ho jaye"
+      ],
+      "en": "I fear it may turn into a whole story."
+    },
+    {
+      "start": 181.5,
+      "end": 192.4,
+      "lines": [
+        "Be-zabani zubaan na ho jaye"
+      ],
+      "en": "I fear my silence may find a voice."
+    }
+  ]
+}
