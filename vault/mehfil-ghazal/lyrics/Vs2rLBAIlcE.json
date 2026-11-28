@@ -1,0 +1,63 @@
+{
+  "video_id": "Vs2rLBAIlcE",
+  "mode": "synced",
+  "source": "audio-aligned",
+  "couplets": [
+    {
+      "start": 0.0,
+      "end": 30.0,
+      "lines": [
+        "Yeh aarzu thi tujhe gul ke rubaru karte"
+      ],
+      "en": "I wished to bring you face to face with a rose."
+    },
+    {
+      "start": 30.0,
+      "end": 44.0,
+      "lines": [
+        "Hum aur bulbul-e-betaab guftagu karte"
+      ],
+      "en": "The restless nightingale and I would have talked."
+    },
+    {
+      "start": 59.0,
+      "end": 86.0,
+      "lines": [
+        "Payaambar na muyassar hua to khoob hua"
+      ],
+      "en": "Perhaps it was just as well I found no messenger."
+    },
+    {
+      "start": 86.0,
+      "end": 103.66,
+      "lines": [
+        "Zabaan-e-ghair se kya sharh-e-aarzu karte"
+      ],
+      "en": "How could I tell my longing in another's voice?"
+    },
+    {
+      "start": 113.7,
+      "end": 130.7,
+      "lines": [
+        "Yeh aarzu thi tujhe gul ke rubaru karte"
+      ],
+      "en": "I wished to bring you face to face with a rose."
+    },
+    {
+      "start": 143.7,
+      "end": 170.7,
+      "lines": [
+        "Jo dekhte teri zanjeer-e-zulf ka aalam"
+      ],
+      "en": "If only they could see the chains your curls make."
+    },
+    {
+      "start": 170.7,
+      "end": 186.0,
+      "lines": [
+        "Aseer hone ki aazaad aarzu karte"
+      ],
+      "en": "Even the free would long to be held captive."
+    }
+  ]
+}
